@@ -1,7 +1,6 @@
-// ROWISM The Black - Interactive Features
+// ROWISM The Black - Premium Interactive Features
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize all features
   initNavigation();
   initScrollAnimations();
   initFAQ();
@@ -12,43 +11,50 @@ document.addEventListener('DOMContentLoaded', () => {
 // Navigation scroll effect
 function initNavigation() {
   const navbar = document.getElementById('navbar');
-  
   if (!navbar) return;
   
+  let lastScroll = 0;
+  
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    const currentScroll = window.scrollY;
+    
+    if (currentScroll > 100) {
       navbar.classList.add('nav-scrolled');
     } else {
       navbar.classList.remove('nav-scrolled');
     }
+    
+    lastScroll = currentScroll;
   };
   
   window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll(); // Initial check
+  handleScroll();
 }
 
-// Scroll-triggered animations
+// Scroll-triggered animations with stagger
 function initScrollAnimations() {
   const animatedElements = document.querySelectorAll('.animate-on-scroll');
-  
   if (!animatedElements.length) return;
   
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        // Add slight delay for stagger effect
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 50);
         observer.unobserve(entry.target);
       }
     });
   }, {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -80px 0px'
   });
   
   animatedElements.forEach(el => observer.observe(el));
 }
 
-// FAQ Accordion
+// FAQ Accordion - Single open at a time
 function initFAQ() {
   const faqItems = document.querySelectorAll('.faq-item');
   
@@ -63,24 +69,22 @@ function initFAQ() {
       
       // Close all other items
       faqItems.forEach(otherItem => {
-        if (otherItem !== item) {
+        if (otherItem !== item && otherItem.classList.contains('active')) {
           otherItem.classList.remove('active');
           const otherAnswer = otherItem.querySelector('.faq-answer');
           if (otherAnswer) {
             otherAnswer.style.maxHeight = '0';
-            otherAnswer.style.paddingTop = '0';
-            otherAnswer.style.paddingBottom = '0';
           }
         }
       });
       
       // Toggle current item
-      item.classList.toggle('active');
-      
       if (!isActive) {
-        answer.style.maxHeight = answer.scrollHeight + 'px';
+        item.classList.add('active');
         answer.style.display = 'block';
+        answer.style.maxHeight = answer.scrollHeight + 'px';
       } else {
+        item.classList.remove('active');
         answer.style.maxHeight = '0';
       }
     });
@@ -94,14 +98,28 @@ function initMobileMenu() {
   
   if (!menuBtn || !mobileMenu) return;
   
+  let isOpen = false;
+  
   menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('show');
+    isOpen = !isOpen;
     
-    // Animate hamburger icon
-    const icon = menuBtn.querySelector('svg');
-    if (icon) {
-      icon.classList.toggle('rotate-90');
+    if (isOpen) {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('show');
+      // Transform hamburger to X
+      menuBtn.innerHTML = `
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+          <path d="M6 6l12 12M6 18L18 6"></path>
+        </svg>
+      `;
+    } else {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('show');
+      menuBtn.innerHTML = `
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+          <path d="M4 8h16M4 16h16"></path>
+        </svg>
+      `;
     }
   });
   
@@ -109,8 +127,14 @@ function initMobileMenu() {
   const menuLinks = mobileMenu.querySelectorAll('a');
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
+      isOpen = false;
       mobileMenu.classList.add('hidden');
       mobileMenu.classList.remove('show');
+      menuBtn.innerHTML = `
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+          <path d="M4 8h16M4 16h16"></path>
+        </svg>
+      `;
     });
   });
 }
@@ -127,7 +151,7 @@ function initSmoothScroll() {
       const targetElement = document.querySelector(targetId);
       
       if (targetElement) {
-        const headerOffset = 80;
+        const headerOffset = 100;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
         
@@ -140,29 +164,6 @@ function initSmoothScroll() {
   });
 }
 
-// Parallax effect for hero section (optional enhancement)
-function initParallax() {
-  const hero = document.getElementById('hero');
-  
-  if (!hero) return;
-  
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxSpeed = 0.5;
-    
-    if (scrolled < window.innerHeight) {
-      hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-    }
-  }, { passive: true });
-}
-
-// Add subtle hover effect to menu items
-document.querySelectorAll('.menu-item, [class*="hover:border-champagne"]').forEach(item => {
-  item.addEventListener('mouseenter', function() {
-    this.style.transition = 'all 0.3s ease';
-  });
-});
-
-// Console Easter Egg
-console.log('%c🍷 ROWISM The Black', 'font-size: 24px; font-weight: bold; color: #C9A962;');
-console.log('%c연남동에서 가장 특별한 밤을 경험하세요.', 'font-size: 14px; color: #8B2D3A;');
+// Console branding
+console.log('%cROWISM', 'font-family: "Playfair Display", serif; font-size: 32px; color: #C9A962; font-weight: 300; letter-spacing: 0.3em;');
+console.log('%cThe Black', 'font-family: serif; font-size: 14px; color: #666; letter-spacing: 0.2em;');

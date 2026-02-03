@@ -50,10 +50,10 @@ export const renderer = jsxRenderer(({ children }) => {
             theme: {
               extend: {
                 colors: {
-                  'deep-black': '#0A0A0A',
-                  'soft-black': '#1A1A1A',
-                  'champagne': '#C9A962',
-                  'off-white': '#E8E8E8',
+                  'deep-black': '#080808',
+                  'soft-black': '#141414',
+                  'champagne': '#B8A060',
+                  'off-white': '#E0E0E0',
                 },
                 fontFamily: {
                   'playfair': ['Playfair Display', 'serif'],

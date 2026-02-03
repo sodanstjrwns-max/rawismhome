@@ -293,12 +293,7 @@ app.get('/', (c) => {
             ))}
           </div>
           
-          {/* Price Guide */}
-          <div class="mt-12 p-8 bg-deep-black/50 text-center animate-on-scroll">
-            <p class="text-off-white/40 text-sm font-light mb-2">2인 기준 평균 객단가</p>
-            <p class="font-playfair text-2xl text-champagne">약 180,000원</p>
-            <p class="text-off-white/30 text-xs mt-2">시그니처 뭉티기 + 사이드 + 와인 1병 기준</p>
-          </div>
+
         </div>
       </section>
 
@@ -699,15 +694,10 @@ app.get('/', (c) => {
             </div>
           </div>
           
-          <div class="pt-8 border-t border-white/5">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p class="text-off-white/20 text-[10px] tracking-widest">
-                © 2024 ROWISM The Black. All rights reserved.
-              </p>
-              <p class="text-off-white/15 text-[9px] tracking-wider">
-                연남동 와인바 · 홍대 데이트 · 기념일 레스토랑 · 한우 뭉티기 맛집
-              </p>
-            </div>
+          <div class="pt-8 border-t border-white/5 text-center">
+            <p class="text-off-white/15 text-[10px] tracking-[0.3em]">
+              © 2024 ROWISM The Black
+            </p>
           </div>
         </div>
       </footer>

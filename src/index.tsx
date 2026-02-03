@@ -411,7 +411,7 @@ app.get('/', (c) => {
       {/* Section 10: CTA */}
       <section id="reserve" class="py-32 md:py-40 bg-deep-black relative overflow-hidden">
         {/* Subtle Background */}
-        <div class="absolute inset-0 bg-gradient-to-r from-deep-wine/5 via-transparent to-champagne/5"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-champagne/5 via-transparent to-champagne/5"></div>
         
         <div class="relative max-w-3xl mx-auto px-8 md:px-12 text-center">
           <div class="animate-on-scroll">
@@ -423,20 +423,20 @@ app.get('/', (c) => {
               ROWISM The Black에서 잊지 못할 순간을 만들어 드립니다
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
               <a href="https://booking.naver.com/" target="_blank" rel="noopener noreferrer" 
-                 class="group px-10 py-4 bg-[#03C75A] hover:bg-[#02b350] transition-all duration-500 inline-flex items-center justify-center gap-3">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                 class="group px-12 py-4 bg-champagne hover:bg-champagne/90 transition-all duration-500 inline-flex items-center justify-center gap-3">
+                <svg class="w-4 h-4 text-deep-black" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/>
                 </svg>
-                <span class="text-[11px] tracking-[0.2em] uppercase text-white">네이버 예약</span>
+                <span class="text-[11px] tracking-[0.2em] uppercase text-deep-black font-medium">네이버 예약</span>
               </a>
               <a href="tel:+821000000000" 
-                 class="group px-10 py-4 border border-champagne/30 hover:border-champagne hover:bg-champagne/5 transition-all duration-500 inline-flex items-center justify-center gap-3">
-                <svg class="w-4 h-4 text-champagne/70 group-hover:text-champagne transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                 class="group px-12 py-4 border border-white/20 hover:border-champagne/50 transition-all duration-500 inline-flex items-center justify-center gap-3">
+                <svg class="w-4 h-4 text-off-white/50 group-hover:text-champagne transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
                   <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                 </svg>
-                <span class="text-[11px] tracking-[0.2em] uppercase text-champagne/70 group-hover:text-champagne transition-colors">전화 예약</span>
+                <span class="text-[11px] tracking-[0.2em] uppercase text-off-white/50 group-hover:text-champagne transition-colors">전화 예약</span>
               </a>
             </div>
           </div>
@@ -496,7 +496,7 @@ app.get('/', (c) => {
 
       {/* Mobile Fixed CTA */}
       <div class="fixed bottom-0 left-0 right-0 lg:hidden bg-deep-black/98 backdrop-blur-xl border-t border-white/5 p-4 z-50">
-        <a href="#reserve" class="block w-full py-3 bg-deep-wine text-white text-center text-[11px] tracking-[0.2em] uppercase">
+        <a href="#reserve" class="block w-full py-3 bg-champagne text-deep-black text-center text-[11px] tracking-[0.2em] uppercase font-medium">
           예약하기
         </a>
       </div>

@@ -64,20 +64,17 @@ app.get('/', (c) => {
         {/* Content */}
         <div class="relative z-10 text-center px-6">
           <div class="animate-fade-in">
-            <p class="text-[10px] md:text-[11px] tracking-[0.5em] text-champagne/60 mb-8 uppercase font-light">
+            <p class="text-[10px] md:text-[11px] tracking-[0.5em] text-champagne/60 mb-10 uppercase font-light">
               연남동 프리미엄 와인바 · 홍대입구역 5분
             </p>
             
-            <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] font-light mb-3">
-              ROWISM
-            </h1>
-            
-            <div class="flex items-center justify-center gap-4 mb-12">
-              <span class="w-12 h-px bg-champagne/30"></span>
-              <p class="font-playfair text-sm md:text-base tracking-[0.4em] text-off-white/50 uppercase">
-                The Black
-              </p>
-              <span class="w-12 h-px bg-champagne/30"></span>
+            {/* Logo Image */}
+            <div class="mb-12">
+              <img 
+                src="/static/logo.png" 
+                alt="RAWISM The Black" 
+                class="w-64 md:w-80 lg:w-96 mx-auto"
+              />
             </div>
             
             <p class="font-noto-serif text-sm md:text-base text-off-white/60 font-light tracking-wider max-w-md mx-auto leading-relaxed">

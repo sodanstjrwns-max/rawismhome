@@ -1,0 +1,283 @@
+/* ROWISM The Black - Custom Styles */
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B2D3A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A962;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes bubble-rise {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Champagne Bubbles */
+.bubble {
+  position: absolute;
+  background: radial-gradient(circle at 30% 30%, rgba(201, 169, 98, 0.4), rgba(201, 169, 98, 0.1));
+  border-radius: 50%;
+  animation: bubble-rise 8s infinite ease-in;
+}
+
+.bubble-1 {
+  width: 10px;
+  height: 10px;
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 12s;
+}
+
+.bubble-2 {
+  width: 15px;
+  height: 15px;
+  left: 25%;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+
+.bubble-3 {
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  animation-delay: 4s;
+  animation-duration: 14s;
+}
+
+.bubble-4 {
+  width: 12px;
+  height: 12px;
+  left: 70%;
+  animation-delay: 1s;
+  animation-duration: 11s;
+}
+
+.bubble-5 {
+  width: 6px;
+  height: 6px;
+  left: 85%;
+  animation-delay: 3s;
+  animation-duration: 9s;
+}
+
+/* Navigation Scroll Effect */
+.nav-scrolled {
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A962, #E8D5A3, #C9A962);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* FAQ Accordion */
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  display: block;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(201, 169, 98, 0.1);
+}
+
+/* Wine Color Gradient Background */
+.wine-gradient {
+  background: linear-gradient(135deg, #8B2D3A 0%, #5C1E26 100%);
+}
+
+/* Selection Color */
+::selection {
+  background: #8B2D3A;
+  color: #E8E8E8;
+}
+
+/* Focus States */
+a:focus, button:focus {
+  outline: 2px solid #C9A962;
+  outline-offset: 2px;
+}
+
+/* Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(90deg, #1A1A1A 0%, #2A2A2A 50%, #1A1A1A 100%);
+  background-size: 1000px 100%;
+}
+
+/* Menu Item Hover */
+.menu-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.menu-item:hover::before {
+  left: 100%;
+}
+
+/* Mobile Menu Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#mobile-menu.show {
+  display: block;
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    letter-spacing: 0.1em;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .border-white\/5 {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .text-off-white\/70 {
+    color: #E8E8E8;
+  }
+}

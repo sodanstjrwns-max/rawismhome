@@ -194,105 +194,283 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Section 5: Menu - Enhanced with Descriptions */}
+      {/* Section 5: Menu - Premium with Photos */}
       <section id="menu" class="py-32 md:py-40 bg-soft-black/30">
-        <div class="max-w-5xl mx-auto px-8 md:px-12">
-          <div class="text-center mb-20 animate-on-scroll">
+        <div class="max-w-6xl mx-auto px-8 md:px-12">
+          <div class="text-center mb-24 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Menu</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide">
               Signature Collection
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto">
-              연남동 한우 맛집 ROWISM의 시그니처 메뉴를 소개합니다
+              최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처
             </p>
           </div>
           
-          {/* Signature Menu - Highlighted */}
-          <div class="mb-16 animate-on-scroll">
-            <div class="border border-champagne/10 p-10 md:p-14 relative">
-              <span class="absolute top-6 right-8 text-[9px] tracking-[0.3em] text-champagne/40 uppercase">
-                Signature
-              </span>
-              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-                <div>
-                  <h3 class="font-playfair text-xl md:text-2xl text-off-white mb-4">
+          {/* Signature Menu - Hero Style */}
+          <div class="mb-32 animate-on-scroll">
+            <div class="grid lg:grid-cols-2 gap-0">
+              {/* Photo Placeholder */}
+              <div class="relative aspect-[4/3] lg:aspect-auto bg-soft-black overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
+                {/* Replace with actual image: <img src="/images/menu/signature.jpg" alt="로위즘 뭉티기 시그니처" class="w-full h-full object-cover" /> */}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 border border-champagne/20 rounded-full flex items-center justify-center">
+                      <svg class="w-6 h-6 text-champagne/30" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <p class="text-off-white/20 text-[10px] tracking-widest uppercase">Photo</p>
+                  </div>
+                </div>
+                <div class="absolute top-6 left-6">
+                  <span class="text-[9px] tracking-[0.3em] text-champagne/60 uppercase bg-deep-black/60 px-3 py-1">
+                    Signature
+                  </span>
+                </div>
+              </div>
+              
+              {/* Content */}
+              <div class="bg-deep-black p-10 lg:p-14 flex flex-col justify-center">
+                <div class="mb-8">
+                  <h3 class="font-playfair text-2xl md:text-3xl text-off-white mb-2">
                     로위즘 뭉티기 시그니처
                   </h3>
-                  <p class="text-off-white/40 text-sm font-light leading-relaxed max-w-lg mb-4">
-                    최상급 한우 뭉티기 · 이탈리아 부라타 치즈 · 블랙 트러플 · 파르미지아노 레지아노
-                  </p>
-                  <p class="text-off-white/30 text-xs font-light leading-relaxed max-w-lg">
-                    한우 뭉티기는 얇게 저민 생고기를 양념 없이 그대로 즐기는 요리입니다. 
-                    일반 육회와 달리 고기 본연의 풍미를 느낄 수 있으며, 이탈리아 크리미한 부라타 치즈와 
-                    향긋한 블랙 트러플이 어우러져 특별한 맛의 조화를 선사합니다. 
-                    프리미엄 레드 와인과 함께 즐기시기를 추천드립니다.
+                  <p class="text-champagne/60 text-sm tracking-wide">
+                    Rowism Signature Beef Tartare
                   </p>
                 </div>
-                <div class="text-right">
-                  <span class="font-playfair text-2xl md:text-3xl text-champagne">92,000</span>
-                  <span class="text-champagne/50 text-sm ml-1">원</span>
+                
+                <div class="space-y-4 mb-8">
+                  <p class="text-off-white/50 text-sm font-light leading-relaxed">
+                    ROWISM의 철학이 담긴 시그니처 메뉴. 대구 전통 방식의 뭉티기를 현대적으로 재해석했습니다.
+                  </p>
+                  <p class="text-off-white/35 text-xs font-light leading-relaxed">
+                    최상급 한우 우둔살을 얇게 저며 양념 없이 고기 본연의 맛을 살렸습니다. 
+                    이탈리아 풀리아 지방의 크리미한 부라타 치즈, 움브리아산 블랙 트러플, 
+                    24개월 숙성 파르미지아노 레지아노가 어우러져 깊고 복합적인 풍미를 선사합니다.
+                  </p>
+                </div>
+                
+                <div class="border-t border-white/5 pt-6 mb-6">
+                  <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-3">Ingredients</p>
+                  <p class="text-off-white/30 text-xs leading-relaxed">
+                    한우 우둔살 · 이탈리아 부라타 치즈 · 움브리아산 블랙 트러플 · 파르미지아노 레지아노 24개월 · 엑스트라 버진 올리브 오일 · 플뢰르 드 셀
+                  </p>
+                </div>
+                
+                <div class="flex items-end justify-between">
+                  <div>
+                    <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-1">Pairing</p>
+                    <p class="text-off-white/40 text-xs">풀 바디 레드 와인 · 바롤로 · 브루넬로</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-playfair text-3xl text-champagne">92,000</span>
+                    <span class="text-champagne/40 text-sm ml-1">원</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           
-          {/* Other Menu Items with Enhanced Descriptions */}
-          <div class="space-y-0 border-t border-white/5">
-            {[
-              { 
-                name: "제비추리 그릴드 베지터블", 
-                desc: "최상급 한우 제비추리 · 제철 채소", 
-                detail: "한우 갈비 부위의 가장 부드러운 부분인 제비추리를 숯불에 그릴링. 제철 채소와 함께 담백하게 즐기는 스테이크 스타일 요리입니다.",
-                price: "49,000",
-                pairing: "미디엄 바디 레드 와인 추천"
-              },
-              { 
-                name: "치즈 셀렉션", 
-                desc: "큐레이션 프리미엄 치즈 플레이트", 
-                detail: "소믈리에가 직접 큐레이션한 4종의 프리미엄 치즈. 브리, 카망베르, 블루치즈, 숙성 체다가 조화롭게 구성되어 있습니다.",
-                price: "36,000",
-                pairing: "샴페인 또는 화이트 와인 추천"
-              },
-              { 
-                name: "청양 오일 육회", 
-                desc: "청양고추 인퓨즈드 오일 · 한우 육회", 
-                detail: "신선한 한우 육회에 직접 만든 청양고추 오일을 더해 매콤한 풍미를 살렸습니다. 알싸한 맛을 좋아하시는 분께 추천드립니다.",
-                price: "25,000",
-                pairing: "드라이 로제 와인 추천"
-              },
-              { 
-                name: "아보카도 카프레제", 
-                desc: "하스 아보카도 · 부팔라 모짜렐라", 
-                detail: "잘 익은 하스 아보카도와 이탈리아 정통 부팔라 모짜렐라 치즈의 만남. 발사믹 리덕션과 엑스트라 버진 올리브 오일로 마무리합니다.",
-                price: "23,000",
-                pairing: "스파클링 와인 추천"
-              },
-              { 
-                name: "들기름 육회 메밀면", 
-                desc: "참들기름 · 한우 육회 · 메밀면", 
-                detail: "쫄깃한 메밀면 위에 신선한 한우 육회와 고소한 국내산 참들기름. 마무리로 추천드리는 든든한 한 그릇입니다.",
-                price: "15,000",
-                pairing: "소주 또는 청주 추천"
-              },
-            ].map((item, i) => (
-              <div key={i} class="py-8 border-b border-white/5 group animate-on-scroll" style={`animation-delay: ${i * 0.05}s`}>
-                <div class="flex justify-between items-start mb-3">
-                  <div>
-                    <h4 class="font-noto-serif text-base text-off-white/90 group-hover:text-off-white transition-colors mb-1">
-                      {item.name}
-                    </h4>
-                    <p class="text-[11px] text-off-white/30 tracking-wide">{item.desc}</p>
+          {/* Other Menu Items - Card Grid with Photos */}
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Menu Item 1: 제비추리 */}
+            <div class="animate-on-scroll group" style="animation-delay: 0.1s">
+              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
+                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
+                {/* Replace: <img src="/images/menu/jebichuri.jpg" alt="제비추리 그릴드 베지터블" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
                   </div>
-                  <span class="font-playfair text-lg text-champagne/70 group-hover:text-champagne transition-colors">
-                    {item.price}
+                </div>
+              </div>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
+                    제비추리 그릴드 베지터블
+                  </h4>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Grilled Jebichuri & Vegetables</p>
+                </div>
+                <span class="font-playfair text-xl text-champagne/70">49,000</span>
+              </div>
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
+                한우 갈비 부위 중 가장 부드럽고 육즙이 풍부한 제비추리를 참숯불에 그릴링합니다. 
+                겉은 바삭하고 속은 촉촉한 미디엄 레어로 제공됩니다.
+              </p>
+              <div class="space-y-2 text-xs">
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">재료</span>
+                  한우 제비추리 · 애호박 · 새송이버섯 · 파프리카 · 로즈마리 소금
+                </p>
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">페어링</span>
+                  미디엄 바디 레드 · 피노 누아 · 끼안티
+                </p>
+              </div>
+            </div>
+            
+            {/* Menu Item 2: 치즈 셀렉션 */}
+            <div class="animate-on-scroll group" style="animation-delay: 0.15s">
+              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
+                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
+                {/* Replace: <img src="/images/menu/cheese.jpg" alt="치즈 셀렉션" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
+                    치즈 셀렉션
+                  </h4>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Curated Cheese Selection</p>
+                </div>
+                <span class="font-playfair text-xl text-champagne/70">36,000</span>
+              </div>
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
+                소믈리에가 직접 큐레이션한 유럽산 프리미엄 치즈 4종. 부드러운 것부터 강렬한 것까지 
+                순서대로 즐기시면 치즈의 깊은 세계를 경험하실 수 있습니다.
+              </p>
+              <div class="space-y-2 text-xs">
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">구성</span>
+                  브리 드 모 · 카망베르 · 고르곤졸라 피칸테 · 24개월 숙성 꽁테
+                </p>
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">페어링</span>
+                  샴페인 · 소비뇽 블랑 · 포트 와인
+                </p>
+              </div>
+            </div>
+            
+            {/* Menu Item 3: 청양 오일 육회 */}
+            <div class="animate-on-scroll group" style="animation-delay: 0.2s">
+              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
+                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
+                {/* Replace: <img src="/images/menu/yukhoe.jpg" alt="청양 오일 육회" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
+                    청양 오일 육회
+                  </h4>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Spicy Cheongyang Beef Tartare</p>
+                </div>
+                <span class="font-playfair text-xl text-champagne/70">25,000</span>
+              </div>
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
+                전통 육회에 ROWISM만의 시그니처 청양 인퓨즈드 오일을 더했습니다. 
+                은은한 매콤함이 고기의 단맛을 더욱 살려주며, 한국적 감성과 현대적 기법의 조화를 느끼실 수 있습니다.
+              </p>
+              <div class="space-y-2 text-xs">
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">재료</span>
+                  한우 홍두깨살 · 청양고추 인퓨즈드 오일 · 배 · 잣 · 계란 노른자
+                </p>
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">페어링</span>
+                  드라이 로제 · 리슬링 · 소주
+                </p>
+              </div>
+            </div>
+            
+            {/* Menu Item 4: 아보카도 카프레제 */}
+            <div class="animate-on-scroll group" style="animation-delay: 0.25s">
+              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
+                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
+                {/* Replace: <img src="/images/menu/caprese.jpg" alt="아보카도 카프레제" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
+                    아보카도 카프레제
+                  </h4>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Avocado Caprese</p>
+                </div>
+                <span class="font-playfair text-xl text-champagne/70">23,000</span>
+              </div>
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
+                이탈리아 전통 카프레제를 ROWISM 스타일로 재해석. 토마토 대신 완숙 하스 아보카도를 사용하여 
+                더욱 부드럽고 고소한 맛을 구현했습니다.
+              </p>
+              <div class="space-y-2 text-xs">
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">재료</span>
+                  하스 아보카도 · 부팔라 모짜렐라 · 발사믹 리덕션 · 바질 오일 · 플뢰르 드 셀
+                </p>
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">페어링</span>
+                  프로세코 · 피노 그리지오 · 베르멘티노
+                </p>
+              </div>
+            </div>
+            
+            {/* Menu Item 5: 들기름 육회 메밀면 */}
+            <div class="animate-on-scroll group md:col-span-2 lg:col-span-1 lg:col-start-1" style="animation-delay: 0.3s">
+              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
+                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
+                {/* Replace: <img src="/images/menu/memil.jpg" alt="들기름 육회 메밀면" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="absolute bottom-4 right-4">
+                  <span class="text-[9px] tracking-[0.2em] text-off-white/40 uppercase bg-deep-black/60 px-2 py-1">
+                    Finisher
                   </span>
                 </div>
-                <p class="text-off-white/25 text-xs font-light leading-relaxed max-w-2xl">{item.detail}</p>
-                <p class="text-champagne/30 text-[10px] mt-2 tracking-wide">{item.pairing}</p>
               </div>
-            ))}
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
+                    들기름 육회 메밀면
+                  </h4>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Perilla Oil Beef Tartare Buckwheat Noodles</p>
+                </div>
+                <span class="font-playfair text-xl text-champagne/70">15,000</span>
+              </div>
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
+                식사의 마무리로 추천드리는 시그니처 면 요리. 봉평 메밀로 만든 면 위에 신선한 한우 육회와 
+                국내산 냉압착 들기름의 고소함이 어우러집니다. 비빔면 스타일로 제공됩니다.
+              </p>
+              <div class="space-y-2 text-xs">
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">재료</span>
+                  봉평 메밀면 · 한우 육회 · 국내산 냉압착 들기름 · 김 가루 · 계란 노른자
+                </p>
+                <p class="text-off-white/25">
+                  <span class="text-champagne/30 mr-2">페어링</span>
+                  청주 · 사케 · 매실주
+                </p>
+              </div>
+            </div>
           </div>
-          
 
         </div>
       </section>

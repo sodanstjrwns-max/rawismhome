@@ -13,9 +13,11 @@ app.get('/', (c) => {
       <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-700 bg-transparent">
         <div class="max-w-7xl mx-auto px-8 md:px-12 py-6 flex justify-between items-center">
           <a href="#hero" class="group">
-            <span class="font-playfair text-xl tracking-[0.4em] text-off-white group-hover:text-champagne transition-colors duration-500">
-              ROWISM
-            </span>
+            <img 
+              src="/static/logo.png" 
+              alt="RAWISM The Black" 
+              class="h-8 md:h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+            />
           </a>
           <div class="hidden lg:flex items-center gap-12">
             <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Philosophy</a>

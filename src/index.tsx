@@ -769,7 +769,7 @@ app.get('/', (c) => {
             </p>
             
             <div class="flex justify-center">
-              <a href="https://booking.naver.com/" target="_blank" rel="noopener noreferrer" 
+              <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" 
                  class="group px-16 py-4 bg-champagne hover:bg-champagne/90 transition-all duration-500 inline-flex items-center justify-center gap-3">
                 <svg class="w-4 h-4 text-deep-black" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/>
@@ -806,7 +806,7 @@ app.get('/', (c) => {
                 <p>화 - 일 18:00 - 24:00</p>
                 <p>월요일 휴무</p>
                 <p class="pt-2">
-                  <a href="https://booking.naver.com/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">
+                  <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">
                     네이버 예약으로 예약하기
                   </a>
                 </p>
@@ -831,7 +831,7 @@ app.get('/', (c) => {
                 </a>
               </div>
               <div class="space-y-2">
-                <a href="https://booking.naver.com/" target="_blank" rel="noopener noreferrer" 
+                <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" 
                    class="block text-off-white/30 text-xs hover:text-champagne transition-colors">
                   네이버 예약
                 </a>

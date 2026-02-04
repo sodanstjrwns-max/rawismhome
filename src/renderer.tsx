@@ -104,7 +104,7 @@ export const renderer = jsxRenderer(({ children }) => {
           "currenciesAccepted": "KRW",
           "paymentAccepted": "현금, 신용카드",
           "acceptsReservations": true,
-          "reservations": "https://booking.naver.com/",
+          "reservations": "https://naver.me/5qLSfCNC",
           "hasMenu": {
             "@type": "Menu",
             "hasMenuSection": [

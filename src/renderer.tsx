@@ -13,6 +13,15 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://rowism.com" />
         
+        {/* Favicon & App Icons */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+        <meta name="theme-color" content="#080808" />
+        <meta name="msapplication-TileColor" content="#080808" />
+        
         {/* Geographic Tags for Local SEO */}
         <meta name="geo.region" content="KR-11" />
         <meta name="geo.placename" content="연남동, 마포구, 서울" />

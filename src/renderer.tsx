@@ -7,7 +7,7 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ROWISM The Black | 연남동 프리미엄 와인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집</title>
-        <meta name="description" content="서울 연남동 프리미엄 와인바 ROWISM The Black. 트러플 한우 뭉티기와 샴페인이 만나는 특별한 밤. 홍대입구역 5분, 15석 한정 예약제. 기념일, 데이트, 프로포즈를 위한 연남동 대표 다이닝 공간. 2인 평균 18만원." />
+        <meta name="description" content="서울 연남동 프리미엄 와인바 ROWISM The Black. 트러플 한우 뭉티기와 샴페인이 만나는 특별한 밤. 홍대입구역 5분, 8석 한정 예약제. 기념일, 데이트, 프로포즈를 위한 연남동 대표 다이닝 공간. 2인 평균 18만원." />
         <meta name="keywords" content="연남동 와인바, 연남동 데이트, 연남동 기념일, 홍대 와인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 프로포즈 레스토랑, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 와인바 추천" />
         <meta name="author" content="ROWISM The Black" />
         <meta name="robots" content="index, follow" />
@@ -21,7 +21,7 @@ export const renderer = jsxRenderer(({ children }) => {
         
         {/* Open Graph */}
         <meta property="og:title" content="ROWISM The Black | 연남동 프리미엄 와인바 & 한우 뭉티기" />
-        <meta property="og:description" content="트러플 한우 뭉티기와 샴페인이 만나는 연남동에서 가장 특별한 밤. 홍대입구역 5분, 15석 한정 예약제. 기념일, 데이트, 프로포즈 맛집." />
+        <meta property="og:description" content="트러플 한우 뭉티기와 샴페인이 만나는 연남동에서 가장 특별한 밤. 홍대입구역 5분, 8석 한정 예약제. 기념일, 데이트, 프로포즈 맛집." />
         <meta property="og:type" content="restaurant" />
         <meta property="og:locale" content="ko_KR" />
         <meta property="og:site_name" content="ROWISM The Black" />
@@ -74,7 +74,7 @@ export const renderer = jsxRenderer(({ children }) => {
           "@type": "Restaurant",
           "name": "ROWISM The Black",
           "alternateName": "로위즘 더 블랙",
-          "description": "연남동 프리미엄 와인바. 트러플 한우 뭉티기와 샴페인 페어링 전문점. 홍대입구역 도보 5분, 15석 한정 예약제 운영.",
+          "description": "연남동 프리미엄 와인바. 트러플 한우 뭉티기와 샴페인 페어링 전문점. 홍대입구역 도보 5분, 8석 한정 예약제 운영.",
           "url": "https://rowism.com",
           "telephone": "+82-10-0000-0000",
           "address": {
@@ -182,7 +182,7 @@ export const renderer = jsxRenderer(({ children }) => {
               "name": "연남동 와인바 ROWISM은 예약 없이 방문해도 되나요?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "ROWISM The Black은 예약제로 운영됩니다. 15개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약 또는 전화로 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다."
+                "text": "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약 또는 전화로 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다."
               }
             },
             {

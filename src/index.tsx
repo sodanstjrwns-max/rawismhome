@@ -164,7 +164,7 @@ app.get('/', (c) => {
                   블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.
                 </p>
                 <p>
-                  <strong class="text-off-white/80">15개의 프라이빗 테이블.</strong> 루이스폴센의 은은한 조명, 
+                  <strong class="text-off-white/80">8개의 프라이빗 테이블.</strong> 루이스폴센의 은은한 조명, 
                   제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 와인바가 아닌, 
                   감각의 경험을 디자인하는 연남동 다이닝 공간입니다.
                 </p>
@@ -176,7 +176,7 @@ app.get('/', (c) => {
               {[
                 { num: "01", title: "Signature Tartare", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
                 { num: "02", title: "Wine Pairing", desc: "소믈리에 큐레이션", detail: "40여 종 와인 셀렉션" },
-                { num: "03", title: "Private Space", desc: "15석 한정 운영", detail: "예약제 프라이빗 다이닝" },
+                { num: "03", title: "Private Space", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
                 { num: "04", title: "Sensory Design", desc: "오감의 경험 설계", detail: "조명·음악·서비스" },
               ].map((item, i) => (
                 <div key={i} class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/30 transition-all duration-500 animate-on-scroll" style={`animation-delay: ${i * 0.1}s`}>
@@ -209,22 +209,16 @@ app.get('/', (c) => {
           {/* Signature Menu - Hero Style */}
           <div class="mb-32 animate-on-scroll">
             <div class="grid lg:grid-cols-2 gap-0">
-              {/* Photo Placeholder */}
+              {/* Photo */}
               <div class="relative aspect-[4/3] lg:aspect-auto bg-soft-black overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
-                {/* Replace with actual image: <img src="/images/menu/signature.jpg" alt="로위즘 뭉티기 시그니처" class="w-full h-full object-cover" /> */}
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="text-center">
-                    <div class="w-16 h-16 mx-auto mb-4 border border-champagne/20 rounded-full flex items-center justify-center">
-                      <svg class="w-6 h-6 text-champagne/30" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                      </svg>
-                    </div>
-                    <p class="text-off-white/20 text-[10px] tracking-widest uppercase">Photo</p>
-                  </div>
-                </div>
+                <img 
+                  src="/static/menu_signature.jpg" 
+                  alt="로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기와 부라타 치즈" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/30 to-transparent"></div>
                 <div class="absolute top-6 left-6">
-                  <span class="text-[9px] tracking-[0.3em] text-champagne/60 uppercase bg-deep-black/60 px-3 py-1">
+                  <span class="text-[9px] tracking-[0.3em] text-champagne/80 uppercase bg-deep-black/70 px-3 py-1">
                     Signature
                   </span>
                 </div>
@@ -278,15 +272,12 @@ app.get('/', (c) => {
             {/* Menu Item 1: 제비추리 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.1s">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
-                {/* Replace: <img src="/images/menu/jebichuri.jpg" alt="제비추리 그릴드 베지터블" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
-                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                </div>
+                <img 
+                  src="/static/menu_jebichuri.jpg" 
+                  alt="제비추리 그릴드 베지터블" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -316,15 +307,12 @@ app.get('/', (c) => {
             {/* Menu Item 2: 치즈 셀렉션 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.15s">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
-                {/* Replace: <img src="/images/menu/cheese.jpg" alt="치즈 셀렉션" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
-                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                </div>
+                <img 
+                  src="/static/menu_cheese.jpg" 
+                  alt="치즈 셀렉션" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -354,15 +342,12 @@ app.get('/', (c) => {
             {/* Menu Item 3: 청양 오일 육회 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.2s">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
-                {/* Replace: <img src="/images/menu/yukhoe.jpg" alt="청양 오일 육회" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
-                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                </div>
+                <img 
+                  src="/static/menu_yukhoe.jpg" 
+                  alt="청양 오일 육회" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -392,15 +377,12 @@ app.get('/', (c) => {
             {/* Menu Item 4: 아보카도 카프레제 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.25s">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
-                {/* Replace: <img src="/images/menu/caprese.jpg" alt="아보카도 카프레제" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
-                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                </div>
+                <img 
+                  src="/static/menu_caprese.jpg" 
+                  alt="아보카도 카프레제" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -430,17 +412,14 @@ app.get('/', (c) => {
             {/* Menu Item 5: 들기름 육회 메밀면 */}
             <div class="animate-on-scroll group md:col-span-2 lg:col-span-1 lg:col-start-1" style="animation-delay: 0.3s">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <div class="absolute inset-0 bg-gradient-to-br from-champagne/5 to-transparent"></div>
-                {/* Replace: <img src="/images/menu/memil.jpg" alt="들기름 육회 메밀면" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" /> */}
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-12 h-12 border border-champagne/15 rounded-full flex items-center justify-center">
-                    <svg class="w-5 h-5 text-champagne/20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                </div>
+                <img 
+                  src="/static/menu_memil.jpg" 
+                  alt="들기름 육회 메밀면" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
                 <div class="absolute bottom-4 right-4">
-                  <span class="text-[9px] tracking-[0.2em] text-off-white/40 uppercase bg-deep-black/60 px-2 py-1">
+                  <span class="text-[9px] tracking-[0.2em] text-off-white/60 uppercase bg-deep-black/70 px-2 py-1">
                     Finisher
                   </span>
                 </div>
@@ -494,7 +473,7 @@ app.get('/', (c) => {
             <div class="space-y-16 md:space-y-24">
               {[
                 { time: "Arrival", title: "웰컴 스파클링", desc: "입장과 동시에 시작되는 특별한 환대. 엄선된 스파클링 와인 한 잔으로 저녁을 시작합니다. 기념일 방문이라면 미리 말씀해주세요, 특별한 세팅으로 준비해드립니다." },
-                { time: "Ambience", title: "무드 라이팅", desc: "덴마크 루이스폴센 조명이 만드는 은은한 빛. 당신만을 위한 프라이빗한 공간이 펼쳐집니다. 15개 테이블 한정으로 여유로운 간격을 유지합니다." },
+                { time: "Ambience", title: "무드 라이팅", desc: "덴마크 루이스폴센 조명이 만드는 은은한 빛. 당신만을 위한 프라이빗한 공간이 펼쳐집니다. 8개 테이블 한정으로 여유로운 간격을 유지합니다." },
                 { time: "Sound", title: "큐레이팅 뮤직", desc: "스위스 제네바 스피커를 통해 흐르는 감각적인 선율. 재즈, 보사노바, 어쿠스틱 등 대화와 어울리는 완벽한 볼륨으로 큐레이팅됩니다." },
                 { time: "Finale", title: "고디바 피니시", desc: "달콤한 고디바 초콜릿과 함께 완벽한 여운. 특별한 밤의 마지막 선물로 잊지 못할 마무리를 선사합니다." },
               ].map((item, i) => (
@@ -713,7 +692,7 @@ app.get('/', (c) => {
             {[
               { 
                 q: "예약 없이 방문해도 되나요?", 
-                a: "ROWISM The Black은 예약제로 운영됩니다. 15개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약 또는 전화(010-0000-0000)로 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다. 당일 예약은 전화로 문의해 주세요." 
+                a: "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약 또는 전화(010-0000-0000)로 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다. 당일 예약은 전화로 문의해 주세요." 
               },
               { 
                 q: "2인 방문 시 예상 금액은 얼마인가요?", 

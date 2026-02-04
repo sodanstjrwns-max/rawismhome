@@ -67,7 +67,7 @@ app.get('/', (c) => {
         <div class="relative z-10 text-center px-6">
           <div class="animate-fade-in">
             <p class="text-[10px] md:text-[11px] tracking-[0.5em] text-champagne/60 mb-10 uppercase font-light">
-              연남동 프리미엄 와인바 · 홍대입구역 5분
+              연남동 프리미엄 샴페인바 · 홍대입구역 5분
             </p>
             
             {/* Logo Image */}
@@ -84,7 +84,7 @@ app.get('/', (c) => {
             </p>
             
             <p class="font-noto-serif text-xs text-off-white/40 font-light tracking-wider mt-4">
-              트러플 한우 뭉티기 · 프리미엄 와인 · 프라이빗 다이닝
+              트러플 한우 뭉티기 · 샴페인 & 스파클링 · 프라이빗 다이닝
             </p>
           </div>
           
@@ -159,13 +159,13 @@ app.get('/', (c) => {
                   가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.
                 </p>
                 <p>
-                  <strong class="text-off-white/80">연남동 프리미엄 와인바.</strong> 홍대입구역에서 도보 5분, 
+                  <strong class="text-off-white/80">연남동 프리미엄 샴페인바.</strong> 홍대입구역에서 도보 5분, 
                   연남동 골목 속에 자리한 ROWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 
                   블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.
                 </p>
                 <p>
                   <strong class="text-off-white/80">8개의 프라이빗 테이블.</strong> 루이스폴센의 은은한 조명, 
-                  제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 와인바가 아닌, 
+                  제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 
                   감각의 경험을 디자인하는 연남동 다이닝 공간입니다.
                 </p>
               </div>
@@ -175,7 +175,7 @@ app.get('/', (c) => {
             <div class="grid grid-cols-2 gap-px bg-white/5">
               {[
                 { num: "01", title: "Signature Tartare", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
-                { num: "02", title: "Wine Pairing", desc: "소믈리에 큐레이션", detail: "40여 종 와인 셀렉션" },
+                { num: "02", title: "Champagne & Sparkling", desc: "소믈리에 큐레이션", detail: "프리미엄 샴페인 & 스파클링" },
                 { num: "03", title: "Private Space", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
                 { num: "04", title: "Sensory Design", desc: "오감의 경험 설계", detail: "조명·음악·서비스" },
               ].map((item, i) => (
@@ -256,7 +256,7 @@ app.get('/', (c) => {
                 <div class="flex items-end justify-between">
                   <div>
                     <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-1">Pairing</p>
-                    <p class="text-off-white/40 text-xs">풀 바디 레드 와인 · 바롤로 · 브루넬로</p>
+                    <p class="text-off-white/40 text-xs">빈티지 샴페인 · 블랑 드 블랑 · 프레스티지 퀴베</p>
                   </div>
                   <div class="text-right">
                     <span class="font-playfair text-3xl text-champagne">92,000</span>
@@ -299,7 +299,7 @@ app.get('/', (c) => {
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
-                  미디엄 바디 레드 · 피노 누아 · 끼안티
+                  브뤼 로제 · 프로세코 · 크레망
                 </p>
               </div>
             </div>
@@ -334,7 +334,7 @@ app.get('/', (c) => {
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
-                  샴페인 · 소비뇽 블랑 · 포트 와인
+                  샴페인 · 프로세코 · 크레망 달사스
                 </p>
               </div>
             </div>
@@ -369,7 +369,7 @@ app.get('/', (c) => {
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
-                  드라이 로제 · 리슬링 · 소주
+                  블랑 드 블랑 · 브뤼 로제 · 소주
                 </p>
               </div>
             </div>
@@ -404,7 +404,7 @@ app.get('/', (c) => {
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
-                  프로세코 · 피노 그리지오 · 베르멘티노
+                  프로세코 · 브뤼 스파클링 · 아스티 스푸만테
                 </p>
               </div>
             </div>
@@ -538,11 +538,11 @@ app.get('/', (c) => {
                 keywords: "연남동 접대, 홍대 비즈니스 미팅"
               },
               { 
-                title: "와인 애호가", 
+                title: "샴페인 애호가", 
                 icon: "○",
-                desc: "좋은 와인과 음식의 페어링을 즐기시는 분", 
-                detail: "소믈리에가 큐레이션한 40여 종의 와인 셀렉션. 한우 뭉티기와 와인의 완벽한 페어링을 경험해보세요.",
-                keywords: "연남동 와인바, 홍대 와인바, 와인 페어링"
+                desc: "좋은 샴페인과 음식의 페어링을 즐기시는 분", 
+                detail: "소믈리에가 큐레이션한 프리미엄 샴페인과 스파클링 셀렉션. 한우 뭉티기와 샴페인의 완벽한 페어링을 경험해보세요.",
+                keywords: "연남동 샴페인바, 홍대 샴페인바, 샴페인 페어링"
               },
               { 
                 title: "미식 탐험가", 
@@ -684,7 +684,7 @@ app.get('/', (c) => {
               자주 묻는 질문
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto">
-              연남동 와인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요
+              연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요
             </p>
           </div>
           
@@ -696,7 +696,7 @@ app.get('/', (c) => {
               },
               { 
                 q: "2인 방문 시 예상 금액은 얼마인가요?", 
-                a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 와인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 10-12만원대로도 이용 가능합니다. 특별한 기념일이라면 샴페인과 함께 20-25만원 정도의 코스를 추천드립니다." 
+                a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 스파클링 와인과 함께 10-12만원대로도 이용 가능합니다. 특별한 기념일이라면 프리미엄 샴페인과 함께 20-25만원 정도의 코스를 추천드립니다." 
               },
               { 
                 q: "뭉티기와 육회의 차이는 무엇인가요?", 
@@ -707,12 +707,12 @@ app.get('/', (c) => {
                 a: "네, 예약 시 미리 말씀해주시면 꽃, 케이크, 풍선, 레터링 등 이벤트 준비를 도와드립니다. 프라이빗한 코너 테이블 배정과 타이밍에 맞춘 서비스를 제공해드리며, 성공적인 프로포즈를 위해 최선을 다해 도와드립니다. 이벤트 세팅은 무료이며, 케이크/꽃은 별도 준비하시거나 제휴 업체를 통해 주문하실 수 있습니다." 
               },
               { 
-                q: "연남동 와인바 ROWISM의 위치는 어디인가요?", 
+                q: "연남동 샴페인바 ROWISM의 위치는 어디인가요?", 
                 a: "ROWISM The Black은 서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다. 경의중앙선 홍대입구역에서도 도보 7분 거리입니다." 
               },
               { 
                 q: "주차는 어떻게 하나요?", 
-                a: "매장 내 주차 공간은 없으며, 인근 공영주차장 이용을 권장드립니다. 연남동 공영주차장(도보 3분)이 가장 가깝고, 홍대입구역 환승주차장도 이용 가능합니다. 대중교통 이용을 권장드리며, 와인을 드실 예정이라면 대리운전을 이용해 주세요." 
+                a: "매장 내 주차 공간은 없으며, 인근 공영주차장 이용을 권장드립니다. 연남동 공영주차장(도보 3분)이 가장 가깝고, 홍대입구역 환승주차장도 이용 가능합니다. 대중교통 이용을 권장드리며, 샴페인을 드실 예정이라면 대리운전을 이용해 주세요." 
               },
               { 
                 q: "영업시간과 휴무일이 어떻게 되나요?", 
@@ -728,7 +728,7 @@ app.get('/', (c) => {
               },
               { 
                 q: "아이 동반 방문이 가능한가요?", 
-                a: "ROWISM The Black은 성인 고객을 위한 프리미엄 와인바로, 만 18세 미만 고객의 입장은 정중히 사양하고 있습니다. 성인 동반 여부와 관계없이 아동 및 청소년의 입장이 어려운 점 양해 부탁드립니다." 
+                a: "ROWISM The Black은 성인 고객을 위한 프리미엄 샴페인바로, 만 18세 미만 고객의 입장은 정중히 사양하고 있습니다. 성인 동반 여부와 관계없이 아동 및 청소년의 입장이 어려운 점 양해 부탁드립니다." 
               },
             ].map((item, i) => (
               <div key={i} class="faq-item border-b border-white/5 animate-on-scroll" style={`animation-delay: ${i * 0.05}s`}>
@@ -761,7 +761,7 @@ app.get('/', (c) => {
               특별한 밤을 예약하세요
             </h2>
             <p class="text-off-white/40 text-sm font-light mb-8 max-w-md mx-auto">
-              연남동 프리미엄 와인바 ROWISM The Black에서<br/>
+              연남동 프리미엄 샴페인바 ROWISM The Black에서<br/>
               잊지 못할 순간을 만들어 드립니다
             </p>
             <p class="text-off-white/30 text-xs mb-16">
@@ -793,7 +793,7 @@ app.get('/', (c) => {
                 날것의 철학으로,<br/>당신의 특별한 밤을 위해.
               </p>
               <p class="text-off-white/20 text-[10px] mt-4 leading-relaxed">
-                연남동 프리미엄 와인바<br/>
+                연남동 프리미엄 샴페인바<br/>
                 홍대입구역 도보 5분
               </p>
             </div>

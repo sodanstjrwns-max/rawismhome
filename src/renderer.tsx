@@ -8,7 +8,7 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집</title>
         <meta name="description" content="서울 연남동 프리미엄 샴페인바 ROWISM The Black. 트러플 한우 뭉티기와 샴페인이 만나는 특별한 밤. 홍대입구역 5분, 8석 한정 예약제. 기념일, 데이트, 프로포즈를 위한 연남동 대표 다이닝 공간. 2인 평균 18만원." />
-        <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 프로포즈 레스토랑, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천" />
+        <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 프로포즈 레스토랑, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 연남동 크리스마스, 홍대 발렌타인데이, 연남동 100일 기념, 홍대 1주년 기념일, 연남동 프로포즈 장소, 홍대 프로포즈 레스토랑, 서교동 맛집, 합정 데이트, 망원동 맛집, 홍대입구역 3번출구 맛집, 연남동 스파클링와인, 홍대 버블바, 연남동 고급 레스토랑, 홍대 접대, 연남동 비즈니스 미팅" />
         <meta name="author" content="ROWISM The Black" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://rowism.com" />
@@ -22,11 +22,26 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta name="theme-color" content="#080808" />
         <meta name="msapplication-TileColor" content="#080808" />
         
-        {/* Geographic Tags for Local SEO */}
+        {/* Geographic Tags for Local SEO - Enhanced */}
         <meta name="geo.region" content="KR-11" />
         <meta name="geo.placename" content="연남동, 마포구, 서울" />
         <meta name="geo.position" content="37.5595;126.9224" />
         <meta name="ICBM" content="37.5595, 126.9224" />
+        <meta name="place:location:latitude" content="37.5595" />
+        <meta name="place:location:longitude" content="126.9224" />
+        
+        {/* Additional Local SEO Tags */}
+        <meta name="city" content="서울" />
+        <meta name="country" content="대한민국" />
+        <meta name="zipcode" content="04030" />
+        <meta name="classification" content="Restaurant, Champagne Bar, Wine Bar, Fine Dining" />
+        <meta name="coverage" content="연남동, 서교동, 홍대, 합정동, 망원동, 상수동, 마포구" />
+        <meta name="distribution" content="local" />
+        <meta name="target" content="연남동 데이트, 홍대 데이트, 기념일, 프로포즈" />
+        
+        {/* Naver Specific Meta Tags */}
+        <meta name="naver-site-verification" content="verify-code-here" />
+        <meta property="naverbot" content="index, follow" />
         
         {/* Open Graph */}
         <meta property="og:title" content="ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기" />
@@ -237,30 +252,115 @@ export const renderer = jsxRenderer(({ children }) => {
           ]
         })}} />
         
-        {/* Schema.org Structured Data - LocalBusiness (for GEO) */}
+        {/* Schema.org Structured Data - LocalBusiness (Enhanced GEO) */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
+          "@id": "https://rowism.com/#localbusiness",
           "name": "ROWISM The Black",
-          "description": "연남동 프리미엄 샴페인바. 트러플 한우 뭉티기 전문점. 데이트, 기념일, 프로포즈 장소로 인기.",
+          "alternateName": ["로위즘", "로위즘 더 블랙", "연남동 로위즘", "홍대 로위즘"],
+          "description": "연남동 프리미엄 샴페인바. 트러플 한우 뭉티기 전문점. 연트럴파크 인근, 경의선숲길 도보 3분. 데이트, 기념일, 프로포즈 장소로 인기. 홍대입구역 3번출구 도보 5분.",
+          "url": "https://rowism.com",
+          "telephone": "+82-10-0000-0000",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "동교로 262-4",
-            "addressLocality": "마포구 연남동",
+            "addressLocality": "마포구",
             "addressRegion": "서울특별시",
-            "addressCountry": "KR"
+            "postalCode": "04030",
+            "addressCountry": "KR",
+            "areaServed": ["연남동", "서교동", "홍대", "합정동", "망원동", "상수동"]
           },
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": "37.5595",
             "longitude": "126.9224"
           },
-          "areaServed": {
-            "@type": "City",
-            "name": "서울"
+          "areaServed": [
+            { "@type": "Place", "name": "연남동" },
+            { "@type": "Place", "name": "서교동" },
+            { "@type": "Place", "name": "홍대" },
+            { "@type": "Place", "name": "합정동" },
+            { "@type": "Place", "name": "망원동" },
+            { "@type": "City", "name": "서울" },
+            { "@type": "City", "name": "마포구" }
+          ],
+          "hasMap": "https://map.naver.com/v5/search/로위즘",
+          "knowsAbout": ["샴페인", "스파클링와인", "한우", "육회", "뭉티기", "트러플", "부라타치즈", "데이트", "기념일", "프로포즈", "프라이빗다이닝"],
+          "slogan": "연남동에서 가장 특별한 밤",
+          "keywords": "연남동 데이트, 홍대 데이트, 연남동 기념일, 홍대 기념일, 연남동 프로포즈, 연트럴파크 맛집, 경의선숲길 맛집, 홍대입구역 맛집, 연남동 샴페인바, 홍대 샴페인바",
+          "containedInPlace": {
+            "@type": "Place",
+            "name": "연남동",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "마포구, 서울"
+            }
           },
-          "knowsAbout": ["샴페인", "한우", "육회", "뭉티기", "이탈리안", "데이트", "기념일"],
-          "slogan": "연남동에서 가장 특별한 밤"
+          "isAccessibleForFree": false,
+          "publicAccess": true
+        })}} />
+        
+        {/* Schema.org - Place with Nearby Landmarks */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Place",
+          "name": "ROWISM The Black 위치",
+          "description": "연남동 프리미엄 샴페인바 - 연트럴파크 도보 2분, 경의선숲길 도보 3분, 홍대입구역 3번출구 도보 5분",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.5595",
+            "longitude": "126.9224"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "동교로 262-4 (연남동)",
+            "addressLocality": "마포구",
+            "addressRegion": "서울특별시",
+            "postalCode": "04030",
+            "addressCountry": "KR"
+          },
+          "containsPlace": {
+            "@type": "Restaurant",
+            "name": "ROWISM The Black"
+          },
+          "nearbyAttraction": [
+            { "@type": "TouristAttraction", "name": "연트럴파크", "description": "도보 2분" },
+            { "@type": "TouristAttraction", "name": "경의선숲길", "description": "도보 3분" },
+            { "@type": "TouristAttraction", "name": "동진시장", "description": "도보 3분" },
+            { "@type": "TouristAttraction", "name": "홍대 걷고싶은거리", "description": "도보 8분" }
+          ],
+          "publicTransportation": [
+            { "@type": "SubwayStation", "name": "홍대입구역 2호선", "description": "3번 출구 도보 5분" },
+            { "@type": "SubwayStation", "name": "홍대입구역 경의중앙선", "description": "도보 7분" },
+            { "@type": "SubwayStation", "name": "홍대입구역 공항철도", "description": "도보 7분" }
+          ]
+        })}} />
+        
+        {/* Schema.org - Event for Seasonal Keywords */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "ROWISM The Black 기념일 이벤트",
+          "description": "연남동 프리미엄 샴페인바에서 특별한 기념일을 보내세요. 100일, 1주년, 생일, 프로포즈, 크리스마스, 발렌타인데이 등 모든 기념일 이벤트 세팅 무료.",
+          "location": {
+            "@type": "Place",
+            "name": "ROWISM The Black",
+            "address": "서울 마포구 동교로 262-4"
+          },
+          "organizer": {
+            "@type": "Organization",
+            "name": "ROWISM The Black",
+            "url": "https://rowism.com"
+          },
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://naver.me/5qLSfCNC",
+            "availability": "https://schema.org/InStock"
+          },
+          "keywords": "연남동 크리스마스 데이트, 홍대 발렌타인데이, 연남동 화이트데이, 홍대 프로포즈, 연남동 100일, 홍대 1주년, 연남동 생일파티"
         })}} />
         
         {/* Schema.org Structured Data - BreadcrumbList */}

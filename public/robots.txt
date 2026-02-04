@@ -1,0 +1,28 @@
+# ROWISM The Black - 연남동 프리미엄 샴페인바
+# https://rowism.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rowism.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block unnecessary files
+Disallow: /_worker.js
+Disallow: /*.map$

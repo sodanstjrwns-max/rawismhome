@@ -5,6 +5,45 @@ const app = new Hono()
 
 app.use(renderer)
 
+// Static files - sitemap.xml
+app.get('/sitemap.xml', async (c) => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://rowism.com/</loc>
+    <lastmod>2024-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rowism.com/static/logo.png</image:loc>
+      <image:title>ROWISM The Black 로고 - 연남동 프리미엄 샴페인바</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rowism.com/static/menu_signature.jpg</image:loc>
+      <image:title>연남동 맛집 트러플 한우 뭉티기 - 홍대 데이트 기념일</image:title>
+    </image:image>
+  </url>
+  <url><loc>https://rowism.com/#menu</loc><priority>0.9</priority></url>
+  <url><loc>https://rowism.com/#philosophy</loc><priority>0.8</priority></url>
+  <url><loc>https://rowism.com/#recommend</loc><priority>0.8</priority></url>
+  <url><loc>https://rowism.com/#location</loc><priority>0.8</priority></url>
+  <url><loc>https://rowism.com/#faq</loc><priority>0.7</priority></url>
+  <url><loc>https://rowism.com/#reserve</loc><priority>0.9</priority></url>
+</urlset>`
+  return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
+})
+
+// Static files - robots.txt
+app.get('/robots.txt', (c) => {
+  const robots = `# ROWISM The Black - 연남동 프리미엄 샴페인바
+User-agent: *
+Allow: /
+Sitemap: https://rowism.com/sitemap.xml
+Crawl-delay: 1`
+  return c.text(robots, 200, { 'Content-Type': 'text/plain' })
+})
+
 // Main Page - ROWISM The Black (Premium Luxury Version with Enhanced SEO/GEO Content)
 app.get('/', (c) => {
   return c.render(
@@ -213,7 +252,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[4/3] lg:aspect-auto bg-soft-black overflow-hidden group">
                 <img 
                   src="/static/menu_signature.jpg" 
-                  alt="로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기와 부라타 치즈" 
+                  alt="연남동 맛집 로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기 부라타치즈 홈대 데이트 코스 기념일 디너" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/30 to-transparent"></div>
@@ -274,7 +313,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_jebichuri.jpg" 
-                  alt="제비추리 그릴드 베지터블" 
+                  alt="연남동 한우 맛집 제비추리 그릴드 - 홈대입구역 육회 전문점 프라이빗 다이닝" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -309,7 +348,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_cheese.jpg" 
-                  alt="치즈 셀렉션" 
+                  alt="연남동 샴페인바 프리미엄 치즈 플레이트 - 홈대 데이트 장소 기념일 레스토랑" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -344,7 +383,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_yukhoe.jpg" 
-                  alt="청양 오일 육회" 
+                  alt="연남동 육회 맛집 청양오일육회 - 홈대 한우 육회 전문점 프로포즈 레스토랑" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -379,7 +418,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_caprese.jpg" 
-                  alt="아보카도 카프레제" 
+                  alt="연남동 데이트 코스 아보카도 카프레제 - 홈대 분위기 좋은 샴페인바" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -414,7 +453,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_memil.jpg" 
-                  alt="들기름 육회 메밀면" 
+                  alt="연남동 맛집 들기름 육회 메밀면 - 홈대입구역 맛집 연트럴파크 근처" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -551,6 +590,20 @@ app.get('/', (c) => {
                 detail: "트러플 한우 뭉티기, 부라타 치즈, 파르미지아노 레지아노의 조합. 어디서도 경험하지 못한 시그니처 요리를 만나보세요.",
                 keywords: "연남동 맛집, 홍대 특별한 맛집, 한우 뭉티기"
               },
+              { 
+                title: "시즌 이벤트", 
+                icon: "☆",
+                desc: "크리스마스, 발렌타인, 화이트데이", 
+                detail: "특별한 시즌엔 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이 이벤트 세팅을 준비해드립니다. 연트럴파크 야경과 함께.",
+                keywords: "연남동 크리스마스, 홍대 발렌타인데이, 연남동 화이트데이"
+              },
+              { 
+                title: "연트럴파크 산책 후", 
+                icon: "◎",
+                desc: "경의선숲길 산책 후 특별한 저녁", 
+                detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요.",
+                keywords: "연트럴파크 맛집, 경의선숲길 맛집, 연남동 산책 후 식당"
+              },
             ].map((item, i) => (
               <div key={i} class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style={`animation-delay: ${i * 0.1}s`}>
                 <span class="text-champagne/40 text-2xl">{item.icon}</span>
@@ -613,14 +666,17 @@ app.get('/', (c) => {
                 <div class="border-l border-champagne/20 pl-6">
                   <p class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase mb-2">Address</p>
                   <p class="text-off-white/80 font-light">서울 마포구 동교로 262-4</p>
-                  <p class="text-off-white/40 text-sm mt-1">연남동 골목, 연트럴파크 인근</p>
+                  <p class="text-off-white/50 text-sm mt-1">(연남동 XXX-XX)</p>
+                  <p class="text-off-white/40 text-xs mt-2">연트럴파크 인근 · 경의선숲길 도보 3분</p>
+                  <p class="text-off-white/30 text-xs mt-1">우편번호: 04030</p>
                 </div>
                 
                 <div class="border-l border-champagne/20 pl-6">
                   <p class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase mb-2">Access</p>
                   <p class="text-off-white/80 font-light">지하철 2호선 홍대입구역 3번 출구</p>
                   <p class="text-off-white/40 text-sm mt-1">도보 약 5분 (400m)</p>
-                  <p class="text-off-white/30 text-xs mt-2">경의중앙선 홍대입구역에서도 도보 7분</p>
+                  <p class="text-off-white/30 text-xs mt-2">경의중앙선 · 공항철도 홍대입구역 도보 7분</p>
+                  <p class="text-off-white/25 text-xs mt-1">합정역에서 도보 12분 · 망원역에서 도보 15분</p>
                 </div>
                 
                 <div class="border-l border-champagne/20 pl-6">
@@ -641,8 +697,10 @@ app.get('/', (c) => {
                 <div class="border-l border-champagne/20 pl-6">
                   <p class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase mb-2">Nearby Landmarks</p>
                   <p class="text-off-white/40 text-sm">연트럴파크 도보 2분</p>
+                  <p class="text-off-white/40 text-sm">경의선숲길 도보 3분</p>
                   <p class="text-off-white/40 text-sm">동진시장 도보 3분</p>
                   <p class="text-off-white/40 text-sm">홍대 걷고싶은거리 도보 8분</p>
+                  <p class="text-off-white/30 text-xs mt-2">서교동 · 합정동 · 망원동 인접</p>
                 </div>
               </div>
             </div>

@@ -182,7 +182,7 @@ export const renderer = jsxRenderer(({ children }) => {
               "name": "연남동 와인바 ROWISM은 예약 없이 방문해도 되나요?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약 또는 전화로 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다."
+                "text": "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다."
               }
             },
             {

@@ -1,57 +1,38 @@
 import { Hono } from 'hono'
-import { renderer } from './renderer'
+import { createRenderer } from './renderer'
 
 const app = new Hono()
 
-app.use(renderer)
+// Language types
+type Language = 'ko' | 'en' | 'ja' | 'zh'
 
-// Static files - sitemap.xml
-app.get('/sitemap.xml', async (c) => {
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://rowism.com/</loc>
-    <lastmod>2024-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://rowism.com/static/logo.png</image:loc>
-      <image:title>ROWISM The Black 로고 - 연남동 프리미엄 샴페인바</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rowism.com/static/menu_signature.jpg</image:loc>
-      <image:title>연남동 맛집 트러플 한우 뭉티기 - 홍대 데이트 기념일</image:title>
-    </image:image>
-  </url>
-  <url><loc>https://rowism.com/#menu</loc><priority>0.9</priority></url>
-  <url><loc>https://rowism.com/#philosophy</loc><priority>0.8</priority></url>
-  <url><loc>https://rowism.com/#recommend</loc><priority>0.8</priority></url>
-  <url><loc>https://rowism.com/#location</loc><priority>0.8</priority></url>
-  <url><loc>https://rowism.com/#faq</loc><priority>0.7</priority></url>
-  <url><loc>https://rowism.com/#reserve</loc><priority>0.9</priority></url>
-</urlset>`
-  return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
-})
+// Get URL path for a language
+function getLangPath(lang: Language): string {
+  return lang === 'ko' ? '/' : `/${lang}`
+}
 
-// Static files - robots.txt
-app.get('/robots.txt', (c) => {
-  const robots = `# ROWISM The Black - 연남동 프리미엄 샴페인바
-User-agent: *
-Allow: /
-Sitemap: https://rowism.com/sitemap.xml
-Crawl-delay: 1`
-  return c.text(robots, 200, { 'Content-Type': 'text/plain' })
-})
-
-// Main Page - ROWISM The Black (Premium Luxury Version with Enhanced SEO/GEO Content)
-app.get('/', (c) => {
-  return c.render(
+// Page content component - shared across all language routes
+function PageContent({ lang }: { lang: Language }) {
+  const koPath = '/'
+  const enPath = '/en'
+  const jaPath = '/ja'
+  const zhPath = '/zh'
+  
+  // Determine which language is active
+  const isKo = lang === 'ko'
+  const isEn = lang === 'en'
+  const isJa = lang === 'ja'
+  const isZh = lang === 'zh'
+  
+  // Base path for internal links (e.g., #menu -> /ja#menu for Japanese)
+  const basePath = getLangPath(lang)
+  
+  return (
     <div class="overflow-x-hidden">
       {/* Navigation */}
       <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-700 bg-transparent">
         <div class="max-w-7xl mx-auto px-8 md:px-12 py-6 flex justify-between items-center">
-          <a href="#hero" class="group">
+          <a href={`${basePath}#hero`} class="group">
             <img 
               src="/static/logo.png" 
               alt="RAWISM The Black" 
@@ -59,29 +40,29 @@ app.get('/', (c) => {
             />
           </a>
           <div class="hidden lg:flex items-center gap-8">
-            <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.philosophy">Philosophy</a>
-            <a href="#menu" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.menu">Menu</a>
-            <a href="#recommend" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.recommend">추천</a>
-            <a href="#location" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.location">Location</a>
-            <a href="#reserve" class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500" data-i18n="nav.reservation">
+            <a href={`${basePath}#philosophy`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.philosophy">Philosophy</a>
+            <a href={`${basePath}#menu`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.menu">Menu</a>
+            <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.recommend">추천</a>
+            <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.location">Location</a>
+            <a href={`${basePath}#reserve`} class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500" data-i18n="nav.reservation">
               Reservation
             </a>
-            {/* Language Selector */}
+            {/* Language Selector - URL-based navigation for SEO */}
             <div class="flex items-center gap-1 ml-4 border-l border-white/10 pl-4">
-              <button onclick="setLanguage('ko')" data-lang="ko" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-champagne border-b border-champagne" title="한국어">🇰🇷</button>
-              <button onclick="setLanguage('en')" data-lang="en" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-off-white/50 border-b border-transparent" title="English">🇺🇸</button>
-              <button onclick="setLanguage('ja')" data-lang="ja" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-off-white/50 border-b border-transparent" title="日本語">🇯🇵</button>
-              <button onclick="setLanguage('zh')" data-lang="zh" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-off-white/50 border-b border-transparent" title="中文">🇨🇳</button>
+              <a href={koPath} data-lang="ko" class={`lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 ${isKo ? 'text-champagne border-b border-champagne' : 'text-off-white/50 border-b border-transparent'}`} title="한국어">🇰🇷</a>
+              <a href={enPath} data-lang="en" class={`lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 ${isEn ? 'text-champagne border-b border-champagne' : 'text-off-white/50 border-b border-transparent'}`} title="English">🇺🇸</a>
+              <a href={jaPath} data-lang="ja" class={`lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 ${isJa ? 'text-champagne border-b border-champagne' : 'text-off-white/50 border-b border-transparent'}`} title="日本語">🇯🇵</a>
+              <a href={zhPath} data-lang="zh" class={`lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 ${isZh ? 'text-champagne border-b border-champagne' : 'text-off-white/50 border-b border-transparent'}`} title="中文">🇨🇳</a>
             </div>
           </div>
           {/* Mobile: Language + Menu */}
           <div class="lg:hidden flex items-center gap-3">
-            {/* Mobile Language Flags - Always Visible (Left of Hamburger) */}
+            {/* Mobile Language Flags - URL-based navigation */}
             <div class="flex items-center gap-1 bg-white/5 rounded-full px-2 py-1 backdrop-blur-sm">
-              <button onclick="setLanguage('ko')" data-lang="ko" class="lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 active:scale-95" title="한국어">🇰🇷</button>
-              <button onclick="setLanguage('en')" data-lang="en" class="lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 opacity-50 active:scale-95" title="English">🇺🇸</button>
-              <button onclick="setLanguage('ja')" data-lang="ja" class="lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 opacity-50 active:scale-95" title="日本語">🇯🇵</button>
-              <button onclick="setLanguage('zh')" data-lang="zh" class="lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 opacity-50 active:scale-95" title="中文">🇨🇳</button>
+              <a href={koPath} data-lang="ko" class={`lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 active:scale-95 ${isKo ? '' : 'opacity-50'}`} title="한국어">🇰🇷</a>
+              <a href={enPath} data-lang="en" class={`lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 active:scale-95 ${isEn ? '' : 'opacity-50'}`} title="English">🇺🇸</a>
+              <a href={jaPath} data-lang="ja" class={`lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 active:scale-95 ${isJa ? '' : 'opacity-50'}`} title="日本語">🇯🇵</a>
+              <a href={zhPath} data-lang="zh" class={`lang-btn text-[16px] w-7 h-7 flex items-center justify-center rounded-full transition-all hover:bg-white/10 active:scale-95 ${isZh ? '' : 'opacity-50'}`} title="中文">🇨🇳</a>
             </div>
             {/* Hamburger Menu Button */}
             <button id="mobile-menu-btn" class="text-off-white/70 hover:text-off-white transition-colors p-2">
@@ -94,20 +75,20 @@ app.get('/', (c) => {
         {/* Mobile Menu */}
         <div id="mobile-menu" class="hidden lg:hidden bg-deep-black/98 backdrop-blur-xl">
           <div class="px-8 py-8 flex flex-col gap-6">
-            <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.philosophy">Philosophy</a>
-            <a href="#menu" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.menu">Menu</a>
-            <a href="#recommend" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.recommend">추천</a>
-            <a href="#location" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.location">Location</a>
+            <a href={`${basePath}#philosophy`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.philosophy">Philosophy</a>
+            <a href={`${basePath}#menu`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.menu">Menu</a>
+            <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.recommend">추천</a>
+            <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.location">Location</a>
             <div class="pt-4 border-t border-white/5">
-              <a href="#reserve" class="text-[11px] tracking-[0.25em] uppercase text-champagne" data-i18n="nav.reservation">Reservation</a>
+              <a href={`${basePath}#reserve`} class="text-[11px] tracking-[0.25em] uppercase text-champagne" data-i18n="nav.reservation">Reservation</a>
             </div>
-            {/* Mobile Language Selector */}
+            {/* Mobile Language Selector - URL-based */}
             <div class="pt-4 border-t border-white/5 flex items-center gap-3">
               <span class="text-[10px] text-off-white/30 uppercase tracking-wider">Language:</span>
-              <button onclick="setLanguage('ko')" data-lang="ko" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-champagne" title="한국어">🇰🇷</button>
-              <button onclick="setLanguage('en')" data-lang="en" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-off-white/50" title="English">🇺🇸</button>
-              <button onclick="setLanguage('ja')" data-lang="ja" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-off-white/50" title="日本語">🇯🇵</button>
-              <button onclick="setLanguage('zh')" data-lang="zh" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-off-white/50" title="中文">🇨🇳</button>
+              <a href={koPath} data-lang="ko" class={`lang-btn text-[15px] px-2 py-1 rounded transition-all ${isKo ? 'text-champagne' : 'text-off-white/50'}`} title="한국어">🇰🇷</a>
+              <a href={enPath} data-lang="en" class={`lang-btn text-[15px] px-2 py-1 rounded transition-all ${isEn ? 'text-champagne' : 'text-off-white/50'}`} title="English">🇺🇸</a>
+              <a href={jaPath} data-lang="ja" class={`lang-btn text-[15px] px-2 py-1 rounded transition-all ${isJa ? 'text-champagne' : 'text-off-white/50'}`} title="日本語">🇯🇵</a>
+              <a href={zhPath} data-lang="zh" class={`lang-btn text-[15px] px-2 py-1 rounded transition-all ${isZh ? 'text-champagne' : 'text-off-white/50'}`} title="中文">🇨🇳</a>
             </div>
           </div>
         </div>
@@ -694,7 +675,7 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Section 11: CTA */}
+      {/* Section 12: CTA */}
       <section id="reserve" class="py-32 md:py-40 bg-soft-black/30 relative overflow-hidden">
         {/* Subtle Background */}
         <div class="absolute inset-0 bg-gradient-to-r from-champagne/5 via-transparent to-champagne/5"></div>
@@ -803,6 +784,120 @@ app.get('/', (c) => {
       </div>
     </div>
   )
+}
+
+// ===========================================
+// ROUTES - Each language gets its own route
+// ===========================================
+
+// Sitemap.xml - Include all language versions
+app.get('/sitemap.xml', async (c) => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Korean (default) -->
+  <url>
+    <loc>https://rawism.kr/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rawism.kr/" />
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rawism.kr/static/logo.png</image:loc>
+      <image:title>ROWISM The Black 로고 - 연남동 프리미엄 샴페인바</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/menu_signature.jpg</image:loc>
+      <image:title>연남동 맛집 트러플 한우 뭉티기 - 홍대 데이트 기념일</image:title>
+    </image:image>
+  </url>
+  <!-- English -->
+  <url>
+    <loc>https://rawism.kr/en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://rawism.kr/ja</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Chinese -->
+  <url>
+    <loc>https://rawism.kr/zh</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://rawism.kr/#menu</loc><priority>0.9</priority></url>
+  <url><loc>https://rawism.kr/#philosophy</loc><priority>0.8</priority></url>
+  <url><loc>https://rawism.kr/#recommend</loc><priority>0.8</priority></url>
+  <url><loc>https://rawism.kr/#location</loc><priority>0.8</priority></url>
+  <url><loc>https://rawism.kr/#faq</loc><priority>0.7</priority></url>
+  <url><loc>https://rawism.kr/#reserve</loc><priority>0.9</priority></url>
+</urlset>`
+  return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
+})
+
+// robots.txt
+app.get('/robots.txt', (c) => {
+  const robots = `# ROWISM The Black - 연남동 프리미엄 샴페인바
+User-agent: *
+Allow: /
+Sitemap: https://rawism.kr/sitemap.xml
+Crawl-delay: 1`
+  return c.text(robots, 200, { 'Content-Type': 'text/plain' })
+})
+
+// Korean (default) - /
+app.get('/', (c) => {
+  const koRenderer = createRenderer('ko')
+  return koRenderer(c as any, async () => {})
+    .then(() => c.render(<PageContent lang="ko" />))
+})
+
+// Apply Korean renderer and render page
+app.use('/', createRenderer('ko'))
+app.get('/', (c) => {
+  return c.render(<PageContent lang="ko" />)
+})
+
+// English - /en
+app.use('/en', createRenderer('en'))
+app.get('/en', (c) => {
+  return c.render(<PageContent lang="en" />)
+})
+
+// Japanese - /ja
+app.use('/ja', createRenderer('ja'))
+app.get('/ja', (c) => {
+  return c.render(<PageContent lang="ja" />)
+})
+
+// Chinese - /zh
+app.use('/zh', createRenderer('zh'))
+app.get('/zh', (c) => {
+  return c.render(<PageContent lang="zh" />)
 })
 
 export default app

@@ -1,594 +1,246 @@
 import { jsxRenderer } from 'hono/jsx-renderer'
+import type { Context } from 'hono'
 
-export const renderer = jsxRenderer(({ children }) => {
-  return (
-    <html lang="ko">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집</title>
-        <meta name="description" content="서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원." />
-        <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 연남동 크리스마스, 홍대 발렌타인데이, 연남동 100일 기념, 홍대 1주년 기념일, 홍대 서교동 맛집, 합정 데이트, 망원동 맛집, 홍대입구역 3번출구 맛집, 연남동 스파클링와인, 홍대 버블바, 연남동 고급 레스토랑, 홍대 접대, 연남동 비즈니스 미팅, 연남동 뭉티기, 홍대 뭉티기, 온도체 한우, 당일 도축 한우, 연남동 육회, 홍대 육회, 연남동 제비추리, 홍대 제비추리 구이, 연남동 치즈플레이트, 홍대 치즈 맛집, 브리 드 모, 고르곤졸라, 연남동 아보카도 카프레제, 홍대 부라타 치즈, 연남동 메밀면, 홍대 들기름 육회, 연남동 블랙트러플, 홍대 트러플 요리, 연남동 파르미지아노, 홍대 프리미엄 한우, 연남동 청양오일육회, 홍대 매운 육회" />
-        <meta name="author" content="ROWISM The Black" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://rawism.kr" />
-        
-        {/* International SEO - hreflang for multilingual */}
-        <link rel="alternate" hreflang="ko" href="https://rawism.kr" />
-        <link rel="alternate" hreflang="en" href="https://rawism.kr" />
-        <link rel="alternate" hreflang="ja" href="https://rawism.kr" />
-        <link rel="alternate" hreflang="zh" href="https://rawism.kr" />
-        <link rel="alternate" hreflang="x-default" href="https://rawism.kr" />
-        
-        {/* Favicon & App Icons */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
-        <meta name="theme-color" content="#080808" />
-        <meta name="msapplication-TileColor" content="#080808" />
-        
-        {/* Geographic Tags for Local SEO - Enhanced */}
-        <meta name="geo.region" content="KR-11" />
-        <meta name="geo.placename" content="연남동, 마포구, 서울" />
-        <meta name="geo.position" content="37.5595;126.9224" />
-        <meta name="ICBM" content="37.5595, 126.9224" />
-        <meta name="place:location:latitude" content="37.5595" />
-        <meta name="place:location:longitude" content="126.9224" />
-        
-        {/* Additional Local SEO Tags */}
-        <meta name="city" content="서울" />
-        <meta name="country" content="대한민국" />
-        <meta name="zipcode" content="04030" />
-        <meta name="classification" content="Restaurant, Champagne Bar, Wine Bar, Fine Dining" />
-        <meta name="coverage" content="연남동, 서교동, 홍대, 합정동, 망원동, 상수동, 마포구" />
-        <meta name="distribution" content="local" />
-        <meta name="target" content="연남동 데이트, 홍대 데이트, 기념일" />
-        
-        {/* English Meta Tags for International SEO */}
-        <meta name="description" lang="en" content="ROWISM The Black - Premium Champagne Bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) with Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required. Perfect for dates and anniversaries." />
-        <meta name="keywords" lang="en" content="Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Hongdae wine bar, Seoul private dining, Korean raw beef, Seoul foodie, Hongdae hidden gem, Yeonnam-dong best restaurant, Seoul luxury restaurant, Hongik University restaurant, Seoul truffle restaurant, Korean cuisine Seoul, Seoul nightlife restaurant, Mapo-gu restaurant, Seoul Instagram restaurant, Hongdae premium restaurant" />
-        
-        {/* Japanese Meta for Tourist SEO */}
-        <meta name="description" lang="ja" content="ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。弘大駅から徒歩5分、8席限定、要予約。デートや記念日に最適。" />
-        <meta name="keywords" lang="ja" content="弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 弘大 ワインバー, 韓国 生肉, ソウル 隠れ家" />
-        
-        {/* Chinese Meta for Tourist SEO */}
-        <meta name="description" lang="zh" content="ROWISM The Black - 首尔延南洞高级香槟吧。新鲜当日屠宰韩牛肉脍配意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。约会和纪念日的完美选择。" />
-        <meta name="keywords" lang="zh" content="弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 弘大酒吧, 韩国生牛肉, 首尔网红餐厅" />
-        
-        {/* Naver Specific Meta Tags */}
-        <meta name="naver-site-verification" content="verify-code-here" />
-        <meta property="naverbot" content="index, follow" />
-        
-        {/* Open Graph - Korean */}
-        <meta property="og:title" content="ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기" />
-        <meta property="og:description" content="당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제." />
-        <meta property="og:type" content="restaurant" />
-        <meta property="og:locale" content="ko_KR" />
-        <meta property="og:locale:alternate" content="en_US" />
-        <meta property="og:locale:alternate" content="ja_JP" />
-        <meta property="og:locale:alternate" content="zh_CN" />
-        <meta property="og:site_name" content="ROWISM The Black" />
-        <meta property="og:url" content="https://rawism.kr" />
-        
-        {/* Restaurant Specific OG Tags */}
-        <meta property="restaurant:contact_info:street_address" content="동교로 262-4" />
-        <meta property="restaurant:contact_info:locality" content="마포구" />
-        <meta property="restaurant:contact_info:region" content="서울" />
-        <meta property="restaurant:contact_info:country_name" content="대한민국" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="ROWISM The Black | 연남동 프리미엄 샴페인바" />
-        <meta name="twitter:description" content="트러플 한우 뭉티기와 샴페인이 만나는 특별한 밤. 홍대입구역 5분." />
-        
-        {/* Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        
-        {/* Tailwind CSS */}
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script dangerouslySetInnerHTML={{__html: `
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  'deep-black': '#080808',
-                  'soft-black': '#141414',
-                  'champagne': '#B8A060',
-                  'off-white': '#E0E0E0',
-                },
-                fontFamily: {
-                  'playfair': ['Playfair Display', 'serif'],
-                  'noto-serif': ['Noto Serif KR', 'serif'],
-                  'pretendard': ['Pretendard', 'sans-serif'],
+// Language types
+type Language = 'ko' | 'en' | 'ja' | 'zh'
+
+// SEO metadata for each language
+const seoData: Record<Language, {
+  lang: string
+  title: string
+  description: string
+  keywords: string
+  ogDescription: string
+}> = {
+  ko: {
+    lang: 'ko',
+    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집',
+    description: '서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원.',
+    keywords: '연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집',
+    ogDescription: '당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제.'
+  },
+  en: {
+    lang: 'en',
+    title: 'ROWISM The Black | Premium Champagne Bar in Seoul Yeonnam-dong | Hongdae Date Anniversary',
+    description: 'ROWISM The Black - Premium Champagne Bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) with Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required. Perfect for dates and anniversaries.',
+    keywords: 'Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Hongdae wine bar, Seoul private dining, Korean raw beef, Seoul foodie, Hongdae hidden gem',
+    ogDescription: 'Premium champagne bar in Seoul\'s Yeonnam-dong. Fresh Korean beef tartare with truffle and champagne pairing. 5 min from Hongdae Station, reservation required.'
+  },
+  ja: {
+    lang: 'ja',
+    title: 'ROWISM The Black | ソウル延南洞プレミアムシャンパンバー | 弘大デート記念日',
+    description: 'ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。弘大駅から徒歩5分、8席限定、要予約。デートや記念日に最適。',
+    keywords: '弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 弘大 ワインバー, 韓国 生肉, ソウル 隠れ家',
+    ogDescription: 'ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタルとシャンパンのペアリング。弘大駅から徒歩5分、要予約。'
+  },
+  zh: {
+    lang: 'zh',
+    title: 'ROWISM The Black | 首尔延南洞高级香槟吧 | 弘大约会纪念日',
+    description: 'ROWISM The Black - 首尔延南洞高级香槟吧。新鲜当日屠宰韩牛肉脍配意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。约会和纪念日的完美选择。',
+    keywords: '弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 弘大酒吧, 韩国生牛肉, 首尔网红餐厅',
+    ogDescription: '首尔延南洞高级香槟吧。新鲜韩牛肉脍与香槟搭配。弘大站步行5分钟，需预约。'
+  }
+}
+
+// Get URL path for a language
+function getLangPath(lang: Language): string {
+  return lang === 'ko' ? '/' : `/${lang}`
+}
+
+// Create a renderer factory that accepts language parameter
+export const createRenderer = (pageLang: Language = 'ko') => {
+  const seo = seoData[pageLang]
+  
+  return jsxRenderer(({ children }) => {
+    return (
+      <html lang={seo.lang}>
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>{seo.title}</title>
+          <meta name="description" content={seo.description} />
+          <meta name="keywords" content={seo.keywords} />
+          <meta name="author" content="ROWISM The Black" />
+          <meta name="robots" content="index, follow" />
+          
+          {/* Canonical URL - points to current language version */}
+          <link rel="canonical" href={`https://rawism.kr${getLangPath(pageLang)}`} />
+          
+          {/* hreflang tags for all languages - CRITICAL for multilingual SEO */}
+          <link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+          <link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+          <link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+          <link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+          <link rel="alternate" hreflang="x-default" href="https://rawism.kr/" />
+          
+          {/* Favicon & App Icons */}
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+          <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+          <meta name="theme-color" content="#080808" />
+          <meta name="msapplication-TileColor" content="#080808" />
+          
+          {/* Geographic Tags for Local SEO */}
+          <meta name="geo.region" content="KR-11" />
+          <meta name="geo.placename" content="연남동, 마포구, 서울" />
+          <meta name="geo.position" content="37.5595;126.9224" />
+          <meta name="ICBM" content="37.5595, 126.9224" />
+          <meta name="place:location:latitude" content="37.5595" />
+          <meta name="place:location:longitude" content="126.9224" />
+          
+          {/* Additional Local SEO Tags */}
+          <meta name="city" content="서울" />
+          <meta name="country" content="대한민국" />
+          <meta name="zipcode" content="04030" />
+          <meta name="classification" content="Restaurant, Champagne Bar, Wine Bar, Fine Dining" />
+          
+          {/* Naver Specific Meta Tags */}
+          <meta name="naver-site-verification" content="verify-code-here" />
+          <meta property="naverbot" content="index, follow" />
+          
+          {/* Open Graph - Dynamic based on language */}
+          <meta property="og:title" content={seo.title} />
+          <meta property="og:description" content={seo.ogDescription} />
+          <meta property="og:type" content="restaurant" />
+          <meta property="og:locale" content={pageLang === 'ko' ? 'ko_KR' : pageLang === 'ja' ? 'ja_JP' : pageLang === 'zh' ? 'zh_CN' : 'en_US'} />
+          <meta property="og:locale:alternate" content="ko_KR" />
+          <meta property="og:locale:alternate" content="en_US" />
+          <meta property="og:locale:alternate" content="ja_JP" />
+          <meta property="og:locale:alternate" content="zh_CN" />
+          <meta property="og:site_name" content="ROWISM The Black" />
+          <meta property="og:url" content={`https://rawism.kr${getLangPath(pageLang)}`} />
+          
+          {/* Restaurant Specific OG Tags */}
+          <meta property="restaurant:contact_info:street_address" content="동교로 262-4" />
+          <meta property="restaurant:contact_info:locality" content="마포구" />
+          <meta property="restaurant:contact_info:region" content="서울" />
+          <meta property="restaurant:contact_info:country_name" content="대한민국" />
+          
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={seo.title} />
+          <meta name="twitter:description" content={seo.ogDescription} />
+          
+          {/* Fonts */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+          
+          {/* Tailwind CSS */}
+          <script src="https://cdn.tailwindcss.com"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    'deep-black': '#080808',
+                    'soft-black': '#141414',
+                    'champagne': '#B8A060',
+                    'off-white': '#E0E0E0',
+                  },
+                  fontFamily: {
+                    'playfair': ['Playfair Display', 'serif'],
+                    'noto-serif': ['Noto Serif KR', 'serif'],
+                    'pretendard': ['Pretendard', 'sans-serif'],
+                  }
                 }
               }
             }
-          }
-        `}} />
-        
-        {/* Custom Styles */}
-        <link href="/static/style.css" rel="stylesheet" />
-        
-        {/* Multilingual Translations - Load before other scripts */}
-        <script src="/static/translations.js"></script>
-        
-        {/* Schema.org Structured Data - Restaurant (Multilingual) */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Restaurant",
-          "name": "ROWISM The Black",
-          "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
-          "description": "Premium champagne bar in Yeonnam-dong, Seoul. Specializing in fresh Korean beef tartare (Mungti-gi) with truffle and champagne pairing. 5 min walk from Hongdae Station, 8 seats only, reservation required.",
-          "description:ko": "연남동 프리미엄 샴페인바. 트러플 한우 뭉티기와 샴페인 페어링 전문점. 홍대입구역 도보 5분, 8석 한정 예약제 운영.",
-          "description:ja": "ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタルとシャンパンのペアリング専門店。弘大駅から徒歩5分、8席限定、要予約。",
-          "description:zh": "首尔延南洞高级香槟吧。专营新鲜韩牛肉脍与香槟搭配。弘大站步行5分钟，仅8席，需预约。",
-          "url": "https://rawism.kr",
-          "telephone": "+82-10-0000-0000",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "동교로 262-4",
-            "addressLocality": "마포구",
-            "addressRegion": "서울특별시",
-            "postalCode": "04030",
-            "addressCountry": "KR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "37.5595",
-            "longitude": "126.9224"
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-              "opens": "18:00",
-              "closes": "24:00"
+          `}} />
+          
+          {/* Custom Styles */}
+          <link href="/static/style.css" rel="stylesheet" />
+          
+          {/* Multilingual Translations - Load before other scripts */}
+          <script src="/static/translations.js"></script>
+          
+          {/* Set initial language based on URL */}
+          <script dangerouslySetInnerHTML={{__html: `
+            // Set language from URL path before page renders
+            window.INITIAL_LANG = '${pageLang}';
+          `}} />
+          
+          {/* Schema.org Structured Data - Restaurant (Multilingual) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "ROWISM The Black",
+            "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
+            "description": seo.description,
+            "url": `https://rawism.kr${getLangPath(pageLang)}`,
+            "telephone": "+82-10-0000-0000",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "동교로 262-4",
+              "addressLocality": "마포구",
+              "addressRegion": "서울특별시",
+              "postalCode": "04030",
+              "addressCountry": "KR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "37.5595",
+              "longitude": "126.9224"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "18:00",
+                "closes": "24:00"
+              }
+            ],
+            "servesCuisine": ["Korean", "Champagne Bar", "Korean Beef Tartare", "Hanwoo"],
+            "menu": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+            "priceRange": "₩₩₩",
+            "currenciesAccepted": "KRW",
+            "acceptsReservations": true,
+            "reservations": "https://naver.me/5qLSfCNC",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5",
+              "worstRating": "1"
             }
-          ],
-          "servesCuisine": ["Korean", "Champagne Bar", "Korean Beef Tartare", "Hanwoo", "한식", "샴페인바", "육회", "한우"],
-          "menu": "https://rawism.kr/#menu",
-          "priceRange": "₩₩₩",
-          "currenciesAccepted": "KRW",
-          "paymentAccepted": "현금, 신용카드",
-          "acceptsReservations": true,
-          "reservations": "https://naver.me/5qLSfCNC",
-          "hasMenu": {
-            "@type": "Menu",
-            "hasMenuSection": [
+          })}} />
+          
+          {/* Schema.org - BreadcrumbList with language */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
               {
-                "@type": "MenuSection",
-                "name": "Signature",
-                "hasMenuItem": {
-                  "@type": "MenuItem",
-                  "name": "로위즘 뭉티기 시그니처",
-                  "description": "ROWISM의 철학을 담은 시그니처 메뉴. RAW(날것)와 -ISM(철학)의 조합. 최상급 한우 뭉티기 200g에 이탈리아산 부라타 치즈가 통째로 올라가고, 블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더합니다. 파르미지아노 레지아노가 눈꽃처럼 내려앉습니다.",
-                  "image": "https://rowism.com/static/menu_signature.jpg",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "92000",
-                    "priceCurrency": "KRW"
-                  }
-                }
+                "@type": "ListItem",
+                "position": 1,
+                "name": pageLang === 'ko' ? '서울 맛집' : pageLang === 'ja' ? 'ソウルレストラン' : pageLang === 'zh' ? '首尔餐厅' : 'Seoul Restaurants',
+                "item": `https://rawism.kr${getLangPath(pageLang)}`
               },
               {
-                "@type": "MenuSection",
-                "name": "Main",
-                "hasMenuItem": [
-                  {
-                    "@type": "MenuItem",
-                    "name": "제비추리 그릴드 베지터블",
-                    "description": "한우 제비추리와 8종 제철 채소의 그릴 향연. 제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 숨은 보석으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
-                    "image": "https://rowism.com/static/menu_jebichuri.jpg",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "49000",
-                      "priceCurrency": "KRW"
-                    }
-                  },
-                  {
-                    "@type": "MenuItem",
-                    "name": "치즈 셀렉션",
-                    "description": "소믈리에가 큐레이팅한 6종 치즈 컬렉션. 브리, 8개월 숙성 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아(래핑 치즈). 스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리와 크래커가 함께 제공됩니다.",
-                    "image": "https://rowism.com/static/menu_cheese.jpg",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "36000",
-                      "priceCurrency": "KRW"
-                    }
-                  },
-                  {
-                    "@type": "MenuItem",
-                    "name": "청양 오일 육회",
-                    "description": "전통 육회에 더한 매콤한 불꽃. 직접 만드는 고추기름 소스가 핵심. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합한 특제 소스. 정중앙 노른자를 터뜨려 비벼 드시면 중독성 있는 맛을 경험합니다.",
-                    "image": "https://rowism.com/static/menu_yukhoe.jpg",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "25000",
-                      "priceCurrency": "KRW"
-                    }
-                  },
-                  {
-                    "@type": "MenuItem",
-                    "name": "아보카도 카프레제",
-                    "description": "클래식 카프레제의 현대적 재해석. 이탈리아 카프리 섬에서 유래한 카프레제에 아보카도와 블랙 올리브를 더해 더욱 크리미하게. 아보카도는 주문 후 바로 잘라 갈변 없이 신선하게 제공. 직접 만든 발사믹 드레싱과 함께.",
-                    "image": "https://rowism.com/static/menu_caprese.jpg",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "23000",
-                      "priceCurrency": "KRW"
-                    }
-                  }
-                ]
+                "@type": "ListItem",
+                "position": 2,
+                "name": pageLang === 'ko' ? '연남동 샴페인바' : pageLang === 'ja' ? '延南洞シャンパンバー' : pageLang === 'zh' ? '延南洞香槟吧' : 'Yeonnam-dong Champagne Bar',
+                "item": `https://rawism.kr${getLangPath(pageLang)}`
               },
               {
-                "@type": "MenuSection",
-                "name": "Finisher",
-                "hasMenuItem": {
-                  "@type": "MenuItem",
-                  "name": "들기름 육회 메밀면",
-                  "description": "한 끼의 완벽한 마무리. 고객 설문에서 의외로 가장 좋았던 메뉴로 선정. 들기름에 쯔유, 식초, 설탕을 배합한 소스가 느끼하지 않고 상큼해서 식사 후에도 가볍게 즐길 수 있습니다. 메밀면 위에 한우 육회, 깻잎, 조미김, 통깨가 올라갑니다.",
-                  "image": "https://rowism.com/static/menu_memil.jpg",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "15000",
-                    "priceCurrency": "KRW"
-                  }
-                }
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ROWISM The Black",
+                "item": `https://rawism.kr${getLangPath(pageLang)}`
               }
             ]
-          },
-          "image": "https://rowism.com/images/og-image.jpg",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "127",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "review": [
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "김지현"
-              },
-              "datePublished": "2026-01-28",
-              "reviewBody": "남자친구와 100일 기념으로 방문했어요. 뭉티기가 정말 입에서 녹더라고요! 당일 도축이라 그런지 식감이 완전 달랐어요. 샴페인도 추천해주셔서 페어링이 완벽했습니다. 조명도 은은하고 분위기 최고예요. 다음 기념일에도 또 올게요! 💕"
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "박준영"
-              },
-              "datePublished": "2026-01-25",
-              "reviewBody": "홍대 근처 데이트 코스 찾다가 발견했는데 대박이에요. 8테이블이라 프라이빗하고, 뭉티기 위에 트러플 갈아주는 거 너무 멋있었어요. 여자친구가 완전 좋아했습니다. 가격은 좀 있지만 특별한 날엔 충분히 가치 있어요!"
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "이소연"
-              },
-              "datePublished": "2026-01-20",
-              "reviewBody": "연남동 맛집 많이 다녀봤는데 여긴 진짜 다릅니다. 뭉티기가 뭔지 처음 알았는데, 육회랑 완전 다른 식감이에요. 부라타 치즈랑 같이 먹으면 미쳐요. 친구들한테 다 추천하고 다녀요 ㅎㅎ"
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "최민수"
-              },
-              "datePublished": "2026-01-15",
-              "reviewBody": "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 제비추리 그릴드도 육즙이 살아있어서 완벽했어요. 기념일 장소로 강추!"
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "정하윤"
-              },
-              "datePublished": "2026-01-10",
-              "reviewBody": "연트럴파크 산책하고 저녁 먹을 곳 찾다가 왔어요. 분위기가 정말 좋고, 음악도 대화하기 딱 좋은 볼륨이에요. 치즈 셀렉션이랑 청양 오일 육회 강추합니다! 매콤한 거 좋아하시면 꼭 드셔보세요."
-            }
-          ],
-          "sameAs": [
-            "https://instagram.com/rowism_theblack",
-            "https://map.naver.com/v5/entry/place/rowism"
-          ],
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "예약 필수",
-              "value": true
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "샴페인 페어링",
-              "value": true
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "프라이빗 다이닝",
-              "value": true
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "기념일 이벤트",
-              "value": true
-            }
-          ]
-        })}} />
-        
-        {/* Schema.org Structured Data - FAQ */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "연남동 샴페인바 ROWISM은 예약 없이 방문해도 되나요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ROWISM The Black 2인 방문 시 예상 금액은 얼마인가요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 10-12만원대로도 이용 가능합니다."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "뭉티기가 뭔가요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "뭉티기는 당일 도축한 온도체 한우를 신선한 상태 그대로 얇게 저며 즐기는 대구의 보물 같은 음식입니다. 아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질되어, 일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 생생한 육향을 선사합니다. 양념 없이 고기 본연의 달콤함과 감칠맛을 느끼는 것이 포인트예요. ROWISM에서는 크리미한 이탈리아 부라타 치즈, 향긋한 블랙 트러플과 함께 제공하여 전통과 모던의 완벽한 조화를 경험하실 수 있습니다."
-              }
-            },
-            
-            {
-              "@type": "Question",
-              "name": "연남동 샴페인바 ROWISM의 위치는 어디인가요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ROWISM The Black은 서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ROWISM The Black 영업시간과 휴무일이 어떻게 되나요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "화요일부터 일요일까지 18:00 - 24:00 영업하며, 라스트오더는 22:30입니다. 매주 월요일은 정기 휴무입니다."
-              }
-            }
-          ]
-        })}} />
-        
-        {/* Schema.org - English FAQ for International SEO */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "inLanguage": "en",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Do I need a reservation for ROWISM The Black in Hongdae?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, ROWISM The Black operates by reservation only. We have only 8 tables, so reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much does dinner for two cost at ROWISM The Black?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The average price for two people is approximately 180,000 KRW (around $140 USD). We recommend the Signature Beef Tartare (92,000 KRW) with side dishes and a bottle of champagne. For a lighter option, you can enjoy a meal for 100,000-120,000 KRW."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is Mungti-gi (Korean Beef Tartare)?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Mungti-gi is a traditional Korean delicacy from Daegu - thinly sliced fresh beef enjoyed without seasoning. At ROWISM, we use same-day slaughtered Korean beef (Hanwoo), still warm from processing, offering an incredibly tender texture and fresh beef flavor impossible to achieve with aged meat. We serve it with creamy Italian burrata cheese and aromatic black truffle."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Where is ROWISM The Black located in Seoul?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ROWISM The Black is located at 262-4 Donggyo-ro, Mapo-gu, Seoul (Yeonnam-dong). It's a 5-minute walk from Hongdae Station (Line 2) Exit 3, near Yeonnam-dong's famous Gyeongui Line Forest Park (Yeontral Park)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the opening hours of ROWISM The Black?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We are open Tuesday through Sunday, 6:00 PM to 12:00 AM (last order at 10:30 PM). We are closed every Monday."
-              }
-            }
-          ]
-        })}} />
-        
-        {/* Schema.org Structured Data - LocalBusiness (Enhanced GEO) */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "@id": "https://rowism.com/#localbusiness",
-          "name": "ROWISM The Black",
-          "alternateName": ["로위즘", "로위즘 더 블랙", "연남동 로위즘", "홍대 로위즘"],
-          "description": "연남동 프리미엄 샴페인바. 트러플 한우 뭉티기 전문점. 연트럴파크 인근, 경의선숲길 도보 3분. 데이트, 기념일 장소로 인기. 홍대입구역 3번출구 도보 5분.",
-          "url": "https://rowism.com",
-          "telephone": "+82-10-0000-0000",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "동교로 262-4",
-            "addressLocality": "마포구",
-            "addressRegion": "서울특별시",
-            "postalCode": "04030",
-            "addressCountry": "KR",
-            "areaServed": ["연남동", "서교동", "홍대", "합정동", "망원동", "상수동"]
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "37.5595",
-            "longitude": "126.9224"
-          },
-          "areaServed": [
-            { "@type": "Place", "name": "연남동" },
-            { "@type": "Place", "name": "서교동" },
-            { "@type": "Place", "name": "홍대" },
-            { "@type": "Place", "name": "합정동" },
-            { "@type": "Place", "name": "망원동" },
-            { "@type": "City", "name": "서울" },
-            { "@type": "City", "name": "마포구" }
-          ],
-          "hasMap": "https://map.naver.com/v5/search/로위즘",
-          "knowsAbout": ["샴페인", "스파클링와인", "한우", "육회", "뭉티기", "트러플", "부라타치즈", "데이트", "기념일", "프라이빗다이닝"],
-          "slogan": "연남동에서 가장 특별한 밤",
-          "keywords": "연남동 데이트, 홍대 데이트, 연남동 기념일, 홍대 기념일, 연트럴파크 맛집, 경의선숲길 맛집, 홍대입구역 맛집, 연남동 샴페인바, 홍대 샴페인바",
-          "containedInPlace": {
-            "@type": "Place",
-            "name": "연남동",
-            "containedInPlace": {
-              "@type": "AdministrativeArea",
-              "name": "마포구, 서울"
-            }
-          },
-          "isAccessibleForFree": false,
-          "publicAccess": true
-        })}} />
-        
-        {/* Schema.org - Place with Nearby Landmarks */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Place",
-          "name": "ROWISM The Black 위치",
-          "description": "연남동 프리미엄 샴페인바 - 연트럴파크 도보 2분, 경의선숲길 도보 3분, 홍대입구역 3번출구 도보 5분",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "37.5595",
-            "longitude": "126.9224"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "동교로 262-4 (연남동)",
-            "addressLocality": "마포구",
-            "addressRegion": "서울특별시",
-            "postalCode": "04030",
-            "addressCountry": "KR"
-          },
-          "containsPlace": {
-            "@type": "Restaurant",
-            "name": "ROWISM The Black"
-          },
-          "nearbyAttraction": [
-            { "@type": "TouristAttraction", "name": "Yeontral Park (연트럴파크)", "description": "2 min walk" },
-            { "@type": "TouristAttraction", "name": "Gyeongui Line Forest Park (경의선숲길)", "description": "3 min walk" },
-            { "@type": "TouristAttraction", "name": "Dongjin Market (동진시장)", "description": "3 min walk" },
-            { "@type": "TouristAttraction", "name": "Hongdae Walking Street (홍대 걷고싶은거리)", "description": "8 min walk" }
-          ],
-          "publicTransportation": [
-            { "@type": "SubwayStation", "name": "Hongik University Station (Line 2)", "description": "Exit 3, 5 min walk" },
-            { "@type": "SubwayStation", "name": "Hongik University Station (Gyeongui-Jungang Line)", "description": "7 min walk" },
-            { "@type": "SubwayStation", "name": "Hongik University Station (Airport Railroad)", "description": "7 min walk" }
-          ]
-        })}} />
-        
-        {/* Schema.org - Event for Seasonal Keywords */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Event",
-          "name": "ROWISM The Black 기념일 이벤트",
-          "description": "연남동 프리미엄 샴페인바에서 특별한 기념일을 보내세요. 100일, 1주년, 생일, 크리스마스, 발렌타인데이 등 소중한 날을 위한 프라이빗 다이닝.",
-          "location": {
-            "@type": "Place",
-            "name": "ROWISM The Black",
-            "address": "서울 마포구 동교로 262-4"
-          },
-          "organizer": {
-            "@type": "Organization",
-            "name": "ROWISM The Black",
-            "url": "https://rawism.kr"
-          },
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "offers": {
-            "@type": "Offer",
-            "url": "https://naver.me/5qLSfCNC",
-            "availability": "https://schema.org/InStock"
-          },
-          "keywords": "연남동 크리스마스 데이트, 홍대 발렌타인데이, 연남동 화이트데이, 연남동 100일, 홍대 1주년, 연남동 생일파티"
-        })}} />
-        
-        {/* Schema.org Structured Data - BreadcrumbList */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "서울 맛집",
-              "item": "https://rowism.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "연남동 샴페인바",
-              "item": "https://rowism.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "ROWISM The Black",
-              "item": "https://rowism.com"
-            }
-          ]
-        })}} />
-      </head>
-      <body class="bg-deep-black text-off-white font-pretendard">
-        {children}
-        <script src="/static/app.js"></script>
-      </body>
-    </html>
-  )
-})
+          })}} />
+        </head>
+        <body class="bg-deep-black text-off-white font-pretendard">
+          {children}
+          <script src="/static/app.js"></script>
+        </body>
+      </html>
+    )
+  })
+}
+
+// Default renderer for backward compatibility (Korean)
+export const renderer = createRenderer('ko')

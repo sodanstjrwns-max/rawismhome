@@ -1,5 +1,64 @@
-// ROWISM The Black - Multilingual Translations
-const translations = {
+// ROWISM The Black - Server-side Multilingual Translations
+// This file is used for SSR (Server-Side Rendering) to generate language-specific pages
+
+export type Language = 'ko' | 'en' | 'ja' | 'zh';
+
+export const supportedLanguages: Language[] = ['ko', 'en', 'ja', 'zh'];
+
+export const languageNames: Record<Language, string> = {
+  ko: '한국어',
+  en: 'English',
+  ja: '日本語',
+  zh: '中文'
+};
+
+export const languageFlags: Record<Language, string> = {
+  ko: '🇰🇷',
+  en: '🇺🇸',
+  ja: '🇯🇵',
+  zh: '🇨🇳'
+};
+
+// SEO Meta data for each language
+export const seoMeta: Record<Language, {
+  title: string;
+  description: string;
+  keywords: string;
+  ogTitle: string;
+  ogDescription: string;
+}> = {
+  ko: {
+    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집',
+    description: '서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원.',
+    keywords: '연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스',
+    ogTitle: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기',
+    ogDescription: '당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제.'
+  },
+  en: {
+    title: 'ROWISM The Black | Premium Champagne Bar in Hongdae Seoul | Korean Beef Tartare',
+    description: 'ROWISM The Black - Premium champagne bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) paired with champagne. Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required.',
+    keywords: 'Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Korean raw beef, Seoul foodie, Hongdae hidden gem',
+    ogTitle: 'ROWISM The Black | Premium Champagne Bar in Hongdae Seoul',
+    ogDescription: 'Fresh same-day slaughtered Korean beef tartare with champagne pairing. A hidden gem in Seoul\'s trendy Yeonnam-dong. 5 min from Hongdae Station.'
+  },
+  ja: {
+    title: 'ROWISM The Black | 弘大プレミアムシャンパンバー | 韓牛ムンティギ | ソウル延南洞',
+    description: 'ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー。当日屠畜の新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。イタリア産ブラータチーズとブラックトリュフ。弘大駅から徒歩5分、8席限定、要予約。',
+    keywords: '弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 韓国 生肉',
+    ogTitle: 'ROWISM The Black | 弘大プレミアムシャンパンバー | ソウル延南洞',
+    ogDescription: '当日屠畜の新鮮な韓牛ムンティギとシャンパンのペアリング。ソウル延南洞の隠れ家。弘大駅から徒歩5分。'
+  },
+  zh: {
+    title: 'ROWISM The Black | 弘大高级香槟酒吧 | 韩牛生拌 | 首尔延南洞',
+    description: 'ROWISM The Black - 首尔延南洞高级香槟酒吧。当日屠宰的新鲜韩牛生拌（Mungti-gi）与香槟搭配。意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。',
+    keywords: '弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 韩国生牛肉',
+    ogTitle: 'ROWISM The Black | 弘大高级香槟酒吧 | 首尔延南洞',
+    ogDescription: '当日屠宰的新鲜韩牛生拌与香槟搭配。首尔延南洞的隐藏名店。弘大站步行5分钟。'
+  }
+};
+
+// Main translations object
+export const translations: Record<Language, any> = {
   ko: {
     // Quote Section
     quote: {
@@ -49,41 +108,27 @@ const translations = {
       p3Title: "8개의 프라이빗 테이블.",
       p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
       features: [
-        { title: "Signature Tartare", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
-        { title: "Champagne & Sparkling", desc: "소믈리에 큐레이션", detail: "프리미엄 샴페인 & 스파클링" },
-        { title: "Private Space", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
-        { title: "Sensory Design", desc: "오감의 경험 설계", detail: "조명·음악·서비스" }
-      ],
-      story: "ROWISM은 'RAW(날것)'와 '-ISM(철학)'의 조합입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 즐기는 것을 추구합니다. 당일 도축한 온도체 한우의 신선함, 이탈리아 부라타 치즈의 크리미함, 프렌치 블랙 트러플의 깊은 향. 이 모든 것이 샴페인 한 잔과 함께 어우러지는 특별한 경험을 선사합니다."
-    },
-    // Experience Section
-    experience: {
-      label: "The Experience",
-      title: "특별한 여정",
-      subtitle: "ROWISM The Black에서 경험하실 특별한 여정",
-      items: [
-        { time: "Arrival", title: "🥂 웰컴 스파클링", desc: "입장과 동시에 시작되는 특별한 환대. 엄선된 스파클링 와인 한 잔으로 저녁을 시작합니다." },
-        { time: "Ambience", title: "💡 무드 라이팅", desc: "덴마크 루이스폴센 조명이 만드는 은은한 빛. 8개 테이블 한정으로 여유로운 간격을 유지합니다." },
-        { time: "Sound", title: "🎵 큐레이팅 뮤직", desc: "스위스 제네바 스피커를 통해 재즈, 보사노바, 어쿠스틱 등 대화에 어울리는 볼륨의 음악." },
-        { time: "Finale", title: "🍫 고디바 피니시", desc: "달콤한 고디바 초콜릿으로 완벽한 여운을 남기며 마무리합니다." }
+        { icon: "🥩", title: "당일 도축", desc: "온도체 한우" },
+        { icon: "🧀", title: "부라타 치즈", desc: "이탈리아산" },
+        { icon: "🍾", title: "샴페인", desc: "큐레이팅 셀렉션" },
+        { icon: "✨", title: "블랙 트러플", desc: "테이블 그레이팅" }
       ]
     },
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
-      subtitle: "최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처",
-      ingredientsLabel: "재료",
+      title: "Signature Menu",
+      ingredientsLabel: "구성",
       finisherBadge: "Finisher",
       signature: {
-        name: "로위즘 뭉티기 시그니처",
         price: "₩92,000",
+        name: "로위즘 뭉티기 시그니처",
         badge: "Signature",
         description: "ROWISM의 철학을 담은 시그니처 메뉴",
         story: "로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.",
         whatIsTitle: "뭉티기란?",
-        whatIsText: "뭉티기는 한우를 얇게 저며 썬 후 별도의 양념 없이 그대로 즐기는 전통 요리입니다.",
-        harmonyTitle: "프리미엄 재료의 완벽한 조화",
+        whatIsText: "뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 전통 음식입니다.",
+        harmonyTitle: "최상급 재료의 완벽한 조화",
         harmonyText: "로위즘 뭉티기 시그니처 위에는 이탈리아산 부라타 치즈가 통째로 올라갑니다.",
         highlight: "매일 엄선된 최상급 한우 뭉티기 200g을 아낌없이 사용합니다.",
         pairing: "이탈리아산 부라타 치즈가 통째로 올라가고, 블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더합니다. 파르미지아노 레지아노가 눈꽃처럼 내려앉습니다.",
@@ -94,67 +139,79 @@ const translations = {
           name: "제비추리 그릴드 베지터블",
           price: "₩49,000",
           description: "한우 제비추리와 8종 제철 채소의 그릴 향연",
-          detail: "제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 '숨은 보석'으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
-          ingredients: "한우 제비추리, 파, 방울양배추, 아스파라거스, 래디쉬, 가지, 미니당근, 양송이버섯, 브로콜리"
+          detail: "제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 숨은 보석으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
+          ingredients: "한우 제비추리, 아스파라거스, 새송이버섯, 파프리카, 주키니, 래디시, 방울토마토, 감자, 레몬 허브 버터"
         },
         {
           name: "치즈 셀렉션",
           price: "₩36,000",
           description: "소믈리에가 큐레이팅한 6종 치즈 컬렉션",
           detail: "브리, 8개월 숙성 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아(래핑 치즈). 스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리와 크래커가 함께 제공됩니다.",
-          ingredients: "브리, 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아, 하몽, 살라미, 올리브, 블루베리"
+          ingredients: "브리, 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아, 하몽, 살라미, 올리브, 블루베리, 크래커"
         },
         {
           name: "청양 오일 육회",
           price: "₩25,000",
           description: "전통 육회에 더한 매콤한 불꽃",
-          detail: "직접 만드는 고추기름 소스가 핵심. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합한 특제 소스. 정중앙 노른자를 터뜨려 비벼 드세요.",
-          ingredients: "한우 육회, 고추기름 소스, 청양고추, 다진 마늘, 노른자, 실고추"
+          detail: "직접 만드는 고추기름 소스가 핵심입니다. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합한 특제 소스. 정중앙 노른자를 터뜨려 비벼 드세요.",
+          ingredients: "한우 육회, 청양 오일 소스, 청양고추, 다진 마늘, 노른자, 고추실"
         },
         {
           name: "아보카도 카프레제",
           price: "₩23,000",
           description: "클래식 카프레제의 현대적 재해석",
           detail: "이탈리아 카프리 섬에서 유래한 카프레제에 아보카도와 블랙 올리브를 더해 더욱 크리미하게. 아보카도는 주문 후 바로 잘라 갈변 없이 신선하게 제공됩니다.",
-          ingredients: "아보카도, 미니 모짜렐라, 대추방울토마토, 블랙 올리브, 발사믹 드레싱, 바질"
+          ingredients: "아보카도, 미니 모짜렐라, 방울토마토, 블랙 올리브, 발사믹 드레싱, 바질"
         },
         {
           name: "들기름 육회 메밀면",
           price: "₩15,000",
           badge: "Finisher",
           description: "한 끼의 완벽한 마무리",
-          detail: "고객 설문에서 '의외로 가장 좋았던 메뉴'로 선정. 들기름에 쯔유, 식초, 설탕을 배합한 소스가 느끼하지 않고 상큼해서 식사 후에도 가볍게 즐길 수 있습니다.",
+          detail: "고객 설문에서 의외로 가장 좋았던 메뉴로 선정. 들기름에 쯔유, 식초, 설탕을 배합한 소스가 느끼하지 않고 상큼해서 식사 후에도 가볍게 즐길 수 있습니다.",
           ingredients: "메밀면, 한우 육회, 들기름 소스, 깻잎, 조미김, 통깨, 와사비"
         }
+      ]
+    },
+    // Experience Section
+    experience: {
+      label: "Experience",
+      title: "The ROWISM Experience",
+      subtitle: "감각으로 완성되는 경험",
+      steps: [
+        { step: "01", title: "Arrival", subtitle: "웰컴 스파클링", desc: "입장과 함께 제공되는 웰컴 스파클링으로 특별한 저녁의 시작을 알립니다." },
+        { step: "02", title: "Ambience", subtitle: "무드 라이팅, 8개 테이블 한정", desc: "덴마크 루이스폴센 조명이 만드는 은은한 무드. 8개 테이블만의 프라이빗한 공간." },
+        { step: "03", title: "Sound", subtitle: "큐레이팅 뮤직", desc: "제네바 스피커로 전해지는 큐레이팅된 재즈와 라운지 음악이 대화를 감쌉니다." },
+        { step: "04", title: "Finale", subtitle: "고디바 피니시", desc: "식사의 마무리는 고디바 초콜릿과 함께. 달콤한 여운을 선물합니다." }
       ]
     },
     // Recommend Section
     recommend: {
       label: "Recommend",
       title: "이런 분께 추천드립니다",
-      subtitle: "당신의 특별한 순간을 위한 공간",
+      subtitle: "연남동 데이트, 기념일, 특별한 날을 계획 중이시라면",
       items: [
-        { icon: "💕", title: "연남동 데이트", desc: "특별한 데이트를 원하는 커플", detail: "홍대/연남동에서 평범하지 않은 데이트 코스를 찾으신다면. 분위기와 맛 모두를 원하는 20-40대 커플에게 추천드립니다." },
-        { icon: "🎂", title: "기념일 디너", desc: "100일, 1주년, 생일을 축하하고 싶은 분", detail: "기념일엔 특별한 장소에서. 프라이빗한 공간과 분위기 있는 조명, 샴페인이 어우러진 완벽한 기념일 디너를 경험하세요." },
+        { icon: "💕", title: "연남동 데이트", desc: "특별한 데이트를 원하는 커플", detail: "홍대/연남동에서 평범하지 않은 데이트 코스를 찾고 계신가요? 분위기와 맛 모두를 원하는 20-40대 커플에게 추천합니다." },
+        { icon: "🎂", title: "기념일 디너", desc: "100일, 1주년, 생일을 축하하고 싶은 분", detail: "기념일은 특별한 장소에서. 프라이빗한 공간과 분위기 있는 조명, 샴페인이 어우러진 완벽한 기념일 디너를 경험하세요." },
         { icon: "💼", title: "비즈니스 미팅", desc: "중요한 미팅이나 접대가 있는 분", detail: "프라이빗한 공간, 품격 있는 음식, 세련된 서비스. 비즈니스 접대나 중요한 미팅에 적합한 분위기를 제공합니다." },
-        { icon: "🥂", title: "샴페인 & 스파클링", desc: "좋은 샴페인과 음식의 페어링을 즐기시는 분", detail: "소믈리에가 큐레이션한 프리미엄 샴페인과 스파클링 셀렉션. 한우 뭉티기와 샴페인의 완벽한 페어링을 경험해보세요." },
-        { icon: "🍽️", title: "미식 탐험가", desc: "새롭고 특별한 맛을 찾는 분", detail: "트러플 한우 뭉티기, 부라타 치즈, 파르미지아노 레지아노의 조합. 어디서도 경험하지 못한 시그니처 요리를 만나보세요." },
+        { icon: "🥂", title: "샴페인 & 스파클링", desc: "좋은 술과 음식의 페어링을 즐기는 분", detail: "소믈리에가 큐레이팅한 프리미엄 샴페인과 스파클링 셀렉션. 한우 뭉티기와 샴페인의 완벽한 페어링을 경험해보세요." },
+        { icon: "🍽️", title: "미식 탐험가", desc: "새롭고 특별한 맛을 찾는 분", detail: "트러플 한우 뭉티기, 부라타 치즈, 파르미지아노 레지아노의 조합. 어디서도 경험할 수 없는 시그니처 요리를 만나보세요." },
         { icon: "👨‍👩‍👧", title: "소중한 사람과 함께", desc: "부모님, 친구, 소중한 지인과의 식사", detail: "특별한 날, 소중한 사람과 함께하는 프라이빗한 저녁. 편안하면서도 품격 있는 분위기에서 대화를 나눠보세요." },
         { icon: "🌙", title: "혼자만의 시간", desc: "나를 위한 특별한 저녁", detail: "바 테이블에서 즐기는 조용한 저녁. 좋은 음악과 함께 혼자만의 시간을 보내기에 완벽한 공간입니다." },
-        { icon: "🎄", title: "시즌 이벤트", desc: "크리스마스, 발렌타인, 화이트데이", detail: "특별한 시즌엔 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이를 분위기 있는 공간에서. 연트럴파크 야경과 함께." },
-        { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 저녁", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요." },
+        { icon: "🎄", title: "시즌 이벤트", desc: "크리스마스, 발렌타인, 화이트데이", detail: "특별한 시즌은 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이를 분위기 있는 공간에서. 연트럴파크 야경과 함께." },
+        { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 디너", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 디너. 도보 2-3분 거리에서 분위기 있는 디너를 즐겨보세요." },
         { icon: "🌏", title: "한국 미식 체험", desc: "진짜 한국 먹거리 문화를 느끼고 싶은 외국인", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 미식. 신선한 한우 뭉티기와 샴페인의 특별한 페어링을 경험해보세요. English menu available." }
       ]
     },
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "소중한 순간을 더욱 특별하게",
       subtitle: "소중한 순간을 더욱 특별하게",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일 등 특별한 기념일을 위한 공간", event: "프라이빗 공간" },
-        { icon: "💑", title: "Date", subtitle: "데이트", desc: "특별한 하루를 만들고 싶은 날을 위한 프라이빗한 분위기와 은은한 조명이 있는 로맨틱한 공간", event: "로맨틱한 분위기" },
-        { icon: "🎊", title: "Celebration", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업 등 축하할 모든 순간에 샴페인과 함께 건배하세요", event: "웰컴 샴페인 서비스" },
+        { icon: "💑", title: "Date", subtitle: "데이트", desc: "특별한 하루를 만들고 싶은 날을 위한 프라이빗한 분위기와 은은한 조명의 로맨틱한 공간", event: "로맨틱한 분위기" },
+        { icon: "🎊", title: "Celebration", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업 등 축하할 모든 순간에 샴페인과 함께 건배", event: "웰컴 샴페인 서비스" },
         { icon: "🤫", title: "Private", subtitle: "프라이빗", desc: "오늘 하루만큼은 나를 위한 시간, 혼자만의 여유 또는 소중한 사람과의 프라이빗한 저녁", event: "조용한 코너석" }
       ]
     },
@@ -164,48 +221,48 @@ const translations = {
       title: "오시는 길",
       address: "서울 마포구 동교로 262-4",
       zipcode: "04030",
+      parking: "인근 공영주차장 이용",
       hours: "화-일 18:00 - 24:00",
       lastOrder: "라스트오더 22:30",
       closed: "매주 월요일 휴무",
       subway: "홍대입구역 3번 출구 도보 5분",
-      parking: "인근 공영주차장 이용",
       landmarks: {
         title: "주변 랜드마크",
         items: ["연트럴파크 도보 2분", "경의선숲길 도보 3분", "동진시장 도보 3분", "홍대 걷고싶은거리 도보 8분"]
       },
-      nearby: "서교동 · 합정동 · 망원동 인접",
+      nearby: "서교동·합정동·망원동 인접",
       naverMap: "네이버 지도",
       kakaoMap: "카카오맵"
     },
     // Reviews Section
     reviews: {
       label: "Reviews",
-      title: "고객 후기",
+      title: "고객 리뷰",
       subtitle: "ROWISM The Black을 경험하신 분들의 이야기",
       count: "127개의 리뷰",
-      more: "더 많은 후기 보기 →",
+      more: "더 많은 리뷰 보기 →",
       items: [
         { name: "김지현", date: "2025.01.15", rating: 5, badge: "100일 기념", review: "남자친구와 100일 기념으로 방문했어요. 뭉티기가 정말 입에서 녹더라고요! 당일 도축이라 그런지 식감이 완전 달랐어요. 샴페인도 추천해주셔서 페어링이 완벽했습니다. 조명도 은은하고 분위기 최고예요 💕" },
         { name: "박준영", date: "2025.01.10", rating: 5, badge: "데이트", review: "홍대 근처 데이트 코스 찾다가 발견했는데 대박이에요. 8테이블이라 프라이빗하고, 뭉티기 위에 트러플 갈아주는 거 너무 멋있었어요. 여자친구가 완전 좋아했습니다!" },
         { name: "이소연", date: "2025.01.05", rating: 5, badge: "재방문", review: "연남동 맛집 많이 다녀봤는데 여긴 진짜 다릅니다. 뭉티기가 뭔지 처음 알았는데, 육회랑 완전 다른 식감이에요. 부라타 치즈랑 같이 먹으면 미쳐요 🧀" },
-        { name: "최민수", date: "2024.12.28", rating: 5, badge: "생일", review: "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 제비추리 스테이크도 미디엄 레어로 완벽하게!" },
+        { name: "최민수", date: "2024.12.28", rating: 5, badge: "생일", review: "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 제비추리 스테이크도 미디엄 레어로 완벽하게 구워졌습니다!" },
         { name: "정하윤", date: "2024.12.20", rating: 5, badge: "연트럴파크", review: "연트럴파크 산책하고 저녁 먹을 곳 찾다가 왔어요. 분위기가 정말 좋고, 음악도 대화하기 딱 좋은 볼륨이에요. 청양 오일 육회 매콤한 거 좋아하시면 꼭 드셔보세요 🔥" },
-        { name: "강태우", date: "2024.12.15", rating: 5, badge: "1주년", review: "결혼 1주년 기념으로 방문. 덴마크 루이스폴센 조명이라니, 디테일에 감탄했습니다. 뭉티기 + 샴페인 조합 인생 최고의 페어링이에요. 내년에도 꼭 올게요!" }
+        { name: "강태우", date: "2024.12.15", rating: 5, badge: "1주년", review: "결혼 1주년 기념으로 방문. 덴마크 루이스폴센 조명이라니, 세심한 디테일에 감탄했습니다. 뭉티기 + 샴페인 조합은 인생 최고의 페어링이에요. 내년에도 꼭 올게요!" }
       ]
     },
     // FAQ Section
     faq: {
       label: "FAQ",
       title: "자주 묻는 질문",
-      subtitle: "연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요",
+      subtitle: "연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점",
       items: [
         { q: "예약 없이 방문해도 되나요?", a: "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다." },
-        { q: "2인 방문 시 예상 금액은 얼마인가요?", a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 스파클링 와인과 함께 10-12만원대로도 이용 가능합니다." },
+        { q: "2인 방문 시 예상 금액은 얼마인가요?", a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 10-12만원대로도 이용 가능합니다." },
         { q: "뭉티기가 뭔가요?", a: "뭉티기는 당일 도축한 온도체 한우를 신선한 상태 그대로 얇게 저며 즐기는 대구의 보물 같은 음식입니다. 아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질되어, 일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 생생한 육향을 선사합니다." },
-        { q: "위치는 어디인가요?", a: "서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다." },
-        { q: "주차는 어떻게 하나요?", a: "매장 내 주차는 불가합니다. 인근 연남동 공영주차장(도보 3분)을 이용하시거나, 샴페인을 드시는 경우 대리운전을 권장드립니다." },
-        { q: "영업시간과 휴무일이 어떻게 되나요?", a: "화요일부터 일요일까지 18:00 - 24:00 영업하며, 라스트오더는 22:30입니다. 매주 월요일은 정기 휴무입니다." },
-        { q: "단체 예약도 가능한가요?", a: "최대 8인까지 예약을 받고 있습니다. 그 이상의 단체는 별도 문의해 주시면 가능 여부를 안내드리겠습니다. 대관은 불가합니다." }
+        { q: "위치가 어디인가요?", a: "서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다." },
+        { q: "주차가 가능한가요?", a: "매장 내 주차 공간은 없습니다. 인근 연남동 공영주차장(도보 3분)을 이용해주시거나, 샴페인을 드시는 경우 대리운전을 권장드립니다." },
+        { q: "영업시간과 휴무일은 어떻게 되나요?", a: "화요일부터 일요일까지 18:00 - 24:00 영업하며, 라스트오더는 22:30입니다. 매주 월요일은 정기 휴무입니다." },
+        { q: "단체 예약도 가능한가요?", a: "최대 8명까지 예약 가능합니다. 그 이상의 단체는 별도 문의 부탁드립니다. 대관은 불가합니다." }
       ]
     },
     // Reserve Section
@@ -213,8 +270,8 @@ const translations = {
       label: "Reservation",
       title: "특별한 밤을 예약하세요",
       subtitle: "8석 한정 예약제 프라이빗 다이닝",
-      notice: "금요일·토요일·기념일은 최소 3일 전 예약을 권장드립니다",
-      cta: "네이버 예약",
+      notice: "금요일, 토요일, 기념일은 최소 3일 전 예약을 권장합니다",
+      cta: "네이버 예약하기",
       info: {
         hours: "영업시간",
         hoursValue: "화-일 18:00 - 24:00",
@@ -232,13 +289,12 @@ const translations = {
       closed: "월요일 휴무",
       naver: "네이버 예약으로 예약하기",
       slogan: "날것의 철학으로,<br/>당신의 특별한 밤을 위해.",
-      desc: "연남동 프리미엄 샴페인바<br/>홍대입구역 도보 5분",
+      desc: "연남동 프리미엄 샴페인바<br/>홍대입구역 5분",
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
     mobileCta: "예약하기"
   },
-
   en: {
     // Quote Section
     quote: {
@@ -249,7 +305,7 @@ const translations = {
     nav: {
       philosophy: "Philosophy",
       menu: "Menu",
-      recommend: "For You",
+      recommend: "Recommend",
       location: "Location",
       reservation: "Reservation"
     },
@@ -258,15 +314,15 @@ const translations = {
       subtitle: "Premium Champagne Lounge in Yeonnam-dong",
       title1: "Where Special",
       title2: "Nights Begin",
-      description: "Same-day slaughtered Korean beef tartare meets champagne",
-      cta: "Reserve Now",
+      description: "Where same-day slaughtered Korean beef tartare meets champagne",
+      cta: "Reserve",
       scroll: "Scroll",
-      keywords: "Truffle Beef Tartare · Champagne & Sparkling · Private Dining"
+      keywords: "Truffle Korean Beef Tartare · Champagne & Sparkling · Private Dining"
     },
     // Question Section
     question: {
       title: "Looking for a Special Night?",
-      subtitle: "Searching for the perfect date spot or anniversary venue in Hongdae?",
+      subtitle: "Planning a date in Yeonnam-dong or anniversary in Hongdae?",
       items: [
         "✨ When you want both ambiance and taste",
         "🍾 When you're looking for something beyond ordinary",
@@ -277,46 +333,32 @@ const translations = {
     // Philosophy Section
     philosophy: {
       label: "Our Philosophy",
-      titleLine1: "The Aesthetics of RAW,",
+      titleLine1: "The aesthetics of RAW,",
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "Premium ingredients in their purest form",
-      p1Title: "The fusion of RAW and ism.",
-      p1Text: "ROWISM combines 'RAW' and '-ISM (philosophy)', representing our commitment to delivering the finest ingredients in their purest form.",
+      p1Title: "The union of RAW and -ism.",
+      p1Text: "ROWISM combines 'RAW' meaning unprocessed, with '-ism' representing philosophy. We believe in delivering the true taste of premium ingredients in their purest form.",
       p2Title: "Premium Champagne Bar in Yeonnam-dong.",
-      p2Text: "Located 5 minutes from Hongdae Station, ROWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
+      p2Text: "Just 5 minutes from Hongdae Station, ROWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
       p3Title: "8 Private Tables.",
-      p3Text: "Soft Louis Poulsen lighting, curated melodies from Geneva speakers. ROWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
+      p3Text: "Soft lighting by Louis Poulsen, curated melodies through Geneva speakers. ROWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
       features: [
-        { title: "Signature Tartare", desc: "Truffle Beef Tartare", detail: "Premium Hanwoo + Truffle" },
-        { title: "Champagne & Sparkling", desc: "Sommelier Curation", detail: "Premium Champagne & Sparkling" },
-        { title: "Private Space", desc: "Limited to 8 Seats", detail: "Reservation-only Private Dining" },
-        { title: "Sensory Design", desc: "Five Senses Experience", detail: "Lighting·Music·Service" }
-      ],
-      story: "ROWISM combines 'RAW' and '-ISM (philosophy)'. We pursue enjoying premium ingredients in their most authentic way. The freshness of same-day slaughtered Korean beef, the creaminess of Italian burrata cheese, and the deep aroma of French black truffle. All harmonized with a glass of champagne for an extraordinary experience."
-    },
-    // Experience Section
-    experience: {
-      label: "The Experience",
-      title: "Your Journey",
-      subtitle: "A special journey awaits at ROWISM The Black",
-      items: [
-        { time: "Arrival", title: "🥂 Welcome Sparkling", desc: "Your special evening begins the moment you arrive with a carefully selected glass of sparkling wine." },
-        { time: "Ambience", title: "💡 Mood Lighting", desc: "Soft illumination from Danish Louis Poulsen lights. Only 8 tables ensure comfortable spacing." },
-        { time: "Sound", title: "🎵 Curated Music", desc: "Jazz, bossa nova, and acoustic tunes through Swiss Geneva speakers at the perfect volume for conversation." },
-        { time: "Finale", title: "🍫 Godiva Finish", desc: "End your evening perfectly with sweet Godiva chocolates." }
+        { icon: "🥩", title: "Same-day", desc: "Fresh Hanwoo" },
+        { icon: "🧀", title: "Burrata", desc: "From Italy" },
+        { icon: "🍾", title: "Champagne", desc: "Curated Selection" },
+        { icon: "✨", title: "Black Truffle", desc: "Table Grating" }
       ]
     },
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
-      subtitle: "ROWISM signatures crafted with premium ingredients and meticulous plating",
+      title: "Signature Menu",
       ingredientsLabel: "Ingredients",
       finisherBadge: "Finisher",
       signature: {
-        name: "ROWISM Signature Beef Tartare",
         price: "₩92,000",
+        name: "ROWISM Signature Beef Tartare",
         badge: "Signature",
         description: "Our signature dish embodying the ROWISM philosophy",
         story: "ROWISM Signature Beef Tartare is our flagship dish that best represents ROWISM The Black's identity.",
@@ -332,19 +374,19 @@ const translations = {
         {
           name: "Grilled Jebichuri & Vegetables",
           price: "₩49,000",
-          description: "Premium Korean beef cut with 8 seasonal vegetables",
-          detail: "Jebichuri is a rare cut from between the ribs and brisket, called the 'hidden gem' as only a small amount is available per cow. Grilled to perfect medium-rare with caramelized exterior and juicy interior.",
-          ingredients: "Korean beef Jebichuri, Green onion, Brussels sprouts, Asparagus, Radish, Eggplant, Baby carrots, Mushrooms, Broccoli"
+          description: "Korean beef Jebichuri with 8 seasonal grilled vegetables",
+          detail: "Jebichuri is a rare cut between the ribs and brisket, yielding only a small amount per cow - a hidden gem. Grilled precisely to medium-rare with caramelized exterior and juicy interior.",
+          ingredients: "Hanwoo Jebichuri, Asparagus, King oyster mushroom, Bell pepper, Zucchini, Radish, Cherry tomatoes, Potato, Lemon herb butter"
         },
         {
           name: "Cheese Selection",
           price: "₩36,000",
           description: "Sommelier-curated 6-cheese collection",
-          detail: "Brie, 8-month aged Comté, Emmental, Colby Jack, Cream cheese, Dauphinois. Served with Spanish Jamón, Italian Genoa salami, green olives, blueberries, and crackers.",
-          ingredients: "Brie, Comté, Emmental, Colby Jack, Cream cheese, Dauphinois, Jamón, Salami, Olives, Blueberries"
+          detail: "Brie, 8-month aged Comté, Emmental, Colby Jack, Cream cheese, Dauphinois (wrapped cheese). Served with Spanish Jamón, Italian Genoa salami, green olives, blueberries and crackers.",
+          ingredients: "Brie, Comté, Emmental, Colby Jack, Cream cheese, Dauphinois, Jamón, Salami, Olives, Blueberries, Crackers"
         },
         {
-          name: "Spicy Cheongyang Beef Tartare",
+          name: "Spicy Cheongyang Oil Beef Tartare",
           price: "₩25,000",
           description: "Traditional beef tartare with a spicy kick",
           detail: "Our house-made chili oil sauce is the key. A special blend of coarse chili flakes, green onion-infused chili oil, sesame oil, and seasonings. Break the egg yolk in the center and mix.",
@@ -365,6 +407,18 @@ const translations = {
           detail: "Voted 'surprisingly the best dish' in customer surveys. The perilla oil sauce with tsuyu, vinegar, and sugar is refreshing, not heavy, perfect even after a full meal.",
           ingredients: "Buckwheat noodles, Korean beef tartare, Perilla oil sauce, Perilla leaves, Seasoned seaweed, Sesame seeds, Wasabi"
         }
+      ]
+    },
+    // Experience Section
+    experience: {
+      label: "Experience",
+      title: "The ROWISM Experience",
+      subtitle: "An experience completed by the senses",
+      steps: [
+        { step: "01", title: "Arrival", subtitle: "Welcome Sparkling", desc: "Your special evening begins with a welcome sparkling upon arrival." },
+        { step: "02", title: "Ambience", subtitle: "Mood Lighting, 8 Tables Only", desc: "Subtle mood created by Danish Louis Poulsen lighting. A private space with only 8 tables." },
+        { step: "03", title: "Sound", subtitle: "Curated Music", desc: "Curated jazz and lounge music through Geneva speakers wraps around your conversation." },
+        { step: "04", title: "Finale", subtitle: "Godiva Finish", desc: "Your meal concludes with Godiva chocolates. A sweet lingering note as a gift." }
       ]
     },
     // Recommend Section
@@ -388,7 +442,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "Make Your Moments Special",
       subtitle: "Make Your Moments Special",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "Celebration", desc: "Perfect space for 100 days, 200 days, 1 year, birthdays, wedding anniversaries", event: "Private Space" },
@@ -477,7 +531,6 @@ const translations = {
     // Mobile CTA
     mobileCta: "Reserve"
   },
-
   ja: {
     // Quote Section
     quote: {
@@ -497,20 +550,20 @@ const translations = {
       subtitle: "延南洞プレミアムシャンパンラウンジ",
       title1: "特別な夜が",
       title2: "始まる場所",
-      description: "当日屠畜の韓牛ユッケとシャンパンが出会う場所",
+      description: "当日屠畜の韓牛ムンティギとシャンパンが出会う場所",
       cta: "予約する",
       scroll: "Scroll",
       keywords: "トリュフ韓牛ムンティギ · シャンパン & スパークリング · プライベートダイニング"
     },
     // Question Section
     question: {
-      title: "今日、特別な夜をお探しですか？",
-      subtitle: "弘大でデートスポットや記念日の場所をお探しですか？",
+      title: "特別な夜をお探しなら",
+      subtitle: "延南洞でのデート、弘大での記念日スポットをお探しですか？",
       items: [
-        "✨ 雰囲気も味も両方求めるとき",
-        "🍾 普通のレストランではない場所を探すとき",
+        "✨ 雰囲気と味、両方を求めるとき",
+        "🍾 普通のレストランじゃない場所を探すとき",
         "💑 二人だけのプライベートな時間が必要なとき",
-        "🎁 思い出に残る体験をプレゼントしたいとき"
+        "🎁 記憶に残る体験をプレゼントしたいとき"
       ]
     },
     // Philosophy Section
@@ -520,42 +573,28 @@ const translations = {
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "最高級の食材を最も純粋な方法で",
-      p1Title: "RAWとismの融合。",
-      p1Text: "ROWISMは「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で伝えることを哲学としています。",
+      p1Title: "RAWとismの結合。",
+      p1Text: "ロウイズム(ROWISM)は「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で届けることを哲学としています。",
       p2Title: "延南洞プレミアムシャンパンバー。",
-      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するROWISM The Blackは、最高級韓牛ムンティギにイタリアンブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
+      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するROWISM The Blackは、最高級韓牛ムンティギにイタリア産ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
       p3Title: "8つのプライベートテーブル。",
-      p3Text: "ルイスポールセンの柔らかな照明、ジュネーブスピーカーが届けるキュレーティングされた旋律。ROWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞ダイニング空間です。",
+      p3Text: "ルイスポールセンの穏やかな照明、ジュネーブスピーカーが届けるキュレーションされた旋律。ROWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞のダイニング空間です。",
       features: [
-        { title: "Signature Tartare", desc: "トリュフ韓牛ムンティギ", detail: "最高級韓牛 + トリュフ" },
-        { title: "Champagne & Sparkling", desc: "ソムリエキュレーション", detail: "プレミアムシャンパン & スパークリング" },
-        { title: "Private Space", desc: "8席限定運営", detail: "予約制プライベートダイニング" },
-        { title: "Sensory Design", desc: "五感の体験設計", detail: "照明·音楽·サービス" }
-      ],
-      story: "ROWISMは「RAW（生）」と「-ISM（哲学）」の組み合わせです。最高級の食材本来の味を最も純粋な方法で楽しむことを追求しています。当日屠畜した韓牛の新鮮さ、イタリアンブラータチーズのクリーミーさ、フレンチブラックトリュフの深い香り。すべてがシャンパンと調和する特別な体験を提供します。"
-    },
-    // Experience Section
-    experience: {
-      label: "The Experience",
-      title: "特別な旅",
-      subtitle: "ROWISM The Blackでの特別な旅",
-      items: [
-        { time: "Arrival", title: "🥂 ウェルカムスパークリング", desc: "入店と同時に始まる特別なおもてなし。厳選されたスパークリングワインで夜が始まります。" },
-        { time: "Ambience", title: "💡 ムードライティング", desc: "デンマークのルイスポールセン照明が作る穏やかな光。8テーブル限定でゆったりとした間隔を保ちます。" },
-        { time: "Sound", title: "🎵 キュレーティングミュージック", desc: "スイス・ジュネーブスピーカーを通じてジャズ、ボサノバ、アコースティックなど会話に適した音量の音楽。" },
-        { time: "Finale", title: "🍫 ゴディバフィニッシュ", desc: "甘いゴディバチョコレートで完璧な余韻を残しながら締めくくります。" }
+        { icon: "🥩", title: "当日屠畜", desc: "新鮮な韓牛" },
+        { icon: "🧀", title: "ブラータ", desc: "イタリア産" },
+        { icon: "🍾", title: "シャンパン", desc: "キュレーションセレクション" },
+        { icon: "✨", title: "ブラックトリュフ", desc: "テーブルグレーティング" }
       ]
     },
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
-      subtitle: "最高級の食材と繊細なプレーティングで完成されるROWISMのシグネチャー",
-      ingredientsLabel: "材料",
+      title: "Signature Menu",
+      ingredientsLabel: "構成",
       finisherBadge: "Finisher",
       signature: {
-        name: "ロウイズム ムンティギ シグネチャー",
         price: "₩92,000",
+        name: "ロウイズム ムンティギ シグネチャー",
         badge: "Signature",
         description: "ROWISMの哲学を込めたシグネチャーメニュー",
         story: "ロウイズム ムンティギ シグネチャーはROWISM The Blackのアイデンティティを最もよく表す代表メニューです。",
@@ -572,21 +611,21 @@ const translations = {
           name: "チェビチュリ グリルドベジタブル",
           price: "₩49,000",
           description: "韓牛チェビチュリと8種の旬野菜のグリル",
-          detail: "チェビチュリは牛のカルビとバラの間の希少部位で、一頭から少量しか取れない「隠れた宝石」と呼ばれています。ミディアムレアに正確に焼いて外はカラメリゼ、中は肉汁たっぷり。",
-          ingredients: "韓牛チェビチュリ、ネギ、芽キャベツ、アスパラガス、ラディッシュ、ナス、ミニにんじん、マッシュルーム、ブロッコリー"
+          detail: "チェビチュリは牛のカルビとバラの間にある希少部位で、一頭から少量しか取れない隠れた宝石です。ミディアムレアに正確に焼いて外はカラメリゼ、中はジューシー。",
+          ingredients: "韓牛チェビチュリ、アスパラガス、エリンギ、パプリカ、ズッキーニ、ラディッシュ、ミニトマト、じゃがいも、レモンハーブバター"
         },
         {
           name: "チーズセレクション",
           price: "₩36,000",
-          description: "ソムリエがキュレーションした6種のチーズコレクション",
-          detail: "ブリー、8ヶ月熟成コンテ、エメンタール、コルビージャック、クリームチーズ、ドフィノワ。スペイン産ハモン、イタリアン・ジェノアサラミ、グリーンオリーブ、ブルーベリーとクラッカー付き。",
-          ingredients: "ブリー、コンテ、エメンタール、コルビージャック、クリームチーズ、ドフィノワ、ハモン、サラミ、オリーブ、ブルーベリー"
+          description: "ソムリエがキュレーションした6種チーズコレクション",
+          detail: "ブリー、8ヶ月熟成コンテ、エメンタール、コルビージャック、クリームチーズ、ダフィノワ（ラッピングチーズ）。スペイン産ハモン、イタリア産ジェノアサラミ、グリーンオリーブ、ブルーベリーとクラッカー付き。",
+          ingredients: "ブリー、コンテ、エメンタール、コルビージャック、クリームチーズ、ダフィノワ、ハモン、サラミ、オリーブ、ブルーベリー、クラッカー"
         },
         {
-          name: "チョンヤン オイル ユッケ",
+          name: "チョンヤンオイルユッケ",
           price: "₩25,000",
-          description: "伝統ユッケにスパイシーな炎を加えて",
-          detail: "自家製の唐辛子オイルソースがポイント。粗びき唐辛子とネギで香りを出した唐辛子オイルにごま油、調味料を配合した特製ソース。中央の卵黄を崩して混ぜてお召し上がりください。",
+          description: "伝統ユッケにピリ辛の炎を加えて",
+          detail: "自家製唐辛子オイルソースがポイント。粗挽き唐辛子と青ネギで香りをつけた唐辛子オイルにごま油、醤油、砂糖、ごまを配合した特製ソース。真ん中の卵黄を崩して混ぜてお召し上がりください。",
           ingredients: "韓牛ユッケ、唐辛子オイルソース、チョンヤン唐辛子、にんにく、卵黄、糸唐辛子"
         },
         {
@@ -604,6 +643,18 @@ const translations = {
           detail: "お客様アンケートで「意外と一番良かったメニュー」に選ばれました。えごま油につゆ、酢、砂糖を配合したソースがさっぱりしていて、食後でも軽く楽しめます。",
           ingredients: "蕎麦、韓牛ユッケ、えごま油ソース、大葉、味付け海苔、ごま、わさび"
         }
+      ]
+    },
+    // Experience Section
+    experience: {
+      label: "Experience",
+      title: "The ROWISM Experience",
+      subtitle: "感覚で完成する体験",
+      steps: [
+        { step: "01", title: "Arrival", subtitle: "ウェルカムスパークリング", desc: "入店と共に提供されるウェルカムスパークリングで特別な夜の始まりを告げます。" },
+        { step: "02", title: "Ambience", subtitle: "ムードライティング、8テーブル限定", desc: "デンマーク・ルイスポールセン照明が作る穏やかなムード。8テーブルだけのプライベート空間。" },
+        { step: "03", title: "Sound", subtitle: "キュレーティングミュージック", desc: "ジュネーブスピーカーから流れるキュレーションされたジャズとラウンジミュージックが会話を包みます。" },
+        { step: "04", title: "Finale", subtitle: "ゴディバフィニッシュ", desc: "お食事の締めくくりはゴディバチョコレートと共に。甘い余韻をプレゼントします。" }
       ]
     },
     // Recommend Section
@@ -627,7 +678,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "大切な瞬間をもっと特別に",
       subtitle: "大切な瞬間をもっと特別に",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "記念日", desc: "100日、200日、1周年、誕生日、結婚記念日など特別な記念日のための空間", event: "プライベート空間" },
@@ -691,7 +742,7 @@ const translations = {
       label: "Reservation",
       title: "特別な夜をご予約ください",
       subtitle: "8席限定 予約制プライベートダイニング",
-      notice: "金曜・土曜・記念日は最低3日前の予約をおすすめします",
+      notice: "金曜日、土曜日、記念日は最低3日前のご予約をおすすめします",
       cta: "Naver予約",
       info: {
         hours: "営業時間",
@@ -699,7 +750,7 @@ const translations = {
         lastOrder: "ラストオーダー",
         lastOrderValue: "22:30",
         closed: "定休日",
-        closedValue: "毎週月曜"
+        closedValue: "毎週月曜日"
       }
     },
     // Footer
@@ -707,16 +758,15 @@ const translations = {
       name: "ROWISM The Black",
       address: "ソウル市麻浦区東橋路262-4",
       hours: "火 - 日 18:00 - 24:00",
-      closed: "毎週月曜日定休",
+      closed: "月曜定休",
       naver: "Naver予約で予約する",
       slogan: "生の哲学で、<br/>あなたの特別な夜のために。",
-      desc: "延南洞プレミアムシャンパンバー<br/>弘大入口駅 徒歩5分",
+      desc: "延南洞プレミアムシャンパンバー<br/>弘大入口駅から徒歩5分",
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
     mobileCta: "予約する"
   },
-
   zh: {
     // Quote Section
     quote: {
@@ -736,18 +786,18 @@ const translations = {
       subtitle: "延南洞高级香槟酒廊",
       title1: "特别之夜",
       title2: "开始的地方",
-      description: "当日屠宰韩牛生拌与香槟相遇的地方",
+      description: "当日屠宰的新鲜韩牛生拌与香槟相遇的地方",
       cta: "立即预约",
       scroll: "Scroll",
-      keywords: "松露韩牛生拌 · 香槟 & 起泡酒 · 私享餐厅"
+      keywords: "松露韩牛生拌 · 香槟 & 起泡酒 · 私密用餐"
     },
     // Question Section
     question: {
-      title: "今天想要一个特别的夜晚吗？",
-      subtitle: "在弘大寻找约会地点或纪念日场所？",
+      title: "如果您想要一个特别的夜晚",
+      subtitle: "正在寻找延南洞约会、弘大纪念日场所吗？",
       items: [
-        "✨ 当您想要氛围和美味兼得时",
-        "🍾 当您寻找非同寻常的餐厅时",
+        "✨ 当您想要氛围与美味兼得时",
+        "🍾 当您在寻找非凡的餐厅时",
         "💑 当您需要二人私密时光时",
         "🎁 当您想送上难忘的体验时"
       ]
@@ -759,42 +809,28 @@ const translations = {
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "以最纯粹的方式享用顶级食材",
-      p1Title: "RAW与ism的融合。",
-      p1Text: "ROWISM是“生”的RAW和“主义·哲学”的ism的结合。我们以最纯粹的方式传递顶级食材的本味为哲学。",
+      p1Title: "RAW与ism的结合。",
+      p1Text: "ROWISM是将代表'生'的RAW与代表'主义·哲学'的ism结合的名称。我们以最纯粹的方式传达顶级食材本身的味道为哲学。",
       p2Title: "延南洞高级香槟酒吧。",
-      p2Text: "位于弘大入口站步行5分钟，ROWISM The Black的招牌菜品将顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪完美结合。",
-      p3Title: "8个私享桌位。",
-      p3Text: "Louis Poulsen的柔和照明，Geneva音箱传递的精心策划的旋律。ROWISM The Black不只是香槟酒吧，而是设计感官体验的延南洞餐饮空间。",
+      p2Text: "距弘大入口站步行5分钟，位于延南洞小巷的ROWISM The Black呈现顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪相遇的招牌料理。",
+      p3Title: "8个私密餐桌。",
+      p3Text: "路易斯·波尔森的柔和灯光，日内瓦音响传来的精选旋律。ROWISM The Black不仅仅是香槟酒吧，更是设计感官体验的延南洞用餐空间。",
       features: [
-        { title: "Signature Tartare", desc: "松露韩牛生拌", detail: "顶级韩牛 + 松露" },
-        { title: "Champagne & Sparkling", desc: "侍酒师策划", detail: "高级香槟 & 起泡酒" },
-        { title: "Private Space", desc: "限定8席运营", detail: "预约制私享餐厅" },
-        { title: "Sensory Design", desc: "五感体验设计", detail: "照明·音乐·服务" }
-      ],
-      story: "ROWISM是\"RAW（生）\"和\"-ISM（主义）\"的结合。我们追求以最纯粹的方式享用顶级食材的本味。当日屠宰韩牛的新鲜、意大利布拉塔奶酪的绵密、法国黑松露的深邃香气。所有这些与一杯香槟完美融合，为您带来非凡体验。"
-    },
-    // Experience Section
-    experience: {
-      label: "The Experience",
-      title: "特别旅程",
-      subtitle: "在ROWISM The Black等待您的特别旅程",
-      items: [
-        { time: "Arrival", title: "🥂 欢迎起泡酒", desc: "踏入店门即刻开始的特别招待。以精选起泡酒开启您的夜晚。" },
-        { time: "Ambience", title: "💡 氛围灯光", desc: "丹麦Louis Poulsen灯具营造的柔和光线。仅8桌限定，保持舒适的间距。" },
-        { time: "Sound", title: "🎵 精选音乐", desc: "通过瑞士Geneva音箱播放的爵士、波萨诺瓦、原声音乐，音量恰好适合交谈。" },
-        { time: "Finale", title: "🍫 歌帝梵收尾", desc: "以甜蜜的歌帝梵巧克力完美收尾，留下美好余韵。" }
+        { icon: "🥩", title: "当日屠宰", desc: "新鲜韩牛" },
+        { icon: "🧀", title: "布拉塔", desc: "意大利进口" },
+        { icon: "🍾", title: "香槟", desc: "精选系列" },
+        { icon: "✨", title: "黑松露", desc: "现场刨丝" }
       ]
     },
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
-      subtitle: "用顶级食材和细致摆盘完成的ROWISM招牌",
-      ingredientsLabel: "食材",
+      title: "Signature Menu",
+      ingredientsLabel: "配料",
       finisherBadge: "Finisher",
       signature: {
-        name: "ROWISM招牌生拌牛肉",
         price: "₩92,000",
+        name: "ROWISM招牌生拌牛肉",
         badge: "Signature",
         description: "蕴含ROWISM哲学的招牌菜品",
         story: "ROWISM招牌生拌牛肉是最能代表ROWISM The Black身份的招牌菜。",
@@ -811,21 +847,21 @@ const translations = {
           name: "炭烤牛肋眼肉配时蔬",
           price: "₩49,000",
           description: "韩牛Jebichuri与8种时令蔬菜的炭烤盛宴",
-          detail: "Jebichuri是牛肋骨和牛腩之间的稀有部位，每头牛只能取得少量，被称为\"隐藏的宝石\"。精确烤至中等偏生，外层焦糖化，内部汁水丰富。",
-          ingredients: "韩牛Jebichuri、大葱、球芽甘蓝、芦笋、萝卜、茄子、迷你胡萝卜、蘑菇、西兰花"
+          detail: "Jebichuri是牛肋骨与牛腩之间的稀有部位，每头牛只能获得少量，被称为隐藏的宝石。精确烤至五分熟，外焦里嫩，肉汁丰富。",
+          ingredients: "韩牛Jebichuri、芦笋、杏鲍菇、彩椒、西葫芦、小萝卜、小番茄、土豆、柠檬香草黄油"
         },
         {
-          name: "奶酪精选",
+          name: "芝士精选",
           price: "₩36,000",
-          description: "侍酒师精选的6种奶酪组合",
-          detail: "布里、8个月熟成孔泰、艾曼塔、科尔比杰克、奶油奶酪、多菲内。搭配西班牙火腿、意大利热那亚萨拉米、青橄榄、蓝莓和饼干。",
-          ingredients: "布里、孔泰、艾曼塔、科尔比杰克、奶油奶酪、多菲内、火腿、萨拉米、橄榄、蓝莓"
+          description: "侍酒师精选6种奶酪系列",
+          detail: "布里、8个月熟成孔泰、埃曼塔尔、科尔比杰克、奶油奶酪、多菲诺（包裹奶酪）。搭配西班牙火腿、意大利热那亚萨拉米、绿橄榄、蓝莓和饼干。",
+          ingredients: "布里、孔泰、埃曼塔尔、科尔比杰克、奶油奶酪、多菲诺、火腿、萨拉米、橄榄、蓝莓、饼干"
         },
         {
-          name: "青阳辣椒油生拌牛肉",
+          name: "青阳辣油生拌牛肉",
           price: "₩25,000",
-          description: "传统生拌牛肉加上辣味火焰",
-          detail: "自制辣椒油酱是关键。用粗辣椒粉和葱调味的辣椒油配上芝麻油、调味料制成的特制酱料。戳破中间的蛋黄拌匀享用。",
+          description: "传统生拌牛肉加上辣味",
+          detail: "自制辣椒油酱是关键。粗辣椒粉和葱香辣椒油加上芝麻油、酱油、糖、芝麻调制的特制酱料。打散中间的蛋黄拌匀享用。",
           ingredients: "韩牛生拌、辣椒油酱、青阳辣椒、蒜末、蛋黄、辣椒丝"
         },
         {
@@ -843,6 +879,18 @@ const translations = {
           detail: "在顾客调查中被评为\"意外最好吃的菜品\"。紫苏油配日式酱油、醋、糖调制的酱汁清爽不腻，餐后也能轻松享用。",
           ingredients: "荞麦面、韩牛生拌、紫苏油酱、紫苏叶、调味海苔、芝麻、芥末"
         }
+      ]
+    },
+    // Experience Section
+    experience: {
+      label: "Experience",
+      title: "The ROWISM Experience",
+      subtitle: "用感官完成的体验",
+      steps: [
+        { step: "01", title: "Arrival", subtitle: "欢迎起泡酒", desc: "入场时提供的欢迎起泡酒，宣告特别之夜的开始。" },
+        { step: "02", title: "Ambience", subtitle: "氛围灯光，限8桌", desc: "丹麦路易斯·波尔森灯具营造的柔和氛围。仅8桌的私密空间。" },
+        { step: "03", title: "Sound", subtitle: "精选音乐", desc: "日内瓦音响传来的精选爵士和休闲音乐环绕您的对话。" },
+        { step: "04", title: "Finale", subtitle: "歌帝梵收尾", desc: "用餐的收尾是歌帝梵巧克力。送上甜蜜的余韵。" }
       ]
     },
     // Recommend Section
@@ -866,7 +914,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "让珍贵时刻更加特别",
       subtitle: "让珍贵时刻更加特别",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "纪念日", desc: "100天、200天、1周年、生日、结婚纪念日等特别纪念日的空间", event: "私密空间" },
@@ -898,46 +946,46 @@ const translations = {
     reviews: {
       label: "Reviews",
       title: "顾客评价",
-      subtitle: "体验过ROWISM The Black的客人的故事",
+      subtitle: "体验过ROWISM The Black的客人们的故事",
       count: "127条评价",
       more: "查看更多评价 →",
       items: [
-        { name: "金智贤", date: "2025.01.15", rating: 5, badge: "100天纪念", review: "和男朋友100天纪念来的。生拌牛肉真的入口即化！因为是当日屠宰，口感完全不一样。香槟也是推荐的，搭配完美。灯光也很柔和，氛围超棒 💕" },
-        { name: "朴俊英", date: "2025.01.10", rating: 5, badge: "约会", review: "在弘大附近找约会路线发现的，太棒了。只有8桌很私密，在生拌上现场刨松露太帅了。女朋友特别喜欢！" },
-        { name: "李素妍", date: "2025.01.05", rating: 5, badge: "再次光顾", review: "延南洞美食去过很多，但这里真的不一样。第一次知道Mungti-gi是什么，和普通生拌口感完全不同。配布拉塔奶酪简直绝了 🧀" },
-        { name: "崔敏秀", date: "2024.12.28", rating: 5, badge: "生日", review: "为妻子生日预约的。从欢迎起泡酒到最后的歌帝梵巧克力，细致的服务让我很感动。Jebichuri牛排也是完美的中等偏生！" },
-        { name: "郑河允", date: "2024.12.20", rating: 5, badge: "延特拉尔公园", review: "在延特拉尔公园散步后找晚餐地方来的。氛围真的很好，音乐音量也正好适合聊天。喜欢辣的话一定要试试青阳辣椒油生拌 🔥" },
-        { name: "姜泰宇", date: "2024.12.15", rating: 5, badge: "1周年", review: "结婚1周年纪念来的。丹麦Louis Poulsen灯具，细节让我赞叹。生拌+香槟的组合是人生最棒的搭配。明年一定还来！" }
+        { name: "金智贤", date: "2025.01.15", rating: 5, badge: "100天纪念", review: "和男朋友来庆祝100天纪念。生拌牛肉真的入口即化！因为是当天屠宰的，口感完全不一样。推荐的香槟搭配也很完美。灯光柔和，氛围超棒 💕" },
+        { name: "朴俊英", date: "2025.01.10", rating: 5, badge: "约会", review: "在弘大附近找约会地点时发现的，太棒了。只有8桌很私密，现场在生拌牛肉上刨松露的样子太帅了。女朋友非常喜欢！" },
+        { name: "李素妍", date: "2025.01.05", rating: 5, badge: "再次光顾", review: "去过很多延南洞的餐厅，但这里真的不一样。第一次知道什么是Mungti-gi，和普通生拌牛肉口感完全不同。配布拉塔奶酪一起吃太绝了 🧀" },
+        { name: "崔民洙", date: "2024.12.28", rating: 5, badge: "生日", review: "为妻子的生日预约的。从欢迎起泡酒到最后的歌帝梵巧克力，细致的服务让我很感动。Jebichuri牛排也烤得恰到好处！" },
+        { name: "郑夏允", date: "2024.12.20", rating: 5, badge: "延特拉尔公园", review: "在延特拉尔公园散步后来找晚餐的地方。氛围真的很好，音乐音量也正好适合聊天。喜欢辣的话一定要试试青阳辣油生拌牛肉 🔥" },
+        { name: "姜泰宇", date: "2024.12.15", rating: 5, badge: "1周年", review: "来庆祝结婚1周年。丹麦路易斯·波尔森的灯具，细节用心让人印象深刻。生拌牛肉+香槟的组合是人生最棒的搭配。明年还会再来！" }
       ]
     },
     // FAQ Section
     faq: {
       label: "FAQ",
       title: "常见问题",
-      subtitle: "关于延南洞香槟吧ROWISM The Black的问题",
+      subtitle: "关于延南洞香槟酒吧ROWISM The Black的疑问",
       items: [
-        { q: "可以不预约直接去吗？", a: "ROWISM The Black采用预约制。仅限8桌，特别是周五、周六、纪念日必须预约。可通过Naver预约，建议至少提前2-3天预约。" },
-        { q: "两个人大概多少钱？", a: "两人平均消费约18万韩元（约1000元人民币）。推荐招牌生拌（92,000韩元）+ 配菜 + 香槟1瓶。想轻松点的话10-12万韩元也可以。" },
-        { q: "Mungti-gi是什么？", a: "Mungti-gi是大邱的珍贵美食，将当日屠宰的韩牛在新鲜状态下切成薄片享用。早上屠宰的韩牛在体温还在的状态下立即处理，提供普通冷藏熟成肉绝对无法感受到的嫩滑和鲜活的肉香。" },
-        { q: "在哪里？", a: "位于首尔市麻浦区东桥路262-4。从地铁2号线弘大入口站3号出口步行5分钟（约400米），在延特拉尔公园附近的延南洞小巷。" },
-        { q: "有停车位吗？", a: "店内无停车位。建议使用附近的延南洞公共停车场（步行3分钟）。如果喝香槟，建议使用代驾服务。" },
-        { q: "营业时间和休息日？", a: "周二至周日18:00 - 24:00营业，最后点单22:30。每周一固定休息。" },
-        { q: "可以团体预约吗？", a: "最多接受8人预约。8人以上请另行咨询。不提供包场服务。" }
+        { q: "可以不预约直接来吗？", a: "ROWISM The Black采用预约制运营。限8桌运营，特别是周五、周六、纪念日必须预约。可通过Naver预约。建议至少提前2-3天预约。" },
+        { q: "两人预算大概多少？", a: "两人平均消费约18万韩元（约1000元人民币）。推荐招牌生拌牛肉(92,000韩元) + 配菜 + 香槟1瓶的组合。想轻松一点的话10-12万韩元也可以。" },
+        { q: "什么是Mungti-gi？", a: "Mungti-gi是当天屠宰的韩牛在新鲜状态下切成薄片直接享用的大邱传统美食。早上屠宰的韩牛在体温尚存的状态下立即处理，提供普通冷藏熟成肉绝对无法感受到的嫩滑和鲜活肉香。" },
+        { q: "位置在哪里？", a: "位于首尔市麻浦区东桥路262-4。从地铁2号线弘大入口站3号出口步行5分钟（约400米），在延特拉尔公园附近的延南洞小巷里。" },
+        { q: "可以停车吗？", a: "店内没有停车位。请使用附近的延南洞公共停车场（步行3分钟），如果要喝香槟建议使用代驾服务。" },
+        { q: "营业时间和休息日是？", a: "周二至周日18:00 - 24:00营业，最后点单22:30。每周一定期休息。" },
+        { q: "可以团体预约吗？", a: "最多可预约8人。更大的团体请另行咨询。不提供包场服务。" }
       ]
     },
     // Reserve Section
     reserve: {
       label: "Reservation",
       title: "预约您的特别之夜",
-      subtitle: "仅限8席 预约制私密餐厅",
-      notice: "周五·周六·纪念日建议至少提前3天预约",
+      subtitle: "限8席 预约制私密用餐",
+      notice: "周五、周六、纪念日建议至少提前3天预约",
       cta: "Naver预约",
       info: {
         hours: "营业时间",
         hoursValue: "周二-周日 18:00 - 24:00",
         lastOrder: "最后点单",
         lastOrderValue: "22:30",
-        closed: "固定休息",
+        closed: "定期休息",
         closedValue: "每周一"
       }
     },
@@ -946,8 +994,8 @@ const translations = {
       name: "ROWISM The Black",
       address: "首尔市麻浦区东桥路262-4",
       hours: "周二 - 周日 18:00 - 24:00",
-      closed: "每周一休息",
-      naver: "Naver预约",
+      closed: "周一休息",
+      naver: "通过Naver预约",
       slogan: "以生的哲学，<br/>为您的特别之夜。",
       desc: "延南洞高级香槟酒吧<br/>弘大入口站步行5分钟",
       copyright: "© 2024 ROWISM The Black"
@@ -957,70 +1005,11 @@ const translations = {
   }
 };
 
-// Current language
-let currentLang = 'ko';
-
-// Get language from URL path
-function getLanguageFromURL() {
-  const path = window.location.pathname;
-  if (path.startsWith('/en')) return 'en';
-  if (path.startsWith('/ja')) return 'ja';
-  if (path.startsWith('/zh')) return 'zh';
-  return 'ko';
-}
-
-// Get browser language (fallback)
-function getBrowserLanguage() {
-  const lang = navigator.language || navigator.userLanguage;
-  if (lang.startsWith('ja')) return 'ja';
-  if (lang.startsWith('zh')) return 'zh';
-  if (lang.startsWith('en')) return 'en';
-  return 'ko';
-}
-
-// Initialize language from URL path (primary) or server-set INITIAL_LANG
-function initLanguage() {
-  // Priority 1: URL path (/en, /ja, /zh, or / for Korean)
-  const urlLang = getLanguageFromURL();
-  
-  // Priority 2: Server-set INITIAL_LANG (from renderer.tsx)
-  const serverLang = window.INITIAL_LANG;
-  
-  // Use URL language if detected, otherwise use server-set language
-  if (urlLang && translations[urlLang]) {
-    currentLang = urlLang;
-  } else if (serverLang && translations[serverLang]) {
-    currentLang = serverLang;
-  } else {
-    currentLang = 'ko';
-  }
-  
-  // Save to localStorage for consistency
-  localStorage.setItem('rowism_lang', currentLang);
-  
-  return currentLang;
-}
-
-// Set language - immediately expose to window for onclick handlers
-function setLanguage(lang) {
-  console.log('setLanguage called:', lang);
-  if (!translations[lang]) {
-    console.log('Language not found:', lang);
-    return;
-  }
-  currentLang = lang;
-  localStorage.setItem('rowism_lang', lang);
-  updatePageContent();
-  updateLanguageButtons();
-  console.log('Language changed to:', lang);
-}
-// Immediately expose to window
-window.setLanguage = setLanguage;
-
-// Get translation
-function t(key) {
+// Helper function to get translation
+export function t(lang: Language, key: string): any {
   const keys = key.split('.');
-  let value = translations[currentLang];
+  let value: any = translations[lang];
+  
   for (const k of keys) {
     if (value && value[k] !== undefined) {
       value = value[k];
@@ -1040,307 +1029,16 @@ function t(key) {
   return value;
 }
 
-// Update language buttons
-function updateLanguageButtons() {
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.remove('active', 'text-champagne', 'border-champagne');
-    btn.classList.add('text-off-white/50', 'border-transparent');
-    if (btn.dataset.lang === currentLang) {
-      btn.classList.add('active', 'text-champagne', 'border-champagne');
-      btn.classList.remove('text-off-white/50', 'border-transparent');
-    }
-  });
+// Get language from URL path
+export function getLanguageFromPath(path: string): Language {
+  if (path.startsWith('/en')) return 'en';
+  if (path.startsWith('/ja')) return 'ja';
+  if (path.startsWith('/zh')) return 'zh';
+  return 'ko';
 }
 
-// Update all page content
-function updatePageContent() {
-  // Update all elements with data-i18n attribute
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const translation = t(key);
-    if (translation && typeof translation === 'string') {
-      el.textContent = translation;
-    }
-  });
-  
-  // Update elements with data-i18n-html (for HTML content)
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.getAttribute('data-i18n-html');
-    const translation = t(key);
-    if (translation && typeof translation === 'string') {
-      el.innerHTML = translation;
-    }
-  });
-  
-  // Update placeholders
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
-    el.placeholder = t(key);
-  });
+// Get base path for language
+export function getBasePath(lang: Language): string {
+  if (lang === 'ko') return '';
+  return `/${lang}`;
 }
-
-// Render dynamic sections
-function renderDynamicSections() {
-  renderMenuSection();
-  renderExperienceSection();
-  renderRecommendSection();
-  renderOccasionsSection();
-  renderReviewsSection();
-  renderFAQSection();
-  renderLocationSection();
-  renderReserveSection();
-  renderFooterSection();
-}
-
-// Render Menu Items
-function renderMenuSection() {
-  const menuContainer = document.getElementById('menu-items-container');
-  if (!menuContainer) return;
-  
-  const items = t('menu.items');
-  if (!Array.isArray(items)) return;
-  
-  const menuImages = [
-    '/static/menu_jebichuri.jpg',
-    '/static/menu_cheese.jpg', 
-    '/static/menu_yukhoe.jpg',
-    '/static/menu_caprese.jpg',
-    '/static/menu_memil.jpg'
-  ];
-  
-  menuContainer.innerHTML = items.map((item, i) => `
-    <div class="animate-on-scroll group ${i === 4 ? 'md:col-span-2 lg:col-span-1 lg:col-start-1' : ''}" style="animation-delay: ${(i + 1) * 0.1}s">
-      <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-        <img src="${menuImages[i]}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
-        ${item.badge ? `<div class="absolute bottom-4 right-4"><span class="text-[9px] tracking-[0.2em] text-off-white/60 uppercase bg-deep-black/70 px-2 py-1">${item.badge}</span></div>` : ''}
-      </div>
-      <div class="flex justify-between items-start mb-3">
-        <div>
-          <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">${item.name}</h4>
-          <p class="text-[10px] tracking-wider text-off-white/30 uppercase">${item.description}</p>
-        </div>
-        <span class="font-playfair text-xl text-champagne/70">${item.price}</span>
-      </div>
-      <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">${item.detail}</p>
-      <div class="text-xs">
-        <p class="text-off-white/25"><span class="text-champagne/30 mr-2">${t('menu.ingredientsLabel') || 'Ingredients'}</span>${item.ingredients}</p>
-      </div>
-    </div>
-  `).join('');
-}
-
-// Render Experience Timeline
-function renderExperienceSection() {
-  const container = document.getElementById('experience-items-container');
-  if (!container) return;
-  
-  const items = t('experience.items');
-  if (!Array.isArray(items)) return;
-  
-  container.innerHTML = items.map((item, i) => `
-    <div class="flex flex-col md:flex-row items-start gap-8 md:gap-16 animate-on-scroll ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}" style="animation-delay: ${i * 0.1}s">
-      <div class="flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}">
-        <span class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase">${item.time}</span>
-        <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-3 mb-4">${item.title}</h3>
-        <p class="text-off-white/40 text-sm font-light leading-relaxed max-w-sm">${item.desc}</p>
-      </div>
-      <div class="hidden md:flex items-center justify-center">
-        <div class="w-3 h-3 rounded-full bg-champagne/30 border border-champagne/50"></div>
-      </div>
-      <div class="flex-1"></div>
-    </div>
-  `).join('');
-}
-
-// Render Recommend Section
-function renderRecommendSection() {
-  const container = document.getElementById('recommend-items-container');
-  if (!container) return;
-  
-  const items = t('recommend.items');
-  if (!Array.isArray(items)) return;
-  
-  container.innerHTML = items.map((item, i) => `
-    <div class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style="animation-delay: ${i * 0.1}s">
-      <span class="text-champagne/40 text-2xl">${item.icon}</span>
-      <h3 class="font-playfair text-lg md:text-xl text-off-white mt-4 mb-2 group-hover:text-champagne transition-colors duration-500">${item.title}</h3>
-      <p class="text-off-white/60 text-sm font-light mb-3">${item.desc}</p>
-      <p class="text-off-white/30 text-xs font-light leading-relaxed">${item.detail}</p>
-    </div>
-  `).join('');
-}
-
-// Render Occasions Section
-function renderOccasionsSection() {
-  const container = document.getElementById('occasions-section-container');
-  if (!container) return;
-  
-  const items = t('occasions.items');
-  if (!Array.isArray(items)) return;
-  
-  container.innerHTML = items.map((item, i) => `
-    <div class="bg-deep-black p-10 md:p-14 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style="animation-delay: ${i * 0.1}s">
-      <span class="text-[10px] tracking-[0.3em] text-champagne/30 uppercase">${item.title}</span>
-      <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-4 mb-2 group-hover:text-champagne transition-colors duration-500">
-        <span class="mr-2">${item.icon}</span>${item.subtitle}
-      </h3>
-      <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">${item.desc}</p>
-      <p class="text-champagne/40 text-xs tracking-wide">${item.event}</p>
-    </div>
-  `).join('');
-}
-
-// Render Reviews Section
-function renderReviewsSection() {
-  const container = document.getElementById('reviews-items-container');
-  if (!container) return;
-  
-  const items = t('reviews.items');
-  if (!Array.isArray(items)) return;
-  
-  container.innerHTML = items.map((item, i) => `
-    <div class="bg-deep-black/50 border border-white/5 p-6 rounded-sm animate-on-scroll hover:border-champagne/20 transition-all duration-500" style="animation-delay: ${i * 0.1}s">
-      <div class="flex items-center justify-between mb-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-champagne/20 flex items-center justify-center text-champagne font-medium">${item.name.charAt(0)}</div>
-          <div>
-            <p class="text-off-white font-medium text-sm">${item.name}</p>
-            <p class="text-off-white/30 text-xs">${item.date}</p>
-          </div>
-        </div>
-        <span class="text-[10px] px-2 py-1 bg-champagne/10 text-champagne rounded-sm">${item.badge}</span>
-      </div>
-      <div class="flex text-champagne text-sm mb-3">${'★'.repeat(item.rating)}</div>
-      <p class="text-off-white/70 text-sm leading-relaxed">${item.review}</p>
-    </div>
-  `).join('');
-}
-
-// Render FAQ Section
-function renderFAQSection() {
-  const container = document.getElementById('faq-items-container');
-  if (!container) return;
-  
-  const items = t('faq.items');
-  if (!Array.isArray(items)) return;
-  
-  container.innerHTML = items.map((item, i) => `
-    <div class="faq-item border-b border-white/5 animate-on-scroll" style="animation-delay: ${i * 0.05}s">
-      <button class="faq-question w-full py-8 text-left flex justify-between items-center group">
-        <span class="font-noto-serif text-off-white/80 text-sm md:text-base pr-8 group-hover:text-off-white transition-colors">${item.q}</span>
-        <svg class="faq-icon w-4 h-4 text-champagne/50 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-          <path d="M12 5v14M5 12h14"></path>
-        </svg>
-      </button>
-      <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
-        <p class="text-off-white/40 text-sm font-light leading-relaxed pr-12 pb-8">${item.a}</p>
-      </div>
-    </div>
-  `).join('');
-  
-  // Re-attach FAQ toggle handlers
-  initFAQToggle();
-}
-
-// Render Location Section
-function renderLocationSection() {
-  const locationTitle = document.querySelector('[data-i18n="location.title"]');
-  const locationAddress = document.querySelector('[data-i18n="location.address"]');
-  const locationHours = document.querySelector('[data-i18n="location.hours"]');
-  const locationSubway = document.querySelector('[data-i18n="location.subway"]');
-  const locationClosed = document.querySelector('[data-i18n="location.closed"]');
-  const locationLastOrder = document.querySelector('[data-i18n="location.lastOrder"]');
-  
-  if (locationTitle) locationTitle.textContent = t('location.title');
-  if (locationAddress) locationAddress.textContent = t('location.address');
-  if (locationHours) locationHours.textContent = t('location.hours');
-  if (locationSubway) locationSubway.textContent = t('location.subway');
-  if (locationClosed) locationClosed.textContent = t('location.closed');
-  if (locationLastOrder) locationLastOrder.textContent = t('location.lastOrder');
-  
-  // Update landmarks
-  const landmarksContainer = document.getElementById('landmarks-container');
-  if (landmarksContainer) {
-    const landmarks = t('location.landmarks.items');
-    if (Array.isArray(landmarks)) {
-      landmarksContainer.innerHTML = landmarks.map(item => 
-        `<p class="text-off-white/40 text-sm">${item}</p>`
-      ).join('');
-    }
-  }
-}
-
-// Render Reserve Section
-function renderReserveSection() {
-  // Update text elements
-  const reserveTitle = document.querySelector('[data-i18n="reserve.title"]');
-  const reserveSubtitle = document.querySelector('[data-i18n="reserve.subtitle"]');
-  const reserveNotice = document.querySelector('[data-i18n="reserve.notice"]');
-  const reserveCta = document.querySelector('[data-i18n="reserve.cta"]');
-  
-  if (reserveTitle) reserveTitle.textContent = t('reserve.title');
-  if (reserveSubtitle) reserveSubtitle.innerHTML = t('reserve.subtitle');
-  if (reserveNotice) reserveNotice.textContent = t('reserve.notice');
-  if (reserveCta) reserveCta.textContent = t('reserve.cta');
-}
-
-// Render Footer Section
-function renderFooterSection() {
-  const footerAddress = document.querySelector('[data-i18n="footer.address"]');
-  const footerHours = document.querySelector('[data-i18n="footer.hours"]');
-  const footerClosed = document.querySelector('[data-i18n="footer.closed"]');
-  const footerNaver = document.querySelector('[data-i18n="footer.naver"]');
-  const mobileCta = document.querySelector('[data-i18n="mobileCta"]');
-  const footerSlogan = document.querySelector('[data-i18n="footer.slogan"]');
-  const footerDesc = document.querySelector('[data-i18n="footer.desc"]');
-  
-  if (footerAddress) footerAddress.textContent = t('footer.address');
-  if (footerHours) footerHours.textContent = t('footer.hours');
-  if (footerClosed) footerClosed.textContent = t('footer.closed');
-  if (footerNaver) footerNaver.textContent = t('footer.naver');
-  if (mobileCta) mobileCta.textContent = t('mobileCta');
-  if (footerSlogan) footerSlogan.innerHTML = t('footer.slogan');
-  if (footerDesc) footerDesc.innerHTML = t('footer.desc');
-}
-
-// Initialize FAQ toggle functionality
-function initFAQToggle() {
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', function() {
-      const answer = this.nextElementSibling;
-      const icon = this.querySelector('.faq-icon');
-      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-      
-      // Close all others
-      document.querySelectorAll('.faq-answer').forEach(a => {
-        a.style.maxHeight = '0px';
-      });
-      document.querySelectorAll('.faq-icon').forEach(i => {
-        i.style.transform = 'rotate(0deg)';
-      });
-      
-      // Toggle current
-      if (!isOpen) {
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-        icon.style.transform = 'rotate(45deg)';
-      }
-    });
-  });
-}
-
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-  initLanguage();
-  updatePageContent();
-  initFAQToggle();
-});
-
-// Export for global use
-window.translations = translations;
-window.currentLang = currentLang;
-window.setLanguage = setLanguage;
-window.t = t;
-window.initLanguage = initLanguage;
-window.updatePageContent = updatePageContent;
-window.renderDynamicSections = renderDynamicSections;

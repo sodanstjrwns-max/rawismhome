@@ -165,10 +165,10 @@ app.get('/', (c) => {
           
           <div class="grid md:grid-cols-2 gap-px bg-white/5">
             {[
-              "분위기와 맛, 모두를 원할 때",
-              "평범한 레스토랑이 아닌 곳을 찾을 때",
-              "둘만의 프라이빗한 시간이 필요할 때",
-              "기억에 남을 경험을 선물하고 싶을 때",
+              "✨ 분위기와 맛, 모두를 원할 때",
+              "🍷 평범한 레스토랑이 아닌 곳을 찾을 때",
+              "💑 둘만의 프라이빗한 시간이 필요할 때",
+              "🎁 기억에 남을 경험을 선물하고 싶을 때",
             ].map((text, i) => (
               <div key={i} class="bg-deep-black p-10 md:p-12 animate-on-scroll" style={`animation-delay: ${i * 0.1}s`}>
                 <p class="text-off-white/60 font-light text-sm md:text-base leading-relaxed">

@@ -138,7 +138,7 @@ export const renderer = jsxRenderer(({ children }) => {
                 "hasMenuItem": {
                   "@type": "MenuItem",
                   "name": "로위즘 뭉티기 시그니처",
-                  "description": "당일 도축 온도체 한우 뭉티기 · 이탈리아 부라타 치즈 · 움브리아산 블랙 트러플 · 24개월 숙성 파르미지아노 레지아노",
+                  "description": "ROWISM의 철학을 담은 시그니처 메뉴. RAW(날것)와 -ISM(철학)의 조합. 최상급 한우 뭉티기 200g에 이탈리아산 부라타 치즈가 통째로 올라가고, 블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더합니다. 파르미지아노 레지아노가 눈꽃처럼 내려앉습니다.",
                   "image": "https://rowism.com/static/menu_signature.jpg",
                   "offers": {
                     "@type": "Offer",
@@ -154,7 +154,7 @@ export const renderer = jsxRenderer(({ children }) => {
                   {
                     "@type": "MenuItem",
                     "name": "제비추리 그릴드 베지터블",
-                    "description": "한우 갈비 부위 중 가장 부드러운 제비추리 참숯 그릴링 · 애호박 · 새송이버섯 · 파프리카 · 로즈마리 소금",
+                    "description": "한우 제비추리와 8종 제철 채소의 그릴 향연. 제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 숨은 보석으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
                     "image": "https://rowism.com/static/menu_jebichuri.jpg",
                     "offers": {
                       "@type": "Offer",
@@ -165,7 +165,7 @@ export const renderer = jsxRenderer(({ children }) => {
                   {
                     "@type": "MenuItem",
                     "name": "치즈 셀렉션",
-                    "description": "소믈리에 큐레이션 유럽산 프리미엄 치즈 4종 · 브리 드 모 · 카망베르 · 고르곤졸라 피칸테 · 24개월 숙성 꽁테",
+                    "description": "소믈리에가 큐레이팅한 6종 치즈 컬렉션. 브리, 8개월 숙성 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아(래핑 치즈). 스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리와 크래커가 함께 제공됩니다.",
                     "image": "https://rowism.com/static/menu_cheese.jpg",
                     "offers": {
                       "@type": "Offer",
@@ -176,7 +176,7 @@ export const renderer = jsxRenderer(({ children }) => {
                   {
                     "@type": "MenuItem",
                     "name": "청양 오일 육회",
-                    "description": "한우 홍두깨살 육회 · 청양고추 인퓨즈드 오일 · 배 · 잣 · 계란 노른자",
+                    "description": "전통 육회에 더한 매콤한 불꽃. 직접 만드는 고추기름 소스가 핵심. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합한 특제 소스. 정중앙 노른자를 터뜨려 비벼 드시면 중독성 있는 맛을 경험합니다.",
                     "image": "https://rowism.com/static/menu_yukhoe.jpg",
                     "offers": {
                       "@type": "Offer",
@@ -187,7 +187,7 @@ export const renderer = jsxRenderer(({ children }) => {
                   {
                     "@type": "MenuItem",
                     "name": "아보카도 카프레제",
-                    "description": "하스 아보카도 · 부팔라 모짜렐라 · 발사믹 리덕션 · 바질 오일 · 플뢰르 드 셀",
+                    "description": "클래식 카프레제의 현대적 재해석. 이탈리아 카프리 섬에서 유래한 카프레제에 아보카도와 블랙 올리브를 더해 더욱 크리미하게. 아보카도는 주문 후 바로 잘라 갈변 없이 신선하게 제공. 직접 만든 발사믹 드레싱과 함께.",
                     "image": "https://rowism.com/static/menu_caprese.jpg",
                     "offers": {
                       "@type": "Offer",
@@ -203,7 +203,7 @@ export const renderer = jsxRenderer(({ children }) => {
                 "hasMenuItem": {
                   "@type": "MenuItem",
                   "name": "들기름 육회 메밀면",
-                  "description": "봉평 메밀면 · 한우 육회 · 들기름 · 김 가루 · 계란 노른자 · 마무리 비빔면",
+                  "description": "한 끼의 완벽한 마무리. 고객 설문에서 의외로 가장 좋았던 메뉴로 선정. 들기름에 쯔유, 식초, 설탕을 배합한 소스가 느끼하지 않고 상큼해서 식사 후에도 가볍게 즐길 수 있습니다. 메밀면 위에 한우 육회, 깻잎, 조미김, 통깨가 올라갑니다.",
                   "image": "https://rowism.com/static/menu_memil.jpg",
                   "offers": {
                     "@type": "Offer",

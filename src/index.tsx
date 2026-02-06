@@ -265,32 +265,31 @@ app.get('/', (c) => {
               
               {/* Content */}
               <div class="bg-deep-black p-10 lg:p-14 flex flex-col justify-center">
-                <div class="mb-8">
+                <div class="mb-6">
                   <h3 class="font-playfair text-2xl md:text-3xl text-off-white mb-2">
                     로위즘 뭉티기 시그니처
                   </h3>
                   <p class="text-champagne/60 text-sm tracking-wide">
-                    Rowism Signature Beef Tartare
+                    ROWISM의 철학을 담은 시그니처 메뉴
                   </p>
                 </div>
                 
-                <div class="space-y-4 mb-8">
+                <div class="space-y-4 mb-6">
                   <p class="text-off-white/50 text-sm font-light leading-relaxed">
-                    당일 도축한 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로.
+                    'ROWISM'이라는 이름은 'RAW(날것)'와 '-ISM(철학)'의 조합으로, 최상급 재료를 가장 순수한 방식으로 즐긴다는 브랜드 철학을 담고 있습니다.
                   </p>
                   <p class="text-off-white/35 text-xs font-light leading-relaxed">
-                    아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질됩니다.
-                    일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 달콤한 육향.
-                    양념 없이 고기 본연의 감칠맛을 느끼는 것이 뭉티기의 매력입니다.
-                    크리미한 이탈리아 부라타 치즈, 향긋한 움브리아산 블랙 트러플이 
-                    전통과 모던의 완벽한 조화를 완성합니다.
+                    뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 전통 요리입니다. 
+                    매일 엄선된 최상급 한우 뭉티기 200g을 아낌없이 사용합니다.
+                    이탈리아산 부라타 치즈가 통째로 올라가 크리미한 식감이 담백한 뭉티기와 만나 부드럽게 녹아내립니다. 
+                    블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더하고, 파르미지아노 레지아노가 눈꽃처럼 내려앉습니다.
                   </p>
                 </div>
                 
-                <div class="border-t border-white/5 pt-6 mb-6">
-                  <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-3">Ingredients</p>
+                <div class="border-t border-white/5 pt-5 mb-5">
+                  <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-2">Ingredients</p>
                   <p class="text-off-white/30 text-xs leading-relaxed">
-                    한우 우둔살 · 이탈리아 부라타 치즈 · 움브리아산 블랙 트러플 · 파르미지아노 레지아노 24개월 · 엑스트라 버진 올리브 오일 · 플뢰르 드 셀
+                    한우 뭉티기 · 부라타 치즈 · 블랙 트러플 · 파르미지아노 레지아노 · 소금 · 후추
                   </p>
                 </div>
                 
@@ -325,18 +324,19 @@ app.get('/', (c) => {
                   <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
                     제비추리 그릴드 베지터블
                   </h4>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Grilled Jebichuri & Vegetables</p>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">한우 제비추리와 8종 제철 채소의 그릴 향연</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70">49,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                한우 갈비 부위 중 가장 부드럽고 육즙이 풍부한 제비추리를 참숯불에 그릴링합니다. 
-                겉은 바삭하고 속은 촉촉한 미디엄 레어로 제공됩니다.
+                제비추리는 소의 갈비와 양지 사이에서 나오는 희귀 부위로, 한 마리당 소량만 얻을 수 있어 '숨은 보석'으로 불립니다. 
+                미디엄 레어로 정확하게 구워져 겉은 카라멜라이징 되어 고소하고, 속은 육즙을 머금고 있습니다.
+                8종의 엄선된 채소가 함께합니다.
               </p>
               <div class="space-y-2 text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">재료</span>
-                  한우 제비추리 · 애호박 · 새송이버섯 · 파프리카 · 로즈마리 소금
+                  한우 제비추리 · 파 · 방울양배추 · 아스파라거스 · 래디쉬 · 가지 · 미니당근 · 양송이버섯 · 브로콜리
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
@@ -360,18 +360,19 @@ app.get('/', (c) => {
                   <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
                     치즈 셀렉션
                   </h4>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Curated Cheese Selection</p>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">소믈리에가 큐레이팅한 6종 치즈 컬렉션</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70">36,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                소믈리에가 직접 큐레이션한 유럽산 프리미엄 치즈 4종. 부드러운 것부터 강렬한 것까지 
-                순서대로 즐기시면 치즈의 깊은 세계를 경험하실 수 있습니다.
+                부드러운 연성 치즈부터 숙성된 경성 치즈까지, 다양한 맛과 텍스처를 경험할 수 있도록 구성했습니다. 
+                스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리가 함께 제공됩니다. 
+                다피누아는 래핑 치즈로 스푼으로 떠서 크래커에 올려 드세요.
               </p>
               <div class="space-y-2 text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">구성</span>
-                  브리 드 모 · 카망베르 · 고르곤졸라 피칸테 · 24개월 숙성 꽁테
+                  브리 · 8개월 숙성 콩테 · 에멘탈 · 콜비잭 · 크림치즈 · 다피누아 · 하몽 · 살라미 · 올리브 · 블루베리
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
@@ -385,7 +386,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_yukhoe.jpg" 
-                  alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 프로포즈 레스토랑" 
+                  alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 데이트 레스토랑" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -395,18 +396,18 @@ app.get('/', (c) => {
                   <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
                     청양 오일 육회
                   </h4>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Spicy Cheongyang Beef Tartare</p>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">전통 육회에 더한 매콤한 불꽃</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70">25,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                전통 육회에 ROWISM만의 시그니처 청양 인퓨즈드 오일을 더했습니다. 
-                은은한 매콤함이 고기의 단맛을 더욱 살려주며, 한국적 감성과 현대적 기법의 조화를 느끼실 수 있습니다.
+                직접 만드는 고추기름 소스가 핵심입니다. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합하여 
+                매콤하면서도 고소한 특제 소스를 완성합니다. 정중앙 노른자를 터뜨려 비벼 드시면 중독성 있는 맛을 경험하실 수 있습니다.
               </p>
               <div class="space-y-2 text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">재료</span>
-                  한우 홍두깨살 · 청양고추 인퓨즈드 오일 · 배 · 잣 · 계란 노른자
+                  한우 육회 · 고추기름 소스(자체 제작) · 청양고추 · 다진 마늘 · 노른자 · 실고추
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
@@ -430,18 +431,19 @@ app.get('/', (c) => {
                   <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
                     아보카도 카프레제
                   </h4>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Avocado Caprese</p>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">클래식 카프레제의 현대적 재해석</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70">23,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                이탈리아 전통 카프레제를 ROWISM 스타일로 재해석. 토마토 대신 완숙 하스 아보카도를 사용하여 
-                더욱 부드럽고 고소한 맛을 구현했습니다.
+                이탈리아 카프리 섬에서 유래한 카프레제에 아보카도와 블랙 올리브를 더해 더욱 크리미하게 재해석했습니다. 
+                아보카도는 주문 후 바로 잘라 갈변 없이 신선하게 제공됩니다. 
+                초록, 빨강, 하양, 검정의 색감 대비가 인스타그래머블한 플레이팅을 완성합니다.
               </p>
               <div class="space-y-2 text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">재료</span>
-                  하스 아보카도 · 부팔라 모짜렐라 · 발사믹 리덕션 · 바질 오일 · 플뢰르 드 셀
+                  아보카도 · 미니 모짜렐라 · 대추방울토마토 · 블랙 올리브 · 발사믹 드레싱(자체 제작) · 바질
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>
@@ -470,18 +472,19 @@ app.get('/', (c) => {
                   <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">
                     들기름 육회 메밀면
                   </h4>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">Perilla Oil Beef Tartare Buckwheat Noodles</p>
+                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">한 끼의 완벽한 마무리</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70">15,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                식사의 마무리로 추천드리는 시그니처 면 요리. 봉평 메밀로 만든 면 위에 신선한 한우 육회와 
-                국내산 냉압착 들기름의 고소함이 어우러집니다. 비빔면 스타일로 제공됩니다.
+                고객 설문에서 "의외로 가장 좋았던 메뉴"로 꼽힌 시그니처 마무리 메뉴입니다. 
+                들기름에 쯔유, 식초, 설탕을 배합한 소스가 느끼하지 않고 상큼해서 식사 후에도 가볍게 즐길 수 있습니다.
+                메밀면 위에 신선한 한우 육회, 향긋한 깻잎, 바삭한 조미김이 올라갑니다.
               </p>
               <div class="space-y-2 text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">재료</span>
-                  봉평 메밀면 · 한우 육회 · 국내산 냉압착 들기름 · 김 가루 · 계란 노른자
+                  메밀면 · 한우 육회 · 들기름 소스(자체 제작) · 깻잎 · 조미김 · 통깨 · 와사비
                 </p>
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">페어링</span>

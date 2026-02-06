@@ -513,15 +513,15 @@ app.get('/', (c) => {
             
             <div class="space-y-16 md:space-y-24">
               {[
-                { time: "Arrival", title: "웰컴 스파클링", desc: "입장과 동시에 시작되는 특별한 환대. 엄선된 스파클링 와인 한 잔으로 저녁을 시작합니다." },
-                { time: "Ambience", title: "무드 라이팅", desc: "덴마크 루이스폴센 조명이 만드는 은은한 빛. 당신만을 위한 프라이빗한 공간이 펼쳐집니다. 8개 테이블 한정으로 여유로운 간격을 유지합니다." },
-                { time: "Sound", title: "큐레이팅 뮤직", desc: "스위스 제네바 스피커를 통해 흐르는 감각적인 선율. 재즈, 보사노바, 어쿠스틱 등 대화와 어울리는 완벽한 볼륨으로 큐레이팅됩니다." },
-                { time: "Finale", title: "고디바 피니시", desc: "달콤한 고디바 초콜릿과 함께 완벽한 여운. 특별한 밤의 마지막 선물로 잊지 못할 마무리를 선사합니다." },
+                { time: "Arrival", icon: "🥂", title: "웰컴 스파클링", desc: "입장과 동시에 시작되는 특별한 환대. 엄선된 스파클링 와인 한 잔으로 저녁을 시작합니다." },
+                { time: "Ambience", icon: "💡", title: "무드 라이팅", desc: "덴마크 루이스폴센 조명이 만드는 은은한 빛. 당신만을 위한 프라이빗한 공간이 펼쳐집니다. 8개 테이블 한정으로 여유로운 간격을 유지합니다." },
+                { time: "Sound", icon: "🎵", title: "큐레이팅 뮤직", desc: "스위스 제네바 스피커를 통해 흐르는 감각적인 선율. 재즈, 보사노바, 어쿠스틱 등 대화와 어울리는 완벽한 볼륨으로 큐레이팅됩니다." },
+                { time: "Finale", icon: "🍫", title: "고디바 피니시", desc: "달콤한 고디바 초콜릿과 함께 완벽한 여운. 특별한 밤의 마지막 선물로 잊지 못할 마무리를 선사합니다." },
               ].map((item, i) => (
                 <div key={i} class={`flex flex-col md:flex-row items-start gap-8 md:gap-16 animate-on-scroll ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`} style={`animation-delay: ${i * 0.1}s`}>
                   <div class={`flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}`}>
                     <span class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase">{item.time}</span>
-                    <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-3 mb-4">{item.title}</h3>
+                    <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-3 mb-4"><span class="mr-2">{item.icon}</span>{item.title}</h3>
                     <p class="text-off-white/40 text-sm font-light leading-relaxed max-w-sm">{item.desc}</p>
                   </div>
                   <div class="hidden md:flex items-center justify-center">
@@ -642,15 +642,15 @@ app.get('/', (c) => {
           
           <div class="grid md:grid-cols-2 gap-px bg-white/5">
             {[
-              { title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일. 평범하지 않은 기념일을 위한 특별한 공간.", event: "프라이빗 공간" },
-              { title: "Date", subtitle: "데이트", desc: "특별한 하루를 만들고 싶은 날. 프라이빗한 분위기와 은은한 조명이 만드는 로맨틱한 공간에서.", event: "로맨틱한 분위기" },
-              { title: "Celebration", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업. 축하받아 마땅한 모든 순간에 샴페인과 함께 건배하세요.", event: "웰컴 샴페인 서비스" },
-              { title: "Private", subtitle: "프라이빗", desc: "오늘 하루만큼은 나를 위한 특별한 시간. 혼자만의 여유 또는 소중한 사람과의 프라이빗한 저녁.", event: "조용한 코너석" },
+              { title: "Anniversary", icon: "🎂", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일. 평범하지 않은 기념일을 위한 특별한 공간.", event: "프라이빗 공간" },
+              { title: "Date", icon: "💕", subtitle: "데이트", desc: "특별한 하루를 만들고 싶은 날. 프라이빗한 분위기와 은은한 조명이 만드는 로맨틱한 공간에서.", event: "로맨틱한 분위기" },
+              { title: "Celebration", icon: "🎉", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업. 축하받아 마땅한 모든 순간에 샴페인과 함께 건배하세요.", event: "웰컴 샴페인 서비스" },
+              { title: "Private", icon: "🌙", subtitle: "프라이빗", desc: "오늘 하루만큼은 나를 위한 특별한 시간. 혼자만의 여유 또는 소중한 사람과의 프라이빗한 저녁.", event: "조용한 코너석" },
             ].map((item, i) => (
               <div key={i} class="bg-deep-black p-10 md:p-14 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style={`animation-delay: ${i * 0.1}s`}>
                 <span class="text-[10px] tracking-[0.3em] text-champagne/30 uppercase">{item.title}</span>
                 <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-4 mb-2 group-hover:text-champagne transition-colors duration-500">
-                  {item.subtitle}
+                  <span class="mr-2">{item.icon}</span>{item.subtitle}
                 </h3>
                 <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">{item.desc}</p>
                 <p class="text-champagne/40 text-xs tracking-wide">{item.event}</p>

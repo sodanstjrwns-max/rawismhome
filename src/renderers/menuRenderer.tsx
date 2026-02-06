@@ -62,7 +62,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           {/* Canonical URL */}
           <link rel="canonical" href={`https://rawism.kr${getLangPath(pageLang)}/menu`} />
           
-          {/* hreflang tags */}
+          {/* hreflang tags - Note: ko and x-default may be deduplicated by JSX, but sitemap.xml has complete hreflang coverage */}
           <link rel="alternate" hreflang="ko" href="https://rawism.kr/menu" />
           <link rel="alternate" hreflang="en" href="https://rawism.kr/en/menu" />
           <link rel="alternate" hreflang="ja" href="https://rawism.kr/ja/menu" />

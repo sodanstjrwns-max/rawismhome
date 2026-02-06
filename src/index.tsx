@@ -276,12 +276,14 @@ app.get('/', (c) => {
                 
                 <div class="space-y-4 mb-8">
                   <p class="text-off-white/50 text-sm font-light leading-relaxed">
-                    ROWISM의 철학이 담긴 시그니처 메뉴. 대구 전통 방식의 뭉티기를 현대적으로 재해석했습니다.
+                    당일 도축한 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로.
                   </p>
                   <p class="text-off-white/35 text-xs font-light leading-relaxed">
-                    최상급 한우 우둔살을 얇게 저며 양념 없이 고기 본연의 맛을 살렸습니다. 
-                    이탈리아 풀리아 지방의 크리미한 부라타 치즈, 움브리아산 블랙 트러플, 
-                    24개월 숙성 파르미지아노 레지아노가 어우러져 깊고 복합적인 풍미를 선사합니다.
+                    아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질됩니다.
+                    일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 달콤한 육향.
+                    양념 없이 고기 본연의 감칠맛을 느끼는 것이 뭉티기의 매력입니다.
+                    크리미한 이탈리아 부라타 치즈, 향긋한 움브리아산 블랙 트러플이 
+                    전통과 모던의 완벽한 조화를 완성합니다.
                   </p>
                 </div>
                 
@@ -383,7 +385,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_yukhoe.jpg" 
-                  alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 기념일 레스토랑" 
+                  alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 프로포즈 레스토랑" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -542,7 +544,7 @@ app.get('/', (c) => {
               이런 분께 추천드립니다
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto">
-              연남동 데이트, 기념일을 계획 중이시라면
+              연남동 데이트, 기념일, 프로포즈를 계획 중이시라면
             </p>
           </div>
           
@@ -627,10 +629,10 @@ app.get('/', (c) => {
           
           <div class="grid md:grid-cols-2 gap-px bg-white/5">
             {[
-              { title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일. 평범하지 않은 기념일을 위해 특별한 공간을 준비해드립니다.", event: "프라이빗 공간 배정" },
+              { title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일. 평범하지 않은 기념일을 위한 특별한 공간.", event: "프라이빗 공간" },
+              { title: "Proposal", subtitle: "프로포즈", desc: "인생에서 가장 특별한 질문을 할 그 순간. 프라이빗한 분위기와 은은한 조명이 만드는 로맨틱한 공간.", event: "로맨틱한 분위기" },
               { title: "Celebration", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업. 축하받아 마땅한 모든 순간에 샴페인과 함께 건배하세요.", event: "웰컴 샴페인 서비스" },
-              { title: "Date Night", subtitle: "데이트", desc: "특별한 저녁을 원하는 커플을 위해. 분위기 있는 조명과 음악, 프라이빗한 공간에서의 로맨틱한 시간.", event: "무드 라이팅 연출" },
-              { title: "Private", subtitle: "프라이빗", desc: "오늘 하루만큼은 나를 위한 특별한 시간. 혼자만의 여유 또는 소중한 사람과의 프라이빗한 저녁.", event: "조용한 코너석 배정" },
+              { title: "Private", subtitle: "프라이빗", desc: "오늘 하루만큼은 나를 위한 특별한 시간. 혼자만의 여유 또는 소중한 사람과의 프라이빗한 저녁.", event: "조용한 코너석" },
             ].map((item, i) => (
               <div key={i} class="bg-deep-black p-10 md:p-14 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style={`animation-delay: ${i * 0.1}s`}>
                 <span class="text-[10px] tracking-[0.3em] text-champagne/30 uppercase">{item.title}</span>
@@ -751,8 +753,8 @@ app.get('/', (c) => {
                 a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 스파클링 와인과 함께 10-12만원대로도 이용 가능합니다. 특별한 기념일이라면 프리미엄 샴페인과 함께 20-25만원 정도의 코스를 추천드립니다." 
               },
               { 
-                q: "뭉티기와 육회의 차이는 무엇인가요?", 
-                a: "뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 대구 향토 음식입니다. 일반 육회가 참기름, 소금 등으로 양념되는 것과 달리, 뭉티기는 고기 본연의 풍미를 느낄 수 있습니다. ROWISM에서는 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노와 함께 제공하여 새로운 맛의 조화를 선사합니다." 
+                q: "뭉티기가 뭔가요?", 
+                a: "뭉티기는 당일 도축한 온도체 한우를 신선한 상태 그대로 얇게 저며 즐기는 대구의 보물 같은 음식입니다. 아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질되어, 일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 생생한 육향을 선사합니다. 양념 없이 고기 본연의 달콤함과 감칠맛을 느끼는 것이 포인트예요. ROWISM에서는 크리미한 이탈리아 부라타 치즈, 향긋한 블랙 트러플과 함께 제공하여 전통과 모던의 완벽한 조화를 경험하실 수 있습니다." 
               },
               
               { 

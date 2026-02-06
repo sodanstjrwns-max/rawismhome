@@ -7,7 +7,7 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집</title>
-        <meta name="description" content="서울 연남동 프리미엄 샴페인바 ROWISM The Black. 트러플 한우 뭉티기와 샴페인이 만나는 특별한 밤. 홍대입구역 5분, 8석 한정 예약제. 기념일, 데이트, 데이트를 위한 연남동 대표 다이닝 공간. 2인 평균 18만원." />
+        <meta name="description" content="서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원." />
         <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 연남동 크리스마스, 홍대 발렌타인데이, 연남동 100일 기념, 홍대 1주년 기념일, 홍대 서교동 맛집, 합정 데이트, 망원동 맛집, 홍대입구역 3번출구 맛집, 연남동 스파클링와인, 홍대 버블바, 연남동 고급 레스토랑, 홍대 접대, 연남동 비즈니스 미팅" />
         <meta name="author" content="ROWISM The Black" />
         <meta name="robots" content="index, follow" />
@@ -45,7 +45,7 @@ export const renderer = jsxRenderer(({ children }) => {
         
         {/* Open Graph */}
         <meta property="og:title" content="ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기" />
-        <meta property="og:description" content="트러플 한우 뭉티기와 샴페인이 만나는 연남동에서 가장 특별한 밤. 홍대입구역 5분, 8석 한정 예약제. 기념일, 데이트, 데이트 맛집." />
+        <meta property="og:description" content="당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제." />
         <meta property="og:type" content="restaurant" />
         <meta property="og:locale" content="ko_KR" />
         <meta property="og:site_name" content="ROWISM The Black" />
@@ -219,10 +219,10 @@ export const renderer = jsxRenderer(({ children }) => {
             },
             {
               "@type": "Question",
-              "name": "뭉티기와 육회의 차이는 무엇인가요?",
+              "name": "뭉티기가 뭔가요?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 대구 향토 음식입니다. 일반 육회가 참기름, 소금 등으로 양념되는 것과 달리, 뭉티기는 고기 본연의 풍미를 느낄 수 있습니다. ROWISM에서는 이탈리아 부라타 치즈, 블랙 트러플과 함께 제공합니다."
+                "text": "뭉티기는 당일 도축한 온도체 한우를 신선한 상태 그대로 얇게 저며 즐기는 대구의 보물 같은 음식입니다. 아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질되어, 일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 생생한 육향을 선사합니다. 양념 없이 고기 본연의 달콤함과 감칠맛을 느끼는 것이 포인트예요. ROWISM에서는 크리미한 이탈리아 부라타 치즈, 향긋한 블랙 트러플과 함께 제공하여 전통과 모던의 완벽한 조화를 경험하실 수 있습니다."
               }
             },
             

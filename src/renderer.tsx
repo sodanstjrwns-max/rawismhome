@@ -112,13 +112,41 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:site_name" content="ROWISM The Black" />
           <meta property="og:url" content={`https://rawism.kr${getLangPath(pageLang)}`} />
           
-          {/* OG Image - 카카오톡, 페이스북 등 공유 시 표시되는 이미지 */}
+          {/* OG Image - 대표 이미지 (카카오톡, 페이스북 등 공유 시 표시) */}
           <meta property="og:image" content="https://rawism.kr/static/og-image.jpg" />
           <meta property="og:image:secure_url" content="https://rawism.kr/static/og-image.jpg" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta property="og:image:alt" content="ROWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
+          
+          {/* 추가 OG 이미지들 - 로고 */}
+          <meta property="og:image" content="https://rawism.kr/static/logo.png" />
+          <meta property="og:image:alt" content="ROWISM The Black 로고" />
+          
+          {/* 추가 OG 이미지들 - 시그니처 메뉴 */}
+          <meta property="og:image" content="https://rawism.kr/static/menu_signature.jpg" />
+          <meta property="og:image:alt" content="로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기 부라타치즈" />
+          
+          {/* 추가 OG 이미지들 - 제비추리 */}
+          <meta property="og:image" content="https://rawism.kr/static/menu_jebichuri.jpg" />
+          <meta property="og:image:alt" content="제비추리 그릴드 베지터블 - 한우 제비추리와 8종 제철 채소" />
+          
+          {/* 추가 OG 이미지들 - 치즈 */}
+          <meta property="og:image" content="https://rawism.kr/static/menu_cheese.jpg" />
+          <meta property="og:image:alt" content="치즈 셀렉션 - 소믈리에 큐레이팅 6종 치즈" />
+          
+          {/* 추가 OG 이미지들 - 육회 */}
+          <meta property="og:image" content="https://rawism.kr/static/menu_yukhoe.jpg" />
+          <meta property="og:image:alt" content="청양 오일 육회 - 매콤한 한우 육회" />
+          
+          {/* 추가 OG 이미지들 - 카프레제 */}
+          <meta property="og:image" content="https://rawism.kr/static/menu_caprese.jpg" />
+          <meta property="og:image:alt" content="아보카도 카프레제 - 신선한 아보카도와 토마토" />
+          
+          {/* 추가 OG 이미지들 - 메밀면 */}
+          <meta property="og:image" content="https://rawism.kr/static/menu_memil.jpg" />
+          <meta property="og:image:alt" content="들기름 육회 메밀면 - 고소한 피니셔" />
           
           {/* Restaurant Specific OG Tags */}
           <meta property="restaurant:contact_info:street_address" content="동교로 262-4" />
@@ -214,7 +242,17 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               "reviewCount": "127",
               "bestRating": "5",
               "worstRating": "1"
-            }
+            },
+            "image": [
+              "https://rawism.kr/static/og-image.jpg",
+              "https://rawism.kr/static/logo.png",
+              "https://rawism.kr/static/menu_signature.jpg",
+              "https://rawism.kr/static/menu_jebichuri.jpg",
+              "https://rawism.kr/static/menu_cheese.jpg",
+              "https://rawism.kr/static/menu_yukhoe.jpg",
+              "https://rawism.kr/static/menu_caprese.jpg",
+              "https://rawism.kr/static/menu_memil.jpg"
+            ]
           })}} />
           
           {/* Schema.org - BreadcrumbList with language */}

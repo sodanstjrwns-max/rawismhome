@@ -61,19 +61,24 @@ function initFAQ() {
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
     const answer = item.querySelector('.faq-answer');
+    const icon = item.querySelector('.faq-icon');
     
     if (!question || !answer) return;
     
     question.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
       
-      // Close all other items
+      // Close all other items first
       faqItems.forEach(otherItem => {
-        if (otherItem !== item && otherItem.classList.contains('active')) {
+        if (otherItem !== item) {
           otherItem.classList.remove('active');
           const otherAnswer = otherItem.querySelector('.faq-answer');
+          const otherIcon = otherItem.querySelector('.faq-icon');
           if (otherAnswer) {
             otherAnswer.style.maxHeight = '0';
+          }
+          if (otherIcon) {
+            otherIcon.style.transform = 'rotate(0deg)';
           }
         }
       });
@@ -81,11 +86,12 @@ function initFAQ() {
       // Toggle current item
       if (!isActive) {
         item.classList.add('active');
-        answer.style.display = 'block';
         answer.style.maxHeight = answer.scrollHeight + 'px';
+        if (icon) icon.style.transform = 'rotate(45deg)';
       } else {
         item.classList.remove('active');
         answer.style.maxHeight = '0';
+        if (icon) icon.style.transform = 'rotate(0deg)';
       }
     });
   });

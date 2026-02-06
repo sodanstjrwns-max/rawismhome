@@ -335,7 +335,7 @@ export const renderer = jsxRenderer(({ children }) => {
           "@context": "https://schema.org",
           "@type": "Event",
           "name": "ROWISM The Black 기념일 이벤트",
-          "description": "연남동 프리미엄 샴페인바에서 특별한 기념일을 보내세요. 100일, 1주년, 생일, 크리스마스, 발렌타인데이 등 모든 기념일 이벤트 세팅 무료.",
+          "description": "연남동 프리미엄 샴페인바에서 특별한 기념일을 보내세요. 100일, 1주년, 생일, 크리스마스, 발렌타인데이 등 소중한 날을 위한 프라이빗 다이닝.",
           "location": {
             "@type": "Place",
             "name": "ROWISM The Black",

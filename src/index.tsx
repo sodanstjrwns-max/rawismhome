@@ -383,7 +383,7 @@ app.get('/', (c) => {
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_yukhoe.jpg" 
-                  alt="연남동 육회 맛집 청양오일육회 - 홈대 한우 육회 전문점 프로포즈 레스토랑" 
+                  alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 기념일 레스토랑" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
@@ -542,7 +542,7 @@ app.get('/', (c) => {
               이런 분께 추천드립니다
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto">
-              연남동 데이트, 기념일, 프로포즈를 계획 중이시라면
+              연남동 데이트, 기념일을 계획 중이시라면
             </p>
           </div>
           
@@ -562,13 +562,7 @@ app.get('/', (c) => {
                 detail: "기념일엔 특별한 장소에서. 예약 시 기념일 이벤트 세팅을 무료로 도와드립니다. 플라워, 케이크 준비도 가능합니다.",
                 keywords: "연남동 기념일, 홍대 기념일 식당, 100일 기념"
               },
-              { 
-                title: "프로포즈", 
-                icon: "◇",
-                desc: "인생에서 가장 중요한 질문을 준비하는 분", 
-                detail: "프라이빗한 코너 테이블 배정, 타이밍에 맞춘 서비스, 플라워 및 샴페인 준비까지. 성공적인 프로포즈를 도와드립니다.",
-                keywords: "연남동 프로포즈, 홍대 프로포즈 레스토랑"
-              },
+              
               { 
                 title: "비즈니스 미팅", 
                 icon: "□",
@@ -633,9 +627,9 @@ app.get('/', (c) => {
           
           <div class="grid md:grid-cols-2 gap-px bg-white/5">
             {[
-              { title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일. 평범하지 않은 기념일을 위해 특별한 세팅을 준비해드립니다.", event: "무료 이벤트 세팅 제공" },
-              { title: "Proposal", subtitle: "프로포즈", desc: "인생에서 가장 특별한 질문을 할 그 순간. 플라워, 케이크, 샴페인까지 완벽하게 준비해드립니다.", event: "프라이빗 공간 배정" },
-              { title: "Celebration", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업. 축하받아 마땅한 모든 순간에 샴페인을 터뜨릴 준비가 되어 있습니다.", event: "웰컴 샴페인 서비스" },
+              { title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일. 평범하지 않은 기념일을 위해 특별한 공간을 준비해드립니다.", event: "프라이빗 공간 배정" },
+              { title: "Celebration", subtitle: "축하", desc: "승진, 합격, 계약 성사, 취업. 축하받아 마땅한 모든 순간에 샴페인과 함께 건배하세요.", event: "웰컴 샴페인 서비스" },
+              { title: "Date Night", subtitle: "데이트", desc: "특별한 저녁을 원하는 커플을 위해. 분위기 있는 조명과 음악, 프라이빗한 공간에서의 로맨틱한 시간.", event: "무드 라이팅 연출" },
               { title: "Private", subtitle: "프라이빗", desc: "오늘 하루만큼은 나를 위한 특별한 시간. 혼자만의 여유 또는 소중한 사람과의 프라이빗한 저녁.", event: "조용한 코너석 배정" },
             ].map((item, i) => (
               <div key={i} class="bg-deep-black p-10 md:p-14 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style={`animation-delay: ${i * 0.1}s`}>
@@ -760,10 +754,7 @@ app.get('/', (c) => {
                 q: "뭉티기와 육회의 차이는 무엇인가요?", 
                 a: "뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 대구 향토 음식입니다. 일반 육회가 참기름, 소금 등으로 양념되는 것과 달리, 뭉티기는 고기 본연의 풍미를 느낄 수 있습니다. ROWISM에서는 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노와 함께 제공하여 새로운 맛의 조화를 선사합니다." 
               },
-              { 
-                q: "프로포즈 이벤트가 가능한가요?", 
-                a: "네, 예약 시 미리 말씀해주시면 꽃, 케이크, 풍선, 레터링 등 이벤트 준비를 도와드립니다. 프라이빗한 코너 테이블 배정과 타이밍에 맞춘 서비스를 제공해드리며, 성공적인 프로포즈를 위해 최선을 다해 도와드립니다. 이벤트 세팅은 무료이며, 케이크/꽃은 별도 준비하시거나 제휴 업체를 통해 주문하실 수 있습니다." 
-              },
+              
               { 
                 q: "연남동 샴페인바 ROWISM의 위치는 어디인가요?", 
                 a: "ROWISM The Black은 서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다. 경의중앙선 홍대입구역에서도 도보 7분 거리입니다." 

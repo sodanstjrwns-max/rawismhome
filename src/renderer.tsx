@@ -8,7 +8,7 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집</title>
         <meta name="description" content="서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원." />
-        <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 연남동 크리스마스, 홍대 발렌타인데이, 연남동 100일 기념, 홍대 1주년 기념일, 홍대 서교동 맛집, 합정 데이트, 망원동 맛집, 홍대입구역 3번출구 맛집, 연남동 스파클링와인, 홍대 버블바, 연남동 고급 레스토랑, 홍대 접대, 연남동 비즈니스 미팅" />
+        <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 연남동 크리스마스, 홍대 발렌타인데이, 연남동 100일 기념, 홍대 1주년 기념일, 홍대 서교동 맛집, 합정 데이트, 망원동 맛집, 홍대입구역 3번출구 맛집, 연남동 스파클링와인, 홍대 버블바, 연남동 고급 레스토랑, 홍대 접대, 연남동 비즈니스 미팅, 연남동 뭉티기, 홍대 뭉티기, 온도체 한우, 당일 도축 한우, 연남동 육회, 홍대 육회, 연남동 제비추리, 홍대 제비추리 구이, 연남동 치즈플레이트, 홍대 치즈 맛집, 브리 드 모, 고르곤졸라, 연남동 아보카도 카프레제, 홍대 부라타 치즈, 연남동 메밀면, 홍대 들기름 육회, 연남동 블랙트러플, 홍대 트러플 요리, 연남동 파르미지아노, 홍대 프리미엄 한우, 연남동 청양오일육회, 홍대 매운 육회" />
         <meta name="author" content="ROWISM The Black" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://rowism.com" />
@@ -138,10 +138,76 @@ export const renderer = jsxRenderer(({ children }) => {
                 "hasMenuItem": {
                   "@type": "MenuItem",
                   "name": "로위즘 뭉티기 시그니처",
-                  "description": "최상급 한우 뭉티기 · 이탈리아 부라타 치즈 · 블랙 트러플 · 파르미지아노 레지아노",
+                  "description": "당일 도축 온도체 한우 뭉티기 · 이탈리아 부라타 치즈 · 움브리아산 블랙 트러플 · 24개월 숙성 파르미지아노 레지아노",
+                  "image": "https://rowism.com/static/menu_signature.jpg",
                   "offers": {
                     "@type": "Offer",
                     "price": "92000",
+                    "priceCurrency": "KRW"
+                  }
+                }
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Main",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "제비추리 그릴드 베지터블",
+                    "description": "한우 갈비 부위 중 가장 부드러운 제비추리 참숯 그릴링 · 애호박 · 새송이버섯 · 파프리카 · 로즈마리 소금",
+                    "image": "https://rowism.com/static/menu_jebichuri.jpg",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "49000",
+                      "priceCurrency": "KRW"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "치즈 셀렉션",
+                    "description": "소믈리에 큐레이션 유럽산 프리미엄 치즈 4종 · 브리 드 모 · 카망베르 · 고르곤졸라 피칸테 · 24개월 숙성 꽁테",
+                    "image": "https://rowism.com/static/menu_cheese.jpg",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "36000",
+                      "priceCurrency": "KRW"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "청양 오일 육회",
+                    "description": "한우 홍두깨살 육회 · 청양고추 인퓨즈드 오일 · 배 · 잣 · 계란 노른자",
+                    "image": "https://rowism.com/static/menu_yukhoe.jpg",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "25000",
+                      "priceCurrency": "KRW"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "아보카도 카프레제",
+                    "description": "하스 아보카도 · 부팔라 모짜렐라 · 발사믹 리덕션 · 바질 오일 · 플뢰르 드 셀",
+                    "image": "https://rowism.com/static/menu_caprese.jpg",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "23000",
+                      "priceCurrency": "KRW"
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Finisher",
+                "hasMenuItem": {
+                  "@type": "MenuItem",
+                  "name": "들기름 육회 메밀면",
+                  "description": "봉평 메밀면 · 한우 육회 · 들기름 · 김 가루 · 계란 노른자 · 마무리 비빔면",
+                  "image": "https://rowism.com/static/menu_memil.jpg",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "15000",
                     "priceCurrency": "KRW"
                   }
                 }

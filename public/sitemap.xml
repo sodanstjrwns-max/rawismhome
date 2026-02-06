@@ -17,27 +17,33 @@
     </image:image>
     <image:image>
       <image:loc>https://rowism.com/static/menu_signature.jpg</image:loc>
-      <image:title>로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기 연남동 맛집</image:title>
+      <image:title>로위즘 뭉티기 시그니처 - 당일 도축 온도체 한우 뭉티기 부라타 치즈 블랙 트러플 연남동 홍대 맛집</image:title>
+      <image:caption>당일 도축 온도체 한우 뭉티기와 이탈리아 부라타 치즈, 움브리아산 블랙 트러플의 조화</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rowism.com/static/menu_jebichuri.jpg</image:loc>
-      <image:title>제비추리 그릴드 - 연남동 한우 맛집</image:title>
+      <image:title>제비추리 그릴드 베지터블 - 한우 제비추리 참숯 그릴링 연남동 한우 맛집 홍대 고기집</image:title>
+      <image:caption>한우 갈비 부위 중 가장 부드러운 제비추리를 참숯불에 미디엄 레어로 그릴링</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rowism.com/static/menu_cheese.jpg</image:loc>
-      <image:title>프리미엄 치즈 셀렉션 - 연남동 샴페인바</image:title>
+      <image:title>치즈 셀렉션 - 브리 드 모 카망베르 고르곤졸라 꽁테 연남동 샴페인바 홍대 치즈 맛집</image:title>
+      <image:caption>소믈리에 큐레이션 유럽산 프리미엄 치즈 4종 플레이트</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rowism.com/static/menu_yukhoe.jpg</image:loc>
-      <image:title>청양 오일 육회 - 홍대 육회 맛집</image:title>
+      <image:title>청양 오일 육회 - 한우 홍두깨살 청양고추 인퓨즈드 오일 연남동 육회 맛집 홍대 육회 전문점</image:title>
+      <image:caption>한우 홍두깨살에 시그니처 청양 인퓨즈드 오일을 더한 매콤한 육회</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rowism.com/static/menu_caprese.jpg</image:loc>
-      <image:title>아보카도 카프레제 - 연남동 데이트 코스</image:title>
+      <image:title>아보카도 카프레제 - 하스 아보카도 부팔라 모짜렐라 발사믹 연남동 데이트 코스 홍대 브런치</image:title>
+      <image:caption>토마토 대신 완숙 하스 아보카도를 사용한 ROWISM 스타일 카프레제</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rowism.com/static/menu_memil.jpg</image:loc>
-      <image:title>들기름 육회 메밀면 - 연남동 맛집</image:title>
+      <image:title>들기름 육회 메밀면 - 봉평 메밀면 한우 육회 들기름 연남동 맛집 홍대 면요리</image:title>
+      <image:caption>봉평 메밀면과 한우 육회, 들기름의 고소한 마무리 비빔면</image:caption>
     </image:image>
   </url>
   

@@ -1,5 +1,9 @@
 import { Hono } from 'hono'
 import { createRenderer } from './renderer'
+import { createMenuRenderer } from './renderers/menuRenderer'
+import { createAboutRenderer } from './renderers/aboutRenderer'
+import { MenuPage } from './pages/MenuPage'
+import { AboutPage } from './pages/AboutPage'
 
 const app = new Hono()
 
@@ -849,12 +853,58 @@ app.get('/sitemap.xml', async (c) => {
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url><loc>https://rawism.kr/#menu</loc><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/#philosophy</loc><priority>0.8</priority></url>
-  <url><loc>https://rawism.kr/#recommend</loc><priority>0.8</priority></url>
-  <url><loc>https://rawism.kr/#location</loc><priority>0.8</priority></url>
-  <url><loc>https://rawism.kr/#faq</loc><priority>0.7</priority></url>
-  <url><loc>https://rawism.kr/#reserve</loc><priority>0.9</priority></url>
+  <!-- Menu Page (all languages) -->
+  <url>
+    <loc>https://rawism.kr/menu</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/menu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en/menu" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja/menu" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh/menu" />
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/en/menu</loc>
+    <lastmod>2026-02-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/ja/menu</loc>
+    <lastmod>2026-02-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/zh/menu</loc>
+    <lastmod>2026-02-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <!-- About Page (all languages) -->
+  <url>
+    <loc>https://rawism.kr/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh/about" />
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/en/about</loc>
+    <lastmod>2026-02-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/ja/about</loc>
+    <lastmod>2026-02-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/zh/about</loc>
+    <lastmod>2026-02-06</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>`
   return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
 })
@@ -898,6 +948,62 @@ app.get('/ja', (c) => {
 app.use('/zh', createRenderer('zh'))
 app.get('/zh', (c) => {
   return c.render(<PageContent lang="zh" />)
+})
+
+// ===========================================
+// MENU PAGE ROUTES - /menu, /en/menu, /ja/menu, /zh/menu
+// ===========================================
+
+// Korean Menu - /menu
+app.use('/menu', createMenuRenderer('ko'))
+app.get('/menu', (c) => {
+  return c.render(<MenuPage lang="ko" />)
+})
+
+// English Menu - /en/menu
+app.use('/en/menu', createMenuRenderer('en'))
+app.get('/en/menu', (c) => {
+  return c.render(<MenuPage lang="en" />)
+})
+
+// Japanese Menu - /ja/menu
+app.use('/ja/menu', createMenuRenderer('ja'))
+app.get('/ja/menu', (c) => {
+  return c.render(<MenuPage lang="ja" />)
+})
+
+// Chinese Menu - /zh/menu
+app.use('/zh/menu', createMenuRenderer('zh'))
+app.get('/zh/menu', (c) => {
+  return c.render(<MenuPage lang="zh" />)
+})
+
+// ===========================================
+// ABOUT PAGE ROUTES - /about, /en/about, /ja/about, /zh/about
+// ===========================================
+
+// Korean About - /about
+app.use('/about', createAboutRenderer('ko'))
+app.get('/about', (c) => {
+  return c.render(<AboutPage lang="ko" />)
+})
+
+// English About - /en/about
+app.use('/en/about', createAboutRenderer('en'))
+app.get('/en/about', (c) => {
+  return c.render(<AboutPage lang="en" />)
+})
+
+// Japanese About - /ja/about
+app.use('/ja/about', createAboutRenderer('ja'))
+app.get('/ja/about', (c) => {
+  return c.render(<AboutPage lang="ja" />)
+})
+
+// Chinese About - /zh/about
+app.use('/zh/about', createAboutRenderer('zh'))
+app.get('/zh/about', (c) => {
+  return c.render(<AboutPage lang="zh" />)
 })
 
 export default app

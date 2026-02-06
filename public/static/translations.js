@@ -323,7 +323,7 @@ const translations = {
         whatIsTitle: "What is Mungti-gi?",
         whatIsText: "Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without any seasoning.",
         harmonyTitle: "Perfect Harmony of Premium Ingredients",
-        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese.", "'ROWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form. Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without seasoning.",
+        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese. 'ROWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form.",
         highlight: "We generously use 200g of premium Korean beef (Hanwoo), carefully selected daily.",
         pairing: "Topped with a whole Italian burrata cheese, black truffle shaved tableside for deep aroma, and Parmigiano-Reggiano falling like snowflakes.",
         ingredients: "Korean beef tartare, Burrata cheese, Black truffle, Parmigiano-Reggiano, Salt, Pepper"
@@ -562,7 +562,7 @@ const translations = {
         whatIsTitle: "ムンティギとは？",
         whatIsText: "ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
         harmonyTitle: "プレミアム食材の完璧な調和",
-        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。", "「ROWISM」という名前は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を最も純粋な方法で楽しむというブランド哲学を表しています。ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
+        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。「ROWISM」は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を純粋に楽しむブランド哲学を表しています。",
         highlight: "毎日厳選された最高級韓牛ムンティギ200gを惜しみなく使用しています。",
         pairing: "イタリア産ブラータチーズが丸ごと乗り、ブラックトリュフが目の前でスライスされて深い香りを加えます。パルミジャーノ・レッジャーノが雪のように降りかかります。",
         ingredients: "韓牛ムンティギ、ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノ、塩、胡椒"
@@ -801,7 +801,7 @@ const translations = {
         whatIsTitle: "什么是Mungti-gi？",
         whatIsText: "Mungti-gi是将韩牛切成薄片，不加任何调味直接享用的传统料理。",
         harmonyTitle: "顶级食材的完美和谐",
-        harmonyText: "ROWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。", "\"ROWISM\"这个名字是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表着以最纯粹的方式享用顶级食材的品牌哲学。Mungti-gi是将韩牛切成薄片，不加任何调味，直接享用的传统料理。",
+        harmonyText: "ROWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。\"ROWISM\"是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表以最纯粹的方式享用顶级食材的品牌哲学。",
         highlight: "每天精选200克顶级韩牛生拌，毫不吝啬地使用。",
         pairing: "整块意大利布拉塔奶酪覆盖其上，黑松露在您面前现场刨片增添深邃香气。帕马森奶酪如雪花般飘落。",
         ingredients: "韩牛生拌、布拉塔奶酪、黑松露、帕马森奶酪、盐、胡椒"
@@ -980,14 +980,21 @@ function initLanguage() {
   return currentLang;
 }
 
-// Set language
+// Set language - immediately expose to window for onclick handlers
 function setLanguage(lang) {
-  if (!translations[lang]) return;
+  console.log('setLanguage called:', lang);
+  if (!translations[lang]) {
+    console.log('Language not found:', lang);
+    return;
+  }
   currentLang = lang;
   localStorage.setItem('rowism_lang', lang);
   updatePageContent();
   updateLanguageButtons();
+  console.log('Language changed to:', lang);
 }
+// Immediately expose to window
+window.setLanguage = setLanguage;
 
 // Get translation
 function t(key) {
@@ -1299,33 +1306,6 @@ function initFAQToggle() {
       }
     });
   });
-}
-
-// Update page content with translations and render dynamic sections
-function updatePageContent() {
-  // Update all elements with data-i18n attribute
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const translation = t(key);
-    if (translation && typeof translation === 'string') {
-      el.textContent = translation;
-    }
-  });
-  
-  // Update elements with data-i18n-html (for HTML content)
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.getAttribute('data-i18n-html');
-    const translation = t(key);
-    if (translation && typeof translation === 'string') {
-      el.innerHTML = translation;
-    }
-  });
-  
-  // Render dynamic sections
-  renderDynamicSections();
-  
-  // Update language buttons
-  updateLanguageButtons();
 }
 
 // Initialize on page load

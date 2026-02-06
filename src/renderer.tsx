@@ -820,6 +820,369 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               "longitude": 126.9224
             }
           })}} />
+          
+          {/* Schema.org - SpeakableSpecification (음성 검색 최적화 - Google Assistant, Siri) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `https://rawism.kr${getLangPath(pageLang)}#speakable`,
+            "name": seo.title,
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["#hero", "#philosophy", "#menu", "#reserve", "#location", "#faq"]
+            },
+            "url": `https://rawism.kr${getLangPath(pageLang)}`
+          })}} />
+          
+          {/* Schema.org - HowTo (예약 방법 단계별 안내 - 리치 스니펫) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": pageLang === 'ko' ? "ROWISM The Black 예약하는 방법" : pageLang === 'ja' ? "ROWISM The Black の予約方法" : pageLang === 'zh' ? "如何预订 ROWISM The Black" : "How to Reserve at ROWISM The Black",
+            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 ROWISM The Black 예약 방법을 단계별로 안내합니다." : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー ROWISM The Black の予約方法をステップバイステップでご案内します。" : pageLang === 'zh' ? "逐步指导您预订延南洞高级香槟吧 ROWISM The Black。" : "Step-by-step guide to reserving at ROWISM The Black premium champagne bar in Yeonnam-dong.",
+            "image": "https://rawism.kr/static/og-image.jpg",
+            "totalTime": "PT5M",
+            "estimatedCost": {
+              "@type": "MonetaryAmount",
+              "currency": "KRW",
+              "value": "180000"
+            },
+            "supply": [],
+            "tool": [
+              {
+                "@type": "HowToTool",
+                "name": pageLang === 'ko' ? "스마트폰 또는 컴퓨터" : pageLang === 'ja' ? "スマートフォンまたはコンピューター" : pageLang === 'zh' ? "智能手机或电脑" : "Smartphone or Computer"
+              }
+            ],
+            "step": [
+              {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": pageLang === 'ko' ? "네이버 예약 페이지 접속" : pageLang === 'ja' ? "Naver予約ページにアクセス" : pageLang === 'zh' ? "访问Naver预订页面" : "Visit Naver Reservation Page",
+                "text": pageLang === 'ko' ? "ROWISM The Black 네이버 예약 페이지(naver.me/5qLSfCNC)에 접속합니다." : pageLang === 'ja' ? "ROWISM The Black Naver予約ページ(naver.me/5qLSfCNC)にアクセスします。" : pageLang === 'zh' ? "访问 ROWISM The Black Naver预订页面 (naver.me/5qLSfCNC)。" : "Visit ROWISM The Black Naver reservation page (naver.me/5qLSfCNC).",
+                "url": "https://naver.me/5qLSfCNC",
+                "image": "https://rawism.kr/static/logo.png"
+              },
+              {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": pageLang === 'ko' ? "날짜와 시간 선택" : pageLang === 'ja' ? "日付と時間を選択" : pageLang === 'zh' ? "选择日期和时间" : "Select Date and Time",
+                "text": pageLang === 'ko' ? "원하시는 방문 날짜와 시간을 선택합니다. 영업시간은 화-일 18:00-24:00입니다." : pageLang === 'ja' ? "ご希望の訪問日と時間を選択します。営業時間は火〜日 18:00-24:00です。" : pageLang === 'zh' ? "选择您想要的访问日期和时间。营业时间为周二至周日 18:00-24:00。" : "Select your preferred visit date and time. Hours: Tue-Sun 18:00-24:00."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": pageLang === 'ko' ? "인원 수 입력" : pageLang === 'ja' ? "人数を入力" : pageLang === 'zh' ? "输入人数" : "Enter Number of Guests",
+                "text": pageLang === 'ko' ? "방문 인원 수를 입력합니다. 8석 한정이므로 최대 8명까지 가능합니다." : pageLang === 'ja' ? "訪問人数を入力します。8席限定のため、最大8名様まで可能です。" : pageLang === 'zh' ? "输入访客人数。限8席，最多可容纳8人。" : "Enter number of guests. Limited to 8 seats, maximum 8 people."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": pageLang === 'ko' ? "예약 정보 확인 및 완료" : pageLang === 'ja' ? "予約情報確認と完了" : pageLang === 'zh' ? "确认预订信息并完成" : "Confirm and Complete Reservation",
+                "text": pageLang === 'ko' ? "연락처 정보를 입력하고 예약을 확정합니다. 예약 확인 문자를 받으시면 완료입니다." : pageLang === 'ja' ? "連絡先情報を入力し、予約を確定します。予約確認メッセージを受け取れば完了です。" : pageLang === 'zh' ? "输入联系信息并确认预订。收到预订确认短信即完成。" : "Enter contact information and confirm reservation. You're done when you receive confirmation message."
+              }
+            ]
+          })}} />
+          
+          {/* Schema.org - Recipe (시그니처 메뉴 레시피 - 리치 스니펫) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Recipe",
+            "name": pageLang === 'ko' ? "트러플 한우 뭉티기 시그니처" : pageLang === 'ja' ? "トリュフ韓牛ムンティギ シグネチャー" : pageLang === 'zh' ? "松露韩牛肉脍招牌" : "Truffle Hanwoo Mungti-gi Signature",
+            "image": [
+              "https://rawism.kr/static/menu_signature.jpg"
+            ],
+            "author": {
+              "@type": "Organization",
+              "name": "ROWISM The Black"
+            },
+            "datePublished": "2023-01-01",
+            "description": pageLang === 'ko' ? "당일 도축 온도체 한우의 체온이 남아있는 신선함. 이탈리아산 부라타 치즈와 블랙 트러플의 조화가 만들어내는 ROWISM The Black의 시그니처 요리." : pageLang === 'ja' ? "当日屠畜韓牛の体温が残る新鮮さ。イタリア産ブッラータチーズとブラックトリュフのハーモニーが生み出すROWISM The Blackのシグネチャー料理。" : pageLang === 'zh' ? "当日屠宰韩牛保留体温的新鲜口感。意大利布拉塔奶酪与黑松露的和谐，缔造ROWISM The Black的招牌菜。" : "Fresh same-day slaughtered Hanwoo with body heat still intact. The harmony of Italian burrata cheese and black truffle creates ROWISM The Black's signature dish.",
+            "prepTime": "PT10M",
+            "cookTime": "PT0M",
+            "totalTime": "PT10M",
+            "keywords": pageLang === 'ko' ? "한우 뭉티기, 트러플, 부라타 치즈, 연남동 맛집, 홍대 데이트" : pageLang === 'ja' ? "韓牛ムンティギ, トリュフ, ブッラータチーズ, 延南洞グルメ" : pageLang === 'zh' ? "韩牛肉脍, 松露, 布拉塔奶酪, 延南洞美食" : "Hanwoo tartare, truffle, burrata cheese, Yeonnam-dong restaurant",
+            "recipeYield": "2",
+            "recipeCategory": pageLang === 'ko' ? "애피타이저" : pageLang === 'ja' ? "前菜" : pageLang === 'zh' ? "开胃菜" : "Appetizer",
+            "recipeCuisine": pageLang === 'ko' ? "한식 퓨전" : pageLang === 'ja' ? "韓国フュージョン" : pageLang === 'zh' ? "韩式融合" : "Korean Fusion",
+            "nutrition": {
+              "@type": "NutritionInformation",
+              "servingSize": pageLang === 'ko' ? "2인분" : pageLang === 'ja' ? "2人前" : pageLang === 'zh' ? "2人份" : "2 servings"
+            },
+            "recipeIngredient": [
+              pageLang === 'ko' ? "당일 도축 온도체 한우 150g" : pageLang === 'ja' ? "当日屠畜韓牛 150g" : pageLang === 'zh' ? "当日屠宰韩牛 150g" : "150g same-day slaughtered Hanwoo",
+              pageLang === 'ko' ? "이탈리아산 부라타 치즈 1개" : pageLang === 'ja' ? "イタリア産ブッラータチーズ 1個" : pageLang === 'zh' ? "意大利布拉塔奶酪 1个" : "1 Italian burrata cheese",
+              pageLang === 'ko' ? "블랙 트러플 적당량" : pageLang === 'ja' ? "ブラックトリュフ 適量" : pageLang === 'zh' ? "黑松露 适量" : "Black truffle to taste",
+              pageLang === 'ko' ? "파르미지아노 레지아노" : pageLang === 'ja' ? "パルミジャーノ・レッジャーノ" : pageLang === 'zh' ? "帕玛森奶酪" : "Parmigiano-Reggiano",
+              pageLang === 'ko' ? "소금, 후추" : pageLang === 'ja' ? "塩、コショウ" : pageLang === 'zh' ? "盐、胡椒" : "Salt, pepper"
+            ],
+            "recipeInstructions": [
+              {
+                "@type": "HowToStep",
+                "text": pageLang === 'ko' ? "당일 도축된 온도체 한우를 얇게 저며 플레이팅합니다." : pageLang === 'ja' ? "当日屠畜された韓牛を薄くスライスしてプレーティングします。" : pageLang === 'zh' ? "将当日屠宰的韩牛切成薄片摆盘。" : "Thinly slice the same-day slaughtered Hanwoo and plate."
+              },
+              {
+                "@type": "HowToStep",
+                "text": pageLang === 'ko' ? "중앙에 신선한 부라타 치즈를 통째로 올립니다." : pageLang === 'ja' ? "中央に新鮮なブッラータチーズを丸ごと乗せます。" : pageLang === 'zh' ? "在中央放上整颗新鲜布拉塔奶酪。" : "Place a whole fresh burrata cheese in the center."
+              },
+              {
+                "@type": "HowToStep",
+                "text": pageLang === 'ko' ? "블랙 트러플을 얇게 슬라이스하여 전체에 뿌립니다." : pageLang === 'ja' ? "ブラックトリュフを薄くスライスして全体に散らします。" : pageLang === 'zh' ? "将黑松露切成薄片撒在整体上。" : "Thinly slice black truffle and sprinkle over."
+              },
+              {
+                "@type": "HowToStep",
+                "text": pageLang === 'ko' ? "파르미지아노 레지아노를 갈아 뿌리고 소금, 후추로 마무리합니다." : pageLang === 'ja' ? "パルミジャーノ・レッジャーノを削りかけ、塩、コショウで仕上げます。" : pageLang === 'zh' ? "撒上帕玛森奶酪碎，用盐和胡椒调味完成。" : "Grate Parmigiano-Reggiano over and finish with salt and pepper."
+              }
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "127"
+            },
+            "video": {
+              "@type": "VideoObject",
+              "name": pageLang === 'ko' ? "트러플 한우 뭉티기 만들기" : pageLang === 'ja' ? "トリュフ韓牛ムンティギの作り方" : pageLang === 'zh' ? "松露韩牛肉脍制作" : "Making Truffle Hanwoo Tartare",
+              "description": pageLang === 'ko' ? "ROWISM The Black의 시그니처 메뉴를 만드는 과정" : pageLang === 'ja' ? "ROWISM The Blackのシグネチャーメニューを作る過程" : pageLang === 'zh' ? "ROWISM The Black招牌菜的制作过程" : "The process of making ROWISM The Black's signature dish",
+              "thumbnailUrl": "https://rawism.kr/static/menu_signature.jpg",
+              "contentUrl": "https://rawism.kr/static/video/signature.mp4",
+              "uploadDate": "2024-01-01"
+            }
+          })}} />
+          
+          {/* Schema.org - Service (제공 서비스 정보) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": pageLang === 'ko' ? "프라이빗 다이닝" : pageLang === 'ja' ? "プライベートダイニング" : pageLang === 'zh' ? "私密用餐" : "Private Dining",
+            "provider": {
+              "@type": "Restaurant",
+              "name": "ROWISM The Black",
+              "url": "https://rawism.kr"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": pageLang === 'ko' ? "서울" : pageLang === 'ja' ? "ソウル" : pageLang === 'zh' ? "首尔" : "Seoul"
+            },
+            "description": pageLang === 'ko' ? "8석 한정 예약제 프라이빗 다이닝. 데이트, 기념일, 프로포즈, 비즈니스 미팅에 적합." : pageLang === 'ja' ? "8席限定予約制プライベートダイニング。デート、記念日、プロポーズ、ビジネスミーティングに最適。" : pageLang === 'zh' ? "仅8席预约制私密用餐。适合约会、纪念日、求婚、商务会议。" : "Private dining with 8 seats by reservation only. Perfect for dates, anniversaries, proposals, business meetings.",
+            "offers": {
+              "@type": "Offer",
+              "price": "90000",
+              "priceCurrency": "KRW",
+              "availability": "https://schema.org/InStock"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": pageLang === 'ko' ? "ROWISM The Black 서비스" : pageLang === 'ja' ? "ROWISM The Black サービス" : pageLang === 'zh' ? "ROWISM The Black 服务" : "ROWISM The Black Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": pageLang === 'ko' ? "데이트 다이닝" : pageLang === 'ja' ? "デートダイニング" : pageLang === 'zh' ? "约会用餐" : "Date Dining"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": pageLang === 'ko' ? "기념일 다이닝" : pageLang === 'ja' ? "記念日ダイニング" : pageLang === 'zh' ? "纪念日用餐" : "Anniversary Dining"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": pageLang === 'ko' ? "프로포즈" : pageLang === 'ja' ? "プロポーズ" : pageLang === 'zh' ? "求婚" : "Proposal"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": pageLang === 'ko' ? "비즈니스 미팅" : pageLang === 'ja' ? "ビジネスミーティング" : pageLang === 'zh' ? "商务会议" : "Business Meeting"
+                  }
+                }
+              ]
+            }
+          })}} />
+          
+          {/* Schema.org - Action/ReserveAction (예약 액션) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "ROWISM The Black",
+            "url": "https://rawism.kr",
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://naver.me/5qLSfCNC",
+                "inLanguage": seo.lang,
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform",
+                  "http://schema.org/AndroidPlatform",
+                  "http://schema.org/IOSPlatform"
+                ]
+              },
+              "result": {
+                "@type": "FoodEstablishmentReservation",
+                "name": pageLang === 'ko' ? "ROWISM The Black 예약" : pageLang === 'ja' ? "ROWISM The Black 予約" : pageLang === 'zh' ? "ROWISM The Black 预订" : "ROWISM The Black Reservation"
+              }
+            }
+          })}} />
+          
+          {/* Schema.org - ImageGallery (이미지 갤러리) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": pageLang === 'ko' ? "ROWISM The Black 갤러리" : pageLang === 'ja' ? "ROWISM The Black ギャラリー" : pageLang === 'zh' ? "ROWISM The Black 图库" : "ROWISM The Black Gallery",
+            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 ROWISM The Black의 메뉴와 공간" : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー ROWISM The Blackのメニューと空間" : pageLang === 'zh' ? "延南洞高级香槟吧 ROWISM The Black的菜品与空间" : "Menu and space of ROWISM The Black premium champagne bar in Yeonnam-dong",
+            "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+            "image": [
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://rawism.kr/static/menu_signature.jpg",
+                "name": pageLang === 'ko' ? "트러플 한우 뭉티기 시그니처" : pageLang === 'ja' ? "トリュフ韓牛ムンティギ シグネチャー" : pageLang === 'zh' ? "松露韩牛肉脍招牌" : "Truffle Hanwoo Tartare Signature",
+                "caption": pageLang === 'ko' ? "당일 도축 한우와 부라타 치즈, 블랙 트러플" : pageLang === 'ja' ? "当日屠畜韓牛とブッラータチーズ、ブラックトリュフ" : pageLang === 'zh' ? "当日屠宰韩牛配布拉塔奶酪、黑松露" : "Same-day slaughtered Hanwoo with burrata cheese and black truffle"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://rawism.kr/static/menu_jebichuri.jpg",
+                "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://rawism.kr/static/menu_cheese.jpg",
+                "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://rawism.kr/static/menu_yukhoe.jpg",
+                "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://rawism.kr/static/menu_caprese.jpg",
+                "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://rawism.kr/static/menu_memil.jpg",
+                "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles"
+              }
+            ]
+          })}} />
+          
+          {/* Schema.org - SpecialAnnouncement (특별 공지 - 영업 정보) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SpecialAnnouncement",
+            "name": pageLang === 'ko' ? "ROWISM The Black 영업 안내" : pageLang === 'ja' ? "ROWISM The Black 営業案内" : pageLang === 'zh' ? "ROWISM The Black 营业通知" : "ROWISM The Black Business Hours",
+            "text": pageLang === 'ko' ? "화-일 18:00-24:00 영업, 월요일 정기휴무. 8석 한정 예약제 운영. 라스트오더 22:30." : pageLang === 'ja' ? "火-日 18:00-24:00営業、月曜定休。8席限定予約制。ラストオーダー22:30。" : pageLang === 'zh' ? "周二至周日 18:00-24:00营业，周一休息。8席预约制。最后点单22:30。" : "Open Tue-Sun 18:00-24:00, closed Monday. 8 seats reservation only. Last order 22:30.",
+            "datePosted": "2026-02-01",
+            "expires": "2026-12-31",
+            "category": "https://www.wikidata.org/wiki/Q11707",
+            "announcementLocation": {
+              "@type": "Restaurant",
+              "name": "ROWISM The Black",
+              "url": "https://rawism.kr"
+            }
+          })}} />
+          
+          {/* Schema.org - CollectionPage (컬렉션 페이지 - 메뉴 모음) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": pageLang === 'ko' ? "ROWISM The Black 메뉴 컬렉션" : pageLang === 'ja' ? "ROWISM The Black メニューコレクション" : pageLang === 'zh' ? "ROWISM The Black 菜单收藏" : "ROWISM The Black Menu Collection",
+            "description": seo.description,
+            "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+            "mainEntity": {
+              "@type": "ItemList",
+              "numberOfItems": 6,
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+                  "name": pageLang === 'ko' ? "트러플 한우 뭉티기 시그니처" : pageLang === 'ja' ? "トリュフ韓牛ムンティギ シグネチャー" : pageLang === 'zh' ? "松露韩牛肉脍招牌" : "Truffle Hanwoo Tartare Signature"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+                  "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+                  "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+                  "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
+                  "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles"
+                }
+              ]
+            }
+          })}} />
+          
+          {/* Schema.org - CreativeWork (브랜드 컨텐츠) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": pageLang === 'ko' ? "ROWISM - 날것의 철학" : pageLang === 'ja' ? "ROWISM - 生の哲学" : pageLang === 'zh' ? "ROWISM - 生食哲学" : "ROWISM - Philosophy of Raw",
+            "author": {
+              "@type": "Organization",
+              "name": "ROWISM The Black"
+            },
+            "dateCreated": "2023-01-01",
+            "description": pageLang === 'ko' ? "RAW와 ism의 결합. 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학." : pageLang === 'ja' ? "RAWとismの結合。最高級食材本来の味を最も純粋な方法で届ける哲学。" : pageLang === 'zh' ? "RAW与ism的结合。以最纯粹的方式传递顶级食材原味的哲学。" : "Combination of RAW and ism. Philosophy of delivering the authentic taste of premium ingredients in the purest way.",
+            "inLanguage": ["ko", "en", "ja", "zh"],
+            "url": `https://rawism.kr${getLangPath(pageLang)}#philosophy`
+          })}} />
+          
+          {/* Schema.org - TouristAttraction (관광 명소로서의 가치) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": "ROWISM The Black",
+            "description": pageLang === 'ko' ? "연남동 핫플레이스 - 외국인 관광객에게 인기 있는 한우 뭉티기 전문 샴페인바" : pageLang === 'ja' ? "延南洞ホットプレイス - 外国人観光客に人気の韓牛ムンティギ専門シャンパンバー" : pageLang === 'zh' ? "延南洞热门地点 - 深受外国游客喜爱的韩牛肉脍专门香槟吧" : "Yeonnam-dong hotspot - Champagne bar specializing in Hanwoo tartare, popular among foreign tourists",
+            "touristType": [
+              pageLang === 'ko' ? "미식 여행객" : pageLang === 'ja' ? "グルメ旅行者" : pageLang === 'zh' ? "美食旅行者" : "Food Traveler",
+              pageLang === 'ko' ? "와인 애호가" : pageLang === 'ja' ? "ワイン愛好家" : pageLang === 'zh' ? "葡萄酒爱好者" : "Wine Enthusiast",
+              pageLang === 'ko' ? "커플 여행객" : pageLang === 'ja' ? "カップル旅行者" : pageLang === 'zh' ? "情侣游客" : "Couple Travelers"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "동교로 262-4",
+              "addressLocality": "마포구",
+              "addressRegion": "서울특별시",
+              "addressCountry": "KR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 37.5595,
+              "longitude": 126.9224
+            },
+            "isAccessibleForFree": false,
+            "publicAccess": true,
+            "availableLanguage": ["Korean", "English", "Japanese", "Chinese"]
+          })}} />
         </head>
         <body class="bg-deep-black text-off-white font-pretendard">
           {children}

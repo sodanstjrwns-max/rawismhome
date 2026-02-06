@@ -173,6 +173,181 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
               }
             ]
           })}} />
+          
+          {/* 메뉴 페이지 전용 ItemList Schema */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": pageLang === 'ko' ? "ROWISM The Black 전체 메뉴" : pageLang === 'ja' ? "ROWISM The Black 全メニュー" : pageLang === 'zh' ? "ROWISM The Black 全部菜单" : "ROWISM The Black Full Menu",
+            "numberOfItems": 6,
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Mungti-gi Signature",
+                  "description": pageLang === 'ko' ? "당일 도축 한우, 부라타 치즈, 블랙 트러플, 파르미지아노" : pageLang === 'ja' ? "当日屠畜韓牛、ブッラータチーズ、ブラックトリュフ、パルミジャーノ" : pageLang === 'zh' ? "当日屠宰韩牛、布拉塔奶酪、黑松露、帕玛森" : "Same-day slaughtered Hanwoo, burrata cheese, black truffle, Parmigiano",
+                  "offers": { "@type": "Offer", "price": "92000", "priceCurrency": "KRW" },
+                  "image": "https://rawism.kr/static/menu_signature.jpg"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
+                  "description": pageLang === 'ko' ? "한우 제비추리와 8종 제철 채소의 그릴 향연" : pageLang === 'ja' ? "韓牛ジェビチュリと8種の旬野菜のグリル馂宴" : pageLang === 'zh' ? "韩牛肩肉与8种时令蔬菜的烧烤盛宴" : "Grilled Hanwoo Jebichuri with 8 seasonal vegetables",
+                  "offers": { "@type": "Offer", "price": "49000", "priceCurrency": "KRW" },
+                  "image": "https://rawism.kr/static/menu_jebichuri.jpg"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
+                  "description": pageLang === 'ko' ? "소미리에가 큐레이팅한 6종 치즈 커펙션" : pageLang === 'ja' ? "ソムリエがキュレーションした6種チーズコレクション" : pageLang === 'zh' ? "侍酒师精选6种奶酪系列" : "6 cheeses curated by sommelier",
+                  "offers": { "@type": "Offer", "price": "36000", "priceCurrency": "KRW" },
+                  "image": "https://rawism.kr/static/menu_cheese.jpg"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe",
+                  "description": pageLang === 'ko' ? "전통 육회에 더한 매콤한 불꽃" : pageLang === 'ja' ? "伝統ユッケにスパイシーな烎を添えて" : pageLang === 'zh' ? "传统生拌加入辣味火花" : "Traditional tartare with a spicy kick",
+                  "offers": { "@type": "Offer", "price": "25000", "priceCurrency": "KRW" },
+                  "image": "https://rawism.kr/static/menu_yukhoe.jpg"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese",
+                  "description": pageLang === 'ko' ? "클래식 카프레제의 현대적 재해석" : pageLang === 'ja' ? "クラシックカプレーゼの現代的再解釈" : pageLang === 'zh' ? "经典卡普雷塞的现代诠释" : "Modern interpretation of classic Caprese",
+                  "offers": { "@type": "Offer", "price": "23000", "priceCurrency": "KRW" },
+                  "image": "https://rawism.kr/static/menu_caprese.jpg"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles",
+                  "description": pageLang === 'ko' ? "한 끼의 완벽한 마무리" : pageLang === 'ja' ? "食事の完璧な締めくくり" : pageLang === 'zh' ? "一餐的完美收尾" : "The perfect finishing touch",
+                  "offers": { "@type": "Offer", "price": "15000", "priceCurrency": "KRW" },
+                  "image": "https://rawism.kr/static/menu_memil.jpg"
+                }
+              }
+            ]
+          })}} />
+          
+          {/* 메뉴 페이지 전용 FoodMenu Schema */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Menu",
+            "name": pageLang === 'ko' ? "ROWISM The Black 전체 메뉴" : pageLang === 'ja' ? "ROWISM The Black 全メニュー" : pageLang === 'zh' ? "ROWISM The Black 全部菜单" : "ROWISM The Black Full Menu",
+            "description": seo.description,
+            "url": `https://rawism.kr${getLangPath(pageLang)}/menu`,
+            "inLanguage": seo.lang,
+            "mainEntityOfPage": `https://rawism.kr${getLangPath(pageLang)}/menu`,
+            "hasMenuSection": [
+              {
+                "@type": "MenuSection",
+                "name": pageLang === 'ko' ? "시그니처" : pageLang === 'ja' ? "シグネチャー" : pageLang === 'zh' ? "招牌" : "Signature",
+                "description": pageLang === 'ko' ? "ROWISM The Black의 대표 메뉴" : pageLang === 'ja' ? "ROWISM The Blackの代表メニュー" : pageLang === 'zh' ? "ROWISM The Black的代表菜品" : "ROWISM The Black's representative dish",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Mungti-gi Signature",
+                    "offers": { "@type": "Offer", "price": "92000", "priceCurrency": "KRW", "availability": "https://schema.org/InStock" },
+                    "suitableForDiet": "https://schema.org/GlutenFreeDiet",
+                    "nutrition": {
+                      "@type": "NutritionInformation",
+                      "servingSize": pageLang === 'ko' ? "2인분" : pageLang === 'ja' ? "2人前" : pageLang === 'zh' ? "2人份" : "2 servings",
+                      "proteinContent": "35g"
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": pageLang === 'ko' ? "한우 요리" : pageLang === 'ja' ? "韓牛料理" : pageLang === 'zh' ? "韩牛料理" : "Hanwoo Dishes",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
+                    "offers": { "@type": "Offer", "price": "49000", "priceCurrency": "KRW" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe",
+                    "offers": { "@type": "Offer", "price": "25000", "priceCurrency": "KRW" }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": pageLang === 'ko' ? "치즈 & 사이드" : pageLang === 'ja' ? "チーズ & サイド" : pageLang === 'zh' ? "奶酪 & 配菜" : "Cheese & Sides",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
+                    "offers": { "@type": "Offer", "price": "36000", "priceCurrency": "KRW" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese",
+                    "offers": { "@type": "Offer", "price": "23000", "priceCurrency": "KRW" }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": pageLang === 'ko' ? "피니셔" : pageLang === 'ja' ? "フィニッシャー" : pageLang === 'zh' ? "收尾菜" : "Finisher",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles",
+                    "offers": { "@type": "Offer", "price": "15000", "priceCurrency": "KRW" }
+                  }
+                ]
+              }
+            ]
+          })}} />
+          
+          {/* 메뉴 페이지 WebPage Schema */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `https://rawism.kr${getLangPath(pageLang)}/menu#webpage`,
+            "url": `https://rawism.kr${getLangPath(pageLang)}/menu`,
+            "name": seo.title,
+            "description": seo.description,
+            "inLanguage": seo.lang,
+            "isPartOf": {
+              "@id": "https://rawism.kr/#website"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "contentUrl": "https://rawism.kr/static/menu_signature.jpg"
+            },
+            "datePublished": "2024-01-01",
+            "dateModified": "2026-02-06",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".menu-item"]
+            }
+          })}} />
         </head>
         <body class="bg-deep-black text-off-white font-pretendard">
           {children}

@@ -171,6 +171,143 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
               }
             ]
           })}} />
+          
+          {/* Article Schema (브랜드 스토리) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": pageLang === 'ko' ? "ROWISM - 날것의 철학, 부라타 치즈와 트러플이 만나는 한우 뭉티기" : pageLang === 'ja' ? "ROWISM - 生の哲学、ブッラータチーズとトリュフが出会う韓牛ムンティギ" : pageLang === 'zh' ? "ROWISM - 生食哲学，布拉塔奶酪与松露相遇的韩牛肉脍" : "ROWISM - Philosophy of Raw, Hanwoo Tartare meets Burrata Cheese and Truffle",
+            "description": seo.description,
+            "image": "https://rawism.kr/static/og-image.jpg",
+            "datePublished": "2023-01-01",
+            "dateModified": "2026-02-06",
+            "author": {
+              "@type": "Organization",
+              "name": "ROWISM The Black",
+              "url": "https://rawism.kr"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ROWISM The Black",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://rawism.kr/static/logo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://rawism.kr${getLangPath(pageLang)}/about`
+            },
+            "articleBody": pageLang === 'ko' ? "ROWISM은 RAW와 ism의 결합입니다. 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학. 2023년 연남동 골목 속에 문을 열어 감각의 경험을 디자인합니다." : pageLang === 'ja' ? "ROWISMはRAWとismの結合です。最高級食材本来の味を最も純粋な方法で届ける哲学。2023年延南洞の路地裏にオープンし、感覚の体験をデザインします。" : pageLang === 'zh' ? "ROWISM是RAW与ism的结合。以最纯粹的方式传递顶级食材原味的哲学。2023年在延南洞小巷开业，设计感官体验。" : "ROWISM is the combination of RAW and ism. Philosophy of delivering the authentic taste of premium ingredients in the purest way. Opened in a Yeonnam-dong alley in 2023, designing sensory experiences.",
+            "inLanguage": seo.lang
+          })}} />
+          
+          {/* Organization (확장된 브랜드 정보) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://rawism.kr/#organization-detailed",
+            "name": "ROWISM The Black",
+            "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
+            "url": "https://rawism.kr",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://rawism.kr/static/logo.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://rawism.kr/static/og-image.jpg",
+            "description": seo.description,
+            "foundingDate": "2023",
+            "foundingLocation": {
+              "@type": "Place",
+              "name": pageLang === 'ko' ? "연남동" : pageLang === 'ja' ? "延南洞" : pageLang === 'zh' ? "延南洞" : "Yeonnam-dong",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "마포구",
+                "addressRegion": "서울특별시",
+                "addressCountry": "KR"
+              }
+            },
+            "brand": {
+              "@type": "Brand",
+              "name": "ROWISM",
+              "slogan": pageLang === 'ko' ? "날것의 철학, 최상급 재료를 가장 순수한 방식으로" : pageLang === 'ja' ? "生の哲学、最高級食材を最も純粋な方法で" : pageLang === 'zh' ? "生食哲学，以最纯粹的方式呈现顶级食材" : "Philosophy of Raw, premium ingredients in the purest way",
+              "logo": "https://rawism.kr/static/logo.png"
+            },
+            "knowsAbout": [
+              pageLang === 'ko' ? "한우 뭉티기" : pageLang === 'ja' ? "韓牛ムンティギ" : pageLang === 'zh' ? "韩牛肉脍" : "Hanwoo Mungti-gi",
+              pageLang === 'ko' ? "샴페인 페어링" : pageLang === 'ja' ? "シャンパンペアリング" : pageLang === 'zh' ? "香槟搭配" : "Champagne Pairing",
+              pageLang === 'ko' ? "프라이빗 다이닝" : pageLang === 'ja' ? "プライベートダイニング" : pageLang === 'zh' ? "私密用餐" : "Private Dining"
+            ],
+            "numberOfEmployees": {
+              "@type": "QuantitativeValue",
+              "minValue": 5,
+              "maxValue": 10
+            },
+            "slogan": pageLang === 'ko' ? "날것의 철학, RAWism" : pageLang === 'ja' ? "生の哲学、RAWism" : pageLang === 'zh' ? "生食哲学，RAWism" : "Philosophy of Raw, RAWism",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+82-10-0000-0000",
+                "contactType": "reservations",
+                "availableLanguage": ["Korean", "English", "Japanese", "Chinese"],
+                "hoursAvailable": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                  "opens": "18:00",
+                  "closes": "24:00"
+                }
+              }
+            ],
+            "sameAs": [
+              "https://www.instagram.com/rowism_theblack",
+              "https://naver.me/5qLSfCNC"
+            ]
+          })}} />
+          
+          {/* About WebPage Schema */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `https://rawism.kr${getLangPath(pageLang)}/about#webpage`,
+            "url": `https://rawism.kr${getLangPath(pageLang)}/about`,
+            "name": seo.title,
+            "description": seo.description,
+            "inLanguage": seo.lang,
+            "isPartOf": {
+              "@id": "https://rawism.kr/#website"
+            },
+            "about": {
+              "@id": "https://rawism.kr/#organization-detailed"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "contentUrl": "https://rawism.kr/static/og-image.jpg"
+            },
+            "datePublished": "2024-01-01",
+            "dateModified": "2026-02-06",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".brand-story"]
+            }
+          })}} />
+          
+          {/* CreativeWork (브랜드 철학 컨텐츠) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": pageLang === 'ko' ? "ROWISM - 날것의 미학" : pageLang === 'ja' ? "ROWISM - 生の美学" : pageLang === 'zh' ? "ROWISM - 生食美学" : "ROWISM - Aesthetics of Raw",
+            "author": {
+              "@type": "Organization",
+              "name": "ROWISM The Black"
+            },
+            "dateCreated": "2023-01-01",
+            "description": pageLang === 'ko' ? "RAW와 ism의 결합. RAW(날것) + ism(철학) = 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학." : pageLang === 'ja' ? "RAWとismの結合。RAW(生) + ism(哲学) = 最高級食材本来の味を最も純粋な方法で届ける哲学。" : pageLang === 'zh' ? "RAW与ism的结合。RAW(生食) + ism(哲学) = 以最纯粹的方式传递顶级食材原味的哲学。" : "Combination of RAW and ism. RAW(raw) + ism(philosophy) = Philosophy of delivering the authentic taste of premium ingredients in the purest way.",
+            "inLanguage": ["ko", "en", "ja", "zh"],
+            "keywords": seo.keywords,
+            "url": `https://rawism.kr${getLangPath(pageLang)}/about#philosophy`
+          })}} />
         </head>
         <body class="bg-deep-black text-off-white font-pretendard">
           {children}

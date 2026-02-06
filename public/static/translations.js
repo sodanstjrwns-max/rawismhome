@@ -1,6 +1,11 @@
 // ROWISM The Black - Multilingual Translations
 const translations = {
   ko: {
+    // Quote Section
+    quote: {
+      line1: "날것의 철학,",
+      line2: "최상급 재료를 가장 순수한 방식으로."
+    },
     // Navigation
     nav: {
       philosophy: "Philosophy",
@@ -16,7 +21,8 @@ const translations = {
       title2: "시작하는 곳",
       description: "당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 곳",
       cta: "예약하기",
-      scroll: "Scroll"
+      scroll: "Scroll",
+      keywords: "트러플 한우 뭉티기 · 샴페인 & 스파클링 · 프라이빗 다이닝"
     },
     // Question Section
     question: {
@@ -32,9 +38,22 @@ const translations = {
     // Philosophy Section
     philosophy: {
       label: "Our Philosophy",
+      titleLine1: "날것의 미학,",
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "최상급 재료를 가장 순수한 방식으로",
+      p1Title: "RAW와 ism의 결합.",
+      p1Text: "로위즘(ROWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.",
+      p2Title: "연남동 프리미엄 샴페인바.",
+      p2Text: "홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 ROWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.",
+      p3Title: "8개의 프라이빗 테이블.",
+      p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
+      features: [
+        { title: "Signature Tartare", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
+        { title: "Champagne & Sparkling", desc: "소믈리에 큐레이션", detail: "프리미엄 샴페인 & 스파클링" },
+        { title: "Private Space", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
+        { title: "Sensory Design", desc: "오감의 경험 설계", detail: "조명·음악·서비스" }
+      ],
       story: "ROWISM은 'RAW(날것)'와 '-ISM(철학)'의 조합입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 즐기는 것을 추구합니다. 당일 도축한 온도체 한우의 신선함, 이탈리아 부라타 치즈의 크리미함, 프렌치 블랙 트러플의 깊은 향. 이 모든 것이 샴페인 한 잔과 함께 어우러지는 특별한 경험을 선사합니다."
     },
     // Experience Section
@@ -52,14 +71,20 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Menu",
-      subtitle: "ROWISM The Black의 시그니처",
+      title: "Signature Collection",
+      subtitle: "최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처",
+      ingredientsLabel: "재료",
+      finisherBadge: "Finisher",
       signature: {
         name: "로위즘 뭉티기 시그니처",
         price: "₩92,000",
         badge: "Signature",
         description: "ROWISM의 철학을 담은 시그니처 메뉴",
-        story: "'ROWISM'이라는 이름은 'RAW(날것)'와 '-ISM(철학)'의 조합으로, 최상급 재료를 가장 순수한 방식으로 즐긴다는 브랜드 철학을 담고 있습니다. 뭉티기는 한우를 얇게 저며 썬 후 별도의 양념 없이 그대로 즐기는 전통 요리입니다.",
+        story: "로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.",
+        whatIsTitle: "뭉티기란?",
+        whatIsText: "뭉티기는 한우를 얇게 저며 썬 후 별도의 양념 없이 그대로 즐기는 전통 요리입니다.",
+        harmonyTitle: "프리미엄 재료의 완벽한 조화",
+        harmonyText: "로위즘 뭉티기 시그니처 위에는 이탈리아산 부라타 치즈가 통째로 올라갑니다.",
         highlight: "매일 엄선된 최상급 한우 뭉티기 200g을 아낌없이 사용합니다.",
         pairing: "이탈리아산 부라타 치즈가 통째로 올라가고, 블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더합니다. 파르미지아노 레지아노가 눈꽃처럼 내려앉습니다.",
         ingredients: "한우 뭉티기, 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노, 소금, 후추"
@@ -107,7 +132,7 @@ const translations = {
     recommend: {
       label: "Recommend",
       title: "이런 분께 추천드립니다",
-      subtitle: "연남동 데이트, 기념일, 특별한 날을 계획 중이시라면",
+      subtitle: "당신의 특별한 순간을 위한 공간",
       items: [
         { icon: "💕", title: "연남동 데이트", desc: "특별한 데이트를 원하는 커플", detail: "홍대/연남동에서 평범하지 않은 데이트 코스를 찾으신다면. 분위기와 맛 모두를 원하는 20-40대 커플에게 추천드립니다." },
         { icon: "🎂", title: "기념일 디너", desc: "100일, 1주년, 생일을 축하하고 싶은 분", detail: "기념일엔 특별한 장소에서. 프라이빗한 공간과 분위기 있는 조명, 샴페인이 어우러진 완벽한 기념일 디너를 경험하세요." },
@@ -123,7 +148,8 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "소중한 순간을 더욱 특별하게",
+      title: "Special Moments",
+      subtitle: "소중한 순간을 더욱 특별하게",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일 등 특별한 기념일을 위한 공간", event: "프라이빗 공간" },
         { icon: "💑", title: "Date", subtitle: "데이트", desc: "특별한 하루를 만들고 싶은 날을 위한 프라이빗한 분위기와 은은한 조명이 있는 로맨틱한 공간", event: "로맨틱한 분위기" },
@@ -141,6 +167,7 @@ const translations = {
       lastOrder: "라스트오더 22:30",
       closed: "매주 월요일 휴무",
       subway: "홍대입구역 3번 출구 도보 5분",
+      parking: "인근 공영주차장 이용",
       landmarks: {
         title: "주변 랜드마크",
         items: ["연트럴파크 도보 2분", "경의선숲길 도보 3분", "동진시장 도보 3분", "홍대 걷고싶은거리 도보 8분"]
@@ -200,8 +227,11 @@ const translations = {
     footer: {
       name: "ROWISM The Black",
       address: "서울 마포구 동교로 262-4",
-      hours: "화-일 18:00 - 24:00 | 월 휴무",
-      naver: "네이버 예약",
+      hours: "화 - 일 18:00 - 24:00",
+      closed: "월요일 휴무",
+      naver: "네이버 예약으로 예약하기",
+      slogan: "날것의 철학으로,<br/>당신의 특별한 밤을 위해.",
+      desc: "연남동 프리미엄 샴페인바<br/>홍대입구역 도보 5분",
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
@@ -209,6 +239,11 @@ const translations = {
   },
 
   en: {
+    // Quote Section
+    quote: {
+      line1: "The philosophy of RAW,",
+      line2: "Premium ingredients in their purest form."
+    },
     // Navigation
     nav: {
       philosophy: "Philosophy",
@@ -224,7 +259,8 @@ const translations = {
       title2: "Nights Begin",
       description: "Same-day slaughtered Korean beef tartare meets champagne",
       cta: "Reserve Now",
-      scroll: "Scroll"
+      scroll: "Scroll",
+      keywords: "Truffle Beef Tartare · Champagne & Sparkling · Private Dining"
     },
     // Question Section
     question: {
@@ -240,9 +276,22 @@ const translations = {
     // Philosophy Section
     philosophy: {
       label: "Our Philosophy",
+      titleLine1: "The Aesthetics of RAW,",
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "Premium ingredients in their purest form",
+      p1Title: "The fusion of RAW and ism.",
+      p1Text: "ROWISM combines 'RAW' and '-ISM (philosophy)', representing our commitment to delivering the finest ingredients in their purest form.",
+      p2Title: "Premium Champagne Bar in Yeonnam-dong.",
+      p2Text: "Located 5 minutes from Hongdae Station, ROWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
+      p3Title: "8 Private Tables.",
+      p3Text: "Soft Louis Poulsen lighting, curated melodies from Geneva speakers. ROWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
+      features: [
+        { title: "Signature Tartare", desc: "Truffle Beef Tartare", detail: "Premium Hanwoo + Truffle" },
+        { title: "Champagne & Sparkling", desc: "Sommelier Curation", detail: "Premium Champagne & Sparkling" },
+        { title: "Private Space", desc: "Limited to 8 Seats", detail: "Reservation-only Private Dining" },
+        { title: "Sensory Design", desc: "Five Senses Experience", detail: "Lighting·Music·Service" }
+      ],
       story: "ROWISM combines 'RAW' and '-ISM (philosophy)'. We pursue enjoying premium ingredients in their most authentic way. The freshness of same-day slaughtered Korean beef, the creaminess of Italian burrata cheese, and the deep aroma of French black truffle. All harmonized with a glass of champagne for an extraordinary experience."
     },
     // Experience Section
@@ -260,14 +309,20 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Menu",
-      subtitle: "ROWISM The Black Signatures",
+      title: "Signature Collection",
+      subtitle: "ROWISM signatures crafted with premium ingredients and meticulous plating",
+      ingredientsLabel: "Ingredients",
+      finisherBadge: "Finisher",
       signature: {
         name: "ROWISM Signature Beef Tartare",
         price: "₩92,000",
         badge: "Signature",
         description: "Our signature dish embodying the ROWISM philosophy",
-        story: "'ROWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form. Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without seasoning.",
+        story: "ROWISM Signature Beef Tartare is our flagship dish that best represents ROWISM The Black's identity.",
+        whatIsTitle: "What is Mungti-gi?",
+        whatIsText: "Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without any seasoning.",
+        harmonyTitle: "Perfect Harmony of Premium Ingredients",
+        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese.", "'ROWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form. Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without seasoning.",
         highlight: "We generously use 200g of premium Korean beef (Hanwoo), carefully selected daily.",
         pairing: "Topped with a whole Italian burrata cheese, black truffle shaved tableside for deep aroma, and Parmigiano-Reggiano falling like snowflakes.",
         ingredients: "Korean beef tartare, Burrata cheese, Black truffle, Parmigiano-Reggiano, Salt, Pepper"
@@ -331,7 +386,8 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Make Your Moments Special",
+      title: "Special Moments",
+      subtitle: "Make Your Moments Special",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "Celebration", desc: "Perfect space for 100 days, 200 days, 1 year, birthdays, wedding anniversaries", event: "Private Space" },
         { icon: "💑", title: "Date", subtitle: "Romance", desc: "Romantic space with private atmosphere and soft lighting for your special day", event: "Romantic Ambiance" },
@@ -345,6 +401,7 @@ const translations = {
       title: "How to Find Us",
       address: "262-4 Donggyo-ro, Mapo-gu, Seoul",
       zipcode: "04030",
+      parking: "Use nearby public parking",
       hours: "Tue-Sun 6:00 PM - 12:00 AM",
       lastOrder: "Last Order 10:30 PM",
       closed: "Closed every Monday",
@@ -408,8 +465,11 @@ const translations = {
     footer: {
       name: "ROWISM The Black",
       address: "262-4 Donggyo-ro, Mapo-gu, Seoul",
-      hours: "Tue-Sun 6PM-12AM | Closed Mon",
-      naver: "Book on Naver",
+      hours: "Tue - Sun 6:00 PM - 12:00 AM",
+      closed: "Closed Mondays",
+      naver: "Book on Naver Reservation",
+      slogan: "With the philosophy of RAW,<br/>for your special night.",
+      desc: "Premium Champagne Bar in Yeonnam-dong<br/>5 min walk from Hongdae Station",
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
@@ -417,6 +477,11 @@ const translations = {
   },
 
   ja: {
+    // Quote Section
+    quote: {
+      line1: "生の哲学,",
+      line2: "最高級の食材を最も純粋な方法で。"
+    },
     // Navigation
     nav: {
       philosophy: "Philosophy",
@@ -432,7 +497,8 @@ const translations = {
       title2: "始まる場所",
       description: "当日屠畜の韓牛ユッケとシャンパンが出会う場所",
       cta: "予約する",
-      scroll: "Scroll"
+      scroll: "Scroll",
+      keywords: "トリュフ韓牛ムンティギ · シャンパン & スパークリング · プライベートダイニング"
     },
     // Question Section
     question: {
@@ -448,9 +514,22 @@ const translations = {
     // Philosophy Section
     philosophy: {
       label: "Our Philosophy",
+      titleLine1: "生の美学,",
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "最高級の食材を最も純粋な方法で",
+      p1Title: "RAWとismの融合。",
+      p1Text: "ROWISMは「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で伝えることを哲学としています。",
+      p2Title: "延南洞プレミアムシャンパンバー。",
+      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するROWISM The Blackは、最高級韓牛ムンティギにイタリアンブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
+      p3Title: "8つのプライベートテーブル。",
+      p3Text: "ルイスポールセンの柔らかな照明、ジュネーブスピーカーが届けるキュレーティングされた旋律。ROWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞ダイニング空間です。",
+      features: [
+        { title: "Signature Tartare", desc: "トリュフ韓牛ムンティギ", detail: "最高級韓牛 + トリュフ" },
+        { title: "Champagne & Sparkling", desc: "ソムリエキュレーション", detail: "プレミアムシャンパン & スパークリング" },
+        { title: "Private Space", desc: "8席限定運営", detail: "予約制プライベートダイニング" },
+        { title: "Sensory Design", desc: "五感の体験設計", detail: "照明·音楽·サービス" }
+      ],
       story: "ROWISMは「RAW（生）」と「-ISM（哲学）」の組み合わせです。最高級の食材本来の味を最も純粋な方法で楽しむことを追求しています。当日屠畜した韓牛の新鮮さ、イタリアンブラータチーズのクリーミーさ、フレンチブラックトリュフの深い香り。すべてがシャンパンと調和する特別な体験を提供します。"
     },
     // Experience Section
@@ -468,14 +547,20 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "シグネチャーメニュー",
-      subtitle: "ROWISM The Blackのシグネチャー",
+      title: "Signature Collection",
+      subtitle: "最高級の食材と繊細なプレーティングで完成されるROWISMのシグネチャー",
+      ingredientsLabel: "材料",
+      finisherBadge: "Finisher",
       signature: {
         name: "ロウイズム ムンティギ シグネチャー",
         price: "₩92,000",
         badge: "Signature",
         description: "ROWISMの哲学を込めたシグネチャーメニュー",
-        story: "「ROWISM」という名前は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を最も純粋な方法で楽しむというブランド哲学を表しています。ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
+        story: "ロウイズム ムンティギ シグネチャーはROWISM The Blackのアイデンティティを最もよく表す代表メニューです。",
+        whatIsTitle: "ムンティギとは？",
+        whatIsText: "ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
+        harmonyTitle: "プレミアム食材の完璧な調和",
+        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。", "「ROWISM」という名前は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を最も純粋な方法で楽しむというブランド哲学を表しています。ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
         highlight: "毎日厳選された最高級韓牛ムンティギ200gを惜しみなく使用しています。",
         pairing: "イタリア産ブラータチーズが丸ごと乗り、ブラックトリュフが目の前でスライスされて深い香りを加えます。パルミジャーノ・レッジャーノが雪のように降りかかります。",
         ingredients: "韓牛ムンティギ、ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノ、塩、胡椒"
@@ -539,7 +624,8 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "大切な瞬間をもっと特別に",
+      title: "Special Moments",
+      subtitle: "大切な瞬間をもっと特別に",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "記念日", desc: "100日、200日、1周年、誕生日、結婚記念日など特別な記念日のための空間", event: "プライベート空間" },
         { icon: "💑", title: "Date", subtitle: "デート", desc: "特別な一日を作りたい日のためのプライベートな雰囲気と穏やかな照明のあるロマンチックな空間", event: "ロマンチックな雰囲気" },
@@ -553,6 +639,7 @@ const translations = {
       title: "アクセス",
       address: "ソウル市麻浦区東橋路262-4",
       zipcode: "04030",
+      parking: "近隣の公営駐車場をご利用ください",
       hours: "火-日 18:00 - 24:00",
       lastOrder: "ラストオーダー 22:30",
       closed: "毎週月曜定休",
@@ -616,8 +703,11 @@ const translations = {
     footer: {
       name: "ROWISM The Black",
       address: "ソウル市麻浦区東橋路262-4",
-      hours: "火-日 18:00-24:00 | 月定休",
-      naver: "Naver予約",
+      hours: "火 - 日 18:00 - 24:00",
+      closed: "毎週月曜日定休",
+      naver: "Naver予約で予約する",
+      slogan: "生の哲学で、<br/>あなたの特別な夜のために。",
+      desc: "延南洞プレミアムシャンパンバー<br/>弘大入口駅 徒歩5分",
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
@@ -625,6 +715,11 @@ const translations = {
   },
 
   zh: {
+    // Quote Section
+    quote: {
+      line1: "生的哲学,",
+      line2: "以最纯粹的方式享用顶级食材。"
+    },
     // Navigation
     nav: {
       philosophy: "Philosophy",
@@ -640,7 +735,8 @@ const translations = {
       title2: "开始的地方",
       description: "当日屠宰韩牛生拌与香槟相遇的地方",
       cta: "立即预约",
-      scroll: "Scroll"
+      scroll: "Scroll",
+      keywords: "松露韩牛生拌 · 香槟 & 起泡酒 · 私享餐厅"
     },
     // Question Section
     question: {
@@ -656,9 +752,22 @@ const translations = {
     // Philosophy Section
     philosophy: {
       label: "Our Philosophy",
+      titleLine1: "生的美学,",
       title: "ROWISM",
       subtitle: "RAW + ISM",
       description: "以最纯粹的方式享用顶级食材",
+      p1Title: "RAW与ism的融合。",
+      p1Text: "ROWISM是“生”的RAW和“主义·哲学”的ism的结合。我们以最纯粹的方式传递顶级食材的本味为哲学。",
+      p2Title: "延南洞高级香槟酒吧。",
+      p2Text: "位于弘大入口站步行5分钟，ROWISM The Black的招牌菜品将顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪完美结合。",
+      p3Title: "8个私享桌位。",
+      p3Text: "Louis Poulsen的柔和照明，Geneva音箱传递的精心策划的旋律。ROWISM The Black不只是香槟酒吧，而是设计感官体验的延南洞餐饮空间。",
+      features: [
+        { title: "Signature Tartare", desc: "松露韩牛生拌", detail: "顶级韩牛 + 松露" },
+        { title: "Champagne & Sparkling", desc: "侍酒师策划", detail: "高级香槟 & 起泡酒" },
+        { title: "Private Space", desc: "限定8席运营", detail: "预约制私享餐厅" },
+        { title: "Sensory Design", desc: "五感体验设计", detail: "照明·音乐·服务" }
+      ],
       story: "ROWISM是\"RAW（生）\"和\"-ISM（主义）\"的结合。我们追求以最纯粹的方式享用顶级食材的本味。当日屠宰韩牛的新鲜、意大利布拉塔奶酪的绵密、法国黑松露的深邃香气。所有这些与一杯香槟完美融合，为您带来非凡体验。"
     },
     // Experience Section
@@ -676,14 +785,20 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "招牌菜品",
-      subtitle: "ROWISM The Black的招牌",
+      title: "Signature Collection",
+      subtitle: "用顶级食材和细致摆盘完成的ROWISM招牌",
+      ingredientsLabel: "食材",
+      finisherBadge: "Finisher",
       signature: {
         name: "ROWISM招牌生拌牛肉",
         price: "₩92,000",
         badge: "Signature",
         description: "蕴含ROWISM哲学的招牌菜品",
-        story: "\"ROWISM\"这个名字是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表着以最纯粹的方式享用顶级食材的品牌哲学。Mungti-gi是将韩牛切成薄片，不加任何调味，直接享用的传统料理。",
+        story: "ROWISM招牌生拌牛肉是最能代表ROWISM The Black身份的招牌菜。",
+        whatIsTitle: "什么是Mungti-gi？",
+        whatIsText: "Mungti-gi是将韩牛切成薄片，不加任何调味直接享用的传统料理。",
+        harmonyTitle: "顶级食材的完美和谐",
+        harmonyText: "ROWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。", "\"ROWISM\"这个名字是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表着以最纯粹的方式享用顶级食材的品牌哲学。Mungti-gi是将韩牛切成薄片，不加任何调味，直接享用的传统料理。",
         highlight: "每天精选200克顶级韩牛生拌，毫不吝啬地使用。",
         pairing: "整块意大利布拉塔奶酪覆盖其上，黑松露在您面前现场刨片增添深邃香气。帕马森奶酪如雪花般飘落。",
         ingredients: "韩牛生拌、布拉塔奶酪、黑松露、帕马森奶酪、盐、胡椒"
@@ -747,7 +862,8 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "让珍贵时刻更加特别",
+      title: "Special Moments",
+      subtitle: "让珍贵时刻更加特别",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "纪念日", desc: "100天、200天、1周年、生日、结婚纪念日等特别纪念日的空间", event: "私密空间" },
         { icon: "💑", title: "Date", subtitle: "约会", desc: "为想创造特别一天的日子准备的私密氛围和柔和灯光的浪漫空间", event: "浪漫氛围" },
@@ -760,6 +876,7 @@ const translations = {
       label: "Location",
       title: "如何到达",
       address: "首尔市麻浦区东桥路262-4",
+      parking: "附近公共停车场",
       zipcode: "04030",
       hours: "周二-周日 18:00 - 24:00",
       lastOrder: "最后点单 22:30",
@@ -824,8 +941,11 @@ const translations = {
     footer: {
       name: "ROWISM The Black",
       address: "首尔市麻浦区东桥路262-4",
-      hours: "周二-周日 18:00-24:00 | 周一休息",
+      hours: "周二 - 周日 18:00 - 24:00",
+      closed: "每周一休息",
       naver: "Naver预约",
+      slogan: "以生的哲学，<br/>为您的特别之夜。",
+      desc: "延南洞高级香槟酒吧<br/>弘大入口站步行5分钟",
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
@@ -927,6 +1047,290 @@ function updatePageContent() {
   });
 }
 
+// Render dynamic sections
+function renderDynamicSections() {
+  renderMenuSection();
+  renderExperienceSection();
+  renderRecommendSection();
+  renderOccasionsSection();
+  renderReviewsSection();
+  renderFAQSection();
+  renderLocationSection();
+  renderReserveSection();
+  renderFooterSection();
+}
+
+// Render Menu Items
+function renderMenuSection() {
+  const menuContainer = document.getElementById('menu-items-container');
+  if (!menuContainer) return;
+  
+  const items = t('menu.items');
+  if (!Array.isArray(items)) return;
+  
+  const menuImages = [
+    '/static/menu_jebichuri.jpg',
+    '/static/menu_cheese.jpg', 
+    '/static/menu_yukhoe.jpg',
+    '/static/menu_caprese.jpg',
+    '/static/menu_memil.jpg'
+  ];
+  
+  menuContainer.innerHTML = items.map((item, i) => `
+    <div class="animate-on-scroll group ${i === 4 ? 'md:col-span-2 lg:col-span-1 lg:col-start-1' : ''}" style="animation-delay: ${(i + 1) * 0.1}s">
+      <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
+        <img src="${menuImages[i]}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
+        ${item.badge ? `<div class="absolute bottom-4 right-4"><span class="text-[9px] tracking-[0.2em] text-off-white/60 uppercase bg-deep-black/70 px-2 py-1">${item.badge}</span></div>` : ''}
+      </div>
+      <div class="flex justify-between items-start mb-3">
+        <div>
+          <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500">${item.name}</h4>
+          <p class="text-[10px] tracking-wider text-off-white/30 uppercase">${item.description}</p>
+        </div>
+        <span class="font-playfair text-xl text-champagne/70">${item.price}</span>
+      </div>
+      <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">${item.detail}</p>
+      <div class="text-xs">
+        <p class="text-off-white/25"><span class="text-champagne/30 mr-2">${t('menu.ingredientsLabel') || 'Ingredients'}</span>${item.ingredients}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render Experience Timeline
+function renderExperienceSection() {
+  const container = document.getElementById('experience-items-container');
+  if (!container) return;
+  
+  const items = t('experience.items');
+  if (!Array.isArray(items)) return;
+  
+  container.innerHTML = items.map((item, i) => `
+    <div class="flex flex-col md:flex-row items-start gap-8 md:gap-16 animate-on-scroll ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}" style="animation-delay: ${i * 0.1}s">
+      <div class="flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}">
+        <span class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase">${item.time}</span>
+        <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-3 mb-4">${item.title}</h3>
+        <p class="text-off-white/40 text-sm font-light leading-relaxed max-w-sm">${item.desc}</p>
+      </div>
+      <div class="hidden md:flex items-center justify-center">
+        <div class="w-3 h-3 rounded-full bg-champagne/30 border border-champagne/50"></div>
+      </div>
+      <div class="flex-1"></div>
+    </div>
+  `).join('');
+}
+
+// Render Recommend Section
+function renderRecommendSection() {
+  const container = document.getElementById('recommend-items-container');
+  if (!container) return;
+  
+  const items = t('recommend.items');
+  if (!Array.isArray(items)) return;
+  
+  container.innerHTML = items.map((item, i) => `
+    <div class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style="animation-delay: ${i * 0.1}s">
+      <span class="text-champagne/40 text-2xl">${item.icon}</span>
+      <h3 class="font-playfair text-lg md:text-xl text-off-white mt-4 mb-2 group-hover:text-champagne transition-colors duration-500">${item.title}</h3>
+      <p class="text-off-white/60 text-sm font-light mb-3">${item.desc}</p>
+      <p class="text-off-white/30 text-xs font-light leading-relaxed">${item.detail}</p>
+    </div>
+  `).join('');
+}
+
+// Render Occasions Section
+function renderOccasionsSection() {
+  const container = document.getElementById('occasions-section-container');
+  if (!container) return;
+  
+  const items = t('occasions.items');
+  if (!Array.isArray(items)) return;
+  
+  container.innerHTML = items.map((item, i) => `
+    <div class="bg-deep-black p-10 md:p-14 group hover:bg-soft-black/50 transition-all duration-700 animate-on-scroll" style="animation-delay: ${i * 0.1}s">
+      <span class="text-[10px] tracking-[0.3em] text-champagne/30 uppercase">${item.title}</span>
+      <h3 class="font-playfair text-xl md:text-2xl text-off-white mt-4 mb-2 group-hover:text-champagne transition-colors duration-500">
+        <span class="mr-2">${item.icon}</span>${item.subtitle}
+      </h3>
+      <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">${item.desc}</p>
+      <p class="text-champagne/40 text-xs tracking-wide">${item.event}</p>
+    </div>
+  `).join('');
+}
+
+// Render Reviews Section
+function renderReviewsSection() {
+  const container = document.getElementById('reviews-items-container');
+  if (!container) return;
+  
+  const items = t('reviews.items');
+  if (!Array.isArray(items)) return;
+  
+  container.innerHTML = items.map((item, i) => `
+    <div class="bg-deep-black/50 border border-white/5 p-6 rounded-sm animate-on-scroll hover:border-champagne/20 transition-all duration-500" style="animation-delay: ${i * 0.1}s">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-champagne/20 flex items-center justify-center text-champagne font-medium">${item.name.charAt(0)}</div>
+          <div>
+            <p class="text-off-white font-medium text-sm">${item.name}</p>
+            <p class="text-off-white/30 text-xs">${item.date}</p>
+          </div>
+        </div>
+        <span class="text-[10px] px-2 py-1 bg-champagne/10 text-champagne rounded-sm">${item.badge}</span>
+      </div>
+      <div class="flex text-champagne text-sm mb-3">${'★'.repeat(item.rating)}</div>
+      <p class="text-off-white/70 text-sm leading-relaxed">${item.review}</p>
+    </div>
+  `).join('');
+}
+
+// Render FAQ Section
+function renderFAQSection() {
+  const container = document.getElementById('faq-items-container');
+  if (!container) return;
+  
+  const items = t('faq.items');
+  if (!Array.isArray(items)) return;
+  
+  container.innerHTML = items.map((item, i) => `
+    <div class="faq-item border-b border-white/5 animate-on-scroll" style="animation-delay: ${i * 0.05}s">
+      <button class="faq-question w-full py-8 text-left flex justify-between items-center group">
+        <span class="font-noto-serif text-off-white/80 text-sm md:text-base pr-8 group-hover:text-off-white transition-colors">${item.q}</span>
+        <svg class="faq-icon w-4 h-4 text-champagne/50 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+          <path d="M12 5v14M5 12h14"></path>
+        </svg>
+      </button>
+      <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
+        <p class="text-off-white/40 text-sm font-light leading-relaxed pr-12 pb-8">${item.a}</p>
+      </div>
+    </div>
+  `).join('');
+  
+  // Re-attach FAQ toggle handlers
+  initFAQToggle();
+}
+
+// Render Location Section
+function renderLocationSection() {
+  const locationTitle = document.querySelector('[data-i18n="location.title"]');
+  const locationAddress = document.querySelector('[data-i18n="location.address"]');
+  const locationHours = document.querySelector('[data-i18n="location.hours"]');
+  const locationSubway = document.querySelector('[data-i18n="location.subway"]');
+  const locationClosed = document.querySelector('[data-i18n="location.closed"]');
+  const locationLastOrder = document.querySelector('[data-i18n="location.lastOrder"]');
+  
+  if (locationTitle) locationTitle.textContent = t('location.title');
+  if (locationAddress) locationAddress.textContent = t('location.address');
+  if (locationHours) locationHours.textContent = t('location.hours');
+  if (locationSubway) locationSubway.textContent = t('location.subway');
+  if (locationClosed) locationClosed.textContent = t('location.closed');
+  if (locationLastOrder) locationLastOrder.textContent = t('location.lastOrder');
+  
+  // Update landmarks
+  const landmarksContainer = document.getElementById('landmarks-container');
+  if (landmarksContainer) {
+    const landmarks = t('location.landmarks.items');
+    if (Array.isArray(landmarks)) {
+      landmarksContainer.innerHTML = landmarks.map(item => 
+        `<p class="text-off-white/40 text-sm">${item}</p>`
+      ).join('');
+    }
+  }
+}
+
+// Render Reserve Section
+function renderReserveSection() {
+  // Update text elements
+  const reserveTitle = document.querySelector('[data-i18n="reserve.title"]');
+  const reserveSubtitle = document.querySelector('[data-i18n="reserve.subtitle"]');
+  const reserveNotice = document.querySelector('[data-i18n="reserve.notice"]');
+  const reserveCta = document.querySelector('[data-i18n="reserve.cta"]');
+  
+  if (reserveTitle) reserveTitle.textContent = t('reserve.title');
+  if (reserveSubtitle) reserveSubtitle.innerHTML = t('reserve.subtitle');
+  if (reserveNotice) reserveNotice.textContent = t('reserve.notice');
+  if (reserveCta) reserveCta.textContent = t('reserve.cta');
+}
+
+// Render Footer Section
+function renderFooterSection() {
+  const footerAddress = document.querySelector('[data-i18n="footer.address"]');
+  const footerHours = document.querySelector('[data-i18n="footer.hours"]');
+  const footerClosed = document.querySelector('[data-i18n="footer.closed"]');
+  const footerNaver = document.querySelector('[data-i18n="footer.naver"]');
+  const mobileCta = document.querySelector('[data-i18n="mobileCta"]');
+  const footerSlogan = document.querySelector('[data-i18n="footer.slogan"]');
+  const footerDesc = document.querySelector('[data-i18n="footer.desc"]');
+  
+  if (footerAddress) footerAddress.textContent = t('footer.address');
+  if (footerHours) footerHours.textContent = t('footer.hours');
+  if (footerClosed) footerClosed.textContent = t('footer.closed');
+  if (footerNaver) footerNaver.textContent = t('footer.naver');
+  if (mobileCta) mobileCta.textContent = t('mobileCta');
+  if (footerSlogan) footerSlogan.innerHTML = t('footer.slogan');
+  if (footerDesc) footerDesc.innerHTML = t('footer.desc');
+}
+
+// Initialize FAQ toggle functionality
+function initFAQToggle() {
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', function() {
+      const answer = this.nextElementSibling;
+      const icon = this.querySelector('.faq-icon');
+      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+      
+      // Close all others
+      document.querySelectorAll('.faq-answer').forEach(a => {
+        a.style.maxHeight = '0px';
+      });
+      document.querySelectorAll('.faq-icon').forEach(i => {
+        i.style.transform = 'rotate(0deg)';
+      });
+      
+      // Toggle current
+      if (!isOpen) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(45deg)';
+      }
+    });
+  });
+}
+
+// Update page content with translations and render dynamic sections
+function updatePageContent() {
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = t(key);
+    if (translation && typeof translation === 'string') {
+      el.textContent = translation;
+    }
+  });
+  
+  // Update elements with data-i18n-html (for HTML content)
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    const translation = t(key);
+    if (translation && typeof translation === 'string') {
+      el.innerHTML = translation;
+    }
+  });
+  
+  // Render dynamic sections
+  renderDynamicSections();
+  
+  // Update language buttons
+  updateLanguageButtons();
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+  initLanguage();
+  updatePageContent();
+  initFAQToggle();
+});
+
 // Export for global use
 window.translations = translations;
 window.currentLang = currentLang;
@@ -934,3 +1338,4 @@ window.setLanguage = setLanguage;
 window.t = t;
 window.initLanguage = initLanguage;
 window.updatePageContent = updatePageContent;
+window.renderDynamicSections = renderDynamicSections;

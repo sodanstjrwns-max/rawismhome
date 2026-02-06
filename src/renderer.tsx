@@ -11,7 +11,14 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta name="keywords" content="연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 연남동 크리스마스, 홍대 발렌타인데이, 연남동 100일 기념, 홍대 1주년 기념일, 홍대 서교동 맛집, 합정 데이트, 망원동 맛집, 홍대입구역 3번출구 맛집, 연남동 스파클링와인, 홍대 버블바, 연남동 고급 레스토랑, 홍대 접대, 연남동 비즈니스 미팅, 연남동 뭉티기, 홍대 뭉티기, 온도체 한우, 당일 도축 한우, 연남동 육회, 홍대 육회, 연남동 제비추리, 홍대 제비추리 구이, 연남동 치즈플레이트, 홍대 치즈 맛집, 브리 드 모, 고르곤졸라, 연남동 아보카도 카프레제, 홍대 부라타 치즈, 연남동 메밀면, 홍대 들기름 육회, 연남동 블랙트러플, 홍대 트러플 요리, 연남동 파르미지아노, 홍대 프리미엄 한우, 연남동 청양오일육회, 홍대 매운 육회" />
         <meta name="author" content="ROWISM The Black" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://rowism.com" />
+        <link rel="canonical" href="https://rawism.kr" />
+        
+        {/* International SEO - hreflang for multilingual */}
+        <link rel="alternate" hreflang="ko" href="https://rawism.kr" />
+        <link rel="alternate" hreflang="en" href="https://rawism.kr" />
+        <link rel="alternate" hreflang="ja" href="https://rawism.kr" />
+        <link rel="alternate" hreflang="zh" href="https://rawism.kr" />
+        <link rel="alternate" hreflang="x-default" href="https://rawism.kr" />
         
         {/* Favicon & App Icons */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -39,17 +46,32 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta name="distribution" content="local" />
         <meta name="target" content="연남동 데이트, 홍대 데이트, 기념일" />
         
+        {/* English Meta Tags for International SEO */}
+        <meta name="description" lang="en" content="ROWISM The Black - Premium Champagne Bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) with Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required. Perfect for dates and anniversaries." />
+        <meta name="keywords" lang="en" content="Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Hongdae wine bar, Seoul private dining, Korean raw beef, Seoul foodie, Hongdae hidden gem, Yeonnam-dong best restaurant, Seoul luxury restaurant, Hongik University restaurant, Seoul truffle restaurant, Korean cuisine Seoul, Seoul nightlife restaurant, Mapo-gu restaurant, Seoul Instagram restaurant, Hongdae premium restaurant" />
+        
+        {/* Japanese Meta for Tourist SEO */}
+        <meta name="description" lang="ja" content="ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。弘大駅から徒歩5分、8席限定、要予約。デートや記念日に最適。" />
+        <meta name="keywords" lang="ja" content="弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 弘大 ワインバー, 韓国 生肉, ソウル 隠れ家" />
+        
+        {/* Chinese Meta for Tourist SEO */}
+        <meta name="description" lang="zh" content="ROWISM The Black - 首尔延南洞高级香槟吧。新鲜当日屠宰韩牛肉脍配意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。约会和纪念日的完美选择。" />
+        <meta name="keywords" lang="zh" content="弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 弘大酒吧, 韩国生牛肉, 首尔网红餐厅" />
+        
         {/* Naver Specific Meta Tags */}
         <meta name="naver-site-verification" content="verify-code-here" />
         <meta property="naverbot" content="index, follow" />
         
-        {/* Open Graph */}
+        {/* Open Graph - Korean */}
         <meta property="og:title" content="ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기" />
         <meta property="og:description" content="당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제." />
         <meta property="og:type" content="restaurant" />
         <meta property="og:locale" content="ko_KR" />
+        <meta property="og:locale:alternate" content="en_US" />
+        <meta property="og:locale:alternate" content="ja_JP" />
+        <meta property="og:locale:alternate" content="zh_CN" />
         <meta property="og:site_name" content="ROWISM The Black" />
-        <meta property="og:url" content="https://rowism.com" />
+        <meta property="og:url" content="https://rawism.kr" />
         
         {/* Restaurant Specific OG Tags */}
         <meta property="restaurant:contact_info:street_address" content="동교로 262-4" />
@@ -92,14 +114,17 @@ export const renderer = jsxRenderer(({ children }) => {
         {/* Custom Styles */}
         <link href="/static/style.css" rel="stylesheet" />
         
-        {/* Schema.org Structured Data - Restaurant */}
+        {/* Schema.org Structured Data - Restaurant (Multilingual) */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Restaurant",
           "name": "ROWISM The Black",
-          "alternateName": "로위즘 더 블랙",
-          "description": "연남동 프리미엄 샴페인바. 트러플 한우 뭉티기와 샴페인 페어링 전문점. 홍대입구역 도보 5분, 8석 한정 예약제 운영.",
-          "url": "https://rowism.com",
+          "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
+          "description": "Premium champagne bar in Yeonnam-dong, Seoul. Specializing in fresh Korean beef tartare (Mungti-gi) with truffle and champagne pairing. 5 min walk from Hongdae Station, 8 seats only, reservation required.",
+          "description:ko": "연남동 프리미엄 샴페인바. 트러플 한우 뭉티기와 샴페인 페어링 전문점. 홍대입구역 도보 5분, 8석 한정 예약제 운영.",
+          "description:ja": "ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタルとシャンパンのペアリング専門店。弘大駅から徒歩5分、8席限定、要予約。",
+          "description:zh": "首尔延南洞高级香槟吧。专营新鲜韩牛肉脍与香槟搭配。弘大站步行5分钟，仅8席，需预约。",
+          "url": "https://rawism.kr",
           "telephone": "+82-10-0000-0000",
           "address": {
             "@type": "PostalAddress",
@@ -122,8 +147,8 @@ export const renderer = jsxRenderer(({ children }) => {
               "closes": "24:00"
             }
           ],
-          "servesCuisine": ["한식", "샴페인바", "육회", "한우"],
-          "menu": "https://rowism.com/#menu",
+          "servesCuisine": ["Korean", "Champagne Bar", "Korean Beef Tartare", "Hanwoo", "한식", "샴페인바", "육회", "한우"],
+          "menu": "https://rawism.kr/#menu",
           "priceRange": "₩₩₩",
           "currenciesAccepted": "KRW",
           "paymentAccepted": "현금, 신용카드",
@@ -371,6 +396,55 @@ export const renderer = jsxRenderer(({ children }) => {
           ]
         })}} />
         
+        {/* Schema.org - English FAQ for International SEO */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "inLanguage": "en",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do I need a reservation for ROWISM The Black in Hongdae?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, ROWISM The Black operates by reservation only. We have only 8 tables, so reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does dinner for two cost at ROWISM The Black?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The average price for two people is approximately 180,000 KRW (around $140 USD). We recommend the Signature Beef Tartare (92,000 KRW) with side dishes and a bottle of champagne. For a lighter option, you can enjoy a meal for 100,000-120,000 KRW."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Mungti-gi (Korean Beef Tartare)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mungti-gi is a traditional Korean delicacy from Daegu - thinly sliced fresh beef enjoyed without seasoning. At ROWISM, we use same-day slaughtered Korean beef (Hanwoo), still warm from processing, offering an incredibly tender texture and fresh beef flavor impossible to achieve with aged meat. We serve it with creamy Italian burrata cheese and aromatic black truffle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is ROWISM The Black located in Seoul?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ROWISM The Black is located at 262-4 Donggyo-ro, Mapo-gu, Seoul (Yeonnam-dong). It's a 5-minute walk from Hongdae Station (Line 2) Exit 3, near Yeonnam-dong's famous Gyeongui Line Forest Park (Yeontral Park)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the opening hours of ROWISM The Black?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are open Tuesday through Sunday, 6:00 PM to 12:00 AM (last order at 10:30 PM). We are closed every Monday."
+              }
+            }
+          ]
+        })}} />
+        
         {/* Schema.org Structured Data - LocalBusiness (Enhanced GEO) */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
           "@context": "https://schema.org",
@@ -444,15 +518,15 @@ export const renderer = jsxRenderer(({ children }) => {
             "name": "ROWISM The Black"
           },
           "nearbyAttraction": [
-            { "@type": "TouristAttraction", "name": "연트럴파크", "description": "도보 2분" },
-            { "@type": "TouristAttraction", "name": "경의선숲길", "description": "도보 3분" },
-            { "@type": "TouristAttraction", "name": "동진시장", "description": "도보 3분" },
-            { "@type": "TouristAttraction", "name": "홍대 걷고싶은거리", "description": "도보 8분" }
+            { "@type": "TouristAttraction", "name": "Yeontral Park (연트럴파크)", "description": "2 min walk" },
+            { "@type": "TouristAttraction", "name": "Gyeongui Line Forest Park (경의선숲길)", "description": "3 min walk" },
+            { "@type": "TouristAttraction", "name": "Dongjin Market (동진시장)", "description": "3 min walk" },
+            { "@type": "TouristAttraction", "name": "Hongdae Walking Street (홍대 걷고싶은거리)", "description": "8 min walk" }
           ],
           "publicTransportation": [
-            { "@type": "SubwayStation", "name": "홍대입구역 2호선", "description": "3번 출구 도보 5분" },
-            { "@type": "SubwayStation", "name": "홍대입구역 경의중앙선", "description": "도보 7분" },
-            { "@type": "SubwayStation", "name": "홍대입구역 공항철도", "description": "도보 7분" }
+            { "@type": "SubwayStation", "name": "Hongik University Station (Line 2)", "description": "Exit 3, 5 min walk" },
+            { "@type": "SubwayStation", "name": "Hongik University Station (Gyeongui-Jungang Line)", "description": "7 min walk" },
+            { "@type": "SubwayStation", "name": "Hongik University Station (Airport Railroad)", "description": "7 min walk" }
           ]
         })}} />
         
@@ -470,7 +544,7 @@ export const renderer = jsxRenderer(({ children }) => {
           "organizer": {
             "@type": "Organization",
             "name": "ROWISM The Black",
-            "url": "https://rowism.com"
+            "url": "https://rawism.kr"
           },
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",

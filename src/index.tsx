@@ -909,8 +909,8 @@ app.get('/', (c) => {
                     <path d="M12 5v14M5 12h14"></path>
                   </svg>
                 </button>
-                <div class="faq-answer pb-8" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
-                  <p class="text-off-white/40 text-sm font-light leading-relaxed pr-12">{item.a}</p>
+                <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
+                  <p class="text-off-white/40 text-sm font-light leading-relaxed pr-12 pb-8">{item.a}</p>
                 </div>
               </div>
             ))}

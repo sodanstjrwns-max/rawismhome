@@ -112,6 +112,14 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:site_name" content="ROWISM The Black" />
           <meta property="og:url" content={`https://rawism.kr${getLangPath(pageLang)}`} />
           
+          {/* OG Image - 카카오톡, 페이스북 등 공유 시 표시되는 이미지 */}
+          <meta property="og:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta property="og:image:secure_url" content="https://rawism.kr/static/og-image.jpg" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="ROWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
+          
           {/* Restaurant Specific OG Tags */}
           <meta property="restaurant:contact_info:street_address" content="동교로 262-4" />
           <meta property="restaurant:contact_info:locality" content="마포구" />
@@ -122,6 +130,8 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.ogDescription} />
+          <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta name="twitter:image:alt" content="ROWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
           
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

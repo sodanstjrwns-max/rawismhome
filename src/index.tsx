@@ -1022,7 +1022,7 @@ app.get('/', (c) => {
 
       {/* Mobile Fixed CTA */}
       <div class="fixed bottom-0 left-0 right-0 lg:hidden bg-deep-black/98 backdrop-blur-xl border-t border-white/5 p-4 z-50">
-        <a href="#reserve" class="block w-full py-3 bg-champagne text-deep-black text-center text-[11px] tracking-[0.2em] uppercase font-medium">
+        <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" class="block w-full py-3 bg-champagne text-deep-black text-center text-[11px] tracking-[0.2em] uppercase font-medium">
           예약하기
         </a>
       </div>

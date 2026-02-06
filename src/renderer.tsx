@@ -114,6 +114,9 @@ export const renderer = jsxRenderer(({ children }) => {
         {/* Custom Styles */}
         <link href="/static/style.css" rel="stylesheet" />
         
+        {/* Multilingual Translations - Load before other scripts */}
+        <script src="/static/translations.js"></script>
+        
         {/* Schema.org Structured Data - Restaurant (Multilingual) */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
           "@context": "https://schema.org",

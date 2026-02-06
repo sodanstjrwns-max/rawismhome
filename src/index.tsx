@@ -58,14 +58,21 @@ app.get('/', (c) => {
               class="h-8 md:h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
             />
           </a>
-          <div class="hidden lg:flex items-center gap-12">
-            <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Philosophy</a>
-            <a href="#menu" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Menu</a>
-            <a href="#recommend" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">추천</a>
-            <a href="#location" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Location</a>
-            <a href="#reserve" class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500">
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.philosophy">Philosophy</a>
+            <a href="#menu" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.menu">Menu</a>
+            <a href="#recommend" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.recommend">추천</a>
+            <a href="#location" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.location">Location</a>
+            <a href="#reserve" class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500" data-i18n="nav.reservation">
               Reservation
             </a>
+            {/* Language Selector */}
+            <div class="flex items-center gap-1 ml-4 border-l border-white/10 pl-4">
+              <button onclick="setLanguage('ko')" data-lang="ko" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-champagne border-b border-champagne" title="한국어">🇰🇷</button>
+              <button onclick="setLanguage('en')" data-lang="en" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-off-white/50 border-b border-transparent" title="English">🇺🇸</button>
+              <button onclick="setLanguage('ja')" data-lang="ja" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-off-white/50 border-b border-transparent" title="日本語">🇯🇵</button>
+              <button onclick="setLanguage('zh')" data-lang="zh" class="lang-btn text-[13px] px-2 py-1 rounded transition-all hover:bg-white/5 text-off-white/50 border-b border-transparent" title="中文">🇨🇳</button>
+            </div>
           </div>
           <button id="mobile-menu-btn" class="lg:hidden text-off-white/70 hover:text-off-white transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
@@ -76,12 +83,20 @@ app.get('/', (c) => {
         {/* Mobile Menu */}
         <div id="mobile-menu" class="hidden lg:hidden bg-deep-black/98 backdrop-blur-xl">
           <div class="px-8 py-8 flex flex-col gap-6">
-            <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Philosophy</a>
-            <a href="#menu" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Menu</a>
-            <a href="#recommend" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">추천</a>
-            <a href="#location" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Location</a>
+            <a href="#philosophy" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.philosophy">Philosophy</a>
+            <a href="#menu" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.menu">Menu</a>
+            <a href="#recommend" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.recommend">추천</a>
+            <a href="#location" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.location">Location</a>
             <div class="pt-4 border-t border-white/5">
-              <a href="#reserve" class="text-[11px] tracking-[0.25em] uppercase text-champagne">Reservation</a>
+              <a href="#reserve" class="text-[11px] tracking-[0.25em] uppercase text-champagne" data-i18n="nav.reservation">Reservation</a>
+            </div>
+            {/* Mobile Language Selector */}
+            <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+              <span class="text-[10px] text-off-white/30 uppercase tracking-wider">Language:</span>
+              <button onclick="setLanguage('ko')" data-lang="ko" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-champagne" title="한국어">🇰🇷</button>
+              <button onclick="setLanguage('en')" data-lang="en" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-off-white/50" title="English">🇺🇸</button>
+              <button onclick="setLanguage('ja')" data-lang="ja" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-off-white/50" title="日本語">🇯🇵</button>
+              <button onclick="setLanguage('zh')" data-lang="zh" class="lang-btn text-[15px] px-2 py-1 rounded transition-all text-off-white/50" title="中文">🇨🇳</button>
             </div>
           </div>
         </div>

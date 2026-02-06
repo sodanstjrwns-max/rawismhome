@@ -266,9 +266,12 @@ app.get('/', (c) => {
               {/* Content */}
               <div class="bg-deep-black p-10 lg:p-14 flex flex-col justify-center">
                 <div class="mb-6">
-                  <h3 class="font-playfair text-2xl md:text-3xl text-off-white mb-2">
-                    로위즘 뭉티기 시그니처
-                  </h3>
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-playfair text-2xl md:text-3xl text-off-white mb-2">
+                      로위즘 뭉티기 시그니처
+                    </h3>
+                    <span class="font-playfair text-2xl text-champagne">₩92,000</span>
+                  </div>
                   <p class="text-champagne/60 text-sm tracking-wide">
                     ROWISM의 철학을 담은 시그니처 메뉴
                   </p>
@@ -276,32 +279,33 @@ app.get('/', (c) => {
                 
                 <div class="space-y-4 mb-6">
                   <p class="text-off-white/50 text-sm font-light leading-relaxed">
+                    로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다. 
                     'ROWISM'이라는 이름은 'RAW(날것)'와 '-ISM(철학)'의 조합으로, 최상급 재료를 가장 순수한 방식으로 즐긴다는 브랜드 철학을 담고 있습니다.
                   </p>
-                  <p class="text-off-white/35 text-xs font-light leading-relaxed">
-                    뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 전통 요리입니다. 
-                    매일 엄선된 최상급 한우 뭉티기 200g을 아낌없이 사용합니다.
-                    이탈리아산 부라타 치즈가 통째로 올라가 크리미한 식감이 담백한 뭉티기와 만나 부드럽게 녹아내립니다. 
-                    블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더하고, 파르미지아노 레지아노가 눈꽃처럼 내려앉습니다.
-                  </p>
+                  <div class="border-l-2 border-champagne/20 pl-4 my-4">
+                    <p class="text-champagne/50 text-xs font-medium mb-2">뭉티기란?</p>
+                    <p class="text-off-white/35 text-xs font-light leading-relaxed">
+                      뭉티기는 한우를 얇게 저며 썬 후 별도의 양념 없이 그대로 즐기는 전통 요리입니다. 
+                      일반적인 육회가 참기름과 간장 등으로 양념되는 것과 달리, 뭉티기는 고기 본연의 맛과 식감을 오롯이 느낄 수 있습니다. 
+                      신선도가 생명인 만큼, ROWISM The Black에서는 매일 엄선된 최상급 한우 뭉티기 200g을 아낌없이 사용합니다.
+                    </p>
+                  </div>
+                  <div class="border-l-2 border-champagne/20 pl-4">
+                    <p class="text-champagne/50 text-xs font-medium mb-2">프리미엄 재료의 완벽한 조화</p>
+                    <p class="text-off-white/35 text-xs font-light leading-relaxed">
+                      로위즘 뭉티기 시그니처 위에는 이탈리아산 부라타 치즈가 통째로 올라갑니다. 
+                      부라타 특유의 크리미한 식감이 담백한 뭉티기와 만나 입 안에서 부드럽게 녹아내립니다. 
+                      여기에 블랙 트러플이 눈앞에서 슬라이스되어 깊은 향을 더하고, 파르미지아노 레지아노가 갓 갈려 눈꽃처럼 내려앉습니다. 
+                      플뢰르 드 셀과 후추가 각 재료의 풍미를 섬세하게 끌어올려, 한 접시 안에서 한우와 이탈리아 치즈, 프렌치 트러플의 완벽한 마리아주를 경험할 수 있습니다.
+                    </p>
+                  </div>
                 </div>
                 
-                <div class="border-t border-white/5 pt-5 mb-5">
+                <div class="border-t border-white/5 pt-5">
                   <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-2">Ingredients</p>
                   <p class="text-off-white/30 text-xs leading-relaxed">
                     한우 뭉티기 · 부라타 치즈 · 블랙 트러플 · 파르미지아노 레지아노 · 소금 · 후추
                   </p>
-                </div>
-                
-                <div class="flex items-end justify-between">
-                  <div>
-                    <p class="text-[10px] tracking-[0.2em] text-champagne/40 uppercase mb-1">Pairing</p>
-                    <p class="text-off-white/40 text-xs">빈티지 샴페인 · 블랑 드 블랑 · 프레스티지 퀴베</p>
-                  </div>
-                  <div class="text-right">
-                    <span class="font-playfair text-3xl text-champagne">92,000</span>
-                    <span class="text-champagne/40 text-sm ml-1">원</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -326,21 +330,21 @@ app.get('/', (c) => {
                   </h4>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase">한우 제비추리와 8종 제철 채소의 그릴 향연</p>
                 </div>
-                <span class="font-playfair text-xl text-champagne/70">49,000</span>
+                <span class="font-playfair text-xl text-champagne/70">₩49,000</span>
               </div>
-              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                제비추리는 소의 갈비와 양지 사이에서 나오는 희귀 부위로, 한 마리당 소량만 얻을 수 있어 '숨은 보석'으로 불립니다. 
-                미디엄 레어로 정확하게 구워져 겉은 카라멜라이징 되어 고소하고, 속은 육즙을 머금고 있습니다.
-                8종의 엄선된 채소가 함께합니다.
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">
+                부드러운 한우 제비추리와 엄선된 8종 채소를 그릴에 구워 고소함과 풍미를 극대화한 메뉴입니다. 
+                채소 본연의 단맛과 그릴의 스모키한 풍미가 어우러져, 스파클링과 함께 즐기기 완벽한 핫 디쉬입니다.
               </p>
-              <div class="space-y-2 text-xs">
+              <p class="text-off-white/30 text-xs font-light leading-relaxed mb-3">
+                제비추리는 소의 갈비와 양지 사이에서 나오는 희귀 부위로, 한 마리당 소량만 얻을 수 있어 '숨은 보석'으로 불립니다. 
+                부드러운 식감과 깊은 풍미가 특징이며, 지방과 살코기의 비율이 완벽해 그릴에 구웠을 때 육즙이 풍부하게 살아납니다.
+                모든 재료는 올리브오일로 그릴에 구워져 나오며, 제비추리는 미디엄 레어로 정확하게 구워져 겉은 카라멜라이징 되어 고소하고, 속은 촉촉하게 육즙을 머금고 있습니다.
+              </p>
+              <div class="text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">재료</span>
-                  한우 제비추리 · 파 · 방울양배추 · 아스파라거스 · 래디쉬 · 가지 · 미니당근 · 양송이버섯 · 브로콜리
-                </p>
-                <p class="text-off-white/25">
-                  <span class="text-champagne/30 mr-2">페어링</span>
-                  브뤼 로제 · 프로세코 · 크레망
+                  한우 제비추리 · 파 · 방울양배추 · 아스파라거스 · 래디쉬 · 가지 · 미니당근 · 양송이버섯 · 브로콜리 · 올리브오일 · 소금 · 후추 · 타임 · 파슬리
                 </p>
               </div>
             </div>
@@ -362,21 +366,23 @@ app.get('/', (c) => {
                   </h4>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase">소믈리에가 큐레이팅한 6종 치즈 컬렉션</p>
                 </div>
-                <span class="font-playfair text-xl text-champagne/70">36,000</span>
+                <span class="font-playfair text-xl text-champagne/70">₩36,000</span>
               </div>
-              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                부드러운 연성 치즈부터 숙성된 경성 치즈까지, 다양한 맛과 텍스처를 경험할 수 있도록 구성했습니다. 
-                스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리가 함께 제공됩니다. 
-                다피누아는 래핑 치즈로 스푼으로 떠서 크래커에 올려 드세요.
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">
+                샴페인바의 꽃이라 할 수 있는 치즈 셀렉션. 소믈리에가 직접 큐레이팅한 6종의 프리미엄 치즈를 한 플레이트에 담았습니다. 
+                부드러운 연성 치즈부터 숙성된 경성 치즈까지, 다양한 맛과 텍스처를 경험할 수 있도록 구성했습니다.
               </p>
-              <div class="space-y-2 text-xs">
+              <p class="text-off-white/30 text-xs font-light leading-relaxed mb-3">
+                브리 치즈는 '치즈의 왕'이라 불리는 프랑스 대표 연성 치즈로, 크리미하고 버터 같은 풍미가 특징입니다. 
+                8개월 숙성 콩테는 프랑스 경성 치즈의 정수로, 고소하고 견과류 같은 깊은 맛을 냅니다. 
+                에멘탈은 특유의 구멍과 달콤한 풍미가 매력적입니다. 콜비잭은 부드럽고 마일드한 미국식 치즈로, 처음 치즈를 접하시는 분들도 편하게 즐기실 수 있습니다. 
+                다피누아는 래핑 치즈로 제공되어 스푼으로 떠서 크래커에 올려 드시면 됩니다.
+                치즈와 함께 스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 신선한 블루베리가 제공됩니다.
+              </p>
+              <div class="text-xs">
                 <p class="text-off-white/25">
-                  <span class="text-champagne/30 mr-2">구성</span>
-                  브리 · 8개월 숙성 콩테 · 에멘탈 · 콜비잭 · 크림치즈 · 다피누아 · 하몽 · 살라미 · 올리브 · 블루베리
-                </p>
-                <p class="text-off-white/25">
-                  <span class="text-champagne/30 mr-2">페어링</span>
-                  샴페인 · 프로세코 · 크레망 달사스
+                  <span class="text-champagne/30 mr-2">재료</span>
+                  브리 · 콩테 · 에멘탈 · 콜비잭 · 크림치즈 · 다피누아 · 하몽 · 살라미 · 그린 올리브 · 블루베리 · 크래커 · 로즈마리 · 파슬리
                 </p>
               </div>
             </div>
@@ -398,20 +404,22 @@ app.get('/', (c) => {
                   </h4>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase">전통 육회에 더한 매콤한 불꽃</p>
                 </div>
-                <span class="font-playfair text-xl text-champagne/70">25,000</span>
+                <span class="font-playfair text-xl text-champagne/70">₩25,000</span>
               </div>
-              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-4">
-                직접 만드는 고추기름 소스가 핵심입니다. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합하여 
-                매콤하면서도 고소한 특제 소스를 완성합니다. 정중앙 노른자를 터뜨려 비벼 드시면 중독성 있는 맛을 경험하실 수 있습니다.
+              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">
+                전통적인 한우 육회에 자체 제작 고추기름 소스의 매콤한 킥을 더한 메뉴입니다. 
+                신선한 한우 육회 위에 직접 만든 고추기름 소스를 둘러, 기존 육회에서는 느낄 수 없었던 매콤하고 알싸한 풍미를 더했습니다.
               </p>
-              <div class="space-y-2 text-xs">
+              <p class="text-off-white/30 text-xs font-light leading-relaxed mb-3">
+                고추기름 소스는 ROWISM The Black에서 직접 만듭니다. 굵은 고춧가루와 파로 향을 낸 고추기름에 참기름, 연두, 설탕, 깨를 배합하여 매콤하면서도 고소한 특제 소스를 완성합니다.
+                육회는 신선도가 가장 중요한 요리입니다. 매일 신선한 한우만을 엄선하여 사용하며, 주문 즉시 썰어 제공합니다. 
+                육회 위에는 다진 마늘과 청양고추가 올라가 알싸한 풍미를 더하고, 정중앙에 신선한 노른자가 자리합니다. 
+                노른자를 터뜨려 전체를 비벼 드시면 노른자의 고소함, 고추기름 소스의 매콤함, 한우의 담백함이 한데 어우러져 중독성 있는 맛을 만들어냅니다.
+              </p>
+              <div class="text-xs">
                 <p class="text-off-white/25">
                   <span class="text-champagne/30 mr-2">재료</span>
                   한우 육회 · 고추기름 소스(자체 제작) · 청양고추 · 다진 마늘 · 노른자 · 실고추
-                </p>
-                <p class="text-off-white/25">
-                  <span class="text-champagne/30 mr-2">페어링</span>
-                  블랑 드 블랑 · 브뤼 로제 · 소주
                 </p>
               </div>
             </div>
@@ -745,7 +753,104 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Section 10: FAQ - Expanded for SEO */}
+      {/* Section 10: Customer Reviews */}
+      <section id="reviews" class="py-32 md:py-40 bg-soft-black">
+        <div class="max-w-6xl mx-auto px-8 md:px-12">
+          <div class="text-center mb-20 animate-on-scroll">
+            <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Reviews</p>
+            <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide">
+              고객 후기
+            </h2>
+            <p class="text-off-white/40 text-sm font-light mt-4">
+              ROWISM The Black을 경험하신 분들의 이야기
+            </p>
+            <div class="flex items-center justify-center gap-2 mt-6">
+              <div class="flex text-champagne">
+                {'★★★★★'.split('').map((star, i) => (
+                  <span key={i} class="text-xl">{star}</span>
+                ))}
+              </div>
+              <span class="text-2xl font-playfair text-champagne">4.9</span>
+              <span class="text-off-white/40 text-sm">(127개의 리뷰)</span>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                name: "김지현",
+                date: "2025.01.15",
+                rating: 5,
+                badge: "100일 기념",
+                review: "남자친구와 100일 기념으로 방문했어요. 뭉티기가 정말 입에서 녹더라고요! 당일 도축이라 그런지 식감이 완전 달랐어요. 샴페인도 추천해주셔서 페어링이 완벽했습니다. 조명도 은은하고 분위기 최고예요 💕"
+              },
+              {
+                name: "박준영", 
+                date: "2025.01.10",
+                rating: 5,
+                badge: "데이트",
+                review: "홍대 근처 데이트 코스 찾다가 발견했는데 대박이에요. 8테이블이라 프라이빗하고, 뭉티기 위에 트러플 갈아주는 거 너무 멋있었어요. 여자친구가 완전 좋아했습니다!"
+              },
+              {
+                name: "이소연",
+                date: "2025.01.05", 
+                rating: 5,
+                badge: "재방문",
+                review: "연남동 맛집 많이 다녀봤는데 여긴 진짜 다릅니다. 뭉티기가 뭔지 처음 알았는데, 육회랑 완전 다른 식감이에요. 부라타 치즈랑 같이 먹으면 미쳐요 🧀"
+              },
+              {
+                name: "최민수",
+                date: "2024.12.28",
+                rating: 5,
+                badge: "생일",
+                review: "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 제비추리 스테이크도 미디엄 레어로 완벽하게!"
+              },
+              {
+                name: "정하윤",
+                date: "2024.12.20",
+                rating: 5,
+                badge: "연트럴파크",
+                review: "연트럴파크 산책하고 저녁 먹을 곳 찾다가 왔어요. 분위기가 정말 좋고, 음악도 대화하기 딱 좋은 볼륨이에요. 청양 오일 육회 매콤한 거 좋아하시면 꼭 드셔보세요 🔥"
+              },
+              {
+                name: "강태우",
+                date: "2024.12.15",
+                rating: 5,
+                badge: "1주년",
+                review: "결혼 1주년 기념으로 방문. 덴마크 루이스폴센 조명이라니, 디테일에 감탄했습니다. 뭉티기 + 샴페인 조합 인생 최고의 페어링이에요. 내년에도 꼭 올게요!"
+              }
+            ].map((item, i) => (
+              <div key={i} class="bg-deep-black/50 border border-white/5 p-6 rounded-sm animate-on-scroll hover:border-champagne/20 transition-all duration-500" style={`animation-delay: ${i * 0.1}s`}>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-champagne/20 flex items-center justify-center text-champagne font-medium">
+                      {item.name.charAt(0)}
+                    </div>
+                    <div>
+                      <p class="text-off-white font-medium text-sm">{item.name}</p>
+                      <p class="text-off-white/30 text-xs">{item.date}</p>
+                    </div>
+                  </div>
+                  <span class="text-[10px] px-2 py-1 bg-champagne/10 text-champagne rounded-sm">{item.badge}</span>
+                </div>
+                <div class="flex text-champagne text-sm mb-3">
+                  {'★'.repeat(item.rating)}
+                </div>
+                <p class="text-off-white/70 text-sm leading-relaxed">{item.review}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div class="text-center mt-12 animate-on-scroll">
+            <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-2 text-champagne/70 hover:text-champagne text-sm transition-colors">
+              더 많은 후기 보기 →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 11: FAQ - Expanded for SEO */}
       <section id="faq" class="py-32 md:py-40 bg-deep-black">
         <div class="max-w-3xl mx-auto px-8 md:px-12">
           <div class="text-center mb-20 animate-on-scroll">

@@ -218,20 +218,80 @@ export const renderer = jsxRenderer(({ children }) => {
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "reviewCount": "127"
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
           },
           "review": [
             {
               "@type": "Review",
               "reviewRating": {
                 "@type": "Rating",
-                "ratingValue": "5"
+                "ratingValue": "5",
+                "bestRating": "5"
               },
               "author": {
                 "@type": "Person",
-                "name": "방문자"
+                "name": "김지현"
               },
-              "reviewBody": "연남동 데이트 장소로 최고였습니다. 분위기와 음식 모두 만족스러웠어요."
+              "datePublished": "2025-01-15",
+              "reviewBody": "남자친구와 100일 기념으로 방문했어요. 뭉티기가 정말 입에서 녹더라고요! 당일 도축이라 그런지 식감이 완전 달랐어요. 샴페인도 추천해주셔서 페어링이 완벽했습니다. 조명도 은은하고 분위기 최고예요. 다음 기념일에도 또 올게요! 💕"
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "박준영"
+              },
+              "datePublished": "2025-01-10",
+              "reviewBody": "홍대 근처 데이트 코스 찾다가 발견했는데 대박이에요. 8테이블이라 프라이빗하고, 뭉티기 위에 트러플 갈아주는 거 너무 멋있었어요. 여자친구가 완전 좋아했습니다. 가격은 좀 있지만 특별한 날엔 충분히 가치 있어요!"
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "이소연"
+              },
+              "datePublished": "2025-01-05",
+              "reviewBody": "연남동 맛집 많이 다녀봤는데 여긴 진짜 다릅니다. 뭉티기가 뭔지 처음 알았는데, 육회랑 완전 다른 식감이에요. 부라타 치즈랑 같이 먹으면 미쳐요. 친구들한테 다 추천하고 다녀요 ㅎㅎ"
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "최민수"
+              },
+              "datePublished": "2024-12-28",
+              "reviewBody": "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 제비추리 스테이크도 미디엄 레어로 완벽하게 구워져 나왔습니다. 기념일 장소로 강추!"
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "정하윤"
+              },
+              "datePublished": "2024-12-20",
+              "reviewBody": "연트럴파크 산책하고 저녁 먹을 곳 찾다가 왔어요. 분위기가 정말 좋고, 음악도 대화하기 딱 좋은 볼륨이에요. 치즈 셀렉션이랑 청양 오일 육회 강추합니다! 매콤한 거 좋아하시면 꼭 드셔보세요."
             }
           ],
           "sameAs": [

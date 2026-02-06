@@ -142,7 +142,8 @@ const translations = {
         { icon: "👨‍👩‍👧", title: "소중한 사람과 함께", desc: "부모님, 친구, 소중한 지인과의 식사", detail: "특별한 날, 소중한 사람과 함께하는 프라이빗한 저녁. 편안하면서도 품격 있는 분위기에서 대화를 나눠보세요." },
         { icon: "🌙", title: "혼자만의 시간", desc: "나를 위한 특별한 저녁", detail: "바 테이블에서 즐기는 조용한 저녁. 좋은 음악과 함께 혼자만의 시간을 보내기에 완벽한 공간입니다." },
         { icon: "🎄", title: "시즌 이벤트", desc: "크리스마스, 발렌타인, 화이트데이", detail: "특별한 시즌엔 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이를 분위기 있는 공간에서. 연트럴파크 야경과 함께." },
-        { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 저녁", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요." }
+        { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 저녁", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요." },
+        { icon: "🌏", title: "한국 미식 체험", desc: "진짜 한국 먹거리 문화를 느끼고 싶은 외국인", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 미식. 신선한 한우 뭉티기와 샴페인의 특별한 페어링을 경험해보세요. English menu available." }
       ]
     },
     // Occasions Section
@@ -380,7 +381,8 @@ const translations = {
         { icon: "👨‍👩‍👧", title: "With Loved Ones", desc: "Dining with parents, friends, or dear ones", detail: "A private evening with your precious people on special days. Enjoy conversations in a comfortable yet refined atmosphere." },
         { icon: "🌙", title: "Solo Dining", desc: "A special evening just for yourself", detail: "A quiet evening at the bar table. Perfect space for some me-time with great music." },
         { icon: "🎄", title: "Seasonal Events", desc: "Christmas, Valentine's, White Day", detail: "Make special seasons even more special. Christmas dinner, Valentine's Day, White Day in an atmospheric space with Yeontral Park night views." },
-        { icon: "🌿", title: "After Yeontral Park", desc: "Dinner after a walk along Gyeongui Line Forest", detail: "The perfect dinner after walking Yeontral Park or Gyeongui Line Forest. Just 2-3 minutes walk for an atmospheric dining experience." }
+        { icon: "🌿", title: "After Yeontral Park", desc: "Dinner after a walk along Gyeongui Line Forest", detail: "The perfect dinner after walking Yeontral Park or Gyeongui Line Forest. Just 2-3 minutes walk for an atmospheric dining experience." },
+        { icon: "🌏", title: "Authentic Korean Experience", desc: "Foreigners seeking real Korean food culture", detail: "Not tourist food, but authentic Korean cuisine loved by locals. Experience the special pairing of fresh Hanwoo beef tartare and champagne. A hidden gem in Seoul's trendy Yeonnam-dong neighborhood." }
       ]
     },
     // Occasions Section
@@ -618,7 +620,8 @@ const translations = {
         { icon: "👨‍👩‍👧", title: "大切な人と一緒に", desc: "両親、友人、大切な知人との食事", detail: "特別な日、大切な人と過ごすプライベートな夜。快適でありながら品格ある雰囲気で会話を楽しんでください。" },
         { icon: "🌙", title: "一人の時間", desc: "自分へのご褒美ディナー", detail: "バーテーブルで楽しむ静かな夜。良い音楽と共に一人の時間を過ごすのに完璧な空間です。" },
         { icon: "🎄", title: "シーズンイベント", desc: "クリスマス、バレンタイン、ホワイトデー", detail: "特別なシーズンはもっと特別に。クリスマスディナー、バレンタインデー、ホワイトデーを雰囲気ある空間で。ヨントラルパークの夜景と共に。" },
-        { icon: "🌿", title: "ヨントラルパーク散歩後", desc: "京義線森の道散歩後の特別なディナー", detail: "ヨントラルパーク、京義線森の道散歩後の完璧なディナー。徒歩2-3分の距離で雰囲気あるディナーをお楽しみください。" }
+        { icon: "🌿", title: "ヨントラルパーク散歩後", desc: "京義線森の道散歩後の特別なディナー", detail: "ヨントラルパーク、京義線森の道散歩後の完璧なディナー。徒歩2-3分の距離で雰囲気あるディナーをお楽しみください。" },
+        { icon: "🌏", title: "本場の韓国料理体験", desc: "韓国の本当の食文化を体験したい外国人の方へ", detail: "観光客向けの料理ではなく、地元の人々が愛する本格的な韓国料理。新鮮な韓牛ムンティギとシャンパンの特別なペアリングを体験してください。ソウルのトレンディな延南洞の隠れた名店です。" }
       ]
     },
     // Occasions Section
@@ -856,7 +859,8 @@ const translations = {
         { icon: "👨‍👩‍👧", title: "与重要的人一起", desc: "与父母、朋友、珍贵的人用餐", detail: "特别的日子，与珍贵的人共度私密的夜晚。在舒适而有格调的氛围中畅谈。" },
         { icon: "🌙", title: "独处时光", desc: "犒赏自己的特别晚餐", detail: "在吧台享用安静的夜晚。配着好音乐度过独处时光的完美空间。" },
         { icon: "🎄", title: "季节活动", desc: "圣诞节、情人节、白色情人节", detail: "特别的季节更要特别。在氛围十足的空间度过圣诞晚餐、情人节、白色情人节。配着延特拉尔公园的夜景。" },
-        { icon: "🌿", title: "延特拉尔公园散步后", desc: "京义线林荫道散步后的特别晚餐", detail: "延特拉尔公园、京义线林荫道散步后的完美晚餐。步行2-3分钟即可享用氛围十足的晚餐。" }
+        { icon: "🌿", title: "延特拉尔公园散步后", desc: "京义线林荫道散步后的特别晚餐", detail: "延特拉尔公园、京义线林荫道散步后的完美晚餐。步行2-3分钟即可享用氛围十足的晚餐。" },
+        { icon: "🌏", title: "正宗韩国美食体验", desc: "想体验韩国真正饮食文化的外国人", detail: "不是游客餐厅，而是当地人喜爱的正宗韩国料理。体验新鲜韩牛生拌与香槟的特别搭配。首尔潮流区延南洞的隐藏名店。" }
       ]
     },
     // Occasions Section

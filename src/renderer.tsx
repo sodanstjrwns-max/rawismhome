@@ -1405,20 +1405,16 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             gtag('config', 'G-2HHM531MGQ');
           `}} />
           
-          {/* Amplitude Analytics */}
+          {/* Amplitude Analytics - Official Snippet */}
+          <script src="https://cdn.amplitude.com/script/87529341cb075dcdbefabce3994958aa.js"></script>
           <script dangerouslySetInnerHTML={{__html: `
-            !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(arguments,0),resolve:n,instanceName:r})}},o=function(e,t){e.prototype[t]=function(){return new Promise(s(this,t,this._i))}},i=function(e,t){e._q.push({name:t,args:Array.prototype.slice.call(arguments,1)})};r.invoked=!0;var a=t.createElement("script");a.type="text/javascript",a.integrity="sha384-XNX0UxJrAbcpjYOJkEv4ZJ9X1bnGLFXGU8yE/j+PZiwYfGHaHB6VKovoqPMrHwCb",a.crossOrigin="anonymous",a.async=!0,a.src="https://cdn.amplitude.com/libs/analytics-browser-2.11.11-min.js.gz",a.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c);for(var l=function(){return this._q=[],this},u=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],p=0;p<u.length;p++)n(l,u[p]);r.Identify=l;for(var d=function(){return this._q=[],this},f=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],g=0;g<f.length;g++)n(d,f[g]);r.Revenue=d;var v=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];function y(e){function t(t,r){e[t]=function(){var n={promise:new Promise((r=>{e._q.push({name:t,args:Array.prototype.slice.call(arguments,0),resolve:r})}))};if(r)return n}}for(var r=0;r<v.length;r++)t(v[r],!1);for(var n=0;n<m.length;n++)t(m[n],!0)}y(r),r.createInstance=function(e){return r._iq[e]={_q:[]},y(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+            window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+            window.amplitude.init('87529341cb075dcdbefabce3994958aa', {"fetchRemoteConfig":true,"autocapture":true});
           `}} />
         </head>
         <body class="bg-deep-black text-off-white font-pretendard">
           {children}
           <script src="/static/app.js"></script>
-          
-          {/* Amplitude Init */}
-          <script dangerouslySetInnerHTML={{__html: `
-            // Amplitude will be initialized when API key is provided
-            // amplitude.init('YOUR_AMPLITUDE_API_KEY');
-          `}} />
         </body>
       </html>
     )

@@ -5,7 +5,10 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
-    build(),
+    build({
+      // Custom routes - include naver verification in worker routing
+      outputDir: './dist',
+    }),
     devServer({
       adapter,
       entry: 'src/index.tsx'

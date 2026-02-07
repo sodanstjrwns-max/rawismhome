@@ -97,7 +97,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta name="classification" content="Restaurant, Champagne Bar, Wine Bar, Fine Dining" />
           
           {/* Naver Specific Meta Tags */}
-          <meta name="naver-site-verification" content="verify-code-here" />
+          <meta name="naver-site-verification" content="2d5260929ab847d76c151f135aa20621f6f746a0" />
           <meta property="naverbot" content="index, follow" />
           
           {/* Open Graph - Dynamic based on language */}

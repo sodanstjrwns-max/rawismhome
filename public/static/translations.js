@@ -265,7 +265,7 @@ const translations = {
     nav: {
       philosophy: "Philosophy",
       menu: "Menu",
-      recommend: "For You",
+      recommend: "Recommendation",
       location: "Location",
       reservation: "Reservation"
     },
@@ -1517,8 +1517,21 @@ function reinitScrollAnimations() {
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
   console.log('[ROWISM] DOMContentLoaded fired');
-  initLanguage();
+  
+  // Initialize language from URL
+  const lang = initLanguage();
+  console.log('[ROWISM] Language initialized:', lang);
+  console.log('[ROWISM] hero.subtitle in current lang:', t('hero.subtitle'));
+  
+  // Update page content with translations
+  console.log('[ROWISM] Calling updatePageContent...');
   updatePageContent();
+  console.log('[ROWISM] updatePageContent completed');
+  
+  // Check if update worked
+  const heroEl = document.querySelector('[data-i18n="hero.subtitle"]');
+  console.log('[ROWISM] hero.subtitle element text after update:', heroEl ? heroEl.textContent : 'NOT FOUND');
+  
   renderDynamicSections();
   initFAQToggle();
   

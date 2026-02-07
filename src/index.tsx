@@ -1226,4 +1226,32 @@ app.get('/zh/about', (c) => {
   return c.render(<AboutPage lang="zh" />)
 })
 
+// ============================================
+// Search Engine Verification Files
+// ============================================
+
+// Yandex verification (러시아 검색엔진)
+// 등록 시 Yandex에서 제공하는 코드로 교체 필요
+app.get('/yandex_*.html', (c) => {
+  // Yandex 인증 파일 - 실제 코드는 Yandex Webmaster에서 확인
+  const verificationCode = c.req.path.replace('/yandex_', '').replace('.html', '')
+  return c.html(`<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Verification: ${verificationCode}</body></html>`)
+})
+
+// Baidu verification (중국 검색엔진)
+// 등록 시 Baidu에서 제공하는 코드로 교체 필요
+app.get('/baidu_verify_*.html', (c) => {
+  // Baidu 인증 파일 - 실제 코드는 Baidu Webmaster에서 확인
+  const verificationCode = c.req.path.replace('/baidu_verify_', '').replace('.html', '')
+  return c.html(`${verificationCode}`)
+})
+
+// Bing verification (이미 Google에서 import 가능하지만 백업용)
+app.get('/BingSiteAuth.xml', (c) => {
+  // Bing 인증 - 실제 코드는 Bing Webmaster에서 확인
+  return c.text(`<?xml version="1.0"?><users><user>YOUR_BING_VERIFICATION_CODE</user></users>`, 200, {
+    'Content-Type': 'application/xml'
+  })
+})
+
 export default app

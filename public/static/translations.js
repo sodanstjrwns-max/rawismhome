@@ -144,8 +144,8 @@ const translations = {
         { icon: "🎄", title: "시즌 이벤트", desc: "크리스마스, 발렌타인, 화이트데이", detail: "특별한 시즌엔 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이를 분위기 있는 공간에서. 연트럴파크 야경과 함께." },
         { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 저녁", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요." },
         { icon: "📸", title: "SNS 감성", desc: "인스타그래머블한 맛집을 찾는 분", detail: "플레이팅부터 공간까지 모든 것이 감각적. 뭉티기 위에 트러플 슬라이스하는 순간, 인생샷 각입니다. 연남동 인스타 맛집." },
-        { icon: "🌏", title: "Korean Food Adventure", desc: "For tourists seeking authentic Korean cuisine", detail: "Not tourist food, but real local favorites. Experience fresh Korean beef tartare (Mungchigi) paired with champagne. English menu available. Near Hongdae & Yeonnam-dong." },
-        { icon: "🇯🇵", title: "日本からのお客様へ", desc: "本場の韓牛ユッケを体験したい日本人の方", detail: "観光地の料理ではない、地元の人が愛する本当の韓国料理。新鮮な韓牛ムンチギとシャンパンの特別なペアリングを体験してください。日本語メニューあり。弘大・延南洞エリア。" }
+        { icon: "🌏", title: "외국인 관광객", desc: "진짜 한국 음식을 찾는 외국인 친구와 함께", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 미식. 신선한 한우 뭉티기와 샴페인의 특별한 페어링. 영어 메뉴 제공. 홍대·연남동." },
+        { icon: "🇯🇵", title: "일본인 관광객", desc: "본격 한우 체험을 원하는 일본인 친구와 함께", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 요리. 신선한 한우 뭉티기와 샴페인의 특별한 페어링. 일본어 메뉴 제공. 弘大·延南洞エリア." }
       ]
     },
     // Occasions Section

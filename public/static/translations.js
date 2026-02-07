@@ -247,7 +247,12 @@ const translations = {
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
-    mobileCta: "예약하기"
+    mobileCta: "예약하기",
+    // Floating buttons
+    floating: {
+      naver: "네이버 예약",
+      instagram: "Instagram"
+    }
   },
 
   en: {
@@ -497,7 +502,12 @@ const translations = {
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
-    mobileCta: "Reserve"
+    mobileCta: "Reserve",
+    // Floating buttons
+    floating: {
+      naver: "Naver Book",
+      instagram: "Instagram"
+    }
   },
 
   ja: {
@@ -747,7 +757,12 @@ const translations = {
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
-    mobileCta: "予約する"
+    mobileCta: "予約する",
+    // Floating buttons
+    floating: {
+      naver: "Naver予約",
+      instagram: "Instagram"
+    }
   },
 
   zh: {
@@ -997,7 +1012,12 @@ const translations = {
       copyright: "© 2024 ROWISM The Black"
     },
     // Mobile CTA
-    mobileCta: "立即预约"
+    mobileCta: "立即预约",
+    // Floating buttons
+    floating: {
+      naver: "Naver预约",
+      instagram: "Instagram"
+    }
   }
 };
 

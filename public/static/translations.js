@@ -62,10 +62,10 @@ const translations = {
       title: "특별한 여정",
       subtitle: "ROWISM The Black에서 경험하실 특별한 여정",
       items: [
-        { time: "Arrival", title: "🥂 웰컴 스파클링", desc: "입장과 동시에 시작되는 특별한 환대. 엄선된 스파클링 와인 한 잔으로 저녁을 시작합니다." },
-        { time: "Ambience", title: "💡 무드 라이팅", desc: "덴마크 루이스폴센 조명이 만드는 은은한 빛. 8개 테이블 한정으로 여유로운 간격을 유지합니다." },
-        { time: "Sound", title: "🎵 큐레이팅 뮤직", desc: "스위스 제네바 스피커를 통해 재즈, 보사노바, 어쿠스틱 등 대화에 어울리는 볼륨의 음악." },
-        { time: "Finale", title: "🍫 고디바 피니시", desc: "달콤한 고디바 초콜릿으로 완벽한 여운을 남기며 마무리합니다." }
+        { time: "01 — Arrival", title: "✨ 웰컴 스파클링", desc: "문을 여는 순간, 특별한 저녁이 시작됩니다. 소믈리에가 직접 따라드리는 웰컴 스파클링 한 잔. 오늘 밤의 서막을 여는 첫 번째 건배." },
+        { time: "02 — Ambience", title: "🕯️ 루이스폴센의 빛", desc: "덴마크 왕실이 사랑한 루이스폴센 조명이 테이블마다 은은하게 내려앉습니다. 단 8개의 테이블, 충분한 간격. 오롯이 두 사람만을 위한 공간." },
+        { time: "03 — Sound", title: "🎹 제네바의 선율", desc: "스위스 제네바 스피커가 전하는 큐레이팅된 재즈와 보사노바. 대화를 방해하지 않으면서도 공간을 채우는, 계산된 볼륨의 음악." },
+        { time: "04 — Finale", title: "🍫 스위트 피니시", desc: "마지막 순간까지 완벽하게. 고디바 다크 초콜릿과 함께 에스프레소 한 잔. 달콤한 여운을 남기며 특별한 밤의 마침표를 찍습니다." }
       ]
     },
     // Menu Section
@@ -144,8 +144,8 @@ const translations = {
         { icon: "🎄", title: "시즌 이벤트", desc: "크리스마스, 발렌타인, 화이트데이", detail: "특별한 시즌엔 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이를 분위기 있는 공간에서. 연트럴파크 야경과 함께." },
         { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 저녁", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요." },
         { icon: "📸", title: "SNS 감성", desc: "인스타그래머블한 맛집을 찾는 분", detail: "플레이팅부터 공간까지 모든 것이 감각적. 뭉티기 위에 트러플 슬라이스하는 순간, 인생샷 각입니다. 연남동 인스타 맛집." },
-        { icon: "🌏", title: "외국인 관광객", desc: "진짜 한국 음식을 찾는 외국인 친구와 함께", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 미식. 신선한 한우 뭉티기와 샴페인의 특별한 페어링. 영어 메뉴 제공. 홍대·연남동." },
-        { icon: "🇯🇵", title: "일본인 관광객", desc: "본격 한우 체험을 원하는 일본인 친구와 함께", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 요리. 신선한 한우 뭉티기와 샴페인의 특별한 페어링. 일본어 메뉴 제공. 弘大·延南洞エリア." }
+        { icon: "🌏", title: "본격 한국 미식 체험", desc: "관광지 음식 말고 진짜를 원하는 분", detail: "한국에 왔으니 진짜 한국 음식을 먹고 싶다면. 현지인이 사랑하는 당일 도축 한우 뭉티기와 샴페인의 특별한 페어링. 영어·일본어·중국어 메뉴 제공." },
+        { icon: "🤝", title: "외국인 친구와 함께", desc: "한국의 진짜 맛을 보여주고 싶은 분", detail: "외국인 친구에게 한국의 진짜 미식을 소개하고 싶다면. 뭉티기가 뭔지 설명하면서 함께 먹는 특별한 경험. 다국어 메뉴로 편하게 주문 가능." }
       ]
     },
     // Occasions Section
@@ -303,10 +303,10 @@ const translations = {
       title: "Your Journey",
       subtitle: "A special journey awaits at ROWISM The Black",
       items: [
-        { time: "Arrival", title: "🥂 Welcome Sparkling", desc: "Your special evening begins the moment you arrive with a carefully selected glass of sparkling wine." },
-        { time: "Ambience", title: "💡 Mood Lighting", desc: "Soft illumination from Danish Louis Poulsen lights. Only 8 tables ensure comfortable spacing." },
-        { time: "Sound", title: "🎵 Curated Music", desc: "Jazz, bossa nova, and acoustic tunes through Swiss Geneva speakers at the perfect volume for conversation." },
-        { time: "Finale", title: "🍫 Godiva Finish", desc: "End your evening perfectly with sweet Godiva chocolates." }
+        { time: "01 — Arrival", title: "✨ Welcome Sparkling", desc: "The moment you step through the door, your special evening begins. Our sommelier personally pours your welcome sparkling. The first toast to open tonight's chapter." },
+        { time: "02 — Ambience", title: "🕯️ Louis Poulsen Glow", desc: "Beloved by Danish royalty, Louis Poulsen lighting casts a gentle glow over each table. Just 8 tables, generous spacing. A space crafted exclusively for two." },
+        { time: "03 — Sound", title: "🎹 Geneva's Melody", desc: "Curated jazz and bossa nova flow through Swiss Geneva speakers. Music that fills the space without interrupting conversation—volume calculated to perfection." },
+        { time: "04 — Finale", title: "🍫 Sweet Finish", desc: "Perfect until the very last moment. Godiva dark chocolate paired with a shot of espresso. A sweet aftertaste to punctuate your special night." }
       ]
     },
     // Menu Section
@@ -544,10 +544,10 @@ const translations = {
       title: "特別な旅",
       subtitle: "ROWISM The Blackでの特別な旅",
       items: [
-        { time: "Arrival", title: "🥂 ウェルカムスパークリング", desc: "入店と同時に始まる特別なおもてなし。厳選されたスパークリングワインで夜が始まります。" },
-        { time: "Ambience", title: "💡 ムードライティング", desc: "デンマークのルイスポールセン照明が作る穏やかな光。8テーブル限定でゆったりとした間隔を保ちます。" },
-        { time: "Sound", title: "🎵 キュレーティングミュージック", desc: "スイス・ジュネーブスピーカーを通じてジャズ、ボサノバ、アコースティックなど会話に適した音量の音楽。" },
-        { time: "Finale", title: "🍫 ゴディバフィニッシュ", desc: "甘いゴディバチョコレートで完璧な余韻を残しながら締めくくります。" }
+        { time: "01 — Arrival", title: "✨ ウェルカムスパークリング", desc: "扉を開けた瞬間、特別な夜が始まります。ソムリエが直接注ぐウェルカムスパークリング。今宵の幕開けを告げる最初の乾杯。" },
+        { time: "02 — Ambience", title: "🕯️ ルイスポールセンの光", desc: "デンマーク王室が愛したルイスポールセン照明が、各テーブルに穏やかに降り注ぎます。わずか8卓、十分な間隔。お二人だけのための空間。" },
+        { time: "03 — Sound", title: "🎹 ジュネーブの旋律", desc: "スイス・ジュネーブスピーカーが奏でるキュレーションされたジャズとボサノバ。会話を邪魔せず空間を満たす、計算されたボリュームの音楽。" },
+        { time: "04 — Finale", title: "🍫 スイートフィニッシュ", desc: "最後の瞬間まで完璧に。ゴディバダークチョコレートとエスプレッソを一緒に。甘い余韻を残し、特別な夜のピリオドを打ちます。" }
       ]
     },
     // Menu Section
@@ -785,10 +785,10 @@ const translations = {
       title: "特别旅程",
       subtitle: "在ROWISM The Black等待您的特别旅程",
       items: [
-        { time: "Arrival", title: "🥂 欢迎起泡酒", desc: "踏入店门即刻开始的特别招待。以精选起泡酒开启您的夜晚。" },
-        { time: "Ambience", title: "💡 氛围灯光", desc: "丹麦Louis Poulsen灯具营造的柔和光线。仅8桌限定，保持舒适的间距。" },
-        { time: "Sound", title: "🎵 精选音乐", desc: "通过瑞士Geneva音箱播放的爵士、波萨诺瓦、原声音乐，音量恰好适合交谈。" },
-        { time: "Finale", title: "🍫 歌帝梵收尾", desc: "以甜蜜的歌帝梵巧克力完美收尾，留下美好余韵。" }
+        { time: "01 — Arrival", title: "✨ 欢迎起泡酒", desc: "推开门的那一刻，特别的夜晚便开始了。侍酒师亲自为您斟上欢迎起泡酒。开启今晚篇章的第一杯祝酒。" },
+        { time: "02 — Ambience", title: "🕯️ 路易斯·保尔森之光", desc: "深受丹麦王室喜爱的Louis Poulsen灯具，在每张餐桌上投下柔和的光芒。仅8张桌子，充足的间距。专属于二人的空间。" },
+        { time: "03 — Sound", title: "🎹 日内瓦的旋律", desc: "瑞士Geneva音箱传递精心策划的爵士与波萨诺瓦。不打扰对话却能填满空间的音乐——音量恰到好处。" },
+        { time: "04 — Finale", title: "🍫 甜蜜收尾", desc: "直到最后一刻都要完美。歌帝梵黑巧克力配上一杯意式浓缩。留下甜蜜余韵，为特别的夜晚画上句点。" }
       ]
     },
     // Menu Section

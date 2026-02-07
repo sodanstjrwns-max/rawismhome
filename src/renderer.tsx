@@ -96,7 +96,8 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta name="zipcode" content="04030" />
           <meta name="classification" content="Restaurant, Champagne Bar, Wine Bar, Fine Dining" />
           
-          {/* Naver Specific Meta Tags */}
+          {/* Search Engine Verification */}
+          <meta name="google-site-verification" content="Fcp9aOc2Lj9R0J0HQYtpA35CGY_Dy_ldmW6SphznQ9s" />
           <meta name="naver-site-verification" content="2d5260929ab847d76c151f135aa20621f6f746a0" />
           <meta property="naverbot" content="index, follow" />
           

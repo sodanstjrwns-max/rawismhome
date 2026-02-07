@@ -1424,24 +1424,25 @@ function renderFooterSection() {
 }
 
 // Initialize FAQ toggle functionality with mobile support
-// FAQ Toggle - Use event delegation for dynamically rendered content
+// FAQ Toggle - Use event delegation on document level for dynamically rendered content
+let faqListenerAttached = false;
+
 function initFAQToggle() {
-  console.log('[ROWISM] initFAQToggle called');
+  console.log('[ROWISM] initFAQToggle called, listener attached:', faqListenerAttached);
   
-  const faqContainer = document.getElementById('faq-items-container');
-  if (!faqContainer) {
-    console.log('[ROWISM] FAQ container not found');
+  // Only attach the listener once at document level
+  if (faqListenerAttached) {
+    console.log('[ROWISM] FAQ listener already attached, skipping');
     return;
   }
   
-  // Remove any existing listeners by cloning
-  const newContainer = faqContainer.cloneNode(true);
-  faqContainer.parentNode.replaceChild(newContainer, faqContainer);
-  
-  // Use event delegation on the container
-  newContainer.addEventListener('click', function(e) {
+  // Use event delegation at document level - this works for any dynamically rendered FAQ
+  document.addEventListener('click', function(e) {
     const button = e.target.closest('.faq-question');
     if (!button) return;
+    
+    e.preventDefault();
+    e.stopPropagation();
     
     console.log('[ROWISM] FAQ button clicked');
     
@@ -1455,10 +1456,10 @@ function initFAQToggle() {
     }
     
     const isOpen = faqItem.classList.contains('active');
-    console.log('[ROWISM] Current state - isOpen:', isOpen);
+    console.log('[ROWISM] Current state - isOpen:', isOpen, 'scrollHeight:', answer.scrollHeight);
     
     // Close all other FAQ items
-    newContainer.querySelectorAll('.faq-item').forEach(item => {
+    document.querySelectorAll('.faq-item').forEach(item => {
       if (item !== faqItem) {
         item.classList.remove('active');
         const ans = item.querySelector('.faq-answer');
@@ -1480,9 +1481,11 @@ function initFAQToggle() {
       faqItem.classList.add('active');
       answer.style.maxHeight = answer.scrollHeight + 'px';
       if (icon) icon.style.transform = 'rotate(45deg)';
-      console.log('[ROWISM] Opened FAQ item, scrollHeight:', answer.scrollHeight);
+      console.log('[ROWISM] Opened FAQ item, maxHeight set to:', answer.scrollHeight + 'px');
     }
   });
+  
+  faqListenerAttached = true;
   
   console.log('[ROWISM] FAQ toggle initialized with event delegation');
 }

@@ -216,7 +216,16 @@ const translations = {
       title: "특별한 밤을 예약하세요",
       subtitle: "8석 한정 예약제 프라이빗 다이닝",
       notice: "금요일·토요일·기념일은 최소 3일 전 예약을 권장드립니다",
-      cta: "네이버 예약",
+      domestic: {
+        label: "내국인 예약",
+        desc: "네이버 예약으로 간편하게",
+        cta: "네이버 예약"
+      },
+      international: {
+        label: "International",
+        desc: "For international guests",
+        cta: "Instagram DM"
+      },
       info: {
         hours: "영업시간",
         hoursValue: "화-일 18:00 - 24:00",
@@ -457,7 +466,16 @@ const translations = {
       title: "Reserve Your Special Night",
       subtitle: "8 Seats Only - Private Dining by Reservation",
       notice: "We recommend booking at least 3 days ahead for Fridays, Saturdays, and special occasions",
-      cta: "Book on Naver",
+      domestic: {
+        label: "Korean Guests",
+        desc: "Book easily via Naver",
+        cta: "Naver Booking"
+      },
+      international: {
+        label: "International",
+        desc: "For international guests",
+        cta: "Instagram DM"
+      },
       info: {
         hours: "Hours",
         hoursValue: "Tue-Sun 6PM - 12AM",
@@ -698,7 +716,16 @@ const translations = {
       title: "特別な夜をご予約ください",
       subtitle: "8席限定 予約制プライベートダイニング",
       notice: "金曜・土曜・記念日は最低3日前の予約をおすすめします",
-      cta: "Naver予約",
+      domestic: {
+        label: "韓国国内の方",
+        desc: "Naverで簡単予約",
+        cta: "Naver予約"
+      },
+      international: {
+        label: "海外からのお客様",
+        desc: "インスタグラムDMでご予約",
+        cta: "Instagram DM"
+      },
       info: {
         hours: "営業時間",
         hoursValue: "火-日 18:00 - 24:00",
@@ -939,7 +966,16 @@ const translations = {
       title: "预约您的特别之夜",
       subtitle: "仅限8席 预约制私密餐厅",
       notice: "周五·周六·纪念日建议至少提前3天预约",
-      cta: "Naver预约",
+      domestic: {
+        label: "韩国国内客人",
+        desc: "Naver轻松预约",
+        cta: "Naver预约"
+      },
+      international: {
+        label: "海外客人",
+        desc: "Instagram私信预约",
+        cta: "Instagram DM"
+      },
       info: {
         hours: "营业时间",
         hoursValue: "周二-周日 18:00 - 24:00",
@@ -1324,12 +1360,28 @@ function renderReserveSection() {
   const reserveTitle = document.querySelector('[data-i18n="reserve.title"]');
   const reserveSubtitle = document.querySelector('[data-i18n="reserve.subtitle"]');
   const reserveNotice = document.querySelector('[data-i18n="reserve.notice"]');
-  const reserveCta = document.querySelector('[data-i18n="reserve.cta"]');
+  
+  // Domestic (Korean) reservation
+  const domesticLabel = document.querySelector('[data-i18n="reserve.domestic.label"]');
+  const domesticDesc = document.querySelector('[data-i18n="reserve.domestic.desc"]');
+  const domesticCta = document.querySelector('[data-i18n="reserve.domestic.cta"]');
+  
+  // International reservation
+  const intlLabel = document.querySelector('[data-i18n="reserve.international.label"]');
+  const intlDesc = document.querySelector('[data-i18n="reserve.international.desc"]');
+  const intlCta = document.querySelector('[data-i18n="reserve.international.cta"]');
   
   if (reserveTitle) reserveTitle.textContent = t('reserve.title');
   if (reserveSubtitle) reserveSubtitle.innerHTML = t('reserve.subtitle');
   if (reserveNotice) reserveNotice.textContent = t('reserve.notice');
-  if (reserveCta) reserveCta.textContent = t('reserve.cta');
+  
+  if (domesticLabel) domesticLabel.textContent = t('reserve.domestic.label');
+  if (domesticDesc) domesticDesc.textContent = t('reserve.domestic.desc');
+  if (domesticCta) domesticCta.textContent = t('reserve.domestic.cta');
+  
+  if (intlLabel) intlLabel.textContent = t('reserve.international.label');
+  if (intlDesc) intlDesc.textContent = t('reserve.international.desc');
+  if (intlCta) intlCta.textContent = t('reserve.international.cta');
 }
 
 // Render Footer Section

@@ -94,6 +94,10 @@ body {
 .faq-question {
   cursor: pointer;
   transition: all 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .faq-icon {

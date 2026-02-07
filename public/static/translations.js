@@ -1423,13 +1423,35 @@ function renderFooterSection() {
   if (footerDesc) footerDesc.innerHTML = t('footer.desc');
 }
 
-// Initialize FAQ toggle functionality
+// Initialize FAQ toggle functionality with mobile support
 function initFAQToggle() {
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', function() {
+  console.log('[ROWISM] initFAQToggle called');
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  console.log('[ROWISM] Found FAQ questions:', faqQuestions.length);
+  
+  faqQuestions.forEach((button, index) => {
+    // Remove existing listeners to prevent duplicates
+    const newButton = button.cloneNode(true);
+    button.parentNode.replaceChild(newButton, button);
+    
+    // Handle both click and touch events for mobile
+    const handleToggle = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      console.log('[ROWISM] FAQ toggled:', index);
+      
+      const faqItem = this.closest('.faq-item');
       const answer = this.nextElementSibling;
       const icon = this.querySelector('.faq-icon');
+      
+      if (!answer) {
+        console.log('[ROWISM] No answer element found');
+        return;
+      }
+      
       const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+      console.log('[ROWISM] isOpen:', isOpen, 'maxHeight:', answer.style.maxHeight);
       
       // Close all others
       document.querySelectorAll('.faq-answer').forEach(a => {
@@ -1438,14 +1460,31 @@ function initFAQToggle() {
       document.querySelectorAll('.faq-icon').forEach(i => {
         i.style.transform = 'rotate(0deg)';
       });
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
       
       // Toggle current
       if (!isOpen) {
         answer.style.maxHeight = answer.scrollHeight + 'px';
-        icon.style.transform = 'rotate(45deg)';
+        if (icon) icon.style.transform = 'rotate(45deg)';
+        if (faqItem) faqItem.classList.add('active');
+        console.log('[ROWISM] Opened, scrollHeight:', answer.scrollHeight);
       }
-    });
+    };
+    
+    // Add click event (works on desktop and most mobile)
+    newButton.addEventListener('click', handleToggle);
+    
+    // Add touchend event for better mobile support
+    newButton.addEventListener('touchend', function(e) {
+      // Prevent ghost click
+      e.preventDefault();
+      handleToggle.call(this, e);
+    }, { passive: false });
   });
+  
+  console.log('[ROWISM] FAQ toggle initialized');
 }
 
 // Re-initialize scroll animations for dynamically added elements

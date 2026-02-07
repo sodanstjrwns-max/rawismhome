@@ -1333,6 +1333,7 @@ function initFAQToggle() {
 document.addEventListener('DOMContentLoaded', function() {
   initLanguage();
   updatePageContent();
+  renderDynamicSections();
   initFAQToggle();
 });
 

@@ -1405,11 +1405,15 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             gtag('config', 'G-2HHM531MGQ');
           `}} />
           
-          {/* Amplitude Analytics - Official Snippet */}
+          {/* Amplitude Analytics */}
           <script src="https://cdn.amplitude.com/script/87529341cb075dcdbefabce3994958aa.js"></script>
           <script dangerouslySetInnerHTML={{__html: `
-            window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
-            window.amplitude.init('87529341cb075dcdbefabce3994958aa', {"fetchRemoteConfig":true,"autocapture":true});
+            if (window.amplitude) {
+              window.amplitude.init('87529341cb075dcdbefabce3994958aa', {
+                fetchRemoteConfig: true,
+                autocapture: true
+              });
+            }
           `}} />
         </head>
         <body class="bg-deep-black text-off-white font-pretendard">

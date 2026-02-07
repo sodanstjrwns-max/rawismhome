@@ -919,6 +919,178 @@ Crawl-delay: 1`
   return c.text(robots, 200, { 'Content-Type': 'text/plain' })
 })
 
+// RSS Feed - 네이버/구글 뉴스 피드용
+app.get('/rss.xml', (c) => {
+  const now = new Date().toUTCString()
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>ROWISM The Black - 연남동 프리미엄 샴페인바</title>
+    <link>https://rawism.kr</link>
+    <description>연남동 한우 뭉티기와 샴페인을 함께 즐기는 프리미엄 다이닝 공간. 당일 도축 온도체 한우, 이탈리아 부라타 치즈, 움브리아산 블랙 트러플의 조화.</description>
+    <language>ko</language>
+    <lastBuildDate>${now}</lastBuildDate>
+    <pubDate>${now}</pubDate>
+    <ttl>60</ttl>
+    <atom:link href="https://rawism.kr/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://rawism.kr/static/logo.png</url>
+      <title>ROWISM The Black</title>
+      <link>https://rawism.kr</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <managingEditor>contact@rawism.kr (ROWISM The Black)</managingEditor>
+    <webMaster>contact@rawism.kr (ROWISM The Black)</webMaster>
+    <copyright>© 2024 ROWISM The Black. All rights reserved.</copyright>
+    <category>음식점</category>
+    <category>레스토랑</category>
+    <category>샴페인바</category>
+    <category>한우</category>
+    <category>연남동</category>
+    <category>홍대</category>
+    
+    <!-- 시그니처 메뉴 소개 -->
+    <item>
+      <title>트러플 한우 뭉티기 부라타 - ROWISM 시그니처</title>
+      <link>https://rawism.kr/menu#signature</link>
+      <guid isPermaLink="true">https://rawism.kr/menu#signature</guid>
+      <pubDate>Fri, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <dc:creator>ROWISM The Black</dc:creator>
+      <category>시그니처 메뉴</category>
+      <description>당일 도축 온도체 한우 뭉티기와 이탈리아 부라타 치즈, 움브리아산 블랙 트러플의 완벽한 조화. ₩92,000</description>
+      <content:encoded><![CDATA[
+        <p>ROWISM The Black의 시그니처 메뉴를 소개합니다.</p>
+        <p><strong>트러플 한우 뭉티기 부라타</strong>는 당일 도축한 온도체 한우 뭉티기에 이탈리아산 부라타 치즈와 움브리아산 블랙 트러플을 더해 완성한 프리미엄 요리입니다.</p>
+        <ul>
+          <li>당일 도축 온도체 한우 (최상급)</li>
+          <li>이탈리아 풀리아산 부라타 치즈</li>
+          <li>움브리아산 블랙 트러플</li>
+          <li>시그니처 트러플 오일 드레싱</li>
+        </ul>
+        <p>가격: ₩92,000</p>
+        <p>예약: <a href="tel:+82-70-5100-5534">070-5100-5534</a></p>
+      ]]></content:encoded>
+      <media:content url="https://rawism.kr/static/menu_signature.jpg" type="image/jpeg" width="1200" height="800">
+        <media:title>트러플 한우 뭉티기 부라타</media:title>
+        <media:description>당일 도축 온도체 한우 뭉티기와 이탈리아 부라타 치즈, 움브리아산 블랙 트러플</media:description>
+      </media:content>
+    </item>
+    
+    <!-- 브랜드 스토리 -->
+    <item>
+      <title>ROWISM The Black - 날것의 철학, Raw + -ism</title>
+      <link>https://rawism.kr/about</link>
+      <guid isPermaLink="true">https://rawism.kr/about</guid>
+      <pubDate>Thu, 06 Feb 2026 00:00:00 GMT</pubDate>
+      <dc:creator>ROWISM The Black</dc:creator>
+      <category>브랜드 스토리</category>
+      <description>ROWISM은 'Raw(날것)'와 '-ism(철학)'의 조합입니다. 재료 본연의 맛을 극대화하는 미니멀리즘 요리 철학을 추구합니다.</description>
+      <content:encoded><![CDATA[
+        <h2>날것의 철학</h2>
+        <p>ROWISM은 'Raw(날것)'와 '-ism(철학)'의 조합입니다.</p>
+        <p>우리는 재료 본연의 맛을 극대화하는 미니멀리즘 요리 철학을 추구합니다. 당일 도축한 최상급 한우, 신선한 해산물, 엄선된 치즈와 트러플 - 모든 재료는 그 자체로 완벽해야 합니다.</p>
+        <h3>The Black</h3>
+        <p>검은 트러플의 깊이, 숙성된 와인의 깊이, 밤의 깊이. 'The Black'은 단순한 색이 아닌, 깊이와 여운을 상징합니다.</p>
+        <p>연남동에서 특별한 미식 경험을 선사합니다.</p>
+      ]]></content:encoded>
+      <media:content url="https://rawism.kr/static/og-image.jpg" type="image/jpeg" width="1200" height="630">
+        <media:title>ROWISM The Black</media:title>
+        <media:description>연남동 프리미엄 샴페인바 & 한우 다이닝</media:description>
+      </media:content>
+    </item>
+    
+    <!-- 메뉴 업데이트 -->
+    <item>
+      <title>ROWISM 메뉴 - 6가지 시그니처 요리</title>
+      <link>https://rawism.kr/menu</link>
+      <guid isPermaLink="true">https://rawism.kr/menu</guid>
+      <pubDate>Wed, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <dc:creator>ROWISM The Black</dc:creator>
+      <category>메뉴</category>
+      <description>트러플 한우 뭉티기, 제비추리 그릴, 치즈 셀렉션, 청양 오일 육회, 아보카도 카프레제, 들기름 육회 메밀면 - 6가지 시그니처 메뉴를 만나보세요.</description>
+      <content:encoded><![CDATA[
+        <h2>ROWISM The Black 시그니처 메뉴</h2>
+        <ul>
+          <li><strong>트러플 한우 뭉티기 부라타</strong> - ₩92,000</li>
+          <li><strong>제비추리 그릴드 베지터블</strong> - ₩49,000</li>
+          <li><strong>치즈 셀렉션</strong> - ₩36,000</li>
+          <li><strong>청양 오일 육회</strong> - ₩25,000</li>
+          <li><strong>아보카도 카프레제</strong> - ₩23,000</li>
+          <li><strong>들기름 육회 메밀면</strong> - ₩15,000</li>
+        </ul>
+        <p>예약 문의: <a href="tel:+82-70-5100-5534">070-5100-5534</a></p>
+      ]]></content:encoded>
+    </item>
+    
+    <!-- 위치 안내 -->
+    <item>
+      <title>ROWISM The Black 오시는 길 - 연남동 동교로 262-4</title>
+      <link>https://rawism.kr/#location</link>
+      <guid isPermaLink="true">https://rawism.kr/#location</guid>
+      <pubDate>Tue, 04 Feb 2026 00:00:00 GMT</pubDate>
+      <dc:creator>ROWISM The Black</dc:creator>
+      <category>위치</category>
+      <description>서울특별시 마포구 동교로 262-4. 홍대입구역 3번 출구에서 도보 7분. 연남동 경의선숲길 인근.</description>
+      <content:encoded><![CDATA[
+        <h2>오시는 길</h2>
+        <p><strong>주소:</strong> 서울특별시 마포구 동교로 262-4</p>
+        <p><strong>지하철:</strong> 홍대입구역 3번 출구 도보 7분</p>
+        <p><strong>영업시간:</strong></p>
+        <ul>
+          <li>화요일 - 일요일: 18:00 - 24:00</li>
+          <li>월요일 휴무</li>
+        </ul>
+        <p><strong>예약:</strong> <a href="tel:+82-70-5100-5534">070-5100-5534</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/rawism_theblack">@rawism_theblack</a></p>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>`
+  return c.text(rss, 200, { 
+    'Content-Type': 'application/rss+xml; charset=utf-8',
+    'Cache-Control': 'public, max-age=3600'
+  })
+})
+
+// RSS Feed for English
+app.get('/en/rss.xml', (c) => {
+  const now = new Date().toUTCString()
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ROWISM The Black - Seoul Yeonnam-dong Champagne Bar</title>
+    <link>https://rawism.kr/en</link>
+    <description>Premium dining experience in Yeonnam-dong, Seoul. Fresh Hanwoo beef tartare with Italian burrata cheese and Umbrian black truffle.</description>
+    <language>en</language>
+    <lastBuildDate>${now}</lastBuildDate>
+    <atom:link href="https://rawism.kr/en/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Truffle Hanwoo Tartare Burrata - ROWISM Signature</title>
+      <link>https://rawism.kr/en/menu#signature</link>
+      <guid isPermaLink="true">https://rawism.kr/en/menu#signature</guid>
+      <pubDate>Fri, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Same-day slaughtered Hanwoo beef tartare with Italian burrata cheese and Umbrian black truffle. ₩92,000</description>
+    </item>
+    <item>
+      <title>About ROWISM The Black - Philosophy of Raw</title>
+      <link>https://rawism.kr/en/about</link>
+      <guid isPermaLink="true">https://rawism.kr/en/about</guid>
+      <pubDate>Thu, 06 Feb 2026 00:00:00 GMT</pubDate>
+      <description>ROWISM combines 'Raw' and '-ism'. We pursue minimalist culinary philosophy that maximizes the natural flavor of ingredients.</description>
+    </item>
+  </channel>
+</rss>`
+  return c.text(rss, 200, { 'Content-Type': 'application/rss+xml; charset=utf-8' })
+})
+
 // Naver Site Verification
 app.get('/naver7904d9ff69f646703310c041cef72888.html', (c) => {
   return c.text('2d5260929ab847d76c151f135aa20621f6f746a0', 200, { 'Content-Type': 'text/html' })

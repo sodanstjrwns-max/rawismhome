@@ -1424,67 +1424,67 @@ function renderFooterSection() {
 }
 
 // Initialize FAQ toggle functionality with mobile support
+// FAQ Toggle - Use event delegation for dynamically rendered content
 function initFAQToggle() {
   console.log('[ROWISM] initFAQToggle called');
-  const faqQuestions = document.querySelectorAll('.faq-question');
-  console.log('[ROWISM] Found FAQ questions:', faqQuestions.length);
   
-  faqQuestions.forEach((button, index) => {
-    // Remove existing listeners to prevent duplicates
-    const newButton = button.cloneNode(true);
-    button.parentNode.replaceChild(newButton, button);
+  const faqContainer = document.getElementById('faq-items-container');
+  if (!faqContainer) {
+    console.log('[ROWISM] FAQ container not found');
+    return;
+  }
+  
+  // Remove any existing listeners by cloning
+  const newContainer = faqContainer.cloneNode(true);
+  faqContainer.parentNode.replaceChild(newContainer, faqContainer);
+  
+  // Use event delegation on the container
+  newContainer.addEventListener('click', function(e) {
+    const button = e.target.closest('.faq-question');
+    if (!button) return;
     
-    // Handle both click and touch events for mobile
-    const handleToggle = function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      console.log('[ROWISM] FAQ toggled:', index);
-      
-      const faqItem = this.closest('.faq-item');
-      const answer = this.nextElementSibling;
-      const icon = this.querySelector('.faq-icon');
-      
-      if (!answer) {
-        console.log('[ROWISM] No answer element found');
-        return;
-      }
-      
-      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-      console.log('[ROWISM] isOpen:', isOpen, 'maxHeight:', answer.style.maxHeight);
-      
-      // Close all others
-      document.querySelectorAll('.faq-answer').forEach(a => {
-        a.style.maxHeight = '0px';
-      });
-      document.querySelectorAll('.faq-icon').forEach(i => {
-        i.style.transform = 'rotate(0deg)';
-      });
-      document.querySelectorAll('.faq-item').forEach(item => {
+    console.log('[ROWISM] FAQ button clicked');
+    
+    const faqItem = button.closest('.faq-item');
+    const answer = faqItem ? faqItem.querySelector('.faq-answer') : null;
+    const icon = button.querySelector('.faq-icon');
+    
+    if (!answer) {
+      console.log('[ROWISM] No answer element found');
+      return;
+    }
+    
+    const isOpen = faqItem.classList.contains('active');
+    console.log('[ROWISM] Current state - isOpen:', isOpen);
+    
+    // Close all other FAQ items
+    newContainer.querySelectorAll('.faq-item').forEach(item => {
+      if (item !== faqItem) {
         item.classList.remove('active');
-      });
-      
-      // Toggle current
-      if (!isOpen) {
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-        if (icon) icon.style.transform = 'rotate(45deg)';
-        if (faqItem) faqItem.classList.add('active');
-        console.log('[ROWISM] Opened, scrollHeight:', answer.scrollHeight);
+        const ans = item.querySelector('.faq-answer');
+        const ico = item.querySelector('.faq-icon');
+        if (ans) ans.style.maxHeight = '0px';
+        if (ico) ico.style.transform = 'rotate(0deg)';
       }
-    };
+    });
     
-    // Add click event (works on desktop and most mobile)
-    newButton.addEventListener('click', handleToggle);
-    
-    // Add touchend event for better mobile support
-    newButton.addEventListener('touchend', function(e) {
-      // Prevent ghost click
-      e.preventDefault();
-      handleToggle.call(this, e);
-    }, { passive: false });
+    // Toggle current item
+    if (isOpen) {
+      // Close it
+      faqItem.classList.remove('active');
+      answer.style.maxHeight = '0px';
+      if (icon) icon.style.transform = 'rotate(0deg)';
+      console.log('[ROWISM] Closed FAQ item');
+    } else {
+      // Open it
+      faqItem.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      if (icon) icon.style.transform = 'rotate(45deg)';
+      console.log('[ROWISM] Opened FAQ item, scrollHeight:', answer.scrollHeight);
+    }
   });
   
-  console.log('[ROWISM] FAQ toggle initialized');
+  console.log('[ROWISM] FAQ toggle initialized with event delegation');
 }
 
 // Re-initialize scroll animations for dynamically added elements

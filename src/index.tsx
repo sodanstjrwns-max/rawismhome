@@ -1231,11 +1231,12 @@ app.get('/zh/about', (c) => {
 // ============================================
 
 // Yandex verification (러시아 검색엔진)
-// 등록 시 Yandex에서 제공하는 코드로 교체 필요
-app.get('/yandex_*.html', (c) => {
-  // Yandex 인증 파일 - 실제 코드는 Yandex Webmaster에서 확인
-  const verificationCode = c.req.path.replace('/yandex_', '').replace('.html', '')
-  return c.html(`<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Verification: ${verificationCode}</body></html>`)
+// ROWISM 인증 코드: 8177199aa5b0e25d
+app.get('/yandex_8177199aa5b0e25d.html', (c) => {
+  return c.html(`<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Verification: 8177199aa5b0e25d</body></html>`)
+})
+app.get('/yandex_8177199aa5b0e25d.htm', (c) => {
+  return c.html(`<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Verification: 8177199aa5b0e25d</body></html>`)
 })
 
 // Baidu verification (중국 검색엔진)

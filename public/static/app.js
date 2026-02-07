@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initScrollAnimations();
-  initFAQ();
+  // initFAQ(); // Disabled - handled by translations.js after dynamic rendering
   initMobileMenu();
   initSmoothScroll();
   initMultilingual();

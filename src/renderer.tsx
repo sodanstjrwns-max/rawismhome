@@ -14,31 +14,31 @@ const seoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 와인바 | 홍대 스파클링 와인 데이트 기념일 맛집',
-    description: '서울 연남동 프리미엄 샴페인바 & 와인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 스파클링 와인이 만나는 특별한 밤. 웰컴 스파클링으로 시작하는 럭셔리 다이닝. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원.',
-    keywords: '연남동 샴페인바, 연남동 와인바, 홍대 와인바, 연남동 스파클링 와인, 홍대 스파클링 와인, 서울 와인바 추천, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 와인 페어링, 샴페인 페어링, 프로세코, 까바',
-    ogDescription: '당일 도축 온도체 한우와 스파클링 와인의 완벽한 페어링. 웰컴 스파클링으로 시작하는 프리미엄 다이닝. 홍대입구역 5분, 8석 한정 예약제.'
+    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 와인바 | 프로포즈 기념일 데이트 레스토랑',
+    description: '서울 연남동 프리미엄 샴페인바 & 와인바 ROWISM The Black. 프로포즈, 100일 기념일, 결혼기념일에 완벽한 프라이빗 다이닝. 트러플 한우 육회와 스파클링 와인 페어링. 홍대입구역 5분, 8석 한정 예약제.',
+    keywords: '프로포즈 레스토랑 서울, 100일 기념일 레스토랑, 결혼기념일 레스토랑, 연남동 술집, 연남동 바, 첫 데이트 레스토랑, 연남동 샴페인바, 연남동 와인바, 홍대 와인바, 육회 맛집 서울, 한우 육회 맛집, 트러플 요리 서울, 부라타 치즈 맛집, 프라이빗 룸 레스토랑, 조용한 레스토랑 서울, 숨은 맛집 연남동, 데이트 와인바, 와인 한잔 하기 좋은 곳, 소믈리에 추천 와인바, 연남동 스파클링 와인, 홍대 스파클링 와인, 서울 와인바 추천, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 연트럴파크 맛집, 경의선숲길 맛집, 생일 데이트 코스, 여자친구 데려가기 좋은 곳, 인스타 감성 레스토랑, 무드등 레스토랑, 연남동 혼술, 타르타르 스테이크 서울',
+    ogDescription: '프로포즈, 기념일에 완벽한 연남동 프라이빗 다이닝. 트러플 한우 육회와 스파클링 와인 페어링. 홍대입구역 5분, 8석 한정.'
   },
   en: {
     lang: 'en',
-    title: 'ROWISM The Black | Premium Champagne & Wine Bar Seoul Yeonnam-dong | Sparkling Wine Date',
-    description: 'ROWISM The Black - Premium Champagne Bar & Wine Bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare with sparkling wine pairing. Welcome sparkling to start your evening. 5 min from Hongdae Station, 8 seats only, reservation required.',
-    keywords: 'Seoul wine bar, Yeonnam-dong wine bar, Hongdae wine bar, Seoul sparkling wine, champagne bar Seoul, wine pairing Seoul, Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Seoul private dining, Korean raw beef, prosecco Seoul, cava Seoul',
-    ogDescription: 'Premium champagne & wine bar in Seoul Yeonnam-dong. Korean beef tartare with sparkling wine pairing. Welcome sparkling to start. 5 min from Hongdae Station.'
+    title: 'ROWISM The Black | Best Wine Bar Seoul | Romantic Restaurant Hongdae Anniversary Date',
+    description: 'ROWISM The Black - Best wine bar in Seoul Yeonnam-dong. Perfect for proposals, anniversaries, romantic dates. Korean beef tartare with truffle and sparkling wine pairing. Private dining, 8 seats only. 5 min from Hongdae Station.',
+    keywords: 'best wine bar seoul, romantic restaurant hongdae, korean beef tartare restaurant, proposal restaurant seoul, anniversary dinner seoul, Seoul wine bar, Yeonnam-dong wine bar, Hongdae wine bar, Seoul sparkling wine, champagne bar Seoul, wine pairing Seoul, Hongdae restaurant, Yeonnam-dong restaurant, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Seoul private dining, Korean raw beef, hidden gem seoul, intimate restaurant seoul, truffle dish seoul, burrata cheese seoul, sommelier wine bar, quiet restaurant seoul',
+    ogDescription: 'Best wine bar in Seoul for proposals and anniversaries. Korean beef tartare with truffle and sparkling wine. Private dining, 8 seats. 5 min from Hongdae.'
   },
   ja: {
     lang: 'ja',
-    title: 'ROWISM The Black | ソウル延南洞プレミアムシャンパン・ワインバー | スパークリングワイン デート',
-    description: 'ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー＆ワインバー。新鮮な韓牛タルタルとスパークリングワインのペアリング。ウェルカムスパークリングで始まる特別な夜。弘大駅から徒歩5分、8席限定、要予約。',
-    keywords: 'ソウル ワインバー, 延南洞 ワインバー, 弘大 ワインバー, ソウル スパークリングワイン, シャンパンバー ソウル, ワインペアリング, 弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 韓国 生肉, ソウル 隠れ家, プロセッコ, カヴァ',
-    ogDescription: 'ソウル延南洞のプレミアムシャンパン＆ワインバー。韓牛タルタルとスパークリングワインのペアリング。弘大駅から徒歩5分、要予約。'
+    title: 'ROWISM The Black | ソウル最高のワインバー | 弘大 記念日 プロポーズ デート',
+    description: 'ROWISM The Black - ソウル延南洞のプレミアムワインバー。プロポーズ、記念日、ロマンチックなデートに最適。韓牛タルタルとトリュフ、スパークリングワインのペアリング。8席限定プライベートダイニング。弘大駅から徒歩5分。',
+    keywords: '弘大 ワインバー 予約, ソウル デート おすすめ, 韓国 生肉 レストラン, プロポーズ レストラン ソウル, 記念日 ディナー ソウル, ソウル ワインバー, 延南洞 ワインバー, 弘大 ワインバー, ソウル スパークリングワイン, シャンパンバー ソウル, ワインペアリング, 弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 韓国 生肉, ソウル 隠れ家, トリュフ料理 ソウル, ブラータチーズ, ソムリエ おすすめ',
+    ogDescription: 'ソウル最高のワインバー。プロポーズ、記念日に最適。韓牛タルタルとトリュフ、スパークリングワイン。8席限定、弘大駅徒歩5分。'
   },
   zh: {
     lang: 'zh',
-    title: 'ROWISM The Black | 首尔延南洞高级香槟吧・红酒吧 | 起泡酒 约会纪念日',
-    description: 'ROWISM The Black - 首尔延南洞高级香槟吧和红酒吧。新鲜韩牛肉脍与起泡酒的完美搭配。迎宾起泡酒开启特别之夜。弘大站步行5分钟，仅8席，需预约。',
-    keywords: '首尔红酒吧, 延南洞红酒吧, 弘大红酒吧, 首尔起泡酒, 香槟吧首尔, 葡萄酒搭配, 弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 韩国生牛肉, 首尔网红餐厅, 普罗塞克, 卡瓦',
-    ogDescription: '首尔延南洞高级香槟吧和红酒吧。韩牛肉脍与起泡酒的完美搭配。弘大站步行5分钟，需预约。'
+    title: 'ROWISM The Black | 首尔最佳红酒吧 | 弘大 求婚 纪念日 约会餐厅',
+    description: 'ROWISM The Black - 首尔延南洞高级红酒吧。求婚、纪念日、浪漫约会的完美选择。韩牛肉脍配松露和起泡酒。8席限定私人用餐。弘大站步行5分钟。',
+    keywords: '首尔红酒吧 推荐, 弘大 约会 餐厅, 韩国 生牛肉 餐厅, 求婚 餐厅 首尔, 纪念日 晚餐 首尔, 首尔红酒吧, 延南洞红酒吧, 弘大红酒吧, 首尔起泡酒, 香槟吧首尔, 葡萄酒搭配, 弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 韩国生牛肉, 首尔网红餐厅, 松露料理 首尔, 布拉塔奶酪, 侍酒师 推荐, 安静餐厅 首尔',
+    ogDescription: '首尔最佳红酒吧。求婚、纪念日完美选择。韩牛肉脍配松露和起泡酒。8席限定，弘大站步行5分钟。'
   }
 }
 

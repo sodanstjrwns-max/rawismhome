@@ -208,7 +208,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "description": seo.description,
             "url": `https://rawism.kr${getLangPath(pageLang)}`,
-            "telephone": "+82-10-0000-0000",
+            "telephone": "+82-70-5100-5534",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "동교로 262-4",
@@ -290,7 +290,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "description": seo.description,
             "url": `https://rawism.kr${getLangPath(pageLang)}`,
-            "telephone": "+82-10-0000-0000",
+            "telephone": "+82-70-5100-5534",
             "email": "contact@rawism.kr",
             "priceRange": "₩₩₩",
             "currenciesAccepted": "KRW",
@@ -381,7 +381,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+82-10-0000-0000",
+              "telephone": "+82-70-5100-5534",
               "contactType": "reservations",
               "availableLanguage": ["Korean", "English", "Japanese", "Chinese"]
             },
@@ -1182,6 +1182,217 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "isAccessibleForFree": false,
             "publicAccess": true,
             "availableLanguage": ["Korean", "English", "Japanese", "Chinese"]
+          })}} />
+          
+          {/* Schema.org - SpeakableSpecification (음성 검색 최적화) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `https://rawism.kr${getLangPath(pageLang)}#speakable`,
+            "name": seo.title,
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "h1", "h2", ".hero-title", ".menu-item-name", ".menu-price",
+                "[data-i18n='hero.subtitle']", 
+                "[data-i18n='hero.description']",
+                "[data-i18n='philosophy.title']",
+                "[data-i18n='menu.signature.name']",
+                "[data-i18n='reserve.title']"
+              ]
+            },
+            "url": `https://rawism.kr${getLangPath(pageLang)}`
+          })}} />
+          
+          {/* Schema.org - OfferCatalog (메뉴 가격 카탈로그) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "OfferCatalog",
+            "name": pageLang === 'ko' ? "ROWISM The Black 메뉴 가격표" : pageLang === 'ja' ? "ROWISM The Black メニュー価格表" : pageLang === 'zh' ? "ROWISM The Black 菜单价格表" : "ROWISM The Black Menu Prices",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Signature Tartare"
+                },
+                "price": "92000",
+                "priceCurrency": "KRW",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
+                },
+                "price": "49000",
+                "priceCurrency": "KRW",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
+                },
+                "price": "36000",
+                "priceCurrency": "KRW",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe"
+                },
+                "price": "25000",
+                "priceCurrency": "KRW",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese"
+                },
+                "price": "23000",
+                "priceCurrency": "KRW",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MenuItem",
+                  "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles"
+                },
+                "price": "15000",
+                "priceCurrency": "KRW",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          })}} />
+          
+          {/* Schema.org - PaymentMethod (결제 수단) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "@id": "https://rawism.kr/#payment",
+            "name": "ROWISM The Black",
+            "paymentAccepted": [
+              "Cash",
+              "Credit Card",
+              "Debit Card",
+              "KakaoPay",
+              "NaverPay",
+              "Samsung Pay",
+              "Apple Pay"
+            ],
+            "currenciesAccepted": "KRW"
+          })}} />
+          
+          {/* Schema.org - ContactPoint (연락처 정보 강화) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://rawism.kr/#contact",
+            "name": "ROWISM The Black",
+            "url": "https://rawism.kr",
+            "logo": "https://rawism.kr/static/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+82-70-5100-5534",
+                "contactType": "reservations",
+                "areaServed": ["KR", "JP", "CN", "US"],
+                "availableLanguage": ["Korean", "English", "Japanese", "Chinese"],
+                "hoursAvailable": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                  "opens": "18:00",
+                  "closes": "24:00"
+                }
+              },
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "url": "https://instagram.com/rawism_theblack",
+                "availableLanguage": ["Korean", "English"]
+              }
+            ],
+            "sameAs": [
+              "https://instagram.com/rawism_theblack",
+              "https://naver.me/5qLSfCNC",
+              "https://map.naver.com/",
+              "https://map.kakao.com/"
+            ]
+          })}} />
+          
+          {/* Schema.org - Action (예약 액션) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ReserveAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://naver.me/5qLSfCNC",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform",
+                "http://schema.org/IOSPlatform",
+                "http://schema.org/AndroidPlatform"
+              ]
+            },
+            "result": {
+              "@type": "Reservation",
+              "name": pageLang === 'ko' ? "ROWISM The Black 예약" : pageLang === 'ja' ? "ROWISM The Black 予約" : pageLang === 'zh' ? "ROWISM The Black 预约" : "ROWISM The Black Reservation"
+            }
+          })}} />
+          
+          {/* Schema.org - PriceSpecification (가격 범위 상세) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "@id": "https://rawism.kr/#priceinfo",
+            "name": "ROWISM The Black",
+            "priceRange": "₩₩₩",
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "KRW",
+              "lowPrice": "15000",
+              "highPrice": "92000",
+              "offerCount": 6,
+              "offers": [
+                { "@type": "Offer", "name": pageLang === 'ko' ? "시그니처 메뉴" : "Signature", "price": "92000", "priceCurrency": "KRW" },
+                { "@type": "Offer", "name": pageLang === 'ko' ? "메인 요리" : "Main", "price": "49000", "priceCurrency": "KRW" },
+                { "@type": "Offer", "name": pageLang === 'ko' ? "사이드" : "Side", "price": "23000", "priceCurrency": "KRW" },
+                { "@type": "Offer", "name": pageLang === 'ko' ? "마무리" : "Finisher", "price": "15000", "priceCurrency": "KRW" }
+              ]
+            }
+          })}} />
+          
+          {/* Schema.org - MusicEvent (분위기 연출 - 큐레이팅된 음악) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MusicEvent",
+            "name": pageLang === 'ko' ? "ROWISM The Black 큐레이팅 뮤직" : pageLang === 'ja' ? "ROWISM The Black キュレーションミュージック" : pageLang === 'zh' ? "ROWISM The Black 策划音乐" : "ROWISM The Black Curated Music",
+            "description": pageLang === 'ko' ? "제네바 스피커에서 흘러나오는 큐레이팅된 선율과 함께하는 다이닝 경험" : pageLang === 'ja' ? "ジュネーブスピーカーから流れるキュレーションされた音楽とともにダイニング体験" : pageLang === 'zh' ? "日内瓦音箱播放的策划音乐伴随用餐体验" : "Dining experience with curated music from Geneva speakers",
+            "location": {
+              "@type": "Restaurant",
+              "name": "ROWISM The Black",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "마포구",
+                "addressRegion": "서울",
+                "addressCountry": "KR"
+              }
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": "ROWISM The Black"
+            },
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
           })}} />
         </head>
         <body class="bg-deep-black text-off-white font-pretendard">

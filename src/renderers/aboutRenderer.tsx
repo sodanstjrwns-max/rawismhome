@@ -249,7 +249,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
             "contactPoint": [
               {
                 "@type": "ContactPoint",
-                "telephone": "+82-10-0000-0000",
+                "telephone": "+82-70-5100-5534",
                 "contactType": "reservations",
                 "availableLanguage": ["Korean", "English", "Japanese", "Chinese"],
                 "hoursAvailable": {

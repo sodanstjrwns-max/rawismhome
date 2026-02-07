@@ -163,7 +163,7 @@ export function createRenderer(lang: Language) {
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "description": meta.description,
             "url": canonicalUrl,
-            "telephone": "+82-10-0000-0000",
+            "telephone": "+82-70-5100-5534",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "동교로 262-4",

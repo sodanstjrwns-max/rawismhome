@@ -192,14 +192,13 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           {/* Custom Styles */}
           <link href="/static/style.css" rel="stylesheet" />
           
-          {/* Multilingual Translations - Load before other scripts */}
-          <script src="/static/translations.js"></script>
-          
-          {/* Set initial language based on URL */}
+          {/* Set initial language based on URL - BEFORE translations.js */}
           <script dangerouslySetInnerHTML={{__html: `
-            // Set language from URL path before page renders
             window.INITIAL_LANG = '${pageLang}';
           `}} />
+          
+          {/* Multilingual Translations - defer to run after DOM ready */}
+          <script src="/static/translations.js" defer></script>
           
           {/* Schema.org Structured Data - Restaurant (Multilingual) */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({

@@ -143,7 +143,9 @@ const translations = {
         { icon: "🌙", title: "혼자만의 시간", desc: "나를 위한 특별한 저녁", detail: "바 테이블에서 즐기는 조용한 저녁. 좋은 음악과 함께 혼자만의 시간을 보내기에 완벽한 공간입니다." },
         { icon: "🎄", title: "시즌 이벤트", desc: "크리스마스, 발렌타인, 화이트데이", detail: "특별한 시즌엔 더 특별하게. 크리스마스 디너, 발렌타인데이, 화이트데이를 분위기 있는 공간에서. 연트럴파크 야경과 함께." },
         { icon: "🌿", title: "연트럴파크 산책 후", desc: "경의선숲길 산책 후 특별한 저녁", detail: "연트럴파크, 경의선숲길 산책 후 완벽한 저녁 식사. 도보 2-3분 거리에서 분위기 있는 디너를 즐기세요." },
-        { icon: "🌏", title: "한국 미식 체험", desc: "진짜 한국 먹거리 문화를 느끼고 싶은 외국인", detail: "관광지 음식이 아닌 현지인이 사랑하는 진짜 한국 미식. 신선한 한우 뭉티기와 샴페인의 특별한 페어링을 경험해보세요. English menu available." }
+        { icon: "📸", title: "SNS 감성", desc: "인스타그래머블한 맛집을 찾는 분", detail: "플레이팅부터 공간까지 모든 것이 감각적. 뭉티기 위에 트러플 슬라이스하는 순간, 인생샷 각입니다. 연남동 인스타 맛집." },
+        { icon: "🌏", title: "Korean Food Adventure", desc: "For tourists seeking authentic Korean cuisine", detail: "Not tourist food, but real local favorites. Experience fresh Korean beef tartare (Mungchigi) paired with champagne. English menu available. Near Hongdae & Yeonnam-dong." },
+        { icon: "🇯🇵", title: "日本からのお客様へ", desc: "本場の韓牛ユッケを体験したい日本人の方", detail: "観光地の料理ではない、地元の人が愛する本当の韓国料理。新鮮な韓牛ムンチギとシャンパンの特別なペアリングを体験してください。日本語メニューあり。弘大・延南洞エリア。" }
       ]
     },
     // Occasions Section
@@ -382,7 +384,9 @@ const translations = {
         { icon: "🌙", title: "Solo Dining", desc: "A special evening just for yourself", detail: "A quiet evening at the bar table. Perfect space for some me-time with great music." },
         { icon: "🎄", title: "Seasonal Events", desc: "Christmas, Valentine's, White Day", detail: "Make special seasons even more special. Christmas dinner, Valentine's Day, White Day in an atmospheric space with Yeontral Park night views." },
         { icon: "🌿", title: "After Yeontral Park", desc: "Dinner after a walk along Gyeongui Line Forest", detail: "The perfect dinner after walking Yeontral Park or Gyeongui Line Forest. Just 2-3 minutes walk for an atmospheric dining experience." },
-        { icon: "🌏", title: "Authentic Korean Experience", desc: "Foreigners seeking real Korean food culture", detail: "Not tourist food, but authentic Korean cuisine loved by locals. Experience the special pairing of fresh Hanwoo beef tartare and champagne. A hidden gem in Seoul's trendy Yeonnam-dong neighborhood." }
+        { icon: "📸", title: "Instagram Worthy", desc: "Foodies seeking picture-perfect spots", detail: "From plating to space, everything is aesthetic. The moment truffle is shaved over the tartare - that's your Instagram moment. Yeonnam-dong's most photogenic dining." },
+        { icon: "🌏", title: "Korean Food Adventure", desc: "Tourists seeking authentic Korean cuisine", detail: "Not tourist food, but real local favorites. Experience fresh Korean beef tartare (Mungchigi) paired with champagne. English menu available. Near Hongdae & Yeonnam-dong." },
+        { icon: "🇯🇵", title: "For Japanese Guests", desc: "Japanese visitors seeking authentic Hanwoo experience", detail: "Not tourist food, but authentic Korean cuisine loved by locals. Experience fresh Hanwoo Mungchigi and champagne pairing. Japanese menu available. Near Hongdae & Yeonnam-dong area." }
       ]
     },
     // Occasions Section
@@ -621,7 +625,9 @@ const translations = {
         { icon: "🌙", title: "一人の時間", desc: "自分へのご褒美ディナー", detail: "バーテーブルで楽しむ静かな夜。良い音楽と共に一人の時間を過ごすのに完璧な空間です。" },
         { icon: "🎄", title: "シーズンイベント", desc: "クリスマス、バレンタイン、ホワイトデー", detail: "特別なシーズンはもっと特別に。クリスマスディナー、バレンタインデー、ホワイトデーを雰囲気ある空間で。ヨントラルパークの夜景と共に。" },
         { icon: "🌿", title: "ヨントラルパーク散歩後", desc: "京義線森の道散歩後の特別なディナー", detail: "ヨントラルパーク、京義線森の道散歩後の完璧なディナー。徒歩2-3分の距離で雰囲気あるディナーをお楽しみください。" },
-        { icon: "🌏", title: "本場の韓国料理体験", desc: "韓国の本当の食文化を体験したい外国人の方へ", detail: "観光客向けの料理ではなく、地元の人々が愛する本格的な韓国料理。新鮮な韓牛ムンティギとシャンパンの特別なペアリングを体験してください。ソウルのトレンディな延南洞の隠れた名店です。" }
+        { icon: "📸", title: "インスタ映え", desc: "フォトジェニックなグルメスポットをお探しの方", detail: "プレーティングから空間まですべてが感覚的。ムンティギの上にトリュフをスライスする瞬間、それがあなたのインスタ映えの瞬間です。延南洞で最もフォトジェニックなダイニング。" },
+        { icon: "🌏", title: "Korean Food Adventure", desc: "本場の韓国料理を求める観光客の方", detail: "観光客向けの料理ではなく、地元の人々が愛する本格的な韓国料理。新鮮な韓牛ムンティギとシャンパンの特別なペアリング。英語メニューあり。弘大・延南洞エリア。" },
+        { icon: "🇯🇵", title: "日本からのお客様へ", desc: "本場の韓牛ユッケを体験したい日本人の方", detail: "観光地の料理ではない、地元の人が愛する本当の韓国料理。新鮮な韓牛ムンチギとシャンパンの特別なペアリングを体験してください。日本語メニューあり。弘大・延南洞エリア。" }
       ]
     },
     // Occasions Section
@@ -860,7 +866,9 @@ const translations = {
         { icon: "🌙", title: "独处时光", desc: "犒赏自己的特别晚餐", detail: "在吧台享用安静的夜晚。配着好音乐度过独处时光的完美空间。" },
         { icon: "🎄", title: "季节活动", desc: "圣诞节、情人节、白色情人节", detail: "特别的季节更要特别。在氛围十足的空间度过圣诞晚餐、情人节、白色情人节。配着延特拉尔公园的夜景。" },
         { icon: "🌿", title: "延特拉尔公园散步后", desc: "京义线林荫道散步后的特别晚餐", detail: "延特拉尔公园、京义线林荫道散步后的完美晚餐。步行2-3分钟即可享用氛围十足的晚餐。" },
-        { icon: "🌏", title: "正宗韩国美食体验", desc: "想体验韩国真正饮食文化的外国人", detail: "不是游客餐厅，而是当地人喜爱的正宗韩国料理。体验新鲜韩牛生拌与香槟的特别搭配。首尔潮流区延南洞的隐藏名店。" }
+        { icon: "📸", title: "Ins打卡", desc: "寻找网红美食打卡点的人", detail: "从摆盘到空间，一切都很有格调。在生拌上现刨松露的瞬间，就是你的Ins打卡时刻。延南洞最上镜的餐厅。" },
+        { icon: "🌏", title: "韩国美食探险", desc: "寻找正宗韩国料理的游客", detail: "不是游客餐厅，而是当地人喜爱的正宗韩国料理。体验新鲜韩牛生拌与香槟的特别搭配。有英文菜单。弘大·延南洞区域。" },
+        { icon: "🇯🇵", title: "日本游客专属", desc: "想体验正宗韩牛生拌的日本游客", detail: "不是游客餐厅，而是当地人喜爱的正宗韩国料理。体验新鲜韩牛生拌与香槟的特别搭配。有日文菜单。弘大·延南洞区域。" }
       ]
     },
     // Occasions Section
@@ -1081,6 +1089,11 @@ function updatePageContent() {
 
 // Render dynamic sections
 function renderDynamicSections() {
+  console.log('[ROWISM] renderDynamicSections() called');
+  console.log('[ROWISM] menu-items-container:', document.getElementById('menu-items-container'));
+  console.log('[ROWISM] experience-items-container:', document.getElementById('experience-items-container'));
+  console.log('[ROWISM] reviews-items-container:', document.getElementById('reviews-items-container'));
+  
   renderMenuSection();
   renderExperienceSection();
   renderRecommendSection();
@@ -1090,15 +1103,25 @@ function renderDynamicSections() {
   renderLocationSection();
   renderReserveSection();
   renderFooterSection();
+  
+  console.log('[ROWISM] All sections rendered');
 }
 
 // Render Menu Items
 function renderMenuSection() {
+  console.log('[ROWISM] renderMenuSection() called');
   const menuContainer = document.getElementById('menu-items-container');
-  if (!menuContainer) return;
+  if (!menuContainer) {
+    console.log('[ROWISM] menu-items-container NOT found!');
+    return;
+  }
   
   const items = t('menu.items');
-  if (!Array.isArray(items)) return;
+  console.log('[ROWISM] menu.items:', items ? items.length + ' items' : 'null/undefined');
+  if (!Array.isArray(items)) {
+    console.log('[ROWISM] menu.items is NOT an array!');
+    return;
+  }
   
   const menuImages = [
     '/static/menu_jebichuri.jpg',
@@ -1132,13 +1155,21 @@ function renderMenuSection() {
 
 // Render Experience Timeline
 function renderExperienceSection() {
+  console.log('[ROWISM] renderExperienceSection() called');
   const container = document.getElementById('experience-items-container');
-  if (!container) return;
+  if (!container) {
+    console.log('[ROWISM] experience-items-container NOT found!');
+    return;
+  }
   
   const items = t('experience.items');
-  if (!Array.isArray(items)) return;
+  console.log('[ROWISM] experience.items:', items ? items.length + ' items' : 'null/undefined');
+  if (!Array.isArray(items)) {
+    console.log('[ROWISM] experience.items is NOT an array!');
+    return;
+  }
   
-  container.innerHTML = items.map((item, i) => `
+  const html = items.map((item, i) => `
     <div class="flex flex-col md:flex-row items-start gap-8 md:gap-16 animate-on-scroll ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}" style="animation-delay: ${i * 0.1}s">
       <div class="flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}">
         <span class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase">${item.time}</span>
@@ -1151,6 +1182,10 @@ function renderExperienceSection() {
       <div class="flex-1"></div>
     </div>
   `).join('');
+  
+  console.log('[ROWISM] experience HTML length:', html.length);
+  container.innerHTML = html;
+  console.log('[ROWISM] experience container children:', container.children.length);
 }
 
 // Render Recommend Section
@@ -1193,13 +1228,21 @@ function renderOccasionsSection() {
 
 // Render Reviews Section
 function renderReviewsSection() {
+  console.log('[ROWISM] renderReviewsSection() called');
   const container = document.getElementById('reviews-items-container');
-  if (!container) return;
+  if (!container) {
+    console.log('[ROWISM] reviews-items-container NOT found!');
+    return;
+  }
   
   const items = t('reviews.items');
-  if (!Array.isArray(items)) return;
+  console.log('[ROWISM] reviews.items:', items ? items.length + ' items' : 'null/undefined');
+  if (!Array.isArray(items)) {
+    console.log('[ROWISM] reviews.items is NOT an array!');
+    return;
+  }
   
-  container.innerHTML = items.map((item, i) => `
+  const html = items.map((item, i) => `
     <div class="bg-deep-black/50 border border-white/5 p-6 rounded-sm animate-on-scroll hover:border-champagne/20 transition-all duration-500" style="animation-delay: ${i * 0.1}s">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-3">
@@ -1215,6 +1258,10 @@ function renderReviewsSection() {
       <p class="text-off-white/70 text-sm leading-relaxed">${item.review}</p>
     </div>
   `).join('');
+  
+  console.log('[ROWISM] reviews HTML length:', html.length);
+  container.innerHTML = html;
+  console.log('[ROWISM] reviews container children:', container.children.length);
 }
 
 // Render FAQ Section
@@ -1329,12 +1376,47 @@ function initFAQToggle() {
   });
 }
 
+// Re-initialize scroll animations for dynamically added elements
+function reinitScrollAnimations() {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll:not(.observed)');
+  if (!animatedElements.length) return;
+  
+  console.log('[ROWISM] reinitScrollAnimations: found', animatedElements.length, 'new elements');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 50);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -80px 0px'
+  });
+  
+  animatedElements.forEach(el => {
+    el.classList.add('observed');
+    observer.observe(el);
+  });
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('[ROWISM] DOMContentLoaded fired');
   initLanguage();
   updatePageContent();
   renderDynamicSections();
   initFAQToggle();
+  
+  // Re-init scroll animations for dynamically rendered content
+  setTimeout(() => {
+    reinitScrollAnimations();
+  }, 100);
+  
+  console.log('[ROWISM] Initialization complete');
 });
 
 // Export for global use

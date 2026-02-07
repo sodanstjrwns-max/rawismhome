@@ -960,6 +960,129 @@ app.get('/rss.xml', (c) => {
   })
 })
 
+// RSS Feed - English
+app.get('/en/rss.xml', (c) => {
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ROWISM The Black - Seoul Yeonnam-dong</title>
+    <link>https://rawism.kr/en</link>
+    <description>Premium champagne bar in Yeonnam-dong, Seoul. Fresh Hanwoo beef tartare with Italian burrata and black truffle.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>Truffle Hanwoo Tartare Burrata - Signature Dish</title>
+      <link>https://rawism.kr/en/menu</link>
+      <description>Same-day slaughtered Hanwoo beef tartare with Italian burrata cheese and Umbrian black truffle. 92,000 KRW</description>
+      <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM The Black Brand Story - Philosophy of Raw</title>
+      <link>https://rawism.kr/en/about</link>
+      <description>ROWISM combines Raw and ism. We pursue minimalist culinary philosophy that maximizes the natural flavor of ingredients.</description>
+      <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM Menu - 6 Signature Dishes</title>
+      <link>https://rawism.kr/en/menu</link>
+      <description>Truffle Hanwoo Tartare 92,000 KRW, Jebichuri Grill 49,000 KRW, Cheese Selection 36,000 KRW, Cheongyang Oil Yukhoe 25,000 KRW, Avocado Caprese 23,000 KRW, Perilla Oil Yukhoe Buckwheat 15,000 KRW</description>
+      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM The Black Location - Yeonnam-dong Seoul</title>
+      <link>https://rawism.kr/en</link>
+      <description>262-4 Donggyo-ro, Mapo-gu, Seoul. 7 min walk from Hongdae Station Exit 3. Hours: Tue-Sun 18:00-24:00. Reservation: 070-5100-5534</description>
+      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>`
+  return c.text(rss, 200, { 
+    'Content-Type': 'application/rss+xml; charset=utf-8'
+  })
+})
+
+// RSS Feed - Japanese
+app.get('/ja/rss.xml', (c) => {
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ROWISM The Black - ソウル延南洞</title>
+    <link>https://rawism.kr/ja</link>
+    <description>延南洞プレミアムシャンパンバー。当日屠畜の韓牛ムンティギとシャンパンを楽しむダイニング空間。</description>
+    <language>ja</language>
+    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>トリュフ韓牛ムンティギ ブッラータ - シグネチャーメニュー</title>
+      <link>https://rawism.kr/ja/menu</link>
+      <description>当日屠畜の韓牛ムンティギとイタリア産ブッラータチーズ、ウンブリア産ブラックトリュフの完璧な調和。92,000ウォン</description>
+      <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM The Black ブランドストーリー - 生の哲学</title>
+      <link>https://rawism.kr/ja/about</link>
+      <description>ROWISMはRawとismの組み合わせです。素材本来の味を最大化するミニマリズム料理哲学を追求します。</description>
+      <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISMメニュー - 6つのシグネチャー料理</title>
+      <link>https://rawism.kr/ja/menu</link>
+      <description>トリュフ韓牛ムンティギ 92,000ウォン、ジェビチュリグリル 49,000ウォン、チーズセレクション 36,000ウォン、チョンヤンオイルユッケ 25,000ウォン</description>
+      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM The Black アクセス - 延南洞東橋路</title>
+      <link>https://rawism.kr/ja</link>
+      <description>ソウル特別市麻浦区東橋路262-4。弘大入口駅3番出口から徒歩7分。営業時間 火-日 18:00-24:00。予約 070-5100-5534</description>
+      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>`
+  return c.text(rss, 200, { 
+    'Content-Type': 'application/rss+xml; charset=utf-8'
+  })
+})
+
+// RSS Feed - Chinese
+app.get('/zh/rss.xml', (c) => {
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ROWISM The Black - 首尔延南洞</title>
+    <link>https://rawism.kr/zh</link>
+    <description>延南洞高级香槟吧。当日屠宰韩牛肉脍与香槟共享的用餐空间。</description>
+    <language>zh</language>
+    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>松露韩牛肉脍布拉塔 - 招牌菜品</title>
+      <link>https://rawism.kr/zh/menu</link>
+      <description>当日屠宰韩牛肉脍配意大利布拉塔奶酪和翁布里亚黑松露的完美搭配。92,000韩元</description>
+      <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM The Black 品牌故事 - 生食哲学</title>
+      <link>https://rawism.kr/zh/about</link>
+      <description>ROWISM是Raw和ism的结合。我们追求最大化食材原味的极简主义烹饪哲学。</description>
+      <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM菜单 - 6道招牌菜</title>
+      <link>https://rawism.kr/zh/menu</link>
+      <description>松露韩牛肉脍 92,000韩元、牛肩肉烤蔬菜 49,000韩元、奶酪拼盘 36,000韩元、青阳油拌生牛肉 25,000韩元</description>
+      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>ROWISM The Black 交通指南 - 延南洞东桥路</title>
+      <link>https://rawism.kr/zh</link>
+      <description>首尔特别市麻浦区东桥路262-4。弘大入口站3号出口步行7分钟。营业时间 周二至周日 18:00-24:00。预约 070-5100-5534</description>
+      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>`
+  return c.text(rss, 200, { 
+    'Content-Type': 'application/rss+xml; charset=utf-8'
+  })
+})
+
 // Naver Site Verification
 app.get('/naver7904d9ff69f646703310c041cef72888.html', (c) => {
   return c.text('2d5260929ab847d76c151f135aa20621f6f746a0', 200, { 'Content-Type': 'text/html' })

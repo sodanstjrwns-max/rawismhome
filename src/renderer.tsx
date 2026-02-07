@@ -14,31 +14,31 @@ const seoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집',
-    description: '서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원.',
-    keywords: '연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집',
-    ogDescription: '당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제.'
+    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 와인바 | 홍대 스파클링 와인 데이트 기념일 맛집',
+    description: '서울 연남동 프리미엄 샴페인바 & 와인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 스파클링 와인이 만나는 특별한 밤. 웰컴 스파클링으로 시작하는 럭셔리 다이닝. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원.',
+    keywords: '연남동 샴페인바, 연남동 와인바, 홍대 와인바, 연남동 스파클링 와인, 홍대 스파클링 와인, 서울 와인바 추천, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스, 연남동 프라이빗 다이닝, 연남동 한우, 홍대입구역 맛집, 연남동 럭셔리 레스토랑, 서울 샴페인바 추천, 연트럴파크 맛집, 경의선숲길 맛집, 와인 페어링, 샴페인 페어링, 프로세코, 까바',
+    ogDescription: '당일 도축 온도체 한우와 스파클링 와인의 완벽한 페어링. 웰컴 스파클링으로 시작하는 프리미엄 다이닝. 홍대입구역 5분, 8석 한정 예약제.'
   },
   en: {
     lang: 'en',
-    title: 'ROWISM The Black | Premium Champagne Bar in Seoul Yeonnam-dong | Hongdae Date Anniversary',
-    description: 'ROWISM The Black - Premium Champagne Bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) with Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required. Perfect for dates and anniversaries.',
-    keywords: 'Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Hongdae wine bar, Seoul private dining, Korean raw beef, Seoul foodie, Hongdae hidden gem',
-    ogDescription: 'Premium champagne bar in Seoul\'s Yeonnam-dong. Fresh Korean beef tartare with truffle and champagne pairing. 5 min from Hongdae Station, reservation required.'
+    title: 'ROWISM The Black | Premium Champagne & Wine Bar Seoul Yeonnam-dong | Sparkling Wine Date',
+    description: 'ROWISM The Black - Premium Champagne Bar & Wine Bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare with sparkling wine pairing. Welcome sparkling to start your evening. 5 min from Hongdae Station, 8 seats only, reservation required.',
+    keywords: 'Seoul wine bar, Yeonnam-dong wine bar, Hongdae wine bar, Seoul sparkling wine, champagne bar Seoul, wine pairing Seoul, Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Seoul private dining, Korean raw beef, prosecco Seoul, cava Seoul',
+    ogDescription: 'Premium champagne & wine bar in Seoul Yeonnam-dong. Korean beef tartare with sparkling wine pairing. Welcome sparkling to start. 5 min from Hongdae Station.'
   },
   ja: {
     lang: 'ja',
-    title: 'ROWISM The Black | ソウル延南洞プレミアムシャンパンバー | 弘大デート記念日',
-    description: 'ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。弘大駅から徒歩5分、8席限定、要予約。デートや記念日に最適。',
-    keywords: '弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 弘大 ワインバー, 韓国 生肉, ソウル 隠れ家',
-    ogDescription: 'ソウル延南洞のプレミアムシャンパンバー。新鮮な韓牛タルタルとシャンパンのペアリング。弘大駅から徒歩5分、要予約。'
+    title: 'ROWISM The Black | ソウル延南洞プレミアムシャンパン・ワインバー | スパークリングワイン デート',
+    description: 'ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー＆ワインバー。新鮮な韓牛タルタルとスパークリングワインのペアリング。ウェルカムスパークリングで始まる特別な夜。弘大駅から徒歩5分、8席限定、要予約。',
+    keywords: 'ソウル ワインバー, 延南洞 ワインバー, 弘大 ワインバー, ソウル スパークリングワイン, シャンパンバー ソウル, ワインペアリング, 弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 韓国 生肉, ソウル 隠れ家, プロセッコ, カヴァ',
+    ogDescription: 'ソウル延南洞のプレミアムシャンパン＆ワインバー。韓牛タルタルとスパークリングワインのペアリング。弘大駅から徒歩5分、要予約。'
   },
   zh: {
     lang: 'zh',
-    title: 'ROWISM The Black | 首尔延南洞高级香槟吧 | 弘大约会纪念日',
-    description: 'ROWISM The Black - 首尔延南洞高级香槟吧。新鲜当日屠宰韩牛肉脍配意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。约会和纪念日的完美选择。',
-    keywords: '弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 弘大酒吧, 韩国生牛肉, 首尔网红餐厅',
-    ogDescription: '首尔延南洞高级香槟吧。新鲜韩牛肉脍与香槟搭配。弘大站步行5分钟，需预约。'
+    title: 'ROWISM The Black | 首尔延南洞高级香槟吧・红酒吧 | 起泡酒 约会纪念日',
+    description: 'ROWISM The Black - 首尔延南洞高级香槟吧和红酒吧。新鲜韩牛肉脍与起泡酒的完美搭配。迎宾起泡酒开启特别之夜。弘大站步行5分钟，仅8席，需预约。',
+    keywords: '首尔红酒吧, 延南洞红酒吧, 弘大红酒吧, 首尔起泡酒, 香槟吧首尔, 葡萄酒搭配, 弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 韩国生牛肉, 首尔网红餐厅, 普罗塞克, 卡瓦',
+    ogDescription: '首尔延南洞高级香槟吧和红酒吧。韩牛肉脍与起泡酒的完美搭配。弘大站步行5分钟，需预约。'
   }
 }
 
@@ -230,7 +230,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                 "closes": "24:00"
               }
             ],
-            "servesCuisine": ["Korean", "Champagne Bar", "Korean Beef Tartare", "Hanwoo"],
+            "servesCuisine": ["Korean", "Champagne Bar", "Wine Bar", "Sparkling Wine", "Korean Beef Tartare", "Hanwoo", "Fine Dining"],
             "menu": `https://rawism.kr${getLangPath(pageLang)}#menu`,
             "priceRange": "₩₩₩",
             "currenciesAccepted": "KRW",
@@ -774,6 +774,8 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "servesCuisine": [
               pageLang === 'ko' ? "한우 전문" : pageLang === 'ja' ? "韓牛専門" : pageLang === 'zh' ? "韩牛专门" : "Korean Beef",
               pageLang === 'ko' ? "샴페인바" : pageLang === 'ja' ? "シャンパンバー" : pageLang === 'zh' ? "香槟吧" : "Champagne Bar",
+              pageLang === 'ko' ? "와인바" : pageLang === 'ja' ? "ワインバー" : pageLang === 'zh' ? "红酒吧" : "Wine Bar",
+              pageLang === 'ko' ? "스파클링 와인" : pageLang === 'ja' ? "スパークリングワイン" : pageLang === 'zh' ? "起泡酒" : "Sparkling Wine",
               pageLang === 'ko' ? "육회 전문" : pageLang === 'ja' ? "ユッケ専門" : pageLang === 'zh' ? "生牛肉专门" : "Raw Beef Tartare"
             ],
             "acceptsReservations": true,
@@ -801,11 +803,11 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "BarOrPub",
             "@id": "https://rawism.kr/#bar",
-            "name": "ROWISM The Black Champagne Bar",
-            "alternateName": pageLang === 'ko' ? "로위즘 샴페인바" : pageLang === 'ja' ? "ロウイズム シャンパンバー" : pageLang === 'zh' ? "罗伊斯姆香槟吧" : "ROWISM Champagne Bar",
-            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바. 엄선된 샴페인과 스파클링 와인 컬렉션." : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー。厳選されたシャンパンとスパークリングワインコレクション。" : pageLang === 'zh' ? "延南洞高级香槟吧。精选香槟和起泡酒收藏。" : "Yeonnam-dong premium champagne bar. Curated champagne and sparkling wine collection.",
+            "name": "ROWISM The Black Champagne & Wine Bar",
+            "alternateName": pageLang === 'ko' ? "로위즘 샴페인바 & 와인바" : pageLang === 'ja' ? "ロウイズム シャンパン＆ワインバー" : pageLang === 'zh' ? "罗伊斯姆香槟吧和红酒吧" : "ROWISM Champagne & Wine Bar",
+            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 & 와인바. 웰컴 스파클링으로 시작하는 특별한 밤. 엄선된 샴페인, 스파클링 와인, 프로세코 컬렉션." : pageLang === 'ja' ? "延南洞プレミアムシャンパン＆ワインバー。ウェルカムスパークリングで始まる特別な夜。厳選されたシャンパン、スパークリングワイン、プロセッココレクション。" : pageLang === 'zh' ? "延南洞高级香槟吧和红酒吧。以迎宾起泡酒开启特别之夜。精选香槟、起泡酒、普罗塞克收藏。" : "Yeonnam-dong premium champagne & wine bar. Welcome sparkling to start your special evening. Curated champagne, sparkling wine, and prosecco collection.",
             "url": `https://rawism.kr${getLangPath(pageLang)}`,
-            "servesCuisine": ["Champagne", "Sparkling Wine", "Wine"],
+            "servesCuisine": ["Champagne", "Sparkling Wine", "Wine", "Prosecco", "Cava"],
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "동교로 262-4",

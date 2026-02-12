@@ -1,4 +1,5 @@
 import { jsxRenderer } from 'hono/jsx-renderer'
+import { html } from 'hono/html'
 
 type Language = 'ko' | 'en' | 'ja' | 'zh'
 
@@ -62,12 +63,12 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           {/* Canonical URL */}
           <link rel="canonical" href={`https://rawism.kr${getLangPath(pageLang)}/menu`} />
           
-          {/* hreflang tags - Note: ko and x-default may be deduplicated by JSX, but sitemap.xml has complete hreflang coverage */}
-          <link rel="alternate" hreflang="ko" href="https://rawism.kr/menu" />
+          {/* hreflang tags */}
+          {html`<link rel="alternate" hreflang="ko" href="https://rawism.kr/menu" />
           <link rel="alternate" hreflang="en" href="https://rawism.kr/en/menu" />
           <link rel="alternate" hreflang="ja" href="https://rawism.kr/ja/menu" />
           <link rel="alternate" hreflang="zh" href="https://rawism.kr/zh/menu" />
-          <link rel="alternate" hreflang="x-default" href="https://rawism.kr/menu" />
+          <link rel="alternate" hreflang="x-default" href="https://rawism.kr/menu" />`}
           
           {/* Favicon */}
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />

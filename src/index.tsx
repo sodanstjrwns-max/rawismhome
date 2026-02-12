@@ -7,6 +7,16 @@ import { AboutPage } from './pages/AboutPage'
 
 const app = new Hono()
 
+// www → non-www 301 redirect middleware
+app.use('*', async (c, next) => {
+  const url = new URL(c.req.url)
+  if (url.hostname === 'www.rawism.kr') {
+    url.hostname = 'rawism.kr'
+    return c.redirect(url.toString(), 301)
+  }
+  return next()
+})
+
 // Language types
 type Language = 'ko' | 'en' | 'ja' | 'zh'
 

@@ -32,9 +32,9 @@ function PageContent({ lang }: { lang: Language }) {
   const basePath = getLangPath(lang)
   
   return (
-    <div class="overflow-x-hidden">
+    <main class="overflow-x-hidden" role="main">
       {/* Navigation */}
-      <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-700 bg-transparent">
+      <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-700 bg-transparent" role="navigation" aria-label="메인 네비게이션">
         <div class="max-w-7xl mx-auto px-8 md:px-12 py-6 flex justify-between items-center">
           <a href={`${basePath}#hero`} class="group">
             <img 
@@ -99,7 +99,7 @@ function PageContent({ lang }: { lang: Language }) {
       </nav>
 
       {/* Section 1: Hero - Cinematic */}
-      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden" aria-label="ROWISM The Black 히어로 섹션">
         {/* Dark Gradient Overlay */}
         <div class="absolute inset-0 bg-gradient-to-b from-deep-black via-deep-black/95 to-deep-black"></div>
         
@@ -120,11 +120,14 @@ function PageContent({ lang }: { lang: Language }) {
               연남동 프리미엄 샴페인 라운지
             </p>
             
+            {/* H1 - Main Page Title for SEO */}
+            <h1 class="sr-only">ROWISM The Black - 연남동 프리미엄 샴페인바 & 와인바 | 트러플 한우 육회 프라이빗 다이닝</h1>
+            
             {/* Logo Image */}
             <div class="mb-12">
               <img 
                 src="/static/logo.png" 
-                alt="RAWISM The Black" 
+                alt="ROWISM The Black - 연남동 프리미엄 샴페인바" 
                 class="w-64 md:w-80 lg:w-96 mx-auto"
               />
             </div>
@@ -192,7 +195,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 4: Philosophy - Brand Story Enhanced */}
-      <section id="philosophy" class="py-32 md:py-40 bg-deep-black relative">
+      <section id="philosophy" class="py-32 md:py-40 bg-deep-black relative" aria-label="브랜드 철학 소개">
         <div class="max-w-6xl mx-auto px-8 md:px-12">
           <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Left - Text */}
@@ -247,7 +250,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 5: Menu - Premium with Photos */}
-      <section id="menu" class="py-32 md:py-40 bg-soft-black/30">
+      <section id="menu" class="py-32 md:py-40 bg-soft-black/30" aria-label="메뉴 소개">
         <div class="max-w-6xl mx-auto px-8 md:px-12">
           <div class="text-center mb-24 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4" data-i18n="menu.label">Menu</p>
@@ -333,9 +336,9 @@ function PageContent({ lang }: { lang: Language }) {
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
-                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
+                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
                     제비추리 그릴드 베지터블
-                  </h4>
+                  </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>한우 제비추리와 8종 제철 채소의 그릴 향연</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩49,000</span>
@@ -364,9 +367,9 @@ function PageContent({ lang }: { lang: Language }) {
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
-                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
+                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
                     치즈 셀렉션
-                  </h4>
+                  </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>소믈리에가 큐레이팅한 6종 치즈 컬렉션</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩36,000</span>
@@ -394,9 +397,9 @@ function PageContent({ lang }: { lang: Language }) {
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
-                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
+                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
                     청양 오일 육회
-                  </h4>
+                  </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>전통 육회에 더한 매콤한 불꽃</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩25,000</span>
@@ -425,9 +428,9 @@ function PageContent({ lang }: { lang: Language }) {
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
-                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
+                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
                     아보카도 카프레제
-                  </h4>
+                  </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>클래식 카프레제의 현대적 재해석</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩23,000</span>
@@ -461,9 +464,9 @@ function PageContent({ lang }: { lang: Language }) {
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
-                  <h4 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
+                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
                     들기름 육회 메밀면
-                  </h4>
+                  </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>한 끼의 완벽한 마무리</p>
                 </div>
                 <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩15,000</span>
@@ -485,7 +488,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 6: Experience Timeline */}
-      <section id="experience" class="py-32 md:py-40 bg-deep-black">
+      <section id="experience" class="py-32 md:py-40 bg-deep-black" aria-label="방문 경험">
         <div class="max-w-5xl mx-auto px-8 md:px-12">
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Experience</p>
@@ -510,7 +513,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 7: Recommend - "이런 분께 추천드립니다" */}
-      <section id="recommend" class="py-32 md:py-40 bg-soft-black/30">
+      <section id="recommend" class="py-32 md:py-40 bg-soft-black/30" aria-label="추천 대상">
         <div class="max-w-5xl mx-auto px-8 md:px-12">
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Recommendation</p>
@@ -550,7 +553,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 9: Location - Enhanced */}
-      <section id="location" class="py-32 md:py-40 bg-soft-black/30">
+      <section id="location" class="py-32 md:py-40 bg-soft-black/30" aria-label="위치 안내">
         <div class="max-w-6xl mx-auto px-8 md:px-12">
           <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
             {/* Left - Info */}
@@ -627,7 +630,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 10: Customer Reviews */}
-      <section id="reviews" class="py-32 md:py-40 bg-soft-black">
+      <section id="reviews" class="py-32 md:py-40 bg-soft-black" aria-label="고객 후기">
         <div class="max-w-6xl mx-auto px-8 md:px-12">
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Reviews</p>
@@ -660,7 +663,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 11: FAQ - Expanded for SEO */}
-      <section id="faq" class="py-32 md:py-40 bg-deep-black">
+      <section id="faq" class="py-32 md:py-40 bg-deep-black" aria-label="자주 묻는 질문">
         <div class="max-w-3xl mx-auto px-8 md:px-12">
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">FAQ</p>
@@ -680,7 +683,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Section 12: CTA */}
-      <section id="reserve" class="py-32 md:py-40 bg-soft-black/30 relative overflow-hidden">
+      <section id="reserve" class="py-32 md:py-40 bg-soft-black/30 relative overflow-hidden" aria-label="예약 안내">
         {/* Subtle Background */}
         <div class="absolute inset-0 bg-gradient-to-r from-champagne/5 via-transparent to-champagne/5"></div>
         
@@ -730,7 +733,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* Footer */}
-      <footer class="py-20 bg-deep-black border-t border-white/5">
+      <footer class="py-20 bg-deep-black border-t border-white/5" role="contentinfo" aria-label="푸터">
         <div class="max-w-6xl mx-auto px-8 md:px-12">
           <div class="grid md:grid-cols-3 gap-16 mb-16">
             {/* Brand */}
@@ -837,7 +840,7 @@ function PageContent({ lang }: { lang: Language }) {
           </svg>
         </a>
       </div>
-    </div>
+    </main>
   )
 }
 

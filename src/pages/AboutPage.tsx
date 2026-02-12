@@ -53,8 +53,8 @@ const aboutTranslations: Record<Language, {
   ctaSubtitle: string
 }> = {
   ko: {
-    pageTitle: '브랜드 스토리',
-    pageSubtitle: 'ROWISM The Black의 철학과 이야기',
+    pageTitle: 'ROWISM The Black 브랜드 스토리',
+    pageSubtitle: '연남동 프리미엄 샴페인바 ROWISM의 철학과 이야기',
     backToHome: '← 메인으로',
     reserveCta: '네이버 예약',
     
@@ -118,8 +118,8 @@ const aboutTranslations: Record<Language, {
     ctaSubtitle: '8석 한정 예약제 프라이빗 다이닝'
   },
   en: {
-    pageTitle: 'Brand Story',
-    pageSubtitle: 'The philosophy and story of ROWISM The Black',
+    pageTitle: 'ROWISM The Black Brand Story',
+    pageSubtitle: 'The philosophy and story behind Yeonnam-dong\'s premium champagne bar',
     backToHome: '← Back to Home',
     reserveCta: 'Book on Naver',
     
@@ -183,8 +183,8 @@ const aboutTranslations: Record<Language, {
     ctaSubtitle: 'Private dining with only 8 seats, reservation required'
   },
   ja: {
-    pageTitle: 'ブランドストーリー',
-    pageSubtitle: 'ROWISM The Blackの哲学と物語',
+    pageTitle: 'ROWISM The Black ブランドストーリー',
+    pageSubtitle: '延南洞プレミアムシャンパンバーROWISMの哲学と物語',
     backToHome: '← メインへ',
     reserveCta: 'Naver予約',
     
@@ -248,8 +248,8 @@ const aboutTranslations: Record<Language, {
     ctaSubtitle: '8席限定 予約制プライベートダイニング'
   },
   zh: {
-    pageTitle: '品牌故事',
-    pageSubtitle: 'ROWISM The Black的哲学与故事',
+    pageTitle: 'ROWISM The Black 品牌故事',
+    pageSubtitle: '延南洞高级香槟吧ROWISM的哲学与故事',
     backToHome: '← 返回首页',
     reserveCta: 'Naver预订',
     

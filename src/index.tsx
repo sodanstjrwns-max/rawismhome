@@ -120,14 +120,14 @@ function PageContent({ lang }: { lang: Language }) {
               연남동 프리미엄 샴페인 라운지
             </p>
             
-            {/* H1 - Main Page Title for SEO */}
-            <h1 class="sr-only">ROWISM The Black - 연남동 프리미엄 샴페인바 & 와인바 | 트러플 한우 육회 프라이빗 다이닝</h1>
+            {/* H1 - Main Page Title for SEO - 로고 위에 시각적으로 노출 */}
+            <h1 class="font-playfair text-[10px] md:text-xs tracking-[0.4em] text-champagne/40 uppercase font-light mb-6" data-i18n="hero.h1">ROWISM The Black — 연남동 프리미엄 샴페인바 & 와인바</h1>
             
             {/* Logo Image */}
             <div class="mb-12">
               <img 
                 src="/static/logo.png" 
-                alt="ROWISM The Black - 연남동 프리미엄 샴페인바" 
+                alt="ROWISM The Black - 연남동 프리미엄 샴페인바 트러플 한우 뭉티기 프라이빗 다이닝" 
                 class="w-64 md:w-80 lg:w-96 mx-auto"
               />
             </div>
@@ -222,25 +222,25 @@ function PageContent({ lang }: { lang: Language }) {
             <div class="grid grid-cols-2 gap-px bg-white/5">
               <div class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/30 transition-all duration-500 animate-on-scroll">
                 <span class="text-[10px] text-champagne/30 tracking-widest">01</span>
-                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.0.title">Signature Tartare</h3>
+                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.0.title">시그니처 타르타르</h3>
                 <p class="text-[11px] text-off-white/40 tracking-wide" data-i18n="philosophy.features.0.desc">트러플 한우 뭉티기</p>
                 <p class="text-[10px] text-off-white/25 mt-2" data-i18n="philosophy.features.0.detail">최상급 한우 + 트러플</p>
               </div>
               <div class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/30 transition-all duration-500 animate-on-scroll" style="animation-delay: 0.1s">
                 <span class="text-[10px] text-champagne/30 tracking-widest">02</span>
-                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.1.title">Champagne & Sparkling</h3>
+                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.1.title">소믈리에 샴페인 큐레이션</h3>
                 <p class="text-[11px] text-off-white/40 tracking-wide" data-i18n="philosophy.features.1.desc">소믈리에 큐레이션</p>
                 <p class="text-[10px] text-off-white/25 mt-2" data-i18n="philosophy.features.1.detail">프리미엄 샴페인 & 스파클링</p>
               </div>
               <div class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/30 transition-all duration-500 animate-on-scroll" style="animation-delay: 0.2s">
                 <span class="text-[10px] text-champagne/30 tracking-widest">03</span>
-                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.2.title">Private Space</h3>
+                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.2.title">8석 프라이빗 다이닝</h3>
                 <p class="text-[11px] text-off-white/40 tracking-wide" data-i18n="philosophy.features.2.desc">8석 한정 운영</p>
                 <p class="text-[10px] text-off-white/25 mt-2" data-i18n="philosophy.features.2.detail">예약제 프라이빗 다이닝</p>
               </div>
               <div class="bg-deep-black p-8 md:p-10 group hover:bg-soft-black/30 transition-all duration-500 animate-on-scroll" style="animation-delay: 0.3s">
                 <span class="text-[10px] text-champagne/30 tracking-widest">04</span>
-                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.3.title">Sensory Design</h3>
+                <h3 class="font-playfair text-base md:text-lg mt-4 mb-2 text-off-white/90 group-hover:text-champagne transition-colors duration-500" data-i18n="philosophy.features.3.title">오감 경험 설계</h3>
                 <p class="text-[11px] text-off-white/40 tracking-wide" data-i18n="philosophy.features.3.desc">오감의 경험 설계</p>
                 <p class="text-[10px] text-off-white/25 mt-2" data-i18n="philosophy.features.3.detail">조명·음악·서비스</p>
               </div>
@@ -255,7 +255,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-24 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4" data-i18n="menu.label">Menu</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="menu.title">
-              Signature Collection
+              시그니처 메뉴 컬렉션
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto" data-i18n="menu.subtitle">
               최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처
@@ -493,7 +493,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Experience</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="experience.title">
-              The Journey
+              ROWISM 다이닝 경험
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto">
               <span data-i18n="experience.subtitle">ROWISM The Black에서 경험하실 특별한 여정</span>
@@ -518,7 +518,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Recommendation</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="recommend.title">
-              이런 분께 추천드립니다
+              홍대 연남동 데이트, 이런 분께 추천합니다
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto" data-i18n="recommend.subtitle">
               당신의 특별한 순간을 위한 공간
@@ -538,7 +538,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Occasions</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="occasions.title">
-              Special Moments
+              기념일 · 프로포즈 · 데이트
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto" data-i18n="occasions.subtitle">
               소중한 순간을 더욱 특별하게
@@ -560,7 +560,7 @@ function PageContent({ lang }: { lang: Language }) {
             <div class="animate-on-scroll">
               <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-6">Location</p>
               <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide mb-12" data-i18n="location.title">
-                찾아오시는 길
+                연남동 ROWISM 찾아오시는 길
               </h2>
               
               <div class="space-y-10">
@@ -635,7 +635,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Reviews</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="reviews.title">
-              고객 후기
+              연남동 샴페인바 고객 후기
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4" data-i18n="reviews.subtitle">
               ROWISM The Black을 경험하신 분들의 이야기
@@ -668,7 +668,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">FAQ</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="faq.title">
-              자주 묻는 질문
+              ROWISM The Black 자주 묻는 질문
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto" data-i18n="faq.subtitle">
               연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요
@@ -691,7 +691,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-6">Reservation</p>
             <h2 class="font-playfair text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-6" data-i18n="reserve.title">
-              특별한 밤을 예약하세요
+              연남동 프라이빗 다이닝 예약
             </h2>
             <p class="text-off-white/40 text-sm font-light mb-8 max-w-md mx-auto" data-i18n-html="reserve.subtitle">
               8석 한정 예약제 프라이빗 다이닝

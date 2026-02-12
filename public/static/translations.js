@@ -16,6 +16,7 @@ const translations = {
     },
     // Hero Section
     hero: {
+      h1: "ROWISM The Black — 연남동 프리미엄 샴페인바 & 와인바",
       subtitle: "연남동 프리미엄 샴페인 라운지",
       title1: "특별한 밤을",
       title2: "시작하는 곳",
@@ -49,17 +50,17 @@ const translations = {
       p3Title: "8개의 프라이빗 테이블.",
       p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
       features: [
-        { title: "Signature Tartare", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
-        { title: "Champagne & Sparkling", desc: "소믈리에 큐레이션", detail: "프리미엄 샴페인 & 스파클링" },
-        { title: "Private Space", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
-        { title: "Sensory Design", desc: "오감의 경험 설계", detail: "조명·음악·서비스" }
+        { title: "시그니처 타르타르", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
+        { title: "소믈리에 샴페인 큐레이션", desc: "소믈리에 큐레이션", detail: "프리미엄 샴페인 & 스파클링" },
+        { title: "8석 프라이빗 다이닝", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
+        { title: "오감 경험 설계", desc: "오감의 경험 설계", detail: "조명·음악·서비스" }
       ],
       story: "ROWISM은 'RAW(날것)'와 '-ISM(철학)'의 조합입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 즐기는 것을 추구합니다. 당일 도축한 온도체 한우의 신선함, 이탈리아 부라타 치즈의 크리미함, 프렌치 블랙 트러플의 깊은 향. 이 모든 것이 샴페인 한 잔과 함께 어우러지는 특별한 경험을 선사합니다."
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "특별한 여정",
+      title: "ROWISM 다이닝 경험",
       subtitle: "ROWISM The Black에서 경험하실 특별한 여정",
       items: [
         { time: "01 — Arrival", title: "✨ 웰컴 스파클링", desc: "문을 여는 순간, 특별한 저녁이 시작됩니다. 소믈리에가 직접 따라드리는 웰컴 스파클링 한 잔. 오늘 밤의 서막을 여는 첫 번째 건배." },
@@ -71,7 +72,7 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
+      title: "시그니처 메뉴 컬렉션",
       subtitle: "최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처",
       ingredientsLabel: "재료",
       finisherBadge: "Finisher",
@@ -131,7 +132,7 @@ const translations = {
     // Recommend Section
     recommend: {
       label: "Recommend",
-      title: "이런 분께 추천드립니다",
+      title: "홍대 연남동 데이트, 이런 분께 추천합니다",
       subtitle: "당신의 특별한 순간을 위한 공간",
       items: [
         { icon: "💕", title: "연남동 데이트", desc: "특별한 데이트를 원하는 커플", detail: "홍대/연남동에서 평범하지 않은 데이트 코스를 찾으신다면. 분위기와 맛 모두를 원하는 20-40대 커플에게 추천드립니다." },
@@ -151,7 +152,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "기념일 · 프로포즈 · 데이트",
       subtitle: "소중한 순간을 더욱 특별하게",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "기념일", desc: "100일, 200일, 1주년, 생일, 결혼기념일 등 특별한 기념일을 위한 공간", event: "프라이빗 공간" },
@@ -163,7 +164,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "오시는 길",
+      title: "연남동 ROWISM 찾아오시는 길",
       address: "서울 마포구 동교로 262-4",
       zipcode: "04030",
       hours: "화-일 18:00 - 24:00",
@@ -182,7 +183,7 @@ const translations = {
     // Reviews Section
     reviews: {
       label: "Reviews",
-      title: "고객 후기",
+      title: "연남동 샴페인바 고객 후기",
       subtitle: "ROWISM The Black을 경험하신 분들의 이야기",
       count: "127개의 리뷰",
       more: "더 많은 후기 보기 →",
@@ -198,7 +199,7 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "자주 묻는 질문",
+      title: "ROWISM The Black 자주 묻는 질문",
       subtitle: "연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요",
       items: [
         { q: "예약 없이 방문해도 되나요?", a: "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다." },
@@ -213,7 +214,7 @@ const translations = {
     // Reserve Section
     reserve: {
       label: "Reservation",
-      title: "특별한 밤을 예약하세요",
+      title: "연남동 프라이빗 다이닝 예약",
       subtitle: "8석 한정 예약제 프라이빗 다이닝",
       notice: "금요일·토요일·기념일은 최소 3일 전 예약을 권장드립니다",
       domestic: {
@@ -271,6 +272,7 @@ const translations = {
     },
     // Hero Section
     hero: {
+      h1: "ROWISM The Black — Premium Champagne & Wine Bar in Yeonnam-dong",
       subtitle: "Premium Champagne Lounge in Yeonnam-dong",
       title1: "Where Special",
       title2: "Nights Begin",
@@ -314,7 +316,7 @@ const translations = {
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "Your Journey",
+      title: "The ROWISM Dining Experience",
       subtitle: "A special journey awaits at ROWISM The Black",
       items: [
         { time: "01 — Arrival", title: "✨ Welcome Sparkling", desc: "The moment you step through the door, your special evening begins. Our sommelier personally pours your welcome sparkling. The first toast to open tonight's chapter." },
@@ -386,7 +388,7 @@ const translations = {
     // Recommend Section
     recommend: {
       label: "Recommend",
-      title: "Perfect For",
+      title: "Date Night in Yeonnam-dong? Perfect For You",
       subtitle: "Planning a date, anniversary, or special occasion in Yeonnam-dong?",
       items: [
         { icon: "💕", title: "Date Night", desc: "Couples seeking a special date", detail: "Looking for an extraordinary date course in Hongdae/Yeonnam-dong? Recommended for couples in their 20s-40s who want both ambiance and great food." },
@@ -406,7 +408,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "Anniversary · Proposal · Date Night",
       subtitle: "Make Your Moments Special",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "Celebration", desc: "Perfect space for 100 days, 200 days, 1 year, birthdays, wedding anniversaries", event: "Private Space" },
@@ -418,7 +420,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "How to Find Us",
+      title: "Find ROWISM in Yeonnam-dong",
       address: "262-4 Donggyo-ro, Mapo-gu, Seoul",
       zipcode: "04030",
       parking: "Use nearby public parking",
@@ -437,7 +439,7 @@ const translations = {
     // Reviews Section
     reviews: {
       label: "Reviews",
-      title: "Guest Reviews",
+      title: "Guest Reviews at ROWISM The Black",
       subtitle: "Stories from those who experienced ROWISM The Black",
       count: "127 reviews",
       more: "See more reviews →",
@@ -453,7 +455,7 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "Frequently Asked Questions",
+      title: "ROWISM The Black FAQ",
       subtitle: "Find answers about ROWISM The Black champagne bar in Yeonnam-dong",
       items: [
         { q: "Do I need a reservation?", a: "ROWISM The Black operates by reservation only. With only 8 tables, reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance." },
@@ -468,7 +470,7 @@ const translations = {
     // Reserve Section
     reserve: {
       label: "Reservation",
-      title: "Reserve Your Special Night",
+      title: "Reserve Your Private Dining Experience",
       subtitle: "8 Seats Only - Private Dining by Reservation",
       notice: "We recommend booking at least 3 days ahead for Fridays, Saturdays, and special occasions",
       domestic: {
@@ -526,6 +528,7 @@ const translations = {
     },
     // Hero Section
     hero: {
+      h1: "ROWISM The Black — 延南洞プレミアムシャンパンバー & ワインバー",
       subtitle: "延南洞プレミアムシャンパンラウンジ",
       title1: "特別な夜が",
       title2: "始まる場所",
@@ -559,17 +562,17 @@ const translations = {
       p3Title: "8つのプライベートテーブル。",
       p3Text: "ルイスポールセンの柔らかな照明、ジュネーブスピーカーが届けるキュレーティングされた旋律。ROWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞ダイニング空間です。",
       features: [
-        { title: "Signature Tartare", desc: "トリュフ韓牛ムンティギ", detail: "最高級韓牛 + トリュフ" },
-        { title: "Champagne & Sparkling", desc: "ソムリエキュレーション", detail: "プレミアムシャンパン & スパークリング" },
-        { title: "Private Space", desc: "8席限定運営", detail: "予約制プライベートダイニング" },
-        { title: "Sensory Design", desc: "五感の体験設計", detail: "照明·音楽·サービス" }
+        { title: "シグネチャータルタル", desc: "トリュフ韓牛ムンティギ", detail: "最高級韓牛 + トリュフ" },
+        { title: "ソムリエシャンパンキュレーション", desc: "ソムリエキュレーション", detail: "プレミアムシャンパン & スパークリング" },
+        { title: "8席プライベートダイニング", desc: "8席限定運営", detail: "予約制プライベートダイニング" },
+        { title: "五感体験設計", desc: "五感の体験設計", detail: "照明·音楽·サービス" }
       ],
       story: "ROWISMは「RAW（生）」と「-ISM（哲学）」の組み合わせです。最高級の食材本来の味を最も純粋な方法で楽しむことを追求しています。当日屠畜した韓牛の新鮮さ、イタリアンブラータチーズのクリーミーさ、フレンチブラックトリュフの深い香り。すべてがシャンパンと調和する特別な体験を提供します。"
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "特別な旅",
+      title: "ROWISMダイニング体験",
       subtitle: "ROWISM The Blackでの特別な旅",
       items: [
         { time: "01 — Arrival", title: "✨ ウェルカムスパークリング", desc: "扉を開けた瞬間、特別な夜が始まります。ソムリエが直接注ぐウェルカムスパークリング。今宵の幕開けを告げる最初の乾杯。" },
@@ -581,7 +584,7 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
+      title: "シグネチャー メニュー コレクション",
       subtitle: "最高級の食材と繊細なプレーティングで完成されるROWISMのシグネチャー",
       ingredientsLabel: "材料",
       finisherBadge: "Finisher",
@@ -641,7 +644,7 @@ const translations = {
     // Recommend Section
     recommend: {
       label: "Recommend",
-      title: "こんな方におすすめ",
+      title: "延南洞デート、こんな方におすすめ",
       subtitle: "延南洞でのデート、記念日、特別な日を計画中なら",
       items: [
         { icon: "💕", title: "延南洞デート", desc: "特別なデートを望むカップル", detail: "弘大/延南洞で普通じゃないデートコースをお探しなら。雰囲気も味も両方求める20-40代カップルにおすすめ。" },
@@ -661,7 +664,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "記念日 · プロポーズ · デート",
       subtitle: "大切な瞬間をもっと特別に",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "記念日", desc: "100日、200日、1周年、誕生日、結婚記念日など特別な記念日のための空間", event: "プライベート空間" },
@@ -673,7 +676,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "アクセス",
+      title: "延南洞ROWISMへのアクセス",
       address: "ソウル市麻浦区東橋路262-4",
       zipcode: "04030",
       parking: "近隣の公営駐車場をご利用ください",
@@ -692,7 +695,7 @@ const translations = {
     // Reviews Section
     reviews: {
       label: "Reviews",
-      title: "お客様の声",
+      title: "延南洞シャンパンバー お客様の声",
       subtitle: "ROWISM The Blackを体験された方々のストーリー",
       count: "127件のレビュー",
       more: "もっと見る →",
@@ -708,7 +711,7 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "よくある質問",
+      title: "ROWISM The Black よくある質問",
       subtitle: "延南洞シャンパンバー ROWISM The Blackについてのご質問",
       items: [
         { q: "予約なしでも大丈夫ですか？", a: "ROWISM The Blackは予約制で運営しています。8テーブル限定で運営しており、特に金曜日、土曜日、記念日は予約が必須です。Naver予約でご予約いただけます。最低2-3日前の予約をおすすめします。" },
@@ -723,7 +726,7 @@ const translations = {
     // Reserve Section
     reserve: {
       label: "Reservation",
-      title: "特別な夜をご予約ください",
+      title: "延南洞プライベートダイニング予約",
       subtitle: "8席限定 予約制プライベートダイニング",
       notice: "金曜・土曜・記念日は最低3日前の予約をおすすめします",
       domestic: {
@@ -781,6 +784,7 @@ const translations = {
     },
     // Hero Section
     hero: {
+      h1: "ROWISM The Black — 延南洞高级香槟吧 & 葡萄酒吧",
       subtitle: "延南洞高级香槟酒廊",
       title1: "特别之夜",
       title2: "开始的地方",
@@ -814,17 +818,17 @@ const translations = {
       p3Title: "8个私享桌位。",
       p3Text: "Louis Poulsen的柔和照明，Geneva音箱传递的精心策划的旋律。ROWISM The Black不只是香槟酒吧，而是设计感官体验的延南洞餐饮空间。",
       features: [
-        { title: "Signature Tartare", desc: "松露韩牛生拌", detail: "顶级韩牛 + 松露" },
-        { title: "Champagne & Sparkling", desc: "侍酒师策划", detail: "高级香槟 & 起泡酒" },
-        { title: "Private Space", desc: "限定8席运营", detail: "预约制私享餐厅" },
-        { title: "Sensory Design", desc: "五感体验设计", detail: "照明·音乐·服务" }
+        { title: "招牌生拌", desc: "松露韩牛生拌", detail: "顶级韩牛 + 松露" },
+        { title: "侍酒师香槟策划", desc: "侍酒师策划", detail: "高级香槟 & 起泡酒" },
+        { title: "8席私享餐厅", desc: "限定8席运营", detail: "预约制私享餐厅" },
+        { title: "五感体验设计", desc: "五感体验设计", detail: "照明·音乐·服务" }
       ],
       story: "ROWISM是\"RAW（生）\"和\"-ISM（主义）\"的结合。我们追求以最纯粹的方式享用顶级食材的本味。当日屠宰韩牛的新鲜、意大利布拉塔奶酪的绵密、法国黑松露的深邃香气。所有这些与一杯香槟完美融合，为您带来非凡体验。"
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "特别旅程",
+      title: "ROWISM特别旅程",
       subtitle: "在ROWISM The Black等待您的特别旅程",
       items: [
         { time: "01 — Arrival", title: "✨ 欢迎起泡酒", desc: "推开门的那一刻，特别的夜晚便开始了。侍酒师亲自为您斟上欢迎起泡酒。开启今晚篇章的第一杯祝酒。" },
@@ -836,7 +840,7 @@ const translations = {
     // Menu Section
     menu: {
       label: "Menu",
-      title: "Signature Collection",
+      title: "招牌菜单",
       subtitle: "用顶级食材和细致摆盘完成的ROWISM招牌",
       ingredientsLabel: "食材",
       finisherBadge: "Finisher",
@@ -896,7 +900,7 @@ const translations = {
     // Recommend Section
     recommend: {
       label: "Recommend",
-      title: "推荐给这样的您",
+      title: "延南洞约会，推荐给这样的您",
       subtitle: "如果您正在计划延南洞约会、纪念日或特别的日子",
       items: [
         { icon: "💕", title: "延南洞约会", desc: "想要特别约会的情侣", detail: "在弘大/延南洞寻找不平凡的约会路线？推荐给追求氛围与美味兼得的20-40岁情侣。" },
@@ -916,7 +920,7 @@ const translations = {
     // Occasions Section
     occasions: {
       label: "Special Moments",
-      title: "Special Moments",
+      title: "纪念日 · 求婚 · 约会",
       subtitle: "让珍贵时刻更加特别",
       items: [
         { icon: "🎉", title: "Anniversary", subtitle: "纪念日", desc: "100天、200天、1周年、生日、结婚纪念日等特别纪念日的空间", event: "私密空间" },
@@ -928,7 +932,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "如何到达",
+      title: "延南洞ROWISM如何到达",
       address: "首尔市麻浦区东桥路262-4",
       parking: "附近公共停车场",
       zipcode: "04030",
@@ -947,7 +951,7 @@ const translations = {
     // Reviews Section
     reviews: {
       label: "Reviews",
-      title: "顾客评价",
+      title: "延南洞香槟吧顾客评价",
       subtitle: "体验过ROWISM The Black的客人的故事",
       count: "127条评价",
       more: "查看更多评价 →",
@@ -963,7 +967,7 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "常见问题",
+      title: "ROWISM The Black常见问题",
       subtitle: "关于延南洞香槟吧ROWISM The Black的问题",
       items: [
         { q: "可以不预约直接去吗？", a: "ROWISM The Black采用预约制。仅限8桌，特别是周五、周六、纪念日必须预约。可通过Naver预约，建议至少提前2-3天预约。" },
@@ -978,7 +982,7 @@ const translations = {
     // Reserve Section
     reserve: {
       label: "Reservation",
-      title: "预约您的特别之夜",
+      title: "延南洞私享餐厅预约",
       subtitle: "仅限8席 预约制私密餐厅",
       notice: "周五·周六·纪念日建议至少提前3天预约",
       domestic: {

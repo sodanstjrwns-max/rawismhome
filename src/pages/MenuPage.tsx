@@ -33,8 +33,8 @@ const menuTranslations: Record<Language, {
   }>
 }> = {
   ko: {
-    pageTitle: '메뉴',
-    pageSubtitle: '최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처',
+    pageTitle: 'ROWISM The Black 메뉴',
+    pageSubtitle: '트러플 한우 뭉티기 · 샴페인 페어링 — 연남동 프리미엄 다이닝',
     backToHome: '← 메인으로',
     signatureLabel: 'Signature',
     signatureTitle: '로위즘 뭉티기 시그니처',
@@ -92,8 +92,8 @@ const menuTranslations: Record<Language, {
     ]
   },
   en: {
-    pageTitle: 'Menu',
-    pageSubtitle: 'ROWISM signatures crafted with premium ingredients and delicate plating',
+    pageTitle: 'ROWISM The Black Menu',
+    pageSubtitle: 'Truffle Hanwoo Tartare · Champagne Pairing — Yeonnam-dong Premium Dining',
     backToHome: '← Back to Home',
     signatureLabel: 'Signature',
     signatureTitle: 'ROWISM Mungti-gi Signature',
@@ -151,8 +151,8 @@ const menuTranslations: Record<Language, {
     ]
   },
   ja: {
-    pageTitle: 'メニュー',
-    pageSubtitle: '最高級食材と繊細な盛り付けで完成するROWISMのシグネチャー',
+    pageTitle: 'ROWISM The Black メニュー',
+    pageSubtitle: 'トリュフ韓牛タルタル · シャンパンペアリング — 延南洞プレミアムダイニング',
     backToHome: '← メインへ',
     signatureLabel: 'シグネチャー',
     signatureTitle: 'ロウィズム ムンティギ シグネチャー',
@@ -210,8 +210,8 @@ const menuTranslations: Record<Language, {
     ]
   },
   zh: {
-    pageTitle: '菜单',
-    pageSubtitle: '以顶级食材和精致摆盘完成的ROWISM招牌菜',
+    pageTitle: 'ROWISM The Black 菜单',
+    pageSubtitle: '松露韩牛肉脍 · 香槟搭配 — 延南洞高级餐饮',
     backToHome: '← 返回首页',
     signatureLabel: '招牌',
     signatureTitle: 'ROWISM 肉脍招牌',

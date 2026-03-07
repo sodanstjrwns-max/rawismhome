@@ -1,4 +1,4 @@
-// ROWISM The Black - Server-side Multilingual Translations
+// RAWISM The Black - Server-side Multilingual Translations
 // This file is used for SSR (Server-Side Rendering) to generate language-specific pages
 
 export type Language = 'ko' | 'en' | 'ja' | 'zh';
@@ -28,31 +28,31 @@ export const seoMeta: Record<Language, {
   ogDescription: string;
 }> = {
   ko: {
-    title: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집',
-    description: '서울 연남동 프리미엄 샴페인바 ROWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 18만원.',
+    title: 'RAWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기 | 홍대 데이트 기념일 맛집',
+    description: '서울 연남동 프리미엄 샴페인바 RAWISM The Black. 당일 도축 온도체 한우 뭉티기와 샴페인이 만나는 특별한 밤. 체온이 남아있는 신선함 그대로, 부라타 치즈와 트러플의 조화. 홍대입구역 5분, 8석 한정 예약제. 2인 평균 15만원.',
     keywords: '연남동 샴페인바, 연남동 데이트, 연남동 기념일, 홍대 샴페인바, 홍대 데이트, 홍대 기념일 레스토랑, 한우 뭉티기, 트러플 육회, 연남동 분위기 좋은 곳, 기념일 레스토랑, 연남동 맛집, 홍대 데이트 코스',
-    ogTitle: 'ROWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기',
+    ogTitle: 'RAWISM The Black | 연남동 프리미엄 샴페인바 & 한우 뭉티기',
     ogDescription: '당일 도축 온도체 한우의 생생한 육향. 체온이 남아있는 신선함 그대로 즐기는 뭉티기와 샴페인의 만남. 홍대입구역 5분, 8석 한정 예약제.'
   },
   en: {
-    title: 'ROWISM The Black | Premium Champagne Bar in Hongdae Seoul | Korean Beef Tartare',
-    description: 'ROWISM The Black - Premium champagne bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) paired with champagne. Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required.',
+    title: 'RAWISM The Black | Premium Champagne Bar in Hongdae Seoul | Korean Beef Tartare',
+    description: 'RAWISM The Black - Premium champagne bar in Yeonnam-dong, Seoul. Fresh same-day slaughtered Korean beef tartare (Mungti-gi) paired with champagne. Italian burrata cheese and black truffle. 5 min from Hongdae Station, 8 seats only, reservation required.',
     keywords: 'Hongdae restaurant, Yeonnam-dong restaurant, Seoul champagne bar, Korean beef tartare, Seoul date spot, Hongdae date restaurant, Seoul anniversary dinner, Yeonnam-dong fine dining, Seoul romantic restaurant, Korean raw beef, Seoul foodie, Hongdae hidden gem',
-    ogTitle: 'ROWISM The Black | Premium Champagne Bar in Hongdae Seoul',
+    ogTitle: 'RAWISM The Black | Premium Champagne Bar in Hongdae Seoul',
     ogDescription: 'Fresh same-day slaughtered Korean beef tartare with champagne pairing. A hidden gem in Seoul\'s trendy Yeonnam-dong. 5 min from Hongdae Station.'
   },
   ja: {
-    title: 'ROWISM The Black | 弘大プレミアムシャンパンバー | 韓牛ムンティギ | ソウル延南洞',
-    description: 'ROWISM The Black - ソウル延南洞のプレミアムシャンパンバー。当日屠畜の新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。イタリア産ブラータチーズとブラックトリュフ。弘大駅から徒歩5分、8席限定、要予約。',
+    title: 'RAWISM The Black | 弘大プレミアムシャンパンバー | 韓牛ムンティギ | ソウル延南洞',
+    description: 'RAWISM The Black - ソウル延南洞のプレミアムシャンパンバー。当日屠畜の新鮮な韓牛タルタル（ムンティギ）とシャンパンのペアリング。イタリア産ブラータチーズとブラックトリュフ。弘大駅から徒歩5分、8席限定、要予約。',
     keywords: '弘大 レストラン, 延南洞 レストラン, ソウル シャンパンバー, 韓牛 ユッケ, ソウル デート, 弘大 デート, ソウル 記念日, 延南洞 グルメ, ソウル ロマンチック, 韓国 生肉',
-    ogTitle: 'ROWISM The Black | 弘大プレミアムシャンパンバー | ソウル延南洞',
+    ogTitle: 'RAWISM The Black | 弘大プレミアムシャンパンバー | ソウル延南洞',
     ogDescription: '当日屠畜の新鮮な韓牛ムンティギとシャンパンのペアリング。ソウル延南洞の隠れ家。弘大駅から徒歩5分。'
   },
   zh: {
-    title: 'ROWISM The Black | 弘大高级香槟酒吧 | 韩牛生拌 | 首尔延南洞',
-    description: 'ROWISM The Black - 首尔延南洞高级香槟酒吧。当日屠宰的新鲜韩牛生拌（Mungti-gi）与香槟搭配。意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。',
+    title: 'RAWISM The Black | 弘大高级香槟酒吧 | 韩牛生拌 | 首尔延南洞',
+    description: 'RAWISM The Black - 首尔延南洞高级香槟酒吧。当日屠宰的新鲜韩牛生拌（Mungti-gi）与香槟搭配。意大利布拉塔奶酪和黑松露。弘大站步行5分钟，仅8席，需预约。',
     keywords: '弘大餐厅, 延南洞餐厅, 首尔香槟吧, 韩牛生拌, 首尔约会, 弘大约会, 首尔纪念日, 延南洞美食, 首尔浪漫餐厅, 韩国生牛肉',
-    ogTitle: 'ROWISM The Black | 弘大高级香槟酒吧 | 首尔延南洞',
+    ogTitle: 'RAWISM The Black | 弘大高级香槟酒吧 | 首尔延南洞',
     ogDescription: '当日屠宰的新鲜韩牛生拌与香槟搭配。首尔延南洞的隐藏名店。弘大站步行5分钟。'
   }
 };
@@ -98,15 +98,15 @@ export const translations: Record<Language, any> = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "날것의 미학,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "최상급 재료를 가장 순수한 방식으로",
       p1Title: "RAW와 ism의 결합.",
-      p1Text: "로위즘(ROWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.",
+      p1Text: "로위즘(RAWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.",
       p2Title: "연남동 프리미엄 샴페인바.",
-      p2Text: "홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 ROWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.",
+      p2Text: "홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 RAWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.",
       p3Title: "8개의 프라이빗 테이블.",
-      p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
+      p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. RAWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
       features: [
         { icon: "🥩", title: "당일 도축", desc: "온도체 한우" },
         { icon: "🧀", title: "부라타 치즈", desc: "이탈리아산" },
@@ -121,11 +121,11 @@ export const translations: Record<Language, any> = {
       ingredientsLabel: "구성",
       finisherBadge: "Finisher",
       signature: {
-        price: "₩92,000",
+        price: "₩69,000",
         name: "로위즘 뭉티기 시그니처",
         badge: "Signature",
-        description: "ROWISM의 철학을 담은 시그니처 메뉴",
-        story: "로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.",
+        description: "RAWISM의 철학을 담은 시그니처 메뉴",
+        story: "로위즘 뭉티기 시그니처는 RAWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.",
         whatIsTitle: "뭉티기란?",
         whatIsText: "뭉티기는 한우를 얇게 저며 양념 없이 그대로 즐기는 전통 음식입니다.",
         harmonyTitle: "최상급 재료의 완벽한 조화",
@@ -137,14 +137,14 @@ export const translations: Record<Language, any> = {
       items: [
         {
           name: "제비추리 그릴드 베지터블",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "한우 제비추리와 8종 제철 채소의 그릴 향연",
           detail: "제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 숨은 보석으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
           ingredients: "한우 제비추리, 아스파라거스, 새송이버섯, 파프리카, 주키니, 래디시, 방울토마토, 감자, 레몬 허브 버터"
         },
         {
           name: "치즈 셀렉션",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "소믈리에가 큐레이팅한 6종 치즈 컬렉션",
           detail: "브리, 8개월 숙성 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아(래핑 치즈). 스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리와 크래커가 함께 제공됩니다.",
           ingredients: "브리, 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아, 하몽, 살라미, 올리브, 블루베리, 크래커"
@@ -176,7 +176,7 @@ export const translations: Record<Language, any> = {
     // Experience Section
     experience: {
       label: "Experience",
-      title: "The ROWISM Experience",
+      title: "The RAWISM Experience",
       subtitle: "감각으로 완성되는 경험",
       steps: [
         { step: "01", title: "Arrival", subtitle: "웰컴 스파클링", desc: "입장과 함께 제공되는 웰컴 스파클링으로 특별한 저녁의 시작을 알립니다." },
@@ -238,7 +238,7 @@ export const translations: Record<Language, any> = {
     reviews: {
       label: "Reviews",
       title: "고객 리뷰",
-      subtitle: "ROWISM The Black을 경험하신 분들의 이야기",
+      subtitle: "RAWISM The Black을 경험하신 분들의 이야기",
       count: "127개의 리뷰",
       more: "더 많은 리뷰 보기 →",
       items: [
@@ -254,10 +254,10 @@ export const translations: Record<Language, any> = {
     faq: {
       label: "FAQ",
       title: "자주 묻는 질문",
-      subtitle: "연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점",
+      subtitle: "연남동 샴페인바 RAWISM The Black에 대해 궁금하신 점",
       items: [
-        { q: "예약 없이 방문해도 되나요?", a: "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다." },
-        { q: "2인 방문 시 예상 금액은 얼마인가요?", a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 10-12만원대로도 이용 가능합니다." },
+        { q: "예약 없이 방문해도 되나요?", a: "RAWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다." },
+        { q: "2인 방문 시 예상 금액은 얼마인가요?", a: "2인 기준 평균 객단가는 약 15만원입니다. 시그니처 뭉티기(69,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 10-12만원대로도 이용 가능합니다." },
         { q: "뭉티기가 뭔가요?", a: "뭉티기는 당일 도축한 온도체 한우를 신선한 상태 그대로 얇게 저며 즐기는 대구의 보물 같은 음식입니다. 아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질되어, 일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 생생한 육향을 선사합니다." },
         { q: "위치가 어디인가요?", a: "서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다." },
         { q: "주차가 가능한가요?", a: "매장 내 주차 공간은 없습니다. 인근 연남동 공영주차장(도보 3분)을 이용해주시거나, 샴페인을 드시는 경우 대리운전을 권장드립니다." },
@@ -283,14 +283,14 @@ export const translations: Record<Language, any> = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "서울 마포구 동교로 262-4",
       hours: "화 - 일 18:00 - 24:00",
       closed: "월요일 휴무",
       naver: "네이버 예약으로 예약하기",
       slogan: "날것의 철학으로,<br/>당신의 특별한 밤을 위해.",
       desc: "연남동 프리미엄 샴페인바<br/>홍대입구역 5분",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "예약하기"
@@ -334,15 +334,15 @@ export const translations: Record<Language, any> = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "The aesthetics of RAW,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "Premium ingredients in their purest form",
       p1Title: "The union of RAW and -ism.",
-      p1Text: "ROWISM combines 'RAW' meaning unprocessed, with '-ism' representing philosophy. We believe in delivering the true taste of premium ingredients in their purest form.",
+      p1Text: "RAWISM combines 'RAW' meaning unprocessed, with '-ism' representing philosophy. We believe in delivering the true taste of premium ingredients in their purest form.",
       p2Title: "Premium Champagne Bar in Yeonnam-dong.",
-      p2Text: "Just 5 minutes from Hongdae Station, ROWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
+      p2Text: "Just 5 minutes from Hongdae Station, RAWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
       p3Title: "8 Private Tables.",
-      p3Text: "Soft lighting by Louis Poulsen, curated melodies through Geneva speakers. ROWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
+      p3Text: "Soft lighting by Louis Poulsen, curated melodies through Geneva speakers. RAWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
       features: [
         { icon: "🥩", title: "Same-day", desc: "Fresh Hanwoo" },
         { icon: "🧀", title: "Burrata", desc: "From Italy" },
@@ -357,15 +357,15 @@ export const translations: Record<Language, any> = {
       ingredientsLabel: "Ingredients",
       finisherBadge: "Finisher",
       signature: {
-        price: "₩92,000",
-        name: "ROWISM Signature Beef Tartare",
+        price: "₩69,000",
+        name: "RAWISM Signature Beef Tartare",
         badge: "Signature",
-        description: "Our signature dish embodying the ROWISM philosophy",
-        story: "ROWISM Signature Beef Tartare is our flagship dish that best represents ROWISM The Black's identity.",
+        description: "Our signature dish embodying the RAWISM philosophy",
+        story: "RAWISM Signature Beef Tartare is our flagship dish that best represents RAWISM The Black's identity.",
         whatIsTitle: "What is Mungti-gi?",
         whatIsText: "Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without any seasoning.",
         harmonyTitle: "Perfect Harmony of Premium Ingredients",
-        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese. 'ROWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form.",
+        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese. 'RAWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form.",
         highlight: "We generously use 200g of premium Korean beef (Hanwoo), carefully selected daily.",
         pairing: "Topped with a whole Italian burrata cheese, black truffle shaved tableside for deep aroma, and Parmigiano-Reggiano falling like snowflakes.",
         ingredients: "Korean beef tartare, Burrata cheese, Black truffle, Parmigiano-Reggiano, Salt, Pepper"
@@ -373,14 +373,14 @@ export const translations: Record<Language, any> = {
       items: [
         {
           name: "Grilled Jebichuri & Vegetables",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "Korean beef Jebichuri with 8 seasonal grilled vegetables",
           detail: "Jebichuri is a rare cut between the ribs and brisket, yielding only a small amount per cow - a hidden gem. Grilled precisely to medium-rare with caramelized exterior and juicy interior.",
           ingredients: "Hanwoo Jebichuri, Asparagus, King oyster mushroom, Bell pepper, Zucchini, Radish, Cherry tomatoes, Potato, Lemon herb butter"
         },
         {
           name: "Cheese Selection",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "Sommelier-curated 6-cheese collection",
           detail: "Brie, 8-month aged Comté, Emmental, Colby Jack, Cream cheese, Dauphinois (wrapped cheese). Served with Spanish Jamón, Italian Genoa salami, green olives, blueberries and crackers.",
           ingredients: "Brie, Comté, Emmental, Colby Jack, Cream cheese, Dauphinois, Jamón, Salami, Olives, Blueberries, Crackers"
@@ -412,7 +412,7 @@ export const translations: Record<Language, any> = {
     // Experience Section
     experience: {
       label: "Experience",
-      title: "The ROWISM Experience",
+      title: "The RAWISM Experience",
       subtitle: "An experience completed by the senses",
       steps: [
         { step: "01", title: "Arrival", subtitle: "Welcome Sparkling", desc: "Your special evening begins with a welcome sparkling upon arrival." },
@@ -474,7 +474,7 @@ export const translations: Record<Language, any> = {
     reviews: {
       label: "Reviews",
       title: "Guest Reviews",
-      subtitle: "Stories from those who experienced ROWISM The Black",
+      subtitle: "Stories from those who experienced RAWISM The Black",
       count: "127 reviews",
       more: "See more reviews →",
       items: [
@@ -490,10 +490,10 @@ export const translations: Record<Language, any> = {
     faq: {
       label: "FAQ",
       title: "Frequently Asked Questions",
-      subtitle: "Find answers about ROWISM The Black champagne bar in Yeonnam-dong",
+      subtitle: "Find answers about RAWISM The Black champagne bar in Yeonnam-dong",
       items: [
-        { q: "Do I need a reservation?", a: "ROWISM The Black operates by reservation only. With only 8 tables, reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance." },
-        { q: "How much for two people?", a: "The average price for two is about ₩180,000 (~$140 USD). We recommend the Signature Tartare (₩92,000) + side dishes + 1 bottle of champagne. For a lighter option, ₩100,000-120,000 with sparkling wine is also possible." },
+        { q: "Do I need a reservation?", a: "RAWISM The Black operates by reservation only. With only 8 tables, reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance." },
+        { q: "How much for two people?", a: "The average price for two is about ₩180,000 (~$115 USD). We recommend the Signature Tartare (₩69,000) + side dishes + 1 bottle of champagne. For a lighter option, ₩100,000-120,000 with sparkling wine is also possible." },
         { q: "What is Mungti-gi?", a: "Mungti-gi is a treasured Daegu delicacy - thinly sliced fresh beef from same-day slaughtered Korean cattle, enjoyed without seasoning. The beef is processed while still warm, offering incredible tenderness and fresh beef aroma impossible with aged meat." },
         { q: "Where are you located?", a: "We're at 262-4 Donggyo-ro, Mapo-gu, Seoul. It's a 5-minute walk (about 400m) from Hongdae Station (Line 2) Exit 3, in the Yeonnam-dong alley near Yeontral Park." },
         { q: "Is parking available?", a: "We don't have on-site parking. We recommend the nearby Yeonnam-dong public parking lot (3 min walk). If you're enjoying champagne, we recommend using a designated driver service." },
@@ -519,14 +519,14 @@ export const translations: Record<Language, any> = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "262-4 Donggyo-ro, Mapo-gu, Seoul",
       hours: "Tue - Sun 6:00 PM - 12:00 AM",
       closed: "Closed Mondays",
       naver: "Book on Naver Reservation",
       slogan: "With the philosophy of RAW,<br/>for your special night.",
       desc: "Premium Champagne Bar in Yeonnam-dong<br/>5 min walk from Hongdae Station",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "Reserve"
@@ -570,15 +570,15 @@ export const translations: Record<Language, any> = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "生の美学,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "最高級の食材を最も純粋な方法で",
       p1Title: "RAWとismの結合。",
-      p1Text: "ロウイズム(ROWISM)は「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で届けることを哲学としています。",
+      p1Text: "ロウイズム(RAWISM)は「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で届けることを哲学としています。",
       p2Title: "延南洞プレミアムシャンパンバー。",
-      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するROWISM The Blackは、最高級韓牛ムンティギにイタリア産ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
+      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するRAWISM The Blackは、最高級韓牛ムンティギにイタリア産ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
       p3Title: "8つのプライベートテーブル。",
-      p3Text: "ルイスポールセンの穏やかな照明、ジュネーブスピーカーが届けるキュレーションされた旋律。ROWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞のダイニング空間です。",
+      p3Text: "ルイスポールセンの穏やかな照明、ジュネーブスピーカーが届けるキュレーションされた旋律。RAWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞のダイニング空間です。",
       features: [
         { icon: "🥩", title: "当日屠畜", desc: "新鮮な韓牛" },
         { icon: "🧀", title: "ブラータ", desc: "イタリア産" },
@@ -593,15 +593,15 @@ export const translations: Record<Language, any> = {
       ingredientsLabel: "構成",
       finisherBadge: "Finisher",
       signature: {
-        price: "₩92,000",
+        price: "₩69,000",
         name: "ロウイズム ムンティギ シグネチャー",
         badge: "Signature",
-        description: "ROWISMの哲学を込めたシグネチャーメニュー",
-        story: "ロウイズム ムンティギ シグネチャーはROWISM The Blackのアイデンティティを最もよく表す代表メニューです。",
+        description: "RAWISMの哲学を込めたシグネチャーメニュー",
+        story: "ロウイズム ムンティギ シグネチャーはRAWISM The Blackのアイデンティティを最もよく表す代表メニューです。",
         whatIsTitle: "ムンティギとは？",
         whatIsText: "ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
         harmonyTitle: "プレミアム食材の完璧な調和",
-        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。「ROWISM」は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を純粋に楽しむブランド哲学を表しています。",
+        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。「RAWISM」は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を純粋に楽しむブランド哲学を表しています。",
         highlight: "毎日厳選された最高級韓牛ムンティギ200gを惜しみなく使用しています。",
         pairing: "イタリア産ブラータチーズが丸ごと乗り、ブラックトリュフが目の前でスライスされて深い香りを加えます。パルミジャーノ・レッジャーノが雪のように降りかかります。",
         ingredients: "韓牛ムンティギ、ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノ、塩、胡椒"
@@ -609,14 +609,14 @@ export const translations: Record<Language, any> = {
       items: [
         {
           name: "チェビチュリ グリルドベジタブル",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "韓牛チェビチュリと8種の旬野菜のグリル",
           detail: "チェビチュリは牛のカルビとバラの間にある希少部位で、一頭から少量しか取れない隠れた宝石です。ミディアムレアに正確に焼いて外はカラメリゼ、中はジューシー。",
           ingredients: "韓牛チェビチュリ、アスパラガス、エリンギ、パプリカ、ズッキーニ、ラディッシュ、ミニトマト、じゃがいも、レモンハーブバター"
         },
         {
           name: "チーズセレクション",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "ソムリエがキュレーションした6種チーズコレクション",
           detail: "ブリー、8ヶ月熟成コンテ、エメンタール、コルビージャック、クリームチーズ、ダフィノワ（ラッピングチーズ）。スペイン産ハモン、イタリア産ジェノアサラミ、グリーンオリーブ、ブルーベリーとクラッカー付き。",
           ingredients: "ブリー、コンテ、エメンタール、コルビージャック、クリームチーズ、ダフィノワ、ハモン、サラミ、オリーブ、ブルーベリー、クラッカー"
@@ -648,7 +648,7 @@ export const translations: Record<Language, any> = {
     // Experience Section
     experience: {
       label: "Experience",
-      title: "The ROWISM Experience",
+      title: "The RAWISM Experience",
       subtitle: "感覚で完成する体験",
       steps: [
         { step: "01", title: "Arrival", subtitle: "ウェルカムスパークリング", desc: "入店と共に提供されるウェルカムスパークリングで特別な夜の始まりを告げます。" },
@@ -710,7 +710,7 @@ export const translations: Record<Language, any> = {
     reviews: {
       label: "Reviews",
       title: "お客様の声",
-      subtitle: "ROWISM The Blackを体験された方々のストーリー",
+      subtitle: "RAWISM The Blackを体験された方々のストーリー",
       count: "127件のレビュー",
       more: "もっと見る →",
       items: [
@@ -726,10 +726,10 @@ export const translations: Record<Language, any> = {
     faq: {
       label: "FAQ",
       title: "よくある質問",
-      subtitle: "延南洞シャンパンバー ROWISM The Blackについてのご質問",
+      subtitle: "延南洞シャンパンバー RAWISM The Blackについてのご質問",
       items: [
-        { q: "予約なしでも大丈夫ですか？", a: "ROWISM The Blackは予約制で運営しています。8テーブル限定で運営しており、特に金曜日、土曜日、記念日は予約が必須です。Naver予約でご予約いただけます。最低2-3日前の予約をおすすめします。" },
-        { q: "2人での予算はいくらですか？", a: "2人基準の平均客単価は約18万ウォン（約2万円）です。シグネチャームンティギ(92,000ウォン) + サイドメニュー + シャンパン1本の構成をおすすめします。もう少し軽くなら10-12万ウォンでも可能です。" },
+        { q: "予約なしでも大丈夫ですか？", a: "RAWISM The Blackは予約制で運営しています。8テーブル限定で運営しており、特に金曜日、土曜日、記念日は予約が必須です。Naver予約でご予約いただけます。最低2-3日前の予約をおすすめします。" },
+        { q: "2人での予算はいくらですか？", a: "2人基準の平均客単価は約18万ウォン（約2万円）です。シグネチャームンティギ(69,000ウォン) + サイドメニュー + シャンパン1本の構成をおすすめします。もう少し軽くなら10-12万ウォンでも可能です。" },
         { q: "ムンティギとは何ですか？", a: "ムンティギは当日屠畜した韓牛を新鮮な状態のまま薄く切って楽しむ大邱の宝のような料理です。朝屠畜された韓牛が体温が残っている状態ですぐに処理され、一般の冷蔵熟成肉では絶対に感じられない柔らかさと生き生きとした肉の香りを提供します。" },
         { q: "場所はどこですか？", a: "ソウル市麻浦区東橋路262-4にあります。地下鉄2号線弘大入口駅3番出口から徒歩5分（約400m）、ヨントラルパーク近くの延南洞路地にあります。" },
         { q: "駐車場はありますか？", a: "店内駐車場はありません。近くの延南洞公営駐車場（徒歩3分）をご利用いただくか、シャンパンをお召し上がりの場合は代行運転をおすすめします。" },
@@ -755,14 +755,14 @@ export const translations: Record<Language, any> = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "ソウル市麻浦区東橋路262-4",
       hours: "火 - 日 18:00 - 24:00",
       closed: "月曜定休",
       naver: "Naver予約で予約する",
       slogan: "生の哲学で、<br/>あなたの特別な夜のために。",
       desc: "延南洞プレミアムシャンパンバー<br/>弘大入口駅から徒歩5分",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "予約する"
@@ -806,15 +806,15 @@ export const translations: Record<Language, any> = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "生的美学,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "以最纯粹的方式享用顶级食材",
       p1Title: "RAW与ism的结合。",
-      p1Text: "ROWISM是将代表'生'的RAW与代表'主义·哲学'的ism结合的名称。我们以最纯粹的方式传达顶级食材本身的味道为哲学。",
+      p1Text: "RAWISM是将代表'生'的RAW与代表'主义·哲学'的ism结合的名称。我们以最纯粹的方式传达顶级食材本身的味道为哲学。",
       p2Title: "延南洞高级香槟酒吧。",
-      p2Text: "距弘大入口站步行5分钟，位于延南洞小巷的ROWISM The Black呈现顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪相遇的招牌料理。",
+      p2Text: "距弘大入口站步行5分钟，位于延南洞小巷的RAWISM The Black呈现顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪相遇的招牌料理。",
       p3Title: "8个私密餐桌。",
-      p3Text: "路易斯·波尔森的柔和灯光，日内瓦音响传来的精选旋律。ROWISM The Black不仅仅是香槟酒吧，更是设计感官体验的延南洞用餐空间。",
+      p3Text: "路易斯·波尔森的柔和灯光，日内瓦音响传来的精选旋律。RAWISM The Black不仅仅是香槟酒吧，更是设计感官体验的延南洞用餐空间。",
       features: [
         { icon: "🥩", title: "当日屠宰", desc: "新鲜韩牛" },
         { icon: "🧀", title: "布拉塔", desc: "意大利进口" },
@@ -829,15 +829,15 @@ export const translations: Record<Language, any> = {
       ingredientsLabel: "配料",
       finisherBadge: "Finisher",
       signature: {
-        price: "₩92,000",
-        name: "ROWISM招牌生拌牛肉",
+        price: "₩69,000",
+        name: "RAWISM招牌生拌牛肉",
         badge: "Signature",
-        description: "蕴含ROWISM哲学的招牌菜品",
-        story: "ROWISM招牌生拌牛肉是最能代表ROWISM The Black身份的招牌菜。",
+        description: "蕴含RAWISM哲学的招牌菜品",
+        story: "RAWISM招牌生拌牛肉是最能代表RAWISM The Black身份的招牌菜。",
         whatIsTitle: "什么是Mungti-gi？",
         whatIsText: "Mungti-gi是将韩牛切成薄片，不加任何调味直接享用的传统料理。",
         harmonyTitle: "顶级食材的完美和谐",
-        harmonyText: "ROWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。\"ROWISM\"是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表以最纯粹的方式享用顶级食材的品牌哲学。",
+        harmonyText: "RAWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。\"RAWISM\"是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表以最纯粹的方式享用顶级食材的品牌哲学。",
         highlight: "每天精选200克顶级韩牛生拌，毫不吝啬地使用。",
         pairing: "整块意大利布拉塔奶酪覆盖其上，黑松露在您面前现场刨片增添深邃香气。帕马森奶酪如雪花般飘落。",
         ingredients: "韩牛生拌、布拉塔奶酪、黑松露、帕马森奶酪、盐、胡椒"
@@ -845,14 +845,14 @@ export const translations: Record<Language, any> = {
       items: [
         {
           name: "炭烤牛肋眼肉配时蔬",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "韩牛Jebichuri与8种时令蔬菜的炭烤盛宴",
           detail: "Jebichuri是牛肋骨与牛腩之间的稀有部位，每头牛只能获得少量，被称为隐藏的宝石。精确烤至五分熟，外焦里嫩，肉汁丰富。",
           ingredients: "韩牛Jebichuri、芦笋、杏鲍菇、彩椒、西葫芦、小萝卜、小番茄、土豆、柠檬香草黄油"
         },
         {
           name: "芝士精选",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "侍酒师精选6种奶酪系列",
           detail: "布里、8个月熟成孔泰、埃曼塔尔、科尔比杰克、奶油奶酪、多菲诺（包裹奶酪）。搭配西班牙火腿、意大利热那亚萨拉米、绿橄榄、蓝莓和饼干。",
           ingredients: "布里、孔泰、埃曼塔尔、科尔比杰克、奶油奶酪、多菲诺、火腿、萨拉米、橄榄、蓝莓、饼干"
@@ -884,7 +884,7 @@ export const translations: Record<Language, any> = {
     // Experience Section
     experience: {
       label: "Experience",
-      title: "The ROWISM Experience",
+      title: "The RAWISM Experience",
       subtitle: "用感官完成的体验",
       steps: [
         { step: "01", title: "Arrival", subtitle: "欢迎起泡酒", desc: "入场时提供的欢迎起泡酒，宣告特别之夜的开始。" },
@@ -946,7 +946,7 @@ export const translations: Record<Language, any> = {
     reviews: {
       label: "Reviews",
       title: "顾客评价",
-      subtitle: "体验过ROWISM The Black的客人们的故事",
+      subtitle: "体验过RAWISM The Black的客人们的故事",
       count: "127条评价",
       more: "查看更多评价 →",
       items: [
@@ -962,10 +962,10 @@ export const translations: Record<Language, any> = {
     faq: {
       label: "FAQ",
       title: "常见问题",
-      subtitle: "关于延南洞香槟酒吧ROWISM The Black的疑问",
+      subtitle: "关于延南洞香槟酒吧RAWISM The Black的疑问",
       items: [
-        { q: "可以不预约直接来吗？", a: "ROWISM The Black采用预约制运营。限8桌运营，特别是周五、周六、纪念日必须预约。可通过Naver预约。建议至少提前2-3天预约。" },
-        { q: "两人预算大概多少？", a: "两人平均消费约18万韩元（约1000元人民币）。推荐招牌生拌牛肉(92,000韩元) + 配菜 + 香槟1瓶的组合。想轻松一点的话10-12万韩元也可以。" },
+        { q: "可以不预约直接来吗？", a: "RAWISM The Black采用预约制运营。限8桌运营，特别是周五、周六、纪念日必须预约。可通过Naver预约。建议至少提前2-3天预约。" },
+        { q: "两人预算大概多少？", a: "两人平均消费约18万韩元（约1000元人民币）。推荐招牌生拌牛肉(69,000韩元) + 配菜 + 香槟1瓶的组合。想轻松一点的话10-12万韩元也可以。" },
         { q: "什么是Mungti-gi？", a: "Mungti-gi是当天屠宰的韩牛在新鲜状态下切成薄片直接享用的大邱传统美食。早上屠宰的韩牛在体温尚存的状态下立即处理，提供普通冷藏熟成肉绝对无法感受到的嫩滑和鲜活肉香。" },
         { q: "位置在哪里？", a: "位于首尔市麻浦区东桥路262-4。从地铁2号线弘大入口站3号出口步行5分钟（约400米），在延特拉尔公园附近的延南洞小巷里。" },
         { q: "可以停车吗？", a: "店内没有停车位。请使用附近的延南洞公共停车场（步行3分钟），如果要喝香槟建议使用代驾服务。" },
@@ -991,14 +991,14 @@ export const translations: Record<Language, any> = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "首尔市麻浦区东桥路262-4",
       hours: "周二 - 周日 18:00 - 24:00",
       closed: "周一休息",
       naver: "通过Naver预约",
       slogan: "以生的哲学，<br/>为您的特别之夜。",
       desc: "延南洞高级香槟酒吧<br/>弘大入口站步行5分钟",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "立即预约"

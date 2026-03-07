@@ -13,31 +13,31 @@ const aboutSeoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: '브랜드 스토리 | ROWISM The Black | 연남동 샴페인바 소개',
-    description: 'ROWISM The Black 브랜드 스토리 - RAW와 ism의 결합, 날것의 철학. 2023년 연남동에 문을 연 8석 한정 프라이빗 다이닝. 당일 도축 한우와 소믈리에 큐레이션 샴페인.',
-    keywords: 'ROWISM 브랜드, 연남동 샴페인바 소개, 로위즘 스토리, 연남동 프라이빗 다이닝, 홍대 고급 레스토랑, 연남동 데이트 장소 소개, ROWISM The Black 철학',
-    ogDescription: 'RAW와 ism의 결합, 날것의 철학. ROWISM The Black의 브랜드 스토리를 확인하세요.'
+    title: '브랜드 스토리 | RAWISM The Black | 연남동 샴페인바 소개',
+    description: 'RAWISM The Black 브랜드 스토리 - RAW와 ism의 결합, 날것의 철학. 2023년 연남동에 문을 연 8석 한정 프라이빗 다이닝. 당일 도축 한우와 소믈리에 큐레이션 샴페인.',
+    keywords: 'RAWISM 브랜드, 연남동 샴페인바 소개, 로위즘 스토리, 연남동 프라이빗 다이닝, 홍대 고급 레스토랑, 연남동 데이트 장소 소개, RAWISM The Black 철학',
+    ogDescription: 'RAW와 ism의 결합, 날것의 철학. RAWISM The Black의 브랜드 스토리를 확인하세요.'
   },
   en: {
     lang: 'en',
-    title: 'Brand Story | ROWISM The Black | Seoul Yeonnam-dong Champagne Bar',
-    description: 'ROWISM The Black Brand Story - The combination of RAW and ism, philosophy of rawness. Private dining with only 8 seats, opened in Yeonnam-dong in 2023. Same-day slaughtered Korean beef and sommelier-curated champagne.',
-    keywords: 'ROWISM brand, Yeonnam champagne bar about, ROWISM story, Yeonnam private dining, Hongdae luxury restaurant, ROWISM The Black philosophy',
-    ogDescription: 'The combination of RAW and ism, philosophy of rawness. Discover the ROWISM The Black brand story.'
+    title: 'Brand Story | RAWISM The Black | Seoul Yeonnam-dong Champagne Bar',
+    description: 'RAWISM The Black Brand Story - The combination of RAW and ism, philosophy of rawness. Private dining with only 8 seats, opened in Yeonnam-dong in 2023. Same-day slaughtered Korean beef and sommelier-curated champagne.',
+    keywords: 'RAWISM brand, Yeonnam champagne bar about, RAWISM story, Yeonnam private dining, Hongdae luxury restaurant, RAWISM The Black philosophy',
+    ogDescription: 'The combination of RAW and ism, philosophy of rawness. Discover the RAWISM The Black brand story.'
   },
   ja: {
     lang: 'ja',
-    title: 'ブランドストーリー | ROWISM The Black | ソウル延南洞シャンパンバー',
-    description: 'ROWISM The Black ブランドストーリー - RAWとismの結合、生の哲学。2023年延南洞にオープンした8席限定プライベートダイニング。当日屠畜韓牛とソムリエキュレーションシャンパン。',
-    keywords: 'ROWISMブランド, 延南洞シャンパンバー紹介, ロウィズムストーリー, 延南洞プライベートダイニング, 弘大高級レストラン, ROWISM The Black哲学',
-    ogDescription: 'RAWとismの結合、生の哲学。ROWISM The Blackのブランドストーリーをご覧ください。'
+    title: 'ブランドストーリー | RAWISM The Black | ソウル延南洞シャンパンバー',
+    description: 'RAWISM The Black ブランドストーリー - RAWとismの結合、生の哲学。2023年延南洞にオープンした8席限定プライベートダイニング。当日屠畜韓牛とソムリエキュレーションシャンパン。',
+    keywords: 'RAWISMブランド, 延南洞シャンパンバー紹介, ロウィズムストーリー, 延南洞プライベートダイニング, 弘大高級レストラン, RAWISM The Black哲学',
+    ogDescription: 'RAWとismの結合、生の哲学。RAWISM The Blackのブランドストーリーをご覧ください。'
   },
   zh: {
     lang: 'zh',
-    title: '品牌故事 | ROWISM The Black | 首尔延南洞香槟吧',
-    description: 'ROWISM The Black 品牌故事 - RAW与ism的结合，生食哲学。2023年在延南洞开业的仅8席私密用餐。当日屠宰韩牛和侍酒师策划香槟。',
-    keywords: 'ROWISM品牌, 延南洞香槟吧介绍, ROWISM故事, 延南洞私密用餐, 弘大高级餐厅, ROWISM The Black哲学',
-    ogDescription: 'RAW与ism的结合，生食哲学。了解ROWISM The Black的品牌故事。'
+    title: '品牌故事 | RAWISM The Black | 首尔延南洞香槟吧',
+    description: 'RAWISM The Black 品牌故事 - RAW与ism的结合，生食哲学。2023年在延南洞开业的仅8席私密用餐。当日屠宰韩牛和侍酒师策划香槟。',
+    keywords: 'RAWISM品牌, 延南洞香槟吧介绍, RAWISM故事, 延南洞私密用餐, 弘大高级餐厅, RAWISM The Black哲学',
+    ogDescription: 'RAW与ism的结合，生食哲学。了解RAWISM The Black的品牌故事。'
   }
 }
 
@@ -57,7 +57,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <title>{seo.title}</title>
           <meta name="description" content={seo.description} />
           <meta name="keywords" content={seo.keywords} />
-          <meta name="author" content="ROWISM The Black" />
+          <meta name="author" content="RAWISM The Black" />
           <meta name="robots" content="index, follow" />
           
           {/* Canonical URL */}
@@ -84,7 +84,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:description" content={seo.ogDescription} />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content={pageLang === 'ko' ? 'ko_KR' : pageLang === 'ja' ? 'ja_JP' : pageLang === 'zh' ? 'zh_CN' : 'en_US'} />
-          <meta property="og:site_name" content="ROWISM The Black" />
+          <meta property="og:site_name" content="RAWISM The Black" />
           <meta property="og:url" content={`https://rawism.kr${getLangPath(pageLang)}/about`} />
           <meta property="og:image" content="https://rawism.kr/static/og-image.jpg" />
           <meta property="og:image:width" content="1200" />
@@ -136,7 +136,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
             "inLanguage": seo.lang,
             "mainEntity": {
               "@type": "Organization",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "url": "https://rawism.kr",
               "logo": "https://rawism.kr/static/logo.png",
               "foundingDate": "2023",
@@ -161,7 +161,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "ROWISM The Black",
+                "name": "RAWISM The Black",
                 "item": `https://rawism.kr${getLangPath(pageLang)}`
               },
               {
@@ -177,19 +177,19 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": pageLang === 'ko' ? "ROWISM - 날것의 철학, 부라타 치즈와 트러플이 만나는 한우 뭉티기" : pageLang === 'ja' ? "ROWISM - 生の哲学、ブッラータチーズとトリュフが出会う韓牛ムンティギ" : pageLang === 'zh' ? "ROWISM - 生食哲学，布拉塔奶酪与松露相遇的韩牛肉脍" : "ROWISM - Philosophy of Raw, Hanwoo Tartare meets Burrata Cheese and Truffle",
+            "headline": pageLang === 'ko' ? "RAWISM - 날것의 철학, 부라타 치즈와 트러플이 만나는 한우 뭉티기" : pageLang === 'ja' ? "RAWISM - 生の哲学、ブッラータチーズとトリュフが出会う韓牛ムンティギ" : pageLang === 'zh' ? "RAWISM - 生食哲学，布拉塔奶酪与松露相遇的韩牛肉脍" : "RAWISM - Philosophy of Raw, Hanwoo Tartare meets Burrata Cheese and Truffle",
             "description": seo.description,
             "image": "https://rawism.kr/static/og-image.jpg",
             "datePublished": "2023-01-01",
             "dateModified": "2026-02-06",
             "author": {
               "@type": "Organization",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "url": "https://rawism.kr"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://rawism.kr/static/logo.png"
@@ -199,7 +199,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
               "@type": "WebPage",
               "@id": `https://rawism.kr${getLangPath(pageLang)}/about`
             },
-            "articleBody": pageLang === 'ko' ? "ROWISM은 RAW와 ism의 결합입니다. 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학. 2023년 연남동 골목 속에 문을 열어 감각의 경험을 디자인합니다." : pageLang === 'ja' ? "ROWISMはRAWとismの結合です。最高級食材本来の味を最も純粋な方法で届ける哲学。2023年延南洞の路地裏にオープンし、感覚の体験をデザインします。" : pageLang === 'zh' ? "ROWISM是RAW与ism的结合。以最纯粹的方式传递顶级食材原味的哲学。2023年在延南洞小巷开业，设计感官体验。" : "ROWISM is the combination of RAW and ism. Philosophy of delivering the authentic taste of premium ingredients in the purest way. Opened in a Yeonnam-dong alley in 2023, designing sensory experiences.",
+            "articleBody": pageLang === 'ko' ? "RAWISM은 RAW와 ism의 결합입니다. 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학. 2023년 연남동 골목 속에 문을 열어 감각의 경험을 디자인합니다." : pageLang === 'ja' ? "RAWISMはRAWとismの結合です。最高級食材本来の味を最も純粋な方法で届ける哲学。2023年延南洞の路地裏にオープンし、感覚の体験をデザインします。" : pageLang === 'zh' ? "RAWISM是RAW与ism的结合。以最纯粹的方式传递顶级食材原味的哲学。2023年在延南洞小巷开业，设计感官体验。" : "RAWISM is the combination of RAW and ism. Philosophy of delivering the authentic taste of premium ingredients in the purest way. Opened in a Yeonnam-dong alley in 2023, designing sensory experiences.",
             "inLanguage": seo.lang
           })}} />
           
@@ -208,7 +208,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "@id": "https://rawism.kr/#organization-detailed",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "url": "https://rawism.kr",
             "logo": {
@@ -232,7 +232,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
             },
             "brand": {
               "@type": "Brand",
-              "name": "ROWISM",
+              "name": "RAWISM",
               "slogan": pageLang === 'ko' ? "날것의 철학, 최상급 재료를 가장 순수한 방식으로" : pageLang === 'ja' ? "生の哲学、最高級食材を最も純粋な方法で" : pageLang === 'zh' ? "生食哲学，以最纯粹的方式呈现顶级食材" : "Philosophy of Raw, premium ingredients in the purest way",
               "logo": "https://rawism.kr/static/logo.png"
             },
@@ -298,10 +298,10 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
-            "name": pageLang === 'ko' ? "ROWISM - 날것의 미학" : pageLang === 'ja' ? "ROWISM - 生の美学" : pageLang === 'zh' ? "ROWISM - 生食美学" : "ROWISM - Aesthetics of Raw",
+            "name": pageLang === 'ko' ? "RAWISM - 날것의 미학" : pageLang === 'ja' ? "RAWISM - 生の美学" : pageLang === 'zh' ? "RAWISM - 生食美学" : "RAWISM - Aesthetics of Raw",
             "author": {
               "@type": "Organization",
-              "name": "ROWISM The Black"
+              "name": "RAWISM The Black"
             },
             "dateCreated": "2023-01-01",
             "description": pageLang === 'ko' ? "RAW와 ism의 결합. RAW(날것) + ism(철학) = 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학." : pageLang === 'ja' ? "RAWとismの結合。RAW(生) + ism(哲学) = 最高級食材本来の味を最も純粋な方法で届ける哲学。" : pageLang === 'zh' ? "RAW与ism的结合。RAW(生食) + ism(哲学) = 以最纯粹的方式传递顶级食材原味的哲学。" : "Combination of RAW and ism. RAW(raw) + ism(philosophy) = Philosophy of delivering the authentic taste of premium ingredients in the purest way.",

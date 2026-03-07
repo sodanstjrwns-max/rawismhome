@@ -1,4 +1,4 @@
-// ROWISM The Black - Multilingual Translations
+// RAWISM The Black - Multilingual Translations
 const translations = {
   ko: {
     // Quote Section
@@ -16,7 +16,7 @@ const translations = {
     },
     // Hero Section
     hero: {
-      h1: "ROWISM The Black — 연남동 프리미엄 샴페인바 & 와인바",
+      h1: "RAWISM The Black — 연남동 프리미엄 샴페인바 & 와인바",
       subtitle: "연남동 프리미엄 샴페인 라운지",
       title1: "특별한 밤을",
       title2: "시작하는 곳",
@@ -40,28 +40,28 @@ const translations = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "날것의 미학,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "최상급 재료를 가장 순수한 방식으로",
       p1Title: "RAW와 ism의 결합.",
-      p1Text: "로위즘(ROWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.",
+      p1Text: "로위즘(RAWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.",
       p2Title: "연남동 프리미엄 샴페인바.",
-      p2Text: "홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 ROWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.",
+      p2Text: "홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 RAWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.",
       p3Title: "8개의 프라이빗 테이블.",
-      p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
+      p3Text: "루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. RAWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.",
       features: [
         { title: "시그니처 타르타르", desc: "트러플 한우 뭉티기", detail: "최상급 한우 + 트러플" },
         { title: "소믈리에 샴페인 큐레이션", desc: "소믈리에 큐레이션", detail: "프리미엄 샴페인 & 스파클링" },
         { title: "8석 프라이빗 다이닝", desc: "8석 한정 운영", detail: "예약제 프라이빗 다이닝" },
         { title: "오감 경험 설계", desc: "오감의 경험 설계", detail: "조명·음악·서비스" }
       ],
-      story: "ROWISM은 'RAW(날것)'와 '-ISM(철학)'의 조합입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 즐기는 것을 추구합니다. 당일 도축한 온도체 한우의 신선함, 이탈리아 부라타 치즈의 크리미함, 프렌치 블랙 트러플의 깊은 향. 이 모든 것이 샴페인 한 잔과 함께 어우러지는 특별한 경험을 선사합니다."
+      story: "RAWISM은 'RAW(날것)'와 '-ISM(철학)'의 조합입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 즐기는 것을 추구합니다. 당일 도축한 온도체 한우의 신선함, 이탈리아 부라타 치즈의 크리미함, 프렌치 블랙 트러플의 깊은 향. 이 모든 것이 샴페인 한 잔과 함께 어우러지는 특별한 경험을 선사합니다."
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "ROWISM 다이닝 경험",
-      subtitle: "ROWISM The Black에서 경험하실 특별한 여정",
+      title: "RAWISM 다이닝 경험",
+      subtitle: "RAWISM The Black에서 경험하실 특별한 여정",
       items: [
         { time: "01 — Arrival", title: "✨ 웰컴 스파클링", desc: "문을 여는 순간, 특별한 저녁이 시작됩니다. 소믈리에가 직접 따라드리는 웰컴 스파클링 한 잔. 오늘 밤의 서막을 여는 첫 번째 건배." },
         { time: "02 — Ambience", title: "🕯️ 루이스폴센의 빛", desc: "덴마크 왕실이 사랑한 루이스폴센 조명이 테이블마다 은은하게 내려앉습니다. 단 8개의 테이블, 충분한 간격. 오롯이 두 사람만을 위한 공간." },
@@ -73,15 +73,15 @@ const translations = {
     menu: {
       label: "Menu",
       title: "시그니처 메뉴 컬렉션",
-      subtitle: "최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처",
+      subtitle: "최상급 재료와 섬세한 플레이팅으로 완성되는 RAWISM의 시그니처",
       ingredientsLabel: "재료",
       finisherBadge: "Finisher",
       signature: {
         name: "로위즘 뭉티기 시그니처",
-        price: "₩92,000",
+        price: "₩69,000",
         badge: "Signature",
-        description: "ROWISM의 철학을 담은 시그니처 메뉴",
-        story: "로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.",
+        description: "RAWISM의 철학을 담은 시그니처 메뉴",
+        story: "로위즘 뭉티기 시그니처는 RAWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.",
         whatIsTitle: "뭉티기란?",
         whatIsText: "뭉티기는 한우를 얇게 저며 썬 후 별도의 양념 없이 그대로 즐기는 전통 요리입니다.",
         harmonyTitle: "프리미엄 재료의 완벽한 조화",
@@ -93,14 +93,14 @@ const translations = {
       items: [
         {
           name: "제비추리 그릴드 베지터블",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "한우 제비추리와 8종 제철 채소의 그릴 향연",
           detail: "제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 '숨은 보석'으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
           ingredients: "한우 제비추리, 파, 방울양배추, 아스파라거스, 래디쉬, 가지, 미니당근, 양송이버섯, 브로콜리"
         },
         {
           name: "치즈 셀렉션",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "소믈리에가 큐레이팅한 6종 치즈 컬렉션",
           detail: "브리, 8개월 숙성 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아(래핑 치즈). 스페인산 하몽, 이탈리아 제노아 살라미, 그린 올리브, 블루베리와 크래커가 함께 제공됩니다.",
           ingredients: "브리, 콩테, 에멘탈, 콜비잭, 크림치즈, 다피누아, 하몽, 살라미, 올리브, 블루베리"
@@ -164,7 +164,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "연남동 ROWISM 찾아오시는 길",
+      title: "연남동 RAWISM 찾아오시는 길",
       address: "서울 마포구 동교로 262-4",
       zipcode: "04030",
       hours: "화-일 18:00 - 24:00",
@@ -184,7 +184,7 @@ const translations = {
     reviews: {
       label: "Reviews",
       title: "연남동 샴페인바 고객 후기",
-      subtitle: "ROWISM The Black을 경험하신 분들의 이야기",
+      subtitle: "RAWISM The Black을 경험하신 분들의 이야기",
       count: "127개의 리뷰",
       more: "더 많은 후기 보기 →",
       items: [
@@ -199,11 +199,11 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "ROWISM The Black 자주 묻는 질문",
-      subtitle: "연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요",
+      title: "RAWISM The Black 자주 묻는 질문",
+      subtitle: "연남동 샴페인바 RAWISM The Black에 대해 궁금하신 점을 확인하세요",
       items: [
-        { q: "예약 없이 방문해도 되나요?", a: "ROWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다." },
-        { q: "2인 방문 시 예상 금액은 얼마인가요?", a: "2인 기준 평균 객단가는 약 18만원입니다. 시그니처 뭉티기(92,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 스파클링 와인과 함께 10-12만원대로도 이용 가능합니다." },
+        { q: "예약 없이 방문해도 되나요?", a: "RAWISM The Black은 예약제로 운영됩니다. 8개 테이블 한정으로 운영되며, 특히 금요일, 토요일, 기념일에는 예약이 필수입니다. 네이버 예약을 통해 예약 가능하며, 최소 2-3일 전 예약을 권장드립니다." },
+        { q: "2인 방문 시 예상 금액은 얼마인가요?", a: "2인 기준 평균 객단가는 약 15만원입니다. 시그니처 뭉티기(69,000원) + 사이드 메뉴 + 샴페인 1병 구성을 추천드리며, 좀 더 가볍게 즐기시려면 스파클링 와인과 함께 10-12만원대로도 이용 가능합니다." },
         { q: "뭉티기가 뭔가요?", a: "뭉티기는 당일 도축한 온도체 한우를 신선한 상태 그대로 얇게 저며 즐기는 대구의 보물 같은 음식입니다. 아침에 도축된 한우가 체온이 남아있는 상태로 바로 손질되어, 일반 냉장 숙성육에서는 절대 느낄 수 없는 부드러움과 생생한 육향을 선사합니다." },
         { q: "위치는 어디인가요?", a: "서울 마포구 동교로 262-4에 위치해 있습니다. 지하철 2호선 홍대입구역 3번 출구에서 도보 5분(약 400m) 거리이며, 연트럴파크 인근 연남동 골목에 자리하고 있습니다." },
         { q: "주차는 어떻게 하나요?", a: "매장 내 주차는 불가합니다. 인근 연남동 공영주차장(도보 3분)을 이용하시거나, 샴페인을 드시는 경우 대리운전을 권장드립니다." },
@@ -238,14 +238,14 @@ const translations = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "서울 마포구 동교로 262-4",
       hours: "화 - 일 18:00 - 24:00",
       closed: "월요일 휴무",
       naver: "네이버 예약으로 예약하기",
       slogan: "날것의 철학으로,<br/>당신의 특별한 밤을 위해.",
       desc: "연남동 프리미엄 샴페인바<br/>홍대입구역 도보 5분",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "예약하기",
@@ -272,7 +272,7 @@ const translations = {
     },
     // Hero Section
     hero: {
-      h1: "ROWISM The Black — Premium Champagne & Wine Bar in Yeonnam-dong",
+      h1: "RAWISM The Black — Premium Champagne & Wine Bar in Yeonnam-dong",
       subtitle: "Premium Champagne Lounge in Yeonnam-dong",
       title1: "Where Special",
       title2: "Nights Begin",
@@ -296,28 +296,28 @@ const translations = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "The Aesthetics of RAW,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "Premium ingredients in their purest form",
       p1Title: "The fusion of RAW and ism.",
-      p1Text: "ROWISM combines 'RAW' and '-ISM (philosophy)', representing our commitment to delivering the finest ingredients in their purest form.",
+      p1Text: "RAWISM combines 'RAW' and '-ISM (philosophy)', representing our commitment to delivering the finest ingredients in their purest form.",
       p2Title: "Premium Champagne Bar in Yeonnam-dong.",
-      p2Text: "Located 5 minutes from Hongdae Station, ROWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
+      p2Text: "Located 5 minutes from Hongdae Station, RAWISM The Black presents signature dishes where premium Korean beef tartare meets Italian burrata cheese, black truffle, and Parmigiano-Reggiano.",
       p3Title: "8 Private Tables.",
-      p3Text: "Soft Louis Poulsen lighting, curated melodies from Geneva speakers. ROWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
+      p3Text: "Soft Louis Poulsen lighting, curated melodies from Geneva speakers. RAWISM The Black is not just a champagne bar, but a Yeonnam-dong dining space that designs sensory experiences.",
       features: [
         { title: "Signature Tartare", desc: "Truffle Beef Tartare", detail: "Premium Hanwoo + Truffle" },
         { title: "Champagne & Sparkling", desc: "Sommelier Curation", detail: "Premium Champagne & Sparkling" },
         { title: "Private Space", desc: "Limited to 8 Seats", detail: "Reservation-only Private Dining" },
         { title: "Sensory Design", desc: "Five Senses Experience", detail: "Lighting·Music·Service" }
       ],
-      story: "ROWISM combines 'RAW' and '-ISM (philosophy)'. We pursue enjoying premium ingredients in their most authentic way. The freshness of same-day slaughtered Korean beef, the creaminess of Italian burrata cheese, and the deep aroma of French black truffle. All harmonized with a glass of champagne for an extraordinary experience."
+      story: "RAWISM combines 'RAW' and '-ISM (philosophy)'. We pursue enjoying premium ingredients in their most authentic way. The freshness of same-day slaughtered Korean beef, the creaminess of Italian burrata cheese, and the deep aroma of French black truffle. All harmonized with a glass of champagne for an extraordinary experience."
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "The ROWISM Dining Experience",
-      subtitle: "A special journey awaits at ROWISM The Black",
+      title: "The RAWISM Dining Experience",
+      subtitle: "A special journey awaits at RAWISM The Black",
       items: [
         { time: "01 — Arrival", title: "✨ Welcome Sparkling", desc: "The moment you step through the door, your special evening begins. Our sommelier personally pours your welcome sparkling. The first toast to open tonight's chapter." },
         { time: "02 — Ambience", title: "🕯️ Louis Poulsen Glow", desc: "Beloved by Danish royalty, Louis Poulsen lighting casts a gentle glow over each table. Just 8 tables, generous spacing. A space crafted exclusively for two." },
@@ -329,19 +329,19 @@ const translations = {
     menu: {
       label: "Menu",
       title: "Signature Collection",
-      subtitle: "ROWISM signatures crafted with premium ingredients and meticulous plating",
+      subtitle: "RAWISM signatures crafted with premium ingredients and meticulous plating",
       ingredientsLabel: "Ingredients",
       finisherBadge: "Finisher",
       signature: {
-        name: "ROWISM Signature Beef Tartare",
-        price: "₩92,000",
+        name: "RAWISM Signature Beef Tartare",
+        price: "₩69,000",
         badge: "Signature",
-        description: "Our signature dish embodying the ROWISM philosophy",
-        story: "ROWISM Signature Beef Tartare is our flagship dish that best represents ROWISM The Black's identity.",
+        description: "Our signature dish embodying the RAWISM philosophy",
+        story: "RAWISM Signature Beef Tartare is our flagship dish that best represents RAWISM The Black's identity.",
         whatIsTitle: "What is Mungti-gi?",
         whatIsText: "Mungti-gi is a traditional Korean dish of thinly sliced fresh beef enjoyed without any seasoning.",
         harmonyTitle: "Perfect Harmony of Premium Ingredients",
-        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese. 'ROWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form.",
+        harmonyText: "Our signature beef tartare is topped with a whole Italian burrata cheese. 'RAWISM' combines 'RAW' and '-ISM (philosophy)', representing our brand's commitment to enjoying premium ingredients in their purest form.",
         highlight: "We generously use 200g of premium Korean beef (Hanwoo), carefully selected daily.",
         pairing: "Topped with a whole Italian burrata cheese, black truffle shaved tableside for deep aroma, and Parmigiano-Reggiano falling like snowflakes.",
         ingredients: "Korean beef tartare, Burrata cheese, Black truffle, Parmigiano-Reggiano, Salt, Pepper"
@@ -349,14 +349,14 @@ const translations = {
       items: [
         {
           name: "Grilled Jebichuri & Vegetables",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "Premium Korean beef cut with 8 seasonal vegetables",
           detail: "Jebichuri is a rare cut from between the ribs and brisket, called the 'hidden gem' as only a small amount is available per cow. Grilled to perfect medium-rare with caramelized exterior and juicy interior.",
           ingredients: "Korean beef Jebichuri, Green onion, Brussels sprouts, Asparagus, Radish, Eggplant, Baby carrots, Mushrooms, Broccoli"
         },
         {
           name: "Cheese Selection",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "Sommelier-curated 6-cheese collection",
           detail: "Brie, 8-month aged Comté, Emmental, Colby Jack, Cream cheese, Dauphinois. Served with Spanish Jamón, Italian Genoa salami, green olives, blueberries, and crackers.",
           ingredients: "Brie, Comté, Emmental, Colby Jack, Cream cheese, Dauphinois, Jamón, Salami, Olives, Blueberries"
@@ -420,7 +420,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "Find ROWISM in Yeonnam-dong",
+      title: "Find RAWISM in Yeonnam-dong",
       address: "262-4 Donggyo-ro, Mapo-gu, Seoul",
       zipcode: "04030",
       parking: "Use nearby public parking",
@@ -439,8 +439,8 @@ const translations = {
     // Reviews Section
     reviews: {
       label: "Reviews",
-      title: "Guest Reviews at ROWISM The Black",
-      subtitle: "Stories from those who experienced ROWISM The Black",
+      title: "Guest Reviews at RAWISM The Black",
+      subtitle: "Stories from those who experienced RAWISM The Black",
       count: "127 reviews",
       more: "See more reviews →",
       items: [
@@ -455,11 +455,11 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "ROWISM The Black FAQ",
-      subtitle: "Find answers about ROWISM The Black champagne bar in Yeonnam-dong",
+      title: "RAWISM The Black FAQ",
+      subtitle: "Find answers about RAWISM The Black champagne bar in Yeonnam-dong",
       items: [
-        { q: "Do I need a reservation?", a: "ROWISM The Black operates by reservation only. With only 8 tables, reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance." },
-        { q: "How much for two people?", a: "The average price for two is about ₩180,000 (~$140 USD). We recommend the Signature Tartare (₩92,000) + side dishes + 1 bottle of champagne. For a lighter option, ₩100,000-120,000 with sparkling wine is also possible." },
+        { q: "Do I need a reservation?", a: "RAWISM The Black operates by reservation only. With only 8 tables, reservations are essential, especially on Fridays, Saturdays, and special occasions. You can book through Naver Reservation. We recommend booking at least 2-3 days in advance." },
+        { q: "How much for two people?", a: "The average price for two is about ₩180,000 (~$115 USD). We recommend the Signature Tartare (₩69,000) + side dishes + 1 bottle of champagne. For a lighter option, ₩100,000-120,000 with sparkling wine is also possible." },
         { q: "What is Mungti-gi?", a: "Mungti-gi is a treasured Daegu delicacy - thinly sliced fresh beef from same-day slaughtered Korean cattle, enjoyed without seasoning. The beef is processed while still warm, offering incredible tenderness and fresh beef aroma impossible with aged meat." },
         { q: "Where are you located?", a: "We're at 262-4 Donggyo-ro, Mapo-gu, Seoul. It's a 5-minute walk (about 400m) from Hongdae Station (Line 2) Exit 3, in the Yeonnam-dong alley near Yeontral Park." },
         { q: "Is parking available?", a: "We don't have on-site parking. We recommend the nearby Yeonnam-dong public parking lot (3 min walk). If you're enjoying champagne, we recommend using a designated driver service." },
@@ -494,14 +494,14 @@ const translations = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "262-4 Donggyo-ro, Mapo-gu, Seoul",
       hours: "Tue - Sun 6:00 PM - 12:00 AM",
       closed: "Closed Mondays",
       naver: "Book on Naver Reservation",
       slogan: "With the philosophy of RAW,<br/>for your special night.",
       desc: "Premium Champagne Bar in Yeonnam-dong<br/>5 min walk from Hongdae Station",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "Reserve",
@@ -528,7 +528,7 @@ const translations = {
     },
     // Hero Section
     hero: {
-      h1: "ROWISM The Black — 延南洞プレミアムシャンパンバー & ワインバー",
+      h1: "RAWISM The Black — 延南洞プレミアムシャンパンバー & ワインバー",
       subtitle: "延南洞プレミアムシャンパンラウンジ",
       title1: "特別な夜が",
       title2: "始まる場所",
@@ -552,28 +552,28 @@ const translations = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "生の美学,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "最高級の食材を最も純粋な方法で",
       p1Title: "RAWとismの融合。",
-      p1Text: "ROWISMは「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で伝えることを哲学としています。",
+      p1Text: "RAWISMは「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。私たちは最高級の食材本来の味を最も純粋な方法で伝えることを哲学としています。",
       p2Title: "延南洞プレミアムシャンパンバー。",
-      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するROWISM The Blackは、最高級韓牛ムンティギにイタリアンブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
+      p2Text: "弘大入口駅から徒歩5分、延南洞の路地に位置するRAWISM The Blackは、最高級韓牛ムンティギにイタリアンブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノが出会うシグネチャー料理を提供します。",
       p3Title: "8つのプライベートテーブル。",
-      p3Text: "ルイスポールセンの柔らかな照明、ジュネーブスピーカーが届けるキュレーティングされた旋律。ROWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞ダイニング空間です。",
+      p3Text: "ルイスポールセンの柔らかな照明、ジュネーブスピーカーが届けるキュレーティングされた旋律。RAWISM The Blackは単なるシャンパンバーではなく、感覚の体験をデザインする延南洞ダイニング空間です。",
       features: [
         { title: "シグネチャータルタル", desc: "トリュフ韓牛ムンティギ", detail: "最高級韓牛 + トリュフ" },
         { title: "ソムリエシャンパンキュレーション", desc: "ソムリエキュレーション", detail: "プレミアムシャンパン & スパークリング" },
         { title: "8席プライベートダイニング", desc: "8席限定運営", detail: "予約制プライベートダイニング" },
         { title: "五感体験設計", desc: "五感の体験設計", detail: "照明·音楽·サービス" }
       ],
-      story: "ROWISMは「RAW（生）」と「-ISM（哲学）」の組み合わせです。最高級の食材本来の味を最も純粋な方法で楽しむことを追求しています。当日屠畜した韓牛の新鮮さ、イタリアンブラータチーズのクリーミーさ、フレンチブラックトリュフの深い香り。すべてがシャンパンと調和する特別な体験を提供します。"
+      story: "RAWISMは「RAW（生）」と「-ISM（哲学）」の組み合わせです。最高級の食材本来の味を最も純粋な方法で楽しむことを追求しています。当日屠畜した韓牛の新鮮さ、イタリアンブラータチーズのクリーミーさ、フレンチブラックトリュフの深い香り。すべてがシャンパンと調和する特別な体験を提供します。"
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "ROWISMダイニング体験",
-      subtitle: "ROWISM The Blackでの特別な旅",
+      title: "RAWISMダイニング体験",
+      subtitle: "RAWISM The Blackでの特別な旅",
       items: [
         { time: "01 — Arrival", title: "✨ ウェルカムスパークリング", desc: "扉を開けた瞬間、特別な夜が始まります。ソムリエが直接注ぐウェルカムスパークリング。今宵の幕開けを告げる最初の乾杯。" },
         { time: "02 — Ambience", title: "🕯️ ルイスポールセンの光", desc: "デンマーク王室が愛したルイスポールセン照明が、各テーブルに穏やかに降り注ぎます。わずか8卓、十分な間隔。お二人だけのための空間。" },
@@ -585,19 +585,19 @@ const translations = {
     menu: {
       label: "Menu",
       title: "シグネチャー メニュー コレクション",
-      subtitle: "最高級の食材と繊細なプレーティングで完成されるROWISMのシグネチャー",
+      subtitle: "最高級の食材と繊細なプレーティングで完成されるRAWISMのシグネチャー",
       ingredientsLabel: "材料",
       finisherBadge: "Finisher",
       signature: {
         name: "ロウイズム ムンティギ シグネチャー",
-        price: "₩92,000",
+        price: "₩69,000",
         badge: "Signature",
-        description: "ROWISMの哲学を込めたシグネチャーメニュー",
-        story: "ロウイズム ムンティギ シグネチャーはROWISM The Blackのアイデンティティを最もよく表す代表メニューです。",
+        description: "RAWISMの哲学を込めたシグネチャーメニュー",
+        story: "ロウイズム ムンティギ シグネチャーはRAWISM The Blackのアイデンティティを最もよく表す代表メニューです。",
         whatIsTitle: "ムンティギとは？",
         whatIsText: "ムンティギは韓牛を薄く切って味付けなしでそのまま楽しむ伝統料理です。",
         harmonyTitle: "プレミアム食材の完璧な調和",
-        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。「ROWISM」は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を純粋に楽しむブランド哲学を表しています。",
+        harmonyText: "ロウイズム ムンティギ シグネチャーの上にはイタリア産ブラータチーズが丸ごと乗ります。「RAWISM」は「RAW（生）」と「-ISM（哲学）」の組み合わせで、最高級の食材を純粋に楽しむブランド哲学を表しています。",
         highlight: "毎日厳選された最高級韓牛ムンティギ200gを惜しみなく使用しています。",
         pairing: "イタリア産ブラータチーズが丸ごと乗り、ブラックトリュフが目の前でスライスされて深い香りを加えます。パルミジャーノ・レッジャーノが雪のように降りかかります。",
         ingredients: "韓牛ムンティギ、ブラータチーズ、ブラックトリュフ、パルミジャーノ・レッジャーノ、塩、胡椒"
@@ -605,14 +605,14 @@ const translations = {
       items: [
         {
           name: "チェビチュリ グリルドベジタブル",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "韓牛チェビチュリと8種の旬野菜のグリル",
           detail: "チェビチュリは牛のカルビとバラの間の希少部位で、一頭から少量しか取れない「隠れた宝石」と呼ばれています。ミディアムレアに正確に焼いて外はカラメリゼ、中は肉汁たっぷり。",
           ingredients: "韓牛チェビチュリ、ネギ、芽キャベツ、アスパラガス、ラディッシュ、ナス、ミニにんじん、マッシュルーム、ブロッコリー"
         },
         {
           name: "チーズセレクション",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "ソムリエがキュレーションした6種のチーズコレクション",
           detail: "ブリー、8ヶ月熟成コンテ、エメンタール、コルビージャック、クリームチーズ、ドフィノワ。スペイン産ハモン、イタリアン・ジェノアサラミ、グリーンオリーブ、ブルーベリーとクラッカー付き。",
           ingredients: "ブリー、コンテ、エメンタール、コルビージャック、クリームチーズ、ドフィノワ、ハモン、サラミ、オリーブ、ブルーベリー"
@@ -676,7 +676,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "延南洞ROWISMへのアクセス",
+      title: "延南洞RAWISMへのアクセス",
       address: "ソウル市麻浦区東橋路262-4",
       zipcode: "04030",
       parking: "近隣の公営駐車場をご利用ください",
@@ -696,7 +696,7 @@ const translations = {
     reviews: {
       label: "Reviews",
       title: "延南洞シャンパンバー お客様の声",
-      subtitle: "ROWISM The Blackを体験された方々のストーリー",
+      subtitle: "RAWISM The Blackを体験された方々のストーリー",
       count: "127件のレビュー",
       more: "もっと見る →",
       items: [
@@ -711,11 +711,11 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "ROWISM The Black よくある質問",
-      subtitle: "延南洞シャンパンバー ROWISM The Blackについてのご質問",
+      title: "RAWISM The Black よくある質問",
+      subtitle: "延南洞シャンパンバー RAWISM The Blackについてのご質問",
       items: [
-        { q: "予約なしでも大丈夫ですか？", a: "ROWISM The Blackは予約制で運営しています。8テーブル限定で運営しており、特に金曜日、土曜日、記念日は予約が必須です。Naver予約でご予約いただけます。最低2-3日前の予約をおすすめします。" },
-        { q: "2人での予算はいくらですか？", a: "2人基準の平均客単価は約18万ウォン（約2万円）です。シグネチャームンティギ(92,000ウォン) + サイドメニュー + シャンパン1本の構成をおすすめします。もう少し軽くなら10-12万ウォンでも可能です。" },
+        { q: "予約なしでも大丈夫ですか？", a: "RAWISM The Blackは予約制で運営しています。8テーブル限定で運営しており、特に金曜日、土曜日、記念日は予約が必須です。Naver予約でご予約いただけます。最低2-3日前の予約をおすすめします。" },
+        { q: "2人での予算はいくらですか？", a: "2人基準の平均客単価は約18万ウォン（約2万円）です。シグネチャームンティギ(69,000ウォン) + サイドメニュー + シャンパン1本の構成をおすすめします。もう少し軽くなら10-12万ウォンでも可能です。" },
         { q: "ムンティギとは何ですか？", a: "ムンティギは当日屠畜した韓牛を新鮮な状態のまま薄く切って楽しむ大邱の宝のような料理です。朝屠畜された韓牛が体温が残っている状態ですぐに処理され、一般の冷蔵熟成肉では絶対に感じられない柔らかさと生き生きとした肉の香りを提供します。" },
         { q: "場所はどこですか？", a: "ソウル市麻浦区東橋路262-4にあります。地下鉄2号線弘大入口駅3番出口から徒歩5分（約400m）、ヨントラルパーク近くの延南洞路地にあります。" },
         { q: "駐車場はありますか？", a: "店内駐車場はありません。近くの延南洞公営駐車場（徒歩3分）をご利用いただくか、シャンパンをお召し上がりの場合は代行運転をおすすめします。" },
@@ -750,14 +750,14 @@ const translations = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "ソウル市麻浦区東橋路262-4",
       hours: "火 - 日 18:00 - 24:00",
       closed: "毎週月曜日定休",
       naver: "Naver予約で予約する",
       slogan: "生の哲学で、<br/>あなたの特別な夜のために。",
       desc: "延南洞プレミアムシャンパンバー<br/>弘大入口駅 徒歩5分",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "予約する",
@@ -784,7 +784,7 @@ const translations = {
     },
     // Hero Section
     hero: {
-      h1: "ROWISM The Black — 延南洞高级香槟吧 & 葡萄酒吧",
+      h1: "RAWISM The Black — 延南洞高级香槟吧 & 葡萄酒吧",
       subtitle: "延南洞高级香槟酒廊",
       title1: "特别之夜",
       title2: "开始的地方",
@@ -808,28 +808,28 @@ const translations = {
     philosophy: {
       label: "Our Philosophy",
       titleLine1: "生的美学,",
-      title: "ROWISM",
+      title: "RAWISM",
       subtitle: "RAW + ISM",
       description: "以最纯粹的方式享用顶级食材",
       p1Title: "RAW与ism的融合。",
-      p1Text: "ROWISM是“生”的RAW和“主义·哲学”的ism的结合。我们以最纯粹的方式传递顶级食材的本味为哲学。",
+      p1Text: "RAWISM是“生”的RAW和“主义·哲学”的ism的结合。我们以最纯粹的方式传递顶级食材的本味为哲学。",
       p2Title: "延南洞高级香槟酒吧。",
-      p2Text: "位于弘大入口站步行5分钟，ROWISM The Black的招牌菜品将顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪完美结合。",
+      p2Text: "位于弘大入口站步行5分钟，RAWISM The Black的招牌菜品将顶级韩牛生拌与意大利布拉塔奶酪、黑松露、帕马森奶酪完美结合。",
       p3Title: "8个私享桌位。",
-      p3Text: "Louis Poulsen的柔和照明，Geneva音箱传递的精心策划的旋律。ROWISM The Black不只是香槟酒吧，而是设计感官体验的延南洞餐饮空间。",
+      p3Text: "Louis Poulsen的柔和照明，Geneva音箱传递的精心策划的旋律。RAWISM The Black不只是香槟酒吧，而是设计感官体验的延南洞餐饮空间。",
       features: [
         { title: "招牌生拌", desc: "松露韩牛生拌", detail: "顶级韩牛 + 松露" },
         { title: "侍酒师香槟策划", desc: "侍酒师策划", detail: "高级香槟 & 起泡酒" },
         { title: "8席私享餐厅", desc: "限定8席运营", detail: "预约制私享餐厅" },
         { title: "五感体验设计", desc: "五感体验设计", detail: "照明·音乐·服务" }
       ],
-      story: "ROWISM是\"RAW（生）\"和\"-ISM（主义）\"的结合。我们追求以最纯粹的方式享用顶级食材的本味。当日屠宰韩牛的新鲜、意大利布拉塔奶酪的绵密、法国黑松露的深邃香气。所有这些与一杯香槟完美融合，为您带来非凡体验。"
+      story: "RAWISM是\"RAW（生）\"和\"-ISM（主义）\"的结合。我们追求以最纯粹的方式享用顶级食材的本味。当日屠宰韩牛的新鲜、意大利布拉塔奶酪的绵密、法国黑松露的深邃香气。所有这些与一杯香槟完美融合，为您带来非凡体验。"
     },
     // Experience Section
     experience: {
       label: "The Experience",
-      title: "ROWISM特别旅程",
-      subtitle: "在ROWISM The Black等待您的特别旅程",
+      title: "RAWISM特别旅程",
+      subtitle: "在RAWISM The Black等待您的特别旅程",
       items: [
         { time: "01 — Arrival", title: "✨ 欢迎起泡酒", desc: "推开门的那一刻，特别的夜晚便开始了。侍酒师亲自为您斟上欢迎起泡酒。开启今晚篇章的第一杯祝酒。" },
         { time: "02 — Ambience", title: "🕯️ 路易斯·保尔森之光", desc: "深受丹麦王室喜爱的Louis Poulsen灯具，在每张餐桌上投下柔和的光芒。仅8张桌子，充足的间距。专属于二人的空间。" },
@@ -841,19 +841,19 @@ const translations = {
     menu: {
       label: "Menu",
       title: "招牌菜单",
-      subtitle: "用顶级食材和细致摆盘完成的ROWISM招牌",
+      subtitle: "用顶级食材和细致摆盘完成的RAWISM招牌",
       ingredientsLabel: "食材",
       finisherBadge: "Finisher",
       signature: {
-        name: "ROWISM招牌生拌牛肉",
-        price: "₩92,000",
+        name: "RAWISM招牌生拌牛肉",
+        price: "₩69,000",
         badge: "Signature",
-        description: "蕴含ROWISM哲学的招牌菜品",
-        story: "ROWISM招牌生拌牛肉是最能代表ROWISM The Black身份的招牌菜。",
+        description: "蕴含RAWISM哲学的招牌菜品",
+        story: "RAWISM招牌生拌牛肉是最能代表RAWISM The Black身份的招牌菜。",
         whatIsTitle: "什么是Mungti-gi？",
         whatIsText: "Mungti-gi是将韩牛切成薄片，不加任何调味直接享用的传统料理。",
         harmonyTitle: "顶级食材的完美和谐",
-        harmonyText: "ROWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。\"ROWISM\"是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表以最纯粹的方式享用顶级食材的品牌哲学。",
+        harmonyText: "RAWISM招牌生拌牛肉上面放着整块意大利布拉塔奶酪。\"RAWISM\"是\"RAW（生）\"和\"-ISM（主义）\"的结合，代表以最纯粹的方式享用顶级食材的品牌哲学。",
         highlight: "每天精选200克顶级韩牛生拌，毫不吝啬地使用。",
         pairing: "整块意大利布拉塔奶酪覆盖其上，黑松露在您面前现场刨片增添深邃香气。帕马森奶酪如雪花般飘落。",
         ingredients: "韩牛生拌、布拉塔奶酪、黑松露、帕马森奶酪、盐、胡椒"
@@ -861,14 +861,14 @@ const translations = {
       items: [
         {
           name: "炭烤牛肋眼肉配时蔬",
-          price: "₩49,000",
+          price: "₩39,000",
           description: "韩牛Jebichuri与8种时令蔬菜的炭烤盛宴",
           detail: "Jebichuri是牛肋骨和牛腩之间的稀有部位，每头牛只能取得少量，被称为\"隐藏的宝石\"。精确烤至中等偏生，外层焦糖化，内部汁水丰富。",
           ingredients: "韩牛Jebichuri、大葱、球芽甘蓝、芦笋、萝卜、茄子、迷你胡萝卜、蘑菇、西兰花"
         },
         {
           name: "奶酪精选",
-          price: "₩36,000",
+          price: "₩35,000",
           description: "侍酒师精选的6种奶酪组合",
           detail: "布里、8个月熟成孔泰、艾曼塔、科尔比杰克、奶油奶酪、多菲内。搭配西班牙火腿、意大利热那亚萨拉米、青橄榄、蓝莓和饼干。",
           ingredients: "布里、孔泰、艾曼塔、科尔比杰克、奶油奶酪、多菲内、火腿、萨拉米、橄榄、蓝莓"
@@ -932,7 +932,7 @@ const translations = {
     // Location Section
     location: {
       label: "Location",
-      title: "延南洞ROWISM如何到达",
+      title: "延南洞RAWISM如何到达",
       address: "首尔市麻浦区东桥路262-4",
       parking: "附近公共停车场",
       zipcode: "04030",
@@ -952,7 +952,7 @@ const translations = {
     reviews: {
       label: "Reviews",
       title: "延南洞香槟吧顾客评价",
-      subtitle: "体验过ROWISM The Black的客人的故事",
+      subtitle: "体验过RAWISM The Black的客人的故事",
       count: "127条评价",
       more: "查看更多评价 →",
       items: [
@@ -967,11 +967,11 @@ const translations = {
     // FAQ Section
     faq: {
       label: "FAQ",
-      title: "ROWISM The Black常见问题",
-      subtitle: "关于延南洞香槟吧ROWISM The Black的问题",
+      title: "RAWISM The Black常见问题",
+      subtitle: "关于延南洞香槟吧RAWISM The Black的问题",
       items: [
-        { q: "可以不预约直接去吗？", a: "ROWISM The Black采用预约制。仅限8桌，特别是周五、周六、纪念日必须预约。可通过Naver预约，建议至少提前2-3天预约。" },
-        { q: "两个人大概多少钱？", a: "两人平均消费约18万韩元（约1000元人民币）。推荐招牌生拌（92,000韩元）+ 配菜 + 香槟1瓶。想轻松点的话10-12万韩元也可以。" },
+        { q: "可以不预约直接去吗？", a: "RAWISM The Black采用预约制。仅限8桌，特别是周五、周六、纪念日必须预约。可通过Naver预约，建议至少提前2-3天预约。" },
+        { q: "两个人大概多少钱？", a: "两人平均消费约18万韩元（约1000元人民币）。推荐招牌生拌（69,000韩元）+ 配菜 + 香槟1瓶。想轻松点的话10-12万韩元也可以。" },
         { q: "Mungti-gi是什么？", a: "Mungti-gi是大邱的珍贵美食，将当日屠宰的韩牛在新鲜状态下切成薄片享用。早上屠宰的韩牛在体温还在的状态下立即处理，提供普通冷藏熟成肉绝对无法感受到的嫩滑和鲜活的肉香。" },
         { q: "在哪里？", a: "位于首尔市麻浦区东桥路262-4。从地铁2号线弘大入口站3号出口步行5分钟（约400米），在延特拉尔公园附近的延南洞小巷。" },
         { q: "有停车位吗？", a: "店内无停车位。建议使用附近的延南洞公共停车场（步行3分钟）。如果喝香槟，建议使用代驾服务。" },
@@ -1006,14 +1006,14 @@ const translations = {
     },
     // Footer
     footer: {
-      name: "ROWISM The Black",
+      name: "RAWISM The Black",
       address: "首尔市麻浦区东桥路262-4",
       hours: "周二 - 周日 18:00 - 24:00",
       closed: "每周一休息",
       naver: "Naver预约",
       slogan: "以生的哲学，<br/>为您的特别之夜。",
       desc: "延南洞高级香槟酒吧<br/>弘大入口站步行5分钟",
-      copyright: "© 2024 ROWISM The Black"
+      copyright: "© 2024 RAWISM The Black"
     },
     // Mobile CTA
     mobileCta: "立即预约",
@@ -1149,10 +1149,10 @@ function updatePageContent() {
 
 // Render dynamic sections
 function renderDynamicSections() {
-  console.log('[ROWISM] renderDynamicSections() called');
-  console.log('[ROWISM] menu-items-container:', document.getElementById('menu-items-container'));
-  console.log('[ROWISM] experience-items-container:', document.getElementById('experience-items-container'));
-  console.log('[ROWISM] reviews-items-container:', document.getElementById('reviews-items-container'));
+  console.log('[RAWISM] renderDynamicSections() called');
+  console.log('[RAWISM] menu-items-container:', document.getElementById('menu-items-container'));
+  console.log('[RAWISM] experience-items-container:', document.getElementById('experience-items-container'));
+  console.log('[RAWISM] reviews-items-container:', document.getElementById('reviews-items-container'));
   
   renderMenuSection();
   renderExperienceSection();
@@ -1164,22 +1164,22 @@ function renderDynamicSections() {
   renderReserveSection();
   renderFooterSection();
   
-  console.log('[ROWISM] All sections rendered');
+  console.log('[RAWISM] All sections rendered');
 }
 
 // Render Menu Items
 function renderMenuSection() {
-  console.log('[ROWISM] renderMenuSection() called');
+  console.log('[RAWISM] renderMenuSection() called');
   const menuContainer = document.getElementById('menu-items-container');
   if (!menuContainer) {
-    console.log('[ROWISM] menu-items-container NOT found!');
+    console.log('[RAWISM] menu-items-container NOT found!');
     return;
   }
   
   const items = t('menu.items');
-  console.log('[ROWISM] menu.items:', items ? items.length + ' items' : 'null/undefined');
+  console.log('[RAWISM] menu.items:', items ? items.length + ' items' : 'null/undefined');
   if (!Array.isArray(items)) {
-    console.log('[ROWISM] menu.items is NOT an array!');
+    console.log('[RAWISM] menu.items is NOT an array!');
     return;
   }
   
@@ -1215,17 +1215,17 @@ function renderMenuSection() {
 
 // Render Experience Timeline
 function renderExperienceSection() {
-  console.log('[ROWISM] renderExperienceSection() called');
+  console.log('[RAWISM] renderExperienceSection() called');
   const container = document.getElementById('experience-items-container');
   if (!container) {
-    console.log('[ROWISM] experience-items-container NOT found!');
+    console.log('[RAWISM] experience-items-container NOT found!');
     return;
   }
   
   const items = t('experience.items');
-  console.log('[ROWISM] experience.items:', items ? items.length + ' items' : 'null/undefined');
+  console.log('[RAWISM] experience.items:', items ? items.length + ' items' : 'null/undefined');
   if (!Array.isArray(items)) {
-    console.log('[ROWISM] experience.items is NOT an array!');
+    console.log('[RAWISM] experience.items is NOT an array!');
     return;
   }
   
@@ -1243,9 +1243,9 @@ function renderExperienceSection() {
     </div>
   `).join('');
   
-  console.log('[ROWISM] experience HTML length:', html.length);
+  console.log('[RAWISM] experience HTML length:', html.length);
   container.innerHTML = html;
-  console.log('[ROWISM] experience container children:', container.children.length);
+  console.log('[RAWISM] experience container children:', container.children.length);
 }
 
 // Render Recommend Section
@@ -1288,17 +1288,17 @@ function renderOccasionsSection() {
 
 // Render Reviews Section
 function renderReviewsSection() {
-  console.log('[ROWISM] renderReviewsSection() called');
+  console.log('[RAWISM] renderReviewsSection() called');
   const container = document.getElementById('reviews-items-container');
   if (!container) {
-    console.log('[ROWISM] reviews-items-container NOT found!');
+    console.log('[RAWISM] reviews-items-container NOT found!');
     return;
   }
   
   const items = t('reviews.items');
-  console.log('[ROWISM] reviews.items:', items ? items.length + ' items' : 'null/undefined');
+  console.log('[RAWISM] reviews.items:', items ? items.length + ' items' : 'null/undefined');
   if (!Array.isArray(items)) {
-    console.log('[ROWISM] reviews.items is NOT an array!');
+    console.log('[RAWISM] reviews.items is NOT an array!');
     return;
   }
   
@@ -1319,9 +1319,9 @@ function renderReviewsSection() {
     </div>
   `).join('');
   
-  console.log('[ROWISM] reviews HTML length:', html.length);
+  console.log('[RAWISM] reviews HTML length:', html.length);
   container.innerHTML = html;
-  console.log('[ROWISM] reviews container children:', container.children.length);
+  console.log('[RAWISM] reviews container children:', container.children.length);
 }
 
 // Render FAQ Section
@@ -1432,11 +1432,11 @@ function renderFooterSection() {
 let faqListenerAttached = false;
 
 function initFAQToggle() {
-  console.log('[ROWISM] initFAQToggle called, listener attached:', faqListenerAttached);
+  console.log('[RAWISM] initFAQToggle called, listener attached:', faqListenerAttached);
   
   // Only attach the listener once at document level
   if (faqListenerAttached) {
-    console.log('[ROWISM] FAQ listener already attached, skipping');
+    console.log('[RAWISM] FAQ listener already attached, skipping');
     return;
   }
   
@@ -1448,19 +1448,19 @@ function initFAQToggle() {
     e.preventDefault();
     e.stopPropagation();
     
-    console.log('[ROWISM] FAQ button clicked');
+    console.log('[RAWISM] FAQ button clicked');
     
     const faqItem = button.closest('.faq-item');
     const answer = faqItem ? faqItem.querySelector('.faq-answer') : null;
     const icon = button.querySelector('.faq-icon');
     
     if (!answer) {
-      console.log('[ROWISM] No answer element found');
+      console.log('[RAWISM] No answer element found');
       return;
     }
     
     const isOpen = faqItem.classList.contains('active');
-    console.log('[ROWISM] Current state - isOpen:', isOpen, 'scrollHeight:', answer.scrollHeight);
+    console.log('[RAWISM] Current state - isOpen:', isOpen, 'scrollHeight:', answer.scrollHeight);
     
     // Close all other FAQ items
     document.querySelectorAll('.faq-item').forEach(item => {
@@ -1479,19 +1479,19 @@ function initFAQToggle() {
       faqItem.classList.remove('active');
       answer.style.maxHeight = '0px';
       if (icon) icon.style.transform = 'rotate(0deg)';
-      console.log('[ROWISM] Closed FAQ item');
+      console.log('[RAWISM] Closed FAQ item');
     } else {
       // Open it
       faqItem.classList.add('active');
       answer.style.maxHeight = answer.scrollHeight + 'px';
       if (icon) icon.style.transform = 'rotate(45deg)';
-      console.log('[ROWISM] Opened FAQ item, maxHeight set to:', answer.scrollHeight + 'px');
+      console.log('[RAWISM] Opened FAQ item, maxHeight set to:', answer.scrollHeight + 'px');
     }
   });
   
   faqListenerAttached = true;
   
-  console.log('[ROWISM] FAQ toggle initialized with event delegation');
+  console.log('[RAWISM] FAQ toggle initialized with event delegation');
 }
 
 // Re-initialize scroll animations for dynamically added elements
@@ -1499,7 +1499,7 @@ function reinitScrollAnimations() {
   const animatedElements = document.querySelectorAll('.animate-on-scroll:not(.observed)');
   if (!animatedElements.length) return;
   
-  console.log('[ROWISM] reinitScrollAnimations: found', animatedElements.length, 'new elements');
+  console.log('[RAWISM] reinitScrollAnimations: found', animatedElements.length, 'new elements');
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
@@ -1523,21 +1523,21 @@ function reinitScrollAnimations() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('[ROWISM] DOMContentLoaded fired');
+  console.log('[RAWISM] DOMContentLoaded fired');
   
   // Initialize language from URL
   const lang = initLanguage();
-  console.log('[ROWISM] Language initialized:', lang);
-  console.log('[ROWISM] hero.subtitle in current lang:', t('hero.subtitle'));
+  console.log('[RAWISM] Language initialized:', lang);
+  console.log('[RAWISM] hero.subtitle in current lang:', t('hero.subtitle'));
   
   // Update page content with translations
-  console.log('[ROWISM] Calling updatePageContent...');
+  console.log('[RAWISM] Calling updatePageContent...');
   updatePageContent();
-  console.log('[ROWISM] updatePageContent completed');
+  console.log('[RAWISM] updatePageContent completed');
   
   // Check if update worked
   const heroEl = document.querySelector('[data-i18n="hero.subtitle"]');
-  console.log('[ROWISM] hero.subtitle element text after update:', heroEl ? heroEl.textContent : 'NOT FOUND');
+  console.log('[RAWISM] hero.subtitle element text after update:', heroEl ? heroEl.textContent : 'NOT FOUND');
   
   renderDynamicSections();
   initFAQToggle();
@@ -1547,7 +1547,7 @@ document.addEventListener('DOMContentLoaded', function() {
     reinitScrollAnimations();
   }, 100);
   
-  console.log('[ROWISM] Initialization complete');
+  console.log('[RAWISM] Initialization complete');
 });
 
 // Export for global use

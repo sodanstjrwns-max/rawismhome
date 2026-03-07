@@ -13,31 +13,31 @@ const menuSeoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: '메뉴 | ROWISM The Black | 연남동 샴페인바 트러플 한우 뭉티기',
-    description: 'ROWISM The Black 메뉴 - 당일 도축 온도체 한우 뭉티기, 부라타 치즈, 블랙 트러플의 시그니처 요리. 제비추리, 청양 오일 육회, 치즈 셀렉션. 연남동 프리미엄 샴페인바.',
-    keywords: '연남동 메뉴, 한우 뭉티기 가격, 트러플 육회, 연남동 샴페인바 메뉴, 홍대 한우 가격, 부라타 치즈, 제비추리, 육회 메밀면, ROWISM 메뉴, 연남동 맛집 메뉴판',
-    ogDescription: '당일 도축 온도체 한우 뭉티기와 샴페인 페어링. ROWISM The Black 시그니처 메뉴를 확인하세요.'
+    title: '메뉴 | RAWISM The Black | 연남동 샴페인바 트러플 한우 뭉티기',
+    description: 'RAWISM The Black 메뉴 - 당일 도축 온도체 한우 뭉티기, 부라타 치즈, 블랙 트러플의 시그니처 요리. 제비추리, 청양 오일 육회, 치즈 셀렉션. 연남동 프리미엄 샴페인바.',
+    keywords: '연남동 메뉴, 한우 뭉티기 가격, 트러플 육회, 연남동 샴페인바 메뉴, 홍대 한우 가격, 부라타 치즈, 제비추리, 육회 메밀면, RAWISM 메뉴, 연남동 맛집 메뉴판',
+    ogDescription: '당일 도축 온도체 한우 뭉티기와 샴페인 페어링. RAWISM The Black 시그니처 메뉴를 확인하세요.'
   },
   en: {
     lang: 'en',
-    title: 'Menu | ROWISM The Black | Seoul Yeonnam-dong Champagne Bar',
-    description: 'ROWISM The Black Menu - Same-day slaughtered Korean beef tartare with burrata cheese and black truffle. Jebichuri, Cheongyang oil yukhoe, cheese selection. Premium champagne bar in Yeonnam-dong.',
-    keywords: 'Yeonnam menu, Korean beef tartare price, truffle yukhoe, Seoul champagne bar menu, Hongdae beef price, burrata cheese, ROWISM menu, Seoul restaurant menu',
-    ogDescription: 'Same-day slaughtered Korean beef tartare with champagne pairing. Check out ROWISM The Black signature menu.'
+    title: 'Menu | RAWISM The Black | Seoul Yeonnam-dong Champagne Bar',
+    description: 'RAWISM The Black Menu - Same-day slaughtered Korean beef tartare with burrata cheese and black truffle. Jebichuri, Cheongyang oil yukhoe, cheese selection. Premium champagne bar in Yeonnam-dong.',
+    keywords: 'Yeonnam menu, Korean beef tartare price, truffle yukhoe, Seoul champagne bar menu, Hongdae beef price, burrata cheese, RAWISM menu, Seoul restaurant menu',
+    ogDescription: 'Same-day slaughtered Korean beef tartare with champagne pairing. Check out RAWISM The Black signature menu.'
   },
   ja: {
     lang: 'ja',
-    title: 'メニュー | ROWISM The Black | ソウル延南洞シャンパンバー',
-    description: 'ROWISM The Black メニュー - 当日屠畜韓牛タルタル、ブッラータチーズ、ブラックトリュフのシグネチャー料理。ジェビチュリ、青陽オイルユッケ、チーズセレクション。延南洞プレミアムシャンパンバー。',
-    keywords: '延南洞メニュー, 韓牛タルタル価格, トリュフユッケ, ソウルシャンパンバーメニュー, 弘大韓牛価格, ブッラータチーズ, ROWISMメニュー',
-    ogDescription: '当日屠畜韓牛タルタルとシャンパンペアリング。ROWISM The Blackシグネチャーメニューをご確認ください。'
+    title: 'メニュー | RAWISM The Black | ソウル延南洞シャンパンバー',
+    description: 'RAWISM The Black メニュー - 当日屠畜韓牛タルタル、ブッラータチーズ、ブラックトリュフのシグネチャー料理。ジェビチュリ、青陽オイルユッケ、チーズセレクション。延南洞プレミアムシャンパンバー。',
+    keywords: '延南洞メニュー, 韓牛タルタル価格, トリュフユッケ, ソウルシャンパンバーメニュー, 弘大韓牛価格, ブッラータチーズ, RAWISMメニュー',
+    ogDescription: '当日屠畜韓牛タルタルとシャンパンペアリング。RAWISM The Blackシグネチャーメニューをご確認ください。'
   },
   zh: {
     lang: 'zh',
-    title: '菜单 | ROWISM The Black | 首尔延南洞香槟吧',
-    description: 'ROWISM The Black 菜单 - 当日屠宰韩牛肉脍配布拉塔奶酪和黑松露的招牌菜。牛肩肉、青阳油拌生牛肉、奶酪拼盘。延南洞高级香槟吧。',
-    keywords: '延南洞菜单, 韩牛肉脍价格, 松露生拌, 首尔香槟吧菜单, 弘大韩牛价格, 布拉塔奶酪, ROWISM菜单',
-    ogDescription: '当日屠宰韩牛肉脍与香槟搭配。查看ROWISM The Black招牌菜单。'
+    title: '菜单 | RAWISM The Black | 首尔延南洞香槟吧',
+    description: 'RAWISM The Black 菜单 - 当日屠宰韩牛肉脍配布拉塔奶酪和黑松露的招牌菜。牛肩肉、青阳油拌生牛肉、奶酪拼盘。延南洞高级香槟吧。',
+    keywords: '延南洞菜单, 韩牛肉脍价格, 松露生拌, 首尔香槟吧菜单, 弘大韩牛价格, 布拉塔奶酪, RAWISM菜单',
+    ogDescription: '当日屠宰韩牛肉脍与香槟搭配。查看RAWISM The Black招牌菜单。'
   }
 }
 
@@ -57,7 +57,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           <title>{seo.title}</title>
           <meta name="description" content={seo.description} />
           <meta name="keywords" content={seo.keywords} />
-          <meta name="author" content="ROWISM The Black" />
+          <meta name="author" content="RAWISM The Black" />
           <meta name="robots" content="index, follow" />
           
           {/* Canonical URL */}
@@ -84,7 +84,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:description" content={seo.ogDescription} />
           <meta property="og:type" content="restaurant.menu" />
           <meta property="og:locale" content={pageLang === 'ko' ? 'ko_KR' : pageLang === 'ja' ? 'ja_JP' : pageLang === 'zh' ? 'zh_CN' : 'en_US'} />
-          <meta property="og:site_name" content="ROWISM The Black" />
+          <meta property="og:site_name" content="RAWISM The Black" />
           <meta property="og:url" content={`https://rawism.kr${getLangPath(pageLang)}/menu`} />
           <meta property="og:image" content="https://rawism.kr/static/menu_signature.jpg" />
           <meta property="og:image:width" content="1200" />
@@ -130,13 +130,13 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Menu",
             "@id": "https://rawism.kr/menu#menu",
-            "name": pageLang === 'ko' ? "ROWISM The Black 메뉴" : pageLang === 'ja' ? "ROWISM The Black メニュー" : pageLang === 'zh' ? "ROWISM The Black 菜单" : "ROWISM The Black Menu",
+            "name": pageLang === 'ko' ? "RAWISM The Black 메뉴" : pageLang === 'ja' ? "RAWISM The Black メニュー" : pageLang === 'zh' ? "RAWISM The Black 菜单" : "RAWISM The Black Menu",
             "description": seo.description,
             "inLanguage": seo.lang,
             "url": `https://rawism.kr${getLangPath(pageLang)}/menu`,
             "mainEntity": {
               "@type": "Restaurant",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "url": "https://rawism.kr"
             },
             "hasMenuSection": [
@@ -146,8 +146,8 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                 "hasMenuItem": [
                   {
                     "@type": "MenuItem",
-                    "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Mungti-gi Signature",
-                    "offers": { "@type": "Offer", "price": "92000", "priceCurrency": "KRW" },
+                    "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "RAWISM 肉脍招牌" : "RAWISM Mungti-gi Signature",
+                    "offers": { "@type": "Offer", "price": "69000", "priceCurrency": "KRW" },
                     "image": "https://rawism.kr/static/menu_signature.jpg"
                   }
                 ]
@@ -163,7 +163,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "ROWISM The Black",
+                "name": "RAWISM The Black",
                 "item": `https://rawism.kr${getLangPath(pageLang)}`
               },
               {
@@ -179,7 +179,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": pageLang === 'ko' ? "ROWISM The Black 전체 메뉴" : pageLang === 'ja' ? "ROWISM The Black 全メニュー" : pageLang === 'zh' ? "ROWISM The Black 全部菜单" : "ROWISM The Black Full Menu",
+            "name": pageLang === 'ko' ? "RAWISM The Black 전체 메뉴" : pageLang === 'ja' ? "RAWISM The Black 全メニュー" : pageLang === 'zh' ? "RAWISM The Black 全部菜单" : "RAWISM The Black Full Menu",
             "numberOfItems": 6,
             "itemListOrder": "https://schema.org/ItemListOrderDescending",
             "itemListElement": [
@@ -188,9 +188,9 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                 "position": 1,
                 "item": {
                   "@type": "MenuItem",
-                  "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Mungti-gi Signature",
+                  "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "RAWISM 肉脍招牌" : "RAWISM Mungti-gi Signature",
                   "description": pageLang === 'ko' ? "당일 도축 한우, 부라타 치즈, 블랙 트러플, 파르미지아노" : pageLang === 'ja' ? "当日屠畜韓牛、ブッラータチーズ、ブラックトリュフ、パルミジャーノ" : pageLang === 'zh' ? "当日屠宰韩牛、布拉塔奶酪、黑松露、帕玛森" : "Same-day slaughtered Hanwoo, burrata cheese, black truffle, Parmigiano",
-                  "offers": { "@type": "Offer", "price": "92000", "priceCurrency": "KRW" },
+                  "offers": { "@type": "Offer", "price": "69000", "priceCurrency": "KRW" },
                   "image": "https://rawism.kr/static/menu_signature.jpg"
                 }
               },
@@ -201,7 +201,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
                   "description": pageLang === 'ko' ? "한우 제비추리와 8종 제철 채소의 그릴 향연" : pageLang === 'ja' ? "韓牛ジェビチュリと8種の旬野菜のグリル馂宴" : pageLang === 'zh' ? "韩牛肩肉与8种时令蔬菜的烧烤盛宴" : "Grilled Hanwoo Jebichuri with 8 seasonal vegetables",
-                  "offers": { "@type": "Offer", "price": "49000", "priceCurrency": "KRW" },
+                  "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" },
                   "image": "https://rawism.kr/static/menu_jebichuri.jpg"
                 }
               },
@@ -212,7 +212,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
                   "description": pageLang === 'ko' ? "소미리에가 큐레이팅한 6종 치즈 커펙션" : pageLang === 'ja' ? "ソムリエがキュレーションした6種チーズコレクション" : pageLang === 'zh' ? "侍酒师精选6种奶酪系列" : "6 cheeses curated by sommelier",
-                  "offers": { "@type": "Offer", "price": "36000", "priceCurrency": "KRW" },
+                  "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "KRW" },
                   "image": "https://rawism.kr/static/menu_cheese.jpg"
                 }
               },
@@ -256,7 +256,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Menu",
-            "name": pageLang === 'ko' ? "ROWISM The Black 전체 메뉴" : pageLang === 'ja' ? "ROWISM The Black 全メニュー" : pageLang === 'zh' ? "ROWISM The Black 全部菜单" : "ROWISM The Black Full Menu",
+            "name": pageLang === 'ko' ? "RAWISM The Black 전체 메뉴" : pageLang === 'ja' ? "RAWISM The Black 全メニュー" : pageLang === 'zh' ? "RAWISM The Black 全部菜单" : "RAWISM The Black Full Menu",
             "description": seo.description,
             "url": `https://rawism.kr${getLangPath(pageLang)}/menu`,
             "inLanguage": seo.lang,
@@ -265,12 +265,12 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
               {
                 "@type": "MenuSection",
                 "name": pageLang === 'ko' ? "시그니처" : pageLang === 'ja' ? "シグネチャー" : pageLang === 'zh' ? "招牌" : "Signature",
-                "description": pageLang === 'ko' ? "ROWISM The Black의 대표 메뉴" : pageLang === 'ja' ? "ROWISM The Blackの代表メニュー" : pageLang === 'zh' ? "ROWISM The Black的代表菜品" : "ROWISM The Black's representative dish",
+                "description": pageLang === 'ko' ? "RAWISM The Black의 대표 메뉴" : pageLang === 'ja' ? "RAWISM The Blackの代表メニュー" : pageLang === 'zh' ? "RAWISM The Black的代表菜品" : "RAWISM The Black's representative dish",
                 "hasMenuItem": [
                   {
                     "@type": "MenuItem",
-                    "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Mungti-gi Signature",
-                    "offers": { "@type": "Offer", "price": "92000", "priceCurrency": "KRW", "availability": "https://schema.org/InStock" },
+                    "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "RAWISM 肉脍招牌" : "RAWISM Mungti-gi Signature",
+                    "offers": { "@type": "Offer", "price": "69000", "priceCurrency": "KRW", "availability": "https://schema.org/InStock" },
                     "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                     "nutrition": {
                       "@type": "NutritionInformation",
@@ -287,7 +287,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                   {
                     "@type": "MenuItem",
                     "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
-                    "offers": { "@type": "Offer", "price": "49000", "priceCurrency": "KRW" }
+                    "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" }
                   },
                   {
                     "@type": "MenuItem",
@@ -303,7 +303,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                   {
                     "@type": "MenuItem",
                     "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
-                    "offers": { "@type": "Offer", "price": "36000", "priceCurrency": "KRW" }
+                    "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "KRW" }
                   },
                   {
                     "@type": "MenuItem",

@@ -12,31 +12,31 @@ const aboutSeoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: 'About | ROWISM The Black | 연남동 프리미엄 샴페인바 브랜드 스토리',
-    description: 'ROWISM The Black - RAW와 ism의 결합, 날것의 철학. 연남동 프리미엄 샴페인바의 브랜드 스토리. 최상급 한우 뭉티기와 소믈리에 큐레이션 샴페인, 8석 프라이빗 다이닝의 특별한 공간.',
-    keywords: 'ROWISM 브랜드, 연남동 샴페인바 소개, ROWISM 철학, 연남동 프라이빗 다이닝, 홍대 프리미엄 레스토랑, 연남동 분위기 좋은 곳, 한우 뭉티기 전문점',
-    ogDescription: 'RAW + ism = ROWISM. 날것의 철학으로 최상급 재료 본연의 맛을 가장 순수한 방식으로.'
+    title: 'About | RAWISM The Black | 연남동 프리미엄 샴페인바 브랜드 스토리',
+    description: 'RAWISM The Black - RAW와 ism의 결합, 날것의 철학. 연남동 프리미엄 샴페인바의 브랜드 스토리. 최상급 한우 뭉티기와 소믈리에 큐레이션 샴페인, 8석 프라이빗 다이닝의 특별한 공간.',
+    keywords: 'RAWISM 브랜드, 연남동 샴페인바 소개, RAWISM 철학, 연남동 프라이빗 다이닝, 홍대 프리미엄 레스토랑, 연남동 분위기 좋은 곳, 한우 뭉티기 전문점',
+    ogDescription: 'RAW + ism = RAWISM. 날것의 철학으로 최상급 재료 본연의 맛을 가장 순수한 방식으로.'
   },
   en: {
     lang: 'en',
-    title: 'About | ROWISM The Black | Seoul Premium Champagne Bar Story',
-    description: 'ROWISM The Black - The Philosophy of Raw. Brand story of premium champagne bar in Yeonnam-dong, Seoul. Premium Hanwoo tartare with sommelier-curated champagne in an 8-seat private dining space.',
-    keywords: 'ROWISM brand, Seoul champagne bar about, ROWISM philosophy, Yeonnam-dong private dining, Hongdae premium restaurant, Seoul romantic restaurant',
-    ogDescription: 'RAW + ism = ROWISM. The philosophy of delivering the purest taste of premium ingredients.'
+    title: 'About | RAWISM The Black | Seoul Premium Champagne Bar Story',
+    description: 'RAWISM The Black - The Philosophy of Raw. Brand story of premium champagne bar in Yeonnam-dong, Seoul. Premium Hanwoo tartare with sommelier-curated champagne in an 8-seat private dining space.',
+    keywords: 'RAWISM brand, Seoul champagne bar about, RAWISM philosophy, Yeonnam-dong private dining, Hongdae premium restaurant, Seoul romantic restaurant',
+    ogDescription: 'RAW + ism = RAWISM. The philosophy of delivering the purest taste of premium ingredients.'
   },
   ja: {
     lang: 'ja',
-    title: 'About | ROWISM The Black | ソウル延南洞シャンパンバーのストーリー',
-    description: 'ROWISM The Black - 生の哲学。ソウル延南洞プレミアムシャンパンバーのブランドストーリー。最高級韓牛タルタルとソムリエ厳選シャンパン、8席プライベートダイニング。',
-    keywords: 'ROWISM ブランド, ソウル シャンパンバー 紹介, 延南洞 プライベートダイニング, 弘大 プレミアムレストラン',
-    ogDescription: 'RAW + ism = ROWISM。最高級食材本来の味を最も純粋な方法でお届けする哲学。'
+    title: 'About | RAWISM The Black | ソウル延南洞シャンパンバーのストーリー',
+    description: 'RAWISM The Black - 生の哲学。ソウル延南洞プレミアムシャンパンバーのブランドストーリー。最高級韓牛タルタルとソムリエ厳選シャンパン、8席プライベートダイニング。',
+    keywords: 'RAWISM ブランド, ソウル シャンパンバー 紹介, 延南洞 プライベートダイニング, 弘大 プレミアムレストラン',
+    ogDescription: 'RAW + ism = RAWISM。最高級食材本来の味を最も純粋な方法でお届けする哲学。'
   },
   zh: {
     lang: 'zh',
-    title: 'About | ROWISM The Black | 首尔延南洞香槟吧品牌故事',
-    description: 'ROWISM The Black - 生食哲学。首尔延南洞顶级香槟吧的品牌故事。顶级韩牛肉脍配侍酒师精选香槟，8席私密用餐空间。',
-    keywords: 'ROWISM 品牌, 首尔香槟吧介绍, 延南洞私密用餐, 弘大顶级餐厅',
-    ogDescription: 'RAW + ism = ROWISM。以最纯粹的方式传递顶级食材本真味道的哲学。'
+    title: 'About | RAWISM The Black | 首尔延南洞香槟吧品牌故事',
+    description: 'RAWISM The Black - 生食哲学。首尔延南洞顶级香槟吧的品牌故事。顶级韩牛肉脍配侍酒师精选香槟，8席私密用餐空间。',
+    keywords: 'RAWISM 品牌, 首尔香槟吧介绍, 延南洞私密用餐, 弘大顶级餐厅',
+    ogDescription: 'RAW + ism = RAWISM。以最纯粹的方式传递顶级食材本真味道的哲学。'
   }
 }
 
@@ -56,7 +56,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <title>{seo.title}</title>
           <meta name="description" content={seo.description} />
           <meta name="keywords" content={seo.keywords} />
-          <meta name="author" content="ROWISM The Black" />
+          <meta name="author" content="RAWISM The Black" />
           <meta name="robots" content="index, follow" />
           
           <link rel="canonical" href={`https://rawism.kr${getAboutLangPath(pageLang)}`} />
@@ -78,7 +78,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:description" content={seo.ogDescription} />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content={pageLang === 'ko' ? 'ko_KR' : pageLang === 'ja' ? 'ja_JP' : pageLang === 'zh' ? 'zh_CN' : 'en_US'} />
-          <meta property="og:site_name" content="ROWISM The Black" />
+          <meta property="og:site_name" content="RAWISM The Black" />
           <meta property="og:url" content={`https://rawism.kr${getAboutLangPath(pageLang)}`} />
           <meta property="og:image" content="https://rawism.kr/static/og-image.jpg" />
           <meta property="og:image:width" content="1200" />
@@ -125,13 +125,13 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
             "url": `https://rawism.kr${getAboutLangPath(pageLang)}`,
             "mainEntity": {
               "@type": "Organization",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
               "description": seo.description,
               "url": "https://rawism.kr",
               "logo": "https://rawism.kr/static/logo.png",
               "foundingDate": "2023",
-              "slogan": pageLang === 'ko' ? "날것의 철학, ROWISM" : pageLang === 'ja' ? "生の哲学、ROWISM" : pageLang === 'zh' ? "生食哲学，ROWISM" : "The Philosophy of Raw, ROWISM",
+              "slogan": pageLang === 'ko' ? "날것의 철학, RAWISM" : pageLang === 'ja' ? "生の哲学、RAWISM" : pageLang === 'zh' ? "生食哲学，RAWISM" : "The Philosophy of Raw, RAWISM",
               "knowsAbout": ["Korean Beef Tartare", "Champagne", "Fine Dining", "Private Dining"],
               "address": {
                 "@type": "PostalAddress",
@@ -150,7 +150,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "ROWISM The Black", "item": "https://rawism.kr" },
+              { "@type": "ListItem", "position": 1, "name": "RAWISM The Black", "item": "https://rawism.kr" },
               { "@type": "ListItem", "position": 2, "name": "About", "item": `https://rawism.kr${getAboutLangPath(pageLang)}` }
             ]
           })}} />

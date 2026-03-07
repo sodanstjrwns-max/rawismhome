@@ -14,30 +14,30 @@ const seoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: '로위즘(ROWISM) The Black | 연남동 프리미엄 샴페인바 & 와인바 | 프로포즈 기념일 데이트',
-    description: '서울 연남동 프리미엄 샴페인바 로위즘(ROWISM The Black). 트러플 한우 뭉티기와 샴페인 페어링 전문. 프로포즈, 100일·결혼기념일에 완벽한 8석 한정 프라이빗 다이닝. 홍대입구역 5분, 예약제 운영.',
-    keywords: '로위즘, 로위즘 더블랙, 로위즘 더 블랙, 로위즘 연남동, 로위즘 예약, 로위즘 가격, 로위즘 메뉴, ROWISM, ROWISM The Black, 뭉티기, 한우 뭉티기, 트러플 뭉티기, 연남동 뭉티기, 뭉티기 맛집, 연남동 샴페인바, 연남동 와인바, 홍대 샴페인바, 홍대 와인바, 연남동 데이트, 홍대 데이트, 연남동 기념일, 홍대 기념일 레스토랑, 프로포즈 레스토랑 서울, 기념일 레스토랑, 연남동 맛집, 홍대입구역 맛집, 연남동 프라이빗 다이닝, 육회 맛집 서울, 한우 육회 맛집, 트러플 요리 서울, 부라타 치즈 맛집, 연남동 분위기 좋은 곳, 홍대 데이트 코스, 연남동 럭셔리 레스토랑, 서울 와인바 추천, 소믈리에 추천 와인바, 연트럴파크 맛집, 경의선숲길 맛집',
-    ogDescription: '로위즘(ROWISM) — 트러플 한우 뭉티기와 샴페인 페어링. 연남동 8석 한정 프라이빗 다이닝. 홍대입구역 5분.'
+    title: '로위즘(RAWISM) The Black | 연남동 프리미엄 샴페인바 & 와인바 | 프로포즈 기념일 데이트',
+    description: '서울 연남동 프리미엄 샴페인바 로위즘(RAWISM The Black). 트러플 한우 뭉티기와 샴페인 페어링 전문. 프로포즈, 100일·결혼기념일에 완벽한 8석 한정 프라이빗 다이닝. 홍대입구역 5분, 예약제 운영.',
+    keywords: '로위즘, 로위즘 더블랙, 로위즘 더 블랙, 로위즘 연남동, 로위즘 예약, 로위즘 가격, 로위즘 메뉴, RAWISM, RAWISM The Black, 뭉티기, 한우 뭉티기, 트러플 뭉티기, 연남동 뭉티기, 뭉티기 맛집, 연남동 샴페인바, 연남동 와인바, 홍대 샴페인바, 홍대 와인바, 연남동 데이트, 홍대 데이트, 연남동 기념일, 홍대 기념일 레스토랑, 프로포즈 레스토랑 서울, 기념일 레스토랑, 연남동 맛집, 홍대입구역 맛집, 연남동 프라이빗 다이닝, 육회 맛집 서울, 한우 육회 맛집, 트러플 요리 서울, 부라타 치즈 맛집, 연남동 분위기 좋은 곳, 홍대 데이트 코스, 연남동 럭셔리 레스토랑, 서울 와인바 추천, 소믈리에 추천 와인바, 연트럴파크 맛집, 경의선숲길 맛집',
+    ogDescription: '로위즘(RAWISM) — 트러플 한우 뭉티기와 샴페인 페어링. 연남동 8석 한정 프라이빗 다이닝. 홍대입구역 5분.'
   },
   en: {
     lang: 'en',
-    title: 'ROWISM The Black | Best Wine Bar Seoul | Romantic Restaurant Hongdae Anniversary Date',
-    description: 'ROWISM (Rawism) The Black - Best champagne bar in Seoul Yeonnam-dong. Signature truffle Hanwoo beef tartare (mungtige) with champagne pairing. Perfect for proposals, anniversaries, romantic dates. Private dining, 8 seats only. 5 min from Hongdae Station.',
-    keywords: 'ROWISM, Rawism, rawism the black, rowism the black, mungtige, Hanwoo mungtige, Korean beef tartare, best wine bar seoul, romantic restaurant hongdae, champagne bar Seoul, proposal restaurant seoul, anniversary dinner seoul, Yeonnam-dong wine bar, Hongdae wine bar, Seoul date spot, Yeonnam-dong fine dining, Seoul private dining, truffle dish seoul, burrata cheese seoul, sommelier wine bar, Yeontral Park restaurant, reservation only restaurant seoul, luxury dining seoul, Hongdae restaurant, instagram worthy restaurant seoul',
+    title: 'RAWISM The Black | Best Wine Bar Seoul | Romantic Restaurant Hongdae Anniversary Date',
+    description: 'RAWISM (Rawism) The Black - Best champagne bar in Seoul Yeonnam-dong. Signature truffle Hanwoo beef tartare (mungtige) with champagne pairing. Perfect for proposals, anniversaries, romantic dates. Private dining, 8 seats only. 5 min from Hongdae Station.',
+    keywords: 'RAWISM, Rawism, rawism the black, rowism the black, mungtige, Hanwoo mungtige, Korean beef tartare, best wine bar seoul, romantic restaurant hongdae, champagne bar Seoul, proposal restaurant seoul, anniversary dinner seoul, Yeonnam-dong wine bar, Hongdae wine bar, Seoul date spot, Yeonnam-dong fine dining, Seoul private dining, truffle dish seoul, burrata cheese seoul, sommelier wine bar, Yeontral Park restaurant, reservation only restaurant seoul, luxury dining seoul, Hongdae restaurant, instagram worthy restaurant seoul',
     ogDescription: 'Best wine bar in Seoul for proposals and anniversaries. Korean beef tartare with truffle and sparkling wine. Private dining, 8 seats. 5 min from Hongdae.'
   },
   ja: {
     lang: 'ja',
-    title: 'ROWISM The Black | ソウル最高のワインバー | 弘大 記念日 プロポーズ デート',
-    description: 'ROWISM(ロウイズム) The Black - ソウル延南洞のプレミアムシャンパンバー。トリュフ韓牛ムンティギとシャンパンペアリング専門。プロポーズ、記念日に最適。8席限定プライベートダイニング。弘大駅から徒歩5分。',
-    keywords: 'ロウイズム, ROWISM, ムンティギ, 韓牛ムンティギ, トリュフムンティギ, 弘大 ワインバー 予約, ソウル デート おすすめ, 韓国 生肉 レストラン, プロポーズ レストラン ソウル, 記念日 ディナー ソウル, ソウル シャンパンバー, 延南洞 ワインバー, 弘大 シャンパンバー, 韓牛 ユッケ, ソウル プライベートダイニング, トリュフ料理 ソウル, ブラータチーズ, ソムリエ おすすめ, 延南洞 グルメ, 予約必須 レストラン',
+    title: 'RAWISM The Black | ソウル最高のワインバー | 弘大 記念日 プロポーズ デート',
+    description: 'RAWISM(ロウイズム) The Black - ソウル延南洞のプレミアムシャンパンバー。トリュフ韓牛ムンティギとシャンパンペアリング専門。プロポーズ、記念日に最適。8席限定プライベートダイニング。弘大駅から徒歩5分。',
+    keywords: 'ロウイズム, RAWISM, ムンティギ, 韓牛ムンティギ, トリュフムンティギ, 弘大 ワインバー 予約, ソウル デート おすすめ, 韓国 生肉 レストラン, プロポーズ レストラン ソウル, 記念日 ディナー ソウル, ソウル シャンパンバー, 延南洞 ワインバー, 弘大 シャンパンバー, 韓牛 ユッケ, ソウル プライベートダイニング, トリュフ料理 ソウル, ブラータチーズ, ソムリエ おすすめ, 延南洞 グルメ, 予約必須 レストラン',
     ogDescription: 'ソウル最高のワインバー。プロポーズ、記念日に最適。韓牛タルタルとトリュフ、スパークリングワイン。8席限定、弘大駅徒歩5分。'
   },
   zh: {
     lang: 'zh',
-    title: 'ROWISM The Black | 首尔最佳红酒吧 | 弘大 求婚 纪念日 约会餐厅',
-    description: 'ROWISM(罗伊斯姆) The Black - 首尔延南洞高级香槟吧。招牌松露韩牛肉脍(蒙提基)与香槟搭配。求婚、纪念日完美选择。8席限定私享餐厅。弘大站步行5分钟。',
-    keywords: '罗伊斯姆, ROWISM, 肉脍, 韩牛肉脍, 松露肉脍, 首尔香槟吧, 延南洞红酒吧, 弘大香槟吧, 弘大约会餐厅, 求婚餐厅首尔, 纪念日晚餐首尔, 韩牛生拌, 首尔私享餐厅, 松露料理首尔, 布拉塔奶酪, 侍酒师推荐, 延南洞美食, 预约必须餐厅',
+    title: 'RAWISM The Black | 首尔最佳红酒吧 | 弘大 求婚 纪念日 约会餐厅',
+    description: 'RAWISM(罗伊斯姆) The Black - 首尔延南洞高级香槟吧。招牌松露韩牛肉脍(蒙提基)与香槟搭配。求婚、纪念日完美选择。8席限定私享餐厅。弘大站步行5分钟。',
+    keywords: '罗伊斯姆, RAWISM, 肉脍, 韩牛肉脍, 松露肉脍, 首尔香槟吧, 延南洞红酒吧, 弘大香槟吧, 弘大约会餐厅, 求婚餐厅首尔, 纪念日晚餐首尔, 韩牛生拌, 首尔私享餐厅, 松露料理首尔, 布拉塔奶酪, 侍酒师推荐, 延南洞美食, 预约必须餐厅',
     ogDescription: '首尔最佳红酒吧。求婚、纪念日完美选择。韩牛肉脍配松露和起泡酒。8席限定，弘大站步行5分钟。'
   }
 }
@@ -60,7 +60,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <title>{seo.title}</title>
           <meta name="description" content={seo.description} />
           <meta name="keywords" content={seo.keywords} />
-          <meta name="author" content="ROWISM The Black" />
+          <meta name="author" content="RAWISM The Black" />
           <meta name="robots" content="index, follow" />
           
           {/* Canonical URL - points to current language version */}
@@ -112,7 +112,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:locale:alternate" content="en_US" />
           <meta property="og:locale:alternate" content="ja_JP" />
           <meta property="og:locale:alternate" content="zh_CN" />
-          <meta property="og:site_name" content="ROWISM The Black" />
+          <meta property="og:site_name" content="RAWISM The Black" />
           <meta property="og:url" content={`https://rawism.kr${getLangPath(pageLang)}`} />
           
           {/* OG Image - 대표 이미지 (카카오톡, 페이스북 등 공유 시 표시) */}
@@ -121,11 +121,11 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
-          <meta property="og:image:alt" content="ROWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
+          <meta property="og:image:alt" content="RAWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
           
           {/* 추가 OG 이미지들 - 로고 */}
           <meta property="og:image" content="https://rawism.kr/static/logo.png" />
-          <meta property="og:image:alt" content="ROWISM The Black 로고" />
+          <meta property="og:image:alt" content="RAWISM The Black 로고" />
           
           {/* 추가 OG 이미지들 - 시그니처 메뉴 */}
           <meta property="og:image" content="https://rawism.kr/static/menu_signature.jpg" />
@@ -162,7 +162,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.ogDescription} />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
-          <meta name="twitter:image:alt" content="ROWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
+          <meta name="twitter:image:alt" content="RAWISM The Black - 연남동 프리미엄 샴페인바 | 트러플 한우 뭉티기" />
           
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -206,7 +206,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Restaurant",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "description": seo.description,
             "url": `https://rawism.kr${getLangPath(pageLang)}`,
@@ -270,7 +270,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               },
               "result": {
                 "@type": "FoodEstablishmentReservation",
-                "name": pageLang === 'ko' ? "ROWISM The Black 예약" : pageLang === 'ja' ? "ROWISM The Black 予約" : pageLang === 'zh' ? "ROWISM The Black 预订" : "ROWISM The Black Reservation"
+                "name": pageLang === 'ko' ? "RAWISM The Black 예약" : pageLang === 'ja' ? "RAWISM The Black 予約" : pageLang === 'zh' ? "RAWISM The Black 预订" : "RAWISM The Black Reservation"
               }
             }
           })}} />
@@ -295,7 +295,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "ROWISM The Black",
+                "name": "RAWISM The Black",
                 "item": `https://rawism.kr${getLangPath(pageLang)}`
               }
             ]
@@ -306,7 +306,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "@id": "https://rawism.kr/#localbusiness",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "description": seo.description,
             "url": `https://rawism.kr${getLangPath(pageLang)}`,
@@ -378,7 +378,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "@id": "https://rawism.kr/#organization",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "alternateName": ["로위즘 더 블랙", "ロウイズム ザ ブラック", "罗伊斯姆黑"],
             "url": "https://rawism.kr",
             "logo": {
@@ -417,7 +417,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@type": "WebSite",
             "@id": "https://rawism.kr/#website",
             "url": "https://rawism.kr",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "description": seo.description,
             "publisher": {
               "@id": "https://rawism.kr/#organization"
@@ -456,7 +456,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": pageLang === 'ko' ? "ROWISM The Black은 어디에 있나요?" : pageLang === 'ja' ? "ROWISM The Blackはどこにありますか？" : pageLang === 'zh' ? "ROWISM The Black在哪里？" : "Where is ROWISM The Black located?",
+                "name": pageLang === 'ko' ? "RAWISM The Black은 어디에 있나요?" : pageLang === 'ja' ? "RAWISM The Blackはどこにありますか？" : pageLang === 'zh' ? "RAWISM The Black在哪里？" : "Where is RAWISM The Black located?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": pageLang === 'ko' ? "서울시 마포구 동교로 262-4에 위치해 있습니다. 홍대입구역 3번 출구에서 도보 5분 거리입니다." : pageLang === 'ja' ? "ソウル市麻浦区東橋路262-4にあります。弘大入口駅3番出口から徒歩5分です。" : pageLang === 'zh' ? "位于首尔市麻浦区东桥路262-4。从弘大入口站3号出口步行5分钟。" : "Located at 262-4 Donggyo-ro, Mapo-gu, Seoul. 5-minute walk from Hongdae Station Exit 3."
@@ -491,7 +491,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                 "name": pageLang === 'ko' ? "2인 기준 평균 가격은 얼마인가요?" : pageLang === 'ja' ? "2人の平均価格はいくらですか？" : pageLang === 'zh' ? "两人平均消费是多少？" : "What is the average price for two people?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": pageLang === 'ko' ? "2인 기준 평균 18만원입니다. 샴페인 페어링 포함 시 25-30만원 정도입니다." : pageLang === 'ja' ? "2名様で平均18万ウォンです。シャンパンペアリング込みで25-30万ウォン程度です。" : pageLang === 'zh' ? "两人平均18万韩元。包含香槟搭配约25-30万韩元。" : "Average is 180,000 KRW for two. With champagne pairing, around 250,000-300,000 KRW."
+                  "text": pageLang === 'ko' ? "2인 기준 평균 15만원입니다. 샴페인 페어링 포함 시 20-25만원 정도입니다." : pageLang === 'ja' ? "2名様で平均15万ウォンです。シャンパンペアリング込みで20-25万ウォン程度です。" : pageLang === 'zh' ? "两人平均15万韩元。包含香槟搭配约20-25万韩元。" : "Average is 150,000 KRW for two. With champagne pairing, around 200,000-250,000 KRW."
                 }
               },
               {
@@ -510,7 +510,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Menu",
             "@id": "https://rawism.kr/#menu",
-            "name": pageLang === 'ko' ? "ROWISM The Black 메뉴" : pageLang === 'ja' ? "ROWISM The Black メニュー" : pageLang === 'zh' ? "ROWISM The Black 菜单" : "ROWISM The Black Menu",
+            "name": pageLang === 'ko' ? "RAWISM The Black 메뉴" : pageLang === 'ja' ? "RAWISM The Black メニュー" : pageLang === 'zh' ? "RAWISM The Black 菜单" : "RAWISM The Black Menu",
             "description": pageLang === 'ko' ? "당일 도축 한우와 샴페인의 조화" : pageLang === 'ja' ? "当日屠畜韓牛とシャンパンの調和" : pageLang === 'zh' ? "当日屠宰韩牛与香槟的和谐" : "Harmony of same-day slaughtered Hanwoo and champagne",
             "hasMenuSection": [
               {
@@ -523,7 +523,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                     "description": pageLang === 'ko' ? "당일 도축 온도체 한우, 이탈리안 부라타 치즈, 블랙 트러플" : pageLang === 'ja' ? "当日屠畜韓牛、イタリアンブッラータチーズ、ブラックトリュフ" : pageLang === 'zh' ? "当日屠宰韩牛、意大利布拉塔奶酪、黑松露" : "Same-day slaughtered Hanwoo, Italian burrata cheese, black truffle",
                     "offers": {
                       "@type": "Offer",
-                      "price": "92000",
+                      "price": "69000",
                       "priceCurrency": "KRW"
                     },
                     "image": "https://rawism.kr/static/menu_signature.jpg",
@@ -555,7 +555,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                     "description": pageLang === 'ko' ? "한우 제비추리와 8종 제철 채소" : pageLang === 'ja' ? "韓牛ジェビチュリと8種の旬野菜" : pageLang === 'zh' ? "韩牛肩肉配8种时令蔬菜" : "Hanwoo Jebichuri with 8 seasonal vegetables",
                     "offers": {
                       "@type": "Offer",
-                      "price": "49000",
+                      "price": "39000",
                       "priceCurrency": "KRW"
                     },
                     "image": "https://rawism.kr/static/menu_jebichuri.jpg"
@@ -572,7 +572,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                     "description": pageLang === 'ko' ? "소믈리에가 큐레이팅한 6종 치즈" : pageLang === 'ja' ? "ソムリエがキュレーションした6種チーズ" : pageLang === 'zh' ? "侍酒师精选6种奶酪" : "6 cheeses curated by sommelier",
                     "offers": {
                       "@type": "Offer",
-                      "price": "36000",
+                      "price": "35000",
                       "priceCurrency": "KRW"
                     },
                     "image": "https://rawism.kr/static/menu_cheese.jpg"
@@ -615,7 +615,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Place",
             "@id": "https://rawism.kr/#place",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바" : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー" : pageLang === 'zh' ? "延南洞高级香槟吧" : "Yeonnam-dong Premium Champagne Bar",
             "address": {
               "@type": "PostalAddress",
@@ -656,7 +656,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Event",
-            "name": pageLang === 'ko' ? "ROWISM The Black 프라이빗 다이닝 경험" : pageLang === 'ja' ? "ROWISM The Black プライベートダイニング体験" : pageLang === 'zh' ? "ROWISM The Black 私密用餐体验" : "ROWISM The Black Private Dining Experience",
+            "name": pageLang === 'ko' ? "RAWISM The Black 프라이빗 다이닝 경험" : pageLang === 'ja' ? "RAWISM The Black プライベートダイニング体験" : pageLang === 'zh' ? "RAWISM The Black 私密用餐体验" : "RAWISM The Black Private Dining Experience",
             "description": pageLang === 'ko' ? "8석 한정, 당일 도축 한우와 샴페인이 만나는 특별한 저녁" : pageLang === 'ja' ? "8席限定、当日屠畜韓牛とシャンパンが出会う特別な夕べ" : pageLang === 'zh' ? "仅8席，当日屠宰韩牛与香槟相遇的特别夜晚" : "8 seats only, a special evening where same-day slaughtered Hanwoo meets champagne",
             "startDate": "2026-02-06T18:00:00+09:00",
             "endDate": "2026-12-31T24:00:00+09:00",
@@ -664,7 +664,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": {
               "@type": "Place",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "동교로 262-4",
@@ -676,7 +676,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             },
             "organizer": {
               "@type": "Organization",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "url": "https://rawism.kr"
             },
             "offers": {
@@ -689,7 +689,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             },
             "performer": {
               "@type": "Organization",
-              "name": "ROWISM The Black"
+              "name": "RAWISM The Black"
             },
             "image": "https://rawism.kr/static/og-image.jpg"
           })}} />
@@ -700,7 +700,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@type": "Review",
             "itemReviewed": {
               "@type": "Restaurant",
-              "name": "ROWISM The Black"
+              "name": "RAWISM The Black"
             },
             "reviewRating": {
               "@type": "Rating",
@@ -719,7 +719,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": pageLang === 'ko' ? "ROWISM The Black 인기 메뉴" : pageLang === 'ja' ? "ROWISM The Black 人気メニュー" : pageLang === 'zh' ? "ROWISM The Black 热门菜品" : "ROWISM The Black Popular Menu",
+            "name": pageLang === 'ko' ? "RAWISM The Black 인기 메뉴" : pageLang === 'ja' ? "RAWISM The Black 人気メニュー" : pageLang === 'zh' ? "RAWISM The Black 热门菜品" : "RAWISM The Black Popular Menu",
             "numberOfItems": 6,
             "itemListElement": [
               {
@@ -729,7 +729,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                   "@type": "Product",
                   "name": pageLang === 'ko' ? "트러플 한우 뭉티기 부라타" : pageLang === 'ja' ? "トリュフ韓牛タルタル ブッラータ" : pageLang === 'zh' ? "松露韩牛肉脍布拉塔" : "Truffle Hanwoo Tartare Burrata",
                   "image": "https://rawism.kr/static/menu_signature.jpg",
-                  "offers": { "@type": "Offer", "price": "92000", "priceCurrency": "KRW" }
+                  "offers": { "@type": "Offer", "price": "69000", "priceCurrency": "KRW" }
                 }
               },
               {
@@ -749,7 +749,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                   "@type": "Product",
                   "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
                   "image": "https://rawism.kr/static/menu_jebichuri.jpg",
-                  "offers": { "@type": "Offer", "price": "49000", "priceCurrency": "KRW" }
+                  "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" }
                 }
               },
               {
@@ -759,7 +759,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                   "@type": "Product",
                   "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
                   "image": "https://rawism.kr/static/menu_cheese.jpg",
-                  "offers": { "@type": "Offer", "price": "36000", "priceCurrency": "KRW" }
+                  "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "KRW" }
                 }
               },
               {
@@ -790,7 +790,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "FoodEstablishment",
             "@id": "https://rawism.kr/#foodestablishment",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "servesCuisine": [
               pageLang === 'ko' ? "한우 전문" : pageLang === 'ja' ? "韓牛専門" : pageLang === 'zh' ? "韩牛专门" : "Korean Beef",
               pageLang === 'ko' ? "샴페인바" : pageLang === 'ja' ? "シャンパンバー" : pageLang === 'zh' ? "香槟吧" : "Champagne Bar",
@@ -823,8 +823,8 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "BarOrPub",
             "@id": "https://rawism.kr/#bar",
-            "name": "ROWISM The Black Champagne & Wine Bar",
-            "alternateName": pageLang === 'ko' ? "로위즘 샴페인바 & 와인바" : pageLang === 'ja' ? "ロウイズム シャンパン＆ワインバー" : pageLang === 'zh' ? "罗伊斯姆香槟吧和红酒吧" : "ROWISM Champagne & Wine Bar",
+            "name": "RAWISM The Black Champagne & Wine Bar",
+            "alternateName": pageLang === 'ko' ? "로위즘 샴페인바 & 와인바" : pageLang === 'ja' ? "ロウイズム シャンパン＆ワインバー" : pageLang === 'zh' ? "罗伊斯姆香槟吧和红酒吧" : "RAWISM Champagne & Wine Bar",
             "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 & 와인바. 웰컴 스파클링으로 시작하는 특별한 밤. 엄선된 샴페인, 스파클링 와인, 프로세코 컬렉션." : pageLang === 'ja' ? "延南洞プレミアムシャンパン＆ワインバー。ウェルカムスパークリングで始まる特別な夜。厳選されたシャンパン、スパークリングワイン、プロセッココレクション。" : pageLang === 'zh' ? "延南洞高级香槟吧和红酒吧。以迎宾起泡酒开启特别之夜。精选香槟、起泡酒、普罗塞克收藏。" : "Yeonnam-dong premium champagne & wine bar. Welcome sparkling to start your special evening. Curated champagne, sparkling wine, and prosecco collection.",
             "url": `https://rawism.kr${getLangPath(pageLang)}`,
             "servesCuisine": ["Champagne", "Sparkling Wine", "Wine", "Prosecco", "Cava"],
@@ -860,8 +860,8 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HowTo",
-            "name": pageLang === 'ko' ? "ROWISM The Black 예약하는 방법" : pageLang === 'ja' ? "ROWISM The Black の予約方法" : pageLang === 'zh' ? "如何预订 ROWISM The Black" : "How to Reserve at ROWISM The Black",
-            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 ROWISM The Black 예약 방법을 단계별로 안내합니다." : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー ROWISM The Black の予約方法をステップバイステップでご案内します。" : pageLang === 'zh' ? "逐步指导您预订延南洞高级香槟吧 ROWISM The Black。" : "Step-by-step guide to reserving at ROWISM The Black premium champagne bar in Yeonnam-dong.",
+            "name": pageLang === 'ko' ? "RAWISM The Black 예약하는 방법" : pageLang === 'ja' ? "RAWISM The Black の予約方法" : pageLang === 'zh' ? "如何预订 RAWISM The Black" : "How to Reserve at RAWISM The Black",
+            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 RAWISM The Black 예약 방법을 단계별로 안내합니다." : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー RAWISM The Black の予約方法をステップバイステップでご案内します。" : pageLang === 'zh' ? "逐步指导您预订延南洞高级香槟吧 RAWISM The Black。" : "Step-by-step guide to reserving at RAWISM The Black premium champagne bar in Yeonnam-dong.",
             "image": "https://rawism.kr/static/og-image.jpg",
             "totalTime": "PT5M",
             "estimatedCost": {
@@ -881,7 +881,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                 "@type": "HowToStep",
                 "position": 1,
                 "name": pageLang === 'ko' ? "네이버 예약 페이지 접속" : pageLang === 'ja' ? "Naver予約ページにアクセス" : pageLang === 'zh' ? "访问Naver预订页面" : "Visit Naver Reservation Page",
-                "text": pageLang === 'ko' ? "ROWISM The Black 네이버 예약 페이지(naver.me/5qLSfCNC)에 접속합니다." : pageLang === 'ja' ? "ROWISM The Black Naver予約ページ(naver.me/5qLSfCNC)にアクセスします。" : pageLang === 'zh' ? "访问 ROWISM The Black Naver预订页面 (naver.me/5qLSfCNC)。" : "Visit ROWISM The Black Naver reservation page (naver.me/5qLSfCNC).",
+                "text": pageLang === 'ko' ? "RAWISM The Black 네이버 예약 페이지(naver.me/5qLSfCNC)에 접속합니다." : pageLang === 'ja' ? "RAWISM The Black Naver予約ページ(naver.me/5qLSfCNC)にアクセスします。" : pageLang === 'zh' ? "访问 RAWISM The Black Naver预订页面 (naver.me/5qLSfCNC)。" : "Visit RAWISM The Black Naver reservation page (naver.me/5qLSfCNC).",
                 "url": "https://naver.me/5qLSfCNC",
                 "image": "https://rawism.kr/static/logo.png"
               },
@@ -916,10 +916,10 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             ],
             "author": {
               "@type": "Organization",
-              "name": "ROWISM The Black"
+              "name": "RAWISM The Black"
             },
             "datePublished": "2023-01-01",
-            "description": pageLang === 'ko' ? "당일 도축 온도체 한우의 체온이 남아있는 신선함. 이탈리아산 부라타 치즈와 블랙 트러플의 조화가 만들어내는 ROWISM The Black의 시그니처 요리." : pageLang === 'ja' ? "当日屠畜韓牛の体温が残る新鮮さ。イタリア産ブッラータチーズとブラックトリュフのハーモニーが生み出すROWISM The Blackのシグネチャー料理。" : pageLang === 'zh' ? "当日屠宰韩牛保留体温的新鲜口感。意大利布拉塔奶酪与黑松露的和谐，缔造ROWISM The Black的招牌菜。" : "Fresh same-day slaughtered Hanwoo with body heat still intact. The harmony of Italian burrata cheese and black truffle creates ROWISM The Black's signature dish.",
+            "description": pageLang === 'ko' ? "당일 도축 온도체 한우의 체온이 남아있는 신선함. 이탈리아산 부라타 치즈와 블랙 트러플의 조화가 만들어내는 RAWISM The Black의 시그니처 요리." : pageLang === 'ja' ? "当日屠畜韓牛の体温が残る新鮮さ。イタリア産ブッラータチーズとブラックトリュフのハーモニーが生み出すRAWISM The Blackのシグネチャー料理。" : pageLang === 'zh' ? "当日屠宰韩牛保留体温的新鲜口感。意大利布拉塔奶酪与黑松露的和谐，缔造RAWISM The Black的招牌菜。" : "Fresh same-day slaughtered Hanwoo with body heat still intact. The harmony of Italian burrata cheese and black truffle creates RAWISM The Black's signature dish.",
             "prepTime": "PT10M",
             "cookTime": "PT0M",
             "totalTime": "PT10M",
@@ -970,7 +970,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "serviceType": pageLang === 'ko' ? "프라이빗 다이닝" : pageLang === 'ja' ? "プライベートダイニング" : pageLang === 'zh' ? "私密用餐" : "Private Dining",
             "provider": {
               "@type": "Restaurant",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "url": "https://rawism.kr"
             },
             "areaServed": {
@@ -986,7 +986,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": pageLang === 'ko' ? "ROWISM The Black 서비스" : pageLang === 'ja' ? "ROWISM The Black サービス" : pageLang === 'zh' ? "ROWISM The Black 服务" : "ROWISM The Black Services",
+              "name": pageLang === 'ko' ? "RAWISM The Black 서비스" : pageLang === 'ja' ? "RAWISM The Black サービス" : pageLang === 'zh' ? "RAWISM The Black 服务" : "RAWISM The Black Services",
               "itemListElement": [
                 {
                   "@type": "Offer",
@@ -1025,8 +1025,8 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ImageGallery",
-            "name": pageLang === 'ko' ? "ROWISM The Black 갤러리" : pageLang === 'ja' ? "ROWISM The Black ギャラリー" : pageLang === 'zh' ? "ROWISM The Black 图库" : "ROWISM The Black Gallery",
-            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 ROWISM The Black의 메뉴와 공간" : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー ROWISM The Blackのメニューと空間" : pageLang === 'zh' ? "延南洞高级香槟吧 ROWISM The Black的菜品与空间" : "Menu and space of ROWISM The Black premium champagne bar in Yeonnam-dong",
+            "name": pageLang === 'ko' ? "RAWISM The Black 갤러리" : pageLang === 'ja' ? "RAWISM The Black ギャラリー" : pageLang === 'zh' ? "RAWISM The Black 图库" : "RAWISM The Black Gallery",
+            "description": pageLang === 'ko' ? "연남동 프리미엄 샴페인바 RAWISM The Black의 메뉴와 공간" : pageLang === 'ja' ? "延南洞プレミアムシャンパンバー RAWISM The Blackのメニューと空間" : pageLang === 'zh' ? "延南洞高级香槟吧 RAWISM The Black的菜品与空间" : "Menu and space of RAWISM The Black premium champagne bar in Yeonnam-dong",
             "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
             "image": [
               {
@@ -1067,14 +1067,14 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SpecialAnnouncement",
-            "name": pageLang === 'ko' ? "ROWISM The Black 영업 안내" : pageLang === 'ja' ? "ROWISM The Black 営業案内" : pageLang === 'zh' ? "ROWISM The Black 营业通知" : "ROWISM The Black Business Hours",
+            "name": pageLang === 'ko' ? "RAWISM The Black 영업 안내" : pageLang === 'ja' ? "RAWISM The Black 営業案内" : pageLang === 'zh' ? "RAWISM The Black 营业通知" : "RAWISM The Black Business Hours",
             "text": pageLang === 'ko' ? "화-일 18:00-24:00 영업, 월요일 정기휴무. 8석 한정 예약제 운영. 라스트오더 22:30." : pageLang === 'ja' ? "火-日 18:00-24:00営業、月曜定休。8席限定予約制。ラストオーダー22:30。" : pageLang === 'zh' ? "周二至周日 18:00-24:00营业，周一休息。8席预约制。最后点单22:30。" : "Open Tue-Sun 18:00-24:00, closed Monday. 8 seats reservation only. Last order 22:30.",
             "datePosted": "2026-02-01",
             "expires": "2026-12-31",
             "category": "https://www.wikidata.org/wiki/Q11707",
             "announcementLocation": {
               "@type": "Restaurant",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "url": "https://rawism.kr"
             }
           })}} />
@@ -1083,7 +1083,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "name": pageLang === 'ko' ? "ROWISM The Black 메뉴 컬렉션" : pageLang === 'ja' ? "ROWISM The Black メニューコレクション" : pageLang === 'zh' ? "ROWISM The Black 菜单收藏" : "ROWISM The Black Menu Collection",
+            "name": pageLang === 'ko' ? "RAWISM The Black 메뉴 컬렉션" : pageLang === 'ja' ? "RAWISM The Black メニューコレクション" : pageLang === 'zh' ? "RAWISM The Black 菜单收藏" : "RAWISM The Black Menu Collection",
             "description": seo.description,
             "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
             "mainEntity": {
@@ -1134,10 +1134,10 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
-            "name": pageLang === 'ko' ? "ROWISM - 날것의 철학" : pageLang === 'ja' ? "ROWISM - 生の哲学" : pageLang === 'zh' ? "ROWISM - 生食哲学" : "ROWISM - Philosophy of Raw",
+            "name": pageLang === 'ko' ? "RAWISM - 날것의 철학" : pageLang === 'ja' ? "RAWISM - 生の哲学" : pageLang === 'zh' ? "RAWISM - 生食哲学" : "RAWISM - Philosophy of Raw",
             "author": {
               "@type": "Organization",
-              "name": "ROWISM The Black"
+              "name": "RAWISM The Black"
             },
             "dateCreated": "2023-01-01",
             "description": pageLang === 'ko' ? "RAW와 ism의 결합. 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 철학." : pageLang === 'ja' ? "RAWとismの結合。最高級食材本来の味を最も純粋な方法で届ける哲学。" : pageLang === 'zh' ? "RAW与ism的结合。以最纯粹的方式传递顶级食材原味的哲学。" : "Combination of RAW and ism. Philosophy of delivering the authentic taste of premium ingredients in the purest way.",
@@ -1149,7 +1149,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "TouristAttraction",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "description": pageLang === 'ko' ? "연남동 핫플레이스 - 외국인 관광객에게 인기 있는 한우 뭉티기 전문 샴페인바" : pageLang === 'ja' ? "延南洞ホットプレイス - 外国人観光客に人気の韓牛ムンティギ専門シャンパンバー" : pageLang === 'zh' ? "延南洞热门地点 - 深受外国游客喜爱的韩牛肉脍专门香槟吧" : "Yeonnam-dong hotspot - Champagne bar specializing in Hanwoo tartare, popular among foreign tourists",
             "touristType": [
               pageLang === 'ko' ? "미식 여행객" : pageLang === 'ja' ? "グルメ旅行者" : pageLang === 'zh' ? "美食旅行者" : "Food Traveler",
@@ -1197,15 +1197,15 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "OfferCatalog",
-            "name": pageLang === 'ko' ? "ROWISM The Black 메뉴 가격표" : pageLang === 'ja' ? "ROWISM The Black メニュー価格表" : pageLang === 'zh' ? "ROWISM The Black 菜单价格表" : "ROWISM The Black Menu Prices",
+            "name": pageLang === 'ko' ? "RAWISM The Black 메뉴 가격표" : pageLang === 'ja' ? "RAWISM The Black メニュー価格表" : pageLang === 'zh' ? "RAWISM The Black 菜单价格表" : "RAWISM The Black Menu Prices",
             "itemListElement": [
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "MenuItem",
-                  "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "ROWISM 肉脍招牌" : "ROWISM Signature Tartare"
+                  "name": pageLang === 'ko' ? "로위즘 뭉티기 시그니처" : pageLang === 'ja' ? "ロウィズム ムンティギ シグネチャー" : pageLang === 'zh' ? "RAWISM 肉脍招牌" : "RAWISM Signature Tartare"
                 },
-                "price": "92000",
+                "price": "69000",
                 "priceCurrency": "KRW",
                 "availability": "https://schema.org/InStock",
                 "validFrom": "2024-01-01"
@@ -1216,7 +1216,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
                 },
-                "price": "49000",
+                "price": "39000",
                 "priceCurrency": "KRW",
                 "availability": "https://schema.org/InStock"
               },
@@ -1226,7 +1226,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
                 },
-                "price": "36000",
+                "price": "35000",
                 "priceCurrency": "KRW",
                 "availability": "https://schema.org/InStock"
               },
@@ -1268,7 +1268,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "@id": "https://rawism.kr/#contact",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "url": "https://rawism.kr",
             "logo": "https://rawism.kr/static/logo.png",
             "contactPoint": [
@@ -1305,17 +1305,17 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "@context": "https://schema.org",
             "@type": "Restaurant",
             "@id": "https://rawism.kr/#priceinfo",
-            "name": "ROWISM The Black",
+            "name": "RAWISM The Black",
             "priceRange": "₩₩₩",
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "KRW",
               "lowPrice": "15000",
-              "highPrice": "92000",
+              "highPrice": "69000",
               "offerCount": 6,
               "offers": [
-                { "@type": "Offer", "name": pageLang === 'ko' ? "시그니처 메뉴" : "Signature", "price": "92000", "priceCurrency": "KRW" },
-                { "@type": "Offer", "name": pageLang === 'ko' ? "메인 요리" : "Main", "price": "49000", "priceCurrency": "KRW" },
+                { "@type": "Offer", "name": pageLang === 'ko' ? "시그니처 메뉴" : "Signature", "price": "69000", "priceCurrency": "KRW" },
+                { "@type": "Offer", "name": pageLang === 'ko' ? "메인 요리" : "Main", "price": "39000", "priceCurrency": "KRW" },
                 { "@type": "Offer", "name": pageLang === 'ko' ? "사이드" : "Side", "price": "23000", "priceCurrency": "KRW" },
                 { "@type": "Offer", "name": pageLang === 'ko' ? "마무리" : "Finisher", "price": "15000", "priceCurrency": "KRW" }
               ]
@@ -1326,11 +1326,11 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MusicEvent",
-            "name": pageLang === 'ko' ? "ROWISM The Black 큐레이팅 뮤직" : pageLang === 'ja' ? "ROWISM The Black キュレーションミュージック" : pageLang === 'zh' ? "ROWISM The Black 策划音乐" : "ROWISM The Black Curated Music",
+            "name": pageLang === 'ko' ? "RAWISM The Black 큐레이팅 뮤직" : pageLang === 'ja' ? "RAWISM The Black キュレーションミュージック" : pageLang === 'zh' ? "RAWISM The Black 策划音乐" : "RAWISM The Black Curated Music",
             "description": pageLang === 'ko' ? "제네바 스피커에서 흘러나오는 큐레이팅된 선율과 함께하는 다이닝 경험" : pageLang === 'ja' ? "ジュネーブスピーカーから流れるキュレーションされた音楽とともにダイニング体験" : pageLang === 'zh' ? "日内瓦音箱播放的策划音乐伴随用餐体验" : "Dining experience with curated music from Geneva speakers",
             "location": {
               "@type": "Restaurant",
-              "name": "ROWISM The Black",
+              "name": "RAWISM The Black",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "마포구",
@@ -1340,7 +1340,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             },
             "organizer": {
               "@type": "Organization",
-              "name": "ROWISM The Black"
+              "name": "RAWISM The Black"
             },
             "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"

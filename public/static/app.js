@@ -1,4 +1,4 @@
-// ROWISM The Black - Premium Interactive Features
+// RAWISM The Black - Premium Interactive Features
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
@@ -412,5 +412,5 @@ function initSmoothScroll() {
 }
 
 // Console branding
-console.log('%cROWISM', 'font-family: "Playfair Display", serif; font-size: 32px; color: #C9A962; font-weight: 300; letter-spacing: 0.3em;');
+console.log('%cRAWISM', 'font-family: "Playfair Display", serif; font-size: 32px; color: #C9A962; font-weight: 300; letter-spacing: 0.3em;');
 console.log('%cThe Black', 'font-family: serif; font-size: 14px; color: #666; letter-spacing: 0.2em;');

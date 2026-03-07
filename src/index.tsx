@@ -109,7 +109,7 @@ function PageContent({ lang }: { lang: Language }) {
       </nav>
 
       {/* Section 1: Hero - Cinematic */}
-      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden" aria-label="ROWISM The Black 히어로 섹션">
+      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden" aria-label="RAWISM The Black 히어로 섹션">
         {/* Dark Gradient Overlay */}
         <div class="absolute inset-0 bg-gradient-to-b from-deep-black via-deep-black/95 to-deep-black"></div>
         
@@ -131,13 +131,13 @@ function PageContent({ lang }: { lang: Language }) {
             </p>
             
             {/* H1 - Main Page Title for SEO - 로고 위에 시각적으로 노출 */}
-            <h1 class="font-playfair text-[10px] md:text-xs tracking-[0.4em] text-champagne/40 uppercase font-light mb-6" data-i18n="hero.h1">ROWISM The Black — 연남동 프리미엄 샴페인바 & 와인바</h1>
+            <h1 class="font-playfair text-[10px] md:text-xs tracking-[0.4em] text-champagne/40 uppercase font-light mb-6" data-i18n="hero.h1">RAWISM The Black — 연남동 프리미엄 샴페인바 & 와인바</h1>
             
             {/* Logo Image */}
             <div class="mb-12">
               <img 
                 src="/static/logo.png" 
-                alt="ROWISM The Black - 연남동 프리미엄 샴페인바 트러플 한우 뭉티기 프라이빗 다이닝" 
+                alt="RAWISM The Black - 연남동 프리미엄 샴페인바 트러플 한우 뭉티기 프라이빗 다이닝" 
                 class="w-64 md:w-80 lg:w-96 mx-auto"
               />
             </div>
@@ -213,17 +213,17 @@ function PageContent({ lang }: { lang: Language }) {
               <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-6" data-i18n="philosophy.label">Our Philosophy</p>
               <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide mb-8 leading-snug">
                 <span data-i18n="philosophy.titleLine1">날것의 미학,</span><br/>
-                <span class="text-champagne" data-i18n="philosophy.title">ROWISM</span>
+                <span class="text-champagne" data-i18n="philosophy.title">RAWISM</span>
               </h2>
               <div class="space-y-6 text-off-white/50 font-light text-sm md:text-base leading-relaxed">
                 <p>
-                  <strong class="text-off-white/80" data-i18n="philosophy.p1Title">RAW와 ism의 결합.</strong> <span data-i18n="philosophy.p1Text">로위즘(ROWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.</span>
+                  <strong class="text-off-white/80" data-i18n="philosophy.p1Title">RAW와 ism의 결합.</strong> <span data-i18n="philosophy.p1Text">로위즘(RAWISM)은 '날것'을 뜻하는 RAW와 '주의·철학'을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.</span>
                 </p>
                 <p>
-                  <strong class="text-off-white/80" data-i18n="philosophy.p2Title">연남동 프리미엄 샴페인바.</strong> <span data-i18n="philosophy.p2Text">홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 ROWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.</span>
+                  <strong class="text-off-white/80" data-i18n="philosophy.p2Title">연남동 프리미엄 샴페인바.</strong> <span data-i18n="philosophy.p2Text">홍대입구역에서 도보 5분, 연남동 골목 속에 자리한 RAWISM The Black은 최상급 한우 뭉티기에 이탈리아 부라타 치즈, 블랙 트러플, 파르미지아노 레지아노가 만나는 시그니처 요리를 선보입니다.</span>
                 </p>
                 <p>
-                  <strong class="text-off-white/80" data-i18n="philosophy.p3Title">8개의 프라이빗 테이블.</strong> <span data-i18n="philosophy.p3Text">루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. ROWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.</span>
+                  <strong class="text-off-white/80" data-i18n="philosophy.p3Title">8개의 프라이빗 테이블.</strong> <span data-i18n="philosophy.p3Text">루이스폴센의 은은한 조명, 제네바 스피커가 전하는 큐레이팅된 선율. RAWISM The Black은 단순한 샴페인바가 아닌, 감각의 경험을 디자인하는 연남동 다이닝 공간입니다.</span>
                 </p>
               </div>
             </div>
@@ -268,7 +268,7 @@ function PageContent({ lang }: { lang: Language }) {
               시그니처 메뉴 컬렉션
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto" data-i18n="menu.subtitle">
-              최상급 재료와 섬세한 플레이팅으로 완성되는 ROWISM의 시그니처
+              최상급 재료와 섬세한 플레이팅으로 완성되는 RAWISM의 시그니처
             </p>
           </div>
           
@@ -297,16 +297,16 @@ function PageContent({ lang }: { lang: Language }) {
                     <h3 class="font-playfair text-2xl md:text-3xl text-off-white mb-2" data-i18n="menu.signature.name">
                       로위즘 뭉티기 시그니처
                     </h3>
-                    <span class="font-playfair text-2xl text-champagne" data-i18n="menu.signature.price">₩92,000</span>
+                    <span class="font-playfair text-2xl text-champagne" data-i18n="menu.signature.price">₩69,000</span>
                   </div>
                   <p class="text-champagne/60 text-sm tracking-wide" data-i18n="menu.signature.description">
-                    ROWISM의 철학을 담은 시그니처 메뉴
+                    RAWISM의 철학을 담은 시그니처 메뉴
                   </p>
                 </div>
                 
                 <div class="space-y-4 mb-6">
                   <p class="text-off-white/50 text-sm font-light leading-relaxed" data-i18n="menu.signature.story">
-                    로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.
+                    로위즘 뭉티기 시그니처는 RAWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다.
                   </p>
                   <div class="border-l-2 border-champagne/20 pl-4 my-4">
                     <p class="text-champagne/50 text-xs font-medium mb-2" data-i18n="menu.signature.whatIsTitle">뭉티기란?</p>
@@ -351,7 +351,7 @@ function PageContent({ lang }: { lang: Language }) {
                   </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>한우 제비추리와 8종 제철 채소의 그릴 향연</p>
                 </div>
-                <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩49,000</span>
+                <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩39,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3" data-menu-detail>
                 부드러운 한우 제비추리와 엄선된 8종 채소를 그릴에 구워 고소함과 풍미를 극대화한 메뉴입니다. 
@@ -382,7 +382,7 @@ function PageContent({ lang }: { lang: Language }) {
                   </h3>
                   <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>소믈리에가 큐레이팅한 6종 치즈 컬렉션</p>
                 </div>
-                <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩36,000</span>
+                <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩35,000</span>
               </div>
               <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3" data-menu-detail>
                 샴페인바의 꽃이라 할 수 있는 치즈 셀렉션. 소믈리에가 직접 큐레이팅한 6종의 프리미엄 치즈를 한 플레이트에 담았습니다.
@@ -503,10 +503,10 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Experience</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="experience.title">
-              ROWISM 다이닝 경험
+              RAWISM 다이닝 경험
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto">
-              <span data-i18n="experience.subtitle">ROWISM The Black에서 경험하실 특별한 여정</span>
+              <span data-i18n="experience.subtitle">RAWISM The Black에서 경험하실 특별한 여정</span>
             </p>
           </div>
           
@@ -570,7 +570,7 @@ function PageContent({ lang }: { lang: Language }) {
             <div class="animate-on-scroll">
               <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-6">Location</p>
               <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide mb-12" data-i18n="location.title">
-                연남동 ROWISM 찾아오시는 길
+                연남동 RAWISM 찾아오시는 길
               </h2>
               
               <div class="space-y-10">
@@ -648,7 +648,7 @@ function PageContent({ lang }: { lang: Language }) {
               연남동 샴페인바 고객 후기
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4" data-i18n="reviews.subtitle">
-              ROWISM The Black을 경험하신 분들의 이야기
+              RAWISM The Black을 경험하신 분들의 이야기
             </p>
             <div class="flex items-center justify-center gap-2 mt-6">
               <div class="flex text-champagne text-xl">★★★★★</div>
@@ -678,10 +678,10 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="text-center mb-20 animate-on-scroll">
             <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">FAQ</p>
             <h2 class="font-playfair text-3xl md:text-4xl font-light tracking-wide" data-i18n="faq.title">
-              ROWISM The Black 자주 묻는 질문
+              RAWISM The Black 자주 묻는 질문
             </h2>
             <p class="text-off-white/40 text-sm font-light mt-4 max-w-lg mx-auto" data-i18n="faq.subtitle">
-              연남동 샴페인바 ROWISM The Black에 대해 궁금하신 점을 확인하세요
+              연남동 샴페인바 RAWISM The Black에 대해 궁금하신 점을 확인하세요
             </p>
           </div>
           
@@ -748,7 +748,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="grid md:grid-cols-3 gap-16 mb-16">
             {/* Brand */}
             <div>
-              <h3 class="font-playfair text-lg tracking-[0.3em] mb-6">ROWISM</h3>
+              <h3 class="font-playfair text-lg tracking-[0.3em] mb-6">RAWISM</h3>
               <p class="text-[10px] tracking-[0.3em] text-off-white/30 uppercase mb-4">The Black</p>
               <p class="text-off-white/30 text-xs font-light leading-relaxed" data-i18n-html="footer.slogan">
                 날것의 철학으로,<br/>당신의 특별한 밤을 위해.
@@ -806,7 +806,7 @@ function PageContent({ lang }: { lang: Language }) {
           
           <div class="pt-8 border-t border-white/5 text-center">
             <p class="text-off-white/15 text-[10px] tracking-[0.3em]">
-              © 2024 ROWISM The Black
+              © 2024 RAWISM The Black
             </p>
           </div>
         </div>
@@ -877,7 +877,7 @@ app.get('/sitemap.xml', async (c) => {
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://rawism.kr/static/logo.png</image:loc>
-      <image:title>ROWISM The Black 로고 - 연남동 프리미엄 샴페인바</image:title>
+      <image:title>RAWISM The Black 로고 - 연남동 프리미엄 샴페인바</image:title>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/menu_signature.jpg</image:loc>
@@ -975,7 +975,7 @@ app.get('/sitemap.xml', async (c) => {
 
 // robots.txt
 app.get('/robots.txt', (c) => {
-  const robots = `# ROWISM The Black - 연남동 프리미엄 샴페인바
+  const robots = `# RAWISM The Black - 연남동 프리미엄 샴페인바
 User-agent: *
 Allow: /
 Sitemap: https://rawism.kr/sitemap.xml
@@ -988,31 +988,31 @@ app.get('/rss.xml', (c) => {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>ROWISM The Black</title>
+    <title>RAWISM The Black</title>
     <link>https://rawism.kr</link>
     <description>연남동 프리미엄 샴페인바. 당일 도축 한우 뭉티기와 샴페인을 함께 즐기는 다이닝 공간.</description>
     <language>ko</language>
     <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
     <item>
-      <title>트러플 한우 뭉티기 부라타 - ROWISM 시그니처 메뉴</title>
+      <title>트러플 한우 뭉티기 부라타 - RAWISM 시그니처 메뉴</title>
       <link>https://rawism.kr/menu</link>
-      <description>당일 도축 온도체 한우 뭉티기와 이탈리아 부라타 치즈, 움브리아산 블랙 트러플의 완벽한 조화. 92,000원</description>
+      <description>당일 도축 온도체 한우 뭉티기와 이탈리아 부라타 치즈, 움브리아산 블랙 트러플의 완벽한 조화. 69,000원</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black 브랜드 스토리 - 날것의 철학</title>
+      <title>RAWISM The Black 브랜드 스토리 - 날것의 철학</title>
       <link>https://rawism.kr/about</link>
-      <description>ROWISM은 Raw와 ism의 조합입니다. 재료 본연의 맛을 극대화하는 미니멀리즘 요리 철학을 추구합니다.</description>
+      <description>RAWISM은 Raw와 ism의 조합입니다. 재료 본연의 맛을 극대화하는 미니멀리즘 요리 철학을 추구합니다.</description>
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM 메뉴 - 6가지 시그니처 요리</title>
+      <title>RAWISM 메뉴 - 6가지 시그니처 요리</title>
       <link>https://rawism.kr/menu</link>
-      <description>트러플 한우 뭉티기 92,000원, 제비추리 그릴 49,000원, 치즈 셀렉션 36,000원, 청양 오일 육회 25,000원, 아보카도 카프레제 23,000원, 들기름 육회 메밀면 15,000원</description>
+      <description>트러플 한우 뭉티기 69,000원, 제비추리 그릴 39,000원, 치즈 셀렉션 35,000원, 청양 오일 육회 25,000원, 아보카도 카프레제 23,000원, 들기름 육회 메밀면 15,000원</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black 오시는 길 - 연남동 동교로</title>
+      <title>RAWISM The Black 오시는 길 - 연남동 동교로</title>
       <link>https://rawism.kr</link>
       <description>서울특별시 마포구 동교로 262-4. 홍대입구역 3번 출구 도보 7분. 영업시간 화-일 18:00-24:00. 예약 070-5100-5534</description>
       <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
@@ -1029,7 +1029,7 @@ app.get('/en/rss.xml', (c) => {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>ROWISM The Black - Seoul Yeonnam-dong</title>
+    <title>RAWISM The Black - Seoul Yeonnam-dong</title>
     <link>https://rawism.kr/en</link>
     <description>Premium champagne bar in Yeonnam-dong, Seoul. Fresh Hanwoo beef tartare with Italian burrata and black truffle.</description>
     <language>en</language>
@@ -1037,23 +1037,23 @@ app.get('/en/rss.xml', (c) => {
     <item>
       <title>Truffle Hanwoo Tartare Burrata - Signature Dish</title>
       <link>https://rawism.kr/en/menu</link>
-      <description>Same-day slaughtered Hanwoo beef tartare with Italian burrata cheese and Umbrian black truffle. 92,000 KRW</description>
+      <description>Same-day slaughtered Hanwoo beef tartare with Italian burrata cheese and Umbrian black truffle. 69,000 KRW</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black Brand Story - Philosophy of Raw</title>
+      <title>RAWISM The Black Brand Story - Philosophy of Raw</title>
       <link>https://rawism.kr/en/about</link>
-      <description>ROWISM combines Raw and ism. We pursue minimalist culinary philosophy that maximizes the natural flavor of ingredients.</description>
+      <description>RAWISM combines Raw and ism. We pursue minimalist culinary philosophy that maximizes the natural flavor of ingredients.</description>
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM Menu - 6 Signature Dishes</title>
+      <title>RAWISM Menu - 6 Signature Dishes</title>
       <link>https://rawism.kr/en/menu</link>
-      <description>Truffle Hanwoo Tartare 92,000 KRW, Jebichuri Grill 49,000 KRW, Cheese Selection 36,000 KRW, Cheongyang Oil Yukhoe 25,000 KRW, Avocado Caprese 23,000 KRW, Perilla Oil Yukhoe Buckwheat 15,000 KRW</description>
+      <description>Truffle Hanwoo Tartare 69,000 KRW, Jebichuri Grill 39,000 KRW, Cheese Selection 35,000 KRW, Cheongyang Oil Yukhoe 25,000 KRW, Avocado Caprese 23,000 KRW, Perilla Oil Yukhoe Buckwheat 15,000 KRW</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black Location - Yeonnam-dong Seoul</title>
+      <title>RAWISM The Black Location - Yeonnam-dong Seoul</title>
       <link>https://rawism.kr/en</link>
       <description>262-4 Donggyo-ro, Mapo-gu, Seoul. 7 min walk from Hongdae Station Exit 3. Hours: Tue-Sun 18:00-24:00. Reservation: 070-5100-5534</description>
       <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
@@ -1070,7 +1070,7 @@ app.get('/ja/rss.xml', (c) => {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>ROWISM The Black - ソウル延南洞</title>
+    <title>RAWISM The Black - ソウル延南洞</title>
     <link>https://rawism.kr/ja</link>
     <description>延南洞プレミアムシャンパンバー。当日屠畜の韓牛ムンティギとシャンパンを楽しむダイニング空間。</description>
     <language>ja</language>
@@ -1078,23 +1078,23 @@ app.get('/ja/rss.xml', (c) => {
     <item>
       <title>トリュフ韓牛ムンティギ ブッラータ - シグネチャーメニュー</title>
       <link>https://rawism.kr/ja/menu</link>
-      <description>当日屠畜の韓牛ムンティギとイタリア産ブッラータチーズ、ウンブリア産ブラックトリュフの完璧な調和。92,000ウォン</description>
+      <description>当日屠畜の韓牛ムンティギとイタリア産ブッラータチーズ、ウンブリア産ブラックトリュフの完璧な調和。69,000ウォン</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black ブランドストーリー - 生の哲学</title>
+      <title>RAWISM The Black ブランドストーリー - 生の哲学</title>
       <link>https://rawism.kr/ja/about</link>
-      <description>ROWISMはRawとismの組み合わせです。素材本来の味を最大化するミニマリズム料理哲学を追求します。</description>
+      <description>RAWISMはRawとismの組み合わせです。素材本来の味を最大化するミニマリズム料理哲学を追求します。</description>
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISMメニュー - 6つのシグネチャー料理</title>
+      <title>RAWISMメニュー - 6つのシグネチャー料理</title>
       <link>https://rawism.kr/ja/menu</link>
-      <description>トリュフ韓牛ムンティギ 92,000ウォン、ジェビチュリグリル 49,000ウォン、チーズセレクション 36,000ウォン、チョンヤンオイルユッケ 25,000ウォン</description>
+      <description>トリュフ韓牛ムンティギ 69,000ウォン、ジェビチュリグリル 39,000ウォン、チーズセレクション 35,000ウォン、チョンヤンオイルユッケ 25,000ウォン</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black アクセス - 延南洞東橋路</title>
+      <title>RAWISM The Black アクセス - 延南洞東橋路</title>
       <link>https://rawism.kr/ja</link>
       <description>ソウル特別市麻浦区東橋路262-4。弘大入口駅3番出口から徒歩7分。営業時間 火-日 18:00-24:00。予約 070-5100-5534</description>
       <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
@@ -1111,7 +1111,7 @@ app.get('/zh/rss.xml', (c) => {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>ROWISM The Black - 首尔延南洞</title>
+    <title>RAWISM The Black - 首尔延南洞</title>
     <link>https://rawism.kr/zh</link>
     <description>延南洞高级香槟吧。当日屠宰韩牛肉脍与香槟共享的用餐空间。</description>
     <language>zh</language>
@@ -1119,23 +1119,23 @@ app.get('/zh/rss.xml', (c) => {
     <item>
       <title>松露韩牛肉脍布拉塔 - 招牌菜品</title>
       <link>https://rawism.kr/zh/menu</link>
-      <description>当日屠宰韩牛肉脍配意大利布拉塔奶酪和翁布里亚黑松露的完美搭配。92,000韩元</description>
+      <description>当日屠宰韩牛肉脍配意大利布拉塔奶酪和翁布里亚黑松露的完美搭配。69,000韩元</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black 品牌故事 - 生食哲学</title>
+      <title>RAWISM The Black 品牌故事 - 生食哲学</title>
       <link>https://rawism.kr/zh/about</link>
-      <description>ROWISM是Raw和ism的结合。我们追求最大化食材原味的极简主义烹饪哲学。</description>
+      <description>RAWISM是Raw和ism的结合。我们追求最大化食材原味的极简主义烹饪哲学。</description>
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM菜单 - 6道招牌菜</title>
+      <title>RAWISM菜单 - 6道招牌菜</title>
       <link>https://rawism.kr/zh/menu</link>
-      <description>松露韩牛肉脍 92,000韩元、牛肩肉烤蔬菜 49,000韩元、奶酪拼盘 36,000韩元、青阳油拌生牛肉 25,000韩元</description>
+      <description>松露韩牛肉脍 69,000韩元、牛肩肉烤蔬菜 39,000韩元、奶酪拼盘 35,000韩元、青阳油拌生牛肉 25,000韩元</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>ROWISM The Black 交通指南 - 延南洞东桥路</title>
+      <title>RAWISM The Black 交通指南 - 延南洞东桥路</title>
       <link>https://rawism.kr/zh</link>
       <description>首尔特别市麻浦区东桥路262-4。弘大入口站3号出口步行7分钟。营业时间 周二至周日 18:00-24:00。预约 070-5100-5534</description>
       <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
@@ -1244,7 +1244,7 @@ app.get('/zh/about', (c) => {
 // ============================================
 
 // Yandex verification (러시아 검색엔진)
-// ROWISM 인증 코드: 8177199aa5b0e25d
+// RAWISM 인증 코드: 8177199aa5b0e25d
 app.get('/yandex_8177199aa5b0e25d.html', (c) => {
   return c.html(`<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Verification: 8177199aa5b0e25d</body></html>`)
 })

@@ -33,14 +33,14 @@ const menuTranslations: Record<Language, {
   }>
 }> = {
   ko: {
-    pageTitle: 'ROWISM The Black 메뉴',
+    pageTitle: 'RAWISM The Black 메뉴',
     pageSubtitle: '트러플 한우 뭉티기 · 샴페인 페어링 — 연남동 프리미엄 다이닝',
     backToHome: '← 메인으로',
     signatureLabel: 'Signature',
     signatureTitle: '로위즘 뭉티기 시그니처',
-    signaturePrice: '₩92,000',
-    signatureDesc: 'ROWISM의 철학을 담은 시그니처 메뉴',
-    signatureStory: '로위즘 뭉티기 시그니처는 ROWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다. 당일 도축된 온도체 한우만을 사용하여 체온이 남아있는 신선함을 그대로 느낄 수 있습니다.',
+    signaturePrice: '₩69,000',
+    signatureDesc: 'RAWISM의 철학을 담은 시그니처 메뉴',
+    signatureStory: '로위즘 뭉티기 시그니처는 RAWISM The Black의 정체성을 가장 잘 보여주는 대표 메뉴입니다. 당일 도축된 온도체 한우만을 사용하여 체온이 남아있는 신선함을 그대로 느낄 수 있습니다.',
     whatIsTitle: '뭉티기란?',
     whatIsText: '뭉티기는 한우를 얇게 저며 썬 후 별도의 양념 없이 그대로 즐기는 전통 요리입니다. 육회와 달리 참기름이나 소금 양념을 하지 않아 고기 본연의 풍미를 느낄 수 있습니다.',
     harmonyTitle: '프리미엄 재료의 완벽한 조화',
@@ -58,7 +58,7 @@ const menuTranslations: Record<Language, {
         name: '제비추리 그릴드 베지터블',
         desc: '한우 제비추리와 8종 제철 채소의 그릴 향연',
         detail: '부드러운 한우 제비추리와 엄선된 8종 채소를 그릴에 구워 고소함과 풍미를 극대화한 메뉴입니다. 채소 본연의 단맛과 그릴의 스모키한 풍미가 어우러져, 스파클링과 함께 즐기기 완벽한 핫 디쉬입니다.',
-        price: '₩49,000',
+        price: '₩39,000',
         ingredients: '한우 제비추리 · 파 · 방울양배추 · 아스파라거스 · 래디쉬 · 가지 · 미니당근 · 양송이버섯 · 브로콜리'
       },
       {
@@ -72,7 +72,7 @@ const menuTranslations: Record<Language, {
         name: '치즈 셀렉션',
         desc: '소믈리에가 큐레이팅한 6종 치즈 컬렉션',
         detail: '샴페인바의 꽃이라 할 수 있는 치즈 셀렉션. 소믈리에가 직접 큐레이팅한 6종의 프리미엄 치즈를 한 플레이트에 담았습니다.',
-        price: '₩36,000',
+        price: '₩35,000',
         ingredients: '브리 · 콩테 · 에멘탈 · 콜비잭 · 크림치즈 · 다피누아 · 하몽 · 살라미 · 그린 올리브 · 블루베리'
       },
       {
@@ -92,14 +92,14 @@ const menuTranslations: Record<Language, {
     ]
   },
   en: {
-    pageTitle: 'ROWISM The Black Menu',
+    pageTitle: 'RAWISM The Black Menu',
     pageSubtitle: 'Truffle Hanwoo Tartare · Champagne Pairing — Yeonnam-dong Premium Dining',
     backToHome: '← Back to Home',
     signatureLabel: 'Signature',
-    signatureTitle: 'ROWISM Mungti-gi Signature',
-    signaturePrice: '₩92,000',
-    signatureDesc: 'The signature dish embodying ROWISM philosophy',
-    signatureStory: 'The ROWISM Mungti-gi Signature best represents the identity of ROWISM The Black. Using only same-day slaughtered Korean beef, you can experience freshness with body heat still intact.',
+    signatureTitle: 'RAWISM Mungti-gi Signature',
+    signaturePrice: '₩69,000',
+    signatureDesc: 'The signature dish embodying RAWISM philosophy',
+    signatureStory: 'The RAWISM Mungti-gi Signature best represents the identity of RAWISM The Black. Using only same-day slaughtered Korean beef, you can experience freshness with body heat still intact.',
     whatIsTitle: 'What is Mungti-gi?',
     whatIsText: 'Mungti-gi is a traditional dish of thinly sliced Korean beef enjoyed without any seasoning. Unlike yukhoe, it has no sesame oil or salt, allowing you to taste the pure flavor of the meat.',
     harmonyTitle: 'Perfect Harmony of Premium Ingredients',
@@ -117,7 +117,7 @@ const menuTranslations: Record<Language, {
         name: 'Jebichuri Grilled Vegetables',
         desc: 'Grilled Hanwoo flank steak with 8 seasonal vegetables',
         detail: 'Tender Hanwoo Jebichuri and 8 carefully selected vegetables grilled to maximize savory flavors. The natural sweetness of vegetables combined with smoky grill notes makes this a perfect hot dish with sparkling wine.',
-        price: '₩49,000',
+        price: '₩39,000',
         ingredients: 'Hanwoo Jebichuri · Scallion · Brussels Sprouts · Asparagus · Radish · Eggplant · Baby Carrots · Mushrooms · Broccoli'
       },
       {
@@ -131,7 +131,7 @@ const menuTranslations: Record<Language, {
         name: 'Cheese Selection',
         desc: 'Sommelier-curated 6-cheese collection',
         detail: 'The highlight of any champagne bar - our cheese selection. 6 premium cheeses personally curated by our sommelier on one plate.',
-        price: '₩36,000',
+        price: '₩35,000',
         ingredients: 'Brie · Comté · Emmental · Colby Jack · Cream Cheese · Daphinois · Ham · Salami · Green Olives · Blueberries'
       },
       {
@@ -151,14 +151,14 @@ const menuTranslations: Record<Language, {
     ]
   },
   ja: {
-    pageTitle: 'ROWISM The Black メニュー',
+    pageTitle: 'RAWISM The Black メニュー',
     pageSubtitle: 'トリュフ韓牛タルタル · シャンパンペアリング — 延南洞プレミアムダイニング',
     backToHome: '← メインへ',
     signatureLabel: 'シグネチャー',
     signatureTitle: 'ロウィズム ムンティギ シグネチャー',
-    signaturePrice: '₩92,000',
-    signatureDesc: 'ROWISMの哲学を込めたシグネチャーメニュー',
-    signatureStory: 'ロウィズム ムンティギ シグネチャーはROWISM The Blackのアイデンティティを最もよく表す代表メニューです。当日屠畜された韓牛のみを使用し、体温が残る新鮮さをそのまま感じられます。',
+    signaturePrice: '₩69,000',
+    signatureDesc: 'RAWISMの哲学を込めたシグネチャーメニュー',
+    signatureStory: 'ロウィズム ムンティギ シグネチャーはRAWISM The Blackのアイデンティティを最もよく表す代表メニューです。当日屠畜された韓牛のみを使用し、体温が残る新鮮さをそのまま感じられます。',
     whatIsTitle: 'ムンティギとは？',
     whatIsText: 'ムンティギは韓牛を薄く切り、味付けをせずにそのまま楽しむ伝統料理です。ユッケと違い、ごま油や塩で味付けしないため、肉本来の風味を味わえます。',
     harmonyTitle: 'プレミアム食材の完璧な調和',
@@ -176,7 +176,7 @@ const menuTranslations: Record<Language, {
         name: 'ジェビチュリ グリル野菜',
         desc: '韓牛ジェビチュリと8種の旬野菜のグリル饗宴',
         detail: '柔らかい韓牛ジェビチュリと厳選された8種の野菜をグリルして香ばしさと風味を最大化したメニューです。野菜本来の甘みとグリルのスモーキーな風味が調和し、スパークリングと共に楽しむのに最適なホットディッシュです。',
-        price: '₩49,000',
+        price: '₩39,000',
         ingredients: '韓牛ジェビチュリ · ネギ · 芽キャベツ · アスパラガス · ラディッシュ · ナス · ミニニンジン · マッシュルーム · ブロッコリー'
       },
       {
@@ -190,7 +190,7 @@ const menuTranslations: Record<Language, {
         name: 'チーズセレクション',
         desc: 'ソムリエがキュレーションした6種チーズコレクション',
         detail: 'シャンパンバーの華といえるチーズセレクション。ソムリエが直接キュレーションした6種のプレミアムチーズを一皿に盛り合わせました。',
-        price: '₩36,000',
+        price: '₩35,000',
         ingredients: 'ブリー · コンテ · エメンタール · コルビージャック · クリームチーズ · ダフィノワ · ハム · サラミ · グリーンオリーブ · ブルーベリー'
       },
       {
@@ -210,18 +210,18 @@ const menuTranslations: Record<Language, {
     ]
   },
   zh: {
-    pageTitle: 'ROWISM The Black 菜单',
+    pageTitle: 'RAWISM The Black 菜单',
     pageSubtitle: '松露韩牛肉脍 · 香槟搭配 — 延南洞高级餐饮',
     backToHome: '← 返回首页',
     signatureLabel: '招牌',
-    signatureTitle: 'ROWISM 肉脍招牌',
-    signaturePrice: '₩92,000',
-    signatureDesc: '承载ROWISM哲学的招牌菜',
-    signatureStory: 'ROWISM肉脍招牌是最能体现ROWISM The Black特色的代表菜品。仅使用当日屠宰的韩牛，让您感受到保留体温的新鲜口感。',
+    signatureTitle: 'RAWISM 肉脍招牌',
+    signaturePrice: '₩69,000',
+    signatureDesc: '承载RAWISM哲学的招牌菜',
+    signatureStory: 'RAWISM肉脍招牌是最能体现RAWISM The Black特色的代表菜品。仅使用当日屠宰的韩牛，让您感受到保留体温的新鲜口感。',
     whatIsTitle: '什么是肉脍？',
     whatIsText: '肉脍是将韩牛切成薄片，不加任何调味料直接享用的传统料理。与生拌不同，不使用香油或盐调味，可以品尝到肉的原味。',
     harmonyTitle: '顶级食材的完美和谐',
-    harmonyText: 'ROWISM肉脍招牌上放着整颗意大利布拉塔奶酪。奶油丰富的布拉塔奶酪与清淡的韩牛和谐搭配，再加上黑松露和帕玛森奶酪，完成深邃的鲜味。',
+    harmonyText: 'RAWISM肉脍招牌上放着整颗意大利布拉塔奶酪。奶油丰富的布拉塔奶酪与清淡的韩牛和谐搭配，再加上黑松露和帕玛森奶酪，完成深邃的鲜味。',
     ingredientsLabel: '食材',
     signatureIngredients: '韩牛肉脍 · 布拉塔奶酪 · 黑松露 · 帕玛森奶酪 · 盐 · 胡椒',
     hanwooSection: '韩牛料理',
@@ -235,7 +235,7 @@ const menuTranslations: Record<Language, {
         name: '牛肩肉烤蔬菜',
         desc: '韩牛肩肉与8种时令蔬菜的烧烤盛宴',
         detail: '将柔嫩的韩牛肩肉和精选8种蔬菜烤制，最大化香味和风味。蔬菜本身的甜味与烧烤的烟熏风味和谐融合，是搭配起泡酒的完美热菜。',
-        price: '₩49,000',
+        price: '₩39,000',
         ingredients: '韩牛肩肉 · 大葱 · 抱子甘蓝 · 芦笋 · 小萝卜 · 茄子 · 迷你胡萝卜 · 蘑菇 · 西兰花'
       },
       {
@@ -249,7 +249,7 @@ const menuTranslations: Record<Language, {
         name: '奶酪拼盘',
         desc: '侍酒师精选6种奶酪系列',
         detail: '香槟吧的亮点——奶酪拼盘。侍酒师亲自挑选的6种顶级奶酪汇集一盘。',
-        price: '₩36,000',
+        price: '₩35,000',
         ingredients: '布里 · 孔泰 · 埃门塔尔 · 科尔比杰克 · 奶油奶酪 · 达菲诺 · 火腿 · 萨拉米 · 青橄榄 · 蓝莓'
       },
       {
@@ -298,7 +298,7 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
           <a href={`${basePath}/`} class="group">
             <img 
               src="/static/logo.png" 
-              alt="ROWISM The Black" 
+              alt="RAWISM The Black" 
               class="h-8 md:h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
             />
           </a>
@@ -587,7 +587,7 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
       <footer class="py-12 bg-deep-black border-t border-white/5">
         <div class="max-w-6xl mx-auto px-8 md:px-12 text-center">
           <p class="text-off-white/15 text-[10px] tracking-[0.3em]">
-            © 2024 ROWISM The Black
+            © 2024 RAWISM The Black
           </p>
         </div>
       </footer>

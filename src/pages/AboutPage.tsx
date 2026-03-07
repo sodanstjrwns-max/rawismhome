@@ -53,16 +53,16 @@ const aboutTranslations: Record<Language, {
   ctaSubtitle: string
 }> = {
   ko: {
-    pageTitle: 'ROWISM The Black 브랜드 스토리',
-    pageSubtitle: '연남동 프리미엄 샴페인바 ROWISM의 철학과 이야기',
+    pageTitle: 'RAWISM The Black 브랜드 스토리',
+    pageSubtitle: '연남동 프리미엄 샴페인바 RAWISM의 철학과 이야기',
     backToHome: '← 메인으로',
     reserveCta: '네이버 예약',
     
     storyLabel: 'Our Story',
-    storyTitle: '날것의 미학, ROWISM',
-    storyP1: 'ROWISM은 "날것"을 뜻하는 RAW와 "주의·철학"을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.',
-    storyP2: '2023년 연남동 골목 속에 문을 연 ROWISM The Black은 단순한 샴페인바를 넘어, 감각의 경험을 디자인하는 공간입니다. 당일 도축된 온도체 한우만을 사용하여 체온이 남아있는 신선함을 그대로 전달합니다.',
-    storyP3: '매일 새벽, 그날의 최상급 한우를 직접 선별하고, 소믈리에가 큐레이팅한 샴페인과의 완벽한 페어링을 제안합니다. ROWISM The Black에서의 모든 순간이 특별한 기억으로 남길 바랍니다.',
+    storyTitle: '날것의 미학, RAWISM',
+    storyP1: 'RAWISM은 "날것"을 뜻하는 RAW와 "주의·철학"을 의미하는 ism을 결합한 이름입니다. 우리는 최상급 재료 본연의 맛을 가장 순수한 방식으로 전달하는 것을 철학으로 삼습니다.',
+    storyP2: '2023년 연남동 골목 속에 문을 연 RAWISM The Black은 단순한 샴페인바를 넘어, 감각의 경험을 디자인하는 공간입니다. 당일 도축된 온도체 한우만을 사용하여 체온이 남아있는 신선함을 그대로 전달합니다.',
+    storyP3: '매일 새벽, 그날의 최상급 한우를 직접 선별하고, 소믈리에가 큐레이팅한 샴페인과의 완벽한 페어링을 제안합니다. RAWISM The Black에서의 모든 순간이 특별한 기억으로 남길 바랍니다.',
     
     philosophyLabel: 'Philosophy',
     philosophyTitle: '우리의 철학',
@@ -91,7 +91,7 @@ const aboutTranslations: Record<Language, {
     
     spaceLabel: 'Space',
     spaceTitle: '공간 이야기',
-    spaceDesc: 'ROWISM The Black은 단 8석의 프라이빗 다이닝 공간입니다. 홍대입구역에서 도보 5분, 연남동 골목 속에 숨겨진 이곳에서 특별한 밤을 경험하세요.',
+    spaceDesc: 'RAWISM The Black은 단 8석의 프라이빗 다이닝 공간입니다. 홍대입구역에서 도보 5분, 연남동 골목 속에 숨겨진 이곳에서 특별한 밤을 경험하세요.',
     spaceFeatures: [
       { icon: '🪑', title: '8석 한정', desc: '프라이빗 다이닝을 위한 최적의 규모' },
       { icon: '💡', title: '루이스폴센 조명', desc: '덴마크의 명품 조명이 만드는 분위기' },
@@ -103,7 +103,7 @@ const aboutTranslations: Record<Language, {
     
     teamLabel: 'Team',
     teamTitle: '팀 소개',
-    teamDesc: 'ROWISM The Black의 팀은 각 분야 전문가들로 구성되어 있습니다. 셰프는 매일 새벽 최상급 한우를 직접 선별하고, 소믈리에는 요리에 맞는 최적의 샴페인을 큐레이팅합니다. 서비스 팀은 모든 손님에게 잊지 못할 경험을 선사하기 위해 세심하게 준비합니다.',
+    teamDesc: 'RAWISM The Black의 팀은 각 분야 전문가들로 구성되어 있습니다. 셰프는 매일 새벽 최상급 한우를 직접 선별하고, 소믈리에는 요리에 맞는 최적의 샴페인을 큐레이팅합니다. 서비스 팀은 모든 손님에게 잊지 못할 경험을 선사하기 위해 세심하게 준비합니다.',
     
     valuesLabel: 'Values',
     valuesTitle: '핵심 가치',
@@ -118,16 +118,16 @@ const aboutTranslations: Record<Language, {
     ctaSubtitle: '8석 한정 예약제 프라이빗 다이닝'
   },
   en: {
-    pageTitle: 'ROWISM The Black Brand Story',
+    pageTitle: 'RAWISM The Black Brand Story',
     pageSubtitle: 'The philosophy and story behind Yeonnam-dong\'s premium champagne bar',
     backToHome: '← Back to Home',
     reserveCta: 'Book on Naver',
     
     storyLabel: 'Our Story',
-    storyTitle: 'The Aesthetics of RAW, ROWISM',
-    storyP1: 'ROWISM combines "RAW" meaning unprocessed, with "ism" representing philosophy and principle. Our philosophy is to deliver the authentic taste of premium ingredients in the purest way possible.',
-    storyP2: 'Opened in 2023 in a Yeonnam-dong alley, ROWISM The Black transcends being just a champagne bar—it\'s a space designed to craft sensory experiences. Using only same-day slaughtered Korean beef, we deliver freshness with body heat still intact.',
-    storyP3: 'Every dawn, we personally select the day\'s finest Korean beef and propose perfect pairings with sommelier-curated champagnes. We hope every moment at ROWISM The Black becomes a special memory.',
+    storyTitle: 'The Aesthetics of RAW, RAWISM',
+    storyP1: 'RAWISM combines "RAW" meaning unprocessed, with "ism" representing philosophy and principle. Our philosophy is to deliver the authentic taste of premium ingredients in the purest way possible.',
+    storyP2: 'Opened in 2023 in a Yeonnam-dong alley, RAWISM The Black transcends being just a champagne bar—it\'s a space designed to craft sensory experiences. Using only same-day slaughtered Korean beef, we deliver freshness with body heat still intact.',
+    storyP3: 'Every dawn, we personally select the day\'s finest Korean beef and propose perfect pairings with sommelier-curated champagnes. We hope every moment at RAWISM The Black becomes a special memory.',
     
     philosophyLabel: 'Philosophy',
     philosophyTitle: 'Our Philosophy',
@@ -156,7 +156,7 @@ const aboutTranslations: Record<Language, {
     
     spaceLabel: 'Space',
     spaceTitle: 'The Space',
-    spaceDesc: 'ROWISM The Black is a private dining space with only 8 seats. Just 5 minutes walk from Hongdae Station, hidden in a Yeonnam-dong alley, experience a special night.',
+    spaceDesc: 'RAWISM The Black is a private dining space with only 8 seats. Just 5 minutes walk from Hongdae Station, hidden in a Yeonnam-dong alley, experience a special night.',
     spaceFeatures: [
       { icon: '🪑', title: '8 Seats Only', desc: 'Optimal size for private dining' },
       { icon: '💡', title: 'Louis Poulsen', desc: 'Ambiance created by Danish luxury lighting' },
@@ -168,7 +168,7 @@ const aboutTranslations: Record<Language, {
     
     teamLabel: 'Team',
     teamTitle: 'Our Team',
-    teamDesc: 'The ROWISM The Black team consists of experts in their respective fields. Our chef personally selects the finest Korean beef every dawn, while our sommelier curates the perfect champagne for each dish. Our service team meticulously prepares to give every guest an unforgettable experience.',
+    teamDesc: 'The RAWISM The Black team consists of experts in their respective fields. Our chef personally selects the finest Korean beef every dawn, while our sommelier curates the perfect champagne for each dish. Our service team meticulously prepares to give every guest an unforgettable experience.',
     
     valuesLabel: 'Values',
     valuesTitle: 'Core Values',
@@ -183,16 +183,16 @@ const aboutTranslations: Record<Language, {
     ctaSubtitle: 'Private dining with only 8 seats, reservation required'
   },
   ja: {
-    pageTitle: 'ROWISM The Black ブランドストーリー',
-    pageSubtitle: '延南洞プレミアムシャンパンバーROWISMの哲学と物語',
+    pageTitle: 'RAWISM The Black ブランドストーリー',
+    pageSubtitle: '延南洞プレミアムシャンパンバーRAWISMの哲学と物語',
     backToHome: '← メインへ',
     reserveCta: 'Naver予約',
     
     storyLabel: 'Our Story',
-    storyTitle: '生の美学、ROWISM',
-    storyP1: 'ROWISMは「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。最高級食材本来の味を最も純粋な方法で届けることを哲学としています。',
-    storyP2: '2023年、延南洞の路地裏にオープンしたROWISM The Blackは、単なるシャンパンバーを超え、感覚の体験をデザインする空間です。当日屠畜された韓牛のみを使用し、体温が残る新鮮さをそのままお届けします。',
-    storyP3: '毎日夜明け、その日の最高級韓牛を直接選別し、ソムリエがキュレーションしたシャンパンとの完璧なペアリングを提案します。ROWISM The Blackでのすべての瞬間が特別な思い出となることを願っています。',
+    storyTitle: '生の美学、RAWISM',
+    storyP1: 'RAWISMは「生」を意味するRAWと「主義・哲学」を意味するismを組み合わせた名前です。最高級食材本来の味を最も純粋な方法で届けることを哲学としています。',
+    storyP2: '2023年、延南洞の路地裏にオープンしたRAWISM The Blackは、単なるシャンパンバーを超え、感覚の体験をデザインする空間です。当日屠畜された韓牛のみを使用し、体温が残る新鮮さをそのままお届けします。',
+    storyP3: '毎日夜明け、その日の最高級韓牛を直接選別し、ソムリエがキュレーションしたシャンパンとの完璧なペアリングを提案します。RAWISM The Blackでのすべての瞬間が特別な思い出となることを願っています。',
     
     philosophyLabel: 'Philosophy',
     philosophyTitle: '私たちの哲学',
@@ -221,7 +221,7 @@ const aboutTranslations: Record<Language, {
     
     spaceLabel: 'Space',
     spaceTitle: '空間の物語',
-    spaceDesc: 'ROWISM The Blackはわずか8席のプライベートダイニング空間です。弘大入口駅から徒歩5分、延南洞の路地裏に隠れたこの場所で特別な夜を体験してください。',
+    spaceDesc: 'RAWISM The Blackはわずか8席のプライベートダイニング空間です。弘大入口駅から徒歩5分、延南洞の路地裏に隠れたこの場所で特別な夜を体験してください。',
     spaceFeatures: [
       { icon: '🪑', title: '8席限定', desc: 'プライベートダイニングに最適な規模' },
       { icon: '💡', title: 'ルイスポールセン照明', desc: 'デンマークの名品照明が作る雰囲気' },
@@ -233,7 +233,7 @@ const aboutTranslations: Record<Language, {
     
     teamLabel: 'Team',
     teamTitle: 'チーム紹介',
-    teamDesc: 'ROWISM The Blackのチームは各分野の専門家で構成されています。シェフは毎日夜明け最高級韓牛を直接選別し、ソムリエは料理に合った最適なシャンパンをキュレーションします。サービスチームはすべてのお客様に忘れられない体験をお届けするため、細心の注意を払って準備します。',
+    teamDesc: 'RAWISM The Blackのチームは各分野の専門家で構成されています。シェフは毎日夜明け最高級韓牛を直接選別し、ソムリエは料理に合った最適なシャンパンをキュレーションします。サービスチームはすべてのお客様に忘れられない体験をお届けするため、細心の注意を払って準備します。',
     
     valuesLabel: 'Values',
     valuesTitle: '核心価値',
@@ -248,16 +248,16 @@ const aboutTranslations: Record<Language, {
     ctaSubtitle: '8席限定 予約制プライベートダイニング'
   },
   zh: {
-    pageTitle: 'ROWISM The Black 品牌故事',
-    pageSubtitle: '延南洞高级香槟吧ROWISM的哲学与故事',
+    pageTitle: 'RAWISM The Black 品牌故事',
+    pageSubtitle: '延南洞高级香槟吧RAWISM的哲学与故事',
     backToHome: '← 返回首页',
     reserveCta: 'Naver预订',
     
     storyLabel: 'Our Story',
-    storyTitle: '生食美学，ROWISM',
-    storyP1: 'ROWISM是将意味"生"的RAW与意味"主义·哲学"的ism结合而成的名字。我们的哲学是以最纯粹的方式传递顶级食材的原味。',
-    storyP2: '2023年在延南洞小巷开业的ROWISM The Black，不仅仅是一家香槟吧，更是一个设计感官体验的空间。仅使用当日屠宰的韩牛，传递保留体温的新鲜口感。',
-    storyP3: '每天凌晨，我们亲自挑选当日最顶级的韩牛，并由侍酒师策划与之完美搭配的香槟。希望在ROWISM The Black的每一刻都能成为特别的回忆。',
+    storyTitle: '生食美学，RAWISM',
+    storyP1: 'RAWISM是将意味"生"的RAW与意味"主义·哲学"的ism结合而成的名字。我们的哲学是以最纯粹的方式传递顶级食材的原味。',
+    storyP2: '2023年在延南洞小巷开业的RAWISM The Black，不仅仅是一家香槟吧，更是一个设计感官体验的空间。仅使用当日屠宰的韩牛，传递保留体温的新鲜口感。',
+    storyP3: '每天凌晨，我们亲自挑选当日最顶级的韩牛，并由侍酒师策划与之完美搭配的香槟。希望在RAWISM The Black的每一刻都能成为特别的回忆。',
     
     philosophyLabel: 'Philosophy',
     philosophyTitle: '我们的哲学',
@@ -286,7 +286,7 @@ const aboutTranslations: Record<Language, {
     
     spaceLabel: 'Space',
     spaceTitle: '空间故事',
-    spaceDesc: 'ROWISM The Black是仅有8席的私密用餐空间。从弘大入口站步行5分钟，隐藏在延南洞小巷中，在此体验特别的夜晚。',
+    spaceDesc: 'RAWISM The Black是仅有8席的私密用餐空间。从弘大入口站步行5分钟，隐藏在延南洞小巷中，在此体验特别的夜晚。',
     spaceFeatures: [
       { icon: '🪑', title: '仅8席', desc: '私密用餐的最佳规模' },
       { icon: '💡', title: 'Louis Poulsen灯光', desc: '丹麦名品灯具营造的氛围' },
@@ -298,7 +298,7 @@ const aboutTranslations: Record<Language, {
     
     teamLabel: 'Team',
     teamTitle: '团队介绍',
-    teamDesc: 'ROWISM The Black团队由各领域专家组成。主厨每天凌晨亲自挑选最顶级的韩牛，侍酒师策划与料理相配的最佳香槟。服务团队精心准备，为每位客人带来难忘的体验。',
+    teamDesc: 'RAWISM The Black团队由各领域专家组成。主厨每天凌晨亲自挑选最顶级的韩牛，侍酒师策划与料理相配的最佳香槟。服务团队精心准备，为每位客人带来难忘的体验。',
     
     valuesLabel: 'Values',
     valuesTitle: '核心价值',
@@ -342,7 +342,7 @@ export const AboutPage: FC<{ lang: Language }> = ({ lang }) => {
           <a href={`${basePath}/`} class="group">
             <img 
               src="/static/logo.png" 
-              alt="ROWISM The Black" 
+              alt="RAWISM The Black" 
               class="h-8 md:h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
             />
           </a>
@@ -466,7 +466,7 @@ export const AboutPage: FC<{ lang: Language }> = ({ lang }) => {
               <div class="aspect-[4/5] bg-soft-black overflow-hidden">
                 <img 
                   src="/static/menu_signature.jpg" 
-                  alt="ROWISM The Black Interior"
+                  alt="RAWISM The Black Interior"
                   class="w-full h-full object-cover opacity-80"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/50 to-transparent"></div>
@@ -534,7 +534,7 @@ export const AboutPage: FC<{ lang: Language }> = ({ lang }) => {
       <footer class="py-12 bg-deep-black border-t border-white/5">
         <div class="max-w-6xl mx-auto px-8 md:px-12 text-center">
           <p class="text-off-white/15 text-[10px] tracking-[0.3em]">
-            © 2024 ROWISM The Black
+            © 2024 RAWISM The Black
           </p>
         </div>
       </footer>

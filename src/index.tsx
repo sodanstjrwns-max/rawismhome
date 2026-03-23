@@ -2,8 +2,12 @@ import { Hono } from 'hono'
 import { createRenderer } from './renderer'
 import { createMenuRenderer } from './renderers/menuRenderer'
 import { createAboutRenderer } from './renderers/aboutRenderer'
+import { createWineListRenderer, createWineDetailRenderer } from './renderers/wineColumnRenderer'
 import { MenuPage } from './pages/MenuPage'
 import { AboutPage } from './pages/AboutPage'
+import { WineColumnListPage } from './pages/WineColumnListPage'
+import { WineColumnDetailPage } from './pages/WineColumnDetailPage'
+import { allWineColumns, getColumnBySlug } from './data'
 
 const app = new Hono()
 
@@ -56,6 +60,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="hidden lg:flex items-center gap-8">
             <a href={`${basePath}#philosophy`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.philosophy">Philosophy</a>
             <a href={`${basePath}#menu`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.menu">Menu</a>
+            <a href="/wine" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Wine Guide</a>
             <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.recommend">추천</a>
             <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.location">Location</a>
             <a href={`${basePath}#reserve`} class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500" data-i18n="nav.reservation">
@@ -91,6 +96,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="px-8 py-8 flex flex-col gap-6">
             <a href={`${basePath}#philosophy`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.philosophy">Philosophy</a>
             <a href={`${basePath}#menu`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.menu">Menu</a>
+            <a href="/wine" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Wine Guide</a>
             <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.recommend">추천</a>
             <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.location">Location</a>
             <div class="pt-4 border-t border-white/5">
@@ -938,6 +944,20 @@ app.get('/sitemap.xml', async (c) => {
     <lastmod>2026-02-06</lastmod>
     <priority>0.7</priority>
   </url>
+  <!-- Wine Column Index Page -->
+  <url>
+    <loc>https://rawism.kr/wine</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Wine Column Articles (32 articles) -->
+  ${allWineColumns.map(a => `  <url>
+    <loc>https://rawism.kr/wine/${a.slug}</loc>
+    <lastmod>${a.date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join('\n')}
 </urlset>`
   return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
 })
@@ -1206,6 +1226,25 @@ app.get('/ja/about', (c) => {
 app.use('/zh/about', createAboutRenderer('zh'))
 app.get('/zh/about', (c) => {
   return c.render(<AboutPage lang="zh" />)
+})
+
+// ===========================================
+// WINE COLUMN ROUTES - /wine, /wine/:slug
+// ===========================================
+
+// Wine Column List - /wine
+app.use('/wine', createWineListRenderer())
+app.get('/wine', (c) => {
+  return c.render(<WineColumnListPage />)
+})
+
+// Wine Column Detail - Pre-register each article as a static route
+// This ensures proper JSX rendering via c.render() with per-article SEO
+allWineColumns.forEach(article => {
+  app.use(`/wine/${article.slug}`, createWineDetailRenderer(article))
+  app.get(`/wine/${article.slug}`, (c) => {
+    return c.render(<WineColumnDetailPage article={article} />)
+  })
 })
 
 // ============================================

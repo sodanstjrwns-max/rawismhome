@@ -510,6 +510,49 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
         </div>
       </section>
 
+      {/* Wine Column Cross-Links - 메뉴↔칼럼 내부 링크 */}
+      <section class="py-20 md:py-28 bg-soft-black/30 border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-8 md:px-12">
+          <div class="text-center mb-12">
+            <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-3">Wine Guide</p>
+            <h2 class="font-playfair text-2xl md:text-3xl font-light tracking-wide mb-3">
+              {lang === 'ko' ? '소믈리에의 페어링 가이드' : lang === 'ja' ? 'ソムリエのペアリングガイド' : lang === 'zh' ? '侍酒师的搭配指南' : 'Sommelier Pairing Guide'}
+            </h2>
+            <p class="text-off-white/40 text-sm font-light">
+              {lang === 'ko' ? '메뉴를 200% 즐기는 와인·샴페인 칼럼' : lang === 'ja' ? 'メニューを200%楽しむワイン・シャンパンコラム' : lang === 'zh' ? '200%享受菜单的葡萄酒·香槟专栏' : 'Wine & Champagne columns to enjoy our menu 200%'}
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-4">
+            <a href="/wine/mungtige-champagne-pairing" class="group block bg-deep-black border border-white/5 p-6 hover:border-champagne/20 transition-all duration-500">
+              <span class="text-[9px] tracking-wider uppercase text-champagne/50">Pairing</span>
+              <h3 class="font-noto-serif text-[15px] text-off-white/85 group-hover:text-champagne transition-colors mt-2 mb-2 leading-snug">
+                {lang === 'ko' ? '한우 뭉티기와 샴페인, 왜 찰떡일까?' : lang === 'ja' ? '韓牛ムンティギとシャンパン、なぜ相性抜群？' : lang === 'zh' ? '韩牛肉脍配香槟，为何天生一对？' : 'Hanwoo Tartare & Champagne — Why Perfect?'}
+              </h3>
+              <span class="text-[10px] text-champagne/40 group-hover:text-champagne transition-colors">Read →</span>
+            </a>
+            <a href="/wine/burrata-wine-pairing" class="group block bg-deep-black border border-white/5 p-6 hover:border-champagne/20 transition-all duration-500">
+              <span class="text-[9px] tracking-wider uppercase text-champagne/50">Pairing</span>
+              <h3 class="font-noto-serif text-[15px] text-off-white/85 group-hover:text-champagne transition-colors mt-2 mb-2 leading-snug">
+                {lang === 'ko' ? '부라타 치즈와 와인 페어링의 정석' : lang === 'ja' ? 'ブッラータチーズとワインペアリングの定石' : lang === 'zh' ? '布拉塔奶酪与葡萄酒搭配的正解' : 'Burrata & Wine — The Perfect Match'}
+              </h3>
+              <span class="text-[10px] text-champagne/40 group-hover:text-champagne transition-colors">Read →</span>
+            </a>
+            <a href="/wine/first-champagne-recommendations" class="group block bg-deep-black border border-white/5 p-6 hover:border-champagne/20 transition-all duration-500">
+              <span class="text-[9px] tracking-wider uppercase text-champagne/50">Basics</span>
+              <h3 class="font-noto-serif text-[15px] text-off-white/85 group-hover:text-champagne transition-colors mt-2 mb-2 leading-snug">
+                {lang === 'ko' ? '처음 마시는 샴페인 추천 5가지' : lang === 'ja' ? '初めて飲むシャンパンおすすめ5選' : lang === 'zh' ? '首次品尝推荐的5款香槟' : 'Top 5 Champagnes for Beginners'}
+              </h3>
+              <span class="text-[10px] text-champagne/40 group-hover:text-champagne transition-colors">Read →</span>
+            </a>
+          </div>
+          <div class="text-center mt-8">
+            <a href="/wine" class="text-[11px] tracking-[0.2em] uppercase text-champagne/50 hover:text-champagne transition-colors border-b border-champagne/20 pb-1">
+              {lang === 'ko' ? '와인 칼럼 전체보기 →' : lang === 'ja' ? 'ワインコラム一覧 →' : lang === 'zh' ? '查看全部葡萄酒专栏 →' : 'View All Wine Columns →'}
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section class="py-24 md:py-32 bg-soft-black/30 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-champagne/5 via-transparent to-champagne/5"></div>

@@ -70,6 +70,45 @@ export const WineColumnDetailPage: FC<Props> = ({ article }) => {
         </div>
       </article>
 
+      {/* Inline CTA Banner - 칼럼→예약 전환 */}
+      <section class="py-12 md:py-16 border-t border-white/5 bg-gradient-to-r from-champagne/[0.03] via-transparent to-champagne/[0.03]">
+        <div class="max-w-3xl mx-auto px-6 md:px-12">
+          <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+            <div class="flex-1 text-center md:text-left">
+              <p class="text-champagne/60 text-[10px] tracking-[0.3em] uppercase mb-2">Experience at RAWISM</p>
+              <p class="font-noto-serif text-base md:text-lg text-off-white/70 font-light leading-relaxed">
+                {article.categorySlug === 'pairing-guide' 
+                  ? '이 칼럼의 페어링을 RAWISM The Black에서 직접 경험해보세요. 소믈리에가 추천하는 최적의 조합을 만나실 수 있습니다.' 
+                  : article.categorySlug === 'champagne-basics' || article.categorySlug === 'premium-selection'
+                  ? '칼럼에서 읽은 샴페인을 RAWISM The Black에서 잔으로 만나보세요. 소믈리에가 큐레이팅한 프리미엄 셀렉션이 기다립니다.'
+                  : '읽는 것에서 그치지 마세요. RAWISM The Black에서 와인과 한우의 완벽한 조화를 직접 경험해보세요.'}
+              </p>
+            </div>
+            <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener" 
+               class="shrink-0 inline-flex items-center gap-2 px-8 py-3.5 bg-champagne/10 border border-champagne/30 text-champagne hover:bg-champagne/20 transition-all duration-500">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/>
+              </svg>
+              <span class="text-[11px] tracking-[0.15em] uppercase font-medium">예약하기</span>
+            </a>
+          </div>
+          {/* Cross-links to related menu items */}
+          {(article.categorySlug === 'pairing-guide') && (
+            <div class="mt-6 pt-6 border-t border-white/5 flex flex-wrap gap-3 justify-center md:justify-start">
+              <a href="/menu" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
+                🥩 시그니처 메뉴 보기
+              </a>
+              <a href="/wine" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
+                🍷 와인 칼럼 전체보기
+              </a>
+              <a href="/gallery" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
+                📸 갤러리
+              </a>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* FAQ Section */}
       {article.faq && article.faq.length > 0 && (
         <section class="py-16 md:py-20 border-t border-white/5 bg-soft-black/20">

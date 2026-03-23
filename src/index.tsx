@@ -3,10 +3,14 @@ import { createRenderer } from './renderer'
 import { createMenuRenderer } from './renderers/menuRenderer'
 import { createAboutRenderer } from './renderers/aboutRenderer'
 import { createWineListRenderer, createWineDetailRenderer } from './renderers/wineColumnRenderer'
+import { createGalleryRenderer } from './renderers/galleryRenderer'
+import { createBlogRenderer } from './renderers/blogRenderer'
 import { MenuPage } from './pages/MenuPage'
 import { AboutPage } from './pages/AboutPage'
 import { WineColumnListPage } from './pages/WineColumnListPage'
 import { WineColumnDetailPage } from './pages/WineColumnDetailPage'
+import { GalleryPage } from './pages/GalleryPage'
+import { BlogPage } from './pages/BlogPage'
 import { allWineColumns, getColumnBySlug } from './data'
 
 const app = new Hono()
@@ -61,6 +65,8 @@ function PageContent({ lang }: { lang: Language }) {
             <a href={`${basePath}#philosophy`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.philosophy">Philosophy</a>
             <a href={`${basePath}#menu`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.menu">Menu</a>
             <a href="/wine" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Wine Guide</a>
+            <a href="/gallery" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Gallery</a>
+            <a href="/blog" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Blog</a>
             <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.recommend">추천</a>
             <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.location">Location</a>
             <a href={`${basePath}#reserve`} class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500" data-i18n="nav.reservation">
@@ -97,6 +103,8 @@ function PageContent({ lang }: { lang: Language }) {
             <a href={`${basePath}#philosophy`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.philosophy">Philosophy</a>
             <a href={`${basePath}#menu`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.menu">Menu</a>
             <a href="/wine" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Wine Guide</a>
+            <a href="/gallery" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Gallery</a>
+            <a href="/blog" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Blog</a>
             <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.recommend">추천</a>
             <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.location">Location</a>
             <div class="pt-4 border-t border-white/5">
@@ -944,6 +952,40 @@ app.get('/sitemap.xml', async (c) => {
     <lastmod>2026-02-06</lastmod>
     <priority>0.7</priority>
   </url>
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://rawism.kr/gallery</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rawism.kr/static/menu_signature.jpg</image:loc>
+      <image:title>RAWISM 시그니처 트러플 한우 뭉티기</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/menu_yukhoe.jpg</image:loc>
+      <image:title>RAWISM 청양 오일 육회</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/menu_cheese.jpg</image:loc>
+      <image:title>RAWISM 치즈 셀렉션</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/menu_caprese.jpg</image:loc>
+      <image:title>RAWISM 아보카도 카프레제</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/menu_memil.jpg</image:loc>
+      <image:title>RAWISM 들기름 육회 메밀면</image:title>
+    </image:image>
+  </url>
+  <!-- Blog Hub Page -->
+  <url>
+    <loc>https://rawism.kr/blog</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Wine Column Index Page -->
   <url>
     <loc>https://rawism.kr/wine</loc>
@@ -972,40 +1014,52 @@ Crawl-delay: 1`
   return c.text(robots, 200, { 'Content-Type': 'text/plain' })
 })
 
-// RSS Feed - 네이버 표준 RSS 2.0
+// RSS Feed - 네이버 표준 RSS 2.0 (와인 칼럼 32편 포함)
 app.get('/rss.xml', (c) => {
+  const wineItems = allWineColumns.map(a => {
+    const d = new Date(a.date)
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+    const pubDate = `${days[d.getUTCDay()]}, ${String(d.getUTCDate()).padStart(2,'0')} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()} 09:00:00 +0900`
+    return `    <item>
+      <title>${a.title}</title>
+      <link>https://rawism.kr/wine/${a.slug}</link>
+      <description>${a.description}</description>
+      <category>${a.category}</category>
+      <pubDate>${pubDate}</pubDate>
+      <guid>https://rawism.kr/wine/${a.slug}</guid>
+    </item>`
+  }).join('\n')
+
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RAWISM The Black</title>
+    <title>RAWISM The Black — 와인 칼럼 &amp; 다이닝 가이드</title>
     <link>https://rawism.kr</link>
-    <description>연남동 프리미엄 샴페인바. 당일 도축 한우 뭉티기와 샴페인을 함께 즐기는 다이닝 공간.</description>
+    <description>연남동 프리미엄 샴페인바 RAWISM. 소믈리에가 전하는 와인·샴페인 칼럼과 한우 페어링 가이드.</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://rawism.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://rawism.kr/static/logo.png</url>
+      <title>RAWISM The Black</title>
+      <link>https://rawism.kr</link>
+    </image>
     <item>
       <title>트러플 한우 뭉티기 부라타 - RAWISM 시그니처 메뉴</title>
       <link>https://rawism.kr/menu</link>
       <description>당일 도축 온도체 한우 뭉티기와 이탈리아 부라타 치즈, 움브리아산 블랙 트러플의 완벽한 조화. 69,000원</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/menu#signature</guid>
     </item>
     <item>
       <title>RAWISM The Black 브랜드 스토리 - 날것의 철학</title>
       <link>https://rawism.kr/about</link>
       <description>RAWISM은 Raw와 ism의 조합입니다. 재료 본연의 맛을 극대화하는 미니멀리즘 요리 철학을 추구합니다.</description>
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/about</guid>
     </item>
-    <item>
-      <title>RAWISM 메뉴 - 5가지 시그니처 요리</title>
-      <link>https://rawism.kr/menu</link>
-      <description>트러플 한우 뭉티기 69,000원, 치즈 셀렉션 35,000원, 청양 오일 육회 25,000원, 아보카도 카프레제 23,000원, 들기름 육회 메밀면 15,000원</description>
-      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>RAWISM The Black 오시는 길 - 연남동 동교로</title>
-      <link>https://rawism.kr</link>
-      <description>서울특별시 마포구 동교로 262-4. 홍대입구역 3번 출구 도보 7분. 영업시간 화-일 18:00-24:00. 예약 070-5100-5534</description>
-      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
+${wineItems}
   </channel>
 </rss>`
   return c.text(rss, 200, { 
@@ -1013,40 +1067,47 @@ app.get('/rss.xml', (c) => {
   })
 })
 
-// RSS Feed - English
+// RSS Feed - English (with wine column links)
 app.get('/en/rss.xml', (c) => {
+  const wineItems = allWineColumns.slice(0, 10).map(a => `    <item>
+      <title>${a.title} — RAWISM Wine Column</title>
+      <link>https://rawism.kr/wine/${a.slug}</link>
+      <description>${a.description}</description>
+      <category>${a.category}</category>
+      <guid>https://rawism.kr/wine/${a.slug}</guid>
+    </item>`).join('\n')
+
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RAWISM The Black - Seoul Yeonnam-dong</title>
     <link>https://rawism.kr/en</link>
     <description>Premium champagne bar in Yeonnam-dong, Seoul. Fresh Hanwoo beef tartare with Italian burrata and black truffle.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://rawism.kr/en/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Truffle Hanwoo Tartare Burrata - Signature Dish</title>
       <link>https://rawism.kr/en/menu</link>
       <description>Same-day slaughtered Hanwoo beef tartare with Italian burrata cheese and Umbrian black truffle. 69,000 KRW</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/en/menu#signature</guid>
     </item>
     <item>
       <title>RAWISM The Black Brand Story - Philosophy of Raw</title>
       <link>https://rawism.kr/en/about</link>
       <description>RAWISM combines Raw and ism. We pursue minimalist culinary philosophy that maximizes the natural flavor of ingredients.</description>
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/en/about</guid>
     </item>
     <item>
-      <title>RAWISM Menu - 5 Signature Dishes</title>
-      <link>https://rawism.kr/en/menu</link>
-      <description>Truffle Hanwoo Tartare 69,000 KRW, Cheese Selection 35,000 KRW, Cheongyang Oil Yukhoe 25,000 KRW, Avocado Caprese 23,000 KRW, Perilla Oil Yukhoe Buckwheat 15,000 KRW</description>
-      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
+      <title>RAWISM Wine Guide - 32 Columns by Our Sommelier</title>
+      <link>https://rawism.kr/wine</link>
+      <description>Champagne basics, wine 101, Hanwoo pairing guide, premium selections, and more. Expert wine knowledge from RAWISM's sommelier.</description>
+      <pubDate>Mon, 23 Mar 2026 09:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/wine</guid>
     </item>
-    <item>
-      <title>RAWISM The Black Location - Yeonnam-dong Seoul</title>
-      <link>https://rawism.kr/en</link>
-      <description>262-4 Donggyo-ro, Mapo-gu, Seoul. 7 min walk from Hongdae Station Exit 3. Hours: Tue-Sun 18:00-24:00. Reservation: 070-5100-5534</description>
-      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
+${wineItems}
   </channel>
 </rss>`
   return c.text(rss, 200, { 
@@ -1054,39 +1115,30 @@ app.get('/en/rss.xml', (c) => {
   })
 })
 
-// RSS Feed - Japanese
+// RSS Feed - Japanese (with wine column links)
 app.get('/ja/rss.xml', (c) => {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RAWISM The Black - ソウル延南洞</title>
     <link>https://rawism.kr/ja</link>
     <description>延南洞プレミアムシャンパンバー。当日屠畜の韓牛ムンティギとシャンパンを楽しむダイニング空間。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://rawism.kr/ja/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>トリュフ韓牛ムンティギ ブッラータ - シグネチャーメニュー</title>
       <link>https://rawism.kr/ja/menu</link>
       <description>当日屠畜の韓牛ムンティギとイタリア産ブッラータチーズ、ウンブリア産ブラックトリュフの完璧な調和。69,000ウォン</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/ja/menu#signature</guid>
     </item>
     <item>
-      <title>RAWISM The Black ブランドストーリー - 生の哲学</title>
-      <link>https://rawism.kr/ja/about</link>
-      <description>RAWISMはRawとismの組み合わせです。素材本来の味を最大化するミニマリズム料理哲学を追求します。</description>
-      <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>RAWISMメニュー - 5つのシグネチャー料理</title>
-      <link>https://rawism.kr/ja/menu</link>
-      <description>トリュフ韓牛ムンティギ 69,000ウォン、チーズセレクション 35,000ウォン、チョンヤンオイルユッケ 25,000ウォン</description>
-      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>RAWISM The Black アクセス - 延南洞東橋路</title>
-      <link>https://rawism.kr/ja</link>
-      <description>ソウル特別市麻浦区東橋路262-4。弘大入口駅3番出口から徒歩7分。営業時間 火-日 18:00-24:00。予約 070-5100-5534</description>
-      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
+      <title>RAWISMワインガイド - ソムリエが伝える32のコラム</title>
+      <link>https://rawism.kr/wine</link>
+      <description>シャンパンの基礎、ワイン入門、韓牛ペアリングガイド、プレミアムセレクションなど。RAWISMソムリエのワイン知識。</description>
+      <pubDate>Mon, 23 Mar 2026 09:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/wine</guid>
     </item>
   </channel>
 </rss>`
@@ -1095,39 +1147,30 @@ app.get('/ja/rss.xml', (c) => {
   })
 })
 
-// RSS Feed - Chinese
+// RSS Feed - Chinese (with wine column links)
 app.get('/zh/rss.xml', (c) => {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RAWISM The Black - 首尔延南洞</title>
     <link>https://rawism.kr/zh</link>
     <description>延南洞高级香槟吧。当日屠宰韩牛肉脍与香槟共享的用餐空间。</description>
     <language>zh</language>
-    <lastBuildDate>Fri, 07 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://rawism.kr/zh/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>松露韩牛肉脍布拉塔 - 招牌菜品</title>
       <link>https://rawism.kr/zh/menu</link>
       <description>当日屠宰韩牛肉脍配意大利布拉塔奶酪和翁布里亚黑松露的完美搭配。69,000韩元</description>
       <pubDate>Fri, 07 Feb 2026 00:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/zh/menu#signature</guid>
     </item>
     <item>
-      <title>RAWISM The Black 品牌故事 - 生食哲学</title>
-      <link>https://rawism.kr/zh/about</link>
-      <description>RAWISM是Raw和ism的结合。我们追求最大化食材原味的极简主义烹饪哲学。</description>
-      <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>RAWISM菜单 - 5道招牌菜</title>
-      <link>https://rawism.kr/zh/menu</link>
-      <description>松露韩牛肉脍 69,000韩元、奶酪拼盘 35,000韩元、青阳油拌生牛肉 25,000韩元</description>
-      <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>RAWISM The Black 交通指南 - 延南洞东桥路</title>
-      <link>https://rawism.kr/zh</link>
-      <description>首尔特别市麻浦区东桥路262-4。弘大入口站3号出口步行7分钟。营业时间 周二至周日 18:00-24:00。预约 070-5100-5534</description>
-      <pubDate>Tue, 04 Feb 2026 00:00:00 +0900</pubDate>
+      <title>RAWISM葡萄酒指南 - 侍酒师带来的32篇专栏</title>
+      <link>https://rawism.kr/wine</link>
+      <description>香槟基础、葡萄酒入门、韩牛搭配指南、精选推荐等。来自RAWISM侍酒师的葡萄酒知识。</description>
+      <pubDate>Mon, 23 Mar 2026 09:00:00 +0900</pubDate>
+      <guid>https://rawism.kr/wine</guid>
     </item>
   </channel>
 </rss>`
@@ -1245,6 +1288,22 @@ allWineColumns.forEach(article => {
   app.get(`/wine/${article.slug}`, (c) => {
     return c.render(<WineColumnDetailPage article={article} />)
   })
+})
+
+// ===========================================
+// GALLERY PAGE ROUTE - /gallery
+// ===========================================
+app.use('/gallery', createGalleryRenderer())
+app.get('/gallery', (c) => {
+  return c.render(<GalleryPage />)
+})
+
+// ===========================================
+// BLOG HUB ROUTE - /blog
+// ===========================================
+app.use('/blog', createBlogRenderer())
+app.get('/blog', (c) => {
+  return c.render(<BlogPage />)
 })
 
 // ============================================

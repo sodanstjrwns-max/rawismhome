@@ -14,28 +14,28 @@ const menuSeoData: Record<Language, {
   ko: {
     lang: 'ko',
     title: '메뉴 | RAWISM The Black | 연남동 샴페인바 트러플 한우 뭉티기',
-    description: 'RAWISM The Black 메뉴 - 당일 도축 온도체 한우 뭉티기, 부라타 치즈, 블랙 트러플의 시그니처 요리. 제비추리, 청양 오일 육회, 치즈 셀렉션. 연남동 프리미엄 샴페인바.',
-    keywords: '연남동 메뉴, 한우 뭉티기 가격, 트러플 육회, 연남동 샴페인바 메뉴, 홍대 한우 가격, 부라타 치즈, 제비추리, 육회 메밀면, RAWISM 메뉴, 연남동 맛집 메뉴판',
+    description: 'RAWISM The Black 메뉴 - 당일 도축 온도체 한우 뭉티기, 부라타 치즈, 블랙 트러플의 시그니처 요리. 청양 오일 육회, 치즈 셀렉션. 연남동 프리미엄 샴페인바.',
+    keywords: '연남동 메뉴, 한우 뭉티기 가격, 트러플 육회, 연남동 샴페인바 메뉴, 홍대 한우 가격, 부라타 치즈, 육회 메밀면, RAWISM 메뉴, 연남동 맛집 메뉴판',
     ogDescription: '당일 도축 온도체 한우 뭉티기와 샴페인 페어링. RAWISM The Black 시그니처 메뉴를 확인하세요.'
   },
   en: {
     lang: 'en',
     title: 'Menu | RAWISM The Black | Seoul Yeonnam-dong Champagne Bar',
-    description: 'RAWISM The Black Menu - Same-day slaughtered Korean beef tartare with burrata cheese and black truffle. Jebichuri, Cheongyang oil yukhoe, cheese selection. Premium champagne bar in Yeonnam-dong.',
+    description: 'RAWISM The Black Menu - Same-day slaughtered Korean beef tartare with burrata cheese and black truffle. Cheongyang oil yukhoe, cheese selection. Premium champagne bar in Yeonnam-dong.',
     keywords: 'Yeonnam menu, Korean beef tartare price, truffle yukhoe, Seoul champagne bar menu, Hongdae beef price, burrata cheese, RAWISM menu, Seoul restaurant menu',
     ogDescription: 'Same-day slaughtered Korean beef tartare with champagne pairing. Check out RAWISM The Black signature menu.'
   },
   ja: {
     lang: 'ja',
     title: 'メニュー | RAWISM The Black | ソウル延南洞シャンパンバー',
-    description: 'RAWISM The Black メニュー - 当日屠畜韓牛タルタル、ブッラータチーズ、ブラックトリュフのシグネチャー料理。ジェビチュリ、青陽オイルユッケ、チーズセレクション。延南洞プレミアムシャンパンバー。',
+    description: 'RAWISM The Black メニュー - 当日屠畜韓牛タルタル、ブッラータチーズ、ブラックトリュフのシグネチャー料理。青陽オイルユッケ、チーズセレクション。延南洞プレミアムシャンパンバー。',
     keywords: '延南洞メニュー, 韓牛タルタル価格, トリュフユッケ, ソウルシャンパンバーメニュー, 弘大韓牛価格, ブッラータチーズ, RAWISMメニュー',
     ogDescription: '当日屠畜韓牛タルタルとシャンパンペアリング。RAWISM The Blackシグネチャーメニューをご確認ください。'
   },
   zh: {
     lang: 'zh',
     title: '菜单 | RAWISM The Black | 首尔延南洞香槟吧',
-    description: 'RAWISM The Black 菜单 - 当日屠宰韩牛肉脍配布拉塔奶酪和黑松露的招牌菜。牛肩肉、青阳油拌生牛肉、奶酪拼盘。延南洞高级香槟吧。',
+    description: 'RAWISM The Black 菜单 - 当日屠宰韩牛肉脍配布拉塔奶酪和黑松露的招牌菜。青阳油拌生牛肉、奶酪拼盘。延南洞高级香槟吧。',
     keywords: '延南洞菜单, 韩牛肉脍价格, 松露生拌, 首尔香槟吧菜单, 弘大韩牛价格, 布拉塔奶酪, RAWISM菜单',
     ogDescription: '当日屠宰韩牛肉脍与香槟搭配。查看RAWISM The Black招牌菜单。'
   }
@@ -199,17 +199,6 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                 "position": 2,
                 "item": {
                   "@type": "MenuItem",
-                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
-                  "description": pageLang === 'ko' ? "한우 제비추리와 8종 제철 채소의 그릴 향연" : pageLang === 'ja' ? "韓牛ジェビチュリと8種の旬野菜のグリル馂宴" : pageLang === 'zh' ? "韩牛肩肉与8种时令蔬菜的烧烤盛宴" : "Grilled Hanwoo Jebichuri with 8 seasonal vegetables",
-                  "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" },
-                  "image": "https://rawism.kr/static/menu_jebichuri.jpg"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                  "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
                   "description": pageLang === 'ko' ? "소미리에가 큐레이팅한 6종 치즈 커펙션" : pageLang === 'ja' ? "ソムリエがキュレーションした6種チーズコレクション" : pageLang === 'zh' ? "侍酒师精选6种奶酪系列" : "6 cheeses curated by sommelier",
                   "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "KRW" },
@@ -218,7 +207,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
               },
               {
                 "@type": "ListItem",
-                "position": 4,
+                "position": 3,
                 "item": {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe",
@@ -229,7 +218,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
               },
               {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 4,
                 "item": {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese",
@@ -240,7 +229,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
               },
               {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 5,
                 "item": {
                   "@type": "MenuItem",
                   "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles",
@@ -284,11 +273,6 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                 "@type": "MenuSection",
                 "name": pageLang === 'ko' ? "한우 요리" : pageLang === 'ja' ? "韓牛料理" : pageLang === 'zh' ? "韩牛料理" : "Hanwoo Dishes",
                 "hasMenuItem": [
-                  {
-                    "@type": "MenuItem",
-                    "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
-                    "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" }
-                  },
                   {
                     "@type": "MenuItem",
                     "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe",

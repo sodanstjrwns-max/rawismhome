@@ -131,10 +131,6 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <meta property="og:image" content="https://rawism.kr/static/menu_signature.jpg" />
           <meta property="og:image:alt" content="로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기 부라타치즈" />
           
-          {/* 추가 OG 이미지들 - 제비추리 */}
-          <meta property="og:image" content="https://rawism.kr/static/menu_jebichuri.jpg" />
-          <meta property="og:image:alt" content="제비추리 그릴드 베지터블 - 한우 제비추리와 8종 제철 채소" />
-          
           {/* 추가 OG 이미지들 - 치즈 */}
           <meta property="og:image" content="https://rawism.kr/static/menu_cheese.jpg" />
           <meta property="og:image:alt" content="치즈 셀렉션 - 소믈리에 큐레이팅 6종 치즈" />
@@ -249,7 +245,6 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               "https://rawism.kr/static/og-image.jpg",
               "https://rawism.kr/static/logo.png",
               "https://rawism.kr/static/menu_signature.jpg",
-              "https://rawism.kr/static/menu_jebichuri.jpg",
               "https://rawism.kr/static/menu_cheese.jpg",
               "https://rawism.kr/static/menu_yukhoe.jpg",
               "https://rawism.kr/static/menu_caprese.jpg",
@@ -549,17 +544,6 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                     },
                     "image": "https://rawism.kr/static/menu_yukhoe.jpg"
                   },
-                  {
-                    "@type": "MenuItem",
-                    "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
-                    "description": pageLang === 'ko' ? "한우 제비추리와 8종 제철 채소" : pageLang === 'ja' ? "韓牛ジェビチュリと8種の旬野菜" : pageLang === 'zh' ? "韩牛肩肉配8种时令蔬菜" : "Hanwoo Jebichuri with 8 seasonal vegetables",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "39000",
-                      "priceCurrency": "KRW"
-                    },
-                    "image": "https://rawism.kr/static/menu_jebichuri.jpg"
-                  }
                 ]
               },
               {
@@ -747,16 +731,6 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                 "position": 3,
                 "item": {
                   "@type": "Product",
-                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables",
-                  "image": "https://rawism.kr/static/menu_jebichuri.jpg",
-                  "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" }
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
-                "item": {
-                  "@type": "Product",
                   "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection",
                   "image": "https://rawism.kr/static/menu_cheese.jpg",
                   "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "KRW" }
@@ -764,7 +738,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               },
               {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 4,
                 "item": {
                   "@type": "Product",
                   "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese",
@@ -774,7 +748,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               },
               {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 5,
                 "item": {
                   "@type": "Product",
                   "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles",
@@ -1037,11 +1011,6 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               },
               {
                 "@type": "ImageObject",
-                "contentUrl": "https://rawism.kr/static/menu_jebichuri.jpg",
-                "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
-              },
-              {
-                "@type": "ImageObject",
                 "contentUrl": "https://rawism.kr/static/menu_cheese.jpg",
                 "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
               },
@@ -1088,7 +1057,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
             "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
             "mainEntity": {
               "@type": "ItemList",
-              "numberOfItems": 6,
+              "numberOfItems": 5,
               "itemListElement": [
                 {
                   "@type": "ListItem",
@@ -1100,29 +1069,23 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                   "@type": "ListItem",
                   "position": 2,
                   "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
-                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
+                  "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
-                  "name": pageLang === 'ko' ? "치즈 셀렉션" : pageLang === 'ja' ? "チーズセレクション" : pageLang === 'zh' ? "奶酪拼盘" : "Cheese Selection"
+                  "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe"
                 },
                 {
                   "@type": "ListItem",
                   "position": 4,
                   "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
-                  "name": pageLang === 'ko' ? "청양 오일 육회" : pageLang === 'ja' ? "青陽オイル ユッケ" : pageLang === 'zh' ? "青阳油拌生牛肉" : "Cheongyang Oil Yukhoe"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 5,
-                  "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
                   "name": pageLang === 'ko' ? "아보카도 카프레제" : pageLang === 'ja' ? "アボカド カプレーゼ" : pageLang === 'zh' ? "牛油果卡普雷塞" : "Avocado Caprese"
                 },
                 {
                   "@type": "ListItem",
-                  "position": 6,
+                  "position": 5,
                   "url": `https://rawism.kr${getLangPath(pageLang)}#menu`,
                   "name": pageLang === 'ko' ? "들기름 육회 메밀면" : pageLang === 'ja' ? "エゴマ油 ユッケ 蕎麦麺" : pageLang === 'zh' ? "紫苏油生牛肉荞麦面" : "Perilla Oil Yukhoe Buckwheat Noodles"
                 }
@@ -1209,16 +1172,6 @@ export const createRenderer = (pageLang: Language = 'ko') => {
                 "priceCurrency": "KRW",
                 "availability": "https://schema.org/InStock",
                 "validFrom": "2024-01-01"
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "MenuItem",
-                  "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : pageLang === 'ja' ? "ジェビチュリ グリル野菜" : pageLang === 'zh' ? "牛肩肉烤蔬菜" : "Jebichuri Grilled Vegetables"
-                },
-                "price": "39000",
-                "priceCurrency": "KRW",
-                "availability": "https://schema.org/InStock"
               },
               {
                 "@type": "Offer",

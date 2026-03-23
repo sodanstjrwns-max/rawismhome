@@ -334,39 +334,8 @@ function PageContent({ lang }: { lang: Language }) {
           
           {/* Other Menu Items - Card Grid with Photos */}
           <div id="menu-items-container" class="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Menu Item 1: 제비추리 */}
+            {/* Menu Item 1: 치즈 셀렉션 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.1s" data-menu-item="0">
-              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_jebichuri.jpg" 
-                  alt="연남동 한우 맛집 제비추리 그릴드 - 홈대입구역 육회 전문점 프라이빗 다이닝" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
-              </div>
-              <div class="flex justify-between items-start mb-3">
-                <div>
-                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors duration-500" data-menu-name>
-                    제비추리 그릴드 베지터블
-                  </h3>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase" data-menu-desc>한우 제비추리와 8종 제철 채소의 그릴 향연</p>
-                </div>
-                <span class="font-playfair text-xl text-champagne/70" data-menu-price>₩39,000</span>
-              </div>
-              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3" data-menu-detail>
-                부드러운 한우 제비추리와 엄선된 8종 채소를 그릴에 구워 고소함과 풍미를 극대화한 메뉴입니다. 
-                채소 본연의 단맛과 그릴의 스모키한 풍미가 어우러져, 스파클링과 함께 즐기기 완벽한 핫 디쉬입니다.
-              </p>
-              <div class="text-xs">
-                <p class="text-off-white/25">
-                  <span class="text-champagne/30 mr-2" data-i18n="menu.ingredientsLabel">재료</span>
-                  <span data-menu-ingredients>한우 제비추리 · 파 · 방울양배추 · 아스파라거스 · 래디쉬 · 가지 · 미니당근 · 양송이버섯 · 브로콜리</span>
-                </p>
-              </div>
-            </div>
-            
-            {/* Menu Item 2: 치즈 셀렉션 */}
-            <div class="animate-on-scroll group" style="animation-delay: 0.15s" data-menu-item="1">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_cheese.jpg" 
@@ -396,7 +365,7 @@ function PageContent({ lang }: { lang: Language }) {
             </div>
             
             {/* Menu Item 3: 청양 오일 육회 */}
-            <div class="animate-on-scroll group" style="animation-delay: 0.2s" data-menu-item="2">
+            <div class="animate-on-scroll group" style="animation-delay: 0.2s" data-menu-item="1">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_yukhoe.jpg" 
@@ -427,7 +396,7 @@ function PageContent({ lang }: { lang: Language }) {
             </div>
             
             {/* Menu Item 4: 아보카도 카프레제 */}
-            <div class="animate-on-scroll group" style="animation-delay: 0.25s" data-menu-item="3">
+            <div class="animate-on-scroll group" style="animation-delay: 0.25s" data-menu-item="2">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_caprese.jpg" 
@@ -458,7 +427,7 @@ function PageContent({ lang }: { lang: Language }) {
             </div>
             
             {/* Menu Item 5: 들기름 육회 메밀면 */}
-            <div class="animate-on-scroll group md:col-span-2 lg:col-span-1 lg:col-start-1" style="animation-delay: 0.3s" data-menu-item="4">
+            <div class="animate-on-scroll group md:col-span-2 lg:col-span-1 lg:col-start-1" style="animation-delay: 0.3s" data-menu-item="3">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
                   src="/static/menu_memil.jpg" 
@@ -1006,9 +975,9 @@ app.get('/rss.xml', (c) => {
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>RAWISM 메뉴 - 6가지 시그니처 요리</title>
+      <title>RAWISM 메뉴 - 5가지 시그니처 요리</title>
       <link>https://rawism.kr/menu</link>
-      <description>트러플 한우 뭉티기 69,000원, 제비추리 그릴 39,000원, 치즈 셀렉션 35,000원, 청양 오일 육회 25,000원, 아보카도 카프레제 23,000원, 들기름 육회 메밀면 15,000원</description>
+      <description>트러플 한우 뭉티기 69,000원, 치즈 셀렉션 35,000원, 청양 오일 육회 25,000원, 아보카도 카프레제 23,000원, 들기름 육회 메밀면 15,000원</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -1047,9 +1016,9 @@ app.get('/en/rss.xml', (c) => {
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>RAWISM Menu - 6 Signature Dishes</title>
+      <title>RAWISM Menu - 5 Signature Dishes</title>
       <link>https://rawism.kr/en/menu</link>
-      <description>Truffle Hanwoo Tartare 69,000 KRW, Jebichuri Grill 39,000 KRW, Cheese Selection 35,000 KRW, Cheongyang Oil Yukhoe 25,000 KRW, Avocado Caprese 23,000 KRW, Perilla Oil Yukhoe Buckwheat 15,000 KRW</description>
+      <description>Truffle Hanwoo Tartare 69,000 KRW, Cheese Selection 35,000 KRW, Cheongyang Oil Yukhoe 25,000 KRW, Avocado Caprese 23,000 KRW, Perilla Oil Yukhoe Buckwheat 15,000 KRW</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -1088,9 +1057,9 @@ app.get('/ja/rss.xml', (c) => {
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>RAWISMメニュー - 6つのシグネチャー料理</title>
+      <title>RAWISMメニュー - 5つのシグネチャー料理</title>
       <link>https://rawism.kr/ja/menu</link>
-      <description>トリュフ韓牛ムンティギ 69,000ウォン、ジェビチュリグリル 39,000ウォン、チーズセレクション 35,000ウォン、チョンヤンオイルユッケ 25,000ウォン</description>
+      <description>トリュフ韓牛ムンティギ 69,000ウォン、チーズセレクション 35,000ウォン、チョンヤンオイルユッケ 25,000ウォン</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -1129,9 +1098,9 @@ app.get('/zh/rss.xml', (c) => {
       <pubDate>Thu, 06 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
-      <title>RAWISM菜单 - 6道招牌菜</title>
+      <title>RAWISM菜单 - 5道招牌菜</title>
       <link>https://rawism.kr/zh/menu</link>
-      <description>松露韩牛肉脍 69,000韩元、牛肩肉烤蔬菜 39,000韩元、奶酪拼盘 35,000韩元、青阳油拌生牛肉 25,000韩元</description>
+      <description>松露韩牛肉脍 69,000韩元、奶酪拼盘 35,000韩元、青阳油拌生牛肉 25,000韩元</description>
       <pubDate>Wed, 05 Feb 2026 00:00:00 +0900</pubDate>
     </item>
     <item>

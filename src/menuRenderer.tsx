@@ -13,28 +13,28 @@ const menuSeoData: Record<Language, {
   ko: {
     lang: 'ko',
     title: '메뉴 | RAWISM The Black | 연남동 샴페인바 트러플 한우 뭉티기',
-    description: 'RAWISM The Black 메뉴 - 시그니처 트러플 한우 뭉티기 부라타 ₩69,000, 제비추리 그릴드 ₩39,000, 치즈 셀렉션 ₩35,000, 청양 오일 육회 ₩25,000. 당일 도축 온도체 한우와 소믈리에 큐레이션 샴페인.',
+    description: 'RAWISM The Black 메뉴 - 시그니처 트러플 한우 뭉티기 부라타 ₩69,000, 치즈 셀렉션 ₩35,000, 청양 오일 육회 ₩25,000. 당일 도축 온도체 한우와 소믈리에 큐레이션 샴페인.',
     keywords: '연남동 메뉴, RAWISM 메뉴, 한우 뭉티기 가격, 트러플 육회, 연남동 한우 가격, 홍대 샴페인바 메뉴, 연남동 프리미엄 다이닝 메뉴, 부라타 치즈 한우',
     ogDescription: '시그니처 트러플 한우 뭉티기 부라타 ₩69,000 - 당일 도축 온도체 한우의 생생한 육향과 이탈리아 부라타 치즈의 조화'
   },
   en: {
     lang: 'en',
     title: 'Menu | RAWISM The Black | Seoul Yeonnam-dong Champagne Bar',
-    description: 'RAWISM The Black Menu - Signature Truffle Hanwoo Tartare Burrata ₩69,000, Grilled Jebichuri ₩39,000, Cheese Selection ₩35,000. Fresh same-day slaughtered Korean beef with sommelier-curated champagne.',
+    description: 'RAWISM The Black Menu - Signature Truffle Hanwoo Tartare Burrata ₩69,000, Cheese Selection ₩35,000, Cheongyang Oil Yukhoe ₩25,000. Fresh same-day slaughtered Korean beef with sommelier-curated champagne.',
     keywords: 'RAWISM menu, Hongdae restaurant menu, Korean beef tartare price, Seoul champagne bar menu, Yeonnam-dong dining menu, truffle beef Seoul',
     ogDescription: 'Signature Truffle Hanwoo Tartare Burrata ₩69,000 - Fresh same-day slaughtered Korean beef with Italian burrata cheese'
   },
   ja: {
     lang: 'ja',
     title: 'メニュー | RAWISM The Black | ソウル延南洞シャンパンバー',
-    description: 'RAWISM The Black メニュー - シグネチャー トリュフ韓牛タルタル ブッラータ ₩69,000、ジェビチュリグリル ₩39,000、チーズセレクション ₩35,000。当日屠畜韓牛とソムリエ厳選シャンパン。',
+    description: 'RAWISM The Black メニュー - シグネチャー トリュフ韓牛タルタル ブッラータ ₩69,000、チーズセレクション ₩35,000。当日屠畜韓牛とソムリエ厳選シャンパン。',
     keywords: 'RAWISM メニュー, 弘大 レストラン メニュー, 韓牛 ユッケ 価格, ソウル シャンパンバー メニュー, 延南洞 ダイニング',
     ogDescription: 'シグネチャー トリュフ韓牛タルタル ブッラータ ₩69,000 - 当日屠畜韓牛とイタリア産ブッラータチーズ'
   },
   zh: {
     lang: 'zh',
     title: '菜单 | RAWISM The Black | 首尔延南洞香槟吧',
-    description: 'RAWISM The Black 菜单 - 招牌松露韩牛肉脍布拉塔 ₩69,000，烤牛肩肉 ₩39,000，奶酪拼盘 ₩35,000。当日屠宰韩牛配侍酒师精选香槟。',
+    description: 'RAWISM The Black 菜单 - 招牌松露韩牛肉脍布拉塔 ₩69,000，奶酪拼盘 ₩35,000。当日屠宰韩牛配侍酒师精选香槟。',
     keywords: 'RAWISM 菜单, 弘大餐厅菜单, 韩牛生拌价格, 首尔香槟吧菜单, 延南洞美食菜单',
     ogDescription: '招牌松露韩牛肉脍布拉塔 ₩69,000 - 当日屠宰韩牛配意大利布拉塔奶酪'
   }
@@ -137,7 +137,6 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
                 "@type": "MenuSection",
                 "name": pageLang === 'ko' ? "메인 요리" : "Main Dishes",
                 "hasMenuItem": [
-                  { "@type": "MenuItem", "name": pageLang === 'ko' ? "제비추리 그릴드 베지터블" : "Jebichuri Grilled Vegetables", "offers": { "@type": "Offer", "price": "39000", "priceCurrency": "KRW" } },
                   { "@type": "MenuItem", "name": pageLang === 'ko' ? "치즈 셀렉션" : "Cheese Selection", "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "KRW" } },
                   { "@type": "MenuItem", "name": pageLang === 'ko' ? "청양 오일 육회" : "Cheongyang Oil Yukhoe", "offers": { "@type": "Offer", "price": "25000", "priceCurrency": "KRW" } },
                   { "@type": "MenuItem", "name": pageLang === 'ko' ? "아보카도 카프레제" : "Avocado Caprese", "offers": { "@type": "Offer", "price": "23000", "priceCurrency": "KRW" } }

@@ -55,13 +55,6 @@ const menuTranslations: Record<Language, {
     reserveCta: '네이버 예약',
     menuItems: [
       {
-        name: '제비추리 그릴드 베지터블',
-        desc: '한우 제비추리와 8종 제철 채소의 그릴 향연',
-        detail: '부드러운 한우 제비추리와 엄선된 8종 채소를 그릴에 구워 고소함과 풍미를 극대화한 메뉴입니다. 채소 본연의 단맛과 그릴의 스모키한 풍미가 어우러져, 스파클링과 함께 즐기기 완벽한 핫 디쉬입니다.',
-        price: '₩39,000',
-        ingredients: '한우 제비추리 · 파 · 방울양배추 · 아스파라거스 · 래디쉬 · 가지 · 미니당근 · 양송이버섯 · 브로콜리'
-      },
-      {
         name: '청양 오일 육회',
         desc: '전통 육회에 더한 매콤한 불꽃',
         detail: '전통적인 한우 육회에 자체 제작 고추기름 소스의 매콤한 킥을 더한 메뉴입니다. 신선한 한우 육회 위에 직접 만든 고추기름 소스를 둘러, 기존 육회에서는 느낄 수 없었던 매콤하고 알싸한 풍미를 더했습니다.',
@@ -113,13 +106,6 @@ const menuTranslations: Record<Language, {
     reserveSubtitle: 'Private dining with only 8 seats, reservation required',
     reserveCta: 'Book on Naver',
     menuItems: [
-      {
-        name: 'Jebichuri Grilled Vegetables',
-        desc: 'Grilled Hanwoo flank steak with 8 seasonal vegetables',
-        detail: 'Tender Hanwoo Jebichuri and 8 carefully selected vegetables grilled to maximize savory flavors. The natural sweetness of vegetables combined with smoky grill notes makes this a perfect hot dish with sparkling wine.',
-        price: '₩39,000',
-        ingredients: 'Hanwoo Jebichuri · Scallion · Brussels Sprouts · Asparagus · Radish · Eggplant · Baby Carrots · Mushrooms · Broccoli'
-      },
       {
         name: 'Cheongyang Oil Yukhoe',
         desc: 'Traditional beef tartare with a spicy kick',
@@ -173,13 +159,6 @@ const menuTranslations: Record<Language, {
     reserveCta: 'Naver予約',
     menuItems: [
       {
-        name: 'ジェビチュリ グリル野菜',
-        desc: '韓牛ジェビチュリと8種の旬野菜のグリル饗宴',
-        detail: '柔らかい韓牛ジェビチュリと厳選された8種の野菜をグリルして香ばしさと風味を最大化したメニューです。野菜本来の甘みとグリルのスモーキーな風味が調和し、スパークリングと共に楽しむのに最適なホットディッシュです。',
-        price: '₩39,000',
-        ingredients: '韓牛ジェビチュリ · ネギ · 芽キャベツ · アスパラガス · ラディッシュ · ナス · ミニニンジン · マッシュルーム · ブロッコリー'
-      },
-      {
         name: '青陽オイル ユッケ',
         desc: '伝統ユッケにスパイシーな炎を添えて',
         detail: '伝統的な韓牛ユッケに自家製唐辛子油ソースのスパイシーなキックを加えたメニュー。新鮮な韓牛ユッケに手作りの唐辛子油ソースをかけ、従来のユッケでは味わえなかったピリ辛で爽やかな風味を加えました。',
@@ -231,13 +210,6 @@ const menuTranslations: Record<Language, {
     reserveSubtitle: '仅8席 预约制私密用餐',
     reserveCta: 'Naver预订',
     menuItems: [
-      {
-        name: '牛肩肉烤蔬菜',
-        desc: '韩牛肩肉与8种时令蔬菜的烧烤盛宴',
-        detail: '将柔嫩的韩牛肩肉和精选8种蔬菜烤制，最大化香味和风味。蔬菜本身的甜味与烧烤的烟熏风味和谐融合，是搭配起泡酒的完美热菜。',
-        price: '₩39,000',
-        ingredients: '韩牛肩肉 · 大葱 · 抱子甘蓝 · 芦笋 · 小萝卜 · 茄子 · 迷你胡萝卜 · 蘑菇 · 西兰花'
-      },
       {
         name: '青阳油拌生牛肉',
         desc: '传统生拌加入辣味火花',
@@ -410,12 +382,12 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
             {t.hanwooSection}
           </h2>
           
-          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Jebichuri */}
+          <div class="grid md:grid-cols-1 gap-8 lg:gap-12 max-w-lg mx-auto">
+            {/* Yukhoe */}
             <div class="group">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
-                  src="/static/menu_jebichuri.jpg" 
+                  src="/static/menu_yukhoe.jpg" 
                   alt={t.menuItems[0].name}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -435,12 +407,23 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
                 {t.menuItems[0].ingredients}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Yukhoe */}
+      {/* Cheese & Sides Section */}
+      <section class="py-20 md:py-28 bg-soft-black/30">
+        <div class="max-w-6xl mx-auto px-8 md:px-12">
+          <h2 class="font-playfair text-2xl md:text-3xl font-light tracking-wide mb-12 text-center">
+            {t.cheeseSection}
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Cheese Selection */}
             <div class="group">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
-                  src="/static/menu_yukhoe.jpg" 
+                  src="/static/menu_cheese.jpg" 
                   alt={t.menuItems[1].name}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -460,23 +443,12 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
                 {t.menuItems[1].ingredients}
               </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Cheese & Sides Section */}
-      <section class="py-20 md:py-28 bg-soft-black/30">
-        <div class="max-w-6xl mx-auto px-8 md:px-12">
-          <h2 class="font-playfair text-2xl md:text-3xl font-light tracking-wide mb-12 text-center">
-            {t.cheeseSection}
-          </h2>
-          
-          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Cheese Selection */}
+            {/* Caprese */}
             <div class="group">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
                 <img 
-                  src="/static/menu_cheese.jpg" 
+                  src="/static/menu_caprese.jpg" 
                   alt={t.menuItems[2].name}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -496,31 +468,6 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
                 {t.menuItems[2].ingredients}
               </p>
             </div>
-
-            {/* Caprese */}
-            <div class="group">
-              <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_caprese.jpg" 
-                  alt={t.menuItems[3].name}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div class="flex justify-between items-start mb-3">
-                <div>
-                  <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors">
-                    {t.menuItems[3].name}
-                  </h3>
-                  <p class="text-[10px] tracking-wider text-off-white/30 uppercase">{t.menuItems[3].desc}</p>
-                </div>
-                <span class="font-playfair text-xl text-champagne/70">{t.menuItems[3].price}</span>
-              </div>
-              <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">{t.menuItems[3].detail}</p>
-              <p class="text-off-white/25 text-xs">
-                <span class="text-champagne/30 mr-2">{t.ingredientsLabel}</span>
-                {t.menuItems[3].ingredients}
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -536,7 +483,7 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
             <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
               <img 
                 src="/static/menu_memil.jpg" 
-                alt={t.menuItems[4].name}
+                alt={t.menuItems[3].name}
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div class="absolute bottom-4 right-4">
@@ -548,16 +495,16 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
             <div class="flex justify-between items-start mb-3">
               <div>
                 <h3 class="font-playfair text-lg text-off-white mb-1 group-hover:text-champagne transition-colors">
-                  {t.menuItems[4].name}
+                  {t.menuItems[3].name}
                 </h3>
-                <p class="text-[10px] tracking-wider text-off-white/30 uppercase">{t.menuItems[4].desc}</p>
+                <p class="text-[10px] tracking-wider text-off-white/30 uppercase">{t.menuItems[3].desc}</p>
               </div>
-              <span class="font-playfair text-xl text-champagne/70">{t.menuItems[4].price}</span>
+              <span class="font-playfair text-xl text-champagne/70">{t.menuItems[3].price}</span>
             </div>
-            <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">{t.menuItems[4].detail}</p>
+            <p class="text-off-white/40 text-sm font-light leading-relaxed mb-3">{t.menuItems[3].detail}</p>
             <p class="text-off-white/25 text-xs">
               <span class="text-champagne/30 mr-2">{t.ingredientsLabel}</span>
-              {t.menuItems[4].ingredients}
+              {t.menuItems[3].ingredients}
             </p>
           </div>
         </div>

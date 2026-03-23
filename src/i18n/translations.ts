@@ -136,13 +136,6 @@ export const translations: Record<Language, any> = {
       },
       items: [
         {
-          name: "제비추리 그릴드 베지터블",
-          price: "₩39,000",
-          description: "한우 제비추리와 8종 제철 채소의 그릴 향연",
-          detail: "제비추리는 소의 갈비와 양지 사이 희귀 부위로 한 마리당 소량만 얻을 수 있어 숨은 보석으로 불립니다. 미디엄 레어로 정확하게 구워 겉은 카라멜라이징, 속은 육즙이 풍부합니다.",
-          ingredients: "한우 제비추리, 아스파라거스, 새송이버섯, 파프리카, 주키니, 래디시, 방울토마토, 감자, 레몬 허브 버터"
-        },
-        {
           name: "치즈 셀렉션",
           price: "₩35,000",
           description: "소믈리에가 큐레이팅한 6종 치즈 컬렉션",
@@ -245,7 +238,7 @@ export const translations: Record<Language, any> = {
         { name: "김지현", date: "2025.01.15", rating: 5, badge: "100일 기념", review: "남자친구와 100일 기념으로 방문했어요. 뭉티기가 정말 입에서 녹더라고요! 당일 도축이라 그런지 식감이 완전 달랐어요. 샴페인도 추천해주셔서 페어링이 완벽했습니다. 조명도 은은하고 분위기 최고예요 💕" },
         { name: "박준영", date: "2025.01.10", rating: 5, badge: "데이트", review: "홍대 근처 데이트 코스 찾다가 발견했는데 대박이에요. 8테이블이라 프라이빗하고, 뭉티기 위에 트러플 갈아주는 거 너무 멋있었어요. 여자친구가 완전 좋아했습니다!" },
         { name: "이소연", date: "2025.01.05", rating: 5, badge: "재방문", review: "연남동 맛집 많이 다녀봤는데 여긴 진짜 다릅니다. 뭉티기가 뭔지 처음 알았는데, 육회랑 완전 다른 식감이에요. 부라타 치즈랑 같이 먹으면 미쳐요 🧀" },
-        { name: "최민수", date: "2024.12.28", rating: 5, badge: "생일", review: "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 제비추리 스테이크도 미디엄 레어로 완벽하게 구워졌습니다!" },
+        { name: "최민수", date: "2024.12.28", rating: 5, badge: "생일", review: "와이프 생일에 예약했습니다. 웰컴 스파클링부터 마지막 고디바 초콜릿까지 세심한 서비스에 감동받았어요. 뭉티기도 입에서 녹더라고요!" },
         { name: "정하윤", date: "2024.12.20", rating: 5, badge: "연트럴파크", review: "연트럴파크 산책하고 저녁 먹을 곳 찾다가 왔어요. 분위기가 정말 좋고, 음악도 대화하기 딱 좋은 볼륨이에요. 청양 오일 육회 매콤한 거 좋아하시면 꼭 드셔보세요 🔥" },
         { name: "강태우", date: "2024.12.15", rating: 5, badge: "1주년", review: "결혼 1주년 기념으로 방문. 덴마크 루이스폴센 조명이라니, 세심한 디테일에 감탄했습니다. 뭉티기 + 샴페인 조합은 인생 최고의 페어링이에요. 내년에도 꼭 올게요!" }
       ]
@@ -372,13 +365,6 @@ export const translations: Record<Language, any> = {
       },
       items: [
         {
-          name: "Grilled Jebichuri & Vegetables",
-          price: "₩39,000",
-          description: "Korean beef Jebichuri with 8 seasonal grilled vegetables",
-          detail: "Jebichuri is a rare cut between the ribs and brisket, yielding only a small amount per cow - a hidden gem. Grilled precisely to medium-rare with caramelized exterior and juicy interior.",
-          ingredients: "Hanwoo Jebichuri, Asparagus, King oyster mushroom, Bell pepper, Zucchini, Radish, Cherry tomatoes, Potato, Lemon herb butter"
-        },
-        {
           name: "Cheese Selection",
           price: "₩35,000",
           description: "Sommelier-curated 6-cheese collection",
@@ -481,7 +467,7 @@ export const translations: Record<Language, any> = {
         { name: "Jihyun K.", date: "Jan 15, 2025", rating: 5, badge: "100 Days", review: "Visited for our 100-day anniversary. The beef tartare literally melted in my mouth! The texture was completely different because it's same-day slaughtered. The champagne pairing they recommended was perfect. Soft lighting and amazing atmosphere 💕" },
         { name: "Junyoung P.", date: "Jan 10, 2025", rating: 5, badge: "Date", review: "Found this place looking for a date spot near Hongdae - it's amazing! With only 8 tables it's super private, and watching them shave truffle over the tartare was so impressive. My girlfriend loved it!" },
         { name: "Soyeon L.", date: "Jan 5, 2025", rating: 5, badge: "Return Visit", review: "I've been to many Yeonnam-dong restaurants but this place is truly different. I learned what Mungti-gi is for the first time - completely different texture from regular beef tartare. With burrata cheese, it's incredible 🧀" },
-        { name: "Minsu C.", date: "Dec 28, 2024", rating: 5, badge: "Birthday", review: "Reserved for my wife's birthday. I was touched by the thoughtful service from welcome sparkling to Godiva chocolates at the end. The Jebichuri steak was grilled to perfect medium-rare!" },
+        { name: "Minsu C.", date: "Dec 28, 2024", rating: 5, badge: "Birthday", review: "Reserved for my wife's birthday. I was touched by the thoughtful service from welcome sparkling to Godiva chocolates at the end. The beef tartare was absolutely incredible!" },
         { name: "Hayun J.", date: "Dec 20, 2024", rating: 5, badge: "Yeontral Park", review: "Came here looking for dinner after walking in Yeontral Park. The atmosphere is amazing and the music is at just the right volume for conversation. Highly recommend the spicy Cheongyang beef tartare if you like spicy food 🔥" },
         { name: "Taewoo K.", date: "Dec 15, 2024", rating: 5, badge: "1st Anniversary", review: "Visited for our 1st wedding anniversary. Danish Louis Poulsen lighting - impressed by the attention to detail. Tartare + champagne combo was the best pairing of my life. We'll definitely be back next year!" }
       ]
@@ -608,13 +594,6 @@ export const translations: Record<Language, any> = {
       },
       items: [
         {
-          name: "チェビチュリ グリルドベジタブル",
-          price: "₩39,000",
-          description: "韓牛チェビチュリと8種の旬野菜のグリル",
-          detail: "チェビチュリは牛のカルビとバラの間にある希少部位で、一頭から少量しか取れない隠れた宝石です。ミディアムレアに正確に焼いて外はカラメリゼ、中はジューシー。",
-          ingredients: "韓牛チェビチュリ、アスパラガス、エリンギ、パプリカ、ズッキーニ、ラディッシュ、ミニトマト、じゃがいも、レモンハーブバター"
-        },
-        {
           name: "チーズセレクション",
           price: "₩35,000",
           description: "ソムリエがキュレーションした6種チーズコレクション",
@@ -717,7 +696,7 @@ export const translations: Record<Language, any> = {
         { name: "キム・ジヒョン", date: "2025.01.15", rating: 5, badge: "100日記念", review: "彼氏と100日記念で訪問しました。ムンティギが本当に口の中で溶けました！当日屠畜だからか食感が全然違いました。シャンパンもおすすめしてもらってペアリングが完璧でした。照明も穏やかで雰囲気最高です 💕" },
         { name: "パク・ジュニョン", date: "2025.01.10", rating: 5, badge: "デート", review: "弘大近くでデートコース探していて見つけたんですが最高です。8テーブルだからプライベートで、ムンティギの上にトリュフ削ってくれるのがすごくかっこよかったです。彼女がとても喜びました！" },
         { name: "イ・ソヨン", date: "2025.01.05", rating: 5, badge: "再訪問", review: "延南洞のグルメたくさん行きましたがここは本当に違います。ムンティギが何か初めて知りましたが、ユッケと全然違う食感です。ブラータチーズと一緒に食べると最高です 🧀" },
-        { name: "チェ・ミンス", date: "2024.12.28", rating: 5, badge: "誕生日", review: "妻の誕生日に予約しました。ウェルカムスパークリングから最後のゴディバチョコレートまで細やかなサービスに感動しました。チェビチュリステーキもミディアムレアで完璧でした！" },
+        { name: "チェ・ミンス", date: "2024.12.28", rating: 5, badge: "誕生日", review: "妻の誕生日に予約しました。ウェルカムスパークリングから最後のゴディバチョコレートまで細やかなサービスに感動しました。ムンティギも口の中で溶けるようで最高でした！" },
         { name: "チョン・ハユン", date: "2024.12.20", rating: 5, badge: "ヨントラルパーク", review: "ヨントラルパーク散歩後にディナー探していて来ました。雰囲気が本当に良くて、音楽も会話にちょうど良い音量です。チョンヤンオイルユッケ、辛いの好きな方はぜひ食べてみてください 🔥" },
         { name: "カン・テウ", date: "2024.12.15", rating: 5, badge: "1周年", review: "結婚1周年記念で訪問。デンマークのルイスポールセン照明だなんて、細部にこだわりに感心しました。ムンティギ＋シャンパンの組み合わせは人生最高のペアリングです。来年もぜひ来ます！" }
       ]
@@ -844,13 +823,6 @@ export const translations: Record<Language, any> = {
       },
       items: [
         {
-          name: "炭烤牛肋眼肉配时蔬",
-          price: "₩39,000",
-          description: "韩牛Jebichuri与8种时令蔬菜的炭烤盛宴",
-          detail: "Jebichuri是牛肋骨与牛腩之间的稀有部位，每头牛只能获得少量，被称为隐藏的宝石。精确烤至五分熟，外焦里嫩，肉汁丰富。",
-          ingredients: "韩牛Jebichuri、芦笋、杏鲍菇、彩椒、西葫芦、小萝卜、小番茄、土豆、柠檬香草黄油"
-        },
-        {
           name: "芝士精选",
           price: "₩35,000",
           description: "侍酒师精选6种奶酪系列",
@@ -953,7 +925,7 @@ export const translations: Record<Language, any> = {
         { name: "金智贤", date: "2025.01.15", rating: 5, badge: "100天纪念", review: "和男朋友来庆祝100天纪念。生拌牛肉真的入口即化！因为是当天屠宰的，口感完全不一样。推荐的香槟搭配也很完美。灯光柔和，氛围超棒 💕" },
         { name: "朴俊英", date: "2025.01.10", rating: 5, badge: "约会", review: "在弘大附近找约会地点时发现的，太棒了。只有8桌很私密，现场在生拌牛肉上刨松露的样子太帅了。女朋友非常喜欢！" },
         { name: "李素妍", date: "2025.01.05", rating: 5, badge: "再次光顾", review: "去过很多延南洞的餐厅，但这里真的不一样。第一次知道什么是Mungti-gi，和普通生拌牛肉口感完全不同。配布拉塔奶酪一起吃太绝了 🧀" },
-        { name: "崔民洙", date: "2024.12.28", rating: 5, badge: "生日", review: "为妻子的生日预约的。从欢迎起泡酒到最后的歌帝梵巧克力，细致的服务让我很感动。Jebichuri牛排也烤得恰到好处！" },
+        { name: "崔民洙", date: "2024.12.28", rating: 5, badge: "生日", review: "为妻子的生日预约的。从欢迎起泡酒到最后的歌帝梵巧克力，细致的服务让我很感动。肉脍也是入口即化，太棒了！" },
         { name: "郑夏允", date: "2024.12.20", rating: 5, badge: "延特拉尔公园", review: "在延特拉尔公园散步后来找晚餐的地方。氛围真的很好，音乐音量也正好适合聊天。喜欢辣的话一定要试试青阳辣油生拌牛肉 🔥" },
         { name: "姜泰宇", date: "2024.12.15", rating: 5, badge: "1周年", review: "来庆祝结婚1周年。丹麦路易斯·波尔森的灯具，细节用心让人印象深刻。生拌牛肉+香槟的组合是人生最棒的搭配。明年还会再来！" }
       ]

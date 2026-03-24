@@ -37,6 +37,7 @@ export const createQuizRenderer = () => {
           <meta name="twitter:title" content="🍾 나에게 맞는 샴페인은? | RAWISM 와인 퀴즈" />
           <meta name="twitter:description" content="5문항으로 찾는 나만의 샴페인 스타일" />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta name="twitter:image:alt" content="RAWISM - 나에게 맞는 샴페인 취향 테스트" />
 
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

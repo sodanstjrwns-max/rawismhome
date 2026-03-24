@@ -88,6 +88,7 @@ export const createMenuRenderer = (pageLang: Language = 'ko') => {
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.ogDescription} />
           <meta name="twitter:image" content="https://rawism.kr/static/menu_signature.jpg" />
+          <meta name="twitter:image:alt" content="RAWISM The Black - 시그니처 메뉴 컬렉션" />
           
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />

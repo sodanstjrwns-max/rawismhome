@@ -22,6 +22,9 @@ export const WineColumnDetailPage: FC<Props> = ({ article }) => {
             <a href="/" class="text-[11px] tracking-[0.2em] uppercase text-off-white/50 hover:text-champagne transition-colors">Home</a>
             <a href="/menu" class="text-[11px] tracking-[0.2em] uppercase text-off-white/50 hover:text-champagne transition-colors">Menu</a>
             <a href="/wine" class="text-[11px] tracking-[0.2em] uppercase text-champagne/70 hover:text-champagne transition-colors">Wine Guide</a>
+            <a href="/gallery" class="text-[11px] tracking-[0.2em] uppercase text-off-white/50 hover:text-champagne transition-colors">Gallery</a>
+            <a href="/blog" class="text-[11px] tracking-[0.2em] uppercase text-off-white/50 hover:text-champagne transition-colors">Blog</a>
+            <a href="/quiz" class="text-[11px] tracking-[0.2em] uppercase text-champagne/50 hover:text-champagne transition-colors">🍾 Quiz</a>
             <a href="/about" class="text-[11px] tracking-[0.2em] uppercase text-off-white/50 hover:text-champagne transition-colors">About</a>
           </div>
         </div>
@@ -93,19 +96,23 @@ export const WineColumnDetailPage: FC<Props> = ({ article }) => {
             </a>
           </div>
           {/* Cross-links to related menu items */}
-          {(article.categorySlug === 'pairing-guide') && (
-            <div class="mt-6 pt-6 border-t border-white/5 flex flex-wrap gap-3 justify-center md:justify-start">
+          <div class="mt-6 pt-6 border-t border-white/5 flex flex-wrap gap-3 justify-center md:justify-start">
               <a href="/menu" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
                 🥩 시그니처 메뉴 보기
               </a>
               <a href="/wine" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
                 🍷 와인 칼럼 전체보기
               </a>
+              <a href="/quiz" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
+                🍾 나의 샴페인 찾기
+              </a>
               <a href="/gallery" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
                 📸 갤러리
               </a>
+              <a href="/blog" class="text-[10px] text-off-white/30 hover:text-champagne/60 transition-colors border border-white/5 px-3 py-1 rounded-full hover:border-champagne/20">
+                📝 블로그
+              </a>
             </div>
-          )}
         </div>
       </section>
 
@@ -183,10 +190,13 @@ export const WineColumnDetailPage: FC<Props> = ({ article }) => {
           <a href="/" class="group">
             <img src="/static/logo.png" alt="RAWISM The Black" class="h-6 opacity-50 group-hover:opacity-70 transition-opacity" />
           </a>
-          <div class="flex items-center gap-6 text-[10px] text-off-white/30">
+          <div class="flex items-center gap-4 md:gap-6 text-[10px] text-off-white/30 flex-wrap justify-center">
             <a href="/" class="hover:text-champagne/60 transition-colors">Home</a>
             <a href="/menu" class="hover:text-champagne/60 transition-colors">Menu</a>
             <a href="/wine" class="hover:text-champagne/60 transition-colors text-champagne/50">Wine Guide</a>
+            <a href="/gallery" class="hover:text-champagne/60 transition-colors">Gallery</a>
+            <a href="/blog" class="hover:text-champagne/60 transition-colors">Blog</a>
+            <a href="/quiz" class="hover:text-champagne/60 transition-colors">Quiz</a>
             <a href="/about" class="hover:text-champagne/60 transition-colors">About</a>
           </div>
           <p class="text-[10px] text-off-white/20">&copy; 2026 RAWISM The Black</p>

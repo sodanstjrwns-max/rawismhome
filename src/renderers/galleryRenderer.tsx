@@ -44,6 +44,7 @@ export const createGalleryRenderer = () => {
           <meta name="twitter:title" content="갤러리 | RAWISM The Black" />
           <meta name="twitter:description" content="연남동 프리미엄 샴페인바 RAWISM의 분위기를 사진으로" />
           <meta name="twitter:image" content="https://rawism.kr/static/menu_signature.jpg" />
+          <meta name="twitter:image:alt" content="RAWISM The Black - 연남동 프리미엄 샴페인바 갤러리" />
 
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

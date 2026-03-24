@@ -1067,6 +1067,31 @@ app.get('/sitemap.xml', async (c) => {
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Quiz Result Pages -->
+  <url>
+    <loc>https://rawism.kr/quiz/result/blanc-de-blanc</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/quiz/result/brut-nv</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/quiz/result/prestige-cuvee</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/quiz/result/rose</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <!-- Wine Column Index Page -->
   <url>
     <loc>https://rawism.kr/wine</loc>
@@ -1088,9 +1113,38 @@ app.get('/sitemap.xml', async (c) => {
 // robots.txt
 app.get('/robots.txt', (c) => {
   const robots = `# RAWISM The Black - 연남동 프리미엄 샴페인바
+# https://rawism.kr
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_worker.js
+
+# Sitemaps
 Sitemap: https://rawism.kr/sitemap.xml
+
+# RSS Feeds
+# Korean: https://rawism.kr/rss.xml
+# English: https://rawism.kr/en/rss.xml
+# Japanese: https://rawism.kr/ja/rss.xml
+# Chinese: https://rawism.kr/zh/rss.xml
+
+# Crawl rate
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Naver
+User-agent: Yeti
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1`
   return c.text(robots, 200, { 'Content-Type': 'text/plain' })
 })
@@ -1372,20 +1426,44 @@ allWineColumns.forEach(article => {
 })
 
 // ===========================================
-// GALLERY PAGE ROUTE - /gallery
+// GALLERY PAGE ROUTE - /gallery + multilingual redirects
 // ===========================================
 app.use('/gallery', createGalleryRenderer())
 app.get('/gallery', (c) => {
   return c.render(<GalleryPage />)
 })
+// Multilingual gallery redirects (content is Korean-only)
+app.get('/en/gallery', (c) => c.redirect('/gallery', 301))
+app.get('/ja/gallery', (c) => c.redirect('/gallery', 301))
+app.get('/zh/gallery', (c) => c.redirect('/gallery', 301))
 
 // ===========================================
-// BLOG HUB ROUTE - /blog
+// BLOG HUB ROUTE - /blog + multilingual redirects
 // ===========================================
 app.use('/blog', createBlogRenderer())
 app.get('/blog', (c) => {
   return c.render(<BlogPage />)
 })
+// Multilingual blog redirects (content is Korean-only)
+app.get('/en/blog', (c) => c.redirect('/blog', 301))
+app.get('/ja/blog', (c) => c.redirect('/blog', 301))
+app.get('/zh/blog', (c) => c.redirect('/blog', 301))
+
+// ===========================================
+// QUIZ PAGE - multilingual redirects
+// ===========================================
+// Multilingual quiz redirects (content is Korean-only)
+app.get('/en/quiz', (c) => c.redirect('/quiz', 301))
+app.get('/ja/quiz', (c) => c.redirect('/quiz', 301))
+app.get('/zh/quiz', (c) => c.redirect('/quiz', 301))
+
+// ===========================================
+// WINE COLUMN - multilingual redirects
+// ===========================================
+// Multilingual wine redirects (content is Korean-only)
+app.get('/en/wine', (c) => c.redirect('/wine', 301))
+app.get('/ja/wine', (c) => c.redirect('/wine', 301))
+app.get('/zh/wine', (c) => c.redirect('/wine', 301))
 
 // ============================================
 // Search Engine Verification Files
@@ -1417,11 +1495,98 @@ app.get('/BingSiteAuth.xml', (c) => {
 })
 
 // ===========================================
-// QUIZ PAGE ROUTE - /quiz
+// QUIZ PAGE ROUTE - /quiz + /quiz/result/:type
 // ===========================================
 app.use('/quiz', createQuizRenderer())
 app.get('/quiz', (c) => {
   return c.render(<QuizPage />)
+})
+
+// Quiz Result Pages - 고유 URL로 SNS 공유 + 개별 색인
+const quizResults: Record<string, { type: string; subtitle: string; desc: string; emoji: string }> = {
+  'blanc-de-blanc': {
+    type: '블랑 드 블랑 타입',
+    subtitle: 'The Elegant Connoisseur',
+    desc: '섬세함과 우아함을 아는 당신에게 딱 맞는 샤르도네 100% 샴페인',
+    emoji: '🥂'
+  },
+  'brut-nv': {
+    type: '브뤼 NV 타입',
+    subtitle: 'The Easy-going Enthusiast',
+    desc: '편안함 속에서 즐거움을 찾는 당신을 위한 균형 잡힌 샴페인',
+    emoji: '🍾'
+  },
+  'prestige-cuvee': {
+    type: '프레스티지 큐베 타입',
+    subtitle: 'The Luxury Seeker',
+    desc: '최고를 알아보는 눈이 있는 당신을 위한 프리미엄 빈티지 샴페인',
+    emoji: '✨'
+  },
+  'rose': {
+    type: '로제 샴페인 타입',
+    subtitle: 'The Vibrant Socialite',
+    desc: '삶의 즐거움을 온전히 누리는 당신을 위한 화사한 로제 샴페인',
+    emoji: '🌹'
+  }
+}
+
+Object.entries(quizResults).forEach(([slug, result]) => {
+  app.get(`/quiz/result/${slug}`, (c) => {
+    return c.html(`<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${result.emoji} ${result.type} | 나에게 맞는 샴페인은? | RAWISM</title>
+  <meta name="description" content="${result.desc}. RAWISM 와인 퀴즈 결과 - ${result.subtitle}. 5문항으로 찾는 나만의 샴페인 스타일." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rawism.kr/quiz/result/${slug}" />
+  <meta property="og:title" content="${result.emoji} 내 샴페인 타입: ${result.type}" />
+  <meta property="og:description" content="${result.desc} - RAWISM 소믈리에 추천 퀴즈" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rawism.kr/quiz/result/${slug}" />
+  <meta property="og:image" content="https://rawism.kr/static/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="RAWISM The Black" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${result.emoji} 내 샴페인 타입: ${result.type}" />
+  <meta name="twitter:description" content="${result.desc}" />
+  <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+  <meta name="twitter:image:alt" content="RAWISM 와인 퀴즈 - ${result.type}" />
+  <script type="application/ld+json">
+  ${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": `${result.type} - RAWISM 와인 퀴즈 결과`,
+    "description": result.desc,
+    "url": `https://rawism.kr/quiz/result/${slug}`,
+    "isPartOf": { "@type": "WebSite", "name": "RAWISM The Black", "url": "https://rawism.kr" }
+  })}
+  </script>
+  <script type="application/ld+json">
+  ${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "RAWISM The Black", "item": "https://rawism.kr" },
+      { "@type": "ListItem", "position": 2, "name": "와인 퀴즈", "item": "https://rawism.kr/quiz" },
+      { "@type": "ListItem", "position": 3, "name": result.type, "item": `https://rawism.kr/quiz/result/${slug}` }
+    ]
+  })}
+  </script>
+  <meta http-equiv="refresh" content="0;url=/quiz?result=${slug}" />
+</head>
+<body style="background:#080808;color:#E0E0E0;font-family:sans-serif;text-align:center;padding:80px 20px;">
+  <p style="font-size:48px;margin-bottom:16px;">${result.emoji}</p>
+  <h1 style="font-size:24px;color:#B8A060;margin-bottom:8px;">${result.type}</h1>
+  <p style="color:#999;font-size:14px;margin-bottom:24px;">${result.subtitle}</p>
+  <p style="color:#777;font-size:13px;max-width:400px;margin:0 auto 32px;line-height:1.8;">${result.desc}</p>
+  <p style="color:#555;font-size:12px;">퀴즈 페이지로 이동 중...</p>
+  <a href="/quiz?result=${slug}" style="color:#B8A060;font-size:12px;text-decoration:underline;">바로 이동</a>
+</body>
+</html>`)
+  })
 })
 
 // ============================================

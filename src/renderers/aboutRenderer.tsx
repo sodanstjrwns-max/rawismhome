@@ -95,6 +95,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.ogDescription} />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta name="twitter:image:alt" content="RAWISM The Black - 브랜드 스토리" />
           
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -208,6 +208,30 @@ export const QuizPage = () => {
     document.getElementById('share-copy').addEventListener('click', copyLink);
     document.getElementById('share-kakao').addEventListener('click', shareKakao);
     document.getElementById('share-insta').addEventListener('click', shareInsta);
+    
+    // Check for ?result= parameter (from shared link)
+    var params = new URLSearchParams(window.location.search);
+    var resultParam = params.get('result');
+    if (resultParam) {
+      var slugToType = { 'blanc-de-blanc': 'elegant', 'brut-nv': 'casual', 'prestige-cuvee': 'luxury', 'rose': 'festive' };
+      var typeKey = slugToType[resultParam];
+      if (typeKey && results[typeKey]) {
+        var r = results[typeKey];
+        document.getElementById('quiz-intro').classList.add('hidden');
+        document.getElementById('quiz-result').classList.remove('hidden');
+        document.getElementById('result-emoji').textContent = r.emoji;
+        document.getElementById('result-type').textContent = r.type;
+        document.getElementById('result-subtitle').textContent = r.subtitle;
+        document.getElementById('result-desc').textContent = r.desc;
+        document.getElementById('result-pairing').textContent = r.pairing;
+        document.getElementById('result-column-link').href = r.column;
+        var wineHtml = '';
+        for (var w = 0; w < r.wines.length; w++) {
+          wineHtml += '<p class="text-sm text-[#E0E0E0]"><span class="text-[#B8A060] mr-2">•</span>' + r.wines[w] + '</p>';
+        }
+        document.getElementById('result-wines').innerHTML = wineHtml;
+      }
+    }
   }
 
   function startQuiz() {
@@ -267,6 +291,16 @@ export const QuizPage = () => {
     }
 
     var r = results[maxType];
+    
+    // Map type to slug for URL
+    var slugMap = { elegant: 'blanc-de-blanc', casual: 'brut-nv', luxury: 'prestige-cuvee', festive: 'rose' };
+    var resultSlug = slugMap[maxType] || 'brut-nv';
+    
+    // Update URL without reload (for sharing)
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState({}, r.type + ' | RAWISM', '/quiz?result=' + resultSlug);
+    }
+
     document.getElementById('quiz-questions').classList.add('hidden');
     document.getElementById('quiz-result').classList.remove('hidden');
     document.getElementById('result-emoji').textContent = r.emoji;
@@ -293,7 +327,11 @@ export const QuizPage = () => {
   }
 
   function copyLink() {
-    var text = '🍾 나의 샴페인 타입은? RAWISM 와인 퀴즈 결과: ' + document.getElementById('result-type').textContent + '! https://rawism.kr/quiz';
+    var resultType = document.getElementById('result-type').textContent;
+    var slugMap = { '블랑 드 블랑 타입': 'blanc-de-blanc', '브뤼 NV 타입': 'brut-nv', '프레스티지 큐베 타입': 'prestige-cuvee', '로제 샴페인 타입': 'rose' };
+    var slug = slugMap[resultType] || '';
+    var shareUrl = slug ? 'https://rawism.kr/quiz/result/' + slug : 'https://rawism.kr/quiz';
+    var text = '🍾 나의 샴페인 타입은? RAWISM 와인 퀴즈 결과: ' + resultType + '! ' + shareUrl;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text);
     } else {
@@ -311,13 +349,19 @@ export const QuizPage = () => {
 
   function shareKakao() {
     var resultType = document.getElementById('result-type').textContent;
-    var url = 'https://sharer.kakao.com/talk/friends/picker/link?app_key=javascript&url=' + encodeURIComponent('https://rawism.kr/quiz') + '&text=' + encodeURIComponent('🍾 나의 샴페인 타입: ' + resultType + '! 너도 해봐!');
+    var slugMap = { '블랑 드 블랑 타입': 'blanc-de-blanc', '브뤼 NV 타입': 'brut-nv', '프레스티지 큐베 타입': 'prestige-cuvee', '로제 샴페인 타입': 'rose' };
+    var slug = slugMap[resultType] || '';
+    var shareUrl = slug ? 'https://rawism.kr/quiz/result/' + slug : 'https://rawism.kr/quiz';
+    var url = 'https://sharer.kakao.com/talk/friends/picker/link?app_key=javascript&url=' + encodeURIComponent(shareUrl) + '&text=' + encodeURIComponent('🍾 나의 샴페인 타입: ' + resultType + '! 너도 해봐!');
     window.open(url, '_blank', 'width=480,height=700');
   }
 
   function shareInsta() {
     var resultType = document.getElementById('result-type').textContent;
-    var text = '🍾 나의 샴페인 타입은 [' + resultType + ']! @rawism_theblack 에서 테스트 해보세요 👉 rawism.kr/quiz';
+    var slugMap = { '블랑 드 블랑 타입': 'blanc-de-blanc', '브뤼 NV 타입': 'brut-nv', '프레스티지 큐베 타입': 'prestige-cuvee', '로제 샴페인 타입': 'rose' };
+    var slug = slugMap[resultType] || '';
+    var shareUrl = slug ? 'rawism.kr/quiz/result/' + slug : 'rawism.kr/quiz';
+    var text = '🍾 나의 샴페인 타입은 [' + resultType + ']! @rawism_theblack 에서 테스트 해보세요 👉 ' + shareUrl;
     if (navigator.clipboard) { navigator.clipboard.writeText(text); }
     alert('텍스트가 복사되었습니다!\\n인스타그램 스토리에 붙여넣기 해주세요 📸');
   }

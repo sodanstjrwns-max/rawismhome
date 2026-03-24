@@ -44,6 +44,7 @@ export const createBlogRenderer = () => {
           <meta name="twitter:title" content="블로그 | RAWISM The Black" />
           <meta name="twitter:description" content="와인 칼럼, 연남동 데이트 코스, 다이닝 문화 — RAWISM 매거진" />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta name="twitter:image:alt" content="RAWISM The Black - 연남동 와인·다이닝 블로그" />
 
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

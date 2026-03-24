@@ -42,6 +42,7 @@ export const createWineListRenderer = () => {
           <meta name="twitter:title" content="와인 칼럼 | RAWISM The Black" />
           <meta name="twitter:description" content="소믈리에가 전하는 와인·샴페인 이야기. 입문부터 프리미엄까지." />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta name="twitter:image:alt" content="RAWISM The Black - 소믈리에 와인 칼럼" />
 
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -159,6 +160,7 @@ export const createWineDetailRenderer = (article: WineColumn) => {
           <meta name="twitter:title" content={article.title} />
           <meta name="twitter:description" content={article.description} />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          <meta name="twitter:image:alt" content={`${article.title} - RAWISM The Black 와인 칼럼`} />
 
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />

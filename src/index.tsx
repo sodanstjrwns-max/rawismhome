@@ -69,6 +69,7 @@ function PageContent({ lang }: { lang: Language }) {
             <a href="/wine" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Wine Guide</a>
             <a href="/gallery" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Gallery</a>
             <a href="/blog" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500">Blog</a>
+            <a href="/quiz" class="text-[11px] tracking-[0.25em] uppercase text-champagne/80 hover:text-champagne transition-colors duration-500">🍾 Quiz</a>
             <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.recommend">추천</a>
             <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors duration-500" data-i18n="nav.location">Location</a>
             <a href={`${basePath}#reserve`} class="text-[11px] tracking-[0.25em] uppercase text-champagne border-b border-champagne/30 pb-1 hover:border-champagne transition-colors duration-500" data-i18n="nav.reservation">
@@ -107,6 +108,7 @@ function PageContent({ lang }: { lang: Language }) {
             <a href="/wine" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Wine Guide</a>
             <a href="/gallery" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Gallery</a>
             <a href="/blog" class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2">Blog</a>
+            <a href="/quiz" class="text-[11px] tracking-[0.25em] uppercase text-champagne/80 hover:text-champagne transition-colors py-2">🍾 Wine Quiz</a>
             <a href={`${basePath}#recommend`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.recommend">추천</a>
             <a href={`${basePath}#location`} class="text-[11px] tracking-[0.25em] uppercase text-off-white/70 hover:text-champagne transition-colors py-2" data-i18n="nav.location">Location</a>
             <div class="pt-4 border-t border-white/5">
@@ -175,6 +177,20 @@ function PageContent({ lang }: { lang: Language }) {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Quiz CTA Banner - 히어로 직후 */}
+      <section class="py-6 bg-gradient-to-r from-[#B8A060]/10 via-[#B8A060]/5 to-[#B8A060]/10 border-y border-[#B8A060]/10">
+        <a href="/quiz" class="group max-w-4xl mx-auto px-8 flex items-center justify-center gap-4 hover:gap-6 transition-all duration-500">
+          <span class="text-2xl">🍾</span>
+          <div class="text-center">
+            <p class="text-sm md:text-base text-off-white/80 group-hover:text-champagne transition-colors">
+              <span class="font-['Playfair_Display']">나에게 맞는 샴페인은?</span>
+              <span class="text-off-white/40 text-xs ml-2 hidden md:inline">— 1분 취향 테스트</span>
+            </p>
+          </div>
+          <span class="text-[11px] tracking-[0.15em] uppercase text-champagne group-hover:tracking-[0.25em] transition-all">Start →</span>
+        </a>
       </section>
 
       {/* Section 2: Introduction Quote */}

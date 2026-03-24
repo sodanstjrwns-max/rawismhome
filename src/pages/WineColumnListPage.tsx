@@ -37,6 +37,12 @@ export const WineColumnListPage: FC = () => {
             <span class="w-px h-3 bg-white/10"></span>
             <span>{categories.length}개 카테고리</span>
           </div>
+          {/* Quiz CTA */}
+          <a href="/quiz" class="group inline-flex items-center gap-3 mt-8 px-6 py-3 border border-champagne/20 hover:border-champagne/60 hover:bg-champagne/5 transition-all duration-300">
+            <span class="text-lg">🍾</span>
+            <span class="text-[11px] tracking-[0.15em] uppercase text-champagne">나에게 맞는 샴페인은? — 취향 테스트</span>
+            <span class="text-champagne group-hover:translate-x-1 transition-transform">→</span>
+          </a>
         </div>
       </section>
 

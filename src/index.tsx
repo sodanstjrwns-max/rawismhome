@@ -41,7 +41,7 @@ app.use('*', async (c, next) => {
   // Permissions policy
   c.header('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self)')
   // Content Security Policy - relaxed for CDN usage
-  c.header('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdn.amplitude.com https://www.googletagmanager.com https://t1.kakaocdn.net https://developers.kakao.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; frame-src https://www.google.com https://map.naver.com; connect-src 'self' https://cdn.amplitude.com https://api2.amplitude.com https://www.google-analytics.com")
+  c.header('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdn.amplitude.com https://www.googletagmanager.com https://t1.kakaocdn.net https://developers.kakao.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; frame-src https://www.google.com https://map.naver.com; connect-src 'self' https://cdn.amplitude.com https://api2.amplitude.com https://*.amplitude.com https://www.google-analytics.com https://www.googletagmanager.com")
   // Strict Transport Security
   c.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
 })

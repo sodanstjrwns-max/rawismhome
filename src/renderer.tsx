@@ -83,6 +83,7 @@ export const createRenderer = (pageLang: Language = 'ko') => {
           <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
           <meta name="theme-color" content="#080808" />
           <meta name="msapplication-TileColor" content="#080808" />
+          <link rel="manifest" href="/manifest.json" />
           
           {/* Geographic Tags for Local SEO */}
           <meta name="geo.region" content="KR-11" />
@@ -1241,15 +1242,15 @@ export const createRenderer = (pageLang: Language = 'ko') => {
               {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
-                "url": "https://instagram.com/rawism_theblack",
+                "url": "https://www.instagram.com/rawism_theblack",
                 "availableLanguage": ["Korean", "English"]
               }
             ],
             "sameAs": [
-              "https://instagram.com/rawism_theblack",
+              "https://www.instagram.com/rawism_theblack",
               "https://naver.me/5qLSfCNC",
-              "https://map.naver.com/",
-              "https://map.kakao.com/"
+              "https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C%20262-4",
+              "https://map.kakao.com/link/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C%20262-4"
             ]
           })}} />
           

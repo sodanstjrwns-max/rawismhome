@@ -262,7 +262,7 @@ export const createAboutRenderer = (pageLang: Language = 'ko') => {
               }
             ],
             "sameAs": [
-              "https://www.instagram.com/rowism_theblack",
+              "https://www.instagram.com/rawism_theblack",
               "https://naver.me/5qLSfCNC"
             ]
           })}} />

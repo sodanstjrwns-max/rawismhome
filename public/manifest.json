@@ -1,0 +1,26 @@
+{
+  "name": "RAWISM The Black",
+  "short_name": "RAWISM",
+  "description": "연남동 프리미엄 샴페인바 & 프라이빗 다이닝 - 트러플 한우 뭉티기, 소믈리에 큐레이션 샴페인",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "orientation": "portrait-primary",
+  "lang": "ko",
+  "categories": ["food", "lifestyle"],
+  "icons": [
+    {
+      "src": "/static/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

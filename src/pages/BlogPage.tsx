@@ -124,7 +124,7 @@ export const BlogPage = () => {
         </p>
         <div class="flex justify-center gap-4">
           <a
-            href="https://www.instagram.com/rowism_theblack"
+            href="https://www.instagram.com/rawism_theblack"
             target="_blank"
             rel="noopener"
             class="text-[11px] tracking-[0.15em] uppercase border border-[#B8A060] text-[#B8A060] px-6 py-3 hover:bg-[#B8A060] hover:text-[#080808] transition-all duration-300"

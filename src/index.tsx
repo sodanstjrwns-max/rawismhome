@@ -5,12 +5,14 @@ import { createAboutRenderer } from './renderers/aboutRenderer'
 import { createWineListRenderer, createWineDetailRenderer } from './renderers/wineColumnRenderer'
 import { createGalleryRenderer } from './renderers/galleryRenderer'
 import { createBlogRenderer } from './renderers/blogRenderer'
+import { createQuizRenderer } from './renderers/quizRenderer'
 import { MenuPage } from './pages/MenuPage'
 import { AboutPage } from './pages/AboutPage'
 import { WineColumnListPage } from './pages/WineColumnListPage'
 import { WineColumnDetailPage } from './pages/WineColumnDetailPage'
 import { GalleryPage } from './pages/GalleryPage'
 import { BlogPage } from './pages/BlogPage'
+import { QuizPage } from './pages/QuizPage'
 import { allWineColumns, getColumnBySlug } from './data'
 
 const app = new Hono()
@@ -583,6 +585,15 @@ function PageContent({ lang }: { lang: Language }) {
                 </div>
                 
                 <div class="border-l border-champagne/20 pl-6">
+                  <p class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase mb-2">Contact</p>
+                  <a href="tel:+82-70-5100-5534" class="text-off-white/80 font-light hover:text-champagne transition-colors inline-flex items-center gap-2">
+                    <svg class="w-3.5 h-3.5 text-champagne/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    070-5100-5534
+                  </a>
+                  <p class="text-off-white/30 text-xs mt-1">예약 문의</p>
+                </div>
+                
+                <div class="border-l border-champagne/20 pl-6">
                   <p class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase mb-2" data-i18n="location.landmarks.title">Nearby Landmarks</p>
                   <div id="landmarks-container">
                     {/* Landmarks will be dynamically rendered by JavaScript */}
@@ -606,12 +617,12 @@ function PageContent({ lang }: { lang: Language }) {
                 </iframe>
               </div>
               <div class="mt-6 flex gap-4">
-                <a href="https://map.naver.com/" target="_blank" rel="noopener noreferrer" 
+                <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C%20262-4" target="_blank" rel="noopener noreferrer" 
                    class="flex-1 py-3 border border-white/10 text-center text-off-white/50 text-xs hover:border-champagne/30 hover:text-champagne transition-all duration-300"
                    data-i18n="location.naverMap">
                   네이버 지도
                 </a>
-                <a href="https://map.kakao.com/" target="_blank" rel="noopener noreferrer" 
+                <a href="https://map.kakao.com/link/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C%20262-4" target="_blank" rel="noopener noreferrer" 
                    class="flex-1 py-3 border border-white/10 text-center text-off-white/50 text-xs hover:border-champagne/30 hover:text-champagne transition-all duration-300"
                    data-i18n="location.kakaoMap">
                   카카오맵
@@ -675,7 +686,54 @@ function PageContent({ lang }: { lang: Language }) {
         </div>
       </section>
 
-      {/* Section 12: CTA */}
+      {/* Section 12.5: Explore More - Gallery / Blog / Quiz */}
+      <section class="py-24 md:py-32 bg-deep-black" aria-label="더 알아보기">
+        <div class="max-w-5xl mx-auto px-8 md:px-12">
+          <div class="text-center mb-12 animate-on-scroll">
+            <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Explore</p>
+            <h2 class="font-playfair text-2xl md:text-3xl font-light tracking-wide">
+              더 많은 <span class="text-champagne">RAWISM</span>
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 animate-on-scroll">
+            <a href="/gallery" class="group border border-white/5 hover:border-champagne/30 transition-all duration-500 overflow-hidden">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img src="/static/menu_signature.jpg" alt="RAWISM 갤러리" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" loading="lazy" />
+              </div>
+              <div class="p-5">
+                <p class="text-[10px] tracking-[0.3em] text-champagne uppercase mb-2">Gallery</p>
+                <p class="text-sm text-off-white/70 group-hover:text-off-white transition-colors">포토 갤러리</p>
+                <p class="text-xs text-off-white/30 mt-1">인스타 감성 사진 모음</p>
+              </div>
+            </a>
+            <a href="/blog" class="group border border-white/5 hover:border-champagne/30 transition-all duration-500 overflow-hidden">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img src="/static/menu_cheese.jpg" alt="RAWISM 블로그" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" loading="lazy" />
+              </div>
+              <div class="p-5">
+                <p class="text-[10px] tracking-[0.3em] text-champagne uppercase mb-2">Blog</p>
+                <p class="text-sm text-off-white/70 group-hover:text-off-white transition-colors">와인 & 다이닝 매거진</p>
+                <p class="text-xs text-off-white/30 mt-1">소믈리에 칼럼 32편</p>
+              </div>
+            </a>
+            <a href="/quiz" class="group border border-white/5 hover:border-champagne/30 transition-all duration-500 overflow-hidden">
+              <div class="aspect-[3/2] bg-gradient-to-br from-champagne/10 via-deep-black to-champagne/5 flex items-center justify-center">
+                <div class="text-center">
+                  <p class="text-4xl mb-2">🍾</p>
+                  <p class="text-champagne/60 text-xs tracking-[0.2em] uppercase">Wine Quiz</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-[10px] tracking-[0.3em] text-champagne uppercase mb-2">Quiz</p>
+                <p class="text-sm text-off-white/70 group-hover:text-off-white transition-colors">나에게 맞는 샴페인은?</p>
+                <p class="text-xs text-off-white/30 mt-1">5문항 취향 테스트</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 13: CTA */}
       <section id="reserve" class="py-32 md:py-40 bg-soft-black/30 relative overflow-hidden" aria-label="예약 안내">
         {/* Subtle Background */}
         <div class="absolute inset-0 bg-gradient-to-r from-champagne/5 via-transparent to-champagne/5"></div>
@@ -712,7 +770,7 @@ function PageContent({ lang }: { lang: Language }) {
               <div class="bg-deep-black/50 border border-white/10 p-8 rounded-sm hover:border-champagne/30 transition-all duration-500">
                 <p class="text-[10px] tracking-[0.3em] text-champagne/50 uppercase mb-3" data-i18n="reserve.international.label">International</p>
                 <p class="text-off-white/50 text-xs mb-6" data-i18n="reserve.international.desc">For international guests</p>
-                <a href="https://instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
+                <a href="https://www.instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
                    class="group w-full px-8 py-4 bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737] hover:opacity-90 transition-all duration-500 inline-flex items-center justify-center gap-3">
                   <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -761,13 +819,13 @@ function PageContent({ lang }: { lang: Language }) {
             <div>
               <p class="text-[10px] tracking-[0.3em] text-champagne/40 uppercase mb-6">Follow</p>
               <div class="flex gap-6 mb-6">
-                <a href="https://instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
+                <a href="https://www.instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
                    class="text-off-white/30 hover:text-champagne transition-colors duration-500">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
-                <a href="https://map.naver.com/" target="_blank" rel="noopener noreferrer" 
+                <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C%20262-4" target="_blank" rel="noopener noreferrer" 
                    class="text-off-white/30 hover:text-champagne transition-colors duration-500">
                   <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/>
@@ -779,7 +837,7 @@ function PageContent({ lang }: { lang: Language }) {
                    class="block text-off-white/30 text-xs hover:text-champagne transition-colors">
                   네이버 예약
                 </a>
-                <a href="https://map.naver.com/" target="_blank" rel="noopener noreferrer" 
+                <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C%20262-4" target="_blank" rel="noopener noreferrer" 
                    class="block text-off-white/30 text-xs hover:text-champagne transition-colors">
                   네이버 플레이스
                 </a>
@@ -806,7 +864,7 @@ function PageContent({ lang }: { lang: Language }) {
             </svg>
             <span data-i18n="floating.naver">네이버 예약</span>
           </a>
-          <a href="https://instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
+          <a href="https://www.instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
              class="flex-1 py-3 bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737] text-white text-center text-[10px] tracking-[0.15em] uppercase font-medium flex items-center justify-center gap-2">
             <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -825,7 +883,7 @@ function PageContent({ lang }: { lang: Language }) {
             <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/>
           </svg>
         </a>
-        <a href="https://instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
+        <a href="https://www.instagram.com/rawism_theblack" target="_blank" rel="noopener noreferrer" 
            class="group w-14 h-14 bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#F77737] hover:opacity-90 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
            title="Instagram DM">
           <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -985,6 +1043,13 @@ app.get('/sitemap.xml', async (c) => {
     <lastmod>2026-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <!-- Wine Quiz Page -->
+  <url>
+    <loc>https://rawism.kr/quiz</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <!-- Wine Column Index Page -->
   <url>
@@ -1333,6 +1398,67 @@ app.get('/BingSiteAuth.xml', (c) => {
   return c.text(`<?xml version="1.0"?><users><user>YOUR_BING_VERIFICATION_CODE</user></users>`, 200, {
     'Content-Type': 'application/xml'
   })
+})
+
+// ===========================================
+// QUIZ PAGE ROUTE - /quiz
+// ===========================================
+app.use('/quiz', createQuizRenderer())
+app.get('/quiz', (c) => {
+  return c.render(<QuizPage />)
+})
+
+// ============================================
+// Custom 404 Page - 브랜드 스타일
+// ============================================
+app.notFound((c) => {
+  return c.html(`<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>페이지를 찾을 수 없습니다 | RAWISM The Black</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'deep-black':'#080808','champagne':'#B8A060','off-white':'#E0E0E0'}}}}</script>
+  <link href="/static/style.css" rel="stylesheet">
+</head>
+<body class="bg-deep-black min-h-screen flex items-center justify-center text-off-white">
+  <div class="text-center px-6 max-w-lg">
+    <p class="text-[120px] md:text-[180px] font-['Playfair_Display'] text-champagne/20 leading-none select-none">404</p>
+    <h1 class="font-['Playfair_Display'] text-2xl md:text-3xl text-off-white -mt-8 mb-4">Page Not Found</h1>
+    <p class="text-sm text-[#777] mb-8 leading-relaxed">
+      찾으시는 페이지가 존재하지 않거나 이동되었습니다.<br>
+      아래 링크에서 원하시는 정보를 찾아보세요.
+    </p>
+    <div class="grid grid-cols-2 gap-3 mb-8">
+      <a href="/" class="border border-champagne/20 hover:border-champagne/60 p-4 transition-all group">
+        <p class="text-[10px] tracking-[0.2em] uppercase text-champagne mb-1">Home</p>
+        <p class="text-xs text-[#999] group-hover:text-off-white transition-colors">메인 페이지</p>
+      </a>
+      <a href="/menu" class="border border-champagne/20 hover:border-champagne/60 p-4 transition-all group">
+        <p class="text-[10px] tracking-[0.2em] uppercase text-champagne mb-1">Menu</p>
+        <p class="text-xs text-[#999] group-hover:text-off-white transition-colors">시그니처 메뉴</p>
+      </a>
+      <a href="/wine" class="border border-champagne/20 hover:border-champagne/60 p-4 transition-all group">
+        <p class="text-[10px] tracking-[0.2em] uppercase text-champagne mb-1">Wine Guide</p>
+        <p class="text-xs text-[#999] group-hover:text-off-white transition-colors">와인 칼럼 32편</p>
+      </a>
+      <a href="/gallery" class="border border-champagne/20 hover:border-champagne/60 p-4 transition-all group">
+        <p class="text-[10px] tracking-[0.2em] uppercase text-champagne mb-1">Gallery</p>
+        <p class="text-xs text-[#999] group-hover:text-off-white transition-colors">포토 갤러리</p>
+      </a>
+    </div>
+    <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener"
+       class="inline-block text-[11px] tracking-[0.2em] uppercase bg-champagne text-deep-black px-8 py-3 hover:bg-[#C9A962] transition-colors">
+      네이버 예약 →
+    </a>
+    <p class="text-[10px] text-[#555] mt-8">© 2024 RAWISM The Black. All rights reserved.</p>
+  </div>
+</body>
+</html>`, 404)
 })
 
 export default app

@@ -133,19 +133,43 @@ export const GalleryPage = () => {
       <section class="py-16 text-center border-t border-[#B8A060]/10 px-4">
         <p class="text-[11px] tracking-[0.3em] uppercase text-[#B8A060] mb-4">Follow Us</p>
         <h2 class="font-['Playfair_Display'] text-2xl md:text-3xl text-[#E0E0E0] mb-3">
-          @rowism_theblack
+          @rawism_theblack
         </h2>
         <p class="text-sm text-[#777] mb-6 max-w-md mx-auto">
           더 많은 사진과 이벤트 소식은 인스타그램에서 확인하세요
         </p>
         <a
-          href="https://www.instagram.com/rowism_theblack"
+          href="https://www.instagram.com/rawism_theblack"
           target="_blank"
           rel="noopener"
           class="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase border border-[#B8A060] text-[#B8A060] px-6 py-3 hover:bg-[#B8A060] hover:text-[#080808] transition-all duration-300"
         >
           인스타그램 방문 →
         </a>
+      </section>
+
+      {/* Explore More Links */}
+      <section class="py-16 px-4 border-t border-[#B8A060]/10">
+        <div class="max-w-4xl mx-auto">
+          <p class="text-[10px] tracking-[0.3em] uppercase text-[#B8A060] text-center mb-8">Explore More</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <a href="/menu" class="group border border-[#1a1a1a] hover:border-[#B8A060]/30 p-5 transition-all">
+              <p class="text-[10px] tracking-[0.2em] uppercase text-[#B8A060] mb-2">Menu</p>
+              <p class="text-sm text-[#E0E0E0] group-hover:text-[#B8A060] transition-colors">시그니처 메뉴 보기</p>
+              <p class="text-xs text-[#555] mt-1">트러플 한우 뭉티기 · 치즈 셀렉션 · 육회</p>
+            </a>
+            <a href="/wine" class="group border border-[#1a1a1a] hover:border-[#B8A060]/30 p-5 transition-all">
+              <p class="text-[10px] tracking-[0.2em] uppercase text-[#B8A060] mb-2">Wine Guide</p>
+              <p class="text-sm text-[#E0E0E0] group-hover:text-[#B8A060] transition-colors">와인 칼럼 32편</p>
+              <p class="text-xs text-[#555] mt-1">샴페인 기초부터 프리미엄 셀렉션까지</p>
+            </a>
+            <a href="/blog" class="group border border-[#1a1a1a] hover:border-[#B8A060]/30 p-5 transition-all">
+              <p class="text-[10px] tracking-[0.2em] uppercase text-[#B8A060] mb-2">Blog</p>
+              <p class="text-sm text-[#E0E0E0] group-hover:text-[#B8A060] transition-colors">RAWISM 매거진</p>
+              <p class="text-xs text-[#555] mt-1">와인 이야기 · 연남동 데이트 코스</p>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Reservation CTA */}

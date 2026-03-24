@@ -129,19 +129,46 @@ export const WineColumnListPage: FC = () => {
         </div>
       </section>
 
+      {/* Explore More */}
+      <section class="py-16 bg-[#0a0a0a]">
+        <div class="max-w-5xl mx-auto px-6 md:px-12">
+          <h2 class="font-playfair text-xl font-light tracking-wide text-center mb-8 text-off-white/80">더 알아보기</h2>
+          <div class="grid grid-cols-3 gap-4">
+            <a href="/quiz" class="group block p-4 border border-white/5 hover:border-champagne/30 transition-all text-center">
+              <span class="text-xl mb-2 block">🍾</span>
+              <p class="text-[10px] text-off-white/40 group-hover:text-champagne transition-colors">Wine Quiz</p>
+            </a>
+            <a href="/gallery" class="group block p-4 border border-white/5 hover:border-champagne/30 transition-all text-center">
+              <span class="text-xl mb-2 block">📸</span>
+              <p class="text-[10px] text-off-white/40 group-hover:text-champagne transition-colors">Gallery</p>
+            </a>
+            <a href="/blog" class="group block p-4 border border-white/5 hover:border-champagne/30 transition-all text-center">
+              <span class="text-xl mb-2 block">📝</span>
+              <p class="text-[10px] text-off-white/40 group-hover:text-champagne transition-colors">Blog</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer class="py-12 border-t border-white/5">
         <div class="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
           <a href="/" class="group">
             <img src="/static/logo.png" alt="RAWISM The Black" class="h-6 opacity-50 group-hover:opacity-70 transition-opacity" />
           </a>
-          <div class="flex items-center gap-6 text-[10px] text-off-white/30">
+          <div class="flex flex-wrap items-center gap-6 text-[10px] text-off-white/30">
             <a href="/" class="hover:text-champagne/60 transition-colors">Home</a>
             <a href="/menu" class="hover:text-champagne/60 transition-colors">Menu</a>
             <a href="/wine" class="hover:text-champagne/60 transition-colors text-champagne/50">Wine Guide</a>
+            <a href="/gallery" class="hover:text-champagne/60 transition-colors">Gallery</a>
+            <a href="/blog" class="hover:text-champagne/60 transition-colors">Blog</a>
+            <a href="/quiz" class="hover:text-champagne/60 transition-colors">Quiz</a>
             <a href="/about" class="hover:text-champagne/60 transition-colors">About</a>
           </div>
-          <p class="text-[10px] text-off-white/20">&copy; 2026 RAWISM The Black</p>
+          <div class="flex flex-col items-center md:items-end gap-1">
+            <a href="tel:02-332-7753" class="text-[10px] text-champagne/40 hover:text-champagne transition-colors">📞 02-332-7753</a>
+            <p class="text-[10px] text-off-white/20">&copy; 2026 RAWISM The Black</p>
+          </div>
         </div>
       </footer>
 

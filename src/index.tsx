@@ -27,6 +27,25 @@ app.use('*', async (c, next) => {
   return next()
 })
 
+// Security headers middleware
+app.use('*', async (c, next) => {
+  await next()
+  // Prevent clickjacking
+  c.header('X-Frame-Options', 'SAMEORIGIN')
+  // Prevent MIME-type sniffing
+  c.header('X-Content-Type-Options', 'nosniff')
+  // XSS Protection (legacy browsers)
+  c.header('X-XSS-Protection', '1; mode=block')
+  // Referrer policy
+  c.header('Referrer-Policy', 'strict-origin-when-cross-origin')
+  // Permissions policy
+  c.header('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self)')
+  // Content Security Policy - relaxed for CDN usage
+  c.header('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdn.amplitude.com https://www.googletagmanager.com https://t1.kakaocdn.net https://developers.kakao.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; frame-src https://www.google.com https://map.naver.com; connect-src 'self' https://cdn.amplitude.com https://api2.amplitude.com https://www.google-analytics.com")
+  // Strict Transport Security
+  c.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
+})
+
 // Language types
 type Language = 'ko' | 'en' | 'ja' | 'zh'
 
@@ -61,6 +80,7 @@ function PageContent({ lang }: { lang: Language }) {
               src="/static/logo.png" 
               alt="RAWISM The Black" 
               class="h-8 md:h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+              width="120" height="40"
             />
           </a>
           <div class="hidden lg:flex items-center gap-8">
@@ -157,6 +177,8 @@ function PageContent({ lang }: { lang: Language }) {
                 src="/static/logo.png" 
                 alt="RAWISM The Black - 연남동 프리미엄 샴페인바 트러플 한우 뭉티기 프라이빗 다이닝" 
                 class="w-64 md:w-80 lg:w-96 mx-auto"
+                fetchpriority="high"
+                width="384" height="128"
               />
             </div>
             
@@ -309,11 +331,16 @@ function PageContent({ lang }: { lang: Language }) {
             <div class="grid lg:grid-cols-2 gap-0">
               {/* Photo */}
               <div class="relative aspect-[4/3] lg:aspect-auto bg-soft-black overflow-hidden group">
-                <img 
-                  src="/static/menu_signature.jpg" 
-                  alt="연남동 맛집 로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기 부라타치즈 홈대 데이트 코스 기념일 디너" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-                />
+                <picture>
+                  <source srcset="/static/menu_signature.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_signature.jpg" 
+                    alt="연남동 맛집 로위즘 뭉티기 시그니처 - 트러플 한우 뭉티기 부라타치즈 홈대 데이트 코스 기념일 디너" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                    loading="lazy"
+                    width="800" height="600"
+                  />
+                </picture>
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/30 to-transparent"></div>
                 <div class="absolute top-6 left-6">
                   <span class="text-[9px] tracking-[0.3em] text-champagne/80 uppercase bg-deep-black/70 px-3 py-1" data-i18n="menu.signature.badge">
@@ -369,11 +396,16 @@ function PageContent({ lang }: { lang: Language }) {
             {/* Menu Item 1: 치즈 셀렉션 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.1s" data-menu-item="0">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_cheese.jpg" 
-                  alt="연남동 샴페인바 프리미엄 치즈 플레이트 - 홈대 데이트 장소 기념일 레스토랑" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_cheese.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_cheese.jpg" 
+                    alt="연남동 샴페인바 프리미엄 치즈 플레이트 - 홈대 데이트 장소 기념일 레스토랑" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    width="800" height="500"
+                  />
+                </picture>
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
@@ -399,11 +431,16 @@ function PageContent({ lang }: { lang: Language }) {
             {/* Menu Item 3: 청양 오일 육회 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.2s" data-menu-item="1">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_yukhoe.jpg" 
-                  alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 데이트 레스토랑" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_yukhoe.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_yukhoe.jpg" 
+                    alt="연남동 육회 맛집 청양오일육회 - 홍대 한우 육회 전문점 데이트 레스토랑" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    width="800" height="500"
+                  />
+                </picture>
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
@@ -430,11 +467,16 @@ function PageContent({ lang }: { lang: Language }) {
             {/* Menu Item 4: 아보카도 카프레제 */}
             <div class="animate-on-scroll group" style="animation-delay: 0.25s" data-menu-item="2">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_caprese.jpg" 
-                  alt="연남동 데이트 코스 아보카도 카프레제 - 홈대 분위기 좋은 샴페인바" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_caprese.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_caprese.jpg" 
+                    alt="연남동 데이트 코스 아보카도 카프레제 - 홈대 분위기 좋은 샴페인바" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    width="800" height="500"
+                  />
+                </picture>
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
               </div>
               <div class="flex justify-between items-start mb-3">
@@ -461,11 +503,16 @@ function PageContent({ lang }: { lang: Language }) {
             {/* Menu Item 5: 들기름 육회 메밀면 */}
             <div class="animate-on-scroll group md:col-span-2 lg:col-span-1 lg:col-start-1" style="animation-delay: 0.3s" data-menu-item="3">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_memil.jpg" 
-                  alt="연남동 맛집 들기름 육회 메밀면 - 홈대입구역 맛집 연트럴파크 근처" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_memil.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_memil.jpg" 
+                    alt="연남동 맛집 들기름 육회 메밀면 - 홈대입구역 맛집 연트럴파크 근처" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    width="800" height="500"
+                  />
+                </picture>
                 <div class="absolute inset-0 bg-gradient-to-t from-deep-black/20 to-transparent"></div>
                 <div class="absolute bottom-4 right-4">
                   <span class="text-[9px] tracking-[0.2em] text-off-white/60 uppercase bg-deep-black/70 px-2 py-1" data-i18n="menu.finisherBadge">
@@ -714,7 +761,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5 animate-on-scroll">
             <a href="/gallery" class="group border border-white/5 hover:border-champagne/30 transition-all duration-500 overflow-hidden">
               <div class="aspect-[3/2] overflow-hidden">
-                <img src="/static/menu_signature.jpg" alt="RAWISM 갤러리" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" loading="lazy" />
+                <picture><source srcset="/static/menu_signature.webp" type="image/webp" /><img src="/static/menu_signature.jpg" alt="RAWISM 갤러리" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" loading="lazy" /></picture>
               </div>
               <div class="p-5">
                 <p class="text-[10px] tracking-[0.3em] text-champagne uppercase mb-2">Gallery</p>
@@ -724,7 +771,7 @@ function PageContent({ lang }: { lang: Language }) {
             </a>
             <a href="/blog" class="group border border-white/5 hover:border-champagne/30 transition-all duration-500 overflow-hidden">
               <div class="aspect-[3/2] overflow-hidden">
-                <img src="/static/menu_cheese.jpg" alt="RAWISM 블로그" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" loading="lazy" />
+                <picture><source srcset="/static/menu_cheese.webp" type="image/webp" /><img src="/static/menu_cheese.jpg" alt="RAWISM 블로그" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" loading="lazy" /></picture>
               </div>
               <div class="p-5">
                 <p class="text-[10px] tracking-[0.3em] text-champagne uppercase mb-2">Blog</p>
@@ -1066,6 +1113,13 @@ app.get('/sitemap.xml', async (c) => {
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <!-- Reservation Page -->
+  <url>
+    <loc>https://rawism.kr/reservation</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <!-- Quiz Result Pages -->
   <url>
@@ -1464,6 +1518,204 @@ app.get('/zh/quiz', (c) => c.redirect('/quiz', 301))
 app.get('/en/wine', (c) => c.redirect('/wine', 301))
 app.get('/ja/wine', (c) => c.redirect('/wine', 301))
 app.get('/zh/wine', (c) => c.redirect('/wine', 301))
+
+// ============================================
+// RESERVATION LANDING PAGE
+// ============================================
+app.get('/reservation', (c) => {
+  return c.html(`<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>예약 | RAWISM The Black | 연남동 프리미엄 샴페인바 예약 안내</title>
+  <meta name="description" content="RAWISM The Black 예약 안내. 연남동 프리미엄 샴페인바 & 트러플 한우 뭉티기 다이닝. 프로포즈, 기념일, 데이트에 완벽한 프라이빗 다이닝. 네이버 예약 또는 전화 예약 가능." />
+  <meta name="keywords" content="연남동 예약, 홍대 샴페인바 예약, 연남동 데이트 예약, 프로포즈 레스토랑 예약, 기념일 디너 예약, RAWISM 예약, 연남동 프라이빗 다이닝" />
+  <link rel="canonical" href="https://rawism.kr/reservation" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="예약 안내 | RAWISM The Black | 연남동 프리미엄 샴페인바" />
+  <meta property="og:description" content="연남동 프리미엄 샴페인바 RAWISM The Black 예약. 트러플 한우 뭉티기와 샴페인 페어링. 프로포즈·기념일·데이트 완벽한 공간." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rawism.kr/reservation" />
+  <meta property="og:image" content="https://rawism.kr/static/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="예약 | RAWISM The Black" />
+  <meta name="twitter:description" content="연남동 프리미엄 샴페인바 RAWISM 예약 안내" />
+  <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+  <meta name="twitter:image:alt" content="RAWISM The Black - 연남동 프리미엄 샴페인바 예약" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'deep-black':'#080808','soft-black':'#141414','champagne':'#B8A060','off-white':'#E0E0E0'},fontFamily:{playfair:['Playfair Display','serif'],'noto-serif':['Noto Serif KR','serif']}}}}</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ReservationPage",
+    "name": "RAWISM The Black 예약",
+    "description": "연남동 프리미엄 샴페인바 RAWISM The Black 예약 안내",
+    "url": "https://rawism.kr/reservation",
+    "provider": {
+      "@type": "Restaurant",
+      "name": "RAWISM The Black",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "동교로 262-4",
+        "addressLocality": "마포구",
+        "addressRegion": "서울특별시",
+        "postalCode": "04030",
+        "addressCountry": "KR"
+      },
+      "telephone": "+82-2-332-7753",
+      "openingHours": "Tu-Su 18:00-24:00"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "RAWISM The Black", "item": "https://rawism.kr" },
+      { "@type": "ListItem", "position": 2, "name": "예약", "item": "https://rawism.kr/reservation" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-deep-black text-off-white min-h-screen">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-deep-black/90 backdrop-blur-sm border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="group">
+        <img src="/static/logo.png" alt="RAWISM The Black" class="h-8 opacity-80 group-hover:opacity-100 transition-opacity" />
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-[10px] tracking-[0.2em] uppercase text-off-white/50">
+        <a href="/menu" class="hover:text-champagne transition-colors">Menu</a>
+        <a href="/wine" class="hover:text-champagne transition-colors">Wine</a>
+        <a href="/gallery" class="hover:text-champagne transition-colors">Gallery</a>
+        <a href="/quiz" class="hover:text-champagne transition-colors">Quiz</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6 text-center">
+    <p class="text-[10px] tracking-[0.4em] text-champagne/50 uppercase mb-4">Reserve Your Experience</p>
+    <h1 class="font-playfair text-4xl md:text-5xl font-light tracking-wide mb-6">예약 안내</h1>
+    <p class="text-off-white/40 text-sm max-w-lg mx-auto leading-relaxed">
+      연남동 프리미엄 샴페인바 RAWISM The Black에서<br />
+      특별한 순간을 만들어 보세요
+    </p>
+  </section>
+
+  <!-- Reservation Methods -->
+  <section class="pb-20 px-6">
+    <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
+      <!-- Naver Reservation -->
+      <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener"
+         class="group block p-10 border border-white/10 hover:border-champagne/40 transition-all duration-500 text-center">
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-champagne/20 rounded-full group-hover:border-champagne/50 transition-colors">
+          <svg class="w-7 h-7 text-champagne" viewBox="0 0 24 24" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/></svg>
+        </div>
+        <h2 class="font-playfair text-xl mb-3 group-hover:text-champagne transition-colors">네이버 예약</h2>
+        <p class="text-off-white/40 text-xs leading-relaxed mb-4">
+          네이버에서 간편하게<br />날짜와 시간을 선택하세요
+        </p>
+        <span class="inline-block text-[10px] tracking-[0.2em] uppercase text-champagne/60 border border-champagne/20 px-4 py-2 group-hover:bg-champagne group-hover:text-deep-black transition-all">
+          예약하기 →
+        </span>
+      </a>
+
+      <!-- Phone Reservation -->
+      <a href="tel:02-332-7753"
+         class="group block p-10 border border-white/10 hover:border-champagne/40 transition-all duration-500 text-center">
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-champagne/20 rounded-full group-hover:border-champagne/50 transition-colors">
+          <span class="text-2xl">📞</span>
+        </div>
+        <h2 class="font-playfair text-xl mb-3 group-hover:text-champagne transition-colors">전화 예약</h2>
+        <p class="text-off-white/40 text-xs leading-relaxed mb-4">
+          프라이빗 다이닝, 단체 예약은<br />전화로 상담해 주세요
+        </p>
+        <span class="inline-block text-[10px] tracking-[0.2em] text-champagne/80 font-medium">
+          02-332-7753
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="py-20 px-6 bg-soft-black/50">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-playfair text-2xl text-center mb-12 font-light">방문 전 안내</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="text-champagne text-sm mb-2">영업 시간</p>
+          <p class="text-off-white/50 text-xs leading-relaxed">화 ~ 일 18:00 - 24:00<br /><span class="text-off-white/30">매주 월요일 휴무</span></p>
+        </div>
+        <div>
+          <p class="text-champagne text-sm mb-2">위치</p>
+          <p class="text-off-white/50 text-xs leading-relaxed">서울 마포구 동교로 262-4<br /><span class="text-off-white/30">연남동 · 홍대입구역 3번 출구</span></p>
+        </div>
+        <div>
+          <p class="text-champagne text-sm mb-2">추천 상황</p>
+          <p class="text-off-white/50 text-xs leading-relaxed">프로포즈 · 기념일 · 데이트<br /><span class="text-off-white/30">프라이빗 다이닝 · 소규모 모임</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore More -->
+  <section class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-playfair text-xl text-center mb-8 font-light text-off-white/70">먼저 둘러보기</h2>
+      <div class="grid grid-cols-4 gap-4">
+        <a href="/menu" class="group text-center p-4 border border-white/5 hover:border-champagne/20 transition-all">
+          <span class="text-lg block mb-1">🍽️</span>
+          <p class="text-[9px] text-off-white/30 group-hover:text-champagne/70 transition-colors">Menu</p>
+        </a>
+        <a href="/wine" class="group text-center p-4 border border-white/5 hover:border-champagne/20 transition-all">
+          <span class="text-lg block mb-1">🍷</span>
+          <p class="text-[9px] text-off-white/30 group-hover:text-champagne/70 transition-colors">Wine</p>
+        </a>
+        <a href="/gallery" class="group text-center p-4 border border-white/5 hover:border-champagne/20 transition-all">
+          <span class="text-lg block mb-1">📸</span>
+          <p class="text-[9px] text-off-white/30 group-hover:text-champagne/70 transition-colors">Gallery</p>
+        </a>
+        <a href="/quiz" class="group text-center p-4 border border-white/5 hover:border-champagne/20 transition-all">
+          <span class="text-lg block mb-1">🍾</span>
+          <p class="text-[9px] text-off-white/30 group-hover:text-champagne/70 transition-colors">Quiz</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center border-t border-white/5">
+    <div class="flex flex-wrap justify-center gap-4 mb-4">
+      <a href="/" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">Home</a>
+      <a href="/menu" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">Menu</a>
+      <a href="/wine" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">Wine</a>
+      <a href="/gallery" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">Gallery</a>
+      <a href="/blog" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">Blog</a>
+      <a href="/quiz" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">Quiz</a>
+      <a href="/about" class="text-off-white/30 text-[10px] hover:text-champagne/60 transition-colors">About</a>
+    </div>
+    <a href="tel:02-332-7753" class="inline-block text-champagne/40 text-[10px] hover:text-champagne transition-colors mb-3">📞 02-332-7753</a>
+    <p class="text-off-white/15 text-[10px]">© 2024 RAWISM The Black</p>
+  </footer>
+</body>
+</html>`)
+})
+
+// Multilingual reservation redirects
+app.get('/en/reservation', (c) => c.redirect('/reservation', 301))
+app.get('/ja/reservation', (c) => c.redirect('/reservation', 301))
+app.get('/zh/reservation', (c) => c.redirect('/reservation', 301))
 
 // ============================================
 // Search Engine Verification Files

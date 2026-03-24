@@ -375,14 +375,19 @@ export const QuizPage = () => {
       ` }} />}
 
       {/* Footer */}
-      <footer class="py-6 text-center text-[10px] text-[#555] border-t border-[#1a1a1a] px-4">
-        <p>© 2024 RAWISM The Black. All rights reserved.</p>
-        <div class="flex justify-center gap-4 mt-3">
-          <a href="/wine" class="text-[#777] hover:text-[#B8A060] transition-colors">Wine Guide</a>
-          <a href="/gallery" class="text-[#777] hover:text-[#B8A060] transition-colors">Gallery</a>
-          <a href="/blog" class="text-[#777] hover:text-[#B8A060] transition-colors">Blog</a>
-          <a href="/menu" class="text-[#777] hover:text-[#B8A060] transition-colors">Menu</a>
+      <footer class="py-8 text-center border-t border-[#1a1a1a] px-4">
+        <div class="flex flex-wrap justify-center gap-4 mb-4">
+          <a href="/" class="text-[#555] text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors">Home</a>
+          <a href="/wine" class="text-[#555] text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors">Wine Guide</a>
+          <a href="/gallery" class="text-[#555] text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors">Gallery</a>
+          <a href="/blog" class="text-[#555] text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors">Blog</a>
+          <a href="/menu" class="text-[#555] text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors">Menu</a>
+          <a href="/about" class="text-[#555] text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors">About</a>
         </div>
+        <a href="tel:02-332-7753" class="inline-block text-[#B8A060]/60 text-[10px] tracking-[0.15em] hover:text-[#B8A060] transition-colors mb-3">
+          📞 02-332-7753
+        </a>
+        <p class="text-[10px] text-[#555]">© 2024 RAWISM The Black. All rights reserved.</p>
       </footer>
     </div>
   )

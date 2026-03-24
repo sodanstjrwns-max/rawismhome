@@ -199,7 +199,10 @@ export const WineColumnDetailPage: FC<Props> = ({ article }) => {
             <a href="/quiz" class="hover:text-champagne/60 transition-colors">Quiz</a>
             <a href="/about" class="hover:text-champagne/60 transition-colors">About</a>
           </div>
-          <p class="text-[10px] text-off-white/20">&copy; 2026 RAWISM The Black</p>
+          <div class="flex flex-col items-center md:items-end gap-1">
+            <a href="tel:02-332-7753" class="text-[10px] text-champagne/40 hover:text-champagne transition-colors">📞 02-332-7753</a>
+            <p class="text-[10px] text-off-white/20">&copy; 2026 RAWISM The Black</p>
+          </div>
         </div>
       </footer>
 

@@ -530,9 +530,50 @@ export const AboutPage: FC<{ lang: Language }> = ({ lang }) => {
         </div>
       </section>
 
+      {/* Explore More - Internal Links */}
+      <section class="py-20 bg-deep-black">
+        <div class="max-w-5xl mx-auto px-8 md:px-12">
+          <h2 class="font-playfair text-2xl md:text-3xl font-light tracking-wide text-center mb-4 text-off-white">더 알아보기</h2>
+          <p class="text-off-white/40 text-xs text-center mb-12 tracking-wider">RAWISM의 다양한 이야기를 만나보세요</p>
+          <div class="grid md:grid-cols-4 gap-6">
+            <a href="/quiz" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">🍾</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Wine Quiz</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">나에게 맞는 샴페인 찾기</p>
+            </a>
+            <a href="/gallery" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">📸</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Gallery</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">RAWISM의 공간과 분위기</p>
+            </a>
+            <a href="/blog" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">📝</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Blog</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">와인 칼럼 & 다이닝 매거진</p>
+            </a>
+            <a href="/menu" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">🍽️</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Menu</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">시그니처 메뉴 & 페어링</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer class="py-12 bg-deep-black border-t border-white/5">
         <div class="max-w-6xl mx-auto px-8 md:px-12 text-center">
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="/" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Home</a>
+            <a href="/wine" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Wine Guide</a>
+            <a href="/gallery" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Gallery</a>
+            <a href="/blog" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Blog</a>
+            <a href="/quiz" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Quiz</a>
+            <a href="/menu" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Menu</a>
+          </div>
+          <a href="tel:02-332-7753" class="inline-block text-champagne/60 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors mb-4">
+            📞 02-332-7753
+          </a>
           <p class="text-off-white/15 text-[10px] tracking-[0.3em]">
             © 2024 RAWISM The Black
           </p>

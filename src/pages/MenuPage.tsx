@@ -319,11 +319,15 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
           <div class="grid lg:grid-cols-2 gap-0">
             {/* Photo */}
             <div class="relative aspect-[4/3] lg:aspect-auto bg-soft-black overflow-hidden group">
-              <img 
-                src="/static/menu_signature.jpg" 
-                alt={t.signatureTitle}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-              />
+              <picture>
+                <source srcset="/static/menu_signature.webp" type="image/webp" />
+                <img 
+                  src="/static/menu_signature.jpg" 
+                  alt={t.signatureTitle}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                  loading="lazy" width="800" height="600"
+                />
+              </picture>
               <div class="absolute inset-0 bg-gradient-to-t from-deep-black/30 to-transparent"></div>
               <div class="absolute top-6 left-6">
                 <span class="text-[9px] tracking-[0.3em] text-champagne/80 uppercase bg-deep-black/70 px-3 py-1">
@@ -386,11 +390,15 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
             {/* Yukhoe */}
             <div class="group">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_yukhoe.jpg" 
-                  alt={t.menuItems[0].name}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_yukhoe.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_yukhoe.jpg" 
+                    alt={t.menuItems[0].name}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" width="800" height="500"
+                  />
+                </picture>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -422,11 +430,15 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
             {/* Cheese Selection */}
             <div class="group">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_cheese.jpg" 
-                  alt={t.menuItems[1].name}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_cheese.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_cheese.jpg" 
+                    alt={t.menuItems[1].name}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" width="800" height="500"
+                  />
+                </picture>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -447,11 +459,15 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
             {/* Caprese */}
             <div class="group">
               <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-                <img 
-                  src="/static/menu_caprese.jpg" 
-                  alt={t.menuItems[2].name}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture>
+                  <source srcset="/static/menu_caprese.webp" type="image/webp" />
+                  <img 
+                    src="/static/menu_caprese.jpg" 
+                    alt={t.menuItems[2].name}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" width="800" height="500"
+                  />
+                </picture>
               </div>
               <div class="flex justify-between items-start mb-3">
                 <div>
@@ -481,11 +497,15 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
           
           <div class="group">
             <div class="relative aspect-[16/10] bg-soft-black overflow-hidden mb-6">
-              <img 
-                src="/static/menu_memil.jpg" 
-                alt={t.menuItems[3].name}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              <picture>
+                <source srcset="/static/menu_memil.webp" type="image/webp" />
+                <img 
+                  src="/static/menu_memil.jpg" 
+                  alt={t.menuItems[3].name}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" width="800" height="500"
+                />
+              </picture>
               <div class="absolute bottom-4 right-4">
                 <span class="text-[9px] tracking-[0.2em] text-off-white/60 uppercase bg-deep-black/70 px-2 py-1">
                   Finisher
@@ -573,9 +593,50 @@ export const MenuPage: FC<{ lang: Language }> = ({ lang }) => {
         </div>
       </section>
 
+      {/* Explore More - Internal Links */}
+      <section class="py-20 bg-deep-black">
+        <div class="max-w-5xl mx-auto px-8 md:px-12">
+          <h2 class="font-playfair text-2xl md:text-3xl font-light tracking-wide text-center mb-4 text-off-white">더 알아보기</h2>
+          <p class="text-off-white/40 text-xs text-center mb-12 tracking-wider">RAWISM의 다양한 이야기를 만나보세요</p>
+          <div class="grid md:grid-cols-4 gap-6">
+            <a href="/quiz" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">🍾</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Wine Quiz</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">나에게 맞는 샴페인 찾기</p>
+            </a>
+            <a href="/gallery" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">📸</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Gallery</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">RAWISM의 공간과 분위기</p>
+            </a>
+            <a href="/blog" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">📝</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Blog</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">와인 칼럼 & 다이닝 매거진</p>
+            </a>
+            <a href="/wine" class="group block p-6 border border-white/5 hover:border-champagne/30 transition-all duration-500 text-center">
+              <span class="text-2xl mb-3 block">🍷</span>
+              <h3 class="font-playfair text-sm text-off-white group-hover:text-champagne transition-colors mb-2">Wine Guide</h3>
+              <p class="text-off-white/30 text-[10px] tracking-wider">소믈리에 와인 칼럼 32편</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer class="py-12 bg-deep-black border-t border-white/5">
         <div class="max-w-6xl mx-auto px-8 md:px-12 text-center">
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="/" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Home</a>
+            <a href="/wine" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Wine Guide</a>
+            <a href="/gallery" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Gallery</a>
+            <a href="/blog" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Blog</a>
+            <a href="/quiz" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">Quiz</a>
+            <a href="/about" class="text-off-white/30 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors">About</a>
+          </div>
+          <a href="tel:02-332-7753" class="inline-block text-champagne/60 text-[10px] tracking-[0.2em] hover:text-champagne transition-colors mb-4">
+            📞 02-332-7753
+          </a>
           <p class="text-off-white/15 text-[10px] tracking-[0.3em]">
             © 2024 RAWISM The Black
           </p>

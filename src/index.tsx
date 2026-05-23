@@ -21,7 +21,7 @@ app.use('*', async (c, next) => {
   c.header('X-XSS-Protection', '1; mode=block')
   c.header('Referrer-Policy', 'strict-origin-when-cross-origin')
   c.header('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self)')
-  c.header('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdn.amplitude.com https://www.googletagmanager.com https://t1.kakaocdn.net https://developers.kakao.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; frame-src https://www.google.com https://map.naver.com; connect-src 'self' https://cdn.amplitude.com https://api2.amplitude.com https://*.amplitude.com https://www.google-analytics.com https://www.googletagmanager.com")
+  c.header('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdn.amplitude.com https://www.googletagmanager.com https://t1.kakaocdn.net https://developers.kakao.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; frame-src https://www.google.com https://map.naver.com; connect-src 'self' https://cdn.amplitude.com https://api2.amplitude.com https://*.amplitude.com https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com https://*.google-analytics.com https://*.analytics.google.com")
   c.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
 })
 
@@ -112,7 +112,7 @@ function PageContent({ lang }: { lang: Language }) {
       </nav>
 
       {/* ===== HERO - Full Screen Neon ===== */}
-      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden crt">
+      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden crt" aria-label="RAWISM 연남동 한우 육회 술집 메인 히어로">
         <div class="absolute inset-0 bg-base-black"></div>
         
         {/* Star Particles */}
@@ -147,8 +147,18 @@ function PageContent({ lang }: { lang: Language }) {
           <p class="text-white/50 text-sm md:text-base tracking-wider mb-2">
             향촌동 뭉티기 · 03~06 K-POP
           </p>
-          <p class="text-white/30 text-xs tracking-widest mb-12">
+          <p class="text-white/30 text-xs tracking-widest mb-8">
             연남동 한우 RAW BAR
+          </p>
+          <p class="sr-only">
+            연남동 술집 RAWISM은 서울 마포구 동교로 262-4에 위치한 한우 육회 전문 술집입니다.
+            시그니처 메뉴 향촌동 뭉티기(45,000원)를 비롯해 청양 오일 육회, 오이마요 육회, 마라깻잎 육회 등
+            다양한 한우 육회를 즐기실 수 있습니다. 소주(참이슬, 처음처럼, 진로, 새로 각 5,000원),
+            맥주(카스 6,000원, 테라 6,000원, 크러쉬 7,000원)와 함께 즐기세요.
+            육회비빔면(13,000원), 육회비빔밥(15,000원), 속풀이 무국(12,000원)으로 마무리.
+            홍대입구역 3번출구 도보 5분. 연트럴파크 경의선숲길 인근. 화~일 18:00~23:00 영업. 월요일 휴무.
+            네이버 예약 가능. 12테이블 운영. 데이트, 2차, 회식, 생일 모임 추천.
+            야광팔찌, 네온사진, 잡지 콜라주, 03~06 K-POP BGM, 룰렛 이벤트, 방명록 체험 가능.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" 
@@ -170,7 +180,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== WELCOME / PHILOSOPHY ===== */}
-      <section id="welcome" class="py-20 md:py-32 bg-base-black relative">
+      <section id="welcome" class="py-20 md:py-32 bg-base-black relative" aria-label="RAWISM 연남동 한우 육회 술집 소개">
         <div class="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <div class="fade-up">
             <p class="font-handwrite text-4xl md:text-5xl neon-pink mb-8">"다녀갑니다 ♥"</p>
@@ -193,7 +203,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== NOW PLAYING ===== */}
-      <section id="now-playing" class="py-20 md:py-28 bg-card-black relative">
+      <section id="now-playing" class="py-20 md:py-28 bg-card-black relative" aria-label="RAWISM 03~06 K-POP BGM 선곡 리스트">
         <div class="max-w-4xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-12">
             <p class="text-xs tracking-[0.4em] text-neon-cyan/60 uppercase mb-3">♫ Now Playing</p>
@@ -241,7 +251,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== MENU ===== */}
-      <section id="menu" class="py-20 md:py-28 bg-base-black">
+      <section id="menu" class="py-20 md:py-28 bg-base-black" aria-label="연남동 한우 육회 뭉티기 소주 맥주 메뉴판">
         <div class="max-w-6xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-16">
             <p class="text-xs tracking-[0.4em] text-neon-yellow/60 uppercase mb-3">✦ Menu</p>
@@ -347,7 +357,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== EXPERIENCE ===== */}
-      <section id="experience" class="py-20 md:py-28 bg-card-black">
+      <section id="experience" class="py-20 md:py-28 bg-card-black" aria-label="연남동 레트로 술집 체험 야광팔찌 네온사진 방명록">
         <div class="max-w-5xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-16">
             <p class="text-xs tracking-[0.4em] text-neon-green/60 uppercase mb-3">Experience</p>
@@ -416,7 +426,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== GALLERY (Preview) ===== */}
-      <section id="gallery" class="py-20 md:py-28 bg-base-black">
+      <section id="gallery" class="py-20 md:py-28 bg-base-black" aria-label="한우 육회 뭉티기 음식 사진 갤러리">
         <div class="max-w-6xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-12">
             <p class="text-xs tracking-[0.4em] text-neon-purple/60 uppercase mb-3">📷 Gallery</p>
@@ -449,7 +459,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== RESERVATION ===== */}
-      <section id="reserve" class="py-20 md:py-28 bg-card-black relative overflow-hidden">
+      <section id="reserve" class="py-20 md:py-28 bg-card-black relative overflow-hidden" aria-label="연남동 술집 RAWISM 네이버 예약">
         <div class="absolute inset-0 bg-gradient-to-r from-neon-yellow/5 via-transparent to-neon-yellow/5 pointer-events-none"></div>
         <div class="relative max-w-3xl mx-auto px-6 md:px-12 text-center">
           <div class="fade-up">
@@ -484,7 +494,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== LOCATION ===== */}
-      <section id="location" class="py-20 md:py-28 bg-base-black">
+      <section id="location" class="py-20 md:py-28 bg-base-black" aria-label="연남동 RAWISM 위치 홍대입구역 3번출구 도보 5분">
         <div class="max-w-6xl mx-auto px-6 md:px-12">
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div class="fade-up">
@@ -542,7 +552,7 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== FOOTER - 방명록 ===== */}
-      <footer class="py-16 bg-card-black border-t border-white/5">
+      <footer class="py-16 bg-card-black border-t border-white/5" role="contentinfo" aria-label="RAWISM 연남동 한우 육회 술집 푸터">
         <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
           <p class="font-handwrite text-2xl neon-pink mb-6">📖 RAWISM 방명록</p>
           
@@ -571,8 +581,13 @@ function PageContent({ lang }: { lang: Language }) {
             <p class="text-white/10 text-[9px] mt-2">
               서울 마포구 동교로 262-4 · 홍대입구역 3번출구 도보 5분 · 연트럴파크 · 경의선숲길
             </p>
-            <p class="text-white/10 text-[9px] mt-2">
-              서울 마포구 동교로 262-4 · 홍대입구역 3번출구 도보 5분 · 연트럴파크 · 경의선숲길
+            <p class="sr-only">
+              연남동 맛집 연남동 핫플 연남동 데이트 연남동 2차 연남동 회식 연남동 생일
+              홍대 술집 홍대 맛집 홍대 안주 홍대 데이트 홍대 2차 홍대 핫플
+              마포구 술집 마포구 맛집 한우 육회 뭉티기 소주 맥주 육회비빔면 육회비빔밥
+              연트럴파크 맛집 경의선숲길 맛집 레트로 술집 서울 Y2K 감성 술집
+              참이슬 처음처럼 진로 새로 카스 테라 크러쉬 하이볼
+              야광팔찌 네온사진 잡지 콜라주 룰렛 K-POP 방명록
             </p>
           </div>
         </div>
@@ -614,8 +629,9 @@ function PageContent({ lang }: { lang: Language }) {
 // ROUTES
 // ===========================
 
-// Sitemap
+// Sitemap — SEO Super Enhanced with all images
 app.get('/sitemap.xml', (c) => {
+  const today = new Date().toISOString().split('T')[0]
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
@@ -627,40 +643,246 @@ app.get('/sitemap.xml', (c) => {
     <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rawism.kr/" />
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mungtige_jeontong.jpg</image:loc>
-      <image:title>RAWISM 향촌동 뭉티기 - 연남동 한우 RAW BAR</image:title>
+      <image:title>RAWISM 향촌동 뭉티기 정통 - 연남동 한우 육회 전문 술집</image:title>
+      <image:caption>당일 도축 한우 200g. 1950년대 대구 향촌동에서 시작된 전통 뭉티기를 연남동에서.</image:caption>
+      <image:geo_location>Seoul, South Korea</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/mungtige_kkakduk.jpg</image:loc>
+      <image:title>RAWISM 향촌동 뭉티기 깍둑 - 한우 육회 맛집</image:title>
+      <image:caption>깍둑 스타일 뭉티기. 한 입 크기로 잘라 먹는 프리미엄 한우.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/cheongyang_yukhoe.jpg</image:loc>
+      <image:title>RAWISM 청양 오일 육회 - 매콤한 한우 육회</image:title>
+      <image:caption>한우 우둔살 150g. 매콤한 고추기름의 청양 오일 육회.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/oimayo_yukhoe.jpg</image:loc>
+      <image:title>RAWISM 오이마요 육회 - 깔끔한 한우 육회</image:title>
+      <image:caption>한우 우둔살 150g. 마요네즈와 오이의 깔끔한 조합.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/mara_yukhoe.jpg</image:loc>
+      <image:title>RAWISM 마라깻잎 육회 - 마라 한우 육회</image:title>
+      <image:caption>한우 우둔살 150g. 마라와 깻잎의 독특한 조합.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/caprese.jpg</image:loc>
+      <image:title>RAWISM 아보 카프레제 - 아보카도 모짜렐라 안주</image:title>
+      <image:caption>아보카도 + 모짜렐라 + 방울토마토. 술집 안주 추천.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/cream_chips.jpg</image:loc>
+      <image:title>RAWISM 크림앤칩스 - 맥주 안주</image:title>
+      <image:caption>맥주와 함께하는 가성비 안주 크림앤칩스.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/bibimmyeon.jpg</image:loc>
+      <image:title>RAWISM 육회 들기름 비빔면 - 육회비빔면</image:title>
+      <image:caption>육회비빔면. 마무리 메뉴로 추천. 들기름 향이 일품.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/avo_bibimbap.jpg</image:loc>
+      <image:title>RAWISM 육회 아보 비빔밥 - 육회비빔밥</image:title>
+      <image:caption>육회비빔밥. 아보카도와 한우 육회의 건강한 마무리.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/muguk.jpg</image:loc>
+      <image:title>RAWISM 속풀이 무국 - 해장 무국</image:title>
+      <image:caption>시원한 무국. 소주 후 해장용 필수 메뉴.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/chamisul.jpg</image:loc>
+      <image:title>참이슬 후레쉬 소주 - RAWISM 주류</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/cheoeum.jpg</image:loc>
+      <image:title>처음처럼 소주 - RAWISM 주류</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/jinro.jpg</image:loc>
+      <image:title>진로 소주 - RAWISM 주류</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/saero.jpg</image:loc>
+      <image:title>새로 소주 - RAWISM 주류</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/cass.jpg</image:loc>
+      <image:title>카스 후레쉬 맥주 - RAWISM 주류</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/terra.jpg</image:loc>
+      <image:title>테라 맥주 - RAWISM 주류</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rawism.kr/static/new/krush.jpg</image:loc>
+      <image:title>크러쉬 맥주 - RAWISM 주류</image:title>
     </image:image>
   </url>
-  <url><loc>https://rawism.kr/en</loc><lastmod>2026-05-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/ja</loc><lastmod>2026-05-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/zh</loc><lastmod>2026-05-24</lastmod><priority>0.9</priority></url>
+  <url>
+    <loc>https://rawism.kr/en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/ja</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rawism.kr/zh</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>`
-  return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
+  return c.text(sitemap, 200, { 'Content-Type': 'application/xml; charset=utf-8' })
 })
 
-// Robots.txt
+// Robots.txt — SEO Super Enhanced
 app.get('/robots.txt', (c) => {
-  const robots = `# RAWISM - 연남동 한우 RAW BAR
+  const robots = `# =============================================
+# RAWISM — 연남동 한우 육회 · 뭉티기 전문 술집
 # https://rawism.kr
+# Last updated: 2026-05-23
+# =============================================
 
+# Default: Allow all legitimate crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_worker.js
+Disallow: /_routes.json
+Disallow: /cdn-cgi/
+Disallow: /naver*.html
 
-Sitemap: https://rawism.kr/sitemap.xml
-
+# Google
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
+User-agent: Googlebot-Image
+Allow: /static/
+Allow: /static/new/
+
+User-agent: Googlebot-Video
+Allow: /
+
+# Google Ads / AdsBot
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# Naver
 User-agent: Yeti
 Allow: /
-Crawl-delay: 1`
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Daum / Kakao
+User-agent: Daum
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Apple (Siri, Spotlight)
+User-agent: Applebot
+Allow: /
+
+# Twitter / X
+User-agent: Twitterbot
+Allow: /
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Telegram
+User-agent: TelegramBot
+Allow: /
+
+# KakaoTalk Link Preview
+User-agent: kakaotalk-scrap
+Allow: /
+
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# Block bad bots / scrapers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Host
+Host: https://rawism.kr
+
+# Sitemaps
+Sitemap: https://rawism.kr/sitemap.xml`
   return c.text(robots, 200, { 'Content-Type': 'text/plain' })
 })
 

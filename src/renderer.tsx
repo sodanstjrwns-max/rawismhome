@@ -56,6 +56,34 @@ export function createRenderer(lang: Language = 'ko') {
           <meta name="naver-site-verification" content="4ac2be6acaaec72429e634e4b3e5ac22e16b5567" />
           <meta name="naver-site-verification" content="1833046dc15402f0f5fc247a91a950fd546a7362" />
           
+          {/* Geographic & Local SEO Meta */}
+          <meta name="geo.region" content="KR-11" />
+          <meta name="geo.placename" content="Seoul, Mapo-gu, Yeonnam-dong" />
+          <meta name="geo.position" content="37.5595;126.9224" />
+          <meta name="ICBM" content="37.5595, 126.9224" />
+          <meta name="DC.title" content={seo.title} />
+          <meta name="DC.creator" content="RAWISM" />
+          <meta name="DC.subject" content="한우 육회, 뭉티기, 연남동 술집" />
+          <meta name="DC.language" content={seo.lang} />
+          
+          {/* Author & Publisher */}
+          <meta name="author" content="RAWISM 연남동" />
+          <meta name="copyright" content="© 2026 RAWISM" />
+          <meta name="application-name" content="RAWISM" />
+          
+          {/* Mobile App Meta */}
+          <meta name="theme-color" content="#0a0a0a" />
+          <meta name="msapplication-TileColor" content="#0a0a0a" />
+          <meta name="msapplication-navbutton-color" content="#ff6ec7" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <meta name="apple-mobile-web-app-title" content="RAWISM" />
+          <meta name="format-detection" content="telephone=yes" />
+          
+          {/* Naver Blog/Cafe specific */}
+          <meta property="naverapp:name" content="RAWISM - 연남동 한우 육회 술집" />
+          <meta property="naverapp:url" content="https://rawism.kr" />
+          
           {/* hreflang */}
           <link rel="alternate" hreflang="ko" href="https://rawism.kr/" />
           <link rel="alternate" hreflang="en" href="https://rawism.kr/en" />
@@ -73,10 +101,23 @@ export function createRenderer(lang: Language = 'ko') {
           <meta property="og:image:height" content="630" />
           <meta property="og:site_name" content="RAWISM" />
           <meta property="og:locale" content={lang === 'ko' ? 'ko_KR' : lang === 'en' ? 'en_US' : lang === 'ja' ? 'ja_JP' : 'zh_CN'} />
+          <meta property="og:locale:alternate" content="en_US" />
+          <meta property="og:locale:alternate" content="ja_JP" />
+          <meta property="og:locale:alternate" content="zh_CN" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.ogDescription} />
           <meta name="twitter:image" content="https://rawism.kr/static/og-image.jpg" />
+          
+          {/* Place / Business OG Tags */}
+          <meta property="place:location:latitude" content="37.5595" />
+          <meta property="place:location:longitude" content="126.9224" />
+          <meta property="business:contact_data:street_address" content="동교로 262-4" />
+          <meta property="business:contact_data:locality" content="마포구" />
+          <meta property="business:contact_data:region" content="서울특별시" />
+          <meta property="business:contact_data:postal_code" content="04030" />
+          <meta property="business:contact_data:country_name" content="대한민국" />
+          <meta property="business:contact_data:phone_number" content="+82-70-5100-5534" />
           
           {/* Fonts - Pretendard + Google Fonts for retro feel */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -277,14 +318,16 @@ export function createRenderer(lang: Language = 'ko') {
             ::-webkit-scrollbar-thumb:hover { background: #ff6ec780; }
           `}} />
           
-          {/* JSON-LD: Restaurant */}
+          {/* JSON-LD: Restaurant + LocalBusiness */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Restaurant",
+            "@type": ["Restaurant", "LocalBusiness", "FoodEstablishment"],
+            "@id": "https://rawism.kr/#restaurant",
             "name": "RAWISM",
-            "alternateName": "로위즘",
+            "alternateName": ["로위즘", "로이즘", "RAWISM 연남동", "연남동 RAWISM"],
             "url": "https://rawism.kr",
             "telephone": "+82-70-5100-5534",
+            "email": "rawism_theblack@instagram.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "동교로 262-4",
@@ -294,16 +337,61 @@ export function createRenderer(lang: Language = 'ko') {
               "addressCountry": "KR"
             },
             "geo": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
+            "hasMap": "https://map.naver.com/v5/search/서울특별시 마포구 동교로 262-4",
             "openingHoursSpecification": [
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "23:00" }
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "23:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "18:00", "closes": "23:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "18:00", "closes": "23:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:00", "closes": "23:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "23:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:00", "closes": "23:00" }
             ],
-            "servesCuisine": ["한우 육회", "뭉티기", "한식 주점", "소주", "맥주", "육회비빔면", "육회비빔밥"],
+            "specialOpeningHoursSpecification": [
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "00:00", "closes": "00:00", "description": "매주 월요일 휴무" }
+            ],
+            "servesCuisine": ["한우 육회", "뭉티기", "한식 주점", "소주", "맥주", "육회비빔면", "육회비빔밥", "청양육회", "마라육회", "아보카도 카프레제", "해장 무국"],
             "priceRange": "₩₩₩",
-            "image": "https://rawism.kr/static/new/mungtige_jeontong.jpg",
+            "currenciesAccepted": "KRW",
+            "paymentAccepted": "현금, 신용카드, 카카오페이, 네이버페이, 삼성페이",
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
+              "geoRadius": "5000"
+            },
+            "image": [
+              "https://rawism.kr/static/new/mungtige_jeontong.jpg",
+              "https://rawism.kr/static/new/cheongyang_yukhoe.jpg",
+              "https://rawism.kr/static/new/mara_yukhoe.jpg",
+              "https://rawism.kr/static/new/bibimmyeon.jpg"
+            ],
+            "photo": [
+              { "@type": "ImageObject", "url": "https://rawism.kr/static/new/mungtige_jeontong.jpg", "name": "향촌동 뭉티기 정통", "description": "당일 도축 한우 200g 뭉티기" },
+              { "@type": "ImageObject", "url": "https://rawism.kr/static/new/cheongyang_yukhoe.jpg", "name": "청양 오일 육회", "description": "매콤한 고추기름 한우 육회" }
+            ],
             "description": seo.description,
-            "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127" },
+            "slogan": "야광팔찌 끼고 03~06 K-POP 들으며 한우 육회 한 점",
+            "keywords": "연남동 술집, 연남동 육회, 연남동 뭉티기, 홍대 술집, 한우 육회, 소주, 맥주, 레트로 술집",
+            "sameAs": [
+              "https://www.instagram.com/rawism_theblack",
+              "https://naver.me/5qLSfCNC",
+              "https://map.naver.com/v5/search/RAWISM"
+            ],
+            "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127", "bestRating": "5", "worstRating": "1" },
             "acceptsReservations": "True",
+            "reservations": "https://naver.me/5qLSfCNC",
             "menu": "https://rawism.kr/#menu",
+            "smokingAllowed": false,
+            "publicAccess": true,
+            "isAccessibleForFree": true,
+            "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 5, "maxValue": 10 },
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "야광팔찌 체험", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "네온사진 포토존", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "방명록", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "03~06 K-POP BGM", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "잡지 콜라주 인테리어", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "룰렛 이벤트", "value": true }
+            ],
             "hasMenu": {
               "@type": "Menu",
               "name": "RAWISM 메뉴판",
@@ -353,13 +441,22 @@ export function createRenderer(lang: Language = 'ko') {
             }
           })}} />
           
-          {/* JSON-LD: WebSite */}
+          {/* JSON-LD: WebSite + SearchAction */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
+            "@id": "https://rawism.kr/#website",
             "name": "RAWISM",
+            "alternateName": "로위즘 연남동",
             "url": "https://rawism.kr",
-            "description": "연남동 한우 육회 · 뭉티기 · 소주 · 맥주. 야광팔찌 · 03~06 K-POP. 홍대입구역 5분."
+            "description": "연남동 한우 육회 · 뭉티기 · 소주 · 맥주 전문 술집. 야광팔찌 · 03~06 K-POP · 네온사진 · 방명록. 홍대입구역 3번출구 도보 5분. 마포구 동교로 262-4.",
+            "inLanguage": ["ko", "en", "ja", "zh"],
+            "publisher": {
+              "@type": "Organization",
+              "name": "RAWISM",
+              "url": "https://rawism.kr",
+              "logo": { "@type": "ImageObject", "url": "https://rawism.kr/static/og-image.jpg" }
+            }
           })}} />
           
           {/* JSON-LD: BreadcrumbList */}
@@ -367,9 +464,28 @@ export function createRenderer(lang: Language = 'ko') {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "RAWISM", "item": "https://rawism.kr" },
-              { "@type": "ListItem", "position": 2, "name": "메뉴", "item": "https://rawism.kr/#menu" },
-              { "@type": "ListItem", "position": 3, "name": "예약", "item": "https://rawism.kr/#reserve" }
+              { "@type": "ListItem", "position": 1, "name": "RAWISM 홈", "item": "https://rawism.kr" },
+              { "@type": "ListItem", "position": 2, "name": "연남동 한우 육회 메뉴", "item": "https://rawism.kr/#menu" },
+              { "@type": "ListItem", "position": 3, "name": "연남동 술집 체험", "item": "https://rawism.kr/#experience" },
+              { "@type": "ListItem", "position": 4, "name": "한우 육회 갤러리", "item": "https://rawism.kr/#gallery" },
+              { "@type": "ListItem", "position": 5, "name": "연남동 술집 예약", "item": "https://rawism.kr/#reserve" },
+              { "@type": "ListItem", "position": 6, "name": "찾아오는 길", "item": "https://rawism.kr/#location" }
+            ]
+          })}} />
+          
+          {/* JSON-LD: ItemList — 인기 메뉴 TOP 5 */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "RAWISM 인기 메뉴 TOP 5",
+            "description": "연남동 RAWISM에서 가장 인기 있는 한우 육회 · 뭉티기 메뉴",
+            "numberOfItems": 5,
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "향촌동 뭉티기", "url": "https://rawism.kr/#menu" },
+              { "@type": "ListItem", "position": 2, "name": "청양 오일 육회", "url": "https://rawism.kr/#menu" },
+              { "@type": "ListItem", "position": 3, "name": "마라깻잎 육회", "url": "https://rawism.kr/#menu" },
+              { "@type": "ListItem", "position": 4, "name": "육회 들기름 비빔면", "url": "https://rawism.kr/#menu" },
+              { "@type": "ListItem", "position": 5, "name": "속풀이 무국", "url": "https://rawism.kr/#menu" }
             ]
           })}} />
           
@@ -385,16 +501,16 @@ export function createRenderer(lang: Language = 'ko') {
               {"@type":"Question","name":"RAWISM에서 파는 소주 종류는?","acceptedAnswer":{"@type":"Answer","text":"참이슬 후레쉬, 처음처럼, 진로, 새로 각 ₩5,000입니다."}},
               {"@type":"Question","name":"RAWISM에서 파는 맥주 종류는?","acceptedAnswer":{"@type":"Answer","text":"카스 후레쉬(₩6,000), 테라(₩6,000), 크러쉬(₩7,000)입니다."}},
               {"@type":"Question","name":"RAWISM 야광팔찌 이벤트가 뭐인가요?","acceptedAnswer":{"@type":"Answer","text":"소주/맥주 시키면 직원이 야광팔찌 끼고 서빙해드립니다. 원하면 가져가셔도 OK!"}},
-              {"@type":"Question","name":"RAWISM 룰렛 이벤트는 어떻게 참여하나요?","acceptedAnswer":{"@type":"Answer","text":"리뷰 작성 시 룰렛 한 번 돌리실 수 있습니다. 소주, 맥주, 안주 무료 당첨. 가끔 화요 17도 나옵니다!"}}
+              {"@type":"Question","name":"RAWISM 룰렛 이벤트는 어떻게 참여하나요?","acceptedAnswer":{"@type":"Answer","text":"리뷰 작성 시 룰렛 한 번 돌리실 수 있습니다. 소주, 맥주, 안주 무료 당첨. 가끔 화요 17도 나옵니다!"}},
+              {"@type":"Question","name":"RAWISM 주차 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"전용 주차장은 없습니다. 인근 유료 주차장 이용 또는 홍대입구역(2호선/경의중앙선/공항철도) 3번출구에서 도보 5분입니다. 대중교통 이용을 추천드립니다."}},
+              {"@type":"Question","name":"RAWISM 결제 방법은?","acceptedAnswer":{"@type":"Answer","text":"현금, 신용카드, 카카오페이, 네이버페이, 삼성페이 모두 가능합니다."}},
+              {"@type":"Question","name":"RAWISM 단체 회식이나 생일 모임 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"네, 12테이블 운영하며 단체 회식, 생일 모임, 데이트 모두 가능합니다. 네이버 예약 또는 인스타그램 DM(@rawism_theblack)으로 미리 예약해주세요."}},
+              {"@type":"Question","name":"연남동에서 뭉티기 먹을 수 있는 곳이 어디인가요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM이 연남동 유일의 향촌동 전통 뭉티기 전문점입니다. 당일 도축 한우 200g으로 정통/깍둑 선택 가능합니다. 서울 마포구 동교로 262-4에 위치합니다."}},
+              {"@type":"Question","name":"홍대입구역에서 RAWISM 가는 방법은?","acceptedAnswer":{"@type":"Answer","text":"홍대입구역(2호선/경의중앙선/공항철도) 3번 출구로 나와 경의선숲길 방향으로 도보 5분이면 도착합니다. 연트럴파크 인근에 있습니다."}}
             ]
           })}} />
           
-          {/* Analytics - GA4 + Amplitude */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-          <script dangerouslySetInnerHTML={{__html: `
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-            gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
-          `}} />
+          {/* Analytics - Legacy placeholder removed, using GA4 above */}
         </head>
         <body class="font-pretendard mobile-bottom-offset">
           {children}

@@ -137,7 +137,7 @@ function PageContent({ lang }: { lang: Language }) {
           <h1 class="neon-pink text-6xl md:text-8xl lg:text-9xl font-black tracking-wider neon-flicker glitch mb-6">
             RAWISM
           </h1>
-          <p class="sr-only">연남동 한우 육회 · 뭉티기 · 소주 · 맥주 전문 술집. 홍대입구역 3번출구 도보 5분. 마포구 동교로 262-4. 연트럴파크 경의선숲길 인근. 청양육회, 오이마요육회, 마라육회, 육회비빔면, 육회비빔밥, 속풀이무국. 참이슬, 처음처럼, 진로, 새로, 카스, 테라, 크러쉬. 네이버 예약 가능. 데이트, 2차, 회식, 생일 모임 추천.</p>
+          <p class="sr-only">연남동 한우 육회 · 뭉티기 · 소주 · 맥주 전문 술집 RAWISM. 서울 마포구 동교로 262-4 (연남동, 동교동). 홍대입구역(2호선·경의중앙선·공항철도) 3번출구 도보 5분. 연트럴파크·경의선숲길 인근. 동교동·성산동·망원동·연희동 인접. 청양육회, 오이마요육회, 마라육회, 육회비빔면, 육회비빔밥, 속풀이무국, 향촌동뭉티기, 아보카프레제, 크림앤칩스. 참이슬, 처음처럼, 진로, 새로, 카스, 테라, 크러쉬. 네이버 예약 가능. 데이트, 소개팅, 2차, 회식, 생일, 기념일, 야외, 커플, 친구모임, 단체회식 추천. 버스 7016, 7711, 마포08, 마포15.</p>
           <p class="neon-cyan text-lg md:text-2xl font-handwrite tracking-wider mb-4">
             2005년 미니홈피 술집
           </p>
@@ -494,7 +494,21 @@ function PageContent({ lang }: { lang: Language }) {
       </section>
 
       {/* ===== LOCATION ===== */}
-      <section id="location" class="py-20 md:py-28 bg-base-black" aria-label="연남동 RAWISM 위치 홍대입구역 3번출구 도보 5분">
+      <section id="location" class="py-20 md:py-28 bg-base-black" aria-label="연남동 RAWISM 위치 홍대입구역 3번출구 도보 5분 서울 마포구 동교로 262-4" itemscope itemtype="https://schema.org/LocalBusiness">
+        <meta itemprop="name" content="RAWISM 연남동 한우 육회 술집" />
+        <meta itemprop="telephone" content="070-5100-5534" />
+        <meta itemprop="priceRange" content="₩₩₩" />
+        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <meta itemprop="streetAddress" content="동교로 262-4" />
+          <meta itemprop="addressLocality" content="마포구" />
+          <meta itemprop="addressRegion" content="서울특별시" />
+          <meta itemprop="postalCode" content="04030" />
+          <meta itemprop="addressCountry" content="KR" />
+        </div>
+        <div itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+          <meta itemprop="latitude" content="37.5595" />
+          <meta itemprop="longitude" content="126.9224" />
+        </div>
         <div class="max-w-6xl mx-auto px-6 md:px-12">
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div class="fade-up">
@@ -506,11 +520,17 @@ function PageContent({ lang }: { lang: Language }) {
                   <p class="text-[10px] tracking-wider text-neon-cyan/50 uppercase mb-1">Address</p>
                   <p class="text-white/80">서울 마포구 동교로 262-4</p>
                   <p class="text-white/40 text-sm mt-1">연남동 (연트럴파크 인근)</p>
+                  <p class="text-white/25 text-xs mt-1">우편번호 04030</p>
                 </div>
                 <div class="border-l-2 border-neon-cyan/30 pl-5">
-                  <p class="text-[10px] tracking-wider text-neon-cyan/50 uppercase mb-1">Access</p>
+                  <p class="text-[10px] tracking-wider text-neon-cyan/50 uppercase mb-1">🚇 교통편</p>
                   <p class="text-white/80">홍대입구역 3번 출구 도보 5분</p>
-                  <p class="text-white/40 text-sm mt-1">경의선숲길 옆 골목</p>
+                  <p class="text-white/50 text-sm mt-1">지하철 2호선 · 경의중앙선 · 공항철도(AREX)</p>
+                  <p class="text-white/30 text-xs mt-2">버스: 홍대입구역 정류장 (7016, 7711, 마포08, 마포15)</p>
+                </div>
+                <div class="border-l-2 border-neon-cyan/30 pl-5">
+                  <p class="text-[10px] tracking-wider text-neon-cyan/50 uppercase mb-1">📍 인근 랜드마크</p>
+                  <p class="text-white/50 text-sm leading-relaxed">연트럴파크(경의선숲길) 도보 2분<br />동교동 카페거리 도보 5분<br />성산동 · 망원동 · 연희동 인접</p>
                 </div>
                 <div class="border-l-2 border-neon-cyan/30 pl-5">
                   <p class="text-[10px] tracking-wider text-neon-cyan/50 uppercase mb-1">Hours</p>
@@ -582,12 +602,19 @@ function PageContent({ lang }: { lang: Language }) {
               서울 마포구 동교로 262-4 · 홍대입구역 3번출구 도보 5분 · 연트럴파크 · 경의선숲길
             </p>
             <p class="sr-only">
-              연남동 맛집 연남동 핫플 연남동 데이트 연남동 2차 연남동 회식 연남동 생일
-              홍대 술집 홍대 맛집 홍대 안주 홍대 데이트 홍대 2차 홍대 핫플
-              마포구 술집 마포구 맛집 한우 육회 뭉티기 소주 맥주 육회비빔면 육회비빔밥
-              연트럴파크 맛집 경의선숲길 맛집 레트로 술집 서울 Y2K 감성 술집
-              참이슬 처음처럼 진로 새로 카스 테라 크러쉬 하이볼
+              연남동 맛집 연남동 핫플 연남동 데이트 연남동 2차 연남동 회식 연남동 생일 연남동 소개팅 연남동 기념일 연남동 새벽 술집
+              홍대 술집 홍대 맛집 홍대 안주 홍대 데이트 홍대 2차 홍대 핫플 홍대 생일 술집 홍대 소개팅 홍대 회식
+              홍대입구역 술집 홍대입구역 맛집 홍대입구역 3번출구 맛집 2호선 술집 경의중앙선 술집 공항철도 술집
+              동교동 술집 동교동 맛집 동교동 핫플 동교동 육회 동교동 카페거리
+              성산동 술집 성산동 맛집 망원동 술집 망원동 맛집 연희동 술집 연희동 맛집
+              마포구 술집 마포구 맛집 마포구 육회 마포구 데이트 마포구 회식
+              서울 육회 맛집 서울 한우 술집 서울 뭉티기 서울 레트로 술집 서울 데이트 술집
+              한우 육회 뭉티기 소주 맥주 육회비빔면 육회비빔밥 육사시미 한우 타르타르 생고기 안주
+              연트럴파크 맛집 연트럴파크 술집 연트럴파크 데이트 경의선숲길 맛집 경의선숲길 술집 경의선숲길 데이트
+              레트로 술집 서울 Y2K 감성 술집 싸이월드 감성 술집
+              참이슬 처음처럼 진로 새로 카스 테라 크러쉬
               야광팔찌 네온사진 잡지 콜라주 룰렛 K-POP 방명록
+              소개팅 장소 추천 서울 데이트 장소 서울 회식 장소 마포 생일 파티 술집 커플 술집 서울 친구 모임 술집 단체 회식 연남동
             </p>
           </div>
         </div>
@@ -648,82 +675,98 @@ app.get('/sitemap.xml', (c) => {
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mungtige_jeontong.jpg</image:loc>
-      <image:title>RAWISM 향촌동 뭉티기 정통 - 연남동 한우 육회 전문 술집</image:title>
-      <image:caption>당일 도축 한우 200g. 1950년대 대구 향촌동에서 시작된 전통 뭉티기를 연남동에서.</image:caption>
-      <image:geo_location>Seoul, South Korea</image:geo_location>
+      <image:title>RAWISM 향촌동 뭉티기 정통 - 연남동 한우 육회 전문 술집 홍대입구역 5분</image:title>
+      <image:caption>당일 도축 한우 200g. 1950년대 대구 향촌동에서 시작된 전통 뭉티기를 연남동에서. 서울 마포구 동교로 262-4.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mungtige_kkakduk.jpg</image:loc>
-      <image:title>RAWISM 향촌동 뭉티기 깍둑 - 한우 육회 맛집</image:title>
-      <image:caption>깍둑 스타일 뭉티기. 한 입 크기로 잘라 먹는 프리미엄 한우.</image:caption>
+      <image:title>RAWISM 향촌동 뭉티기 깍둑 - 연남동 한우 육회 맛집 마포구</image:title>
+      <image:caption>깍둑 스타일 뭉티기. 한 입 크기로 잘라 먹는 프리미엄 한우. 연남동 동교동 육회 맛집.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cheongyang_yukhoe.jpg</image:loc>
-      <image:title>RAWISM 청양 오일 육회 - 매콤한 한우 육회</image:title>
-      <image:caption>한우 우둔살 150g. 매콤한 고추기름의 청양 오일 육회.</image:caption>
+      <image:title>RAWISM 청양 오일 육회 - 연남동 매콤한 한우 육회 홍대</image:title>
+      <image:caption>한우 우둔살 150g. 매콤한 고추기름의 청양 오일 육회. 연남동 홍대 맛집.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/oimayo_yukhoe.jpg</image:loc>
-      <image:title>RAWISM 오이마요 육회 - 깔끔한 한우 육회</image:title>
-      <image:caption>한우 우둔살 150g. 마요네즈와 오이의 깔끔한 조합.</image:caption>
+      <image:title>RAWISM 오이마요 육회 - 연남동 깔끔한 한우 육회 마포구</image:title>
+      <image:caption>한우 우둔살 150g. 마요네즈와 오이의 깔끔한 조합. 연남동 동교동 한우 맛집.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mara_yukhoe.jpg</image:loc>
-      <image:title>RAWISM 마라깻잎 육회 - 마라 한우 육회</image:title>
-      <image:caption>한우 우둔살 150g. 마라와 깻잎의 독특한 조합.</image:caption>
+      <image:title>RAWISM 마라깻잎 육회 - 연남동 마라 한우 육회 홍대입구역</image:title>
+      <image:caption>한우 우둔살 150g. 마라와 깻잎의 독특한 조합. 홍대입구역 3번출구 5분.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/caprese.jpg</image:loc>
-      <image:title>RAWISM 아보 카프레제 - 아보카도 모짜렐라 안주</image:title>
-      <image:caption>아보카도 + 모짜렐라 + 방울토마토. 술집 안주 추천.</image:caption>
+      <image:title>RAWISM 아보 카프레제 - 연남동 아보카도 모짜렐라 안주</image:title>
+      <image:caption>아보카도 + 모짜렐라 + 방울토마토. 연남동 술집 안주 추천. 연트럴파크 인근.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cream_chips.jpg</image:loc>
-      <image:title>RAWISM 크림앤칩스 - 맥주 안주</image:title>
-      <image:caption>맥주와 함께하는 가성비 안주 크림앤칩스.</image:caption>
+      <image:title>RAWISM 크림앤칩스 - 연남동 맥주 안주 가성비</image:title>
+      <image:caption>맥주와 함께하는 가성비 안주 크림앤칩스. 연남동 홍대 술집.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/bibimmyeon.jpg</image:loc>
-      <image:title>RAWISM 육회 들기름 비빔면 - 육회비빔면</image:title>
-      <image:caption>육회비빔면. 마무리 메뉴로 추천. 들기름 향이 일품.</image:caption>
+      <image:title>RAWISM 육회 들기름 비빔면 - 연남동 육회비빔면 마포구</image:title>
+      <image:caption>육회비빔면. 마무리 메뉴로 추천. 들기름 향이 일품. 연남동 경의선숲길 인근.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/avo_bibimbap.jpg</image:loc>
-      <image:title>RAWISM 육회 아보 비빔밥 - 육회비빔밥</image:title>
-      <image:caption>육회비빔밥. 아보카도와 한우 육회의 건강한 마무리.</image:caption>
+      <image:title>RAWISM 육회 아보 비빔밥 - 연남동 육회비빔밥 연트럴파크 인근</image:title>
+      <image:caption>육회비빔밥. 아보카도와 한우 육회의 건강한 마무리. 서울 마포구 동교로 262-4.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/muguk.jpg</image:loc>
-      <image:title>RAWISM 속풀이 무국 - 해장 무국</image:title>
-      <image:caption>시원한 무국. 소주 후 해장용 필수 메뉴.</image:caption>
+      <image:title>RAWISM 속풀이 무국 - 연남동 해장 무국 홍대 술집</image:title>
+      <image:caption>시원한 무국. 소주 후 해장용 필수 메뉴. 연남동 홍대입구역 술집.</image:caption>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/chamisul.jpg</image:loc>
-      <image:title>참이슬 후레쉬 소주 - RAWISM 주류</image:title>
+      <image:title>참이슬 후레쉬 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cheoeum.jpg</image:loc>
-      <image:title>처음처럼 소주 - RAWISM 주류</image:title>
+      <image:title>처음처럼 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/jinro.jpg</image:loc>
-      <image:title>진로 소주 - RAWISM 주류</image:title>
+      <image:title>진로 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/saero.jpg</image:loc>
-      <image:title>새로 소주 - RAWISM 주류</image:title>
+      <image:title>새로 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cass.jpg</image:loc>
-      <image:title>카스 후레쉬 맥주 - RAWISM 주류</image:title>
+      <image:title>카스 후레쉬 맥주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/terra.jpg</image:loc>
-      <image:title>테라 맥주 - RAWISM 주류</image:title>
+      <image:title>테라 맥주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/krush.jpg</image:loc>
-      <image:title>크러쉬 맥주 - RAWISM 주류</image:title>
+      <image:title>크러쉬 맥주 - RAWISM 연남동 술집 주류</image:title>
+      <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
   </url>
   <url>

@@ -12,30 +12,30 @@ const seoData: Record<Language, {
   ko: {
     lang: 'ko',
     title: 'RAWISM | 연남동 한우 육회 · 뭉티기 · 소주 · 맥주 | 홍대입구역 5분 술집',
-    description: '연남동 한우 육회 전문 술집 RAWISM. 향촌동 뭉티기 · 청양육회 · 마라육회 · 육회비빔면. 참이슬·처음처럼·진로·새로 · 카스·테라·크러쉬. 야광팔찌 끼고 03~06 K-POP BGM 들으며 소주 한잔. 홍대입구역 3번출구 도보 5분. 연트럴파크 인근.',
-    keywords: '로위즘, RAWISM, 연남동 술집, 연남동 맛집, 연남동 핫플, 연남동 한우 술집, 연남동 육회, 연남동 뭉티기, 연남동 육회 맛집, 연남동 데이트, 연남동 2차, 연남동 안주 맛집, 연남동 생일 술집, 연남동 회식, 연남동 분위기 좋은 술집, 연남동 소주, 연남동 맥주, 향촌동 뭉티기, 한우 육회 맛집, 육회 안주, 육회 소주, 육회비빔면, 육회비빔밥, 청양육회, 마라육회, 홍대 술집, 홍대 육회, 홍대 맛집, 홍대입구역 술집, 홍대입구역 맛집, 홍대 안주 맛집, 홍대 데이트, 홍대 2차, 마포구 술집, 마포구 맛집, 연트럴파크 맛집, 경의선숲길 맛집, 경의선숲길 술집, 싸이월드 감성 술집, Y2K 감성 술집, 레트로 술집 서울, 네온사진 술집, 야광팔찌 술집, 잡지 콜라주 술집, 룰렛 술집, 소주 맛집, 맥주 맛집, K-POP 술집, 무국 해장, 속풀이 무국',
-    ogDescription: 'RAWISM — 연남동 한우 육회 · 뭉티기 · 소주 · 맥주. 야광팔찌 끼고 03~06 K-POP 들으며 한잔. 홍대입구역 5분.'
+    description: '연남동 한우 육회 전문 술집 RAWISM. 향촌동 뭉티기·청양육회·마라육회·육회비빔면. 참이슬·처음처럼·진로·새로·카스·테라·크러쉬. 홍대입구역(2호선·경의중앙선·공항철도) 3번출구 도보5분. 연트럴파크·경의선숲길 인근. 서울 마포구 동교로 262-4. 화~일 18-23시.',
+    keywords: '로위즘, RAWISM, 연남동 술집, 연남동 맛집, 연남동 핫플, 연남동 한우 술집, 연남동 육회, 연남동 뭉티기, 연남동 육회 맛집, 연남동 데이트, 연남동 2차, 연남동 안주 맛집, 연남동 생일 술집, 연남동 회식, 연남동 분위기 좋은 술집, 연남동 소주, 연남동 맥주, 연남동 소개팅, 연남동 기념일, 연남동 레트로 술집, 연남동 새벽 술집, 연남동 직장인 회식, 연남동 대학생 술집, 연남동 야외 술집, 동교동 술집, 동교동 맛집, 동교동 핫플, 동교동 데이트, 동교동 육회, 성산동 술집, 성산동 맛집, 망원동 술집, 망원동 맛집, 연희동 술집, 연희동 맛집, 홍대 술집, 홍대 육회, 홍대 맛집, 홍대입구역 술집, 홍대입구역 맛집, 홍대입구역 3번출구 맛집, 홍대 안주 맛집, 홍대 데이트, 홍대 2차, 홍대 소개팅, 홍대 생일 술집, 홍대 회식, 홍대 분위기 좋은 술집, 홍대 새벽 술집, 마포구 술집, 마포구 맛집, 마포구 육회, 마포구 데이트, 마포구 회식, 서울 육회 맛집, 서울 한우 술집, 서울 뭉티기, 서울 레트로 술집, 서울 데이트 술집, 2호선 술집, 경의중앙선 술집, 공항철도 술집, 연트럴파크 맛집, 연트럴파크 술집, 연트럴파크 데이트, 경의선숲길 맛집, 경의선숲길 술집, 경의선숲길 데이트, 동교동 카페거리 술집, 향촌동 뭉티기, 한우 육회 맛집, 육회 안주, 육회 소주, 육회비빔면, 육회비빔밥, 청양육회, 마라육회, 육사시미, 한우 타르타르, 생고기 안주, 한우 육사시미, 오이마요 육회, 마라깻잎 육회, 한우 안주, 싸이월드 감성 술집, Y2K 감성 술집, 레트로 술집 서울, 네온사진 술집, 야광팔찌 술집, 잡지 콜라주 술집, 룰렛 술집, 소주 맛집, 맥주 맛집, K-POP 술집, 무국 해장, 속풀이 무국, 소개팅 장소 추천, 데이트 장소 서울, 회식 장소 마포, 생일 파티 술집, 기념일 레스토랑, 커플 술집 서울, 친구 모임 술집, 단체 회식 연남동, 저녁 약속 홍대',
+    ogDescription: 'RAWISM — 연남동 한우 육회 · 뭉티기 · 소주 · 맥주. 야광팔찌 끼고 03~06 K-POP 들으며 한잔. 홍대입구역 3번출구 5분. 연트럴파크 인근. 서울 마포구.'
   },
   en: {
     lang: 'en',
     title: 'RAWISM | Hanwoo Beef Tartare Bar in Yeonnam-dong Seoul | Retro K-POP Bar near Hongdae',
-    description: 'RAWISM - Premium Hanwoo beef tartare (yukhoe) & mungtige bar in Yeonnam-dong, Seoul. Korean soju, beer (Cass, Terra, Krush), retro 2000s K-POP BGM, neon glow bracelets, magazine collage walls. 5 min walk from Hongdae Station Exit 3. Reservations available.',
-    keywords: 'RAWISM, Yeonnam-dong bar, Hongdae bar, Korean beef tartare, yukhoe Seoul, mungtige, Hanwoo bar Seoul, Korean soju bar, beer bar Seoul, Hongdae restaurant, Yeonnam-dong restaurant, Seoul nightlife, retro bar Seoul, K-POP bar, neon bar, Korean drinking culture, Mapo-gu bar, Korean raw beef, Seoul date spot, Hongdae date, group dinner Seoul',
-    ogDescription: 'RAWISM — Hanwoo beef tartare · mungtige · soju · beer. Retro K-POP bar near Hongdae Station, Seoul. Yeonnam-dong hotspot.'
+    description: 'RAWISM - Premium Hanwoo beef tartare (yukhoe) & mungtige bar in Yeonnam-dong, Mapo-gu, Seoul. Korean soju, beer, retro 2000s K-POP BGM, neon glow bracelets. 5 min walk from Hongdae Station Exit 3 (Line 2, Gyeongui-Jungang, AREX). Near Yeonnam Park & Gyeongui Line Forest. Reservations via Naver.',
+    keywords: 'RAWISM, Yeonnam-dong bar, Hongdae bar, Korean beef tartare, yukhoe Seoul, mungtige, Hanwoo bar Seoul, Korean soju bar, beer bar Seoul, Hongdae restaurant, Yeonnam-dong restaurant, Seoul nightlife, retro bar Seoul, K-POP bar, neon bar, Korean drinking culture, Mapo-gu bar, Korean raw beef, Seoul date spot, Hongdae date, group dinner Seoul, Donggyo-dong bar, Seongsan-dong restaurant, Mangwon-dong bar, Yeonhui-dong restaurant, Hongdae Station Exit 3, Line 2 bar Seoul, Gyeongui Line Forest bar, Yeonnam Park restaurant, Yeontral Park bar, Seoul bar reservation, Korean BBQ alternative Seoul, raw beef Seoul, beef tartare Hongdae, steak tartare Korean, late night bar Seoul, birthday bar Seoul, couple date Seoul, Mapo district nightlife, Seoul Western area bar',
+    ogDescription: 'RAWISM — Hanwoo beef tartare · mungtige · soju · beer. Retro K-POP bar near Hongdae Station Exit 3, Seoul. Yeonnam-dong, Mapo-gu.'
   },
   ja: {
     lang: 'ja',
-    title: 'RAWISM | 延南洞 韓牛ユッケ・ムンティギ・焼酎・ビール | 弘大駅徒歩5分',
-    description: 'RAWISM - 延南洞の韓牛ユッケ専門バー。大邱ヒャンチョン洞伝統のムンティギ、青唐ユッケ、麻辣ユッケ。焼酎・ビール・2000年代K-POP BGM。弘大駅3番出口徒歩5分。予約可能。',
-    keywords: 'RAWISM, 延南洞バー, 弘大バー, 韓牛ユッケ, ムンティギ, 韓国焼酎, 韓国ビール, K-POPバー, レトロバー, ソウル居酒屋, ソウルナイトライフ, ネオンバー, 弘大レストラン, マポ区バー, ソウルデート',
-    ogDescription: 'RAWISM — 延南洞の韓牛ユッケ・ムンティギ・焼酎・ビール。弘大駅5分。'
+    title: 'RAWISM | 延南洞 韓牛ユッケ・ムンティギ・焼酎・ビール | 弘大駅3番出口徒歩5分 ソウル',
+    description: 'RAWISM - 延南洞の韓牛ユッケ専門バー。ヒャンチョン洞伝統ムンティギ・青唐ユッケ・麻辣ユッケ・ユッケビビン麺。焼酎・ビール。弘大駅3番出口(2号線・京義中央線・空港鉄道)徒歩5分。延南公園・京義線森の道近く。ネイバー予約可能。',
+    keywords: 'RAWISM, 延南洞バー, 弘大バー, 韓牛ユッケ, ムンティギ, 韓国焼酎, 韓国ビール, K-POPバー, レトロバー, ソウル居酒屋, ソウルナイトライフ, ネオンバー, 弘大レストラン, マポ区バー, ソウルデート, 東橋洞バー, 延南公園グルメ, 京義線森の道グルメ, 弘大駅3番出口, ソウル生肉, ソウルタルタル, 韓国デート, 韓国グルメ, 弘大ナイトライフ, ソウル西部バー, 麻浦区グルメ, 韓国レトロバー, ソウル記念日, ソウル誕生日バー, 弘大合コン',
+    ogDescription: 'RAWISM — 延南洞の韓牛ユッケ・ムンティギ・焼酎・ビール。弘大駅3番出口5分。延南公園近く。ソウル麻浦区。'
   },
   zh: {
     lang: 'zh',
-    title: 'RAWISM | 延南洞 韩牛肉脍·肉块·烧酒·啤酒 | 弘大站步5分钟',
-    description: 'RAWISM - 延南洞韩牛肉脍专业酒吧。乡村洞传统肉块、青阳肉脍、麻辣肉脍。烧酒·啤酒·2000年代K-POP背景音乐。弘大站3号出口步5分钟。可预约。',
-    keywords: 'RAWISM, 延南洞酒吧, 弘大酒吧, 韩牛肉脍, 肉块, 韩国烧酒, 韩国啤酒, K-POP酒吧, 复古酒吧, 首尔居酒屋, 首尔夜生活, 霓虹酒吧, 弘大餐厅, 麻浦区酒吧, 首尔约会',
-    ogDescription: 'RAWISM — 延南洞韩牛肉脍·肉块·烧酒·啤酒。弘大站5分钟。'
+    title: 'RAWISM | 延南洞 韩牛肉脍·肉块·烧酒·啤酒 | 弘大站3号出口步行5分钟 首尔',
+    description: 'RAWISM - 延南洞韩牛肉脍专业酒吧。乡村洞传统肉块·青阳肉脍·麻辣肉脍·肉脍拌面。烧酒·啤酒。弘大站3号出口(2号线·京义中央线·机场铁路)步行5分钟。延南公园·京义线林道附近。可Naver预约。',
+    keywords: 'RAWISM, 延南洞酒吧, 弘大酒吧, 韩牛肉脍, 肉块, 韩国烧酒, 韩国啤酒, K-POP酒吧, 复古酒吧, 首尔居酒屋, 首尔夜生活, 霓虹酒吧, 弘大餐厅, 麻浦区酒吧, 首尔约会, 东桥洞酒吧, 延南公园美食, 京义线林道美食, 弘大站3号出口, 首尔生牛肉, 首尔鞑靼牛排, 韩国约会地点, 韩国美食推荐, 弘大夜生活, 首尔西部酒吧, 麻浦区美食, 韩国复古酒吧, 首尔纪念日, 首尔生日酒吧, 弘大联谊',
+    ogDescription: 'RAWISM — 延南洞韩牛肉脍·肉块·烧酒·啤酒。弘大站3号出口5分钟。延南公园附近。首尔麻浦区。'
   }
 }
 
@@ -57,17 +57,24 @@ export function createRenderer(lang: Language = 'ko') {
           <meta name="naver-site-verification" content="1833046dc15402f0f5fc247a91a950fd546a7362" />
           
           {/* Geographic & Local SEO Meta */}
-          <meta name="geo.region" content="KR-11" />
-          <meta name="geo.placename" content="Seoul, Mapo-gu, Yeonnam-dong" />
           <meta name="geo.position" content="37.5595;126.9224" />
           <meta name="ICBM" content="37.5595, 126.9224" />
           <meta name="DC.title" content={seo.title} />
           <meta name="DC.creator" content="RAWISM" />
-          <meta name="DC.subject" content="한우 육회, 뭉티기, 연남동 술집" />
+          <meta name="DC.subject" content="한우 육회, 뭉티기, 연남동 술집, 홍대 술집, 마포구 맛집, 동교동 술집" />
           <meta name="DC.language" content={seo.lang} />
+          <meta name="DC.coverage" content="서울특별시 마포구 연남동 (동교동), 홍대입구역, 연트럴파크, 경의선숲길" />
+          <meta name="DC.type" content="Restaurant" />
+          
+          {/* Extended Local/Geographic Meta */}
+          <meta name="geo.region" content="KR-11-44" />
+          <meta name="geo.placename" content="서울특별시 마포구 연남동, 동교로 262-4" />
+          <meta name="neighborhood" content="연남동, 동교동, 성산동, 망원동, 연희동" />
+          <meta name="city" content="서울특별시" />
+          <meta name="zipcode" content="04030" />
           
           {/* Author & Publisher */}
-          <meta name="author" content="RAWISM 연남동" />
+          <meta name="author" content="RAWISM 연남동 한우 육회 술집" />
           <meta name="copyright" content="© 2026 RAWISM" />
           <meta name="application-name" content="RAWISM" />
           
@@ -337,6 +344,9 @@ export function createRenderer(lang: Language = 'ko') {
               "addressCountry": "KR"
             },
             "geo": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
+            "containedInPlace": [
+              { "@type": "AdministrativeArea", "name": "연남동 (동교동)", "containedInPlace": { "@type": "AdministrativeArea", "name": "마포구", "containedInPlace": { "@type": "AdministrativeArea", "name": "서울특별시", "containedInPlace": { "@type": "Country", "name": "대한민국" } } } }
+            ],
             "hasMap": "https://map.naver.com/v5/search/서울특별시 마포구 동교로 262-4",
             "openingHoursSpecification": [
               { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "23:00" },
@@ -391,6 +401,15 @@ export function createRenderer(lang: Language = 'ko') {
               { "@type": "LocationFeatureSpecification", "name": "03~06 K-POP BGM", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "잡지 콜라주 인테리어", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "룰렛 이벤트", "value": true }
+            ],
+            "additionalProperty": [
+              { "@type": "PropertyValue", "name": "nearestStation", "value": "홍대입구역 (2호선·경의중앙선·공항철도) 3번출구 도보 5분" },
+              { "@type": "PropertyValue", "name": "nearestSubwayLine", "value": "서울 지하철 2호선, 경의중앙선, 공항철도(AREX)" },
+              { "@type": "PropertyValue", "name": "nearestBusStop", "value": "홍대입구역 정류장 (7016, 7711, 마포08, 마포15)" },
+              { "@type": "PropertyValue", "name": "nearbyLandmark", "value": "연트럴파크 (Yeontral Park), 경의선숲길, 동교동 카페거리" },
+              { "@type": "PropertyValue", "name": "neighborhood", "value": "연남동 (동교동/성산동/망원동/연희동 인접)" },
+              { "@type": "PropertyValue", "name": "parkingInfo", "value": "전용주차장 없음. 인근 유료주차장 이용 또는 대중교통 추천" },
+              { "@type": "PropertyValue", "name": "suitableFor", "value": "데이트, 소개팅, 회식, 생일파티, 친구모임, 2차, 기념일" }
             ],
             "hasMenu": {
               "@type": "Menu",
@@ -506,7 +525,30 @@ export function createRenderer(lang: Language = 'ko') {
               {"@type":"Question","name":"RAWISM 결제 방법은?","acceptedAnswer":{"@type":"Answer","text":"현금, 신용카드, 카카오페이, 네이버페이, 삼성페이 모두 가능합니다."}},
               {"@type":"Question","name":"RAWISM 단체 회식이나 생일 모임 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"네, 12테이블 운영하며 단체 회식, 생일 모임, 데이트 모두 가능합니다. 네이버 예약 또는 인스타그램 DM(@rawism_theblack)으로 미리 예약해주세요."}},
               {"@type":"Question","name":"연남동에서 뭉티기 먹을 수 있는 곳이 어디인가요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM이 연남동 유일의 향촌동 전통 뭉티기 전문점입니다. 당일 도축 한우 200g으로 정통/깍둑 선택 가능합니다. 서울 마포구 동교로 262-4에 위치합니다."}},
-              {"@type":"Question","name":"홍대입구역에서 RAWISM 가는 방법은?","acceptedAnswer":{"@type":"Answer","text":"홍대입구역(2호선/경의중앙선/공항철도) 3번 출구로 나와 경의선숲길 방향으로 도보 5분이면 도착합니다. 연트럴파크 인근에 있습니다."}}
+              {"@type":"Question","name":"홍대입구역에서 RAWISM 가는 방법은?","acceptedAnswer":{"@type":"Answer","text":"홍대입구역(2호선/경의중앙선/공항철도) 3번 출구로 나와 경의선숲길 방향으로 도보 5분이면 도착합니다. 연트럴파크 인근에 있습니다."}},
+              {"@type":"Question","name":"연남동에서 소개팅 하기 좋은 술집 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 네온 조명과 2000년대 K-POP BGM이 흐르는 분위기 좋은 술집입니다. 야광팔찌, 잡지 콜라주 인테리어 등 자연스러운 대화 소재가 많아 소개팅, 첫 만남에 좋습니다. 12테이블 규모로 프라이빗한 분위기도 갖추고 있습니다."}},
+              {"@type":"Question","name":"동교동, 성산동, 망원동에서 RAWISM 가까운가요?","acceptedAnswer":{"@type":"Answer","text":"네, RAWISM은 연남동(동교동) 동교로 262-4에 위치해 있어 동교동 도보 3분, 성산동 도보 10분, 망원동 도보 12분 거리입니다. 홍대입구역(2호선/경의중앙선/공항철도) 3번출구에서 도보 5분이며 연트럴파크, 경의선숲길 바로 인근입니다."}},
+              {"@type":"Question","name":"연트럴파크(연남동공원) 근처 술집 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 연트럴파크(경의선숲길 연남동 구간) 바로 인근에 있는 한우 육회 전문 술집입니다. 연트럴파크 산책 후 들르기 좋으며, 경의선숲길 옆 골목에 위치합니다. 서울 마포구 동교로 262-4."}},
+              {"@type":"Question","name":"2호선 타고 갈 수 있는 연남동 술집 있나요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 2호선 홍대입구역 3번출구 도보 5분 거리에 있습니다. 경의중앙선, 공항철도(AREX)도 환승 가능해 인천공항에서도 직통으로 올 수 있습니다. 외국인 관광객도 접근이 매우 편리합니다."}},
+              {"@type":"Question","name":"새벽까지 하는 연남동 술집 있나요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 화~일 18:00~23:00 영업합니다(매주 월요일 휴무). 라스트오더는 22:30이며, 마무리 메뉴로 육회비빔면(₩13,000)이나 속풀이 무국(₩12,000)을 추천드립니다."}},
+              {"@type":"Question","name":"마포구에서 회식 장소 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 12테이블 운영으로 소규모 회식에 적합합니다. 향촌동 뭉티기(₩45,000)를 메인으로 다양한 육회와 소주/맥주를 즐기실 수 있습니다. 네이버 예약 또는 인스타그램 DM으로 사전 예약하시면 편리합니다. 홍대입구역 3번출구 도보 5분."}}
+            ]
+          })}} />
+          
+          {/* JSON-LD: LocalBusiness — 인근 교통/장소 정보 (네이버 플레이스 호환) */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Place",
+            "@id": "https://rawism.kr/#neighborhood",
+            "name": "RAWISM 인근 지역",
+            "description": "RAWISM 연남동 한우 육회 술집 인근 주요 장소 및 교통 정보",
+            "geo": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
+            "containedInPlace": { "@type": "AdministrativeArea", "name": "마포구, 서울특별시" },
+            "hasPart": [
+              { "@type": "TrainStation", "name": "홍대입구역", "description": "서울 지하철 2호선, 경의중앙선, 공항철도(AREX) 환승역. RAWISM까지 3번출구 도보 5분.", "geo": { "@type": "GeoCoordinates", "latitude": 37.5574, "longitude": 126.9240 } },
+              { "@type": "Park", "name": "연트럴파크 (경의선숲길 연남동)", "description": "경의선숲길 연남동 구간. RAWISM 인근 도보 2분.", "geo": { "@type": "GeoCoordinates", "latitude": 37.5612, "longitude": 126.9243 } },
+              { "@type": "TouristAttraction", "name": "경의선숲길 (경의선 책거리)", "description": "홍대입구역~가좌역 구간 공원. 연남동 산책 명소.", "geo": { "@type": "GeoCoordinates", "latitude": 37.5600, "longitude": 126.9230 } },
+              { "@type": "Place", "name": "동교동 카페거리", "description": "연남동·동교동 일대 카페 밀집 지역. RAWISM까지 도보 5분.", "geo": { "@type": "GeoCoordinates", "latitude": 37.5585, "longitude": 126.9255 } }
             ]
           })}} />
           

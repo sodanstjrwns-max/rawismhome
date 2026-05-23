@@ -674,6 +674,11 @@ app.get('/naveree5a268dce644afaa8ac3fe6a1b0211e.html', (c) => {
   return c.text('naveree5a268dce644afaa8ac3fe6a1b0211e', 200, { 'Content-Type': 'text/html' })
 })
 
+// Naver verification (rawism.kr)
+app.get('/naver60d859d26417328532a5b5cda0c51cda.html', (c) => {
+  return c.text('naver60d859d26417328532a5b5cda0c51cda', 200, { 'Content-Type': 'text/html' })
+})
+
 // ===== MAIN ROUTES =====
 app.use('/', createRenderer('ko'))
 app.get('/', (c) => c.render(<PageContent lang="ko" />))

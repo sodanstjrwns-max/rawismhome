@@ -54,6 +54,7 @@ export function createRenderer(lang: Language = 'ko') {
           <link rel="canonical" href={`https://rawism.kr${lang === 'ko' ? '/' : `/${lang}`}`} />
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
           <meta name="naver-site-verification" content="4ac2be6acaaec72429e634e4b3e5ac22e16b5567" />
+          <meta name="naver-site-verification" content="1833046dc15402f0f5fc247a91a950fd546a7362" />
           
           {/* hreflang */}
           <link rel="alternate" hreflang="ko" href="https://rawism.kr/" />

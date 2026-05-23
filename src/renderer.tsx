@@ -85,6 +85,13 @@ export function createRenderer(lang: Language = 'ko') {
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
           <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
           
+          {/* Google Analytics 4 */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-GE5LFX0DRE"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+            gtag('js',new Date());gtag('config','G-GE5LFX0DRE');
+          `}} />
+          
           {/* Tailwind CSS */}
           <script src="https://cdn.tailwindcss.com"></script>
           <script dangerouslySetInnerHTML={{__html: `

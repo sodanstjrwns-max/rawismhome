@@ -141,7 +141,7 @@ function PageContent({ lang }: { lang: Language }) {
             2005년 미니홈피 술집
           </p>
           <p class="text-white/40 text-xs md:text-sm tracking-wider mb-6">
-            도토리 모아 BGM 결제하던 그 시절
+            야광팔찌 밝히던 그 시절
           </p>
           <p class="text-white/50 text-sm md:text-base tracking-wider mb-2">
             향촌동 뭉티기 · 03~06 K-POP
@@ -245,7 +245,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="fade-up text-center mb-16">
             <p class="text-xs tracking-[0.4em] text-neon-yellow/60 uppercase mb-3">✦ Menu</p>
             <h2 class="font-handwrite text-3xl md:text-4xl neon-yellow">메뉴판</h2>
-            <p class="text-white/30 text-xs mt-2">향촌동 뭉티기 · 한우 육회 · 소주 · 맥주 · 도토리</p>
+            <p class="text-white/30 text-xs mt-2">향촌동 뭉티기 · 한우 육회 · 소주 · 맥주</p>
           </div>
           
           {/* Signature: 향촌동 뭉티기 */}
@@ -360,7 +360,7 @@ function PageContent({ lang }: { lang: Language }) {
               <span class="text-3xl block mb-4">💡</span>
               <h3 class="text-lg font-bold text-neon-pink mb-2">야광팔찌</h3>
               <p class="text-white/50 text-sm leading-relaxed">
-                소주/맥주 시키면 직원이 야광팔찌 끼고 따라드림.<br />
+                소주/맥주 시키면 직원이 야광팔찌 끼고 서빙해드림.<br />
                 원하면 가져가셔도 OK.
               </p>
             </div>
@@ -393,12 +393,21 @@ function PageContent({ lang }: { lang: Language }) {
               </p>
             </div>
             {/* Card 5 */}
-            <div class="fade-up neon-box-green bg-card-black p-6 hover:bg-neon-green/5 transition-all group sm:col-span-2 lg:col-span-1" style="box-shadow:0 0 7px #00ff7f80,0 0 15px #00ff7f40,inset 0 0 7px #00ff7f20;border:1px solid #00ff7f80">
-              <span class="text-3xl block mb-4">🌰</span>
-              <h3 class="text-lg font-bold text-neon-green mb-2">도토리</h3>
+            <div class="fade-up neon-box-green bg-card-black p-6 hover:bg-neon-green/5 transition-all group" style="box-shadow:0 0 7px #00ff7f80,0 0 15px #00ff7f40,inset 0 0 7px #00ff7f20;border:1px solid #00ff7f80">
+              <span class="text-3xl block mb-4">📸</span>
+              <h3 class="text-lg font-bold text-neon-green mb-2">네온사진</h3>
               <p class="text-white/50 text-sm leading-relaxed">
-                결제 후 도토리 사탕 1개 서비스.<br />
-                하루 1개씩 모아 BGM 사던 그 도토리.
+                네온 조명 아래서 인생샷 가능.<br />
+                미니홈피 프사 감성 그대로.
+              </p>
+            </div>
+            {/* Card 6 */}
+            <div class="fade-up bg-card-black p-6 hover:bg-white/5 transition-all group" style="box-shadow:0 0 7px #f9731680,0 0 15px #f9731640,inset 0 0 7px #f9731620;border:1px solid #f9731680">
+              <span class="text-3xl block mb-4">✍️</span>
+              <h3 class="text-lg font-bold mb-2" style="color:#f97316;text-shadow:0 0 7px #f97316,0 0 10px #f97316,0 0 21px #f97316">방명록</h3>
+              <p class="text-white/50 text-sm leading-relaxed">
+                계산할 때 한 줄 남겨주세요.<br />
+                그 시절 미니홈피 방명록처럼.
               </p>
             </div>
           </div>

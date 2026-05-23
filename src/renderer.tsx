@@ -11,31 +11,31 @@ const seoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: 'RAWISM | 연남동 한우 RAW BAR | 향촌동 뭉티기 · 03~06 K-POP · 도토리 술집',
-    description: '2005년 미니홈피 감성 술집 RAWISM. 연남동 핫플 한우 RAW BAR. 1950년대 대구 향촌동 뭉티기를 연남동에서. 야광팔찌, 잡지 콜라주, 03~06 K-POP BGM, 도토리 사탕. 홍대입구역 5분.',
-    keywords: '로위즘, RAWISM, 연남동 핫플, 연남동 한우 술집, 향촌동 뭉티기, 연남동 뭉티기, 싸이월드 감성, 싸이월드 감성 술집, 도토리 술집, 2000년대 술집, 03~06 케이팝 술집, SG워너비 술집, 미니홈피 술집, Y2K 감성 술집, 추억 술집 연남, 야광팔찌 술집, 잡지 콜라주 인테리어, 연남동 룰렛 이벤트, 연남동 노스탤지어, K-Nostalgia bar, Y2K nostalgia bar, Korea 2000s bar, 한우 육회 맛집, 홍대 술집, 연남동 술집, 연남동 맛집, 홍대입구역 맛집, 연트럴파크 맛집, 경의선숲길 맛집',
-    ogDescription: 'RAWISM — 2005년 미니홈피 감성 한우 RAW BAR. 향촌동 뭉티기 · 야광팔찌 · 03~06 K-POP · 도토리. 연남동 핫플.'
+    title: 'RAWISM | 연남동 한우 RAW BAR | 향촌동 뭉티기 · 03~06 K-POP · 야광팔찌 술집',
+    description: '2005년 미니홈피 감성 술집 RAWISM. 연남동 핫플 한우 RAW BAR. 1950년대 대구 향촌동 뭉티기를 연남동에서. 야광팔찌, 네온사진, 잡지 콜라주, 03~06 K-POP BGM. 홍대입구역 5분.',
+    keywords: '로위즘, RAWISM, 연남동 핫플, 연남동 한우 술집, 향촌동 뭉티기, 연남동 뭉티기, 싸이월드 감성, 싸이월드 감성 술집, 2000년대 술집, 03~06 케이팝 술집, SG워너비 술집, 미니홈피 술집, Y2K 감성 술집, 네온사진 술집, 추억 술집 연남, 야광팔찌 술집, 잡지 콜라주 인테리어, 연남동 룰렛 이벤트, 연남동 노스탤지어, K-Nostalgia bar, Y2K nostalgia bar, Korea 2000s bar, 한우 육회 맛집, 홍대 술집, 연남동 술집, 연남동 맛집, 홍대입구역 맛집, 연트럴파크 맛집, 경의선숲길 맛집',
+    ogDescription: 'RAWISM — 2005년 미니홈피 감성 한우 RAW BAR. 향촌동 뭉티기 · 야광팔찌 · 03~06 K-POP. 연남동 핫플.'
   },
   en: {
     lang: 'en',
     title: 'RAWISM | Korean Retro Bar in Yeonnam-dong Seoul | 2000s Nostalgia K-POP Bar',
-    description: 'RAWISM - A 2005 Cyworld-inspired retro Korean bar in Seoul. Premium Hanwoo beef tartare (mungtige) from Daegu Hyangchon-dong tradition. 03~06 K-POP BGM, neon glow bracelets, dotori candy, magazine collage walls. Near Hongdae Station.',
-    keywords: 'RAWISM, Korean retro bar, Yeonnam-dong bar, Hongdae bar, K-Nostalgia bar, Y2K nostalgia bar, Korea 2000s bar, 2000s Korean bar, Cyworld bar, dotori bar, Hanwoo beef tartare, mungtige, Seoul nightlife, retro bar Seoul, K-POP bar, neon bar Seoul, minihompi bar',
-    ogDescription: 'RAWISM — 2005 Cyworld-vibe retro Korean bar. Hanwoo beef tartare, neon glow bracelets, 03~06 K-POP, dotori. Yeonnam-dong hotspot.'
+    description: 'RAWISM - A 2005 Cyworld-inspired retro Korean bar in Seoul. Premium Hanwoo beef tartare (mungtige) from Daegu Hyangchon-dong tradition. 03~06 K-POP BGM, neon glow bracelets, neon photo zone, magazine collage walls. Near Hongdae Station.',
+    keywords: 'RAWISM, Korean retro bar, Yeonnam-dong bar, Hongdae bar, K-Nostalgia bar, Y2K nostalgia bar, Korea 2000s bar, 2000s Korean bar, Cyworld bar, neon photo bar, Hanwoo beef tartare, mungtige, Seoul nightlife, retro bar Seoul, K-POP bar, neon bar Seoul, minihompi bar',
+    ogDescription: 'RAWISM — 2005 Cyworld-vibe retro Korean bar. Hanwoo beef tartare, neon glow bracelets, 03~06 K-POP. Yeonnam-dong hotspot.'
   },
   ja: {
     lang: 'ja',
     title: 'RAWISM | 延南洞レトロ韓牛バー | 2000年代K-POPノスタルジアバー',
-    description: 'RAWISM - 2005年サイワールド風レトロ韓国バー。大邱ヒャンチョン洞伝統の韓牛ムンティギ。03~06 K-POP BGM、光る腕輪、ドトリキャンディ、雑誌コラージュ壁。弘大駅近く。',
-    keywords: 'RAWISM, 韓国レトロバー, 延南洞バー, 弘大バー, K-POPバー, Y2Kバー, 2000年代韓国バー, サイワールドバー, ドトリ, 韓牛ユッケ, ムンティギ, ソウルナイトライフ, ネオンバー, ミニホムピ',
-    ogDescription: 'RAWISM — 2005年サイワールド風レトロバー。韓牛タルタル、光る腕輪、03~06 K-POP、ドトリ。延南洞ホットスポット。'
+    description: 'RAWISM - 2005年サイワールド風レトロ韓国バー。大邱ヒャンチョン洞伝統の韓牛ムンティギ。03~06 K-POP BGM、光る腕輪、ネオン写真、雑誌コラージュ壁。弘大駅近く。',
+    keywords: 'RAWISM, 韓国レトロバー, 延南洞バー, 弘大バー, K-POPバー, Y2Kバー, 2000年代韓国バー, サイワールドバー, ネオン写真, 韓牛ユッケ, ムンティギ, ソウルナイトライフ, ネオンバー, ミニホムピ',
+    ogDescription: 'RAWISM — 2005年サイワールド風レトロバー。韓牛タルタル、光る腕輪、03~06 K-POP。延南洞ホットスポット。'
   },
   zh: {
     lang: 'zh',
     title: 'RAWISM | 延南洞韩牛酒吧 | 2000年代K-POP怀旧酒吧',
-    description: 'RAWISM - 2005年赛我网风格复古韩国酒吧。大邱乡村洞传统韩牛肉脍。03~06 K-POP背景音乐、荧光手环、橡子糖、杂志拼贴墙。弘大站附近。',
-    keywords: 'RAWISM, 韩国复古酒吧, 延南洞酒吧, 弘大酒吧, K-POP酒吧, Y2K酒吧, 2000年代韩国酒吧, 赛我网酒吧, 橡子, 韩牛肉脍, 首尔夜生活, 霓虹酒吧, 迷你主页',
-    ogDescription: 'RAWISM — 2005赛我网风复古酒吧。韩牛肉脍、荧光手环、03~06 K-POP、橡子。延南洞热门景点。'
+    description: 'RAWISM - 2005年赛我网风格复古韩国酒吧。大邱乡村洞传统韩牛肉脍。03~06 K-POP背景音乐、荧光手环、霓虹拍照、杂志拼贴墙。弘大站附近。',
+    keywords: 'RAWISM, 韩国复古酒吧, 延南洞酒吧, 弘大酒吧, K-POP酒吧, Y2K酒吧, 2000年代韩国酒吧, 赛我网酒吧, 霓虹拍照, 韩牛肉脍, 首尔夜生活, 霓虹酒吧, 迷你主页',
+    ogDescription: 'RAWISM — 2005赛我网风复古酒吧。韩牛肉脍、荧光手环、03~06 K-POP。延南洞热门景点。'
   }
 }
 
@@ -302,7 +302,7 @@ export function createRenderer(lang: Language = 'ko') {
             "@type": "WebSite",
             "name": "RAWISM",
             "url": "https://rawism.kr",
-            "description": "2005년 미니홈피 감성 한우 RAW BAR. 도토리 BGM · 03~06 K-POP. 연남동 핫플."
+            "description": "2005년 미니홈피 감성 한우 RAW BAR. 야광팔찌 · 03~06 K-POP. 연남동 핫플."
           })}} />
           
           {/* JSON-LD: BreadcrumbList */}

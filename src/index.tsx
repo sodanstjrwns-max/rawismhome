@@ -137,6 +137,7 @@ function PageContent({ lang }: { lang: Language }) {
           <h1 class="neon-pink text-6xl md:text-8xl lg:text-9xl font-black tracking-wider neon-flicker glitch mb-6">
             RAWISM
           </h1>
+          <p class="sr-only">연남동 한우 육회 · 뭉티기 · 소주 · 맥주 전문 술집. 홍대입구역 3번출구 도보 5분. 마포구 동교로 262-4. 연트럴파크 경의선숲길 인근. 청양육회, 오이마요육회, 마라육회, 육회비빔면, 육회비빔밥, 속풀이무국. 참이슬, 처음처럼, 진로, 새로, 카스, 테라, 크러쉬. 네이버 예약 가능. 데이트, 2차, 회식, 생일 모임 추천.</p>
           <p class="neon-cyan text-lg md:text-2xl font-handwrite tracking-wider mb-4">
             2005년 미니홈피 술집
           </p>
@@ -244,8 +245,8 @@ function PageContent({ lang }: { lang: Language }) {
         <div class="max-w-6xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-16">
             <p class="text-xs tracking-[0.4em] text-neon-yellow/60 uppercase mb-3">✦ Menu</p>
-            <h2 class="font-handwrite text-3xl md:text-4xl neon-yellow">메뉴판</h2>
-            <p class="text-white/30 text-xs mt-2">향촌동 뭉티기 · 한우 육회 · 소주 · 맥주</p>
+            <h2 class="font-handwrite text-3xl md:text-4xl neon-yellow">연남동 한우 육회 메뉴판</h2>
+            <p class="text-white/30 text-xs mt-2">향촌동 뭉티기 · 육회 · 안주 · 소주 · 맥주 · 해장 무국</p>
           </div>
           
           {/* Signature: 향촌동 뭉티기 */}
@@ -328,7 +329,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="fade-up">
             <div class="text-center mb-8">
               <p class="text-xs tracking-[0.4em] text-neon-purple/60 uppercase mb-2">🍺 Drinks</p>
-              <h3 class="font-handwrite text-2xl neon-purple">술 & 음료</h3>
+              <h3 class="font-handwrite text-2xl neon-purple">소주 · 맥주 · 음료</h3>
             </div>
             <div class="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-4">
               <DrinkCard name="참이슬 후레쉬" price="₩5,000" img="chamisul" />
@@ -350,7 +351,7 @@ function PageContent({ lang }: { lang: Language }) {
         <div class="max-w-5xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-16">
             <p class="text-xs tracking-[0.4em] text-neon-green/60 uppercase mb-3">Experience</p>
-            <h2 class="font-handwrite text-3xl md:text-4xl neon-green">"뭐야 이거?"</h2>
+            <h2 class="font-handwrite text-3xl md:text-4xl neon-green">연남동 술집 체험</h2>
             <p class="text-white/30 text-sm mt-2">들어오면 한 번쯤 하게 되는 말</p>
           </div>
           
@@ -419,7 +420,7 @@ function PageContent({ lang }: { lang: Language }) {
         <div class="max-w-6xl mx-auto px-6 md:px-12">
           <div class="fade-up text-center mb-12">
             <p class="text-xs tracking-[0.4em] text-neon-purple/60 uppercase mb-3">📷 Gallery</p>
-            <h2 class="font-handwrite text-3xl md:text-4xl neon-purple">폴라로이드 앨범</h2>
+            <h2 class="font-handwrite text-3xl md:text-4xl neon-purple">한우 육회 · 뭉티기 사진</h2>
           </div>
           
           <div class="fade-up grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -453,7 +454,7 @@ function PageContent({ lang }: { lang: Language }) {
         <div class="relative max-w-3xl mx-auto px-6 md:px-12 text-center">
           <div class="fade-up">
             <p class="text-xs tracking-[0.4em] text-neon-yellow/60 uppercase mb-4">♥ Reservation</p>
-            <h2 class="font-handwrite text-4xl md:text-5xl neon-yellow mb-6">다녀갈 시간 정하기 ♥</h2>
+            <h2 class="font-handwrite text-4xl md:text-5xl neon-yellow mb-6">연남동 술집 예약 ♥</h2>
             <div class="space-y-2 text-white/50 text-sm mb-10">
               <p>12테이블 운영</p>
               <p>화 - 일 18:00 ~ 23:00</p>
@@ -488,7 +489,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div class="fade-up">
               <p class="text-xs tracking-[0.4em] text-neon-cyan/60 uppercase mb-4">Location</p>
-              <h2 class="font-handwrite text-3xl md:text-4xl neon-cyan mb-10">찾아오는 길</h2>
+              <h2 class="font-handwrite text-3xl md:text-4xl neon-cyan mb-10">연남동 RAWISM 찾아오는 길</h2>
               
               <div class="space-y-8">
                 <div class="border-l-2 border-neon-cyan/30 pl-5">
@@ -565,7 +566,13 @@ function PageContent({ lang }: { lang: Language }) {
           
           <div class="border-t border-white/5 pt-6">
             <p class="text-white/15 text-[10px] tracking-wider">
-              © 2026 RAWISM · 연남동 · 한우 RAW BAR
+              © 2026 RAWISM · 연남동 한우 육회 · 뭉티기 · 소주 · 맥주
+            </p>
+            <p class="text-white/10 text-[9px] mt-2">
+              서울 마포구 동교로 262-4 · 홍대입구역 3번출구 도보 5분 · 연트럴파크 · 경의선숲길
+            </p>
+            <p class="text-white/10 text-[9px] mt-2">
+              서울 마포구 동교로 262-4 · 홍대입구역 3번출구 도보 5분 · 연트럴파크 · 경의선숲길
             </p>
           </div>
         </div>
@@ -620,7 +627,7 @@ app.get('/sitemap.xml', (c) => {
     <xhtml:link rel="alternate" hreflang="ja" href="https://rawism.kr/ja" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://rawism.kr/zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rawism.kr/" />
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -628,12 +635,9 @@ app.get('/sitemap.xml', (c) => {
       <image:title>RAWISM 향촌동 뭉티기 - 연남동 한우 RAW BAR</image:title>
     </image:image>
   </url>
-  <url><loc>https://rawism.kr/en</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/ja</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/zh</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/menu</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
-  <url><loc>https://rawism.kr/gallery</loc><lastmod>2026-05-23</lastmod><priority>0.8</priority></url>
-  <url><loc>https://rawism.kr/reservation</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
+  <url><loc>https://rawism.kr/en</loc><lastmod>2026-05-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://rawism.kr/ja</loc><lastmod>2026-05-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://rawism.kr/zh</loc><lastmod>2026-05-24</lastmod><priority>0.9</priority></url>
 </urlset>`
   return c.text(sitemap, 200, { 'Content-Type': 'application/xml' })
 })

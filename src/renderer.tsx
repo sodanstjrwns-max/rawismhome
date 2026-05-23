@@ -11,31 +11,31 @@ const seoData: Record<Language, {
 }> = {
   ko: {
     lang: 'ko',
-    title: 'RAWISM | 연남동 한우 RAW BAR | 향촌동 뭉티기 · 03~06 K-POP · 야광팔찌 술집',
-    description: '2005년 미니홈피 감성 술집 RAWISM. 연남동 핫플 한우 RAW BAR. 1950년대 대구 향촌동 뭉티기를 연남동에서. 야광팔찌, 네온사진, 잡지 콜라주, 03~06 K-POP BGM. 홍대입구역 5분.',
-    keywords: '로위즘, RAWISM, 연남동 핫플, 연남동 한우 술집, 향촌동 뭉티기, 연남동 뭉티기, 싸이월드 감성, 싸이월드 감성 술집, 2000년대 술집, 03~06 케이팝 술집, SG워너비 술집, 미니홈피 술집, Y2K 감성 술집, 네온사진 술집, 추억 술집 연남, 야광팔찌 술집, 잡지 콜라주 인테리어, 연남동 룰렛 이벤트, 연남동 노스탤지어, K-Nostalgia bar, Y2K nostalgia bar, Korea 2000s bar, 한우 육회 맛집, 홍대 술집, 연남동 술집, 연남동 맛집, 홍대입구역 맛집, 연트럴파크 맛집, 경의선숲길 맛집',
-    ogDescription: 'RAWISM — 2005년 미니홈피 감성 한우 RAW BAR. 향촌동 뭉티기 · 야광팔찌 · 03~06 K-POP. 연남동 핫플.'
+    title: 'RAWISM | 연남동 한우 육회 · 뭉티기 · 소주 · 맥주 | 홍대입구역 5분 술집',
+    description: '연남동 한우 육회 전문 술집 RAWISM. 향촌동 뭉티기 · 청양육회 · 마라육회 · 육회비빔면. 참이슬·처음처럼·진로·새로 · 카스·테라·크러쉬. 야광팔찌 끼고 03~06 K-POP BGM 들으며 소주 한잔. 홍대입구역 3번출구 도보 5분. 연트럴파크 인근.',
+    keywords: '로위즘, RAWISM, 연남동 술집, 연남동 맛집, 연남동 핫플, 연남동 한우 술집, 연남동 육회, 연남동 뭉티기, 연남동 육회 맛집, 연남동 데이트, 연남동 2차, 연남동 안주 맛집, 연남동 생일 술집, 연남동 회식, 연남동 분위기 좋은 술집, 연남동 소주, 연남동 맥주, 향촌동 뭉티기, 한우 육회 맛집, 육회 안주, 육회 소주, 육회비빔면, 육회비빔밥, 청양육회, 마라육회, 홍대 술집, 홍대 육회, 홍대 맛집, 홍대입구역 술집, 홍대입구역 맛집, 홍대 안주 맛집, 홍대 데이트, 홍대 2차, 마포구 술집, 마포구 맛집, 연트럴파크 맛집, 경의선숲길 맛집, 경의선숲길 술집, 싸이월드 감성 술집, Y2K 감성 술집, 레트로 술집 서울, 네온사진 술집, 야광팔찌 술집, 잡지 콜라주 술집, 룰렛 술집, 소주 맛집, 맥주 맛집, K-POP 술집, 무국 해장, 속풀이 무국',
+    ogDescription: 'RAWISM — 연남동 한우 육회 · 뭉티기 · 소주 · 맥주. 야광팔찌 끼고 03~06 K-POP 들으며 한잔. 홍대입구역 5분.'
   },
   en: {
     lang: 'en',
-    title: 'RAWISM | Korean Retro Bar in Yeonnam-dong Seoul | 2000s Nostalgia K-POP Bar',
-    description: 'RAWISM - A 2005 Cyworld-inspired retro Korean bar in Seoul. Premium Hanwoo beef tartare (mungtige) from Daegu Hyangchon-dong tradition. 03~06 K-POP BGM, neon glow bracelets, neon photo zone, magazine collage walls. Near Hongdae Station.',
-    keywords: 'RAWISM, Korean retro bar, Yeonnam-dong bar, Hongdae bar, K-Nostalgia bar, Y2K nostalgia bar, Korea 2000s bar, 2000s Korean bar, Cyworld bar, neon photo bar, Hanwoo beef tartare, mungtige, Seoul nightlife, retro bar Seoul, K-POP bar, neon bar Seoul, minihompi bar',
-    ogDescription: 'RAWISM — 2005 Cyworld-vibe retro Korean bar. Hanwoo beef tartare, neon glow bracelets, 03~06 K-POP. Yeonnam-dong hotspot.'
+    title: 'RAWISM | Hanwoo Beef Tartare Bar in Yeonnam-dong Seoul | Retro K-POP Bar near Hongdae',
+    description: 'RAWISM - Premium Hanwoo beef tartare (yukhoe) & mungtige bar in Yeonnam-dong, Seoul. Korean soju, beer (Cass, Terra, Krush), retro 2000s K-POP BGM, neon glow bracelets, magazine collage walls. 5 min walk from Hongdae Station Exit 3. Reservations available.',
+    keywords: 'RAWISM, Yeonnam-dong bar, Hongdae bar, Korean beef tartare, yukhoe Seoul, mungtige, Hanwoo bar Seoul, Korean soju bar, beer bar Seoul, Hongdae restaurant, Yeonnam-dong restaurant, Seoul nightlife, retro bar Seoul, K-POP bar, neon bar, Korean drinking culture, Mapo-gu bar, Korean raw beef, Seoul date spot, Hongdae date, group dinner Seoul',
+    ogDescription: 'RAWISM — Hanwoo beef tartare · mungtige · soju · beer. Retro K-POP bar near Hongdae Station, Seoul. Yeonnam-dong hotspot.'
   },
   ja: {
     lang: 'ja',
-    title: 'RAWISM | 延南洞レトロ韓牛バー | 2000年代K-POPノスタルジアバー',
-    description: 'RAWISM - 2005年サイワールド風レトロ韓国バー。大邱ヒャンチョン洞伝統の韓牛ムンティギ。03~06 K-POP BGM、光る腕輪、ネオン写真、雑誌コラージュ壁。弘大駅近く。',
-    keywords: 'RAWISM, 韓国レトロバー, 延南洞バー, 弘大バー, K-POPバー, Y2Kバー, 2000年代韓国バー, サイワールドバー, ネオン写真, 韓牛ユッケ, ムンティギ, ソウルナイトライフ, ネオンバー, ミニホムピ',
-    ogDescription: 'RAWISM — 2005年サイワールド風レトロバー。韓牛タルタル、光る腕輪、03~06 K-POP。延南洞ホットスポット。'
+    title: 'RAWISM | 延南洞 韓牛ユッケ・ムンティギ・焼酎・ビール | 弘大駅徒歩5分',
+    description: 'RAWISM - 延南洞の韓牛ユッケ専門バー。大邱ヒャンチョン洞伝統のムンティギ、青唐ユッケ、麻辣ユッケ。焼酎・ビール・2000年代K-POP BGM。弘大駅3番出口徒歩5分。予約可能。',
+    keywords: 'RAWISM, 延南洞バー, 弘大バー, 韓牛ユッケ, ムンティギ, 韓国焼酎, 韓国ビール, K-POPバー, レトロバー, ソウル居酒屋, ソウルナイトライフ, ネオンバー, 弘大レストラン, マポ区バー, ソウルデート',
+    ogDescription: 'RAWISM — 延南洞の韓牛ユッケ・ムンティギ・焼酎・ビール。弘大駅5分。'
   },
   zh: {
     lang: 'zh',
-    title: 'RAWISM | 延南洞韩牛酒吧 | 2000年代K-POP怀旧酒吧',
-    description: 'RAWISM - 2005年赛我网风格复古韩国酒吧。大邱乡村洞传统韩牛肉脍。03~06 K-POP背景音乐、荧光手环、霓虹拍照、杂志拼贴墙。弘大站附近。',
-    keywords: 'RAWISM, 韩国复古酒吧, 延南洞酒吧, 弘大酒吧, K-POP酒吧, Y2K酒吧, 2000年代韩国酒吧, 赛我网酒吧, 霓虹拍照, 韩牛肉脍, 首尔夜生活, 霓虹酒吧, 迷你主页',
-    ogDescription: 'RAWISM — 2005赛我网风复古酒吧。韩牛肉脍、荧光手环、03~06 K-POP。延南洞热门景点。'
+    title: 'RAWISM | 延南洞 韩牛肉脍·肉块·烧酒·啤酒 | 弘大站步5分钟',
+    description: 'RAWISM - 延南洞韩牛肉脍专业酒吧。乡村洞传统肉块、青阳肉脍、麻辣肉脍。烧酒·啤酒·2000年代K-POP背景音乐。弘大站3号出口步5分钟。可预约。',
+    keywords: 'RAWISM, 延南洞酒吧, 弘大酒吧, 韩牛肉脍, 肉块, 韩国烧酒, 韩国啤酒, K-POP酒吧, 复古酒吧, 首尔居酒屋, 首尔夜生活, 霓虹酒吧, 弘大餐厅, 麻浦区酒吧, 首尔约会',
+    ogDescription: 'RAWISM — 延南洞韩牛肉脍·肉块·烧酒·啤酒。弘大站5分钟。'
   }
 }
 
@@ -110,6 +110,7 @@ export function createRenderer(lang: Language = 'ko') {
           
           {/* Neon + Retro CSS */}
           <style dangerouslySetInnerHTML={{__html: `
+            .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body {
               font-family: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
@@ -287,13 +288,60 @@ export function createRenderer(lang: Language = 'ko') {
             "openingHoursSpecification": [
               { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "23:00" }
             ],
-            "servesCuisine": ["한우 육회", "뭉티기", "한식 주점"],
+            "servesCuisine": ["한우 육회", "뭉티기", "한식 주점", "소주", "맥주", "육회비빔면", "육회비빔밥"],
             "priceRange": "₩₩₩",
             "image": "https://rawism.kr/static/new/mungtige_jeontong.jpg",
             "description": seo.description,
             "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127" },
             "acceptsReservations": "True",
-            "menu": "https://rawism.kr/menu"
+            "menu": "https://rawism.kr/#menu",
+            "hasMenu": {
+              "@type": "Menu",
+              "name": "RAWISM 메뉴판",
+              "description": "연남동 한우 육회 · 뭉티기 · 소주 · 맥주",
+              "hasMenuSection": [
+                {
+                  "@type": "MenuSection",
+                  "name": "시그니처",
+                  "hasMenuItem": [
+                    {"@type":"MenuItem","name":"향촌동 뭉티기","description":"당일 도축 한우 200g. 정통/깍둝 선택 가능","offers":{"@type":"Offer","price":"45000","priceCurrency":"KRW"}}
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "육회",
+                  "hasMenuItem": [
+                    {"@type":"MenuItem","name":"청양 오일 육회","description":"한우 우둥살 150g. 매콤한 고추기름","offers":{"@type":"Offer","price":"22000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"오이마요 육회","description":"한우 우둥살 150g. 마요 + 오이의 깔끔한 조합","offers":{"@type":"Offer","price":"22000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"마라깟잎 육회","description":"한우 우둥살 150g. 마라 + 깟잎","offers":{"@type":"Offer","price":"22000","priceCurrency":"KRW"}}
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "안주 · 마무리",
+                  "hasMenuItem": [
+                    {"@type":"MenuItem","name":"아보 카프레제","description":"아보카도 + 모짜렐라 + 방울토마토","offers":{"@type":"Offer","price":"19000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"크림앤칩스","description":"맥주 마시면서 손이 자꾸 가는 안주","offers":{"@type":"Offer","price":"8000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"육회 들기름 비빔면","description":"육회비빔면. 마지막 마무리용","offers":{"@type":"Offer","price":"13000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"육회 아보 비빔밥","description":"육회비빔밥. 면보다 밥이 좋은 사람용","offers":{"@type":"Offer","price":"15000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"속풀이 무국","description":"해장용 무국. 국물이 시원하다","offers":{"@type":"Offer","price":"12000","priceCurrency":"KRW"}}
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "주류",
+                  "hasMenuItem": [
+                    {"@type":"MenuItem","name":"참이슬 후레쉬","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"처음처럼","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"진로","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"새로","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"카스 후레쉬","offers":{"@type":"Offer","price":"6000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"테라","offers":{"@type":"Offer","price":"6000","priceCurrency":"KRW"}},
+                    {"@type":"MenuItem","name":"크러쉬","offers":{"@type":"Offer","price":"7000","priceCurrency":"KRW"}}
+                  ]
+                }
+              ]
+            }
           })}} />
           
           {/* JSON-LD: WebSite */}
@@ -302,7 +350,7 @@ export function createRenderer(lang: Language = 'ko') {
             "@type": "WebSite",
             "name": "RAWISM",
             "url": "https://rawism.kr",
-            "description": "2005년 미니홈피 감성 한우 RAW BAR. 야광팔찌 · 03~06 K-POP. 연남동 핫플."
+            "description": "연남동 한우 육회 · 뭉티기 · 소주 · 맥주. 야광팔찌 · 03~06 K-POP. 홍대입구역 5분."
           })}} />
           
           {/* JSON-LD: BreadcrumbList */}
@@ -310,7 +358,25 @@ export function createRenderer(lang: Language = 'ko') {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "RAWISM", "item": "https://rawism.kr" }
+              { "@type": "ListItem", "position": 1, "name": "RAWISM", "item": "https://rawism.kr" },
+              { "@type": "ListItem", "position": 2, "name": "메뉴", "item": "https://rawism.kr/#menu" },
+              { "@type": "ListItem", "position": 3, "name": "예약", "item": "https://rawism.kr/#reserve" }
+            ]
+          })}} />
+          
+          {/* JSON-LD: FAQPage */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {"@type":"Question","name":"RAWISM 영업시간이 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"화요일~일요일 18:00~23:00 영업합니다. 매주 월요일 휴무입니다."}},
+              {"@type":"Question","name":"RAWISM 위치가 어디인가요?","acceptedAnswer":{"@type":"Answer","text":"서울 마포구 동교로 262-4 (연남동). 홍대입구역 3번 출구에서 도보 5분, 경의선숲길/연트럴파크 인근입니다."}},
+              {"@type":"Question","name":"RAWISM 예약은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"네이버 예약(링크) 또는 인스타그램 DM(@rawism_theblack)으로 예약 가능합니다. 12테이블 운영."}},
+              {"@type":"Question","name":"RAWISM 시그니처 메뉴가 뭐인가요?","acceptedAnswer":{"@type":"Answer","text":"향촌동 뭉티기(₩45,000)가 시그니처입니다. 당일 도축 한우 200g으로 정통/깍둝 선택 가능합니다."}},
+              {"@type":"Question","name":"RAWISM에서 파는 소주 종류는?","acceptedAnswer":{"@type":"Answer","text":"참이슬 후레쉬, 처음처럼, 진로, 새로 각 ₩5,000입니다."}},
+              {"@type":"Question","name":"RAWISM에서 파는 맥주 종류는?","acceptedAnswer":{"@type":"Answer","text":"카스 후레쉬(₩6,000), 테라(₩6,000), 크러쉬(₩7,000)입니다."}},
+              {"@type":"Question","name":"RAWISM 야광팔찌 이벤트가 뭐인가요?","acceptedAnswer":{"@type":"Answer","text":"소주/맥주 시키면 직원이 야광팔찌 끼고 서빙해드립니다. 원하면 가져가셔도 OK!"}},
+              {"@type":"Question","name":"RAWISM 룰렛 이벤트는 어떻게 참여하나요?","acceptedAnswer":{"@type":"Answer","text":"리뷰 작성 시 룰렛 한 번 돌리실 수 있습니다. 소주, 맥주, 안주 무료 당첨. 가끔 화요 17도 나옵니다!"}}
             ]
           })}} />
           

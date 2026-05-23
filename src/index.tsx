@@ -91,7 +91,7 @@ function PageContent({ lang }: { lang: Language }) {
             <a href="#experience" class="text-xs text-white/60 hover:text-neon-green transition-colors tracking-wider">경험</a>
             <a href="#gallery" class="text-xs text-white/60 hover:text-neon-purple transition-colors tracking-wider">갤러리</a>
             <a href="#location" class="text-xs text-white/60 hover:text-neon-cyan transition-colors tracking-wider">위치</a>
-            <a href="https://naver.me/5qLSfCNC" target="_blank" class="text-xs neon-pink font-bold tracking-wider hover:opacity-80 transition-opacity">다녀갑니다 ♥</a>
+            <a href="https://naver.me/5qLSfCNC" target="_blank" class="text-xs neon-pink font-bold tracking-wider hover:opacity-80 transition-opacity">일촌 신청 ♥</a>
           </div>
           <div class="lg:hidden flex items-center gap-3">
             <button id="mobile-menu-btn" class="text-white/70 hover:text-neon-pink transition-colors p-2">
@@ -106,7 +106,7 @@ function PageContent({ lang }: { lang: Language }) {
             <a href="#menu" class="text-sm text-white/60 hover:text-neon-yellow py-2">✦ 메뉴</a>
             <a href="#experience" class="text-sm text-white/60 hover:text-neon-green py-2">💡 경험</a>
             <a href="#gallery" class="text-sm text-white/60 hover:text-neon-purple py-2">📷 갤러리</a>
-            <a href="#reserve" class="text-sm neon-pink font-bold py-2">♥ 다녀갑니다</a>
+            <a href="#reserve" class="text-sm neon-pink font-bold py-2">♥ 일촌 신청</a>
           </div>
         </div>
       </nav>
@@ -137,11 +137,14 @@ function PageContent({ lang }: { lang: Language }) {
           <h1 class="neon-pink text-6xl md:text-8xl lg:text-9xl font-black tracking-wider neon-flicker glitch mb-6">
             RAWISM
           </h1>
-          <p class="neon-cyan text-lg md:text-2xl font-handwrite tracking-wider mb-8">
-            1999년 미니홈피 술집
+          <p class="neon-cyan text-lg md:text-2xl font-handwrite tracking-wider mb-4">
+            2005년 미니홈피 술집
+          </p>
+          <p class="text-white/40 text-xs md:text-sm tracking-wider mb-6">
+            도토리 모아 BGM 결제하던 그 시절
           </p>
           <p class="text-white/50 text-sm md:text-base tracking-wider mb-2">
-            향촌동 뭉티기 · 96~03 K-POP
+            향촌동 뭉티기 · 03~06 K-POP
           </p>
           <p class="text-white/30 text-xs tracking-widest mb-12">
             연남동 한우 RAW BAR
@@ -149,11 +152,11 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" 
                class="neon-box-pink px-8 py-3 text-neon-pink font-bold text-sm tracking-wider hover:bg-neon-pink/10 transition-all">
-              다녀갑니다 ♥
+              일촌 신청 ♥
             </a>
             <a href="#now-playing" 
                class="neon-box-cyan px-8 py-3 text-neon-cyan text-sm tracking-wider hover:bg-neon-cyan/10 transition-all">
-              오늘 BGM 보러 가기 ♫
+              오늘 미니홈피 BGM 보기 ♫
             </a>
           </div>
           
@@ -171,11 +174,11 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="fade-up">
             <p class="font-handwrite text-4xl md:text-5xl neon-pink mb-8">"다녀갑니다 ♥"</p>
             <div class="space-y-6 text-white/60 text-sm md:text-base leading-loose">
-              <p>1999년 어느 술집에 떨어진 것 같은 곳.</p>
+              <p>2005년 어느 술집에 떨어진 것 같은 곳.</p>
               <p>1950년대 대구 향촌동에서 시작된 <span class="highlighter">뭉티기</span>를<br />2026년 연남동에서 만난다.</p>
               <p>
                 야광팔찌 끼고<br />
-                <span class="highlighter-pink">쿨 - 해변의 여인</span> 들으면서<br />
+                <span class="highlighter-pink">SG워너비 - 죄와 벌</span> 들으면서<br />
                 잡지에서 본 그 시절 광고 사이에서<br />
                 소주 한 잔.
               </p>
@@ -212,18 +215,18 @@ function PageContent({ lang }: { lang: Language }) {
                 </div>
               </div>
               
-              <p class="neon-yellow text-lg font-bold mb-1">🎵 이정현 - 와</p>
+              <p class="neon-yellow text-lg font-bold mb-1">🎵 SG워너비 - 살다가</p>
               <p class="text-white/30 text-xs mb-6">지금 RAWISM에서 흐르고 있어요</p>
               
               <div class="border-t border-white/10 pt-6">
                 <p class="text-xs text-neon-purple/80 tracking-wider mb-4 uppercase">이번 주 추천 트랙</p>
                 <div class="space-y-2 text-sm text-white/50">
-                  <p>♪ 쿨 — 해변의 여인</p>
-                  <p>♪ god — 거짓말</p>
-                  <p>♪ 핑클 — 영원한 사랑</p>
-                  <p>♪ DJ DOC — 런 투 유</p>
-                  <p>♪ 샤크라 — 한</p>
-                  <p>♪ 김건모 — 잘못된 만남</p>
+                  <p>♪ SG워너비 — 살다가</p>
+                  <p>♪ 빅마마 — 체념</p>
+                  <p>♪ 이효리 — Get Ya</p>
+                  <p>♪ 동방신기 — HUG</p>
+                  <p>♪ 원더걸스 — Tell Me</p>
+                  <p>♪ 김종국 — 사랑스러워</p>
                 </div>
               </div>
               
@@ -242,7 +245,7 @@ function PageContent({ lang }: { lang: Language }) {
           <div class="fade-up text-center mb-16">
             <p class="text-xs tracking-[0.4em] text-neon-yellow/60 uppercase mb-3">✦ Menu</p>
             <h2 class="font-handwrite text-3xl md:text-4xl neon-yellow">메뉴판</h2>
-            <p class="text-white/30 text-xs mt-2">향촌동 뭉티기 · 한우 육회 · 소주 · 맥주</p>
+            <p class="text-white/30 text-xs mt-2">향촌동 뭉티기 · 한우 육회 · 소주 · 맥주 · 도토리</p>
           </div>
           
           {/* Signature: 향촌동 뭉티기 */}
@@ -383,9 +386,9 @@ function PageContent({ lang }: { lang: Language }) {
             {/* Card 4 */}
             <div class="fade-up neon-box-purple bg-card-black p-6 hover:bg-neon-purple/5 transition-all group" style="box-shadow:0 0 7px #c084fc80,0 0 15px #c084fc40,inset 0 0 7px #c084fc20;border:1px solid #c084fc80">
               <span class="text-3xl block mb-4">🎵</span>
-              <h3 class="text-lg font-bold text-neon-purple mb-2">96~03 K-POP</h3>
+              <h3 class="text-lg font-bold text-neon-purple mb-2">03~06 K-POP</h3>
               <p class="text-white/50 text-sm leading-relaxed">
-                쿨, 이정현, DJ DOC, 샤크라, god.<br />
+                SG워너비, 빅마마, 이효리, 동방신기, 원더걸스.<br />
                 기억나는 곡은 신청 가능.
               </p>
             </div>
@@ -395,7 +398,7 @@ function PageContent({ lang }: { lang: Language }) {
               <h3 class="text-lg font-bold text-neon-green mb-2">도토리</h3>
               <p class="text-white/50 text-sm leading-relaxed">
                 결제 후 도토리 사탕 1개 서비스.<br />
-                미니홈피 시절 그 도토리.
+                하루 1개씩 모아 BGM 사던 그 도토리.
               </p>
             </div>
           </div>

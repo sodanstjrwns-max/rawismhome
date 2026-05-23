@@ -664,9 +664,14 @@ Crawl-delay: 1`
   return c.text(robots, 200, { 'Content-Type': 'text/plain' })
 })
 
-// Naver verification
+// Naver verification (old)
 app.get('/naver7904d9ff69f646703310c041cef72888.html', (c) => {
   return c.text('2d5260929ab847d76c151f135aa20621f6f746a0', 200, { 'Content-Type': 'text/html' })
+})
+
+// Naver verification (Patient Funnel)
+app.get('/naveree5a268dce644afaa8ac3fe6a1b0211e.html', (c) => {
+  return c.text('naveree5a268dce644afaa8ac3fe6a1b0211e', 200, { 'Content-Type': 'text/html' })
 })
 
 // ===== MAIN ROUTES =====

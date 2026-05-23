@@ -456,7 +456,7 @@ function PageContent({ lang }: { lang: Language }) {
             <h2 class="font-handwrite text-4xl md:text-5xl neon-yellow mb-6">다녀갈 시간 정하기 ♥</h2>
             <div class="space-y-2 text-white/50 text-sm mb-10">
               <p>12테이블 운영</p>
-              <p>화 - 일 18:00 ~ 24:00</p>
+              <p>화 - 일 18:00 ~ 23:00</p>
               <p>월요일 휴무</p>
             </div>
             
@@ -503,7 +503,7 @@ function PageContent({ lang }: { lang: Language }) {
                 </div>
                 <div class="border-l-2 border-neon-cyan/30 pl-5">
                   <p class="text-[10px] tracking-wider text-neon-cyan/50 uppercase mb-1">Hours</p>
-                  <p class="text-white/80">화 ~ 일 18:00 - 24:00</p>
+                  <p class="text-white/80">화 ~ 일 18:00 - 23:00</p>
                   <p class="text-neon-pink/60 text-xs mt-1">매주 월요일 휴무</p>
                 </div>
                 <div class="border-l-2 border-neon-cyan/30 pl-5">

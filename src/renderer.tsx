@@ -285,7 +285,7 @@ export function createRenderer(lang: Language = 'ko') {
             },
             "geo": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
             "openingHoursSpecification": [
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "24:00" }
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "23:00" }
             ],
             "servesCuisine": ["한우 육회", "뭉티기", "한식 주점"],
             "priceRange": "₩₩₩",

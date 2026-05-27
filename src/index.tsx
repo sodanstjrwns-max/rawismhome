@@ -37,7 +37,7 @@ function MenuCard({ name, nameEn, price, img, desc, recommend, badge, rot }: {
         <div class="relative overflow-hidden aspect-square">
           <picture>
             <source srcset={`/static/new/${img}.webp`} type="image/webp" />
-            <img src={`/static/new/${img}.jpg`} alt={`RAWISM ${name}`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="400" />
+            <img src={`/static/new/${img}.jpg`} alt={`RAWISM ${name} - 연남동 한우 육회 술집 ${price}`} title={`${name} ${price} | RAWISM 연남동`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="400" />
           </picture>
           {badge && (
             <span class="absolute top-2 left-2 text-[10px] px-2 py-1 bg-neon-pink text-white font-bold tracking-wider">{badge}</span>
@@ -65,7 +65,7 @@ function DrinkCard({ name, price, img }: { name: string; price: string; img: str
       <div class="w-24 h-24 mx-auto mb-2 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-neon-cyan/50 transition-colors">
         <picture>
           <source srcset={`/static/new/${img}.webp`} type="image/webp" />
-          <img src={`/static/new/${img}.jpg`} alt={name} class="w-full h-full object-cover" loading="lazy" width="96" height="96" />
+          <img src={`/static/new/${img}.jpg`} alt={`${name} ${price} - RAWISM 연남동 술집`} title={`${name} ${price} | RAWISM 연남동 홍대`} class="w-full h-full object-cover" loading="lazy" width="96" height="96" />
         </picture>
       </div>
       <p class="text-sm text-white/80">{name}</p>
@@ -137,7 +137,14 @@ function PageContent({ lang }: { lang: Language }) {
           <h1 class="neon-pink text-6xl md:text-8xl lg:text-9xl font-black tracking-wider neon-flicker glitch mb-6">
             RAWISM
           </h1>
-          <p class="sr-only">연남동 한우 육회 · 뭉티기 · 소주 · 맥주 전문 술집 RAWISM. 서울 마포구 동교로 262-4 (연남동, 동교동). 홍대입구역(2호선·경의중앙선·공항철도) 3번출구 도보 5분. 연트럴파크·경의선숲길 인근. 동교동·성산동·망원동·연희동 인접. 청양육회, 오이마요육회, 마라육회, 육회비빔면, 육회비빔밥, 속풀이무국, 향촌동뭉티기, 아보카프레제, 크림앤칩스. 참이슬, 처음처럼, 진로, 새로, 카스, 테라, 크러쉬. 네이버 예약 가능. 데이트, 소개팅, 2차, 회식, 생일, 기념일, 야외, 커플, 친구모임, 단체회식 추천. 버스 7016, 7711, 마포08, 마포15.</p>
+          <p class="sr-only">연남동 한우 육회 · 뭉티기 · 소주 · 맥주 전문 술집 RAWISM. 서울 마포구 동교로 262-4 (연남동, 동교동). 홍대입구역(2호선·경의중앙선·공항철도) 3번출구 도보 5분. 연트럴파크·경의선숲길 인근. 동교동·성산동·망원동·연희동 인접.
+            향촌동 뭉티기 45000원 당일도축 한우 200g 정통 깍둑 선택. 청양오일육회 22000원 한우 우둔살 150g 매콤 고추기름. 오이마요육회 22000원 한우 우둔살 150g 마요네즈 오이. 마라깻잎육회 22000원 한우 우둔살 150g 마라 깻잎 얼얼.
+            아보카프레제 19000원 아보카도 모짜렐라 방울토마토. 크림앤칩스 8000원 감자튀김 크림소스 맥주안주 가성비. 육회비빔면 13000원 한우육회 들기름 마무리메뉴. 육회비빔밥 15000원 한우육회 아보카도 밥. 속풀이무국 12000원 해장 무국.
+            참이슬 후레쉬 5000원 360ml. 처음처럼 5000원 360ml. 진로 5000원 360ml 레트로. 새로 5000원 360ml 제로슈거. 카스 후레쉬 6000원 500ml. 테라 6000원 500ml. 크러쉬 7000원 500ml 프리미엄. 코카콜라 3000원. 콜라제로 3000원.
+            연남동 뭉티기 가격, 홍대 뭉티기, 서울 뭉티기 맛집, 연남동 한우 육회 가격, 홍대 한우 육회 가격, 마포구 한우 육회, 참이슬 파는 연남동 술집, 처음처럼 파는 연남동 술집, 진로 파는 연남동 술집, 새로 파는 연남동 술집, 카스 파는 연남동 술집, 테라 파는 연남동 술집, 크러쉬 파는 연남동 술집.
+            소주 5000원 연남동, 맥주 6000원 연남동, 연남동 소주 가격, 홍대 소주 가격, 연남동 맥주 가격, 홍대 맥주 가격, 연남동 육회비빔면, 홍대 육회비빔면, 연남동 육회비빔밥, 홍대 육회비빔밥, 연남동 해장, 홍대 해장 무국.
+            뭉티기 소주 조합, 육회 맥주 페어링, 한우 육회 소주 세트, 크림앤칩스 맥주 조합, 연남동 안주 추천, 홍대 안주 추천, 연남동 가성비 안주.
+            네이버 예약 가능. 데이트, 소개팅, 2차, 회식, 생일, 기념일, 야외, 커플, 친구모임, 단체회식 추천. 버스 7016, 7711, 마포08, 마포15. RAWISM 메뉴 RAWISM 가격 RAWISM 예약.</p>
           <p class="neon-cyan text-lg md:text-2xl font-handwrite tracking-wider mb-4">
             2005년 미니홈피 술집
           </p>
@@ -151,14 +158,11 @@ function PageContent({ lang }: { lang: Language }) {
             연남동 한우 RAW BAR
           </p>
           <p class="sr-only">
-            연남동 술집 RAWISM은 서울 마포구 동교로 262-4에 위치한 한우 육회 전문 술집입니다.
-            시그니처 메뉴 향촌동 뭉티기(45,000원)를 비롯해 청양 오일 육회, 오이마요 육회, 마라깻잎 육회 등
-            다양한 한우 육회를 즐기실 수 있습니다. 소주(참이슬, 처음처럼, 진로, 새로 각 5,000원),
-            맥주(카스 6,000원, 테라 6,000원, 크러쉬 7,000원)와 함께 즐기세요.
-            육회비빔면(13,000원), 육회비빔밥(15,000원), 속풀이 무국(12,000원)으로 마무리.
-            홍대입구역 3번출구 도보 5분. 연트럴파크 경의선숲길 인근. 화~일 18:00~23:00 영업. 월요일 휴무.
-            네이버 예약 가능. 12테이블 운영. 데이트, 2차, 회식, 생일 모임 추천.
-            야광팔찌, 네온사진, 잡지 콜라주, 03~06 K-POP BGM, 룰렛 이벤트, 방명록 체험 가능.
+            연남동 술집 RAWISM 전체 메뉴판: 향촌동 뭉티기 ₩45,000(당일도축 한우 200g, 정통/깍둑 선택), 청양 오일 육회 ₩22,000(한우 우둔살 150g), 오이마요 육회 ₩22,000(한우 우둔살 150g), 마라깻잎 육회 ₩22,000(한우 우둔살 150g), 아보 카프레제 ₩19,000(아보카도+모짜렐라), 크림앤칩스 ₩8,000(감자튀김+크림소스), 육회 들기름 비빔면 ₩13,000, 육회 아보 비빔밥 ₩15,000, 속풀이 무국 ₩12,000.
+            소주: 참이슬 후레쉬 ₩5,000, 처음처럼 ₩5,000, 진로 ₩5,000, 새로 ₩5,000(제로슈거). 맥주: 카스 후레쉬 ₩6,000, 테라 ₩6,000, 크러쉬 ₩7,000(프리미엄). 음료: 코카콜라 ₩3,000, 콜라제로 ₩3,000.
+            인기 조합: 뭉티기+참이슬 소주, 청양육회+테라 맥주, 크림앤칩스+크러쉬 맥주, 마라깻잎육회+진로 소주, 오이마요육회+새로 소주, 카프레제+맥주.
+            서울 마포구 동교로 262-4 (연남동). 홍대입구역 3번출구 도보 5분. 연트럴파크 경의선숲길 인근. 화~일 18:00~23:00. 월요일 휴무. 네이버 예약. 12테이블. 데이트 2차 회식 생일 추천.
+            야광팔찌 네온사진 잡지콜라주 03~06 K-POP BGM 룰렛이벤트 방명록. 싸이월드 Y2K 레트로 감성.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://naver.me/5qLSfCNC" target="_blank" rel="noopener noreferrer" 
@@ -609,12 +613,23 @@ function PageContent({ lang }: { lang: Language }) {
               성산동 술집 성산동 맛집 망원동 술집 망원동 맛집 연희동 술집 연희동 맛집
               마포구 술집 마포구 맛집 마포구 육회 마포구 데이트 마포구 회식
               서울 육회 맛집 서울 한우 술집 서울 뭉티기 서울 레트로 술집 서울 데이트 술집
-              한우 육회 뭉티기 소주 맥주 육회비빔면 육회비빔밥 육사시미 한우 타르타르 생고기 안주
               연트럴파크 맛집 연트럴파크 술집 연트럴파크 데이트 경의선숲길 맛집 경의선숲길 술집 경의선숲길 데이트
               레트로 술집 서울 Y2K 감성 술집 싸이월드 감성 술집
-              참이슬 처음처럼 진로 새로 카스 테라 크러쉬
               야광팔찌 네온사진 잡지 콜라주 룰렛 K-POP 방명록
               소개팅 장소 추천 서울 데이트 장소 서울 회식 장소 마포 생일 파티 술집 커플 술집 서울 친구 모임 술집 단체 회식 연남동
+              연남동 뭉티기 가격 뭉티기 45000원 뭉티기 맛집 서울 향촌동 뭉티기 서울 연남동 뭉티기 맛집 홍대 뭉티기 뭉티기 추천 한우 뭉티기 200g
+              연남동 한우 육회 가격 한우 육회 22000원 청양육회 22000원 오이마요 육회 22000원 마라깻잎 육회 22000원 한우 우둔살 육회 연남동 한우 우둔살 150g 홍대 한우 육회 가격 마포구 한우 육회 서울 한우 육회 가격
+              참이슬 파는 연남동 술집 처음처럼 파는 연남동 술집 진로 파는 연남동 술집 새로 파는 연남동 술집 소주 5000원 연남동 소주 5000원 홍대 연남동 소주 가격 홍대 소주 가격 소주 종류 많은 술집
+              카스 파는 연남동 술집 테라 파는 연남동 술집 크러쉬 파는 연남동 술집 맥주 6000원 연남동 맥주 7000원 연남동 연남동 맥주 가격 홍대 맥주 가격 카스 테라 크러쉬 파는 술집
+              육회비빔면 맛집 연남동 육회비빔면 육회비빔면 13000원 들기름 비빔면 연남동 홍대 육회비빔면
+              육회비빔밥 맛집 연남동 육회비빔밥 육회비빔밥 15000원 아보카도 육회비빔밥 홍대 육회비빔밥
+              속풀이 무국 연남동 무국 12000원 연남동 해장 홍대 해장 무국 해장 메뉴 연남동
+              아보카도 카프레제 연남동 카프레제 19000원 연남동 아보카도 안주 맥주 안주 연남동
+              크림앤칩스 연남동 감자튀김 크림앤칩스 8000원 맥주 안주 연남동 가성비 안주 홍대 안주 가성비
+              뭉티기 소주 조합 육회 맥주 페어링 한우 육회 소주 세트 연남동 안주 추천 홍대 안주 추천 연남동 가성비 안주
+              연남동 술집 메뉴판 연남동 술집 가격 홍대 술집 메뉴판 홍대 술집 가격 RAWISM 메뉴 RAWISM 가격 RAWISM 예약
+              한우 육사시미 한우 타르타르 생고기 안주 육사시미 연남동 한우 안주 연남동
+              참이슬 처음처럼 진로 새로 카스 테라 크러쉬 코카콜라 콜라제로
             </p>
           </div>
         </div>
@@ -675,97 +690,97 @@ app.get('/sitemap.xml', (c) => {
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mungtige_jeontong.jpg</image:loc>
-      <image:title>RAWISM 향촌동 뭉티기 정통 - 연남동 한우 육회 전문 술집 홍대입구역 5분</image:title>
-      <image:caption>당일 도축 한우 200g. 1950년대 대구 향촌동에서 시작된 전통 뭉티기를 연남동에서. 서울 마포구 동교로 262-4.</image:caption>
+      <image:title>RAWISM 향촌동 뭉티기 정통 ₩45,000 - 연남동 한우 육회 전문 술집 홍대입구역 5분</image:title>
+      <image:caption>당일 도축 한우 200g 뭉티기 ₩45,000. 1950년대 대구 향촌동에서 시작된 전통 뭉티기. 정통(손으로 뛜어 뭉친)/깍둑(한입 커팅) 선택. 참기름·소금·참깨 양념장. 소주 안주 1위. 서울 마포구 동교로 262-4.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mungtige_kkakduk.jpg</image:loc>
-      <image:title>RAWISM 향촌동 뭉티기 깍둑 - 연남동 한우 육회 맛집 마포구</image:title>
-      <image:caption>깍둑 스타일 뭉티기. 한 입 크기로 잘라 먹는 프리미엄 한우. 연남동 동교동 육회 맛집.</image:caption>
+      <image:title>RAWISM 향촌동 뭉티기 깍둑 ₩45,000 - 연남동 한우 육회 맛집 마포구</image:title>
+      <image:caption>깍둑 스타일 뭉티기 ₩45,000. 당일도축 한우 200g을 한입 크기로 치대하게 커팅. 참이슬·처음처럼·진로·새로 소주(₩5,000)와 함께 추천. 연남동 동교동 육회 맛집.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cheongyang_yukhoe.jpg</image:loc>
-      <image:title>RAWISM 청양 오일 육회 - 연남동 매콤한 한우 육회 홍대</image:title>
-      <image:caption>한우 우둔살 150g. 매콤한 고추기름의 청양 오일 육회. 연남동 홍대 맛집.</image:caption>
+      <image:title>RAWISM 청양 오일 육회 ₩22,000 - 연남동 매콤한 한우 육회 홍대</image:title>
+      <image:caption>한우 우둔살 150g 청양육회 ₩22,000. 청양고추 고추기름으로 매콤하게. 달걀노른자·참기름 양념. 매운맛 애호가 추천. 연남동 홍대 맛집.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/oimayo_yukhoe.jpg</image:loc>
-      <image:title>RAWISM 오이마요 육회 - 연남동 깔끔한 한우 육회 마포구</image:title>
-      <image:caption>한우 우둔살 150g. 마요네즈와 오이의 깔끔한 조합. 연남동 동교동 한우 맛집.</image:caption>
+      <image:title>RAWISM 오이마요 육회 ₩22,000 - 연남동 깔끔한 한우 육회 마포구</image:title>
+      <image:caption>한우 우둔살 150g 오이마요육회 ₩22,000. 신선한 오이+특제 마요네즈 소스. 육회 입문자 추천. 부드럽고 담백한 맛. 연남동 동교동 한우 맛집.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/mara_yukhoe.jpg</image:loc>
-      <image:title>RAWISM 마라깻잎 육회 - 연남동 마라 한우 육회 홍대입구역</image:title>
-      <image:caption>한우 우둔살 150g. 마라와 깻잎의 독특한 조합. 홍대입구역 3번출구 5분.</image:caption>
+      <image:title>RAWISM 마라깻잎 육회 ₩22,000 - 연남동 마라 한우 육회 홍대입구역</image:title>
+      <image:caption>한우 우둔살 150g 마라깻잎육회 ₩22,000. 마라 향신료+향긋한 깻잎 퓨전. 얼얼한 맛. 진로 소주(₩5,000)와 찰밡. 홍대입구역 3번출구 5분.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/caprese.jpg</image:loc>
-      <image:title>RAWISM 아보 카프레제 - 연남동 아보카도 모짜렐라 안주</image:title>
-      <image:caption>아보카도 + 모짜렐라 + 방울토마토. 연남동 술집 안주 추천. 연트럴파크 인근.</image:caption>
+      <image:title>RAWISM 아보 카프레제 ₩19,000 - 연남동 아보카도 모짜렐라 안주</image:title>
+      <image:caption>아보카도+모짜렐라+방울토마토+발사믹 카프레제 ₩19,000. 맥주 안주로 추천. 채식가능. 연남동 술집 안주. 연트럴파크 인근.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cream_chips.jpg</image:loc>
-      <image:title>RAWISM 크림앤칩스 - 연남동 맥주 안주 가성비</image:title>
-      <image:caption>맥주와 함께하는 가성비 안주 크림앤칩스. 연남동 홍대 술집.</image:caption>
+      <image:title>RAWISM 크림앤칩스 ₩8,000 - 연남동 맥주 안주 가성비</image:title>
+      <image:caption>바삭바삭 감자튀김+특제 크림소스 ₩8,000. 맥주 안주 가성비 끝판왕. 카스(₩6,000)/테라(₩6,000)/크러쉬(₩7,000)와 함께. 연남동 홍대 술집.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/bibimmyeon.jpg</image:loc>
-      <image:title>RAWISM 육회 들기름 비빔면 - 연남동 육회비빔면 마포구</image:title>
-      <image:caption>육회비빔면. 마무리 메뉴로 추천. 들기름 향이 일품. 연남동 경의선숲길 인근.</image:caption>
+      <image:title>RAWISM 육회 들기름 비빔면 ₩13,000 - 연남동 육회비빔면 마포구</image:title>
+      <image:caption>한우육회+들기름 비빔면 ₩13,000. 술자리 마무리 메뉴 인기 TOP. 소주 후 해장 격. 고소한 들기름 향. 연남동 경의선숲길 인근.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/avo_bibimbap.jpg</image:loc>
-      <image:title>RAWISM 육회 아보 비빔밥 - 연남동 육회비빔밥 연트럴파크 인근</image:title>
-      <image:caption>육회비빔밥. 아보카도와 한우 육회의 건강한 마무리. 서울 마포구 동교로 262-4.</image:caption>
+      <image:title>RAWISM 육회 아보 비빔밥 ₩15,000 - 연남동 육회비빔밥 연트럴파크 인근</image:title>
+      <image:caption>한우육회+아보카도 비빔밥 ₩15,000. 면보다 밥 좋아하는 분용. 건강한 마무리 한그릇. 서울 마포구 동교로 262-4.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/muguk.jpg</image:loc>
-      <image:title>RAWISM 속풀이 무국 - 연남동 해장 무국 홍대 술집</image:title>
-      <image:caption>시원한 무국. 소주 후 해장용 필수 메뉴. 연남동 홍대입구역 술집.</image:caption>
+      <image:title>RAWISM 속풀이 무국 ₩12,000 - 연남동 해장 무국 홍대 술집</image:title>
+      <image:caption>시원한 무 국물 해장용 무국 ₩12,000. 소주 마시고 국물 한모금. 연남동 해장 메뉴 추천. 홍대입구역 술집.</image:caption>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/chamisul.jpg</image:loc>
-      <image:title>참이슬 후레쉬 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>참이슬 후레쉬 소주 ₩5,000 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cheoeum.jpg</image:loc>
-      <image:title>처음처럼 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>처음처럼 소주 ₩5,000 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/jinro.jpg</image:loc>
-      <image:title>진로 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>진로 소주 ₩5,000 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/saero.jpg</image:loc>
-      <image:title>새로 소주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>새로 소주 ₩5,000 제로슈거 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/cass.jpg</image:loc>
-      <image:title>카스 후레쉬 맥주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>카스 후레쉬 맥주 ₩6,000 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/terra.jpg</image:loc>
-      <image:title>테라 맥주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>테라 맥주 ₩6,000 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://rawism.kr/static/new/krush.jpg</image:loc>
-      <image:title>크러쉬 맥주 - RAWISM 연남동 술집 주류</image:title>
+      <image:title>크러쉬 맥주 ₩7,000 프리미엄 - RAWISM 연남동 술집 주류</image:title>
       <image:geo_location>Seoul, Mapo-gu, Yeonnam-dong, South Korea</image:geo_location>
     </image:image>
   </url>

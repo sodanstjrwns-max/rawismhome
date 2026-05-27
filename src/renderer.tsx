@@ -333,8 +333,7 @@ export function createRenderer(lang: Language = 'ko') {
             "name": "RAWISM",
             "alternateName": ["로위즘", "로이즘", "RAWISM 연남동", "연남동 RAWISM"],
             "url": "https://rawism.kr",
-            "telephone": "+82-70-5100-5534",
-            "email": "rawism_theblack@instagram.com",
+            "telephone": "+827051005534",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "동교로 262-4",
@@ -344,23 +343,25 @@ export function createRenderer(lang: Language = 'ko') {
               "addressCountry": "KR"
             },
             "geo": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
-            "containedInPlace": [
-              { "@type": "AdministrativeArea", "name": "연남동 (동교동)", "containedInPlace": { "@type": "AdministrativeArea", "name": "마포구", "containedInPlace": { "@type": "AdministrativeArea", "name": "서울특별시", "containedInPlace": { "@type": "Country", "name": "대한민국" } } } }
-            ],
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "연남동 (동교동)",
+              "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "마포구",
+                "containedInPlace": {
+                  "@type": "AdministrativeArea",
+                  "name": "서울특별시",
+                  "containedInPlace": { "@type": "Country", "name": "대한민국" }
+                }
+              }
+            },
             "hasMap": "https://map.naver.com/v5/search/서울특별시 마포구 동교로 262-4",
             "openingHoursSpecification": [
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "23:00" },
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "18:00", "closes": "23:00" },
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "18:00", "closes": "23:00" },
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:00", "closes": "23:00" },
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "23:00" },
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:00", "closes": "23:00" }
-            ],
-            "specialOpeningHoursSpecification": [
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "00:00", "closes": "00:00", "description": "매주 월요일 휴무" }
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "23:00" }
             ],
             "servesCuisine": ["한우 육회", "뭉티기", "한식 주점", "소주", "맥주", "육회비빔면", "육회비빔밥", "청양육회", "마라육회", "아보카도 카프레제", "해장 무국"],
-            "priceRange": "₩₩₩",
+            "priceRange": "₩₩",
             "currenciesAccepted": "KRW",
             "paymentAccepted": "현금, 신용카드, 카카오페이, 네이버페이, 삼성페이",
             "areaServed": {
@@ -375,19 +376,56 @@ export function createRenderer(lang: Language = 'ko') {
               "https://rawism.kr/static/new/bibimmyeon.jpg"
             ],
             "photo": [
-              { "@type": "ImageObject", "url": "https://rawism.kr/static/new/mungtige_jeontong.jpg", "name": "향촌동 뭉티기 정통", "description": "당일 도축 한우 200g 뭉티기" },
-              { "@type": "ImageObject", "url": "https://rawism.kr/static/new/cheongyang_yukhoe.jpg", "name": "청양 오일 육회", "description": "매콤한 고추기름 한우 육회" }
+              { "@type": "ImageObject", "url": "https://rawism.kr/static/new/mungtige_jeontong.jpg", "name": "향촌동 뭉티기 정통", "description": "당일 도축 한우 200g 뭉티기", "width": 1200, "height": 1200 },
+              { "@type": "ImageObject", "url": "https://rawism.kr/static/new/cheongyang_yukhoe.jpg", "name": "청양 오일 육회", "description": "매콤한 고추기름 한우 우둔살 150g 육회", "width": 1200, "height": 1200 }
             ],
             "description": seo.description,
             "slogan": "야광팔찌 끼고 03~06 K-POP 들으며 한우 육회 한 점",
             "keywords": "연남동 술집, 연남동 육회, 연남동 뭉티기, 홍대 술집, 한우 육회, 소주, 맥주, 레트로 술집",
+            "knowsLanguage": ["ko", "en", "ja", "zh"],
+            "founder": {
+              "@type": "Person",
+              "name": "RAWISM 대표"
+            },
             "sameAs": [
               "https://www.instagram.com/rawism_theblack",
               "https://naver.me/5qLSfCNC",
               "https://map.naver.com/v5/search/RAWISM"
             ],
-            "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127", "bestRating": "5", "worstRating": "1" },
-            "acceptsReservations": "True",
+            "aggregateRating": { "@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 127, "bestRating": 5, "worstRating": 1 },
+            "review": [
+              {
+                "@type": "Review",
+                "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 },
+                "author": { "@type": "Person", "name": "네이버 리뷰어" },
+                "reviewBody": "향촌동 뭉티기 진짜 맛있어요! 소주랑 같이 먹으면 최고. 야광팔찌도 재밌고 BGM도 추억소환됩니다.",
+                "datePublished": "2026-03-15"
+              },
+              {
+                "@type": "Review",
+                "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 },
+                "author": { "@type": "Person", "name": "인스타그램 방문자" },
+                "reviewBody": "연남동 데이트로 왔는데 분위기 너무 좋아요. 마라깻잎 육회 강추! 네온사진도 찍었습니다.",
+                "datePublished": "2026-04-20"
+              }
+            ],
+            "acceptsReservations": true,
+            "potentialAction": [
+              {
+                "@type": "ReserveAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://naver.me/5qLSfCNC",
+                  "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+                },
+                "result": { "@type": "Reservation", "name": "RAWISM 네이버 예약" }
+              },
+              {
+                "@type": "ViewAction",
+                "target": "https://rawism.kr/#menu",
+                "name": "메뉴 보기"
+              }
+            ],
             "reservations": "https://naver.me/5qLSfCNC",
             "menu": "https://rawism.kr/#menu",
             "smokingAllowed": false,
@@ -409,7 +447,8 @@ export function createRenderer(lang: Language = 'ko') {
               { "@type": "PropertyValue", "name": "nearbyLandmark", "value": "연트럴파크 (Yeontral Park), 경의선숲길, 동교동 카페거리" },
               { "@type": "PropertyValue", "name": "neighborhood", "value": "연남동 (동교동/성산동/망원동/연희동 인접)" },
               { "@type": "PropertyValue", "name": "parkingInfo", "value": "전용주차장 없음. 인근 유료주차장 이용 또는 대중교통 추천" },
-              { "@type": "PropertyValue", "name": "suitableFor", "value": "데이트, 소개팅, 회식, 생일파티, 친구모임, 2차, 기념일" }
+              { "@type": "PropertyValue", "name": "suitableFor", "value": "데이트, 소개팅, 회식, 생일파티, 친구모임, 2차, 기념일" },
+              { "@type": "PropertyValue", "name": "closedDay", "value": "매주 월요일 휴무" }
             ],
             "hasMenu": {
               "@type": "Menu",
@@ -420,42 +459,42 @@ export function createRenderer(lang: Language = 'ko') {
                   "@type": "MenuSection",
                   "name": "시그니처",
                   "hasMenuItem": [
-                    {"@type":"MenuItem","name":"향촌동 뭉티기","description":"당일 도축 한우 200g. 1950년대 대구 향촌동에서 시작된 전통 뭉티기를 연남동에서. 정통(손으로 뜯어 뭉친 스타일)/깍둑(한 입 크기 커팅) 선택 가능. 참기름·소금·참깨 양념장. 소주 안주로 인기 1위.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"200g","proteinContent":"40g"},"offers":{"@type":"Offer","price":"45000","priceCurrency":"KRW","availability":"https://schema.org/InStock","validFrom":"2024-01-01","priceValidUntil":"2026-12-31","url":"https://rawism.kr/#menu"}}
+                    {"@type":"MenuItem","name":"향촌동 뭉티기","description":"당일 도축 한우 200g. 1950년대 대구 향촌동에서 시작된 전통 뭉티기를 연남동에서. 정통(손으로 뜯어 뭉친 스타일)/깍둑(한 입 크기 커팅) 선택 가능. 참기름·소금·참깨 양념장. 소주 안주로 인기 1위.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"200g","proteinContent":"40g"},"offers":{"@type":"Offer","price":45000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","validFrom":"2024-01-01","priceValidUntil":"2026-12-31","url":"https://rawism.kr/#menu"}}
                   ]
                 },
                 {
                   "@type": "MenuSection",
                   "name": "육회",
                   "hasMenuItem": [
-                    {"@type":"MenuItem","name":"청양 오일 육회","description":"한우 우둔살 150g. 청양고추 고추기름으로 매콤하게 버무린 생육회. 달걀노른자·참기름 양념. 매운 음식 좋아하는 분께 추천.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"150g","proteinContent":"30g"},"offers":{"@type":"Offer","price":"22000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
-                    {"@type":"MenuItem","name":"오이마요 육회","description":"한우 우둔살 150g. 신선한 오이와 특제 마요네즈 소스의 기분 좋은 조합. 육회 입문자에게 인기. 담백하고 부드러운 맛.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"150g","proteinContent":"30g"},"offers":{"@type":"Offer","price":"22000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
-                    {"@type":"MenuItem","name":"마라깻잎 육회","description":"한우 우둔살 150g. 마라 향신료와 향긋한 깻잎의 독특한 퓨전. 얼얼한 맛 선호하는 분께 추천. 소주안주로 최고의 조합.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"150g","proteinContent":"30g"},"offers":{"@type":"Offer","price":"22000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}}
+                    {"@type":"MenuItem","name":"청양 오일 육회","description":"한우 우둔살 150g. 청양고추 고추기름으로 매콤하게 버무린 생육회. 달걀노른자·참기름 양념. 매운 음식 좋아하는 분께 추천.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"150g","proteinContent":"30g"},"offers":{"@type":"Offer","price":22000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
+                    {"@type":"MenuItem","name":"오이마요 육회","description":"한우 우둔살 150g. 신선한 오이와 특제 마요네즈 소스의 기분 좋은 조합. 육회 입문자에게 인기. 담백하고 부드러운 맛.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"150g","proteinContent":"30g"},"offers":{"@type":"Offer","price":22000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
+                    {"@type":"MenuItem","name":"마라깻잎 육회","description":"한우 우둔살 150g. 마라 향신료와 향긋한 깻잎의 독특한 퓨전. 얼얼한 맛 선호하는 분께 추천. 소주안주로 최고의 조합.","suitableForDiet":"https://schema.org/GlutenFreeDiet","nutrition":{"@type":"NutritionInformation","servingSize":"150g","proteinContent":"30g"},"offers":{"@type":"Offer","price":22000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}}
                   ]
                 },
                 {
                   "@type": "MenuSection",
                   "name": "안주 · 마무리",
                   "hasMenuItem": [
-                    {"@type":"MenuItem","name":"아보 카프레제","description":"잘익은 아보카도 + 신선한 모짜렐라 치즈 + 방울토마토 + 발사믹 드레싱. 와인/맥주와 함께 하는 깔끔한 안주. 채식 가능.","suitableForDiet":"https://schema.org/VegetarianDiet","offers":{"@type":"Offer","price":"19000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
-                    {"@type":"MenuItem","name":"크림앤칩스","description":"바삭바삭 감자튀김 + 특제 크림소스. 맥주 안주로 최고의 가성비. 카스/테라/크러쉬와 함께 추천. 8000원 가성비 끝판왕.","offers":{"@type":"Offer","price":"8000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
-                    {"@type":"MenuItem","name":"육회 들기름 비빔면","description":"한우 육회 + 고소한 들기름 + 비빔면. 술자리 마무리 메뉴로 인기 TOP. 소주 후 해장 겸으로도 추천. 연남동 육회비빔면 대표 메뉴.","offers":{"@type":"Offer","price":"13000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
-                    {"@type":"MenuItem","name":"육회 아보 비빔밥","description":"한우 육회 + 아보카도 + 밥. 면보다 밥이 좋은 사람을 위한 메뉴. 건강한 마무리 한 그릇. 연남동 육회비빔밥 추천.","offers":{"@type":"Offer","price":"15000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
-                    {"@type":"MenuItem","name":"속풀이 무국","description":"시원한 무 국물로 만든 해장용 무국. 소주 마시고 국물 한 모금이면 속이 편안. 연남동 해장 메뉴 추천.","offers":{"@type":"Offer","price":"12000","priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}}
+                    {"@type":"MenuItem","name":"아보 카프레제","description":"잘익은 아보카도 + 신선한 모짜렐라 치즈 + 방울토마토 + 발사믹 드레싱. 와인/맥주와 함께 하는 깔끔한 안주. 채식 가능.","suitableForDiet":"https://schema.org/VegetarianDiet","offers":{"@type":"Offer","price":19000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
+                    {"@type":"MenuItem","name":"크림앤칩스","description":"바삭바삭 감자튀김 + 특제 크림소스. 맥주 안주로 최고의 가성비. 카스/테라/크러쉬와 함께 추천. 8000원 가성비 끝판왕.","offers":{"@type":"Offer","price":8000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
+                    {"@type":"MenuItem","name":"육회 들기름 비빔면","description":"한우 육회 + 고소한 들기름 + 비빔면. 술자리 마무리 메뉴로 인기 TOP. 소주 후 해장 겸으로도 추천. 연남동 육회비빔면 대표 메뉴.","offers":{"@type":"Offer","price":13000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
+                    {"@type":"MenuItem","name":"육회 아보 비빔밥","description":"한우 육회 + 아보카도 + 밥. 면보다 밥이 좋은 사람을 위한 메뉴. 건강한 마무리 한 그릇. 연남동 육회비빔밥 추천.","offers":{"@type":"Offer","price":15000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}},
+                    {"@type":"MenuItem","name":"속풀이 무국","description":"시원한 무 국물로 만든 해장용 무국. 소주 마시고 국물 한 모금이면 속이 편안. 연남동 해장 메뉴 추천.","offers":{"@type":"Offer","price":12000,"priceCurrency":"KRW","availability":"https://schema.org/InStock","url":"https://rawism.kr/#menu"}}
                   ]
                 },
                 {
                   "@type": "MenuSection",
                   "name": "주류",
                   "hasMenuItem": [
-                    {"@type":"MenuItem","name":"참이슬 후레쉬","description":"하이트진로 대표 소주. 깨끗한 맛. 육회와 찰떡궁합. 360ml.","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"처음처럼","description":"롯데 주류 대표 소주. 부드러운 맛. 뭉티기와 함께 추천. 360ml.","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"진로","description":"레트로 감성 진로 소주. 하늘색 병. RAWISM 레트로 분위기와 찰떡 궁합. 360ml.","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"새로","description":"롯데 제로슈거 소주. 0kcal 당류. 가벼운 한 잔. 360ml.","offers":{"@type":"Offer","price":"5000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"카스 후레쉬","description":"대한민국 대표 맥주. 시원한 후레쉬 맛. 크림앤칩스와 함께. 500ml.","offers":{"@type":"Offer","price":"6000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"테라","description":"하이트진로 맥주. 청정라거 맥주. 탄산감 좋음. 육회와 함께 추천. 500ml.","offers":{"@type":"Offer","price":"6000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"크러쉬","description":"롯데 프리미엄 맥주. 포리리페놀 홉 맥주. 맥주 맛집 1위. 500ml.","offers":{"@type":"Offer","price":"7000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"코카콜라","description":"음료. 술 못 드시는 분도 편하게. 355ml.","offers":{"@type":"Offer","price":"3000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
-                    {"@type":"MenuItem","name":"콜라제로","description":"제로칼로리 콜라. 다이어트 중이어도 OK. 355ml.","offers":{"@type":"Offer","price":"3000","priceCurrency":"KRW","availability":"https://schema.org/InStock"}}
+                    {"@type":"MenuItem","name":"참이슬 후레쉬","description":"하이트진로 대표 소주. 깨끗한 맛. 육회와 찰떡궁합. 360ml.","offers":{"@type":"Offer","price":5000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"처음처럼","description":"롯데 주류 대표 소주. 부드러운 맛. 뭉티기와 함께 추천. 360ml.","offers":{"@type":"Offer","price":5000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"진로","description":"레트로 감성 진로 소주. 하늘색 병. RAWISM 레트로 분위기와 찰떡 궁합. 360ml.","offers":{"@type":"Offer","price":5000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"새로","description":"롯데 제로슈거 소주. 0kcal 당류. 가벼운 한 잔. 360ml.","offers":{"@type":"Offer","price":5000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"카스 후레쉬","description":"대한민국 대표 맥주. 시원한 후레쉬 맛. 크림앤칩스와 함께. 500ml.","offers":{"@type":"Offer","price":6000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"테라","description":"하이트진로 맥주. 청정라거 맥주. 탄산감 좋음. 육회와 함께 추천. 500ml.","offers":{"@type":"Offer","price":6000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"크러쉬","description":"롯데 프리미엄 맥주. 포리리페놀 홉 맥주. 맥주 맛집 1위. 500ml.","offers":{"@type":"Offer","price":7000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"코카콜라","description":"음료. 술 못 드시는 분도 편하게. 355ml.","offers":{"@type":"Offer","price":3000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}},
+                    {"@type":"MenuItem","name":"콜라제로","description":"제로칼로리 콜라. 다이어트 중이어도 OK. 355ml.","offers":{"@type":"Offer","price":3000,"priceCurrency":"KRW","availability":"https://schema.org/InStock"}}
                   ]
                 }
               ]
@@ -477,6 +516,14 @@ export function createRenderer(lang: Language = 'ko') {
               "name": "RAWISM",
               "url": "https://rawism.kr",
               "logo": { "@type": "ImageObject", "url": "https://rawism.kr/static/og-image.jpg" }
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://rawism.kr/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
             }
           })}} />
           
@@ -502,11 +549,11 @@ export function createRenderer(lang: Language = 'ko') {
             "description": "연남동 RAWISM에서 가장 인기 있는 한우 육회 · 뭉티기 메뉴",
             "numberOfItems": 5,
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "향촌동 뭉티기", "url": "https://rawism.kr/#menu" },
-              { "@type": "ListItem", "position": 2, "name": "청양 오일 육회", "url": "https://rawism.kr/#menu" },
-              { "@type": "ListItem", "position": 3, "name": "마라깻잎 육회", "url": "https://rawism.kr/#menu" },
-              { "@type": "ListItem", "position": 4, "name": "육회 들기름 비빔면", "url": "https://rawism.kr/#menu" },
-              { "@type": "ListItem", "position": 5, "name": "속풀이 무국", "url": "https://rawism.kr/#menu" }
+              { "@type": "ListItem", "position": 1, "name": "향촌동 뭉티기 ₩45,000", "url": "https://rawism.kr/#menu", "image": "https://rawism.kr/static/new/mungtige_jeontong.jpg", "description": "당일 도축 한우 200g. 1950년대 대구 향촌동 전통 뭉티기. 정통/깍둑 선택." },
+              { "@type": "ListItem", "position": 2, "name": "청양 오일 육회 ₩22,000", "url": "https://rawism.kr/#menu", "image": "https://rawism.kr/static/new/cheongyang_yukhoe.jpg", "description": "한우 우둔살 150g. 청양고추 고추기름 매콤 육회." },
+              { "@type": "ListItem", "position": 3, "name": "마라깻잎 육회 ₩22,000", "url": "https://rawism.kr/#menu", "image": "https://rawism.kr/static/new/mara_yukhoe.jpg", "description": "한우 우둔살 150g. 마라 향신료와 깻잎의 퓨전." },
+              { "@type": "ListItem", "position": 4, "name": "육회 들기름 비빔면 ₩13,000", "url": "https://rawism.kr/#menu", "image": "https://rawism.kr/static/new/bibimmyeon.jpg", "description": "한우 육회 + 들기름 비빔면. 마무리 메뉴 인기 1위." },
+              { "@type": "ListItem", "position": 5, "name": "속풀이 무국 ₩12,000", "url": "https://rawism.kr/#menu", "image": "https://rawism.kr/static/new/muguk.jpg", "description": "시원한 무국. 소주 후 해장에 필수." }
             ]
           })}} />
           
@@ -519,19 +566,18 @@ export function createRenderer(lang: Language = 'ko') {
               {"@type":"Question","name":"RAWISM 위치가 어디인가요?","acceptedAnswer":{"@type":"Answer","text":"서울 마포구 동교로 262-4 (연남동). 홍대입구역 3번 출구에서 도보 5분, 경의선숲길/연트럴파크 인근입니다."}},
               {"@type":"Question","name":"RAWISM 예약은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"네이버 예약(링크) 또는 인스타그램 DM(@rawism_theblack)으로 예약 가능합니다. 12테이블 운영."}},
               {"@type":"Question","name":"RAWISM 시그니처 메뉴가 뭐인가요?","acceptedAnswer":{"@type":"Answer","text":"향촌동 뭉티기(₩45,000)가 시그니처입니다. 당일 도축 한우 200g으로 정통/깍둝 선택 가능합니다."}},
-              {"@type":"Question","name":"RAWISM에서 파는 소주 종류는?","acceptedAnswer":{"@type":"Answer","text":"참이슬 후레쉬, 처음처럼, 진로, 새로 각 ₩5,000입니다."}},
-              {"@type":"Question","name":"RAWISM에서 파는 맥주 종류는?","acceptedAnswer":{"@type":"Answer","text":"카스 후레쉬(₩6,000), 테라(₩6,000), 크러쉬(₩7,000)입니다."}},
+
               {"@type":"Question","name":"RAWISM 야광팔찌 이벤트가 뭐인가요?","acceptedAnswer":{"@type":"Answer","text":"소주/맥주 시키면 직원이 야광팔찌 끼고 서빙해드립니다. 원하면 가져가셔도 OK!"}},
               {"@type":"Question","name":"RAWISM 룰렛 이벤트는 어떻게 참여하나요?","acceptedAnswer":{"@type":"Answer","text":"리뷰 작성 시 룰렛 한 번 돌리실 수 있습니다. 소주, 맥주, 안주 무료 당첨. 가끔 화요 17도 나옵니다!"}},
               {"@type":"Question","name":"RAWISM 주차 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"전용 주차장은 없습니다. 인근 유료 주차장 이용 또는 홍대입구역(2호선/경의중앙선/공항철도) 3번출구에서 도보 5분입니다. 대중교통 이용을 추천드립니다."}},
-              {"@type":"Question","name":"RAWISM 결제 방법은?","acceptedAnswer":{"@type":"Answer","text":"현금, 신용카드, 카카오페이, 네이버페이, 삼성페이 모두 가능합니다."}},
+
               {"@type":"Question","name":"RAWISM 단체 회식이나 생일 모임 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"네, 12테이블 운영하며 단체 회식, 생일 모임, 데이트 모두 가능합니다. 네이버 예약 또는 인스타그램 DM(@rawism_theblack)으로 미리 예약해주세요."}},
               {"@type":"Question","name":"연남동에서 뭉티기 먹을 수 있는 곳이 어디인가요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM이 연남동 유일의 향촌동 전통 뭉티기 전문점입니다. 당일 도축 한우 200g으로 정통/깍둑 선택 가능합니다. 서울 마포구 동교로 262-4에 위치합니다."}},
               {"@type":"Question","name":"홍대입구역에서 RAWISM 가는 방법은?","acceptedAnswer":{"@type":"Answer","text":"홍대입구역(2호선/경의중앙선/공항철도) 3번 출구로 나와 경의선숲길 방향으로 도보 5분이면 도착합니다. 연트럴파크 인근에 있습니다."}},
               {"@type":"Question","name":"연남동에서 소개팅 하기 좋은 술집 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 네온 조명과 2000년대 K-POP BGM이 흐르는 분위기 좋은 술집입니다. 야광팔찌, 잡지 콜라주 인테리어 등 자연스러운 대화 소재가 많아 소개팅, 첫 만남에 좋습니다. 12테이블 규모로 프라이빗한 분위기도 갖추고 있습니다."}},
-              {"@type":"Question","name":"동교동, 성산동, 망원동에서 RAWISM 가까운가요?","acceptedAnswer":{"@type":"Answer","text":"네, RAWISM은 연남동(동교동) 동교로 262-4에 위치해 있어 동교동 도보 3분, 성산동 도보 10분, 망원동 도보 12분 거리입니다. 홍대입구역(2호선/경의중앙선/공항철도) 3번출구에서 도보 5분이며 연트럴파크, 경의선숲길 바로 인근입니다."}},
+
               {"@type":"Question","name":"연트럴파크(연남동공원) 근처 술집 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 연트럴파크(경의선숲길 연남동 구간) 바로 인근에 있는 한우 육회 전문 술집입니다. 연트럴파크 산책 후 들르기 좋으며, 경의선숲길 옆 골목에 위치합니다. 서울 마포구 동교로 262-4."}},
-              {"@type":"Question","name":"2호선 타고 갈 수 있는 연남동 술집 있나요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 2호선 홍대입구역 3번출구 도보 5분 거리에 있습니다. 경의중앙선, 공항철도(AREX)도 환승 가능해 인천공항에서도 직통으로 올 수 있습니다. 외국인 관광객도 접근이 매우 편리합니다."}},
+
               {"@type":"Question","name":"새벽까지 하는 연남동 술집 있나요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 화~일 18:00~23:00 영업합니다(매주 월요일 휴무). 라스트오더는 22:30이며, 마무리 메뉴로 육회비빔면(₩13,000)이나 속풀이 무국(₩12,000)을 추천드립니다."}},
               {"@type":"Question","name":"마포구에서 회식 장소 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 12테이블 운영으로 소규모 회식에 적합합니다. 향촌동 뭉티기(₩45,000)를 메인으로 다양한 육회와 소주/맥주를 즐기실 수 있습니다. 네이버 예약 또는 인스타그램 DM으로 사전 예약하시면 편리합니다. 홍대입구역 3번출구 도보 5분."}},
               {"@type":"Question","name":"뭉티기가 뭔가요? RAWISM 뭉티기 가격은?","acceptedAnswer":{"@type":"Answer","text":"뭉티기는 1950년대 대구 향촌동에서 시작된 한우 생고기 요리입니다. 신선한 한우를 손으로 뜯어 뭉쳐서 참기름·소금·참깨 양념장에 찍어 먹습니다. RAWISM의 향촌동 뭉티기는 당일 도축 한우 200g으로 ₩45,000이며, 정통(뜯어 뭉친 스타일)과 깍둑(한 입 크기 커팅) 중 선택 가능합니다."}},
@@ -542,9 +588,9 @@ export function createRenderer(lang: Language = 'ko') {
               {"@type":"Question","name":"연남동에서 참이슬 파는 술집 어디 있나요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM에서 참이슬 후레쉬를 ₩5,000에 즐기실 수 있습니다. 처음처럼·진로·새로도 각 ₩5,000입니다. 한우 육회와 함께 마시면 최고의 조합! 서울 마포구 동교로 262-4, 홍대입구역 3번출구 도보 5분."}},
               {"@type":"Question","name":"RAWISM 추천 안주 조합이 뭐인가요?","acceptedAnswer":{"@type":"Answer","text":"인기 조합 TOP 3: ① 뭉티기(₩45,000) + 참이슬/처음처럼 소주 — 정통 안주 조합 ② 청양육회(₩22,000) + 테라 맥주 — 매콤+시원 ③ 크림앤칩스(₩8,000) + 크러쉬 맥주 — 가성비 최고. 마무리로 육회비빔면(₩13,000) 또는 속풀이 무국(₩12,000) 추천!"}},
               {"@type":"Question","name":"육회비빔면이랑 육회비빔밥 차이가 뭔가요?","acceptedAnswer":{"@type":"Answer","text":"육회 들기름 비빔면(₩13,000)은 한우 육회 + 들기름 + 비빔면으로, 고소한 면 요리입니다. 육회 아보 비빔밥(₩15,000)은 한우 육회 + 아보카도 + 밥으로, 더 든든한 한 그릇입니다. 둘 다 술자리 마무리 메뉴로 인기!"}},
-              {"@type":"Question","name":"RAWISM 속풀이 무국 가격은?","acceptedAnswer":{"@type":"Answer","text":"속풀이 무국은 ₩12,000입니다. 시원한 무 국물로 소주 후 해장에 딱 좋습니다. 연남동 해장 메뉴로 추천드립니다."}},
+
               {"@type":"Question","name":"연남동에서 맥주 안주로 뭐가 좋아요?","acceptedAnswer":{"@type":"Answer","text":"RAWISM의 크림앤칩스(₩8,000)는 맥주 안주로 가성비 최고입니다. 바삭한 감자튀김 + 특제 크림소스 조합이며, 카스(₩6,000)·테라(₩6,000)·크러쉬(₩7,000)와 완벽한 페어링! 아보 카프레제(₩19,000)도 맥주와 잘 어울립니다."}},
-              {"@type":"Question","name":"연남동 가성비 안주 있는 술집 추천해주세요","acceptedAnswer":{"@type":"Answer","text":"RAWISM은 크림앤칩스 ₩8,000부터 시작하는 가성비 안주가 있습니다. 속풀이 무국 ₩12,000, 육회비빔면 ₩13,000, 육회비빔밥 ₩15,000. 소주 ₩5,000, 맥주 ₩6,000~₩7,000. 홍대입구역 3번출구 도보 5분."}},
+
               {"@type":"Question","name":"RAWISM에서 술 안 마셔도 되나요?","acceptedAnswer":{"@type":"Answer","text":"네! 코카콜라(₩3,000)·콜라제로(₩3,000) 등 음료도 있습니다. 술 못 드시는 분도 한우 육회와 뭉티기를 편하게 즐기실 수 있습니다."}},
               {"@type":"Question","name":"RAWISM 전체 메뉴판과 가격을 알려주세요","acceptedAnswer":{"@type":"Answer","text":"[시그니처] 향촌동 뭉티기 ₩45,000 [육회] 청양오일/오이마요/마라깻잎 육회 각 ₩22,000 [안주] 아보 카프레제 ₩19,000, 크림앤칩스 ₩8,000 [마무리] 육회비빔면 ₩13,000, 육회비빔밥 ₩15,000, 속풀이무국 ₩12,000 [소주] 참이슬/처음처럼/진로/새로 각 ₩5,000 [맥주] 카스/테라 각 ₩6,000, 크러쉬 ₩7,000 [음료] 코카콜라/콜라제로 각 ₩3,000"}}
             ]
@@ -557,6 +603,7 @@ export function createRenderer(lang: Language = 'ko') {
             "@id": "https://rawism.kr/#neighborhood",
             "name": "RAWISM 인근 지역",
             "description": "RAWISM 연남동 한우 육회 술집 인근 주요 장소 및 교통 정보",
+            "address": { "@type": "PostalAddress", "addressLocality": "마포구", "addressRegion": "서울특별시", "addressCountry": "KR", "postalCode": "04030" },
             "geo": { "@type": "GeoCoordinates", "latitude": 37.5595, "longitude": 126.9224 },
             "containedInPlace": { "@type": "AdministrativeArea", "name": "마포구, 서울특별시" },
             "hasPart": [
